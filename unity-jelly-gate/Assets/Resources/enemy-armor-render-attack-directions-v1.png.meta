@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 71b7f22afcc0d7a4da2a28d06607589d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 797991719199673138
+    second: enemy-armor-render-attack-directions-v1_0
+  - first:
+      213: -9100751573565668681
+    second: enemy-armor-render-attack-directions-v1_1
+  - first:
+      213: 3770758238134630374
+    second: enemy-armor-render-attack-directions-v1_2
+  - first:
+      213: 679726721305175642
+    second: enemy-armor-render-attack-directions-v1_3
+  - first:
+      213: -6183379435297361077
+    second: enemy-armor-render-attack-directions-v1_4
+  - first:
+      213: -6945710434881454697
+    second: enemy-armor-render-attack-directions-v1_5
+  - first:
+      213: -7483474533489498160
+    second: enemy-armor-render-attack-directions-v1_6
+  - first:
+      213: -6711682952248481453
+    second: enemy-armor-render-attack-directions-v1_7
+  - first:
+      213: -7376871079988232790
+    second: enemy-armor-render-attack-directions-v1_8
+  - first:
+      213: -5552386573951741559
+    second: enemy-armor-render-attack-directions-v1_9
+  - first:
+      213: 6068249175999367804
+    second: enemy-armor-render-attack-directions-v1_10
+  - first:
+      213: 7628392127193831690
+    second: enemy-armor-render-attack-directions-v1_11
+  - first:
+      213: -6773958673823362942
+    second: enemy-armor-render-attack-directions-v1_12
+  - first:
+      213: -2482575042638275888
+    second: enemy-armor-render-attack-directions-v1_13
+  - first:
+      213: 4416010635024930996
+    second: enemy-armor-render-attack-directions-v1_14
+  - first:
+      213: -5100836390889620498
+    second: enemy-armor-render-attack-directions-v1_15
+  - first:
+      213: 8799867652920939116
+    second: enemy-armor-render-attack-directions-v1_16
+  - first:
+      213: -732284170698116935
+    second: enemy-armor-render-attack-directions-v1_17
+  - first:
+      213: 6899453222453194146
+    second: enemy-armor-render-attack-directions-v1_18
+  - first:
+      213: 1669290859466106057
+    second: enemy-armor-render-attack-directions-v1_19
+  - first:
+      213: -6089298700114567452
+    second: enemy-armor-render-attack-directions-v1_20
+  - first:
+      213: -3793702222746331073
+    second: enemy-armor-render-attack-directions-v1_21
+  - first:
+      213: 6678845789228821691
+    second: enemy-armor-render-attack-directions-v1_22
+  - first:
+      213: -2496416603825799545
+    second: enemy-armor-render-attack-directions-v1_23
+  - first:
+      213: -7700287270334252776
+    second: enemy-armor-render-attack-directions-v1_24
+  - first:
+      213: 8067111747061329665
+    second: enemy-armor-render-attack-directions-v1_25
+  - first:
+      213: 3770829928531946904
+    second: enemy-armor-render-attack-directions-v1_26
+  - first:
+      213: -1537235018177001117
+    second: enemy-armor-render-attack-directions-v1_27
+  - first:
+      213: 8994475638661663795
+    second: enemy-armor-render-attack-directions-v1_28
+  - first:
+      213: -1407886741523947639
+    second: enemy-armor-render-attack-directions-v1_29
+  - first:
+      213: 3796283059426077679
+    second: enemy-armor-render-attack-directions-v1_30
+  - first:
+      213: 4111250752401910837
+    second: enemy-armor-render-attack-directions-v1_31
+  - first:
+      213: -4413384321956529825
+    second: enemy-armor-render-attack-directions-v1_32
+  - first:
+      213: -2874279422668483120
+    second: enemy-armor-render-attack-directions-v1_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 801
+        width: 233
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b899c9d39031b00800000000000000
+      internalID: 797991719199673138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 801
+        width: 259
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b28a8469a2a3b180800000000000000
+      internalID: -9100751573565668681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 802
+        width: 259
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e774e5a3ac645430800000000000000
+      internalID: 3770758238134630374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 802
+        width: 176
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a566cb70adfde6900800000000000000
+      internalID: 679726721305175642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 802
+        width: 185
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4335af1a29303aa0800000000000000
+      internalID: -6183379435297361077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 801
+        width: 232
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dba20d821eb9f90800000000000000
+      internalID: -6945710434881454697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 584
+        width: 222
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d72da99f8b552890800000000000000
+      internalID: -7483474533489498160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 584
+        width: 259
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3592f2a3aef4bd2a0800000000000000
+      internalID: -6711682952248481453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 585
+        width: 240
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadf27b46d610a990800000000000000
+      internalID: -7376871079988232790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 584
+        width: 178
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98155fb24d5f1f2b0800000000000000
+      internalID: -5552386573951741559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 584
+        width: 193
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7acfff7970c63450800000000000000
+      internalID: 6068249175999367804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 662
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0956c4093e7dd960800000000000000
+      internalID: 7628392127193831690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 584
+        width: 224
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2801593e9701ef1a0800000000000000
+      internalID: -6773958673823362942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 611
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da9b47e62f1c8dd0800000000000000
+      internalID: -2482575042638275888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 387
+        width: 182
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b812098642d84d30800000000000000
+      internalID: 4416010635024930996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 387
+        width: 268
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb73afe3503639b0800000000000000
+      internalID: -5100836390889620498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 388
+        width: 235
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c629dc2b1096f1a70800000000000000
+      internalID: 8799867652920939116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 413
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0b5e23d6766d5f0800000000000000
+      internalID: -732284170698116935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 387
+        width: 171
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad2fb4a628cfbf50800000000000000
+      internalID: 6899453222453194146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 387
+        width: 203
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4a84141338a2710800000000000000
+      internalID: 1669290859466106057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 387
+        width: 179
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee5c6048177e7ba0800000000000000
+      internalID: -6089298700114567452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 204
+        width: 217
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f385895adef0a5bc0800000000000000
+      internalID: -3793702222746331073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 204
+        width: 245
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbce898fbd600bc50800000000000000
+      internalID: 6678845789228821691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 204
+        width: 230
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e739d4352fa5dd0800000000000000
+      internalID: -2496416603825799545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 204
+        width: 180
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819b3478685132590800000000000000
+      internalID: -7700287270334252776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 204
+        width: 194
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fa8fe746324ff60800000000000000
+      internalID: 8067111747061329665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 259
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89dee8e57dda45430800000000000000
+      internalID: 3770829928531946904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 204
+        width: 206
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369c44545e4aaaae0800000000000000
+      internalID: -1537235018177001117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 18
+        width: 215
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c455740fbc2dc70800000000000000
+      internalID: 8994475638661663795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 18
+        width: 251
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f9b77c77e267ce0800000000000000
+      internalID: -1407886741523947639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 18
+        width: 238
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febace7345b1fa430800000000000000
+      internalID: 3796283059426077679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 18
+        width: 162
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c2977e6c81e0930800000000000000
+      internalID: 4111250752401910837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 18
+        width: 190
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59b080a75280c2c0800000000000000
+      internalID: -4413384321956529825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-attack-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 18
+        width: 214
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d551aaf7128c18d0800000000000000
+      internalID: -2874279422668483120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy-armor-render-attack-directions-v1_0: 797991719199673138
+      enemy-armor-render-attack-directions-v1_1: -9100751573565668681
+      enemy-armor-render-attack-directions-v1_10: 6068249175999367804
+      enemy-armor-render-attack-directions-v1_11: 7628392127193831690
+      enemy-armor-render-attack-directions-v1_12: -6773958673823362942
+      enemy-armor-render-attack-directions-v1_13: -2482575042638275888
+      enemy-armor-render-attack-directions-v1_14: 4416010635024930996
+      enemy-armor-render-attack-directions-v1_15: -5100836390889620498
+      enemy-armor-render-attack-directions-v1_16: 8799867652920939116
+      enemy-armor-render-attack-directions-v1_17: -732284170698116935
+      enemy-armor-render-attack-directions-v1_18: 6899453222453194146
+      enemy-armor-render-attack-directions-v1_19: 1669290859466106057
+      enemy-armor-render-attack-directions-v1_2: 3770758238134630374
+      enemy-armor-render-attack-directions-v1_20: -6089298700114567452
+      enemy-armor-render-attack-directions-v1_21: -3793702222746331073
+      enemy-armor-render-attack-directions-v1_22: 6678845789228821691
+      enemy-armor-render-attack-directions-v1_23: -2496416603825799545
+      enemy-armor-render-attack-directions-v1_24: -7700287270334252776
+      enemy-armor-render-attack-directions-v1_25: 8067111747061329665
+      enemy-armor-render-attack-directions-v1_26: 3770829928531946904
+      enemy-armor-render-attack-directions-v1_27: -1537235018177001117
+      enemy-armor-render-attack-directions-v1_28: 8994475638661663795
+      enemy-armor-render-attack-directions-v1_29: -1407886741523947639
+      enemy-armor-render-attack-directions-v1_3: 679726721305175642
+      enemy-armor-render-attack-directions-v1_30: 3796283059426077679
+      enemy-armor-render-attack-directions-v1_31: 4111250752401910837
+      enemy-armor-render-attack-directions-v1_32: -4413384321956529825
+      enemy-armor-render-attack-directions-v1_33: -2874279422668483120
+      enemy-armor-render-attack-directions-v1_4: -6183379435297361077
+      enemy-armor-render-attack-directions-v1_5: -6945710434881454697
+      enemy-armor-render-attack-directions-v1_6: -7483474533489498160
+      enemy-armor-render-attack-directions-v1_7: -6711682952248481453
+      enemy-armor-render-attack-directions-v1_8: -7376871079988232790
+      enemy-armor-render-attack-directions-v1_9: -5552386573951741559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

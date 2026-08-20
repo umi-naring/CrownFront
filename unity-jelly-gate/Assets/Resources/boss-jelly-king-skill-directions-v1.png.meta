@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 1e241e83fbd6f0a4986b86ad60f9c3d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5009643074778949269
+    second: boss-jelly-king-skill-directions-v1_0
+  - first:
+      213: 8730107678278462888
+    second: boss-jelly-king-skill-directions-v1_1
+  - first:
+      213: 6520859666991010967
+    second: boss-jelly-king-skill-directions-v1_2
+  - first:
+      213: 5552113032023062556
+    second: boss-jelly-king-skill-directions-v1_3
+  - first:
+      213: 1077665947168674669
+    second: boss-jelly-king-skill-directions-v1_4
+  - first:
+      213: 5966448387139808198
+    second: boss-jelly-king-skill-directions-v1_5
+  - first:
+      213: 6613437564709705642
+    second: boss-jelly-king-skill-directions-v1_6
+  - first:
+      213: 5290452559173669984
+    second: boss-jelly-king-skill-directions-v1_7
+  - first:
+      213: -1271762591402484117
+    second: boss-jelly-king-skill-directions-v1_8
+  - first:
+      213: 2326313143642178657
+    second: boss-jelly-king-skill-directions-v1_9
+  - first:
+      213: 5108922658116794917
+    second: boss-jelly-king-skill-directions-v1_10
+  - first:
+      213: -1135935794460048417
+    second: boss-jelly-king-skill-directions-v1_11
+  - first:
+      213: -5766976575852997598
+    second: boss-jelly-king-skill-directions-v1_12
+  - first:
+      213: 3915735923625992859
+    second: boss-jelly-king-skill-directions-v1_13
+  - first:
+      213: 107586565448440520
+    second: boss-jelly-king-skill-directions-v1_14
+  - first:
+      213: -1921252772716753529
+    second: boss-jelly-king-skill-directions-v1_15
+  - first:
+      213: -4614179432488161775
+    second: boss-jelly-king-skill-directions-v1_16
+  - first:
+      213: -3076514968138355282
+    second: boss-jelly-king-skill-directions-v1_17
+  - first:
+      213: 8885330901780941801
+    second: boss-jelly-king-skill-directions-v1_18
+  - first:
+      213: 5109308340735837074
+    second: boss-jelly-king-skill-directions-v1_19
+  - first:
+      213: -3399537963000041428
+    second: boss-jelly-king-skill-directions-v1_20
+  - first:
+      213: -2869094723066830553
+    second: boss-jelly-king-skill-directions-v1_21
+  - first:
+      213: -5105068563186867593
+    second: boss-jelly-king-skill-directions-v1_22
+  - first:
+      213: 6524934427024433817
+    second: boss-jelly-king-skill-directions-v1_23
+  - first:
+      213: 2587928765544363801
+    second: boss-jelly-king-skill-directions-v1_24
+  - first:
+      213: -1344649834292310427
+    second: boss-jelly-king-skill-directions-v1_25
+  - first:
+      213: 6268707358123138895
+    second: boss-jelly-king-skill-directions-v1_26
+  - first:
+      213: 91764778866371044
+    second: boss-jelly-king-skill-directions-v1_27
+  - first:
+      213: 2222965092374336615
+    second: boss-jelly-king-skill-directions-v1_28
+  - first:
+      213: -8287156678392225410
+    second: boss-jelly-king-skill-directions-v1_29
+  - first:
+      213: 1175860259520305475
+    second: boss-jelly-king-skill-directions-v1_30
+  - first:
+      213: -2660546409936583017
+    second: boss-jelly-king-skill-directions-v1_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 899
+        width: 161
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596e1b395d3d58540800000000000000
+      internalID: 5009643074778949269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1124
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ada2b6eda2972970800000000000000
+      internalID: 8730107678278462888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 900
+        width: 165
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794db21715fbe7a50800000000000000
+      internalID: 6520859666991010967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 899
+        width: 169
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c183d82e2611d0d40800000000000000
+      internalID: 5552113032023062556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 899
+        width: 160
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63168f1873a4fe00800000000000000
+      internalID: 1077665947168674669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 898
+        width: 173
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbab2e42351dc250800000000000000
+      internalID: 5966448387139808198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 899
+        width: 166
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa71fb4fc66a7cb50800000000000000
+      internalID: 6613437564709705642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 679
+        width: 160
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0645a9292967b6940800000000000000
+      internalID: 5290452559173669984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 677
+        width: 160
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e13d449aac95ee0800000000000000
+      internalID: -1271762591402484117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 677
+        width: 153
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1644d139a79b84020800000000000000
+      internalID: 2326313143642178657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 676
+        width: 152
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52afefdd61a86e640800000000000000
+      internalID: 5108922658116794917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 677
+        width: 156
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3ce83d9685c30f0800000000000000
+      internalID: -1135935794460048417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 677
+        width: 159
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2249848eb5597ffa0800000000000000
+      internalID: -5766976575852997598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 465
+        width: 145
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92a6f9731d775630800000000000000
+      internalID: 3915735923625992859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 463
+        width: 160
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca982849693e7100800000000000000
+      internalID: 107586565448440520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 463
+        width: 152
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78dcb7e48c65655e0800000000000000
+      internalID: -1921252772716753529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 462
+        width: 144
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e21acc04427ffb0800000000000000
+      internalID: -4614179432488161775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 461
+        width: 144
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eade0f1cfe50e45d0800000000000000
+      internalID: -3076514968138355282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 461
+        width: 144
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb4470f0690f4b70800000000000000
+      internalID: 8885330901780941801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 255
+        width: 138
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29300899dd8e7e640800000000000000
+      internalID: 5109308340735837074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 254
+        width: 139
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c207de2fb3a62d0d0800000000000000
+      internalID: -3399537963000041428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 435
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72167acec8dee28d0800000000000000
+      internalID: -2869094723066830553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 257
+        width: 149
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772ab3980372729b0800000000000000
+      internalID: -5105068563186867593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 256
+        width: 149
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99222817a493d8a50800000000000000
+      internalID: 6524934427024433817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 254
+        width: 147
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9177946308b2ae320800000000000000
+      internalID: 2587928765544363801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 254
+        width: 151
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e08b79918d65de0800000000000000
+      internalID: -1344649834292310427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 53
+        width: 149
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f9ec1112ceef650800000000000000
+      internalID: 6268707358123138895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 53
+        width: 142
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9e8378493064100800000000000000
+      internalID: 91764778866371044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 51
+        width: 136
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764d01749fe89de10800000000000000
+      internalID: 2222965092374336615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 50
+        width: 140
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71ec6288ea1efc80800000000000000
+      internalID: -8287156678392225410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 48
+        width: 140
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349d4321dae715010800000000000000
+      internalID: 1175860259520305475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-skill-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 49
+        width: 143
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7960a47e227d31bd0800000000000000
+      internalID: -2660546409936583017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boss-jelly-king-skill-directions-v1_0: 5009643074778949269
+      boss-jelly-king-skill-directions-v1_1: 8730107678278462888
+      boss-jelly-king-skill-directions-v1_10: 5108922658116794917
+      boss-jelly-king-skill-directions-v1_11: -1135935794460048417
+      boss-jelly-king-skill-directions-v1_12: -5766976575852997598
+      boss-jelly-king-skill-directions-v1_13: 3915735923625992859
+      boss-jelly-king-skill-directions-v1_14: 107586565448440520
+      boss-jelly-king-skill-directions-v1_15: -1921252772716753529
+      boss-jelly-king-skill-directions-v1_16: -4614179432488161775
+      boss-jelly-king-skill-directions-v1_17: -3076514968138355282
+      boss-jelly-king-skill-directions-v1_18: 8885330901780941801
+      boss-jelly-king-skill-directions-v1_19: 5109308340735837074
+      boss-jelly-king-skill-directions-v1_2: 6520859666991010967
+      boss-jelly-king-skill-directions-v1_20: -3399537963000041428
+      boss-jelly-king-skill-directions-v1_21: -2869094723066830553
+      boss-jelly-king-skill-directions-v1_22: -5105068563186867593
+      boss-jelly-king-skill-directions-v1_23: 6524934427024433817
+      boss-jelly-king-skill-directions-v1_24: 2587928765544363801
+      boss-jelly-king-skill-directions-v1_25: -1344649834292310427
+      boss-jelly-king-skill-directions-v1_26: 6268707358123138895
+      boss-jelly-king-skill-directions-v1_27: 91764778866371044
+      boss-jelly-king-skill-directions-v1_28: 2222965092374336615
+      boss-jelly-king-skill-directions-v1_29: -8287156678392225410
+      boss-jelly-king-skill-directions-v1_3: 5552113032023062556
+      boss-jelly-king-skill-directions-v1_30: 1175860259520305475
+      boss-jelly-king-skill-directions-v1_31: -2660546409936583017
+      boss-jelly-king-skill-directions-v1_4: 1077665947168674669
+      boss-jelly-king-skill-directions-v1_5: 5966448387139808198
+      boss-jelly-king-skill-directions-v1_6: 6613437564709705642
+      boss-jelly-king-skill-directions-v1_7: 5290452559173669984
+      boss-jelly-king-skill-directions-v1_8: -1271762591402484117
+      boss-jelly-king-skill-directions-v1_9: 2326313143642178657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

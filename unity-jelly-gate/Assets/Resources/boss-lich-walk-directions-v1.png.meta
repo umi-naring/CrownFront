@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 6084a6b0f5e7f19499f0ec0e48901ae0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2288445790938385756
+    second: boss-lich-walk-directions-v1_0
+  - first:
+      213: -8350134091787228460
+    second: boss-lich-walk-directions-v1_1
+  - first:
+      213: -8104838128251766532
+    second: boss-lich-walk-directions-v1_2
+  - first:
+      213: -7427324919180408660
+    second: boss-lich-walk-directions-v1_3
+  - first:
+      213: 2291755587086325878
+    second: boss-lich-walk-directions-v1_4
+  - first:
+      213: -8363362941253248965
+    second: boss-lich-walk-directions-v1_5
+  - first:
+      213: 2376839241500863702
+    second: boss-lich-walk-directions-v1_6
+  - first:
+      213: 4983700809768621431
+    second: boss-lich-walk-directions-v1_7
+  - first:
+      213: -1027021428028657353
+    second: boss-lich-walk-directions-v1_8
+  - first:
+      213: -7173247589759600380
+    second: boss-lich-walk-directions-v1_9
+  - first:
+      213: 5386852527999286992
+    second: boss-lich-walk-directions-v1_10
+  - first:
+      213: -3172115556000900832
+    second: boss-lich-walk-directions-v1_11
+  - first:
+      213: 2942362669879798623
+    second: boss-lich-walk-directions-v1_12
+  - first:
+      213: -2712286681330695244
+    second: boss-lich-walk-directions-v1_13
+  - first:
+      213: 6353450085626539856
+    second: boss-lich-walk-directions-v1_14
+  - first:
+      213: 4178640646391950069
+    second: boss-lich-walk-directions-v1_15
+  - first:
+      213: 3221512307814625299
+    second: boss-lich-walk-directions-v1_16
+  - first:
+      213: -3010957255477518063
+    second: boss-lich-walk-directions-v1_17
+  - first:
+      213: -8269520165814740571
+    second: boss-lich-walk-directions-v1_18
+  - first:
+      213: 4316651398345226616
+    second: boss-lich-walk-directions-v1_19
+  - first:
+      213: -1988304456922281911
+    second: boss-lich-walk-directions-v1_20
+  - first:
+      213: -1431508518268482280
+    second: boss-lich-walk-directions-v1_21
+  - first:
+      213: -4011351155616703331
+    second: boss-lich-walk-directions-v1_22
+  - first:
+      213: -8838256263857326884
+    second: boss-lich-walk-directions-v1_23
+  - first:
+      213: 6103346328665837046
+    second: boss-lich-walk-directions-v1_24
+  - first:
+      213: 5986384271231626611
+    second: boss-lich-walk-directions-v1_25
+  - first:
+      213: 5487169552702621226
+    second: boss-lich-walk-directions-v1_26
+  - first:
+      213: -7822278889687105939
+    second: boss-lich-walk-directions-v1_27
+  - first:
+      213: 6720557366817519514
+    second: boss-lich-walk-directions-v1_28
+  - first:
+      213: 2805782073106548899
+    second: boss-lich-walk-directions-v1_29
+  - first:
+      213: -998569368298077642
+    second: boss-lich-walk-directions-v1_30
+  - first:
+      213: -2148815399672655940
+    second: boss-lich-walk-directions-v1_31
+  - first:
+      213: 1288399878631872978
+    second: boss-lich-walk-directions-v1_32
+  - first:
+      213: -5485849151423259793
+    second: boss-lich-walk-directions-v1_33
+  - first:
+      213: 5914844024655997078
+    second: boss-lich-walk-directions-v1_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 909
+        width: 168
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a231678daecd30e0800000000000000
+      internalID: -2288445790938385756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 906
+        width: 172
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4daa420d84d5e1c80800000000000000
+      internalID: -8350134091787228460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 906
+        width: 167
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8f283e9a4d58f80800000000000000
+      internalID: -8104838128251766532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 907
+        width: 162
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca848d07657dce890800000000000000
+      internalID: -7427324919180408660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 906
+        width: 163
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6781c407093fdcf10800000000000000
+      internalID: 2291755587086325878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 906
+        width: 173
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b381fe647bd5feb80800000000000000
+      internalID: -8363362941253248965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 907
+        width: 162
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc2ed572ba3cf020800000000000000
+      internalID: 2376839241500863702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 672
+        width: 158
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775d5115b79a92540800000000000000
+      internalID: 4983700809768621431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 669
+        width: 165
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73133add3794fb1f0800000000000000
+      internalID: -1027021428028657353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 670
+        width: 170
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409b3769251837c90800000000000000
+      internalID: -7173247589759600380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 669
+        width: 161
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0deffcc55d1f1ca40800000000000000
+      internalID: 5386852527999286992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 669
+        width: 171
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029531a55b16af3d0800000000000000
+      internalID: -3172115556000900832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 667
+        width: 153
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b2e8a424f55d820800000000000000
+      internalID: 2942362669879798623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 670
+        width: 154
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3c24632a50c5ad0800000000000000
+      internalID: -2712286681330695244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 446
+        width: 138
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fe1fbd03dfb2850800000000000000
+      internalID: 6353450085626539856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 446
+        width: 139
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa633c47838df930800000000000000
+      internalID: 4178640646391950069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 446
+        width: 146
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310f6da206c15bc20800000000000000
+      internalID: 3221512307814625299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 445
+        width: 139
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111a061345ee636d0800000000000000
+      internalID: -3010957255477518063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 442
+        width: 162
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9dea51933cc3d80800000000000000
+      internalID: -8269520165814740571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 441
+        width: 147
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8797f818393d7eb30800000000000000
+      internalID: 4316651398345226616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 439
+        width: 143
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94842d381af1864e0800000000000000
+      internalID: -1988304456922281911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 249
+        width: 164
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d49ab4692422ce0800000000000000
+      internalID: -1431508518268482280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 249
+        width: 161
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c1d148061d458c0800000000000000
+      internalID: -4011351155616703331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 246
+        width: 145
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4b9ee41c4385580800000000000000
+      internalID: -8838256263857326884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 247
+        width: 157
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdcf45262173b450800000000000000
+      internalID: 6103346328665837046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 246
+        width: 157
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d2fb707c8e31350800000000000000
+      internalID: 5986384271231626611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 245
+        width: 157
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26cd2bc2a7562c40800000000000000
+      internalID: 5487169552702621226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 246
+        width: 159
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6eb9264bcea17390800000000000000
+      internalID: -7822278889687105939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 47
+        width: 134
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97facd6157344d50800000000000000
+      internalID: 6720557366817519514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 47
+        width: 151
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8cca80ee320f620800000000000000
+      internalID: 2805782073106548899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 44
+        width: 132
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632c10f337e5422f0800000000000000
+      internalID: -998569368298077642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 47
+        width: 143
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf4f9667cfdd22e0800000000000000
+      internalID: -2148815399672655940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 47
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d952860dd051e110800000000000000
+      internalID: 1288399878631872978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 48
+        width: 145
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bd90613495ed3b0800000000000000
+      internalID: -5485849151423259793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-walk-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 46
+        width: 146
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698667f5d4fb51250800000000000000
+      internalID: 5914844024655997078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boss-lich-walk-directions-v1_0: -2288445790938385756
+      boss-lich-walk-directions-v1_1: -8350134091787228460
+      boss-lich-walk-directions-v1_10: 5386852527999286992
+      boss-lich-walk-directions-v1_11: -3172115556000900832
+      boss-lich-walk-directions-v1_12: 2942362669879798623
+      boss-lich-walk-directions-v1_13: -2712286681330695244
+      boss-lich-walk-directions-v1_14: 6353450085626539856
+      boss-lich-walk-directions-v1_15: 4178640646391950069
+      boss-lich-walk-directions-v1_16: 3221512307814625299
+      boss-lich-walk-directions-v1_17: -3010957255477518063
+      boss-lich-walk-directions-v1_18: -8269520165814740571
+      boss-lich-walk-directions-v1_19: 4316651398345226616
+      boss-lich-walk-directions-v1_2: -8104838128251766532
+      boss-lich-walk-directions-v1_20: -1988304456922281911
+      boss-lich-walk-directions-v1_21: -1431508518268482280
+      boss-lich-walk-directions-v1_22: -4011351155616703331
+      boss-lich-walk-directions-v1_23: -8838256263857326884
+      boss-lich-walk-directions-v1_24: 6103346328665837046
+      boss-lich-walk-directions-v1_25: 5986384271231626611
+      boss-lich-walk-directions-v1_26: 5487169552702621226
+      boss-lich-walk-directions-v1_27: -7822278889687105939
+      boss-lich-walk-directions-v1_28: 6720557366817519514
+      boss-lich-walk-directions-v1_29: 2805782073106548899
+      boss-lich-walk-directions-v1_3: -7427324919180408660
+      boss-lich-walk-directions-v1_30: -998569368298077642
+      boss-lich-walk-directions-v1_31: -2148815399672655940
+      boss-lich-walk-directions-v1_32: 1288399878631872978
+      boss-lich-walk-directions-v1_33: -5485849151423259793
+      boss-lich-walk-directions-v1_34: 5914844024655997078
+      boss-lich-walk-directions-v1_4: 2291755587086325878
+      boss-lich-walk-directions-v1_5: -8363362941253248965
+      boss-lich-walk-directions-v1_6: 2376839241500863702
+      boss-lich-walk-directions-v1_7: 4983700809768621431
+      boss-lich-walk-directions-v1_8: -1027021428028657353
+      boss-lich-walk-directions-v1_9: -7173247589759600380
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

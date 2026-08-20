@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: b5a4c7013a0fd904290f07008cebce71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3189559284491614587
+    second: enemy-silence-shroud-skill-directions-v1_0
+  - first:
+      213: 2234317102870171926
+    second: enemy-silence-shroud-skill-directions-v1_1
+  - first:
+      213: -1074010866806300996
+    second: enemy-silence-shroud-skill-directions-v1_2
+  - first:
+      213: -6891353192589480861
+    second: enemy-silence-shroud-skill-directions-v1_3
+  - first:
+      213: 1853203475058850015
+    second: enemy-silence-shroud-skill-directions-v1_4
+  - first:
+      213: 4162179386949405088
+    second: enemy-silence-shroud-skill-directions-v1_5
+  - first:
+      213: -8201204512060941052
+    second: enemy-silence-shroud-skill-directions-v1_6
+  - first:
+      213: 8983212509411362946
+    second: enemy-silence-shroud-skill-directions-v1_7
+  - first:
+      213: -7124010144519908476
+    second: enemy-silence-shroud-skill-directions-v1_8
+  - first:
+      213: -7127444141679304144
+    second: enemy-silence-shroud-skill-directions-v1_9
+  - first:
+      213: 1536466204865410942
+    second: enemy-silence-shroud-skill-directions-v1_10
+  - first:
+      213: -4357005455585138797
+    second: enemy-silence-shroud-skill-directions-v1_11
+  - first:
+      213: 7777976771301994740
+    second: enemy-silence-shroud-skill-directions-v1_12
+  - first:
+      213: 3703145457983526201
+    second: enemy-silence-shroud-skill-directions-v1_13
+  - first:
+      213: 4801685283293878557
+    second: enemy-silence-shroud-skill-directions-v1_14
+  - first:
+      213: -6261984894173029642
+    second: enemy-silence-shroud-skill-directions-v1_15
+  - first:
+      213: -4680590523153024860
+    second: enemy-silence-shroud-skill-directions-v1_16
+  - first:
+      213: 7673148087411501423
+    second: enemy-silence-shroud-skill-directions-v1_17
+  - first:
+      213: -7301663578412411503
+    second: enemy-silence-shroud-skill-directions-v1_18
+  - first:
+      213: -389206159630848714
+    second: enemy-silence-shroud-skill-directions-v1_19
+  - first:
+      213: -9215937227410547497
+    second: enemy-silence-shroud-skill-directions-v1_20
+  - first:
+      213: -6789361086145969720
+    second: enemy-silence-shroud-skill-directions-v1_21
+  - first:
+      213: -7969030774177886835
+    second: enemy-silence-shroud-skill-directions-v1_22
+  - first:
+      213: -7269771903183461158
+    second: enemy-silence-shroud-skill-directions-v1_23
+  - first:
+      213: -5883903278507791640
+    second: enemy-silence-shroud-skill-directions-v1_24
+  - first:
+      213: -8413559899127995715
+    second: enemy-silence-shroud-skill-directions-v1_25
+  - first:
+      213: 1447225641943575839
+    second: enemy-silence-shroud-skill-directions-v1_26
+  - first:
+      213: -3729067123396476184
+    second: enemy-silence-shroud-skill-directions-v1_27
+  - first:
+      213: 4786588890201833617
+    second: enemy-silence-shroud-skill-directions-v1_28
+  - first:
+      213: 8031461170565248048
+    second: enemy-silence-shroud-skill-directions-v1_29
+  - first:
+      213: 4755353003781037812
+    second: enemy-silence-shroud-skill-directions-v1_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 820
+        width: 178
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58604d1dab86cb3d0800000000000000
+      internalID: -3189559284491614587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 820
+        width: 180
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61118203193e10f10800000000000000
+      internalID: 2234317102870171926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 820
+        width: 144
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbed9179ec85811f0800000000000000
+      internalID: -1074010866806300996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 820
+        width: 146
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c23f588cefc50a0800000000000000
+      internalID: -6891353192589480861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 821
+        width: 144
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8f66bedb6e7b910800000000000000
+      internalID: 1853203475058850015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 820
+        width: 153
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9829aa91803c930800000000000000
+      internalID: 4162179386949405088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 624
+        width: 169
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40dd648b2f77f2e80800000000000000
+      internalID: -8201204512060941052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 624
+        width: 167
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2884f45ae28caac70800000000000000
+      internalID: 8983212509411362946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 624
+        width: 134
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4839c97a48e622d90800000000000000
+      internalID: -7124010144519908476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 625
+        width: 142
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03224c2e05b361d90800000000000000
+      internalID: -7127444141679304144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 625
+        width: 130
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77356e6fdf925510800000000000000
+      internalID: 1536466204865410942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 625
+        width: 149
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397a86f5f9ec883c0800000000000000
+      internalID: -4357005455585138797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 436
+        width: 153
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0f1bcf9ace0fb60800000000000000
+      internalID: 7777976771301994740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 436
+        width: 152
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93595b68c27346330800000000000000
+      internalID: 3703145457983526201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 436
+        width: 135
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19d3f1235303a240800000000000000
+      internalID: 4801685283293878557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 436
+        width: 139
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa54f98ae5f819a0800000000000000
+      internalID: -6261984894173029642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 436
+        width: 127
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a87760d7b33b0fb0800000000000000
+      internalID: -4680590523153024860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 436
+        width: 132
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69612b088f7c7a60800000000000000
+      internalID: 7673148087411501423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 243
+        width: 144
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195125b49a74baa90800000000000000
+      internalID: -7301663578412411503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 243
+        width: 141
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d2fc65f03499af0800000000000000
+      internalID: -389206159630848714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 329
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc55e77be96a1080800000000000000
+      internalID: -9215937227410547497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 244
+        width: 142
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1c860501857c1a0800000000000000
+      internalID: -6789361086145969720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 244
+        width: 139
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d88fc8bb0586190800000000000000
+      internalID: -7969030774177886835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 245
+        width: 128
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad462a098f49c1b90800000000000000
+      internalID: -7269771903183461158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 243
+        width: 129
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea69c7742d285ea0800000000000000
+      internalID: -5883903278507791640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 38
+        width: 163
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2210449d70d3b80800000000000000
+      internalID: -8413559899127995715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 38
+        width: 161
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d22e9bd04951410800000000000000
+      internalID: 1447225641943575839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 38
+        width: 141
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e28d5e6531bf3cc0800000000000000
+      internalID: -3729067123396476184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 38
+        width: 144
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190cf463c316d6240800000000000000
+      internalID: 4786588890201833617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 38
+        width: 136
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03472e2d16b757f60800000000000000
+      internalID: 8031461170565248048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-skill-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 38
+        width: 151
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe94fbac586ef140800000000000000
+      internalID: 4755353003781037812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy-silence-shroud-skill-directions-v1_0: -3189559284491614587
+      enemy-silence-shroud-skill-directions-v1_1: 2234317102870171926
+      enemy-silence-shroud-skill-directions-v1_10: 1536466204865410942
+      enemy-silence-shroud-skill-directions-v1_11: -4357005455585138797
+      enemy-silence-shroud-skill-directions-v1_12: 7777976771301994740
+      enemy-silence-shroud-skill-directions-v1_13: 3703145457983526201
+      enemy-silence-shroud-skill-directions-v1_14: 4801685283293878557
+      enemy-silence-shroud-skill-directions-v1_15: -6261984894173029642
+      enemy-silence-shroud-skill-directions-v1_16: -4680590523153024860
+      enemy-silence-shroud-skill-directions-v1_17: 7673148087411501423
+      enemy-silence-shroud-skill-directions-v1_18: -7301663578412411503
+      enemy-silence-shroud-skill-directions-v1_19: -389206159630848714
+      enemy-silence-shroud-skill-directions-v1_2: -1074010866806300996
+      enemy-silence-shroud-skill-directions-v1_20: -9215937227410547497
+      enemy-silence-shroud-skill-directions-v1_21: -6789361086145969720
+      enemy-silence-shroud-skill-directions-v1_22: -7969030774177886835
+      enemy-silence-shroud-skill-directions-v1_23: -7269771903183461158
+      enemy-silence-shroud-skill-directions-v1_24: -5883903278507791640
+      enemy-silence-shroud-skill-directions-v1_25: -8413559899127995715
+      enemy-silence-shroud-skill-directions-v1_26: 1447225641943575839
+      enemy-silence-shroud-skill-directions-v1_27: -3729067123396476184
+      enemy-silence-shroud-skill-directions-v1_28: 4786588890201833617
+      enemy-silence-shroud-skill-directions-v1_29: 8031461170565248048
+      enemy-silence-shroud-skill-directions-v1_3: -6891353192589480861
+      enemy-silence-shroud-skill-directions-v1_30: 4755353003781037812
+      enemy-silence-shroud-skill-directions-v1_4: 1853203475058850015
+      enemy-silence-shroud-skill-directions-v1_5: 4162179386949405088
+      enemy-silence-shroud-skill-directions-v1_6: -8201204512060941052
+      enemy-silence-shroud-skill-directions-v1_7: 8983212509411362946
+      enemy-silence-shroud-skill-directions-v1_8: -7124010144519908476
+      enemy-silence-shroud-skill-directions-v1_9: -7127444141679304144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

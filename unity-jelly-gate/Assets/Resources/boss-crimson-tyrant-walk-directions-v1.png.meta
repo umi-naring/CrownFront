@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: ae584bb2c5bf9c243895ab92cd11e32a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4462561905421103046
+    second: boss-crimson-tyrant-walk-directions-v1_0
+  - first:
+      213: 6796892184050639757
+    second: boss-crimson-tyrant-walk-directions-v1_1
+  - first:
+      213: 6508272583764350650
+    second: boss-crimson-tyrant-walk-directions-v1_2
+  - first:
+      213: -7719339153439814317
+    second: boss-crimson-tyrant-walk-directions-v1_3
+  - first:
+      213: 881423970798135271
+    second: boss-crimson-tyrant-walk-directions-v1_4
+  - first:
+      213: -9171233285485501409
+    second: boss-crimson-tyrant-walk-directions-v1_5
+  - first:
+      213: -8248310617709910343
+    second: boss-crimson-tyrant-walk-directions-v1_6
+  - first:
+      213: 5140535097075570994
+    second: boss-crimson-tyrant-walk-directions-v1_7
+  - first:
+      213: 8723995903335039758
+    second: boss-crimson-tyrant-walk-directions-v1_8
+  - first:
+      213: 8201223148602770635
+    second: boss-crimson-tyrant-walk-directions-v1_9
+  - first:
+      213: -2988724738428338021
+    second: boss-crimson-tyrant-walk-directions-v1_10
+  - first:
+      213: -909791348294802090
+    second: boss-crimson-tyrant-walk-directions-v1_11
+  - first:
+      213: 5147246718507022540
+    second: boss-crimson-tyrant-walk-directions-v1_12
+  - first:
+      213: 501716712742203501
+    second: boss-crimson-tyrant-walk-directions-v1_13
+  - first:
+      213: 1485489721092904979
+    second: boss-crimson-tyrant-walk-directions-v1_14
+  - first:
+      213: 7507479768131248461
+    second: boss-crimson-tyrant-walk-directions-v1_15
+  - first:
+      213: -4431642084424827434
+    second: boss-crimson-tyrant-walk-directions-v1_16
+  - first:
+      213: 3431173327415613434
+    second: boss-crimson-tyrant-walk-directions-v1_17
+  - first:
+      213: -3552530156283631358
+    second: boss-crimson-tyrant-walk-directions-v1_18
+  - first:
+      213: 5026288666167323829
+    second: boss-crimson-tyrant-walk-directions-v1_19
+  - first:
+      213: 1229215989175374611
+    second: boss-crimson-tyrant-walk-directions-v1_20
+  - first:
+      213: 7648165792411096755
+    second: boss-crimson-tyrant-walk-directions-v1_21
+  - first:
+      213: 7672698390691094452
+    second: boss-crimson-tyrant-walk-directions-v1_22
+  - first:
+      213: -6916509730469753703
+    second: boss-crimson-tyrant-walk-directions-v1_23
+  - first:
+      213: -2323905617881711657
+    second: boss-crimson-tyrant-walk-directions-v1_24
+  - first:
+      213: 4773858255253887346
+    second: boss-crimson-tyrant-walk-directions-v1_25
+  - first:
+      213: 7372134507398203714
+    second: boss-crimson-tyrant-walk-directions-v1_26
+  - first:
+      213: -352369463956091241
+    second: boss-crimson-tyrant-walk-directions-v1_27
+  - first:
+      213: 5834236254169000919
+    second: boss-crimson-tyrant-walk-directions-v1_28
+  - first:
+      213: -6167543093316155084
+    second: boss-crimson-tyrant-walk-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 933
+        width: 140
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfa0d8c8643eed30800000000000000
+      internalID: 4462561905421103046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 932
+        width: 145
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83a7fe0e69635e50800000000000000
+      internalID: 6796892184050639757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 933
+        width: 174
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab610b0ce67025a50800000000000000
+      internalID: 6508272583764350650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 931
+        width: 158
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d847250f56fd490800000000000000
+      internalID: -7719339153439814317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 931
+        width: 166
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7efe37e627b3c00800000000000000
+      internalID: 881423970798135271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 931
+        width: 148
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14e56a0beb39b080800000000000000
+      internalID: -9171233285485501409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 718
+        width: 159
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b66152d13d188d80800000000000000
+      internalID: -8248310617709910343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 719
+        width: 164
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2391e906f69d65740800000000000000
+      internalID: 5140535097075570994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 719
+        width: 160
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e038f386d0cd11970800000000000000
+      internalID: 8723995903335039758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 718
+        width: 156
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4cd20700990d170800000000000000
+      internalID: 8201223148602770635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 718
+        width: 162
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b908e827faae586d0800000000000000
+      internalID: -2988724738428338021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 717
+        width: 160
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6552a29c695cf53f0800000000000000
+      internalID: -909791348294802090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 505
+        width: 152
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8f7e38e91be6740800000000000000
+      internalID: 5147246718507022540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 504
+        width: 151
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6030e821b476f600800000000000000
+      internalID: 501716712742203501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 505
+        width: 155
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3189c37e7058d9410800000000000000
+      internalID: 1485489721092904979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 504
+        width: 144
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4125e1a21def2860800000000000000
+      internalID: 7507479768131248461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 504
+        width: 146
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ddbf2a0105af72c0800000000000000
+      internalID: -4431642084424827434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 504
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7176f46f9fd9f20800000000000000
+      internalID: 3431173327415613434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 302
+        width: 126
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209e9dc15a0e2bec0800000000000000
+      internalID: -3552530156283631358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 302
+        width: 145
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bca97559e6f0c540800000000000000
+      internalID: 5026288666167323829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 301
+        width: 140
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3135703fd6d0f0110800000000000000
+      internalID: 1229215989175374611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 300
+        width: 138
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b615f7344eb32a60800000000000000
+      internalID: 7648165792411096755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 299
+        width: 133
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf9addd886ea7a60800000000000000
+      internalID: 7672698390691094452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 300
+        width: 129
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c41dd9b0f9300a0800000000000000
+      internalID: -6916509730469753703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 90
+        width: 125
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db30a23724dfbfd0800000000000000
+      internalID: -2323905617881711657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 92
+        width: 147
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27959784ac6204240800000000000000
+      internalID: 4773858255253887346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 90
+        width: 139
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2498ed576451f4660800000000000000
+      internalID: 7372134507398203714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 89
+        width: 139
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ec337e6d12c1bf0800000000000000
+      internalID: -352369463956091241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 89
+        width: 139
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbe27946fe57f050800000000000000
+      internalID: 5834236254169000919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-walk-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 86
+        width: 136
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4390af1db3c786aa0800000000000000
+      internalID: -6167543093316155084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

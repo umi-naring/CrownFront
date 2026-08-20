@@ -1,0 +1,1043 @@
+fileFormatVersion: 2
+guid: b17e98baf8269484a90f365ebfb8d2e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3459554700080258959
+    second: boss-abyss-sovereign-skill-directions-v1_0
+  - first:
+      213: 1413855517163360668
+    second: boss-abyss-sovereign-skill-directions-v1_1
+  - first:
+      213: 8039351396337783119
+    second: boss-abyss-sovereign-skill-directions-v1_2
+  - first:
+      213: 414472264107868198
+    second: boss-abyss-sovereign-skill-directions-v1_3
+  - first:
+      213: 2405094598001012833
+    second: boss-abyss-sovereign-skill-directions-v1_4
+  - first:
+      213: -1635620028055530252
+    second: boss-abyss-sovereign-skill-directions-v1_5
+  - first:
+      213: 5216386757361901578
+    second: boss-abyss-sovereign-skill-directions-v1_6
+  - first:
+      213: 7597457279845328367
+    second: boss-abyss-sovereign-skill-directions-v1_7
+  - first:
+      213: -3585431727277171991
+    second: boss-abyss-sovereign-skill-directions-v1_8
+  - first:
+      213: 6677755274218611732
+    second: boss-abyss-sovereign-skill-directions-v1_9
+  - first:
+      213: 4347321246715563963
+    second: boss-abyss-sovereign-skill-directions-v1_10
+  - first:
+      213: -944549949578227084
+    second: boss-abyss-sovereign-skill-directions-v1_11
+  - first:
+      213: -8557944846587140522
+    second: boss-abyss-sovereign-skill-directions-v1_12
+  - first:
+      213: 5354980217804099423
+    second: boss-abyss-sovereign-skill-directions-v1_13
+  - first:
+      213: -5403735478100501307
+    second: boss-abyss-sovereign-skill-directions-v1_14
+  - first:
+      213: 7746839365096231380
+    second: boss-abyss-sovereign-skill-directions-v1_15
+  - first:
+      213: 3118987730685325880
+    second: boss-abyss-sovereign-skill-directions-v1_16
+  - first:
+      213: -1911598858322792032
+    second: boss-abyss-sovereign-skill-directions-v1_17
+  - first:
+      213: -4357520398680163028
+    second: boss-abyss-sovereign-skill-directions-v1_18
+  - first:
+      213: -5680040613569258709
+    second: boss-abyss-sovereign-skill-directions-v1_19
+  - first:
+      213: -4856764127118902905
+    second: boss-abyss-sovereign-skill-directions-v1_20
+  - first:
+      213: -4699695724920569852
+    second: boss-abyss-sovereign-skill-directions-v1_21
+  - first:
+      213: 4716230108623896543
+    second: boss-abyss-sovereign-skill-directions-v1_22
+  - first:
+      213: -5538272588023632453
+    second: boss-abyss-sovereign-skill-directions-v1_23
+  - first:
+      213: 567226875039361346
+    second: boss-abyss-sovereign-skill-directions-v1_24
+  - first:
+      213: -2964838248947605695
+    second: boss-abyss-sovereign-skill-directions-v1_25
+  - first:
+      213: 4996901024531058399
+    second: boss-abyss-sovereign-skill-directions-v1_26
+  - first:
+      213: -4755670283162461609
+    second: boss-abyss-sovereign-skill-directions-v1_27
+  - first:
+      213: -5604559680420248088
+    second: boss-abyss-sovereign-skill-directions-v1_28
+  - first:
+      213: 5101482068946582922
+    second: boss-abyss-sovereign-skill-directions-v1_29
+  - first:
+      213: -1920718182696276346
+    second: boss-abyss-sovereign-skill-directions-v1_30
+  - first:
+      213: -4281857806465439382
+    second: boss-abyss-sovereign-skill-directions-v1_31
+  - first:
+      213: 2907770855208861969
+    second: boss-abyss-sovereign-skill-directions-v1_32
+  - first:
+      213: 632169751859271431
+    second: boss-abyss-sovereign-skill-directions-v1_33
+  - first:
+      213: 8921246432476031971
+    second: boss-abyss-sovereign-skill-directions-v1_34
+  - first:
+      213: 1774658581458091121
+    second: boss-abyss-sovereign-skill-directions-v1_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 914
+        width: 131
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f11539baec20030800000000000000
+      internalID: 3459554700080258959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 914
+        width: 138
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c919f381a160f9310800000000000000
+      internalID: 1413855517163360668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 907
+        width: 130
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41114b2083819f60800000000000000
+      internalID: 8039351396337783119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 898
+        width: 181
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620c667045080c500800000000000000
+      internalID: 414472264107868198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 900
+        width: 185
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160bf0d4bcc906120800000000000000
+      internalID: 2405094598001012833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 910
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f45c38104c1d49e0800000000000000
+      internalID: -1635620028055530252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 914
+        width: 127
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00ab934e14546840800000000000000
+      internalID: 5216386757361901578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 681
+        width: 122
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5e26994279f6960800000000000000
+      internalID: 7597457279845328367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 681
+        width: 143
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea9a3927dcfd3ec0800000000000000
+      internalID: -3585431727277171991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 673
+        width: 145
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414aac8aa072cac50800000000000000
+      internalID: 6677755274218611732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 663
+        width: 200
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf4dfa04a9c45c30800000000000000
+      internalID: 4347321246715563963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 664
+        width: 199
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472d6c643d844e2f0800000000000000
+      internalID: -944549949578227084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 670
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656e9c301821c3980800000000000000
+      internalID: -8557944846587140522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 682
+        width: 124
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f057dd226b05a40800000000000000
+      internalID: 5354980217804099423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 447
+        width: 115
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ccd4af76331205b0800000000000000
+      internalID: -5403735478100501307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 450
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1d298ab5d428b60800000000000000
+      internalID: 7746839365096231380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 441
+        width: 141
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832fc42e0ded84b20800000000000000
+      internalID: 3118987730685325880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 432
+        width: 200
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1b0a867f2a875e0800000000000000
+      internalID: -1911598858322792032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 437
+        width: 204
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d7627d84af683c0800000000000000
+      internalID: -4357520398680163028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 439
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b9966f7217c21b0800000000000000
+      internalID: -5680040613569258709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 448
+        width: 114
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789b73532ce499cb0800000000000000
+      internalID: -4856764127118902905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 231
+        width: 119
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40000b363a357ceb0800000000000000
+      internalID: -4699695724920569852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 231
+        width: 136
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf778fcb4a637140800000000000000
+      internalID: 4716230108623896543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 231
+        width: 136
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd61999c6a1423b0800000000000000
+      internalID: -5538272588023632453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 224
+        width: 187
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249a6c966d13fd700800000000000000
+      internalID: 567226875039361346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 223
+        width: 187
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f9cfa2257cad6d0800000000000000
+      internalID: -2964838248947605695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 231
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde85f0d10f885540800000000000000
+      internalID: 4996901024531058399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 231
+        width: 118
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a5837f217700eb0800000000000000
+      internalID: -4755670283162461609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 27
+        width: 115
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e503163aaa9832b0800000000000000
+      internalID: -5604559680420248088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 28
+        width: 110
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8df593b9ea1cc640800000000000000
+      internalID: 5101482068946582922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 28
+        width: 117
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e21ce3dfc3855e0800000000000000
+      internalID: -1920718182696276346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 20
+        width: 195
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69e4e2e209c394c0800000000000000
+      internalID: -4281857806465439382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 32
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11145f0df2a7a5820800000000000000
+      internalID: 2907770855208861969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 20
+        width: 163
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70791593a0be5c800800000000000000
+      internalID: 632169751859271431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 25
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb64711d52aecb70800000000000000
+      internalID: 8921246432476031971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-skill-directions-v1_35
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 27
+        width: 114
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c7869c39ad0a810800000000000000
+      internalID: 1774658581458091121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

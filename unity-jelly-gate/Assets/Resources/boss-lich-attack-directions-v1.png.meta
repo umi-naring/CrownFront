@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: 7b7374a970ea3fd48b75e317613adfcf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3728600817272883024
+    second: boss-lich-attack-directions-v1_0
+  - first:
+      213: 9217166761068112070
+    second: boss-lich-attack-directions-v1_1
+  - first:
+      213: 3940574075930306217
+    second: boss-lich-attack-directions-v1_2
+  - first:
+      213: -6269094940134764200
+    second: boss-lich-attack-directions-v1_3
+  - first:
+      213: -723964965778257744
+    second: boss-lich-attack-directions-v1_4
+  - first:
+      213: -7385975490108734405
+    second: boss-lich-attack-directions-v1_5
+  - first:
+      213: 1308149786677839169
+    second: boss-lich-attack-directions-v1_6
+  - first:
+      213: 558133127461653751
+    second: boss-lich-attack-directions-v1_7
+  - first:
+      213: -3198927590376145673
+    second: boss-lich-attack-directions-v1_8
+  - first:
+      213: -8232093080075305061
+    second: boss-lich-attack-directions-v1_9
+  - first:
+      213: 6679285832497938451
+    second: boss-lich-attack-directions-v1_10
+  - first:
+      213: 100282809371135078
+    second: boss-lich-attack-directions-v1_11
+  - first:
+      213: -7038486911997901977
+    second: boss-lich-attack-directions-v1_12
+  - first:
+      213: 6167864450361661184
+    second: boss-lich-attack-directions-v1_13
+  - first:
+      213: 8114287006917173630
+    second: boss-lich-attack-directions-v1_14
+  - first:
+      213: 1116321811956574036
+    second: boss-lich-attack-directions-v1_15
+  - first:
+      213: 7092093440747442114
+    second: boss-lich-attack-directions-v1_16
+  - first:
+      213: 547542996502686830
+    second: boss-lich-attack-directions-v1_17
+  - first:
+      213: -7088638055109818648
+    second: boss-lich-attack-directions-v1_18
+  - first:
+      213: 1858092105661588882
+    second: boss-lich-attack-directions-v1_19
+  - first:
+      213: 1951467394805088947
+    second: boss-lich-attack-directions-v1_20
+  - first:
+      213: 5611092314297871320
+    second: boss-lich-attack-directions-v1_21
+  - first:
+      213: -9212050988492088170
+    second: boss-lich-attack-directions-v1_22
+  - first:
+      213: -1939036840767588042
+    second: boss-lich-attack-directions-v1_23
+  - first:
+      213: -5978249425513423022
+    second: boss-lich-attack-directions-v1_24
+  - first:
+      213: -8878971988304150745
+    second: boss-lich-attack-directions-v1_25
+  - first:
+      213: 8206349331516688165
+    second: boss-lich-attack-directions-v1_26
+  - first:
+      213: -1069739226155262521
+    second: boss-lich-attack-directions-v1_27
+  - first:
+      213: -4647646947171254171
+    second: boss-lich-attack-directions-v1_28
+  - first:
+      213: 1487020906371654407
+    second: boss-lich-attack-directions-v1_29
+  - first:
+      213: -7540304515692218596
+    second: boss-lich-attack-directions-v1_30
+  - first:
+      213: -4960967785162178273
+    second: boss-lich-attack-directions-v1_31
+  - first:
+      213: -8852810557900655781
+    second: boss-lich-attack-directions-v1_32
+  - first:
+      213: -8643593482505871255
+    second: boss-lich-attack-directions-v1_33
+  - first:
+      213: 6786676975553710964
+    second: boss-lich-attack-directions-v1_34
+  - first:
+      213: -9169740800938917096
+    second: boss-lich-attack-directions-v1_35
+  - first:
+      213: 5151849731307674206
+    second: boss-lich-attack-directions-v1_36
+  - first:
+      213: 5652284069710834550
+    second: boss-lich-attack-directions-v1_37
+  - first:
+      213: 5911457510525653652
+    second: boss-lich-attack-directions-v1_38
+  - first:
+      213: 4700753473623177024
+    second: boss-lich-attack-directions-v1_39
+  - first:
+      213: -6283328896525890221
+    second: boss-lich-attack-directions-v1_40
+  - first:
+      213: -3566263100585467829
+    second: boss-lich-attack-directions-v1_41
+  - first:
+      213: -5903697333989492512
+    second: boss-lich-attack-directions-v1_42
+  - first:
+      213: 5155458829017347584
+    second: boss-lich-attack-directions-v1_43
+  - first:
+      213: 7213544549133075999
+    second: boss-lich-attack-directions-v1_44
+  - first:
+      213: 1580703999030830308
+    second: boss-lich-attack-directions-v1_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1051
+        width: 171
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8f739cf49514cc0800000000000000
+      internalID: -3728600817272883024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1051
+        width: 180
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8a005a554f9ef70800000000000000
+      internalID: 9217166761068112070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1051
+        width: 284
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a660f67e3bbfa630800000000000000
+      internalID: 3940574075930306217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1052
+        width: 211
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8519116fd53bff8a0800000000000000
+      internalID: -6269094940134764200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1051
+        width: 220
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b885f803b5f3f5f0800000000000000
+      internalID: -723964965778257744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1051
+        width: 171
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34c350ac6ebf7990800000000000000
+      internalID: -7385975490108734405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 792
+        width: 182
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1458fe3dc4b772210800000000000000
+      internalID: 1308149786677839169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 792
+        width: 187
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fccabf4f13eeb700800000000000000
+      internalID: 558133127461653751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 813
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fcfe612e402b93d0800000000000000
+      internalID: -3198927590376145673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 792
+        width: 289
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ff82c85fab1cd80800000000000000
+      internalID: -8232093080075305061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 792
+        width: 183
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310c657831791bc50800000000000000
+      internalID: 6679285832497938451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 792
+        width: 247
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c05ad0fa6446100800000000000000
+      internalID: 100282809371135078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 792
+        width: 182
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763012ee175425e90800000000000000
+      internalID: -7038486911997901977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 534
+        width: 130
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0071192f908a89550800000000000000
+      internalID: 6167864450361661184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 534
+        width: 231
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71addc9a0dbb9070800000000000000
+      internalID: 8114287006917173630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 687
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45721b006c8fd7f00800000000000000
+      internalID: 1116321811956574036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 534
+        width: 276
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf01a9a86d2c6260800000000000000
+      internalID: 7092093440747442114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 534
+        width: 243
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cabcd4473499700800000000000000
+      internalID: 547542996502686830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 534
+        width: 275
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e60ddffe3910ad90800000000000000
+      internalID: -7088638055109818648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 534
+        width: 130
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295aaedece449c910800000000000000
+      internalID: 1858092105661588882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 540
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b24d1a9141051b10800000000000000
+      internalID: 1951467394805088947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 596
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db26a32bba9edd40800000000000000
+      internalID: 5611092314297871320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 592
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c942afe68382080800000000000000
+      internalID: -9212050988492088170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 549
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639f6ab44482715e0800000000000000
+      internalID: -1939036840767588042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 575
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fd69552ddf80da0800000000000000
+      internalID: -5978249425513423022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 549
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fbc7af40e87c480800000000000000
+      internalID: -8878971988304150745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 562
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52701d7ec3fc2e170800000000000000
+      internalID: 8206349331516688165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 560
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdd6be67d58721f0800000000000000
+      internalID: -1069739226155262521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 555
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560cd60d9bd308fb0800000000000000
+      internalID: -4647646947171254171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 547
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703acd1c2a5f2a410800000000000000
+      internalID: 1487020906371654407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 272
+        width: 145
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1734e34ef47b5790800000000000000
+      internalID: -7540304515692218596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 271
+        width: 202
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11804f651a172bb0800000000000000
+      internalID: -4960967785162178273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 277
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53f088a3bf742580800000000000000
+      internalID: -8852810557900655781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 271
+        width: 206
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9602b5cf589cb0880800000000000000
+      internalID: -8643593482505871255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 271
+        width: 209
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b833d70ce1f2e50800000000000000
+      internalID: 6786676975553710964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_35
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 283
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81341ad23598eb080800000000000000
+      internalID: -9169740800938917096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_36
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 271
+        width: 275
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a19c2f80c0f7740800000000000000
+      internalID: 5151849731307674206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_37
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 272
+        width: 145
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ba6b01a62f07e40800000000000000
+      internalID: 5652284069710834550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_38
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 12
+        width: 145
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49252bb1947b90250800000000000000
+      internalID: 5911457510525653652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_39
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 11
+        width: 202
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0473efbe06e6c3140800000000000000
+      internalID: 4700753473623177024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_40
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 17
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d80abb8a12dc8a0800000000000000
+      internalID: -6283328896525890221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_41
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 11
+        width: 206
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40250ada96128ec0800000000000000
+      internalID: -3566263100585467829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_42
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 11
+        width: 209
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8b22acd8ad11ea0800000000000000
+      internalID: -5903697333989492512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_43
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 23
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006fabd7d7edb8740800000000000000
+      internalID: 5155458829017347584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_44
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 11
+        width: 275
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1648866c88ab1460800000000000000
+      internalID: 7213544549133075999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-attack-directions-v1_45
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 12
+        width: 145
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4a54589e9cfe510800000000000000
+      internalID: 1580703999030830308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boss-lich-attack-directions-v1_0: -3728600817272883024
+      boss-lich-attack-directions-v1_1: 9217166761068112070
+      boss-lich-attack-directions-v1_10: 6679285832497938451
+      boss-lich-attack-directions-v1_11: 100282809371135078
+      boss-lich-attack-directions-v1_12: -7038486911997901977
+      boss-lich-attack-directions-v1_13: 6167864450361661184
+      boss-lich-attack-directions-v1_14: 8114287006917173630
+      boss-lich-attack-directions-v1_15: 1116321811956574036
+      boss-lich-attack-directions-v1_16: 7092093440747442114
+      boss-lich-attack-directions-v1_17: 547542996502686830
+      boss-lich-attack-directions-v1_18: -7088638055109818648
+      boss-lich-attack-directions-v1_19: 1858092105661588882
+      boss-lich-attack-directions-v1_2: 3940574075930306217
+      boss-lich-attack-directions-v1_20: 1951467394805088947
+      boss-lich-attack-directions-v1_21: 5611092314297871320
+      boss-lich-attack-directions-v1_22: -9212050988492088170
+      boss-lich-attack-directions-v1_23: -1939036840767588042
+      boss-lich-attack-directions-v1_24: -5978249425513423022
+      boss-lich-attack-directions-v1_25: -8878971988304150745
+      boss-lich-attack-directions-v1_26: 8206349331516688165
+      boss-lich-attack-directions-v1_27: -1069739226155262521
+      boss-lich-attack-directions-v1_28: -4647646947171254171
+      boss-lich-attack-directions-v1_29: 1487020906371654407
+      boss-lich-attack-directions-v1_3: -6269094940134764200
+      boss-lich-attack-directions-v1_30: -7540304515692218596
+      boss-lich-attack-directions-v1_31: -4960967785162178273
+      boss-lich-attack-directions-v1_32: -8852810557900655781
+      boss-lich-attack-directions-v1_33: -8643593482505871255
+      boss-lich-attack-directions-v1_34: 6786676975553710964
+      boss-lich-attack-directions-v1_35: -9169740800938917096
+      boss-lich-attack-directions-v1_36: 5151849731307674206
+      boss-lich-attack-directions-v1_37: 5652284069710834550
+      boss-lich-attack-directions-v1_38: 5911457510525653652
+      boss-lich-attack-directions-v1_39: 4700753473623177024
+      boss-lich-attack-directions-v1_4: -723964965778257744
+      boss-lich-attack-directions-v1_40: -6283328896525890221
+      boss-lich-attack-directions-v1_41: -3566263100585467829
+      boss-lich-attack-directions-v1_42: -5903697333989492512
+      boss-lich-attack-directions-v1_43: 5155458829017347584
+      boss-lich-attack-directions-v1_44: 7213544549133075999
+      boss-lich-attack-directions-v1_45: 1580703999030830308
+      boss-lich-attack-directions-v1_5: -7385975490108734405
+      boss-lich-attack-directions-v1_6: 1308149786677839169
+      boss-lich-attack-directions-v1_7: 558133127461653751
+      boss-lich-attack-directions-v1_8: -3198927590376145673
+      boss-lich-attack-directions-v1_9: -8232093080075305061
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

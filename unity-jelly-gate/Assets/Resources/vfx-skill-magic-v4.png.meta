@@ -1,0 +1,3318 @@
+fileFormatVersion: 2
+guid: 06ffc6df771b02d479a755eb1060b603
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7628634265707317069
+    second: vfx-skill-magic-v4_0
+  - first:
+      213: -8630927805431781384
+    second: vfx-skill-magic-v4_1
+  - first:
+      213: -4400288793475349996
+    second: vfx-skill-magic-v4_2
+  - first:
+      213: 9021179307741201341
+    second: vfx-skill-magic-v4_3
+  - first:
+      213: -2933769108652937689
+    second: vfx-skill-magic-v4_4
+  - first:
+      213: 2405030526807619266
+    second: vfx-skill-magic-v4_5
+  - first:
+      213: 5544854100639234857
+    second: vfx-skill-magic-v4_6
+  - first:
+      213: -8111977985794780643
+    second: vfx-skill-magic-v4_7
+  - first:
+      213: 6963022976407749219
+    second: vfx-skill-magic-v4_8
+  - first:
+      213: 8358240317081457884
+    second: vfx-skill-magic-v4_9
+  - first:
+      213: 5243812389881235211
+    second: vfx-skill-magic-v4_10
+  - first:
+      213: 948730279390621480
+    second: vfx-skill-magic-v4_11
+  - first:
+      213: -7742998698299466147
+    second: vfx-skill-magic-v4_12
+  - first:
+      213: -4912462423179051295
+    second: vfx-skill-magic-v4_13
+  - first:
+      213: 1625889658021577183
+    second: vfx-skill-magic-v4_14
+  - first:
+      213: 7341905571511450106
+    second: vfx-skill-magic-v4_15
+  - first:
+      213: -6631375026447778357
+    second: vfx-skill-magic-v4_16
+  - first:
+      213: -4672495115200808569
+    second: vfx-skill-magic-v4_17
+  - first:
+      213: 1416999296568308325
+    second: vfx-skill-magic-v4_18
+  - first:
+      213: -92732346902284098
+    second: vfx-skill-magic-v4_19
+  - first:
+      213: -9101590161702464578
+    second: vfx-skill-magic-v4_20
+  - first:
+      213: 8853194799532028920
+    second: vfx-skill-magic-v4_21
+  - first:
+      213: 2455662065315841788
+    second: vfx-skill-magic-v4_22
+  - first:
+      213: 4865431491084620159
+    second: vfx-skill-magic-v4_23
+  - first:
+      213: 5267747771699342210
+    second: vfx-skill-magic-v4_24
+  - first:
+      213: -4663661458416399041
+    second: vfx-skill-magic-v4_25
+  - first:
+      213: 2654429846648028046
+    second: vfx-skill-magic-v4_26
+  - first:
+      213: -8097932912484327330
+    second: vfx-skill-magic-v4_27
+  - first:
+      213: 1006125327275491321
+    second: vfx-skill-magic-v4_28
+  - first:
+      213: 4677396581834747201
+    second: vfx-skill-magic-v4_29
+  - first:
+      213: -978413186824221102
+    second: vfx-skill-magic-v4_30
+  - first:
+      213: 6491023711043753406
+    second: vfx-skill-magic-v4_31
+  - first:
+      213: 3072020027030145422
+    second: vfx-skill-magic-v4_32
+  - first:
+      213: 311186957181105242
+    second: vfx-skill-magic-v4_33
+  - first:
+      213: 8491419615406729086
+    second: vfx-skill-magic-v4_34
+  - first:
+      213: -9128516881607860117
+    second: vfx-skill-magic-v4_35
+  - first:
+      213: 6464602139062608718
+    second: vfx-skill-magic-v4_36
+  - first:
+      213: -8108939133278922470
+    second: vfx-skill-magic-v4_37
+  - first:
+      213: 9051115883160821831
+    second: vfx-skill-magic-v4_38
+  - first:
+      213: 7733714938002240864
+    second: vfx-skill-magic-v4_39
+  - first:
+      213: 5808978685261059467
+    second: vfx-skill-magic-v4_40
+  - first:
+      213: -1967987765617806073
+    second: vfx-skill-magic-v4_41
+  - first:
+      213: 52606588706798650
+    second: vfx-skill-magic-v4_42
+  - first:
+      213: -8057523981318629975
+    second: vfx-skill-magic-v4_43
+  - first:
+      213: 2336063488867186408
+    second: vfx-skill-magic-v4_44
+  - first:
+      213: -3957334361305604828
+    second: vfx-skill-magic-v4_45
+  - first:
+      213: 4312312188153244007
+    second: vfx-skill-magic-v4_46
+  - first:
+      213: 3012766843973757635
+    second: vfx-skill-magic-v4_47
+  - first:
+      213: -5224301720278449420
+    second: vfx-skill-magic-v4_48
+  - first:
+      213: 4554140290315338757
+    second: vfx-skill-magic-v4_49
+  - first:
+      213: 3625677725269121774
+    second: vfx-skill-magic-v4_50
+  - first:
+      213: -9099493535849426515
+    second: vfx-skill-magic-v4_51
+  - first:
+      213: -765136545316569655
+    second: vfx-skill-magic-v4_52
+  - first:
+      213: -3933190006034284836
+    second: vfx-skill-magic-v4_53
+  - first:
+      213: 5839910937700769438
+    second: vfx-skill-magic-v4_54
+  - first:
+      213: -7135743674484218067
+    second: vfx-skill-magic-v4_55
+  - first:
+      213: 5515545085924007068
+    second: vfx-skill-magic-v4_56
+  - first:
+      213: 313303202455391982
+    second: vfx-skill-magic-v4_57
+  - first:
+      213: -166034183484193516
+    second: vfx-skill-magic-v4_58
+  - first:
+      213: -4139397102282198366
+    second: vfx-skill-magic-v4_59
+  - first:
+      213: -2595406391885304689
+    second: vfx-skill-magic-v4_60
+  - first:
+      213: -7048652643944888454
+    second: vfx-skill-magic-v4_61
+  - first:
+      213: -9126101010858278428
+    second: vfx-skill-magic-v4_62
+  - first:
+      213: 875645905172270206
+    second: vfx-skill-magic-v4_63
+  - first:
+      213: -1282802089977248339
+    second: vfx-skill-magic-v4_64
+  - first:
+      213: -6113423204241209387
+    second: vfx-skill-magic-v4_65
+  - first:
+      213: 7669686565257327966
+    second: vfx-skill-magic-v4_66
+  - first:
+      213: -1725841574786647278
+    second: vfx-skill-magic-v4_67
+  - first:
+      213: -504054247874113772
+    second: vfx-skill-magic-v4_68
+  - first:
+      213: 6798985349876230553
+    second: vfx-skill-magic-v4_69
+  - first:
+      213: -6472282207101978677
+    second: vfx-skill-magic-v4_70
+  - first:
+      213: -841327361035959463
+    second: vfx-skill-magic-v4_71
+  - first:
+      213: -9064417878188072440
+    second: vfx-skill-magic-v4_72
+  - first:
+      213: 8560955906268636870
+    second: vfx-skill-magic-v4_73
+  - first:
+      213: 8987561750361028281
+    second: vfx-skill-magic-v4_74
+  - first:
+      213: 3059115852905676939
+    second: vfx-skill-magic-v4_75
+  - first:
+      213: 4191613677795864137
+    second: vfx-skill-magic-v4_76
+  - first:
+      213: -7962621850031784459
+    second: vfx-skill-magic-v4_77
+  - first:
+      213: -9175092760128338050
+    second: vfx-skill-magic-v4_78
+  - first:
+      213: 4753487191995346121
+    second: vfx-skill-magic-v4_79
+  - first:
+      213: 8298573482925809490
+    second: vfx-skill-magic-v4_80
+  - first:
+      213: 4992584231198270081
+    second: vfx-skill-magic-v4_81
+  - first:
+      213: -6293700282469803603
+    second: vfx-skill-magic-v4_82
+  - first:
+      213: 2987653354037002346
+    second: vfx-skill-magic-v4_83
+  - first:
+      213: -6116296463120384248
+    second: vfx-skill-magic-v4_84
+  - first:
+      213: -3207041789105904354
+    second: vfx-skill-magic-v4_85
+  - first:
+      213: 1279874182696366759
+    second: vfx-skill-magic-v4_86
+  - first:
+      213: 6392768276953991013
+    second: vfx-skill-magic-v4_87
+  - first:
+      213: 273916313960327550
+    second: vfx-skill-magic-v4_88
+  - first:
+      213: 7724685057124156111
+    second: vfx-skill-magic-v4_89
+  - first:
+      213: 6835469991575314581
+    second: vfx-skill-magic-v4_90
+  - first:
+      213: -6225927811048613509
+    second: vfx-skill-magic-v4_91
+  - first:
+      213: 4041370193132424656
+    second: vfx-skill-magic-v4_92
+  - first:
+      213: 7463661148545279712
+    second: vfx-skill-magic-v4_93
+  - first:
+      213: -6210018412343063273
+    second: vfx-skill-magic-v4_94
+  - first:
+      213: -7749371294023851929
+    second: vfx-skill-magic-v4_95
+  - first:
+      213: -4033037257011861381
+    second: vfx-skill-magic-v4_96
+  - first:
+      213: -1163959099799241534
+    second: vfx-skill-magic-v4_97
+  - first:
+      213: 3736038283721046290
+    second: vfx-skill-magic-v4_98
+  - first:
+      213: 5720179504981486443
+    second: vfx-skill-magic-v4_99
+  - first:
+      213: 7854342943512487480
+    second: vfx-skill-magic-v4_100
+  - first:
+      213: -5844252310643984689
+    second: vfx-skill-magic-v4_101
+  - first:
+      213: -4390462795814646631
+    second: vfx-skill-magic-v4_102
+  - first:
+      213: -5905116608660110716
+    second: vfx-skill-magic-v4_103
+  - first:
+      213: -3300722194585181622
+    second: vfx-skill-magic-v4_104
+  - first:
+      213: -5446060124463141333
+    second: vfx-skill-magic-v4_105
+  - first:
+      213: 1672268360144761705
+    second: vfx-skill-magic-v4_106
+  - first:
+      213: -1970440070250879514
+    second: vfx-skill-magic-v4_107
+  - first:
+      213: 495865964838003386
+    second: vfx-skill-magic-v4_108
+  - first:
+      213: -2898109113409765907
+    second: vfx-skill-magic-v4_109
+  - first:
+      213: 947074188634944913
+    second: vfx-skill-magic-v4_110
+  - first:
+      213: -8338524392618461314
+    second: vfx-skill-magic-v4_111
+  - first:
+      213: 125234714036924727
+    second: vfx-skill-magic-v4_112
+  - first:
+      213: -2950610914423976993
+    second: vfx-skill-magic-v4_113
+  - first:
+      213: 4815208624227276544
+    second: vfx-skill-magic-v4_114
+  - first:
+      213: 5868004067825433421
+    second: vfx-skill-magic-v4_115
+  - first:
+      213: 5655834429543612919
+    second: vfx-skill-magic-v4_116
+  - first:
+      213: 4470072916688753701
+    second: vfx-skill-magic-v4_117
+  - first:
+      213: 5144961066436618490
+    second: vfx-skill-magic-v4_118
+  - first:
+      213: 602920273779481507
+    second: vfx-skill-magic-v4_119
+  - first:
+      213: -3479137250646709554
+    second: vfx-skill-magic-v4_120
+  - first:
+      213: 3034348262027480686
+    second: vfx-skill-magic-v4_121
+  - first:
+      213: -195897598526329674
+    second: vfx-skill-magic-v4_122
+  - first:
+      213: 6637086784053272131
+    second: vfx-skill-magic-v4_123
+  - first:
+      213: -6802206729204675976
+    second: vfx-skill-magic-v4_124
+  - first:
+      213: 9088628686636318365
+    second: vfx-skill-magic-v4_125
+  - first:
+      213: -7930342825479454488
+    second: vfx-skill-magic-v4_126
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1088
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b87427bd85a12690800000000000000
+      internalID: -7628634265707317069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1083
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7623bb3e8c83880800000000000000
+      internalID: -8630927805431781384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1083
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41205c3f7a80fe2c0800000000000000
+      internalID: -4400288793475349996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_3
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1081
+        width: 80
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3c40db8caa13d70800000000000000
+      internalID: 9021179307741201341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_4
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1088
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e2ab91a882947d0800000000000000
+      internalID: -2933769108652937689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_5
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1088
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6b6509582606120800000000000000
+      internalID: 2405030526807619266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_6
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 1087
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b38f73d6743fc40800000000000000
+      internalID: 5544854100639234857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_7
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1086
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12d9e240077c6f80800000000000000
+      internalID: -8111977985794780643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_8
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 1122
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362caaf5180a1a060800000000000000
+      internalID: 6963022976407749219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 957
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd41df6d84f6ef370800000000000000
+      internalID: 8358240317081457884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 957
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07c9afe593c5c840800000000000000
+      internalID: 5243812389881235211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_11
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 958
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f2cba99219a2d00800000000000000
+      internalID: 948730279390621480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_12
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 957
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e5c8345b75b8490800000000000000
+      internalID: -7742998698299466147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_13
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 951
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee35f5147d63dbb0800000000000000
+      internalID: -4912462423179051295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_14
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1012
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd18b569702509610800000000000000
+      internalID: 1625889658021577183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_15
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1003
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9b66cd730b3e560800000000000000
+      internalID: 7341905571511450106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_16
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1006
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdfe284c8f98f3a0800000000000000
+      internalID: -6631375026447778357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_17
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1001
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78935bbd276f72fb0800000000000000
+      internalID: -4672495115200808569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_18
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 954
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562bee64a513aa310800000000000000
+      internalID: 1416999296568308325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_19
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 978
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb873bbfb6c86bef0800000000000000
+      internalID: -92732346902284098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_20
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 996
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3d88068f7a0b180800000000000000
+      internalID: -9101590161702464578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_21
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1002
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3317193cddcda70800000000000000
+      internalID: 8853194799532028920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_22
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 997
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf68d8343a3441220800000000000000
+      internalID: 2455662065315841788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_23
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 995
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f711919b92c758340800000000000000
+      internalID: 4865431491084620159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_24
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 984
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bae7a40bcca1940800000000000000
+      internalID: 5267747771699342210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_25
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 978
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d096adc98574fb0800000000000000
+      internalID: -4663661458416399041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_26
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 953
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b76aab1ed66d420800000000000000
+      internalID: 2654429846648028046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_27
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 953
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e506d68bbec5e9f80800000000000000
+      internalID: -8097932912484327330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_28
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 823
+        width: 59
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff77cb87a976fd00800000000000000
+      internalID: 1006125327275491321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_29
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 884
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14de2e5c86379e040800000000000000
+      internalID: 4677396581834747201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_30
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 873
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ec8c3f36afb62f0800000000000000
+      internalID: -978413186824221102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_31
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 857
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5966d9cafb41a50800000000000000
+      internalID: 6491023711043753406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_32
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 823
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89840630f102aa20800000000000000
+      internalID: 3072020027030145422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_33
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 823
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54b38983ee815400800000000000000
+      internalID: 311186957181105242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_34
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 823
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e772a17962597d570800000000000000
+      internalID: 8491419615406729086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_35
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 864
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b606b99d24ef05180800000000000000
+      internalID: -9128516881607860117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_36
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 819
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43ae010561e6b950800000000000000
+      internalID: 6464602139062608718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_37
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 865
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1955af32d2477f80800000000000000
+      internalID: -8108939133278922470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_38
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 848
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74062bcd0f50c9d70800000000000000
+      internalID: 9051115883160821831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_39
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 863
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06571c9d2cca35b60800000000000000
+      internalID: 7733714938002240864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_40
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 860
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b851dc24653ad9050800000000000000
+      internalID: 5808978685261059467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_41
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 849
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7053904dd8d40b4e0800000000000000
+      internalID: -1967987765617806073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_42
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 845
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cb6b8e965eab000800000000000000
+      internalID: 52606588706798650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_43
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 843
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5df4c21aced2090800000000000000
+      internalID: -8057523981318629975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_44
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 853
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e630babd5d5b6020800000000000000
+      internalID: 2336063488867186408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_45
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 705
+        width: 44
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d9ee08d59b419c0800000000000000
+      internalID: -3957334361305604828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_46
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 847
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7692677661968db30800000000000000
+      internalID: 4312312188153244007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_47
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 819
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca61267b7f7fc920800000000000000
+      internalID: 3012766843973757635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_48
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 819
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f24753d34d8f77b0800000000000000
+      internalID: -5224301720278449420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_49
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 840
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5044a85177e833f30800000000000000
+      internalID: 4554140290315338757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_50
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 702
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea56b47eaef05230800000000000000
+      internalID: 3625677725269121774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_51
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 703
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da15bbf17da18b180800000000000000
+      internalID: -9099493535849426515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_52
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 725
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd7cbbad50b165f0800000000000000
+      internalID: -765136545316569655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_53
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 703
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdeb53847808a69c0800000000000000
+      internalID: -3933190006034284836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_54
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 705
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e92918e088b0150800000000000000
+      internalID: 5839910937700769438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_55
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 703
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27a0225feeb8fc90800000000000000
+      internalID: -7135743674484218067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_56
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 706
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9cd62578072b8c40800000000000000
+      internalID: 5515545085924007068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_57
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 703
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee88594a93195400800000000000000
+      internalID: 313303202455391982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_58
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 703
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4154ad03ac022bdf0800000000000000
+      internalID: -166034183484193516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_59
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 703
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a230365448ed86c0800000000000000
+      internalID: -4139397102282198366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_60
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 487
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ce5eb33a34bfbd0800000000000000
+      internalID: -2595406391885304689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_61
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 487
+        width: 76
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a770c8404c72e2e90800000000000000
+      internalID: -7048652643944888454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_62
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 477
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e185779b73995180800000000000000
+      internalID: -9126101010858278428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_63
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 554
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c81d6bf4be62c00800000000000000
+      internalID: 875645905172270206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_64
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 545
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da507c5bb42923ee0800000000000000
+      internalID: -1282802089977248339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_65
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 486
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7829d6cf1c82ba0800000000000000
+      internalID: -6113423204241209387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_66
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 540
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55bfbc9b43307a60800000000000000
+      internalID: 7669686565257327966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_67
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 538
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bbd3c4b349c08e0800000000000000
+      internalID: -1725841574786647278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_68
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 478
+        width: 77
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41fcfe7055d3109f0800000000000000
+      internalID: -504054247874113772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_69
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 544
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99925743729da5e50800000000000000
+      internalID: 6798985349876230553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_70
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 477
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7fa9fcf95dd26a0800000000000000
+      internalID: -6472282207101978677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_71
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 534
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95382a109310354f0800000000000000
+      internalID: -841327361035959463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_72
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 488
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80266e217f7b43280800000000000000
+      internalID: -9064417878188072440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_73
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 477
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6ace2f900aec670800000000000000
+      internalID: 8560955906268636870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_74
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 336
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b638273bcb3abc70800000000000000
+      internalID: 8987561750361028281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_75
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 338
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80853b09a9247a20800000000000000
+      internalID: 3059115852905676939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_76
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 339
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ee0bc8e6a9b2a30800000000000000
+      internalID: 4191613677795864137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_77
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 339
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd771c7d951f7190800000000000000
+      internalID: -7962621850031784459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_78
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 389
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77ca431fb58ba080800000000000000
+      internalID: -9175092760128338050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_79
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 392
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc60438a67c7f140800000000000000
+      internalID: 4753487191995346121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_80
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 393
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fd4407d947a2370800000000000000
+      internalID: 8298573482925809490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_81
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 394
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1822acb08e8394540800000000000000
+      internalID: 4992584231198270081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_82
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 386
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da99c9440f848a8a0800000000000000
+      internalID: -6293700282469803603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_83
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 398
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60416f65e6467920800000000000000
+      internalID: 2987653354037002346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_84
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 386
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f3bb6b5cc8e1ba0800000000000000
+      internalID: -6116296463120384248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_85
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 389
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1562840c7c4e73d0800000000000000
+      internalID: -3207041789105904354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_86
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 335
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a27fc0c9c603c110800000000000000
+      internalID: 1279874182696366759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_87
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 388
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5678a37a0eca7b850800000000000000
+      internalID: 6392768276953991013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_88
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 336
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e792acfaf652dc300800000000000000
+      internalID: 273916313960327550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_89
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 335
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc247afd128933b60800000000000000
+      internalID: 7724685057124156111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_90
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 386
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59060b0ddb77cde50800000000000000
+      internalID: 6835469991575314581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_91
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 377
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79d83964af0999a0800000000000000
+      internalID: -6225927811048613509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_92
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 370
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd828f47c4d51830800000000000000
+      internalID: 4041370193132424656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_93
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 369
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6ecea3540449760800000000000000
+      internalID: 7463661148545279712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_94
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 375
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d08a3f72591d9a0800000000000000
+      internalID: -6210018412343063273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_95
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 336
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7606913bdd3b47490800000000000000
+      internalID: -7749371294023851929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_96
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 366
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7864e19bf5c708c0800000000000000
+      internalID: -4033037257011861381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_97
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 357
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccf16b9d59c8dfe0800000000000000
+      internalID: -1163959099799241534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_98
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 352
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219f370560319d330800000000000000
+      internalID: 3736038283721046290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_99
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 204
+        width: 48
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b24e5f3f8226f40800000000000000
+      internalID: 5720179504981486443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_100
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 203
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83668240b4b300d60800000000000000
+      internalID: 7854342943512487480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_101
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 204
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc63f46dc7b05eea0800000000000000
+      internalID: -5844252310643984689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_102
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 197
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c46ef4951f113c0800000000000000
+      internalID: -4390462795814646631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_103
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 246
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4820e872bbfcc0ea0800000000000000
+      internalID: -5905116608660110716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_104
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 240
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42a089e6aa7132d0800000000000000
+      internalID: -3300722194585181622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_105
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 204
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e64f7db25bb64b0800000000000000
+      internalID: -5446060124463141333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_106
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 225
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963bd87a637153710800000000000000
+      internalID: 1672268360144761705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_107
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 232
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e52089223797a4e0800000000000000
+      internalID: -1970440070250879514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_108
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 233
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab22062c77ba1e600800000000000000
+      internalID: 495865964838003386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_109
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 225
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded73eebd19d7c7d0800000000000000
+      internalID: -2898109113409765907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_110
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 220
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195f68de4fea42d00800000000000000
+      internalID: 947074188634944913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_111
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 213
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77fb0b8e3c974c80800000000000000
+      internalID: -8338524392618461314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_112
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 198
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731f7b31f4cecb100800000000000000
+      internalID: 125234714036924727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_113
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 213
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb4e5f91035d07d0800000000000000
+      internalID: -2950610914423976993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_114
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 198
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007d67e4bbe03d240800000000000000
+      internalID: 4815208624227276544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_115
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 198
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b38431c965f6150800000000000000
+      internalID: 5868004067825433421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_116
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 103
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f10f51a27f8d7e40800000000000000
+      internalID: 5655834429543612919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_117
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 102
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524d35f52a3e80e30800000000000000
+      internalID: 4470072916688753701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_118
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 80
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af86b2ca4d2966740800000000000000
+      internalID: 5144961066436618490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_119
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 80
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abd18a6bc00e5800800000000000000
+      internalID: 602920273779481507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_120
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 80
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecaaf529a1f97bfc0800000000000000
+      internalID: -3479137250646709554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_121
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 80
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ec8faeaab2c1a20800000000000000
+      internalID: 3034348262027480686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_122
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 80
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc6c7b0c28084df0800000000000000
+      internalID: -195897598526329674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_123
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 91
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e5feae34bab1c50800000000000000
+      internalID: 6637086784053272131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_124
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 81
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87acbf8f405b991a0800000000000000
+      internalID: -6802206729204675976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_125
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 80
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ef16a03ab412e70800000000000000
+      internalID: 9088628686636318365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-magic-v4_126
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 80
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0ca3c8733c1f190800000000000000
+      internalID: -7930342825479454488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

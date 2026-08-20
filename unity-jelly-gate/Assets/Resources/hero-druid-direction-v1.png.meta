@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 13857a6279a18b14d951c3202c05fb76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6247434663949698330
+    second: hero-druid-direction-v1_0
+  - first:
+      213: -2889559486094810659
+    second: hero-druid-direction-v1_1
+  - first:
+      213: -4947334371269410295
+    second: hero-druid-direction-v1_2
+  - first:
+      213: -3612184623367574453
+    second: hero-druid-direction-v1_3
+  - first:
+      213: -3543291179641734309
+    second: hero-druid-direction-v1_4
+  - first:
+      213: 213136861705477701
+    second: hero-druid-direction-v1_5
+  - first:
+      213: 7933340865843989767
+    second: hero-druid-direction-v1_6
+  - first:
+      213: -1894397817717391740
+    second: hero-druid-direction-v1_7
+  - first:
+      213: 1020563478436380847
+    second: hero-druid-direction-v1_8
+  - first:
+      213: 5828858603254010612
+    second: hero-druid-direction-v1_9
+  - first:
+      213: -4808517232440286196
+    second: hero-druid-direction-v1_10
+  - first:
+      213: 5818768577119330189
+    second: hero-druid-direction-v1_11
+  - first:
+      213: -2876117558274793761
+    second: hero-druid-direction-v1_12
+  - first:
+      213: 3146747078607004483
+    second: hero-druid-direction-v1_13
+  - first:
+      213: -2989782946001973434
+    second: hero-druid-direction-v1_14
+  - first:
+      213: -7986759642735936409
+    second: hero-druid-direction-v1_15
+  - first:
+      213: -327425338953334717
+    second: hero-druid-direction-v1_16
+  - first:
+      213: -1384438412558916916
+    second: hero-druid-direction-v1_17
+  - first:
+      213: 6934666405853119378
+    second: hero-druid-direction-v1_18
+  - first:
+      213: -2182603962738601751
+    second: hero-druid-direction-v1_19
+  - first:
+      213: -9218500998495931297
+    second: hero-druid-direction-v1_20
+  - first:
+      213: -5992488549820140038
+    second: hero-druid-direction-v1_21
+  - first:
+      213: 7646361325218867845
+    second: hero-druid-direction-v1_22
+  - first:
+      213: 904042162401559172
+    second: hero-druid-direction-v1_23
+  - first:
+      213: -1487557429911056619
+    second: hero-druid-direction-v1_24
+  - first:
+      213: 737800988610619865
+    second: hero-druid-direction-v1_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 562
+        width: 238
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a150f2ef9b853b650800000000000000
+      internalID: 6247434663949698330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_1
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 562
+        width: 228
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd165f9f4f836e7d0800000000000000
+      internalID: -2889559486094810659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_2
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 562
+        width: 247
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9020867f999875bb0800000000000000
+      internalID: -4947334371269410295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_3
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 562
+        width: 237
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c2c052931feddc0800000000000000
+      internalID: -3612184623367574453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 569
+        width: 244
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bfdadf173b3dec0800000000000000
+      internalID: -3543291179641734309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 569
+        width: 285
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e1f72b8d635f200800000000000000
+      internalID: 213136861705477701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 693
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d88be1c73e81e60800000000000000
+      internalID: 7933340865843989767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 569
+        width: 203
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48efda3c83fb5b5e0800000000000000
+      internalID: -1894397817717391740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 636
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa000f29315c92e00800000000000000
+      internalID: 1020563478436380847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_9
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 651
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f25fec540444e050800000000000000
+      internalID: 5828858603254010612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 308
+        width: 218
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c046d00cd07b44db0800000000000000
+      internalID: -4808517232440286196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_11
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 307
+        width: 214
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f1765113b60c050800000000000000
+      internalID: 5818768577119330189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_12
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 307
+        width: 214
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde54cea15af518d0800000000000000
+      internalID: -2876117558274793761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_13
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 307
+        width: 217
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3436e5abbcd7bab20800000000000000
+      internalID: 3146747078607004483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 308
+        width: 248
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f080c40482286d0800000000000000
+      internalID: -2989782946001973434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 309
+        width: 299
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c7c4cab64592190800000000000000
+      internalID: -7986759642735936409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 371
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34089359360c47bf0800000000000000
+      internalID: -327425338953334717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 309
+        width: 228
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2250e499c79cce0800000000000000
+      internalID: -1384438412558916916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 41
+        width: 219
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293c5bcca52ec3060800000000000000
+      internalID: 6934666405853119378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_19
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 40
+        width: 205
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e01b938245d5b1e0800000000000000
+      internalID: -2182603962738601751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_20
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 40
+        width: 208
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54f01ffe2e411080800000000000000
+      internalID: -9218500998495931297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_21
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 40
+        width: 212
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5ff5bd96766dca0800000000000000
+      internalID: -5992488549820140038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 51
+        width: 186
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58aa4f5fc155d1a60800000000000000
+      internalID: 7646361325218867845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 50
+        width: 297
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482cbef8e8dcb8c00800000000000000
+      internalID: 904042162401559172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 207
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f882f16622b5be0800000000000000
+      internalID: -1487557429911056619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-druid-direction-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 51
+        width: 152
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9611117123d3a00800000000000000
+      internalID: 737800988610619865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

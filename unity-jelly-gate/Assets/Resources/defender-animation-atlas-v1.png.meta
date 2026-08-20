@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: f8034cefda0d4dd4c80a39ac1938378b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5710569250862669831
+    second: defender-animation-atlas-v1_0
+  - first:
+      213: 627487577573312719
+    second: defender-animation-atlas-v1_1
+  - first:
+      213: -21587988288998685
+    second: defender-animation-atlas-v1_2
+  - first:
+      213: -4664304503862916
+    second: defender-animation-atlas-v1_3
+  - first:
+      213: 5746303454177918581
+    second: defender-animation-atlas-v1_4
+  - first:
+      213: 8031016351598515103
+    second: defender-animation-atlas-v1_5
+  - first:
+      213: 7075327869734449990
+    second: defender-animation-atlas-v1_6
+  - first:
+      213: -649199958477404123
+    second: defender-animation-atlas-v1_7
+  - first:
+      213: -4977521747247257334
+    second: defender-animation-atlas-v1_8
+  - first:
+      213: -3575279464665114973
+    second: defender-animation-atlas-v1_9
+  - first:
+      213: 4214760386048813873
+    second: defender-animation-atlas-v1_10
+  - first:
+      213: -5957626092148661078
+    second: defender-animation-atlas-v1_11
+  - first:
+      213: -5509123973853459395
+    second: defender-animation-atlas-v1_12
+  - first:
+      213: -5749086187153166426
+    second: defender-animation-atlas-v1_13
+  - first:
+      213: -3065706364403637283
+    second: defender-animation-atlas-v1_14
+  - first:
+      213: 7183461165060776903
+    second: defender-animation-atlas-v1_15
+  - first:
+      213: -7580851876212095590
+    second: defender-animation-atlas-v1_16
+  - first:
+      213: 7060157062613029546
+    second: defender-animation-atlas-v1_17
+  - first:
+      213: 7694568030423662690
+    second: defender-animation-atlas-v1_18
+  - first:
+      213: -5848879310259135338
+    second: defender-animation-atlas-v1_19
+  - first:
+      213: -5182873382007129018
+    second: defender-animation-atlas-v1_20
+  - first:
+      213: 8880048901654662732
+    second: defender-animation-atlas-v1_21
+  - first:
+      213: 5932688947985634157
+    second: defender-animation-atlas-v1_22
+  - first:
+      213: -2078051808570422283
+    second: defender-animation-atlas-v1_23
+  - first:
+      213: -8976135328337348504
+    second: defender-animation-atlas-v1_24
+  - first:
+      213: -8038397323087422728
+    second: defender-animation-atlas-v1_25
+  - first:
+      213: 6720800673124519929
+    second: defender-animation-atlas-v1_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 997
+        width: 220
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffdf01b58bffb0b0800000000000000
+      internalID: -5710569250862669831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 994
+        width: 219
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc84a3290a845b800800000000000000
+      internalID: 627487577573312719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_2
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 992
+        width: 223
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e27e9ac6dd43bff0800000000000000
+      internalID: -21587988288998685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_3
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 994
+        width: 233
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c794ceaf6dd6feff0800000000000000
+      internalID: -4664304503862916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 754
+        width: 226
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57effdddb88febf40800000000000000
+      internalID: 5746303454177918581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 762
+        width: 224
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93126652d6e37f60800000000000000
+      internalID: 8031016351598515103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_6
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 765
+        width: 227
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64371f8f53d903260800000000000000
+      internalID: 7075327869734449990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_7
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 765
+        width: 347
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52881cec3149df6f0800000000000000
+      internalID: -649199958477404123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 526
+        width: 227
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09ab89c75a4ceab0800000000000000
+      internalID: -4977521747247257334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 527
+        width: 230
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a613eff44e026ec0800000000000000
+      internalID: -3575279464665114973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 524
+        width: 228
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13be3d78d36dd7a30800000000000000
+      internalID: 4214760386048813873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_11
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 519
+        width: 294
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa461e052a2425da0800000000000000
+      internalID: -5957626092148661078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 280
+        width: 183
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c40e23fe8ab83b0800000000000000
+      internalID: -5509123973853459395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_13
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 286
+        width: 181
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af61af92942730b0800000000000000
+      internalID: -5749086187153166426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_14
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 282
+        width: 196
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3211ced4c6475d0800000000000000
+      internalID: -3065706364403637283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_15
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 281
+        width: 261
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3e249bed7c0b360800000000000000
+      internalID: 7183461165060776903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 433
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95468732676bc690800000000000000
+      internalID: -7580851876212095590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 421
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2d38f2177baf160800000000000000
+      internalID: 7060157062613029546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 389
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260ca792bd898ca60800000000000000
+      internalID: 7694568030423662690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 362
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c5fd9814b94dea0800000000000000
+      internalID: -5848879310259135338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 46
+        width: 187
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c33ad7e1cb218b0800000000000000
+      internalID: -5182873382007129018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 45
+        width: 174
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e49337d654c3b70800000000000000
+      internalID: 8880048901654662732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_22
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 229
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63d19b5a25255250800000000000000
+      internalID: 5932688947985634157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_23
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 44
+        width: 188
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb4d4dd3e64923e0800000000000000
+      internalID: -2078051808570422283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_24
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 39
+        width: 311
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8683e9af97c5e6380800000000000000
+      internalID: -8976135328337348504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 195
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa5ce15930e17090800000000000000
+      internalID: -8038397323087422728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-animation-atlas-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 150
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff0bc79a94154d50800000000000000
+      internalID: 6720800673124519929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1018 @@
+fileFormatVersion: 2
+guid: a9852a4f9d7d8b047b5ec5d5a1cd65d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6331189269348250227
+    second: boss-crimson-tyrant-attack-directions-v1_0
+  - first:
+      213: 3682553627698380577
+    second: boss-crimson-tyrant-attack-directions-v1_1
+  - first:
+      213: -7387538771181269498
+    second: boss-crimson-tyrant-attack-directions-v1_2
+  - first:
+      213: -4745182029465212967
+    second: boss-crimson-tyrant-attack-directions-v1_3
+  - first:
+      213: -6686560089903713220
+    second: boss-crimson-tyrant-attack-directions-v1_4
+  - first:
+      213: 1957467730320200050
+    second: boss-crimson-tyrant-attack-directions-v1_5
+  - first:
+      213: 4445105531181528778
+    second: boss-crimson-tyrant-attack-directions-v1_6
+  - first:
+      213: -266272892130257333
+    second: boss-crimson-tyrant-attack-directions-v1_7
+  - first:
+      213: -2482837170956674687
+    second: boss-crimson-tyrant-attack-directions-v1_8
+  - first:
+      213: 4867315428452196410
+    second: boss-crimson-tyrant-attack-directions-v1_9
+  - first:
+      213: -3492949027730059214
+    second: boss-crimson-tyrant-attack-directions-v1_10
+  - first:
+      213: 8471974169706834619
+    second: boss-crimson-tyrant-attack-directions-v1_11
+  - first:
+      213: -1252759056050628638
+    second: boss-crimson-tyrant-attack-directions-v1_12
+  - first:
+      213: -5510949593115988561
+    second: boss-crimson-tyrant-attack-directions-v1_13
+  - first:
+      213: -2842648770998530011
+    second: boss-crimson-tyrant-attack-directions-v1_14
+  - first:
+      213: -3559227474903418781
+    second: boss-crimson-tyrant-attack-directions-v1_15
+  - first:
+      213: -8565490847387257551
+    second: boss-crimson-tyrant-attack-directions-v1_16
+  - first:
+      213: -3509936595291848080
+    second: boss-crimson-tyrant-attack-directions-v1_17
+  - first:
+      213: -3015694679729914261
+    second: boss-crimson-tyrant-attack-directions-v1_18
+  - first:
+      213: -1896061406131025328
+    second: boss-crimson-tyrant-attack-directions-v1_19
+  - first:
+      213: 3670545343609266539
+    second: boss-crimson-tyrant-attack-directions-v1_20
+  - first:
+      213: -249356000099464567
+    second: boss-crimson-tyrant-attack-directions-v1_21
+  - first:
+      213: 761446987843994494
+    second: boss-crimson-tyrant-attack-directions-v1_22
+  - first:
+      213: 4507501942557297832
+    second: boss-crimson-tyrant-attack-directions-v1_23
+  - first:
+      213: -2890157057859212572
+    second: boss-crimson-tyrant-attack-directions-v1_24
+  - first:
+      213: 3214873731170220850
+    second: boss-crimson-tyrant-attack-directions-v1_25
+  - first:
+      213: -9216218701798252854
+    second: boss-crimson-tyrant-attack-directions-v1_26
+  - first:
+      213: -5798472969097347329
+    second: boss-crimson-tyrant-attack-directions-v1_27
+  - first:
+      213: 5016285260623944089
+    second: boss-crimson-tyrant-attack-directions-v1_28
+  - first:
+      213: -6909684724019990411
+    second: boss-crimson-tyrant-attack-directions-v1_29
+  - first:
+      213: -7662199848308635010
+    second: boss-crimson-tyrant-attack-directions-v1_30
+  - first:
+      213: 7411284892801082633
+    second: boss-crimson-tyrant-attack-directions-v1_31
+  - first:
+      213: -5601121171533584600
+    second: boss-crimson-tyrant-attack-directions-v1_32
+  - first:
+      213: 2420133250348442631
+    second: boss-crimson-tyrant-attack-directions-v1_33
+  - first:
+      213: 4828137443322850449
+    second: boss-crimson-tyrant-attack-directions-v1_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 899
+        width: 166
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372744da817ecd750800000000000000
+      internalID: 6331189269348250227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 899
+        width: 164
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fb94d630f0b1330800000000000000
+      internalID: 3682553627698380577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 901
+        width: 175
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e8053e0a03a7990800000000000000
+      internalID: -7387538771181269498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 901
+        width: 148
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7a823d51ab52eb0800000000000000
+      internalID: -4745182029465212967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 900
+        width: 139
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c343cff66019433a0800000000000000
+      internalID: -6686560089903713220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 995
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271960597825a2b10800000000000000
+      internalID: 1957467730320200050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 898
+        width: 159
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6f23fedef20bd30800000000000000
+      internalID: 4445105531181528778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 654
+        width: 163
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46924327320e4cf0800000000000000
+      internalID: -266272892130257333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 654
+        width: 170
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189ddf56fb03b8dd0800000000000000
+      internalID: -2482837170956674687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 655
+        width: 189
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30eba2189d2c8340800000000000000
+      internalID: 4867315428452196410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 655
+        width: 157
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2309a9f9d5d868fc0800000000000000
+      internalID: -3492949027730059214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 655
+        width: 139
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba29a3fe9f729570800000000000000
+      internalID: 8471974169706834619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 751
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7d2f2a64e4d9ee0800000000000000
+      internalID: -1252759056050628638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 655
+        width: 162
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadec371b8c2583b0800000000000000
+      internalID: -5510949593115988561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 418
+        width: 121
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5209e67f002ec88d0800000000000000
+      internalID: -2842648770998530011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 418
+        width: 121
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368329b18751b9ec0800000000000000
+      internalID: -3559227474903418781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 420
+        width: 223
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1357f9ac473412980800000000000000
+      internalID: -8565490847387257551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 420
+        width: 155
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0724c7553433a4fc0800000000000000
+      internalID: -3509936595291848080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 420
+        width: 119
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6eb9a7aaa91626d0800000000000000
+      internalID: -3015694679729914261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 517
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a8b376236dfa5e0800000000000000
+      internalID: -1896061406131025328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 417
+        width: 123
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b616bc9ea8560f230800000000000000
+      internalID: 3670545343609266539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 185
+        width: 140
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a857ff90c1a8cf0800000000000000
+      internalID: -249356000099464567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 185
+        width: 148
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e738bb94004319a00800000000000000
+      internalID: 761446987843994494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 187
+        width: 224
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acc28e822ddd8e30800000000000000
+      internalID: 4507501942557297832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 186
+        width: 160
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eaa635f77914e7d0800000000000000
+      internalID: -2890157057859212572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 184
+        width: 137
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bb22810a68d9c20800000000000000
+      internalID: 3214873731170220850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 270
+        width: 37
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aced00b9be9691080800000000000000
+      internalID: -9216218701798252854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 182
+        width: 155
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe7f356e8fa78fa0800000000000000
+      internalID: -5798472969097347329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 21
+        width: 96
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999948bfddc6d9540800000000000000
+      internalID: 5016285260623944089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 23
+        width: 127
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57078d24a5edb10a0800000000000000
+      internalID: -6909684724019990411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 18
+        width: 199
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a038385d56aa590800000000000000
+      internalID: -7662199848308635010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 18
+        width: 147
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905a0a4e75c2ad660800000000000000
+      internalID: 7411284892801082633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 18
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82722d278f1d442b0800000000000000
+      internalID: -5601121171533584600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 83
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70461286e5a069120800000000000000
+      internalID: 2420133250348442631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-crimson-tyrant-attack-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 18
+        width: 115
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c65049c6df00340800000000000000
+      internalID: 4828137443322850449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

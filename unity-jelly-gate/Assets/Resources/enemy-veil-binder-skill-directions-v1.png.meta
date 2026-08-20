@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 54480bd5264298044bac3592c53968c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8862011204769673007
+    second: enemy-veil-binder-skill-directions-v1_0
+  - first:
+      213: 5768819017899463817
+    second: enemy-veil-binder-skill-directions-v1_1
+  - first:
+      213: 1818374200489668087
+    second: enemy-veil-binder-skill-directions-v1_2
+  - first:
+      213: 6396390155519855586
+    second: enemy-veil-binder-skill-directions-v1_3
+  - first:
+      213: -2142222755294317698
+    second: enemy-veil-binder-skill-directions-v1_4
+  - first:
+      213: -8538741797077593527
+    second: enemy-veil-binder-skill-directions-v1_5
+  - first:
+      213: 1554052319641131705
+    second: enemy-veil-binder-skill-directions-v1_6
+  - first:
+      213: 3458084122184991811
+    second: enemy-veil-binder-skill-directions-v1_7
+  - first:
+      213: -1994251220787608857
+    second: enemy-veil-binder-skill-directions-v1_8
+  - first:
+      213: -6638929850600647270
+    second: enemy-veil-binder-skill-directions-v1_9
+  - first:
+      213: 3764127800947023505
+    second: enemy-veil-binder-skill-directions-v1_10
+  - first:
+      213: -4417289258125790418
+    second: enemy-veil-binder-skill-directions-v1_11
+  - first:
+      213: -46552896692208205
+    second: enemy-veil-binder-skill-directions-v1_12
+  - first:
+      213: -5885541972814053901
+    second: enemy-veil-binder-skill-directions-v1_13
+  - first:
+      213: 7029840930800332828
+    second: enemy-veil-binder-skill-directions-v1_14
+  - first:
+      213: -3245872044737310981
+    second: enemy-veil-binder-skill-directions-v1_15
+  - first:
+      213: -6644086299037443148
+    second: enemy-veil-binder-skill-directions-v1_16
+  - first:
+      213: 1661804249589102585
+    second: enemy-veil-binder-skill-directions-v1_17
+  - first:
+      213: -5330506146071632712
+    second: enemy-veil-binder-skill-directions-v1_18
+  - first:
+      213: -6979635557258602984
+    second: enemy-veil-binder-skill-directions-v1_19
+  - first:
+      213: -9011950689954604943
+    second: enemy-veil-binder-skill-directions-v1_20
+  - first:
+      213: -8088320937384972506
+    second: enemy-veil-binder-skill-directions-v1_21
+  - first:
+      213: -782271411849751569
+    second: enemy-veil-binder-skill-directions-v1_22
+  - first:
+      213: -2710294569401925852
+    second: enemy-veil-binder-skill-directions-v1_23
+  - first:
+      213: -75102366057203798
+    second: enemy-veil-binder-skill-directions-v1_24
+  - first:
+      213: 3526391672138708684
+    second: enemy-veil-binder-skill-directions-v1_25
+  - first:
+      213: -3575969505111350876
+    second: enemy-veil-binder-skill-directions-v1_26
+  - first:
+      213: -7959415334749031600
+    second: enemy-veil-binder-skill-directions-v1_27
+  - first:
+      213: 6730612389502326263
+    second: enemy-veil-binder-skill-directions-v1_28
+  - first:
+      213: 922397560342147538
+    second: enemy-veil-binder-skill-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 835
+        width: 182
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d01c2023cfc30580800000000000000
+      internalID: -8862011204769673007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 835
+        width: 186
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9845a6f0556fe0050800000000000000
+      internalID: 5768819017899463817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 835
+        width: 182
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdebe083b92c3910800000000000000
+      internalID: 1818374200489668087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 835
+        width: 198
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb0198f4fa84c850800000000000000
+      internalID: 6396390155519855586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 835
+        width: 213
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e737ce801cb4542e0800000000000000
+      internalID: -2142222755294317698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 836
+        width: 181
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942d864639b408980800000000000000
+      internalID: -8538741797077593527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 644
+        width: 188
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bad49ad95a119510800000000000000
+      internalID: 1554052319641131705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 644
+        width: 184
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344414aff259dff20800000000000000
+      internalID: 3458084122184991811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 644
+        width: 182
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2c018a41ff254e0800000000000000
+      internalID: -1994251220787608857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 644
+        width: 222
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a951636b978cdd3a0800000000000000
+      internalID: -6638929850600647270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 644
+        width: 234
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e9e90ba4edc3430800000000000000
+      internalID: 3764127800947023505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 644
+        width: 180
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e237343d2d2a2b2c0800000000000000
+      internalID: -4417289258125790418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 452
+        width: 175
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd3569136c9a5ff0800000000000000
+      internalID: -46552896692208205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 451
+        width: 180
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd34c732ca525ea0800000000000000
+      internalID: -5885541972814053901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 451
+        width: 174
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10fad3b4130f8160800000000000000
+      internalID: 7029840930800332828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 451
+        width: 217
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfecf0b929854f2d0800000000000000
+      internalID: -3245872044737310981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 452
+        width: 239
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb55d086b67bc3a0800000000000000
+      internalID: -6644086299037443148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 452
+        width: 166
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f73efe092aef0710800000000000000
+      internalID: 1661804249589102585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 260
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b42d5207ec3606b0800000000000000
+      internalID: -5330506146071632712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 261
+        width: 173
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8165aebb07a532f90800000000000000
+      internalID: -6979635557258602984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 261
+        width: 169
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1785be7489e1fe280800000000000000
+      internalID: -9011950689954604943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 261
+        width: 209
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f60d116f280cf80800000000000000
+      internalID: -8088320937384972506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 261
+        width: 227
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe390caab40d425f0800000000000000
+      internalID: -782271411849751569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 261
+        width: 163
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fb02ae279136ad0800000000000000
+      internalID: -2710294569401925852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 66
+        width: 179
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa77e55cbce25fef0800000000000000
+      internalID: -75102366057203798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 66
+        width: 181
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc639bcca8240f030800000000000000
+      internalID: 3526391672138708684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 66
+        width: 179
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a165307eaa9f5ec0800000000000000
+      internalID: -3575969505111350876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 67
+        width: 230
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053bc708ce97a8190800000000000000
+      internalID: -7959415334749031600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 66
+        width: 245
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f51125de40f76d50800000000000000
+      internalID: 6730612389502326263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 66
+        width: 177
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d171eda1b30dcc00800000000000000
+      internalID: 922397560342147538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy-veil-binder-skill-directions-v1_0: -8862011204769673007
+      enemy-veil-binder-skill-directions-v1_1: 5768819017899463817
+      enemy-veil-binder-skill-directions-v1_10: 3764127800947023505
+      enemy-veil-binder-skill-directions-v1_11: -4417289258125790418
+      enemy-veil-binder-skill-directions-v1_12: -46552896692208205
+      enemy-veil-binder-skill-directions-v1_13: -5885541972814053901
+      enemy-veil-binder-skill-directions-v1_14: 7029840930800332828
+      enemy-veil-binder-skill-directions-v1_15: -3245872044737310981
+      enemy-veil-binder-skill-directions-v1_16: -6644086299037443148
+      enemy-veil-binder-skill-directions-v1_17: 1661804249589102585
+      enemy-veil-binder-skill-directions-v1_18: -5330506146071632712
+      enemy-veil-binder-skill-directions-v1_19: -6979635557258602984
+      enemy-veil-binder-skill-directions-v1_2: 1818374200489668087
+      enemy-veil-binder-skill-directions-v1_20: -9011950689954604943
+      enemy-veil-binder-skill-directions-v1_21: -8088320937384972506
+      enemy-veil-binder-skill-directions-v1_22: -782271411849751569
+      enemy-veil-binder-skill-directions-v1_23: -2710294569401925852
+      enemy-veil-binder-skill-directions-v1_24: -75102366057203798
+      enemy-veil-binder-skill-directions-v1_25: 3526391672138708684
+      enemy-veil-binder-skill-directions-v1_26: -3575969505111350876
+      enemy-veil-binder-skill-directions-v1_27: -7959415334749031600
+      enemy-veil-binder-skill-directions-v1_28: 6730612389502326263
+      enemy-veil-binder-skill-directions-v1_29: 922397560342147538
+      enemy-veil-binder-skill-directions-v1_3: 6396390155519855586
+      enemy-veil-binder-skill-directions-v1_4: -2142222755294317698
+      enemy-veil-binder-skill-directions-v1_5: -8538741797077593527
+      enemy-veil-binder-skill-directions-v1_6: 1554052319641131705
+      enemy-veil-binder-skill-directions-v1_7: 3458084122184991811
+      enemy-veil-binder-skill-directions-v1_8: -1994251220787608857
+      enemy-veil-binder-skill-directions-v1_9: -6638929850600647270
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

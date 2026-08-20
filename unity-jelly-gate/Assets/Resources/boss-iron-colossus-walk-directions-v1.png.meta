@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: 8856536ad06a958468a53d4fe30a7d89
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4603519418244501319
+    second: boss-iron-colossus-walk-directions-v1_0
+  - first:
+      213: -2849253449152031750
+    second: boss-iron-colossus-walk-directions-v1_1
+  - first:
+      213: -7695036735361750958
+    second: boss-iron-colossus-walk-directions-v1_2
+  - first:
+      213: -5531036614376092504
+    second: boss-iron-colossus-walk-directions-v1_3
+  - first:
+      213: -7417775365032915795
+    second: boss-iron-colossus-walk-directions-v1_4
+  - first:
+      213: 5613923863909048278
+    second: boss-iron-colossus-walk-directions-v1_5
+  - first:
+      213: 6901524570994155958
+    second: boss-iron-colossus-walk-directions-v1_6
+  - first:
+      213: 5371668964089873993
+    second: boss-iron-colossus-walk-directions-v1_7
+  - first:
+      213: -316925194383913863
+    second: boss-iron-colossus-walk-directions-v1_8
+  - first:
+      213: 2964917056122820379
+    second: boss-iron-colossus-walk-directions-v1_9
+  - first:
+      213: 3845380293181613623
+    second: boss-iron-colossus-walk-directions-v1_10
+  - first:
+      213: -5501416700322024045
+    second: boss-iron-colossus-walk-directions-v1_11
+  - first:
+      213: 3286142494560716091
+    second: boss-iron-colossus-walk-directions-v1_12
+  - first:
+      213: -1258928292100487002
+    second: boss-iron-colossus-walk-directions-v1_13
+  - first:
+      213: 1066068956421630857
+    second: boss-iron-colossus-walk-directions-v1_14
+  - first:
+      213: -6009159355032041636
+    second: boss-iron-colossus-walk-directions-v1_15
+  - first:
+      213: -1614111315483838667
+    second: boss-iron-colossus-walk-directions-v1_16
+  - first:
+      213: 9196494401789887644
+    second: boss-iron-colossus-walk-directions-v1_17
+  - first:
+      213: -6736765708038710455
+    second: boss-iron-colossus-walk-directions-v1_18
+  - first:
+      213: 7102343369207570538
+    second: boss-iron-colossus-walk-directions-v1_19
+  - first:
+      213: 5585792389635451614
+    second: boss-iron-colossus-walk-directions-v1_20
+  - first:
+      213: -5880441677191739020
+    second: boss-iron-colossus-walk-directions-v1_21
+  - first:
+      213: 742668779295864994
+    second: boss-iron-colossus-walk-directions-v1_22
+  - first:
+      213: -6502713504327272156
+    second: boss-iron-colossus-walk-directions-v1_23
+  - first:
+      213: -8740004486441085655
+    second: boss-iron-colossus-walk-directions-v1_24
+  - first:
+      213: 5495568606464433265
+    second: boss-iron-colossus-walk-directions-v1_25
+  - first:
+      213: 6535802723012561198
+    second: boss-iron-colossus-walk-directions-v1_26
+  - first:
+      213: 8722601492781048195
+    second: boss-iron-colossus-walk-directions-v1_27
+  - first:
+      213: -2049383950117854996
+    second: boss-iron-colossus-walk-directions-v1_28
+  - first:
+      213: 6780846055467366916
+    second: boss-iron-colossus-walk-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 920
+        width: 200
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b07ce6ca730d10c0800000000000000
+      internalID: -4603519418244501319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 919
+        width: 192
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af39c30851b6578d0800000000000000
+      internalID: -2849253449152031750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 917
+        width: 190
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2586e27fbdcb53590800000000000000
+      internalID: -7695036735361750958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 918
+        width: 189
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac0f60018fcd33b0800000000000000
+      internalID: -5531036614376092504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 920
+        width: 191
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacc1974b94ce0990800000000000000
+      internalID: -7417775365032915795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 919
+        width: 189
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df1368a20aa8ed40800000000000000
+      internalID: 5613923863909048278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 687
+        width: 158
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1acbe080427cf50800000000000000
+      internalID: 6901524570994155958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 686
+        width: 153
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946419766700c8a40800000000000000
+      internalID: 5371668964089873993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 686
+        width: 152
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c0060073e0a9bf0800000000000000
+      internalID: -316925194383913863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 684
+        width: 157
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1792be8a50852920800000000000000
+      internalID: 2964917056122820379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 684
+        width: 157
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736a061c0098d5530800000000000000
+      internalID: 3845380293181613623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 684
+        width: 155
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39577e7a8aa07a3b0800000000000000
+      internalID: -5501416700322024045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 458
+        width: 104
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b358b952039ba9d20800000000000000
+      internalID: 3286142494560716091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 458
+        width: 104
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a849af6363678ee0800000000000000
+      internalID: -1258928292100487002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 457
+        width: 101
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b259d41107bce00800000000000000
+      internalID: 1066068956421630857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 457
+        width: 96
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57899c876d2b9ca0800000000000000
+      internalID: -6009159355032041636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 458
+        width: 101
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537b5ac7f468999e0800000000000000
+      internalID: -1614111315483838667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 459
+        width: 101
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c940e8deee280af70800000000000000
+      internalID: 9196494401789887644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 241
+        width: 154
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bd15d08433282a0800000000000000
+      internalID: -6736765708038710455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 241
+        width: 151
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60e77a1aa7909260800000000000000
+      internalID: 7102343369207570538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 240
+        width: 149
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda2d456598b48d40800000000000000
+      internalID: 5585792389635451614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 241
+        width: 146
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47985945379746ea0800000000000000
+      internalID: -5880441677191739020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 240
+        width: 149
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8f3b7e15d7e4a00800000000000000
+      internalID: 742668779295864994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 240
+        width: 148
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429ff6a4588b1c5a0800000000000000
+      internalID: -6502713504327272156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 32
+        width: 160
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925db52e93445b680800000000000000
+      internalID: -8740004486441085655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 31
+        width: 161
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17cd913e78e244c40800000000000000
+      internalID: 5495568606464433265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 31
+        width: 160
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29c13bc2f5d3ba50800000000000000
+      internalID: 6535802723012561198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 31
+        width: 163
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381a186e7d7ec0970800000000000000
+      internalID: 8722601492781048195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 32
+        width: 158
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0a6dcc7202f83e0800000000000000
+      internalID: -2049383950117854996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-walk-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 31
+        width: 159
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40abdbc9f876a1e50800000000000000
+      internalID: 6780846055467366916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

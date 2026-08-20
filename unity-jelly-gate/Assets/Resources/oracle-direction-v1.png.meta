@@ -1,0 +1,768 @@
+fileFormatVersion: 2
+guid: 06e184bb5488424418f03293a62fa4eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3947576139289462678
+    second: oracle-direction-v1_0
+  - first:
+      213: -2250475995634873299
+    second: oracle-direction-v1_1
+  - first:
+      213: 5022330583114395337
+    second: oracle-direction-v1_2
+  - first:
+      213: 6899114227802438973
+    second: oracle-direction-v1_3
+  - first:
+      213: 7143564432694461029
+    second: oracle-direction-v1_4
+  - first:
+      213: -1019537749863417155
+    second: oracle-direction-v1_5
+  - first:
+      213: -3798577013197225333
+    second: oracle-direction-v1_6
+  - first:
+      213: 3714556776782284852
+    second: oracle-direction-v1_7
+  - first:
+      213: 3005517070919371882
+    second: oracle-direction-v1_8
+  - first:
+      213: -7664648694672569304
+    second: oracle-direction-v1_9
+  - first:
+      213: -3173528521755174379
+    second: oracle-direction-v1_10
+  - first:
+      213: 6330238963686105819
+    second: oracle-direction-v1_11
+  - first:
+      213: 5749588142978808887
+    second: oracle-direction-v1_12
+  - first:
+      213: 4776959742678744266
+    second: oracle-direction-v1_13
+  - first:
+      213: -4945027601064867626
+    second: oracle-direction-v1_14
+  - first:
+      213: 1277994247081359029
+    second: oracle-direction-v1_15
+  - first:
+      213: -4302822044954077596
+    second: oracle-direction-v1_16
+  - first:
+      213: -5387656223340496472
+    second: oracle-direction-v1_17
+  - first:
+      213: -2555277815294885093
+    second: oracle-direction-v1_18
+  - first:
+      213: -3736285410006420284
+    second: oracle-direction-v1_19
+  - first:
+      213: 8917697332158295560
+    second: oracle-direction-v1_20
+  - first:
+      213: -4170788558815731228
+    second: oracle-direction-v1_21
+  - first:
+      213: 4553626074412190336
+    second: oracle-direction-v1_22
+  - first:
+      213: -4191563004564391650
+    second: oracle-direction-v1_23
+  - first:
+      213: -6290357210437711502
+    second: oracle-direction-v1_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oracle-direction-v1_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 640
+        width: 202
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6970822659b98c630800000000000000
+      internalID: 3947576139289462678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 640
+        width: 201
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2cc3a86104b4c0e0800000000000000
+      internalID: -2250475995634873299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 642
+        width: 201
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce2d1f4e07e2b540800000000000000
+      internalID: 5022330583114395337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 640
+        width: 169
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3df10d46d39ebf50800000000000000
+      internalID: 6899114227802438973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_4
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 643
+        width: 226
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5624ed8d00a032360800000000000000
+      internalID: 7143564432694461029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 643
+        width: 237
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba3a4871dfd9d1f0800000000000000
+      internalID: -1019537749863417155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 745
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b824a6c055eb84bc0800000000000000
+      internalID: -3798577013197225333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 791
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438c02a35b1cc8330800000000000000
+      internalID: 3714556776782284852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 640
+        width: 195
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c85822addb5b920800000000000000
+      internalID: 3005517070919371882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 347
+        width: 189
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c41e90f92b1a590800000000000000
+      internalID: -7664648694672569304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 348
+        width: 194
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a5630af9c55f3d0800000000000000
+      internalID: -3173528521755174379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_11
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 347
+        width: 191
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2e8d56cc689d750800000000000000
+      internalID: 6330238963686105819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_12
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 348
+        width: 138
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cbc0314f3aacf40800000000000000
+      internalID: 5749588142978808887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_13
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 348
+        width: 207
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc35b8939b2b4240800000000000000
+      internalID: 4776959742678744266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 348
+        width: 243
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8c602c89bbf5bb0800000000000000
+      internalID: -4945027601064867626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 443
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6f6422ff85cb110800000000000000
+      internalID: 1277994247081359029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 348
+        width: 192
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466daceb52e4944c0800000000000000
+      internalID: -4302822044954077596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 55
+        width: 170
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9fddbb5333b35b0800000000000000
+      internalID: -5387656223340496472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_18
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 55
+        width: 183
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1389ec8d54d98cd0800000000000000
+      internalID: -2555277815294885093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_19
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 55
+        width: 188
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4b71d173c062cc0800000000000000
+      internalID: -3736285410006420284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_20
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 54
+        width: 143
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e6eb1c97602cb70800000000000000
+      internalID: 8917697332158295560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_21
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 55
+        width: 231
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1668e47e16e16c0800000000000000
+      internalID: -4170788558815731228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 55
+        width: 223
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a8b4dd9cab13f30800000000000000
+      internalID: 4553626074412190336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 163
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19354bb7a394d5c0800000000000000
+      internalID: -4191563004564391650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oracle-direction-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 54
+        width: 176
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2790b81e17924b8a0800000000000000
+      internalID: -6290357210437711502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

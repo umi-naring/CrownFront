@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 6af5ab945491a8d48811a8d54e48f65b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4228277347724694232
+    second: enemy-jelly-animation-atlas-v2_0
+  - first:
+      213: -188962851004517044
+    second: enemy-jelly-animation-atlas-v2_1
+  - first:
+      213: 5749934866061717235
+    second: enemy-jelly-animation-atlas-v2_2
+  - first:
+      213: 7096329891147764503
+    second: enemy-jelly-animation-atlas-v2_3
+  - first:
+      213: 5787114424547905015
+    second: enemy-jelly-animation-atlas-v2_4
+  - first:
+      213: 6034593438519921017
+    second: enemy-jelly-animation-atlas-v2_5
+  - first:
+      213: 932363435240286375
+    second: enemy-jelly-animation-atlas-v2_6
+  - first:
+      213: 1847528883798080854
+    second: enemy-jelly-animation-atlas-v2_7
+  - first:
+      213: 3079188077440857238
+    second: enemy-jelly-animation-atlas-v2_8
+  - first:
+      213: -5180146924880017751
+    second: enemy-jelly-animation-atlas-v2_9
+  - first:
+      213: 784423595336866391
+    second: enemy-jelly-animation-atlas-v2_10
+  - first:
+      213: -2531136987983362179
+    second: enemy-jelly-animation-atlas-v2_11
+  - first:
+      213: 1251395661814648866
+    second: enemy-jelly-animation-atlas-v2_12
+  - first:
+      213: 938988809570733243
+    second: enemy-jelly-animation-atlas-v2_13
+  - first:
+      213: -342054652715387315
+    second: enemy-jelly-animation-atlas-v2_14
+  - first:
+      213: -8442409283432648040
+    second: enemy-jelly-animation-atlas-v2_15
+  - first:
+      213: -7051117869834415372
+    second: enemy-jelly-animation-atlas-v2_16
+  - first:
+      213: -6761991126481355711
+    second: enemy-jelly-animation-atlas-v2_17
+  - first:
+      213: 4097642569028443419
+    second: enemy-jelly-animation-atlas-v2_18
+  - first:
+      213: 488387358676829477
+    second: enemy-jelly-animation-atlas-v2_19
+  - first:
+      213: 3808768716751441148
+    second: enemy-jelly-animation-atlas-v2_20
+  - first:
+      213: 8491677198401791203
+    second: enemy-jelly-animation-atlas-v2_21
+  - first:
+      213: -3794652302554877306
+    second: enemy-jelly-animation-atlas-v2_22
+  - first:
+      213: -4849106312296993867
+    second: enemy-jelly-animation-atlas-v2_23
+  - first:
+      213: 1834895083521541413
+    second: enemy-jelly-animation-atlas-v2_24
+  - first:
+      213: 3588025938292681757
+    second: enemy-jelly-animation-atlas-v2_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 556
+        width: 149
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82de90597242255c0800000000000000
+      internalID: -4228277347724694232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 558
+        width: 181
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c457126c94ba06df0800000000000000
+      internalID: -188962851004517044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_2
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 558
+        width: 145
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3feed35db4fdbcf40800000000000000
+      internalID: 5749934866061717235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 557
+        width: 195
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71359d2207a3b7260800000000000000
+      internalID: 7096329891147764503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_4
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 548
+        width: 158
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd87bd58e5ff4050800000000000000
+      internalID: 5787114424547905015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_5
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 540
+        width: 218
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97902ea72ce2fb350800000000000000
+      internalID: 6034593438519921017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_6
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 545
+        width: 177
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a86f0fba9b60fc00800000000000000
+      internalID: 932363435240286375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_7
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 547
+        width: 228
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dfe0f2bbdb3a910800000000000000
+      internalID: 1847528883798080854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 295
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694fa700e397bba20800000000000000
+      internalID: 3079188077440857238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 200
+        width: 163
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6c13241db6c18b0800000000000000
+      internalID: -5180146924880017751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 297
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a1d799a15d2ea00800000000000000
+      internalID: 784423595336866391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_11
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 199
+        width: 163
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d774669e1589fdcd0800000000000000
+      internalID: -2531136987983362179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_12
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 202
+        width: 152
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2205de769b9dd5110800000000000000
+      internalID: 1251395661814648866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_13
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 198
+        width: 189
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcc78ae855f70d00800000000000000
+      internalID: 938988809570733243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_14
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 291
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46312b0b17c04bf0800000000000000
+      internalID: -342054652715387315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_15
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 194
+        width: 161
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892798c8c7986da80800000000000000
+      internalID: -8442409283432648040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_16
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 189
+        width: 204
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f25c13e7a5652e90800000000000000
+      internalID: -7051117869834415372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_17
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 190
+        width: 188
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c3cb3a5e49822a0800000000000000
+      internalID: -6761991126481355711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_18
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 184
+        width: 268
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d957fc430cdd830800000000000000
+      internalID: 4097642569028443419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_19
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 255
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52549b217b917c600800000000000000
+      internalID: 488387358676829477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 246
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc0799d7f67bd430800000000000000
+      internalID: 3808768716751441148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_21
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 256
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4e50ecb6f78d570800000000000000
+      internalID: 8491677198401791203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_22
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 248
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6823914f5dfa65bc0800000000000000
+      internalID: -3794652302554877306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_23
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 250
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbee69208384bcb0800000000000000
+      internalID: -4849106312296993867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_24
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 242
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52589655b5bd67910800000000000000
+      internalID: 1834895083521541413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-jelly-animation-atlas-v2_25
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ca2d8a49a3bc130800000000000000
+      internalID: 3588025938292681757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

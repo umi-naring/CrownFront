@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: 4f68d53e299db834b9629577b2818f3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7920391450909103575
+    second: boss-ancient-ent-skill-directions-v1_0
+  - first:
+      213: -4263964060730784993
+    second: boss-ancient-ent-skill-directions-v1_1
+  - first:
+      213: 5439602338630961493
+    second: boss-ancient-ent-skill-directions-v1_2
+  - first:
+      213: -4456346563082862201
+    second: boss-ancient-ent-skill-directions-v1_3
+  - first:
+      213: 3300578412853197762
+    second: boss-ancient-ent-skill-directions-v1_4
+  - first:
+      213: -1469696165848268603
+    second: boss-ancient-ent-skill-directions-v1_5
+  - first:
+      213: -8975030209502791933
+    second: boss-ancient-ent-skill-directions-v1_6
+  - first:
+      213: -5453283370385244735
+    second: boss-ancient-ent-skill-directions-v1_7
+  - first:
+      213: -3267200423917376490
+    second: boss-ancient-ent-skill-directions-v1_8
+  - first:
+      213: 5359671600282574549
+    second: boss-ancient-ent-skill-directions-v1_9
+  - first:
+      213: 4892657915157606863
+    second: boss-ancient-ent-skill-directions-v1_10
+  - first:
+      213: 5894921710571394286
+    second: boss-ancient-ent-skill-directions-v1_11
+  - first:
+      213: 1915035487905003301
+    second: boss-ancient-ent-skill-directions-v1_12
+  - first:
+      213: 3709870817350314086
+    second: boss-ancient-ent-skill-directions-v1_13
+  - first:
+      213: -8917852501879440685
+    second: boss-ancient-ent-skill-directions-v1_14
+  - first:
+      213: 1746767580283675407
+    second: boss-ancient-ent-skill-directions-v1_15
+  - first:
+      213: 5154542164633472253
+    second: boss-ancient-ent-skill-directions-v1_16
+  - first:
+      213: 4136653635831525918
+    second: boss-ancient-ent-skill-directions-v1_17
+  - first:
+      213: 8265273324374814026
+    second: boss-ancient-ent-skill-directions-v1_18
+  - first:
+      213: 7250141768629077818
+    second: boss-ancient-ent-skill-directions-v1_19
+  - first:
+      213: -1433903787985966326
+    second: boss-ancient-ent-skill-directions-v1_20
+  - first:
+      213: 2265055492172626764
+    second: boss-ancient-ent-skill-directions-v1_21
+  - first:
+      213: 1795258725901698387
+    second: boss-ancient-ent-skill-directions-v1_22
+  - first:
+      213: -2459602447284586093
+    second: boss-ancient-ent-skill-directions-v1_23
+  - first:
+      213: -633187188455369955
+    second: boss-ancient-ent-skill-directions-v1_24
+  - first:
+      213: 7180364135915506494
+    second: boss-ancient-ent-skill-directions-v1_25
+  - first:
+      213: 4876097310284844364
+    second: boss-ancient-ent-skill-directions-v1_26
+  - first:
+      213: -7081476563940621562
+    second: boss-ancient-ent-skill-directions-v1_27
+  - first:
+      213: 5480200194335623583
+    second: boss-ancient-ent-skill-directions-v1_28
+  - first:
+      213: -2305069695117670000
+    second: boss-ancient-ent-skill-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 916
+        width: 162
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92aa58e70fd151290800000000000000
+      internalID: -7920391450909103575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 915
+        width: 167
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f130c19374b53d4c0800000000000000
+      internalID: -4263964060730784993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 910
+        width: 183
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5598b79b1895d7b40800000000000000
+      internalID: 5439602338630961493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 901
+        width: 251
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781c96f5960e722c0800000000000000
+      internalID: -4456346563082862201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 916
+        width: 149
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbff6b44920ecd20800000000000000
+      internalID: 3300578412853197762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 915
+        width: 148
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c04cdabf179a9be0800000000000000
+      internalID: -1469696165848268603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 680
+        width: 150
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307bf228399427380800000000000000
+      internalID: -8975030209502791933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 680
+        width: 168
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd74a8daab0254b0800000000000000
+      internalID: -5453283370385244735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 674
+        width: 198
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c266a568298a2d0800000000000000
+      internalID: -3267200423917376490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 664
+        width: 264
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de97977ce0616a40800000000000000
+      internalID: 5359671600282574549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 680
+        width: 146
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1f870937636e340800000000000000
+      internalID: 4892657915157606863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 676
+        width: 141
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee498592018fec150800000000000000
+      internalID: 5894921710571394286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 455
+        width: 133
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52738d441a2939a10800000000000000
+      internalID: 1915035487905003301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 454
+        width: 165
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668e0c64adb1c7330800000000000000
+      internalID: 3709870817350314086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 448
+        width: 189
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dab52af56c6d3480800000000000000
+      internalID: -8917852501879440685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 436
+        width: 264
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f032af70cd3cd3810800000000000000
+      internalID: 1746767580283675407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 453
+        width: 138
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc40cee9cc988740800000000000000
+      internalID: 5154542164633472253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 451
+        width: 128
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12f09a9098586930800000000000000
+      internalID: 4136653635831525918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 236
+        width: 133
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d6fd61c4624b270800000000000000
+      internalID: 8265273324374814026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 235
+        width: 164
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37cb52968dad9460800000000000000
+      internalID: 7250141768629077818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 230
+        width: 193
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b620b1a10c91ce0800000000000000
+      internalID: -1433903787985966326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 214
+        width: 266
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b3f7728f71f6f10800000000000000
+      internalID: 2265055492172626764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 235
+        width: 136
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3558a4dac4a0ae810800000000000000
+      internalID: 1795258725901698387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 234
+        width: 130
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399bbe01b9cbdddd0800000000000000
+      internalID: -2459602447284586093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 25
+        width: 140
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d131acb5b977637f0800000000000000
+      internalID: -633187188455369955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 25
+        width: 149
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bc23f6327c5a360800000000000000
+      internalID: 7180364135915506494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 24
+        width: 155
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d04c54ba06ba340800000000000000
+      internalID: 4876097310284844364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 5
+        width: 260
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603c019959a89bd90800000000000000
+      internalID: -7081476563940621562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 24
+        width: 129
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99c6699a059d0c40800000000000000
+      internalID: 5480200194335623583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 26
+        width: 138
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0994ef7335fb200e0800000000000000
+      internalID: -2305069695117670000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

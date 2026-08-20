@@ -1,0 +1,1293 @@
+fileFormatVersion: 2
+guid: e95dfebb80bb3594883a71311e52fc9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3600807377879193742
+    second: vfx-ultimate-remainders-v4_0
+  - first:
+      213: -6862666104224465433
+    second: vfx-ultimate-remainders-v4_1
+  - first:
+      213: -3448656739460857452
+    second: vfx-ultimate-remainders-v4_2
+  - first:
+      213: 4268319259657893384
+    second: vfx-ultimate-remainders-v4_3
+  - first:
+      213: 2855040470929093151
+    second: vfx-ultimate-remainders-v4_4
+  - first:
+      213: -4486156240282898518
+    second: vfx-ultimate-remainders-v4_5
+  - first:
+      213: 8920886249002195141
+    second: vfx-ultimate-remainders-v4_6
+  - first:
+      213: -1909302341035418512
+    second: vfx-ultimate-remainders-v4_7
+  - first:
+      213: 7526263915752797148
+    second: vfx-ultimate-remainders-v4_8
+  - first:
+      213: -3950052073514709036
+    second: vfx-ultimate-remainders-v4_9
+  - first:
+      213: -3479947181029406492
+    second: vfx-ultimate-remainders-v4_10
+  - first:
+      213: -3997124792197677554
+    second: vfx-ultimate-remainders-v4_11
+  - first:
+      213: 6770484256483877301
+    second: vfx-ultimate-remainders-v4_12
+  - first:
+      213: 8035694170901655656
+    second: vfx-ultimate-remainders-v4_13
+  - first:
+      213: -1930359627904478662
+    second: vfx-ultimate-remainders-v4_14
+  - first:
+      213: -2715962856723140654
+    second: vfx-ultimate-remainders-v4_15
+  - first:
+      213: 2636091298803539782
+    second: vfx-ultimate-remainders-v4_16
+  - first:
+      213: 7850532893514436598
+    second: vfx-ultimate-remainders-v4_17
+  - first:
+      213: -6492326516030252475
+    second: vfx-ultimate-remainders-v4_18
+  - first:
+      213: -5610809216210295387
+    second: vfx-ultimate-remainders-v4_19
+  - first:
+      213: -1774285019274836081
+    second: vfx-ultimate-remainders-v4_20
+  - first:
+      213: 835218230679668522
+    second: vfx-ultimate-remainders-v4_21
+  - first:
+      213: 1980510793561397747
+    second: vfx-ultimate-remainders-v4_22
+  - first:
+      213: -2377944175366455594
+    second: vfx-ultimate-remainders-v4_23
+  - first:
+      213: 6302770868410370883
+    second: vfx-ultimate-remainders-v4_24
+  - first:
+      213: -7228974786296894663
+    second: vfx-ultimate-remainders-v4_25
+  - first:
+      213: 2619395055744761462
+    second: vfx-ultimate-remainders-v4_26
+  - first:
+      213: -7108816476219520247
+    second: vfx-ultimate-remainders-v4_27
+  - first:
+      213: -6972424065657403038
+    second: vfx-ultimate-remainders-v4_28
+  - first:
+      213: -7871445074922118412
+    second: vfx-ultimate-remainders-v4_29
+  - first:
+      213: -4133373343999987408
+    second: vfx-ultimate-remainders-v4_30
+  - first:
+      213: 789567638568112311
+    second: vfx-ultimate-remainders-v4_31
+  - first:
+      213: -434296637914599158
+    second: vfx-ultimate-remainders-v4_32
+  - first:
+      213: 2673852655225045159
+    second: vfx-ultimate-remainders-v4_33
+  - first:
+      213: 3266139062270360790
+    second: vfx-ultimate-remainders-v4_34
+  - first:
+      213: 3870629716091066717
+    second: vfx-ultimate-remainders-v4_35
+  - first:
+      213: -6058510267830630521
+    second: vfx-ultimate-remainders-v4_36
+  - first:
+      213: 7358577715191071082
+    second: vfx-ultimate-remainders-v4_37
+  - first:
+      213: -8686608984821278551
+    second: vfx-ultimate-remainders-v4_38
+  - first:
+      213: 2460225198109949119
+    second: vfx-ultimate-remainders-v4_39
+  - first:
+      213: -7785964495800615311
+    second: vfx-ultimate-remainders-v4_40
+  - first:
+      213: -3345701934724255051
+    second: vfx-ultimate-remainders-v4_41
+  - first:
+      213: 3051716957617527877
+    second: vfx-ultimate-remainders-v4_42
+  - first:
+      213: 7547884229079102707
+    second: vfx-ultimate-remainders-v4_43
+  - first:
+      213: -6461456525704781090
+    second: vfx-ultimate-remainders-v4_44
+  - first:
+      213: -325904843825014865
+    second: vfx-ultimate-remainders-v4_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1092
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277a7e884cc570ec0800000000000000
+      internalID: -3600807377879193742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1090
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed3695c989e2c0a0800000000000000
+      internalID: -6862666104224465433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1087
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491cd2c97f8e320d0800000000000000
+      internalID: -3448656739460857452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1084
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806fddb80cd1c3b30800000000000000
+      internalID: 4268319259657893384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_4
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1092
+        width: 54
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12b7118e242f9720800000000000000
+      internalID: 2855040470929093151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_5
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1088
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf290b0ba8fdb1c0800000000000000
+      internalID: -4486156240282898518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_6
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1084
+        width: 70
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8517157ca5dcb70800000000000000
+      internalID: 8920886249002195141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_7
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1084
+        width: 77
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c13c103abc085e0800000000000000
+      internalID: -1909302341035418512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 928
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd33940d729a27860800000000000000
+      internalID: 7526263915752797148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_9
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 927
+        width: 78
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df4cd141989e29c0800000000000000
+      internalID: -3950052073514709036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_10
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 924
+        width: 82
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8ce95f97eb4bfc0800000000000000
+      internalID: -3479947181029406492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_11
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 924
+        width: 82
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e762edd2c5788c0800000000000000
+      internalID: -3997124792197677554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 927
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1a8194f8795fd50800000000000000
+      internalID: 6770484256483877301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_13
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 928
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86035440645848f60800000000000000
+      internalID: 8035694170901655656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_14
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 926
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a329ff9552cf535e0800000000000000
+      internalID: -1930359627904478662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_15
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 926
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfacddeb26fe4ad0800000000000000
+      internalID: -2715962856723140654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 758
+        width: 74
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fdea4d117459420800000000000000
+      internalID: 2636091298803539782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_17
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 761
+        width: 72
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff827f9212b2fc60800000000000000
+      internalID: 7850532893514436598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_18
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 759
+        width: 74
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ada267e6f96e5a0800000000000000
+      internalID: -6492326516030252475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_19
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 760
+        width: 74
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a52c45ceb66222b0800000000000000
+      internalID: -5610809216210295387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_20
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 759
+        width: 72
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8783dfec297067e0800000000000000
+      internalID: -1774285019274836081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_21
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 759
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27879d3e8a479b00800000000000000
+      internalID: 835218230679668522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_22
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 760
+        width: 75
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9dd04d2103c7b10800000000000000
+      internalID: 1980510793561397747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 757
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6deb2931f58dffed0800000000000000
+      internalID: -2377944175366455594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_24
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 600
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bc74816b0f77750800000000000000
+      internalID: 6302770868410370883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_25
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 602
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ba48c8bb58dab90800000000000000
+      internalID: -7228974786296894663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_26
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 609
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67eb410dce5f95420800000000000000
+      internalID: 2619395055744761462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_27
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 601
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bcd793419685d90800000000000000
+      internalID: -7108816476219520247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_28
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 603
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2690b17f049fc3f90800000000000000
+      internalID: -6972424065657403038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_29
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 646
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2e448b86203c290800000000000000
+      internalID: -7871445074922118412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_30
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 624
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031ffcad7de43a6c0800000000000000
+      internalID: -4133373343999987408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_31
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 605
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b01ffe759b15fa00800000000000000
+      internalID: 789567638568112311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_32
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 617
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0134f1428119f9f0800000000000000
+      internalID: -434296637914599158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_33
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 618
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a08c60c2de6b1520800000000000000
+      internalID: 2673852655225045159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_34
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 604
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcf6a12c28a35d20800000000000000
+      internalID: 3266139062270360790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_35
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 620
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59dda4283d37b530800000000000000
+      internalID: 3870629716091066717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_36
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 612
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78706e1c209dbeba0800000000000000
+      internalID: -6058510267830630521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_37
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 622
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61c11ec17bee1660800000000000000
+      internalID: 7358577715191071082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_38
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 604
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8d205e627f27780800000000000000
+      internalID: -8686608984821278551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_39
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 619
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcfec868c9742220800000000000000
+      internalID: 2460225198109949119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_40
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 611
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e300afa82b2f390800000000000000
+      internalID: -7785964495800615311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_41
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 607
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b27c6011dda191d0800000000000000
+      internalID: -3345701934724255051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_42
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 612
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c14dd7760e95a20800000000000000
+      internalID: 3051716957617527877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_43
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 607
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4780847b87fb860800000000000000
+      internalID: 7547884229079102707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_44
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 613
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2acbd268b4456a0800000000000000
+      internalID: -6461456525704781090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-remainders-v4_45
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 606
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa71b3175472a7bf0800000000000000
+      internalID: -325904843825014865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

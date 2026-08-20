@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: 6ee9e61d4ad7529458d6f9e1f1ad1323
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2411348682313756786
+    second: boss-goblin-warchief-attack-directions-v2_0
+  - first:
+      213: -4401382452931119142
+    second: boss-goblin-warchief-attack-directions-v2_1
+  - first:
+      213: 5318842194037280943
+    second: boss-goblin-warchief-attack-directions-v2_2
+  - first:
+      213: 8612606232807099464
+    second: boss-goblin-warchief-attack-directions-v2_3
+  - first:
+      213: 4138652395002659877
+    second: boss-goblin-warchief-attack-directions-v2_4
+  - first:
+      213: -7738563481451316649
+    second: boss-goblin-warchief-attack-directions-v2_5
+  - first:
+      213: 5761641278001354274
+    second: boss-goblin-warchief-attack-directions-v2_6
+  - first:
+      213: 3441654107786919659
+    second: boss-goblin-warchief-attack-directions-v2_7
+  - first:
+      213: 3609459648827614897
+    second: boss-goblin-warchief-attack-directions-v2_8
+  - first:
+      213: -5435197595181330101
+    second: boss-goblin-warchief-attack-directions-v2_9
+  - first:
+      213: -5018104080748905706
+    second: boss-goblin-warchief-attack-directions-v2_10
+  - first:
+      213: 1612932957443130474
+    second: boss-goblin-warchief-attack-directions-v2_11
+  - first:
+      213: 5737493057975916042
+    second: boss-goblin-warchief-attack-directions-v2_12
+  - first:
+      213: -500586842831335059
+    second: boss-goblin-warchief-attack-directions-v2_13
+  - first:
+      213: 6743064741113336375
+    second: boss-goblin-warchief-attack-directions-v2_14
+  - first:
+      213: -19654040151930194
+    second: boss-goblin-warchief-attack-directions-v2_15
+  - first:
+      213: 8635485001512364053
+    second: boss-goblin-warchief-attack-directions-v2_16
+  - first:
+      213: 3700773145715780673
+    second: boss-goblin-warchief-attack-directions-v2_17
+  - first:
+      213: -3758983355645979281
+    second: boss-goblin-warchief-attack-directions-v2_18
+  - first:
+      213: 7578580101646780162
+    second: boss-goblin-warchief-attack-directions-v2_19
+  - first:
+      213: -6066994159501282386
+    second: boss-goblin-warchief-attack-directions-v2_20
+  - first:
+      213: 4092951182287106912
+    second: boss-goblin-warchief-attack-directions-v2_21
+  - first:
+      213: -4776138429158144613
+    second: boss-goblin-warchief-attack-directions-v2_22
+  - first:
+      213: 5613071560427292336
+    second: boss-goblin-warchief-attack-directions-v2_23
+  - first:
+      213: 1987666856199583979
+    second: boss-goblin-warchief-attack-directions-v2_24
+  - first:
+      213: -2729004688880374531
+    second: boss-goblin-warchief-attack-directions-v2_25
+  - first:
+      213: -5361435529323943084
+    second: boss-goblin-warchief-attack-directions-v2_26
+  - first:
+      213: -1930754900099464558
+    second: boss-goblin-warchief-attack-directions-v2_27
+  - first:
+      213: -7538254323446812150
+    second: boss-goblin-warchief-attack-directions-v2_28
+  - first:
+      213: -2633007524517383242
+    second: boss-goblin-warchief-attack-directions-v2_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1007
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f0519362b298ed0800000000000000
+      internalID: -2411348682313756786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1007
+        width: 146
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad737648af52be2c0800000000000000
+      internalID: -4401382452931119142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1007
+        width: 171
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa093f78bc250d940800000000000000
+      internalID: 5318842194037280943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_3
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1007
+        width: 148
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c48c8bcbf168770800000000000000
+      internalID: 8612606232807099464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1007
+        width: 171
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52404fcfc627f6930800000000000000
+      internalID: 4138652395002659877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_5
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1007
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ab848a3891b9490800000000000000
+      internalID: -7738563481451316649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 757
+        width: 141
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2269f72473675ff40800000000000000
+      internalID: 5761641278001354274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_7
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 757
+        width: 145
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee37662d2633cf20800000000000000
+      internalID: 3441654107786919659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_8
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 757
+        width: 146
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6e9774d60671230800000000000000
+      internalID: 3609459648827614897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_9
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 757
+        width: 158
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41d827859c4294b0800000000000000
+      internalID: -5435197595181330101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_10
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 757
+        width: 163
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bf505fcec1c5ab0800000000000000
+      internalID: -5018104080748905706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_11
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 757
+        width: 141
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a640be6aaf9426610800000000000000
+      internalID: 1612932957443130474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 507
+        width: 90
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a069ce5a98baf9f40800000000000000
+      internalID: 5737493057975916042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_13
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 507
+        width: 174
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61ddcd2bee8d09f0800000000000000
+      internalID: -500586842831335059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_14
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 507
+        width: 152
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732958fd7ad249d50800000000000000
+      internalID: 6743064741113336375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_15
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 507
+        width: 176
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaac75e21cc2abff0800000000000000
+      internalID: -19654040151930194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_16
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 507
+        width: 134
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518ab5a2bd767d770800000000000000
+      internalID: 8635485001512364053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_17
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 507
+        width: 90
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ca1b88199cb5330800000000000000
+      internalID: 3700773145715780673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 257
+        width: 100
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f659d12dd8865dbc0800000000000000
+      internalID: -3758983355645979281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_19
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 257
+        width: 173
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207008c03768c2960800000000000000
+      internalID: 7578580101646780162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_20
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 257
+        width: 192
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea37e8cc4f4bdcba0800000000000000
+      internalID: -6066994159501282386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_21
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 257
+        width: 185
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063fc373a651dc830800000000000000
+      internalID: 4092951182287106912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_22
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 257
+        width: 161
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95cfeb576fb7bdb0800000000000000
+      internalID: -4776138429158144613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_23
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 257
+        width: 100
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6cd1a48d2a5ed40800000000000000
+      internalID: 5613071560427292336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_24
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 7
+        width: 139
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8f79f797c959b10800000000000000
+      internalID: 1987666856199583979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_25
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 7
+        width: 145
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfce8e0c1b0a02ad0800000000000000
+      internalID: -2729004688880374531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_26
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 7
+        width: 186
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bec7ccaca5895b0800000000000000
+      internalID: -5361435529323943084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_27
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 7
+        width: 164
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2920a3fd5a49435e0800000000000000
+      internalID: -1930754900099464558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_28
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 7
+        width: 172
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a027668d1adb26790800000000000000
+      internalID: -7538254323446812150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-attack-directions-v2_29
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 7
+        width: 139
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3f5325b9da57bd0800000000000000
+      internalID: -2633007524517383242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

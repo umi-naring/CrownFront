@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: d1d86c6eaf02c8b4394cfee871002706
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4042417613590738488
+    second: skin-anim-melee-b-normal-v1_0
+  - first:
+      213: 9165276074642036832
+    second: skin-anim-melee-b-normal-v1_1
+  - first:
+      213: 7226499680022737713
+    second: skin-anim-melee-b-normal-v1_2
+  - first:
+      213: -5135642206223367688
+    second: skin-anim-melee-b-normal-v1_3
+  - first:
+      213: -4709155381874856241
+    second: skin-anim-melee-b-normal-v1_4
+  - first:
+      213: 6148682675547455432
+    second: skin-anim-melee-b-normal-v1_5
+  - first:
+      213: -6113242241514743611
+    second: skin-anim-melee-b-normal-v1_6
+  - first:
+      213: 5818758512035474299
+    second: skin-anim-melee-b-normal-v1_7
+  - first:
+      213: -6216243291444493739
+    second: skin-anim-melee-b-normal-v1_8
+  - first:
+      213: 5872957222055678181
+    second: skin-anim-melee-b-normal-v1_9
+  - first:
+      213: 5588309947726481681
+    second: skin-anim-melee-b-normal-v1_10
+  - first:
+      213: -6967910720548854426
+    second: skin-anim-melee-b-normal-v1_11
+  - first:
+      213: 1994266166238390425
+    second: skin-anim-melee-b-normal-v1_12
+  - first:
+      213: -5182364826899233467
+    second: skin-anim-melee-b-normal-v1_13
+  - first:
+      213: 3896320040825841771
+    second: skin-anim-melee-b-normal-v1_14
+  - first:
+      213: 3028338531648799883
+    second: skin-anim-melee-b-normal-v1_15
+  - first:
+      213: 3961291969887824474
+    second: skin-anim-melee-b-normal-v1_16
+  - first:
+      213: 693156405193457741
+    second: skin-anim-melee-b-normal-v1_17
+  - first:
+      213: -9215865726479116495
+    second: skin-anim-melee-b-normal-v1_18
+  - first:
+      213: 5540308321177708465
+    second: skin-anim-melee-b-normal-v1_19
+  - first:
+      213: -3223346424219056662
+    second: skin-anim-melee-b-normal-v1_20
+  - first:
+      213: -7873942424557355017
+    second: skin-anim-melee-b-normal-v1_21
+  - first:
+      213: -545807367958830675
+    second: skin-anim-melee-b-normal-v1_22
+  - first:
+      213: 856481119840346615
+    second: skin-anim-melee-b-normal-v1_23
+  - first:
+      213: -6703875228735860594
+    second: skin-anim-melee-b-normal-v1_24
+  - first:
+      213: -4949176022884434002
+    second: skin-anim-melee-b-normal-v1_25
+  - first:
+      213: 5405276325309044560
+    second: skin-anim-melee-b-normal-v1_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 147
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9442c199276e7c0800000000000000
+      internalID: -4042417613590738488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 666
+        width: 707
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068dc69b70a913f70800000000000000
+      internalID: 9165276074642036832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_2
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 672
+        width: 215
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133ba3ddb2fa94460800000000000000
+      internalID: 7226499680022737713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_3
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 669
+        width: 241
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f18d8c8f988ab8b0800000000000000
+      internalID: -5135642206223367688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 661
+        width: 189
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fceea3f5128b5aeb0800000000000000
+      internalID: -4709155381874856241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 670
+        width: 420
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfba98f052845550800000000000000
+      internalID: 6148682675547455432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 361
+        width: 231
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8d9981296692ba0800000000000000
+      internalID: -6113242241514743611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_7
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 361
+        width: 213
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ba7af990260c050800000000000000
+      internalID: 5818758512035474299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 360
+        width: 220
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552cb0859a77bb9a0800000000000000
+      internalID: -6216243291444493739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_9
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 497
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e091b92a7fe08150800000000000000
+      internalID: 5872957222055678181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_10
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 360
+        width: 221
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119c4011a4aad8d40800000000000000
+      internalID: 5588309947726481681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_11
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 360
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665ac030e120d4f90800000000000000
+      internalID: -6967910720548854426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 355
+        width: 181
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998283a138e0dab10800000000000000
+      internalID: 1994266166238390425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 360
+        width: 180
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5454134b5aa8418b0800000000000000
+      internalID: -5182364826899233467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_14
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 61
+        width: 210
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68e8acfe62821630800000000000000
+      internalID: 3896320040825841771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_15
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 60
+        width: 209
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b840e8689d1d60a20800000000000000
+      internalID: 3028338531648799883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_16
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 60
+        width: 203
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a65cc0f0659f630800000000000000
+      internalID: 3961291969887824474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_17
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 60
+        width: 236
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40c759f3169e9900800000000000000
+      internalID: 693156405193457741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_18
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 60
+        width: 230
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137d38313faaa1080800000000000000
+      internalID: -9215865726479116495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 0
+        width: 584
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b720f5701123ec40800000000000000
+      internalID: 5540308321177708465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 51
+        width: 175
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5c564518f5443d0800000000000000
+      internalID: -3223346424219056662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 214
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff716235132ab290800000000000000
+      internalID: -7873942424557355017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_22
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 55
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1e5053717ec68f0800000000000000
+      internalID: -545807367958830675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_23
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 109
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1a9e86a05d2eb00800000000000000
+      internalID: 856481119840346615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_24
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 0
+        width: 280
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8098a48ffc07f2a0800000000000000
+      internalID: -6703875228735860594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_25
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 0
+        width: 187
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafb71901aef05bb0800000000000000
+      internalID: -4949176022884434002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-melee-b-normal-v1_26
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 0
+        width: 183
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057dfd2fd26630b40800000000000000
+      internalID: 5405276325309044560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

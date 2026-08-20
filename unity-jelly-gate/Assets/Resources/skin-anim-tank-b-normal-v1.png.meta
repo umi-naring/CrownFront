@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: cd48616021fed3a4baff4c0891515e9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 184890241453216023
+    second: skin-anim-tank-b-normal-v1_0
+  - first:
+      213: 4548134388900874121
+    second: skin-anim-tank-b-normal-v1_1
+  - first:
+      213: -4784240978900700727
+    second: skin-anim-tank-b-normal-v1_2
+  - first:
+      213: 9053594584673041421
+    second: skin-anim-tank-b-normal-v1_3
+  - first:
+      213: -6111237283640443892
+    second: skin-anim-tank-b-normal-v1_4
+  - first:
+      213: 3219605490595510241
+    second: skin-anim-tank-b-normal-v1_5
+  - first:
+      213: 5051571000469313592
+    second: skin-anim-tank-b-normal-v1_6
+  - first:
+      213: -5850406790520489400
+    second: skin-anim-tank-b-normal-v1_7
+  - first:
+      213: 5605148676348448578
+    second: skin-anim-tank-b-normal-v1_8
+  - first:
+      213: 690065398009318422
+    second: skin-anim-tank-b-normal-v1_9
+  - first:
+      213: 6702230168686142399
+    second: skin-anim-tank-b-normal-v1_10
+  - first:
+      213: -3437727812496042340
+    second: skin-anim-tank-b-normal-v1_11
+  - first:
+      213: -3712837614160244720
+    second: skin-anim-tank-b-normal-v1_12
+  - first:
+      213: -5638287044054065305
+    second: skin-anim-tank-b-normal-v1_13
+  - first:
+      213: -1642058398145584442
+    second: skin-anim-tank-b-normal-v1_14
+  - first:
+      213: 3730583091929731576
+    second: skin-anim-tank-b-normal-v1_15
+  - first:
+      213: -1227078009762909360
+    second: skin-anim-tank-b-normal-v1_16
+  - first:
+      213: 5629256131015502609
+    second: skin-anim-tank-b-normal-v1_17
+  - first:
+      213: 440283345374063773
+    second: skin-anim-tank-b-normal-v1_18
+  - first:
+      213: -5888501124646070028
+    second: skin-anim-tank-b-normal-v1_19
+  - first:
+      213: 7943150590454157003
+    second: skin-anim-tank-b-normal-v1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 736
+        width: 207
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711514ce1bcd09200800000000000000
+      internalID: 184890241453216023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 737
+        width: 174
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987cc2131283e1f30800000000000000
+      internalID: 4548134388900874121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_2
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 735
+        width: 173
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1b1cc7d26fa9db0800000000000000
+      internalID: -4784240978900700727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_3
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 736
+        width: 182
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c36d78e44d4ad70800000000000000
+      internalID: 9053594584673041421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_4
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 738
+        width: 204
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0cfc7ab116803ba0800000000000000
+      internalID: -6111237283640443892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 735
+        width: 190
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7b7dfa2265eac20800000000000000
+      internalID: 3219605490595510241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 738
+        width: 165
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83853a08f09ca1640800000000000000
+      internalID: 5051571000469313592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_7
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 412
+        width: 209
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a3e73550e2fcea0800000000000000
+      internalID: -5850406790520489400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_8
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 413
+        width: 174
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f0007160d79cd40800000000000000
+      internalID: 5605148676348448578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_9
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 414
+        width: 172
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c4228c2da939900800000000000000
+      internalID: 690065398009318422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_10
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 413
+        width: 170
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3a17714da130d50800000000000000
+      internalID: 6702230168686142399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_11
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 413
+        width: 161
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9651b5b4ccba40d0800000000000000
+      internalID: -3437727812496042340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 416
+        width: 194
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01015438cd9597cc0800000000000000
+      internalID: -3712837614160244720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 413
+        width: 166
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f587d6ec7c0c1b0800000000000000
+      internalID: -5638287044054065305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 107
+        width: 159
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2e51e369c3639e0800000000000000
+      internalID: -1642058398145584442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_15
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 107
+        width: 160
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1dc8f7e81b5c330800000000000000
+      internalID: 3730583091929731576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_16
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 107
+        width: 161
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053736c2d0b88fee0800000000000000
+      internalID: -1227078009762909360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_17
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 107
+        width: 153
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b6ed640a22f1e40800000000000000
+      internalID: 5629256131015502609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_18
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 106
+        width: 209
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9caa81be533c1600800000000000000
+      internalID: 440283345374063773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 111
+        width: 181
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f89bfdfc67d74ea0800000000000000
+      internalID: -5888501124646070028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-tank-b-normal-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 108
+        width: 152
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce447d906dbb3e60800000000000000
+      internalID: 7943150590454157003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

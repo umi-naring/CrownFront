@@ -1,0 +1,643 @@
+fileFormatVersion: 2
+guid: ee6cb431375766c40b4ae5499158d7d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7568122709493891388
+    second: hero-single-mage-direction-v2_0
+  - first:
+      213: -729535201605476729
+    second: hero-single-mage-direction-v2_1
+  - first:
+      213: 8559685676829083152
+    second: hero-single-mage-direction-v2_2
+  - first:
+      213: 4340637859814433220
+    second: hero-single-mage-direction-v2_3
+  - first:
+      213: 577523212376768054
+    second: hero-single-mage-direction-v2_4
+  - first:
+      213: -7575578949126244540
+    second: hero-single-mage-direction-v2_5
+  - first:
+      213: 1829703175589745502
+    second: hero-single-mage-direction-v2_6
+  - first:
+      213: 6764700578168946305
+    second: hero-single-mage-direction-v2_7
+  - first:
+      213: -314824484613725247
+    second: hero-single-mage-direction-v2_8
+  - first:
+      213: 8343562630961141301
+    second: hero-single-mage-direction-v2_9
+  - first:
+      213: -2032036179446311745
+    second: hero-single-mage-direction-v2_10
+  - first:
+      213: 5377331026075434713
+    second: hero-single-mage-direction-v2_11
+  - first:
+      213: -4173135004515254385
+    second: hero-single-mage-direction-v2_12
+  - first:
+      213: -1130290875254386388
+    second: hero-single-mage-direction-v2_13
+  - first:
+      213: 5757406376897184327
+    second: hero-single-mage-direction-v2_14
+  - first:
+      213: -2169733033467019795
+    second: hero-single-mage-direction-v2_15
+  - first:
+      213: 4809211519824989843
+    second: hero-single-mage-direction-v2_16
+  - first:
+      213: -5203664932341026581
+    second: hero-single-mage-direction-v2_17
+  - first:
+      213: -1212618005485762342
+    second: hero-single-mage-direction-v2_18
+  - first:
+      213: 8228135564298421900
+    second: hero-single-mage-direction-v2_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 555
+        width: 230
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3143f3b18f570960800000000000000
+      internalID: 7568122709493891388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 555
+        width: 233
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e9921799b20e5f0800000000000000
+      internalID: -729535201605476729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 555
+        width: 235
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016856c95cc1ac670800000000000000
+      internalID: 8559685676829083152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_3
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 555
+        width: 232
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1e9d4c22b0d3c30800000000000000
+      internalID: 4340637859814433220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_4
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 555
+        width: 225
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e72434d46c30800800000000000000
+      internalID: 577523212376768054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_5
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 555
+        width: 201
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447376935132ed690800000000000000
+      internalID: -7575578949126244540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_6
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 555
+        width: 219
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e535e611859646910800000000000000
+      internalID: 1829703175589745502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 309
+        width: 213
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18eb3adb55b01ed50800000000000000
+      internalID: 6764700578168946305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_8
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 308
+        width: 204
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3e00c9cc481abf0800000000000000
+      internalID: -314824484613725247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_9
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 308
+        width: 209
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53699abb10a4ac370800000000000000
+      internalID: 8343562630961141301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_10
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 308
+        width: 202
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb45c596cd1ccc3e0800000000000000
+      internalID: -2032036179446311745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_11
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 310
+        width: 240
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9deb9e0f31e10aa40800000000000000
+      internalID: 5377331026075434713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_12
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 310
+        width: 239
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fbe18d2db0616c0800000000000000
+      internalID: -4173135004515254385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_13
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 308
+        width: 203
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21d89fff666050f0800000000000000
+      internalID: -1130290875254386388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_14
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 33
+        width: 217
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7428682889a66ef40800000000000000
+      internalID: 5757406376897184327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_15
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 33
+        width: 216
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded74c24d4f83e1e0800000000000000
+      internalID: -2169733033467019795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_16
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 32
+        width: 229
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e82e0a560cdb240800000000000000
+      internalID: 4809211519824989843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_17
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 32
+        width: 233
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0f7a1705ed8c7b0800000000000000
+      internalID: -5203664932341026581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_18
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 32
+        width: 175
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad847c6495aeb2fe0800000000000000
+      internalID: -1212618005485762342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-single-mage-direction-v2_19
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 32
+        width: 362
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8604c183b5303270800000000000000
+      internalID: 8228135564298421900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

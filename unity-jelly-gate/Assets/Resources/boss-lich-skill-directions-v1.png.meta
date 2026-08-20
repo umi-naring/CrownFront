@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: ac42f16de5d9a704fbc08c90fb035f54
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3653526607291990755
+    second: boss-lich-skill-directions-v1_0
+  - first:
+      213: -1083012383850479280
+    second: boss-lich-skill-directions-v1_1
+  - first:
+      213: 6941466009163264833
+    second: boss-lich-skill-directions-v1_2
+  - first:
+      213: -8764590903542557349
+    second: boss-lich-skill-directions-v1_3
+  - first:
+      213: 3987554663110195850
+    second: boss-lich-skill-directions-v1_4
+  - first:
+      213: -6711500226315099495
+    second: boss-lich-skill-directions-v1_5
+  - first:
+      213: 8263224268712989840
+    second: boss-lich-skill-directions-v1_6
+  - first:
+      213: 6833349143829656314
+    second: boss-lich-skill-directions-v1_7
+  - first:
+      213: 2942273838835627120
+    second: boss-lich-skill-directions-v1_8
+  - first:
+      213: -7627431964656055469
+    second: boss-lich-skill-directions-v1_9
+  - first:
+      213: 7199887624929654030
+    second: boss-lich-skill-directions-v1_10
+  - first:
+      213: -5690795354633040005
+    second: boss-lich-skill-directions-v1_11
+  - first:
+      213: -4627541937512897489
+    second: boss-lich-skill-directions-v1_12
+  - first:
+      213: -8658668923207471068
+    second: boss-lich-skill-directions-v1_13
+  - first:
+      213: -5650594047683382403
+    second: boss-lich-skill-directions-v1_14
+  - first:
+      213: 6866526496226810302
+    second: boss-lich-skill-directions-v1_15
+  - first:
+      213: -7006725902830269220
+    second: boss-lich-skill-directions-v1_16
+  - first:
+      213: -1355028544707215982
+    second: boss-lich-skill-directions-v1_17
+  - first:
+      213: -7315875942064536720
+    second: boss-lich-skill-directions-v1_18
+  - first:
+      213: -7877820963252513783
+    second: boss-lich-skill-directions-v1_19
+  - first:
+      213: 2337181509531189616
+    second: boss-lich-skill-directions-v1_20
+  - first:
+      213: 1841579917488194327
+    second: boss-lich-skill-directions-v1_21
+  - first:
+      213: 3806789984753240168
+    second: boss-lich-skill-directions-v1_22
+  - first:
+      213: -1906896998539871497
+    second: boss-lich-skill-directions-v1_23
+  - first:
+      213: -2805626116203404376
+    second: boss-lich-skill-directions-v1_24
+  - first:
+      213: -5958288921726114722
+    second: boss-lich-skill-directions-v1_25
+  - first:
+      213: 6180285178380363369
+    second: boss-lich-skill-directions-v1_26
+  - first:
+      213: 709057762102249663
+    second: boss-lich-skill-directions-v1_27
+  - first:
+      213: 19516797831288862
+    second: boss-lich-skill-directions-v1_28
+  - first:
+      213: -5815579663094866146
+    second: boss-lich-skill-directions-v1_29
+  - first:
+      213: -3221139377407777681
+    second: boss-lich-skill-directions-v1_30
+  - first:
+      213: 4922694944988802793
+    second: boss-lich-skill-directions-v1_31
+  - first:
+      213: -923316102978643935
+    second: boss-lich-skill-directions-v1_32
+  - first:
+      213: -3242869456135483699
+    second: boss-lich-skill-directions-v1_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1051
+        width: 187
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d3cea68e01c4dc0800000000000000
+      internalID: -3653526607291990755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1050
+        width: 185
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0514e3599fd58f0f0800000000000000
+      internalID: -1083012383850479280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1050
+        width: 181
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143ff90de8a055060800000000000000
+      internalID: 6941466009163264833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1050
+        width: 181
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55d9b0920bed5680800000000000000
+      internalID: -8764590903542557349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1185
+        width: 26
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ab221d6d3a65730800000000000000
+      internalID: 3987554663110195850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1070
+        width: 25
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992e88c6a16fbd2a0800000000000000
+      internalID: -6711500226315099495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1050
+        width: 182
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094560421bedca270800000000000000
+      internalID: 8263224268712989840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 1172
+        width: 13
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2bf2877dee4de50800000000000000
+      internalID: 6833349143829656314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1050
+        width: 172
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074f8b3b77e05d820800000000000000
+      internalID: 2942273838835627120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 794
+        width: 188
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b473e3a0be52690800000000000000
+      internalID: -7627431964656055469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 794
+        width: 181
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05b9a2f5a32be360800000000000000
+      internalID: 7199887624929654030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 794
+        width: 178
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f87ada6cb3601b0800000000000000
+      internalID: -5690795354633040005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 794
+        width: 178
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f242257202ba7cfb0800000000000000
+      internalID: -4627541937512897489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 817
+        width: 26
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420318c6d7a36d780800000000000000
+      internalID: -8658668923207471068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 794
+        width: 183
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7335e9d6ae0591b0800000000000000
+      internalID: -5650594047683382403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 793
+        width: 257
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb91868c77dca4f50800000000000000
+      internalID: 6866526496226810302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 534
+        width: 154
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc06432aeb13ce90800000000000000
+      internalID: -7006725902830269220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 534
+        width: 143
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d3634c7b8f13de0800000000000000
+      internalID: -1355028544707215982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 534
+        width: 151
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073ca648799c87a90800000000000000
+      internalID: -7315875942064536720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 534
+        width: 150
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9045539829b5ca290800000000000000
+      internalID: -7877820963252513783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 534
+        width: 174
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071c73333365f6020800000000000000
+      internalID: 2337181509531189616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 533
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71380678d2b9e8910800000000000000
+      internalID: 1841579917488194327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 274
+        width: 145
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8684bb7625f64d430800000000000000
+      internalID: 3806789984753240168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 274
+        width: 134
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fab5c278475985e0800000000000000
+      internalID: -1906896998539871497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 274
+        width: 146
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3232389e96019d0800000000000000
+      internalID: -2805626116203404376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 274
+        width: 137
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54ae574bc7ef4da0800000000000000
+      internalID: -5958288921726114722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 274
+        width: 141
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96629fb00a8c4c550800000000000000
+      internalID: 6180285178380363369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 274
+        width: 136
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb88653274417d900800000000000000
+      internalID: 709057762102249663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 14
+        width: 145
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1813e99c66554000800000000000000
+      internalID: 19516797831288862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 14
+        width: 134
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f9e32db19ea4fa0800000000000000
+      internalID: -5815579663094866146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 14
+        width: 146
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6426957dc63c43d0800000000000000
+      internalID: -3221139377407777681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 14
+        width: 137
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee2bad88fce05440800000000000000
+      internalID: 4922694944988802793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 14
+        width: 141
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1285f8275e8bf23f0800000000000000
+      internalID: -923316102978643935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-lich-skill-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 14
+        width: 136
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce841e39630ff2d0800000000000000
+      internalID: -3242869456135483699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boss-lich-skill-directions-v1_0: -3653526607291990755
+      boss-lich-skill-directions-v1_1: -1083012383850479280
+      boss-lich-skill-directions-v1_10: 7199887624929654030
+      boss-lich-skill-directions-v1_11: -5690795354633040005
+      boss-lich-skill-directions-v1_12: -4627541937512897489
+      boss-lich-skill-directions-v1_13: -8658668923207471068
+      boss-lich-skill-directions-v1_14: -5650594047683382403
+      boss-lich-skill-directions-v1_15: 6866526496226810302
+      boss-lich-skill-directions-v1_16: -7006725902830269220
+      boss-lich-skill-directions-v1_17: -1355028544707215982
+      boss-lich-skill-directions-v1_18: -7315875942064536720
+      boss-lich-skill-directions-v1_19: -7877820963252513783
+      boss-lich-skill-directions-v1_2: 6941466009163264833
+      boss-lich-skill-directions-v1_20: 2337181509531189616
+      boss-lich-skill-directions-v1_21: 1841579917488194327
+      boss-lich-skill-directions-v1_22: 3806789984753240168
+      boss-lich-skill-directions-v1_23: -1906896998539871497
+      boss-lich-skill-directions-v1_24: -2805626116203404376
+      boss-lich-skill-directions-v1_25: -5958288921726114722
+      boss-lich-skill-directions-v1_26: 6180285178380363369
+      boss-lich-skill-directions-v1_27: 709057762102249663
+      boss-lich-skill-directions-v1_28: 19516797831288862
+      boss-lich-skill-directions-v1_29: -5815579663094866146
+      boss-lich-skill-directions-v1_3: -8764590903542557349
+      boss-lich-skill-directions-v1_30: -3221139377407777681
+      boss-lich-skill-directions-v1_31: 4922694944988802793
+      boss-lich-skill-directions-v1_32: -923316102978643935
+      boss-lich-skill-directions-v1_33: -3242869456135483699
+      boss-lich-skill-directions-v1_4: 3987554663110195850
+      boss-lich-skill-directions-v1_5: -6711500226315099495
+      boss-lich-skill-directions-v1_6: 8263224268712989840
+      boss-lich-skill-directions-v1_7: 6833349143829656314
+      boss-lich-skill-directions-v1_8: 2942273838835627120
+      boss-lich-skill-directions-v1_9: -7627431964656055469
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

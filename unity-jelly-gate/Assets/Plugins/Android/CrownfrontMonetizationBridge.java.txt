@@ -1,0 +1,407 @@
+package com.crownfront.monetization;
+
+import android.app.Activity;
+import androidx.annotation.NonNull;
+import com.android.billingclient.api.AcknowledgePurchaseParams;
+import com.android.billingclient.api.BillingClient;
+import com.android.billingclient.api.BillingClientStateListener;
+import com.android.billingclient.api.BillingFlowParams;
+import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.PendingPurchasesParams;
+import com.android.billingclient.api.ProductDetails;
+import com.android.billingclient.api.Purchase;
+import com.android.billingclient.api.PurchasesUpdatedListener;
+import com.android.billingclient.api.QueryProductDetailsParams;
+import com.android.billingclient.api.QueryProductDetailsResult;
+import com.android.billingclient.api.QueryPurchasesParams;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
+import com.google.android.ump.ConsentInformation;
+import com.google.android.ump.ConsentRequestParameters;
+import com.google.android.ump.UserMessagingPlatform;
+import com.unity3d.player.UnityPlayer;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListener {
+    private final Activity activity;
+    private final String callbackObject;
+    private final String[] productIds;
+    private final String interstitialId;
+    private final Map<String, ProductDetails> productDetails = new HashMap<>();
+    private BillingClient billingClient;
+    private ConsentInformation consentInformation;
+    private InterstitialAd interstitial;
+    private boolean mobileAdsInitialized;
+    private boolean interstitialLoading;
+    private boolean pendingInterstitialShow;
+    private boolean billingConnectionStarting;
+    private String pendingProductId = "";
+    private boolean disposed;
+
+    public static CrownfrontMonetizationBridge create(Activity activity, String callbackObject,
+                                                        String[] productIds, String interstitialId) {
+        CrownfrontMonetizationBridge bridge =
+            new CrownfrontMonetizationBridge(activity, callbackObject, productIds, interstitialId);
+        bridge.initialize();
+        return bridge;
+    }
+
+    private CrownfrontMonetizationBridge(Activity activity, String callbackObject,
+                                         String[] productIds, String interstitialId) {
+        this.activity = activity;
+        this.callbackObject = callbackObject;
+        this.productIds = productIds;
+        this.interstitialId = interstitialId;
+    }
+
+    private void initialize() {
+        activity.runOnUiThread(() -> {
+            billingClient = BillingClient.newBuilder(activity)
+                .setListener(this)
+                .enablePendingPurchases(PendingPurchasesParams.newBuilder()
+                    .enableOneTimeProducts().build())
+                .enableAutoServiceReconnection()
+                .build();
+            startBillingConnection();
+            initializeConsentAndAds();
+        });
+    }
+
+    private void initializeConsentAndAds() {
+        consentInformation = UserMessagingPlatform.getConsentInformation(activity);
+        ConsentRequestParameters params = new ConsentRequestParameters.Builder().build();
+        send("consent_updating", "", "", "");
+        consentInformation.requestConsentInfoUpdate(activity, params,
+            () -> {
+                sendPrivacyOptionsState();
+                UserMessagingPlatform.loadAndShowConsentFormIfRequired(activity, formError -> {
+                    if (formError != null) {
+                        send("consent_error", "", "",
+                            "CONSENT_FORM_ERROR|code=" + formError.getErrorCode() +
+                            "; detail=" + formError.getMessage());
+                    }
+                    sendPrivacyOptionsState();
+                    startMobileAdsWhenAllowed();
+                });
+                // A prior-session consent decision can already permit requests while a form check
+                // is completing. The guard in startMobileAdsWhenAllowed prevents double init.
+                startMobileAdsWhenAllowed();
+            },
+            requestConsentError -> {
+                send("consent_error", "", "",
+                    "CONSENT_INFO_ERROR|code=" + requestConsentError.getErrorCode() +
+                    "; detail=" + requestConsentError.getMessage());
+                sendPrivacyOptionsState();
+                // UMP may still expose a valid cached decision from the previous session.
+                startMobileAdsWhenAllowed();
+            });
+    }
+
+    private void sendPrivacyOptionsState() {
+        if (consentInformation == null) return;
+        boolean required = consentInformation.getPrivacyOptionsRequirementStatus() ==
+            ConsentInformation.PrivacyOptionsRequirementStatus.REQUIRED;
+        send(required ? "privacy_options_required" : "privacy_options_not_required",
+            "", "", "");
+    }
+
+    private void startMobileAdsWhenAllowed() {
+        if (disposed || mobileAdsInitialized || consentInformation == null ||
+            !consentInformation.canRequestAds()) return;
+        mobileAdsInitialized = true;
+        MobileAds.initialize(activity, initializationStatus -> {
+            send("ads_initialized", "", "", "");
+            loadInterstitial();
+        });
+    }
+
+    public void showPrivacyOptions() {
+        activity.runOnUiThread(() -> {
+            if (disposed || consentInformation == null) {
+                send("consent_error", "", "", "CONSENT_NOT_INITIALIZED");
+                return;
+            }
+            UserMessagingPlatform.showPrivacyOptionsForm(activity, formError -> {
+                if (formError != null) {
+                    send("consent_error", "", "",
+                        "PRIVACY_OPTIONS_ERROR|code=" + formError.getErrorCode() +
+                        "; detail=" + formError.getMessage());
+                }
+                sendPrivacyOptionsState();
+                startMobileAdsWhenAllowed();
+            });
+        });
+    }
+
+    private void startBillingConnection() {
+        if (disposed || billingClient == null) return;
+        if (billingClient.isReady()) {
+            queryProducts();
+            return;
+        }
+        if (billingConnectionStarting) return;
+        billingConnectionStarting = true;
+        billingClient.startConnection(new BillingClientStateListener() {
+                @Override
+                public void onBillingSetupFinished(@NonNull BillingResult result) {
+                    billingConnectionStarting = false;
+                    if (result.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                        send("billing_ready", "", "", "");
+                        queryProducts();
+                        restorePurchases();
+                    } else {
+                        send("billing_unavailable", "", "",
+                            "BILLING_NOT_READY|code=" + result.getResponseCode() +
+                            "; detail=" + result.getDebugMessage());
+                    }
+                }
+
+                @Override
+                public void onBillingServiceDisconnected() {
+                    billingConnectionStarting = false;
+                }
+            });
+    }
+
+    private void queryProducts() {
+        if (disposed || billingClient == null || !billingClient.isReady()) return;
+        List<QueryProductDetailsParams.Product> list = new ArrayList<>();
+        for (String productId : productIds) {
+            list.add(QueryProductDetailsParams.Product.newBuilder()
+                .setProductId(productId)
+                .setProductType(BillingClient.ProductType.INAPP)
+                .build());
+        }
+        QueryProductDetailsParams params = QueryProductDetailsParams.newBuilder()
+            .setProductList(list).build();
+        billingClient.queryProductDetailsAsync(params,
+            (BillingResult result, QueryProductDetailsResult detailsResult) -> {
+                if (result.getResponseCode() != BillingClient.BillingResponseCode.OK) {
+                    String queued = pendingProductId;
+                    pendingProductId = "";
+                    send("product_unavailable", queued, "",
+                        "PRODUCT_NOT_FOUND|code=" + result.getResponseCode() +
+                        "; detail=" + result.getDebugMessage());
+                    return;
+                }
+                productDetails.clear();
+                for (ProductDetails details : detailsResult.getProductDetailsList()) {
+                    productDetails.put(details.getProductId(), details);
+                    List<ProductDetails.OneTimePurchaseOfferDetails> offers =
+                        details.getOneTimePurchaseOfferDetailsList();
+                    if (offers != null && !offers.isEmpty()) {
+                        send("price", details.getProductId(),
+                            offers.get(0).getFormattedPrice(), "");
+                    }
+                }
+                if (!pendingProductId.isEmpty()) {
+                    String queued = pendingProductId;
+                    pendingProductId = "";
+                    if (!productDetails.containsKey(queued)) {
+                        send("product_unavailable", queued, "",
+                            "PRODUCT_NOT_FOUND|missing_after_query");
+                        return;
+                    }
+                    purchase(queued);
+                }
+            });
+    }
+
+    public void retryBillingAndPurchase(String productId) {
+        activity.runOnUiThread(() -> {
+            if (disposed) return;
+            pendingProductId = productId == null ? "" : productId;
+            send("purchase_waiting", pendingProductId, "", "");
+            if (billingClient != null && billingClient.isReady()) queryProducts();
+            else startBillingConnection();
+        });
+    }
+
+    public void purchase(String productId) {
+        activity.runOnUiThread(() -> {
+            if (disposed || billingClient == null || !billingClient.isReady()) {
+                pendingProductId = productId == null ? "" : productId;
+                send("purchase_waiting", pendingProductId, "", "");
+                startBillingConnection();
+                return;
+            }
+            ProductDetails details = productDetails.get(productId);
+            if (details == null) {
+                pendingProductId = productId == null ? "" : productId;
+                queryProducts();
+                send("purchase_waiting", pendingProductId, "", "");
+                return;
+            }
+            List<ProductDetails.OneTimePurchaseOfferDetails> offers =
+                details.getOneTimePurchaseOfferDetailsList();
+            if (offers == null || offers.isEmpty()) {
+                send("product_unavailable", productId, "",
+                    "PRODUCT_NOT_FOUND|no_purchase_offer");
+                return;
+            }
+            BillingFlowParams.ProductDetailsParams item =
+                BillingFlowParams.ProductDetailsParams.newBuilder()
+                    .setProductDetails(details)
+                    .setOfferToken(offers.get(0).getOfferToken())
+                    .build();
+            List<BillingFlowParams.ProductDetailsParams> items = new ArrayList<>();
+            items.add(item);
+            BillingResult launch = billingClient.launchBillingFlow(activity,
+                BillingFlowParams.newBuilder().setProductDetailsParamsList(items).build());
+            if (launch.getResponseCode() != BillingClient.BillingResponseCode.OK) {
+                send("billing_unavailable", productId, "",
+                    "BILLING_NOT_READY|code=" + launch.getResponseCode() +
+                    "; detail=" + launch.getDebugMessage());
+            } else {
+                send("checkout_launched", productId, "", "");
+            }
+        });
+    }
+
+    @Override
+    public void onPurchasesUpdated(@NonNull BillingResult result, List<Purchase> purchases) {
+        if (result.getResponseCode() == BillingClient.BillingResponseCode.USER_CANCELED) {
+            send("purchase_cancelled", "", "", "");
+            return;
+        }
+        if (result.getResponseCode() != BillingClient.BillingResponseCode.OK || purchases == null) {
+            sendError("결제를 완료하지 못했습니다: " + result.getDebugMessage());
+            return;
+        }
+        for (Purchase purchase : purchases) processPurchase(purchase, "purchased");
+    }
+
+    public void restorePurchases() {
+        if (disposed || billingClient == null || !billingClient.isReady()) return;
+        QueryPurchasesParams params = QueryPurchasesParams.newBuilder()
+            .setProductType(BillingClient.ProductType.INAPP).build();
+        billingClient.queryPurchasesAsync(params, (result, purchases) -> {
+            if (result.getResponseCode() != BillingClient.BillingResponseCode.OK) return;
+            for (Purchase purchase : purchases) processPurchase(purchase, "owned");
+        });
+    }
+
+    private void processPurchase(Purchase purchase, String eventType) {
+        if (purchase.getPurchaseState() != Purchase.PurchaseState.PURCHASED) return;
+        for (String productId : purchase.getProducts()) send(eventType, productId, "", "");
+        if (!purchase.isAcknowledged()) {
+            AcknowledgePurchaseParams params = AcknowledgePurchaseParams.newBuilder()
+                .setPurchaseToken(purchase.getPurchaseToken()).build();
+            billingClient.acknowledgePurchase(params, result -> {
+                if (result.getResponseCode() != BillingClient.BillingResponseCode.OK) {
+                    sendError("구매 승인 처리 실패: " + result.getDebugMessage());
+                }
+            });
+        }
+    }
+
+    public void loadInterstitial() {
+        if (disposed || !mobileAdsInitialized || interstitialId == null || interstitialId.isEmpty()) return;
+        activity.runOnUiThread(() -> {
+            if (disposed || interstitial != null || interstitialLoading) return;
+            interstitialLoading = true;
+            InterstitialAd.load(activity, interstitialId,
+                new AdRequest.Builder().build(), new InterstitialAdLoadCallback() {
+                @Override
+                public void onAdLoaded(@NonNull InterstitialAd ad) {
+                    interstitialLoading = false;
+                    interstitial = ad;
+                    interstitial.setFullScreenContentCallback(new FullScreenContentCallback() {
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            interstitial = null;
+                            send("ad_dismissed", "", "", "");
+                            loadInterstitial();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError error) {
+                            interstitial = null;
+                            pendingInterstitialShow = false;
+                            send("ad_error", "", "",
+                                "AD_SHOW_FAILED|code=" + error.getCode());
+                            loadInterstitial();
+                        }
+                    });
+                    send("ad_loaded", "", "", "");
+                    if (pendingInterstitialShow) {
+                        pendingInterstitialShow = false;
+                        interstitial.show(activity);
+                    }
+                }
+
+                @Override
+                public void onAdFailedToLoad(@NonNull LoadAdError error) {
+                    interstitialLoading = false;
+                    interstitial = null;
+                    if (pendingInterstitialShow) {
+                        pendingInterstitialShow = false;
+                        send("ad_error", "", "",
+                            "AD_LOAD_FAILED|code=" + error.getCode());
+                        activity.getWindow().getDecorView().postDelayed(
+                            () -> loadInterstitial(), 4500L);
+                    }
+                }
+            });
+        });
+    }
+
+    public void showInterstitial() {
+        activity.runOnUiThread(() -> {
+            if (!mobileAdsInitialized) {
+                pendingInterstitialShow = true;
+                startMobileAdsWhenAllowed();
+                if (!mobileAdsInitialized) {
+                    send("ad_waiting_consent", "", "", "ADS_WAITING_FOR_CONSENT");
+                }
+                return;
+            }
+            if (interstitial != null) {
+                pendingInterstitialShow = false;
+                interstitial.show(activity);
+            } else {
+                pendingInterstitialShow = true;
+                loadInterstitial();
+            }
+        });
+    }
+
+    public void dispose() {
+        disposed = true;
+        pendingProductId = "";
+        billingConnectionStarting = false;
+        pendingInterstitialShow = false;
+        interstitialLoading = false;
+        interstitial = null;
+        if (billingClient != null) billingClient.endConnection();
+        billingClient = null;
+        consentInformation = null;
+        mobileAdsInitialized = false;
+    }
+
+    private void sendError(String message) {
+        send("error", "", "", message);
+    }
+
+    private void send(String type, String productId, String price, String message) {
+        if (disposed) return;
+        String json = "{\"type\":\"" + escape(type) + "\",\"productId\":\"" +
+            escape(productId) + "\",\"price\":\"" + escape(price) + "\",\"message\":\"" +
+            escape(message) + "\"}";
+        UnityPlayer.UnitySendMessage(callbackObject, "OnMonetizationEvent", json);
+    }
+
+    private static String escape(String value) {
+        if (value == null) return "";
+        return value.replace("\\", "\\\\").replace("\"", "\\\"")
+            .replace("\n", "\\n").replace("\r", "");
+    }
+}

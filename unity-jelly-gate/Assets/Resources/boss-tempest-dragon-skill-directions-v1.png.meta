@@ -1,0 +1,1093 @@
+fileFormatVersion: 2
+guid: f02cfbd6af0a42a468d266d905c528f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4853273656462894174
+    second: boss-tempest-dragon-skill-directions-v1_0
+  - first:
+      213: 3236674544583025481
+    second: boss-tempest-dragon-skill-directions-v1_1
+  - first:
+      213: -8621264567679406177
+    second: boss-tempest-dragon-skill-directions-v1_2
+  - first:
+      213: -5414012751857201905
+    second: boss-tempest-dragon-skill-directions-v1_3
+  - first:
+      213: 8776080110661072149
+    second: boss-tempest-dragon-skill-directions-v1_4
+  - first:
+      213: 4830961286828537714
+    second: boss-tempest-dragon-skill-directions-v1_5
+  - first:
+      213: 1358044118046578951
+    second: boss-tempest-dragon-skill-directions-v1_6
+  - first:
+      213: 940887663919045085
+    second: boss-tempest-dragon-skill-directions-v1_7
+  - first:
+      213: -2295776599797908235
+    second: boss-tempest-dragon-skill-directions-v1_8
+  - first:
+      213: 1742851730450356509
+    second: boss-tempest-dragon-skill-directions-v1_9
+  - first:
+      213: 4684485597822954718
+    second: boss-tempest-dragon-skill-directions-v1_10
+  - first:
+      213: 3643050540992043757
+    second: boss-tempest-dragon-skill-directions-v1_11
+  - first:
+      213: 4821846100395726078
+    second: boss-tempest-dragon-skill-directions-v1_12
+  - first:
+      213: -1456955827827768959
+    second: boss-tempest-dragon-skill-directions-v1_13
+  - first:
+      213: -1887619673805711981
+    second: boss-tempest-dragon-skill-directions-v1_14
+  - first:
+      213: -3754793445274837779
+    second: boss-tempest-dragon-skill-directions-v1_15
+  - first:
+      213: 8061224928346146559
+    second: boss-tempest-dragon-skill-directions-v1_16
+  - first:
+      213: 2510808555435551070
+    second: boss-tempest-dragon-skill-directions-v1_17
+  - first:
+      213: 5210777486963585224
+    second: boss-tempest-dragon-skill-directions-v1_18
+  - first:
+      213: -5734281423754252987
+    second: boss-tempest-dragon-skill-directions-v1_19
+  - first:
+      213: 7498361369274156601
+    second: boss-tempest-dragon-skill-directions-v1_20
+  - first:
+      213: 4931474529823394266
+    second: boss-tempest-dragon-skill-directions-v1_21
+  - first:
+      213: -8389168140241859831
+    second: boss-tempest-dragon-skill-directions-v1_22
+  - first:
+      213: 5890533767555203185
+    second: boss-tempest-dragon-skill-directions-v1_23
+  - first:
+      213: -7717392002487940386
+    second: boss-tempest-dragon-skill-directions-v1_24
+  - first:
+      213: -7280508125384426194
+    second: boss-tempest-dragon-skill-directions-v1_25
+  - first:
+      213: -470912451817089797
+    second: boss-tempest-dragon-skill-directions-v1_26
+  - first:
+      213: 1948387100189688684
+    second: boss-tempest-dragon-skill-directions-v1_27
+  - first:
+      213: -5997786188424312816
+    second: boss-tempest-dragon-skill-directions-v1_28
+  - first:
+      213: -6777382132519167899
+    second: boss-tempest-dragon-skill-directions-v1_29
+  - first:
+      213: 2930667653525276571
+    second: boss-tempest-dragon-skill-directions-v1_30
+  - first:
+      213: 399879279426511241
+    second: boss-tempest-dragon-skill-directions-v1_31
+  - first:
+      213: 3778775801523030297
+    second: boss-tempest-dragon-skill-directions-v1_32
+  - first:
+      213: 5948422981126339053
+    second: boss-tempest-dragon-skill-directions-v1_33
+  - first:
+      213: 1960033655257686320
+    second: boss-tempest-dragon-skill-directions-v1_34
+  - first:
+      213: -709354403106117972
+    second: boss-tempest-dragon-skill-directions-v1_35
+  - first:
+      213: 3372365781519343259
+    second: boss-tempest-dragon-skill-directions-v1_36
+  - first:
+      213: 5732710836608327225
+    second: boss-tempest-dragon-skill-directions-v1_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 936
+        width: 149
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab94ccb255b5acb0800000000000000
+      internalID: -4853273656462894174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1079
+        width: 118
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943ab63895afaec20800000000000000
+      internalID: 3236674544583025481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 928
+        width: 176
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9faec89d8d1b5880800000000000000
+      internalID: -8621264567679406177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 936
+        width: 128
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dcd1c36109dd4b0800000000000000
+      internalID: -5414012751857201905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 933
+        width: 178
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515f25cec56eac970800000000000000
+      internalID: 8776080110661072149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 936
+        width: 121
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2773411e1b50b0340800000000000000
+      internalID: 4830961286828537714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 936
+        width: 131
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709997d1eedb8d210800000000000000
+      internalID: 1358044118046578951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 728
+        width: 133
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd911756854be0d00800000000000000
+      internalID: 940887663919045085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 864
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc34659853c320e0800000000000000
+      internalID: -2295776599797908235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 872
+        width: 119
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d191ba13a6adf2810800000000000000
+      internalID: 1742851730450356509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 721
+        width: 165
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edcabade4d2a20140800000000000000
+      internalID: 4684485597822954718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 728
+        width: 124
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea10a25a27be8230800000000000000
+      internalID: 3643050540992043757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 728
+        width: 134
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef490b72b73aae240800000000000000
+      internalID: 4821846100395726078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 728
+        width: 137
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18104e4d46ad7cbe0800000000000000
+      internalID: -1456955827827768959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 729
+        width: 120
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39595cf58e3ddc5e0800000000000000
+      internalID: -1887619673805711981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 518
+        width: 120
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec9d69514b44ebc0800000000000000
+      internalID: -3754793445274837779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 662
+        width: 118
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff68894bc593fdf60800000000000000
+      internalID: 8061224928346146559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 511
+        width: 176
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e596fbd041f28d220800000000000000
+      internalID: 2510808555435551070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 517
+        width: 109
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0311a3486605840800000000000000
+      internalID: 5210777486963585224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 517
+        width: 121
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54da1073d6dbb60b0800000000000000
+      internalID: -5734281423754252987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 518
+        width: 95
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9360915ffe78f0860800000000000000
+      internalID: 7498361369274156601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 517
+        width: 100
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad98201f4fd107440800000000000000
+      internalID: 4931474529823394266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 306
+        width: 131
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b0cdf2600b39b80800000000000000
+      internalID: -8389168140241859831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 450
+        width: 118
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170429090416fb150800000000000000
+      internalID: 5890533767555203185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 297
+        width: 175
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda044bbcd056e490800000000000000
+      internalID: -7717392002487940386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 306
+        width: 95
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2dbd1a0f6076fa90800000000000000
+      internalID: -7280508125384426194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 306
+        width: 122
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4522dbe9bf679f0800000000000000
+      internalID: -470912451817089797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 438
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6382cf9ebf0a0b10800000000000000
+      internalID: 1948387100189688684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 306
+        width: 98
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01889304d3593cca0800000000000000
+      internalID: -5997786188424312816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 306
+        width: 90
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5689d1ccbd6e1f1a0800000000000000
+      internalID: -6777382132519167899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 86
+        width: 155
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b970a1b14b2dba820800000000000000
+      internalID: 2930667653525276571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 86
+        width: 155
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981a1430618ac8500800000000000000
+      internalID: 399879279426511241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 234
+        width: 118
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9194f971298e07430800000000000000
+      internalID: 3778775801523030297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 79
+        width: 176
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de93ecb6f2b0d8250800000000000000
+      internalID: 5948422981126339053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 224
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031e1798930733b10800000000000000
+      internalID: 1960033655257686320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_35
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 88
+        width: 115
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6200fbdedd726f0800000000000000
+      internalID: -709354403106117972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_36
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 88
+        width: 120
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e942c8fcc0dce20800000000000000
+      internalID: 3372365781519343259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-skill-directions-v1_37
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 88
+        width: 113
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e5218f12eae8f40800000000000000
+      internalID: 5732710836608327225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

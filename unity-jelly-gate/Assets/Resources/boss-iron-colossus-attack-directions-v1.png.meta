@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: e90c542b8f683ec47b03bf3779238326
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7514234373416021586
+    second: boss-iron-colossus-attack-directions-v1_0
+  - first:
+      213: 6766645139644756515
+    second: boss-iron-colossus-attack-directions-v1_1
+  - first:
+      213: -6062600198301176181
+    second: boss-iron-colossus-attack-directions-v1_2
+  - first:
+      213: -787840337268969709
+    second: boss-iron-colossus-attack-directions-v1_3
+  - first:
+      213: -7773788044244066247
+    second: boss-iron-colossus-attack-directions-v1_4
+  - first:
+      213: -5318997783905175766
+    second: boss-iron-colossus-attack-directions-v1_5
+  - first:
+      213: -7235789426735027441
+    second: boss-iron-colossus-attack-directions-v1_6
+  - first:
+      213: -823598101392789556
+    second: boss-iron-colossus-attack-directions-v1_7
+  - first:
+      213: 2936412659463685695
+    second: boss-iron-colossus-attack-directions-v1_8
+  - first:
+      213: -8301187241647188517
+    second: boss-iron-colossus-attack-directions-v1_9
+  - first:
+      213: 4176700420734501053
+    second: boss-iron-colossus-attack-directions-v1_10
+  - first:
+      213: 6476663555398267267
+    second: boss-iron-colossus-attack-directions-v1_11
+  - first:
+      213: -6143934398744977819
+    second: boss-iron-colossus-attack-directions-v1_12
+  - first:
+      213: 8358644079130573921
+    second: boss-iron-colossus-attack-directions-v1_13
+  - first:
+      213: -8142862941230070173
+    second: boss-iron-colossus-attack-directions-v1_14
+  - first:
+      213: -3241610542220348832
+    second: boss-iron-colossus-attack-directions-v1_15
+  - first:
+      213: -4990237045144103098
+    second: boss-iron-colossus-attack-directions-v1_16
+  - first:
+      213: 1192561398555684638
+    second: boss-iron-colossus-attack-directions-v1_17
+  - first:
+      213: 5724835622492407449
+    second: boss-iron-colossus-attack-directions-v1_18
+  - first:
+      213: 5264192113333356086
+    second: boss-iron-colossus-attack-directions-v1_19
+  - first:
+      213: 6928653055861687759
+    second: boss-iron-colossus-attack-directions-v1_20
+  - first:
+      213: 1260584772310416933
+    second: boss-iron-colossus-attack-directions-v1_21
+  - first:
+      213: 7441601852564721990
+    second: boss-iron-colossus-attack-directions-v1_22
+  - first:
+      213: -3035006475030938718
+    second: boss-iron-colossus-attack-directions-v1_23
+  - first:
+      213: 2363493778484543622
+    second: boss-iron-colossus-attack-directions-v1_24
+  - first:
+      213: -1742483622913607969
+    second: boss-iron-colossus-attack-directions-v1_25
+  - first:
+      213: -8724370457244121375
+    second: boss-iron-colossus-attack-directions-v1_26
+  - first:
+      213: 1304431984446458819
+    second: boss-iron-colossus-attack-directions-v1_27
+  - first:
+      213: -27996685803600065
+    second: boss-iron-colossus-attack-directions-v1_28
+  - first:
+      213: -3973973721722180794
+    second: boss-iron-colossus-attack-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 930
+        width: 188
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1128546a318b790800000000000000
+      internalID: -7514234373416021586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 930
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32236ad37e3f7ed50800000000000000
+      internalID: 6766645139644756515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 930
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8eab0d9d315ddba0800000000000000
+      internalID: -6062600198301176181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 930
+        width: 183
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31feb5d23670115f0800000000000000
+      internalID: -787840337268969709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 930
+        width: 178
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93067a706f4fd1490800000000000000
+      internalID: -7773788044244066247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 930
+        width: 174
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27fd3162bf1f26b0800000000000000
+      internalID: -5318997783905175766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 699
+        width: 159
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b6eed6adf459b90800000000000000
+      internalID: -7235789426735027441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 699
+        width: 160
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfebc0f3edf194f0800000000000000
+      internalID: -823598101392789556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 699
+        width: 160
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f360b4981cb30c820800000000000000
+      internalID: 2936412659463685695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 699
+        width: 162
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd55d9f6f224ccc80800000000000000
+      internalID: -8301187241647188517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 699
+        width: 187
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0ca1f47ee96f930800000000000000
+      internalID: 4176700420734501053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 699
+        width: 164
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3817b35503bb1e950800000000000000
+      internalID: 6476663555398267267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 471
+        width: 105
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e908f573c5cbaa0800000000000000
+      internalID: -6143934398744977819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 471
+        width: 113
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cff74018edff370800000000000000
+      internalID: 8358644079130573921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 471
+        width: 108
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3660a453c4dbefe80800000000000000
+      internalID: -8142862941230070173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 471
+        width: 108
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0627bcaf26c7303d0800000000000000
+      internalID: -3241610542220348832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 471
+        width: 138
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647d03bc8dd1fbab0800000000000000
+      internalID: -4990237045144103098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 471
+        width: 104
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f21c50644dc8010800000000000000
+      internalID: 1192561398555684638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 253
+        width: 144
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996892ccaa3b27f40800000000000000
+      internalID: 5724835622492407449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 253
+        width: 144
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636c5a016da2e0940800000000000000
+      internalID: 5264192113333356086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 253
+        width: 145
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc58f86ae35872060800000000000000
+      internalID: 6928653055861687759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 253
+        width: 145
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e34daeb2f7e7110800000000000000
+      internalID: 1260584772310416933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 253
+        width: 160
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64152062571e54760800000000000000
+      internalID: 7441601852564721990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 253
+        width: 147
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab35cce0bd71e5d0800000000000000
+      internalID: -3035006475030938718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 39
+        width: 154
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680ca67b111dcc020800000000000000
+      internalID: 2363493778484543622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 39
+        width: 153
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd67c45806471d7e0800000000000000
+      internalID: -1742483622913607969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 39
+        width: 149
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e64d07fa4fcce680800000000000000
+      internalID: -8724370457244121375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 39
+        width: 150
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbc69a8af54a1210800000000000000
+      internalID: 1304431984446458819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 39
+        width: 159
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37c9cf99298c9ff0800000000000000
+      internalID: -27996685803600065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 39
+        width: 151
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b230284fb99d8c0800000000000000
+      internalID: -3973973721722180794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

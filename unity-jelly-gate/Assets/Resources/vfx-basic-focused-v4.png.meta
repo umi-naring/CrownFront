@@ -1,0 +1,2318 @@
+fileFormatVersion: 2
+guid: 61a9a118de2a5e44b9dc9f0b9c6e278f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8920982705880148155
+    second: vfx-basic-focused-v4_0
+  - first:
+      213: 7838445052442659594
+    second: vfx-basic-focused-v4_1
+  - first:
+      213: 4438943112240163039
+    second: vfx-basic-focused-v4_2
+  - first:
+      213: -3668247294090839599
+    second: vfx-basic-focused-v4_3
+  - first:
+      213: 6093769787473588922
+    second: vfx-basic-focused-v4_4
+  - first:
+      213: 3744509891797769947
+    second: vfx-basic-focused-v4_5
+  - first:
+      213: -4146813662765195597
+    second: vfx-basic-focused-v4_6
+  - first:
+      213: 4801549304949616497
+    second: vfx-basic-focused-v4_7
+  - first:
+      213: 7027312112302823515
+    second: vfx-basic-focused-v4_8
+  - first:
+      213: 2804254810734978682
+    second: vfx-basic-focused-v4_9
+  - first:
+      213: 8675001924969688898
+    second: vfx-basic-focused-v4_10
+  - first:
+      213: -3349833979699926152
+    second: vfx-basic-focused-v4_11
+  - first:
+      213: -6844634107802605141
+    second: vfx-basic-focused-v4_12
+  - first:
+      213: 7434691392449696179
+    second: vfx-basic-focused-v4_13
+  - first:
+      213: 9108530886087311573
+    second: vfx-basic-focused-v4_14
+  - first:
+      213: 1299092905111975019
+    second: vfx-basic-focused-v4_15
+  - first:
+      213: -983941868648459302
+    second: vfx-basic-focused-v4_16
+  - first:
+      213: -4958884801525562840
+    second: vfx-basic-focused-v4_17
+  - first:
+      213: 930276218065608620
+    second: vfx-basic-focused-v4_18
+  - first:
+      213: 2217900848023741460
+    second: vfx-basic-focused-v4_19
+  - first:
+      213: 4529641953636889607
+    second: vfx-basic-focused-v4_20
+  - first:
+      213: 7818614697401562596
+    second: vfx-basic-focused-v4_21
+  - first:
+      213: 5313756103945226053
+    second: vfx-basic-focused-v4_22
+  - first:
+      213: -1125126270273210369
+    second: vfx-basic-focused-v4_23
+  - first:
+      213: 6862961039440811674
+    second: vfx-basic-focused-v4_24
+  - first:
+      213: -98040967669217738
+    second: vfx-basic-focused-v4_25
+  - first:
+      213: -2920219254183642695
+    second: vfx-basic-focused-v4_26
+  - first:
+      213: 3381701443466219872
+    second: vfx-basic-focused-v4_27
+  - first:
+      213: 5343294377879891247
+    second: vfx-basic-focused-v4_28
+  - first:
+      213: 6989662258529513142
+    second: vfx-basic-focused-v4_29
+  - first:
+      213: 8007639601885005114
+    second: vfx-basic-focused-v4_30
+  - first:
+      213: 4115972638924984752
+    second: vfx-basic-focused-v4_31
+  - first:
+      213: 6970965732846145719
+    second: vfx-basic-focused-v4_32
+  - first:
+      213: 8903793729080329025
+    second: vfx-basic-focused-v4_33
+  - first:
+      213: -7616686532604745114
+    second: vfx-basic-focused-v4_34
+  - first:
+      213: -5544850131794954952
+    second: vfx-basic-focused-v4_35
+  - first:
+      213: 6723392535854554475
+    second: vfx-basic-focused-v4_36
+  - first:
+      213: 6494432109310461741
+    second: vfx-basic-focused-v4_37
+  - first:
+      213: -6417371610325041500
+    second: vfx-basic-focused-v4_38
+  - first:
+      213: -1601456458941280550
+    second: vfx-basic-focused-v4_39
+  - first:
+      213: 6046046654217243233
+    second: vfx-basic-focused-v4_40
+  - first:
+      213: 3353237234407236763
+    second: vfx-basic-focused-v4_41
+  - first:
+      213: -2581397877539355787
+    second: vfx-basic-focused-v4_42
+  - first:
+      213: -79669480238272146
+    second: vfx-basic-focused-v4_43
+  - first:
+      213: -3111390655076838464
+    second: vfx-basic-focused-v4_44
+  - first:
+      213: -6970797158989625304
+    second: vfx-basic-focused-v4_45
+  - first:
+      213: 2199287476438568526
+    second: vfx-basic-focused-v4_46
+  - first:
+      213: 6027311972969319444
+    second: vfx-basic-focused-v4_47
+  - first:
+      213: -3759415409047199761
+    second: vfx-basic-focused-v4_48
+  - first:
+      213: -68987809630445238
+    second: vfx-basic-focused-v4_49
+  - first:
+      213: 8815792987647978491
+    second: vfx-basic-focused-v4_50
+  - first:
+      213: 591166246998885359
+    second: vfx-basic-focused-v4_51
+  - first:
+      213: -5210807025015512292
+    second: vfx-basic-focused-v4_52
+  - first:
+      213: 6257544676986566402
+    second: vfx-basic-focused-v4_53
+  - first:
+      213: 7344964989012885456
+    second: vfx-basic-focused-v4_54
+  - first:
+      213: 2160046627366690303
+    second: vfx-basic-focused-v4_55
+  - first:
+      213: 2704340324358203476
+    second: vfx-basic-focused-v4_56
+  - first:
+      213: -1346587084468832732
+    second: vfx-basic-focused-v4_57
+  - first:
+      213: -3202675689063376802
+    second: vfx-basic-focused-v4_58
+  - first:
+      213: -2496518503779091524
+    second: vfx-basic-focused-v4_59
+  - first:
+      213: -2416779862932314530
+    second: vfx-basic-focused-v4_60
+  - first:
+      213: 8645656188484691385
+    second: vfx-basic-focused-v4_61
+  - first:
+      213: -6897676654629426834
+    second: vfx-basic-focused-v4_62
+  - first:
+      213: 6667196840182234938
+    second: vfx-basic-focused-v4_63
+  - first:
+      213: 6287912853412491486
+    second: vfx-basic-focused-v4_64
+  - first:
+      213: 1231643787192948483
+    second: vfx-basic-focused-v4_65
+  - first:
+      213: -7763612014678428493
+    second: vfx-basic-focused-v4_66
+  - first:
+      213: -8486796949580921305
+    second: vfx-basic-focused-v4_67
+  - first:
+      213: 6881592174197596811
+    second: vfx-basic-focused-v4_68
+  - first:
+      213: 5589638182487023963
+    second: vfx-basic-focused-v4_69
+  - first:
+      213: 5453391442345498692
+    second: vfx-basic-focused-v4_70
+  - first:
+      213: -4003740955239161848
+    second: vfx-basic-focused-v4_71
+  - first:
+      213: 3806616945155572804
+    second: vfx-basic-focused-v4_72
+  - first:
+      213: 910864424825217189
+    second: vfx-basic-focused-v4_73
+  - first:
+      213: 2082240645323721485
+    second: vfx-basic-focused-v4_74
+  - first:
+      213: -7473882591470990931
+    second: vfx-basic-focused-v4_75
+  - first:
+      213: 8080913202516283582
+    second: vfx-basic-focused-v4_76
+  - first:
+      213: 3543694517252783517
+    second: vfx-basic-focused-v4_77
+  - first:
+      213: 9176836611558988037
+    second: vfx-basic-focused-v4_78
+  - first:
+      213: 2085780449940343752
+    second: vfx-basic-focused-v4_79
+  - first:
+      213: 6939148032985699807
+    second: vfx-basic-focused-v4_80
+  - first:
+      213: 1635732572611300707
+    second: vfx-basic-focused-v4_81
+  - first:
+      213: -3983049572963894565
+    second: vfx-basic-focused-v4_82
+  - first:
+      213: 3951613205937389955
+    second: vfx-basic-focused-v4_83
+  - first:
+      213: -4593192658432895342
+    second: vfx-basic-focused-v4_84
+  - first:
+      213: 2760433102729753110
+    second: vfx-basic-focused-v4_85
+  - first:
+      213: -9127736820048379988
+    second: vfx-basic-focused-v4_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1085
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8a36f6182bdcb70800000000000000
+      internalID: 8920982705880148155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1061
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b434ece30c7cc60800000000000000
+      internalID: 7838445052442659594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1046
+        width: 73
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8ed37fd3b4a9d30800000000000000
+      internalID: 4438943112240163039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1046
+        width: 77
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d97d6f6584c71dc0800000000000000
+      internalID: -3668247294090839599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_4
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1091
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2fe55e55b619450800000000000000
+      internalID: 6093769787473588922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_5
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1078
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdeda8648eb27f330800000000000000
+      internalID: 3744509891797769947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_6
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 1068
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bed429c1fe8376c0800000000000000
+      internalID: -4146813662765195597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_7
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1066
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17fab0537a782a240800000000000000
+      internalID: 4801549304949616497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 913
+        width: 84
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b581c934227068160800000000000000
+      internalID: 7027312112302823515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_9
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 908
+        width: 96
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76e98d84e6bae620800000000000000
+      internalID: 2804254810734978682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_10
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 905
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fe5a3e94cc36870800000000000000
+      internalID: 8675001924969688898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_11
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 900
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87be37f5ebff281d0800000000000000
+      internalID: -3349833979699926152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_12
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 928
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba927ea1b89f201a0800000000000000
+      internalID: -6844634107802605141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_13
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 927
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b15e954e645d2760800000000000000
+      internalID: 7434691392449696179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_14
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 909
+        width: 102
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d088e2f490086e70800000000000000
+      internalID: 9108530886087311573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_15
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 904
+        width: 111
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64fd634d1e470210800000000000000
+      internalID: 1299092905111975019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 764
+        width: 114
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3139765165852f0800000000000000
+      internalID: -983941868648459302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_17
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 770
+        width: 99
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8224cfadb808e2bb0800000000000000
+      internalID: -4958884801525562840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_18
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 769
+        width: 98
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf5bc0aa4109ec00800000000000000
+      internalID: 930276218065608620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_19
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 839
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4142e71021197ce10800000000000000
+      internalID: 2217900848023741460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_20
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 781
+        width: 82
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704bb369b558cde30800000000000000
+      internalID: 4529641953636889607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_21
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 771
+        width: 101
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5b44a74ac418c60800000000000000
+      internalID: 7818614697401562596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_22
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 773
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54708b6e5014eb940800000000000000
+      internalID: 5313756103945226053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_23
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 773
+        width: 103
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7b7ec4e9fb260f0800000000000000
+      internalID: -1125126270273210369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_24
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 780
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96173f24b22e3f50800000000000000
+      internalID: 6862961039440811674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_25
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 826
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63604a46240b3aef0800000000000000
+      internalID: -98040967669217738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_26
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 824
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9b0207f0c4977d0800000000000000
+      internalID: -2920219254183642695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_27
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 784
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061da3abb873eee20800000000000000
+      internalID: 3381701443466219872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_28
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 719
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d6fdb3de1372a40800000000000000
+      internalID: 5343294377879891247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_29
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 660
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be2b939ac4400160800000000000000
+      internalID: 6989662258529513142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_30
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 717
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35c4b7aac9d02f60800000000000000
+      internalID: 8007639601885005114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_31
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 722
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1d958ce4fde1930800000000000000
+      internalID: 4115972638924984752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_32
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 714
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b017b77668ddb060800000000000000
+      internalID: 6970965732846145719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_33
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 717
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1430f27e831a09b70800000000000000
+      internalID: 8903793729080329025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_34
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 722
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66aa79a14f71c4690800000000000000
+      internalID: -7616686532604745114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_35
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 704
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8357599de2cbc03b0800000000000000
+      internalID: -5544850131794954952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_36
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 713
+        width: 36
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d9f19a3e94e4d50800000000000000
+      internalID: 6723392535854554475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_37
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 651
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27475d289bd02a50800000000000000
+      internalID: 6494432109310461741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_38
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 719
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae36e6658ae0f6a0800000000000000
+      internalID: -6417371610325041500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_39
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 711
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adecc81e5db76c9e0800000000000000
+      internalID: -1601456458941280550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_40
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 720
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ace00166fd7e350800000000000000
+      internalID: 6046046654217243233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_41
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 710
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94e47c9f77198e20800000000000000
+      internalID: 3353237234407236763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_42
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 703
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573c155ae480d2cd0800000000000000
+      internalID: -2581397877539355787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_43
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 699
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6135f2a705f4eef0800000000000000
+      internalID: -79669480238272146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_44
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 663
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3dcae1fae12d4d0800000000000000
+      internalID: -3111390655076838464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_45
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 709
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8280f11bae0c24f90800000000000000
+      internalID: -6970797158989625304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_46
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 687
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e0618be40758e10800000000000000
+      internalID: 2199287476438568526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_47
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 699
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c8b4b2e4055a350800000000000000
+      internalID: 6027311972969319444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_48
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 696
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef9c9c8a9fd3dbc0800000000000000
+      internalID: -3759415409047199761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_49
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 706
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a412521e3f7ea0ff0800000000000000
+      internalID: -68987809630445238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_50
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 698
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb2322a30df75a70800000000000000
+      internalID: 8815792987647978491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_51
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 656
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3c19bc19e343800800000000000000
+      internalID: 591166246998885359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_52
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 708
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1327d86e9e7fa7b0800000000000000
+      internalID: -5210807025015512292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_53
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 709
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207bbe5dab347d650800000000000000
+      internalID: 6257544676986566402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_54
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 708
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df3bc10ebe8ee560800000000000000
+      internalID: 7344964989012885456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_55
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 691
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdd87296f60afd10800000000000000
+      internalID: 2160046627366690303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_56
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 681
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458a221623fb78520800000000000000
+      internalID: 2704340324358203476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_57
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 681
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4263b136e26ff4de0800000000000000
+      internalID: -1346587084468832732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_58
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 695
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e581996ed6fcd83d0800000000000000
+      internalID: -3202675689063376802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_59
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 664
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbbe0fd5a59a5dd0800000000000000
+      internalID: -2496518503779091524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_60
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 686
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e562a91f48fd57ed0800000000000000
+      internalID: -2416779862932314530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_61
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 668
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5a9cc2f7a8bf770800000000000000
+      internalID: 8645656188484691385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_62
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 686
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69ee49c0a78640a0800000000000000
+      internalID: -6897676654629426834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_63
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 680
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f3baaa334a68c50800000000000000
+      internalID: 6667196840182234938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_64
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 686
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0b346ec67234750800000000000000
+      internalID: 6287912853412491486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_65
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 682
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307d379bf7da71110800000000000000
+      internalID: 1231643787192948483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_66
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 687
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4332b810c124490800000000000000
+      internalID: -7763612014678428493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_67
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 659
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7264c5ba327d83a80800000000000000
+      internalID: -8486796949580921305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_68
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 661
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82e7284f93508f50800000000000000
+      internalID: 6881592174197596811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_69
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 668
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b516912df42629d40800000000000000
+      internalID: 5589638182487023963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_70
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 668
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448982e9f965eab40800000000000000
+      internalID: 5453391442345498692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_71
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 679
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800694e50dadf68c0800000000000000
+      internalID: -4003740955239161848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_72
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 672
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4440bfb71f1d3d430800000000000000
+      internalID: 3806616945155572804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_73
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 652
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a06f305e5a04ac00800000000000000
+      internalID: 910864424825217189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_74
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 654
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b8661b5da95ec10800000000000000
+      internalID: 2082240645323721485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_75
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 661
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da94562a16f674890800000000000000
+      internalID: -7473882591470990931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_76
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 654
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb05fb04ebb252070800000000000000
+      internalID: 8080913202516283582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_77
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 652
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9df95d536bbd2130800000000000000
+      internalID: 3543694517252783517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_78
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 669
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509d5c9f64caa5f70800000000000000
+      internalID: 9176836611558988037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_79
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 661
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb062ea44e22fc10800000000000000
+      internalID: 2085780449940343752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_80
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 655
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd596fdee5ecc4060800000000000000
+      internalID: 6939148032985699807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_81
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 658
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d480abb1a43b610800000000000000
+      internalID: 1635732572611300707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_82
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 650
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda37b8348d59b8c0800000000000000
+      internalID: -3983049572963894565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_83
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38104a53643f6d630800000000000000
+      internalID: 3951613205937389955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_84
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 665
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296dc29ec93b140c0800000000000000
+      internalID: -4593192658432895342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_85
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 655
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612bf6218470f4620800000000000000
+      internalID: 2760433102729753110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-focused-v4_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 650
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf33c519b3c35180800000000000000
+      internalID: -9127736820048379988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2168 @@
+fileFormatVersion: 2
+guid: 2278688f8d2caff479efe55a290a1a22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 277655832983060207
+    second: vfx-active-command-v6_0
+  - first:
+      213: -3592429146908963471
+    second: vfx-active-command-v6_1
+  - first:
+      213: 2722653550983856036
+    second: vfx-active-command-v6_2
+  - first:
+      213: 6160836980988354900
+    second: vfx-active-command-v6_3
+  - first:
+      213: -6655650094954339587
+    second: vfx-active-command-v6_4
+  - first:
+      213: -8961713915109607801
+    second: vfx-active-command-v6_5
+  - first:
+      213: -821492242149390245
+    second: vfx-active-command-v6_6
+  - first:
+      213: 243892950375277964
+    second: vfx-active-command-v6_7
+  - first:
+      213: -32365209818580106
+    second: vfx-active-command-v6_8
+  - first:
+      213: -5327414045769073417
+    second: vfx-active-command-v6_9
+  - first:
+      213: 3570281714902490366
+    second: vfx-active-command-v6_10
+  - first:
+      213: -5434723433483221516
+    second: vfx-active-command-v6_11
+  - first:
+      213: -6764161225086727265
+    second: vfx-active-command-v6_12
+  - first:
+      213: 1291143237389964054
+    second: vfx-active-command-v6_13
+  - first:
+      213: -5078678510948544336
+    second: vfx-active-command-v6_14
+  - first:
+      213: 5504467317026468825
+    second: vfx-active-command-v6_15
+  - first:
+      213: 82603782534462096
+    second: vfx-active-command-v6_16
+  - first:
+      213: -570004018399056838
+    second: vfx-active-command-v6_17
+  - first:
+      213: -585085295493220627
+    second: vfx-active-command-v6_18
+  - first:
+      213: 6152374630276616925
+    second: vfx-active-command-v6_19
+  - first:
+      213: 2038814341461177497
+    second: vfx-active-command-v6_20
+  - first:
+      213: -4029763756879186896
+    second: vfx-active-command-v6_21
+  - first:
+      213: 37755577390914894
+    second: vfx-active-command-v6_22
+  - first:
+      213: 1676692263246824489
+    second: vfx-active-command-v6_23
+  - first:
+      213: -3637664364975595836
+    second: vfx-active-command-v6_24
+  - first:
+      213: -7425528015366784817
+    second: vfx-active-command-v6_25
+  - first:
+      213: -993809345545368865
+    second: vfx-active-command-v6_26
+  - first:
+      213: -3797325356769764737
+    second: vfx-active-command-v6_27
+  - first:
+      213: -6925506779577870201
+    second: vfx-active-command-v6_28
+  - first:
+      213: 7388273386115902598
+    second: vfx-active-command-v6_29
+  - first:
+      213: -7426528862141959498
+    second: vfx-active-command-v6_30
+  - first:
+      213: -7474297614394070004
+    second: vfx-active-command-v6_31
+  - first:
+      213: 2442562275666097801
+    second: vfx-active-command-v6_32
+  - first:
+      213: 6612902390594655906
+    second: vfx-active-command-v6_33
+  - first:
+      213: -4204921081369519614
+    second: vfx-active-command-v6_34
+  - first:
+      213: 2889063745926804657
+    second: vfx-active-command-v6_35
+  - first:
+      213: -4635017689302660884
+    second: vfx-active-command-v6_36
+  - first:
+      213: 4174530496587605557
+    second: vfx-active-command-v6_37
+  - first:
+      213: -1853862134027706116
+    second: vfx-active-command-v6_38
+  - first:
+      213: 1146062593011013298
+    second: vfx-active-command-v6_39
+  - first:
+      213: -6056850269517280297
+    second: vfx-active-command-v6_40
+  - first:
+      213: -7556362579044910666
+    second: vfx-active-command-v6_41
+  - first:
+      213: 7583701188190511194
+    second: vfx-active-command-v6_42
+  - first:
+      213: 3797144758775978287
+    second: vfx-active-command-v6_43
+  - first:
+      213: 1672337552103649644
+    second: vfx-active-command-v6_44
+  - first:
+      213: 5164846786654385711
+    second: vfx-active-command-v6_45
+  - first:
+      213: 2594523656903119603
+    second: vfx-active-command-v6_46
+  - first:
+      213: 1672734974092569556
+    second: vfx-active-command-v6_47
+  - first:
+      213: -4088268404709100249
+    second: vfx-active-command-v6_48
+  - first:
+      213: -6013776835282121055
+    second: vfx-active-command-v6_49
+  - first:
+      213: 1599342772502958254
+    second: vfx-active-command-v6_50
+  - first:
+      213: -7283707691384700750
+    second: vfx-active-command-v6_51
+  - first:
+      213: -2843647631907447214
+    second: vfx-active-command-v6_52
+  - first:
+      213: 6323675676408057316
+    second: vfx-active-command-v6_53
+  - first:
+      213: -6210034146029581641
+    second: vfx-active-command-v6_54
+  - first:
+      213: 3957085997518110835
+    second: vfx-active-command-v6_55
+  - first:
+      213: 926234455123918672
+    second: vfx-active-command-v6_56
+  - first:
+      213: 4451792096489132366
+    second: vfx-active-command-v6_57
+  - first:
+      213: 5981712411907790730
+    second: vfx-active-command-v6_58
+  - first:
+      213: -5814657707936985212
+    second: vfx-active-command-v6_59
+  - first:
+      213: -1717919225400013754
+    second: vfx-active-command-v6_60
+  - first:
+      213: -7494177665677281018
+    second: vfx-active-command-v6_61
+  - first:
+      213: -1611213177497104929
+    second: vfx-active-command-v6_62
+  - first:
+      213: -7632979660676265067
+    second: vfx-active-command-v6_63
+  - first:
+      213: 859697283000173284
+    second: vfx-active-command-v6_64
+  - first:
+      213: -967383677665473647
+    second: vfx-active-command-v6_65
+  - first:
+      213: 641068312892382816
+    second: vfx-active-command-v6_66
+  - first:
+      213: 8111515402217793500
+    second: vfx-active-command-v6_67
+  - first:
+      213: -226440683158706399
+    second: vfx-active-command-v6_68
+  - first:
+      213: 9123072163529680189
+    second: vfx-active-command-v6_69
+  - first:
+      213: -2921713855284656934
+    second: vfx-active-command-v6_70
+  - first:
+      213: 1346832240071669136
+    second: vfx-active-command-v6_71
+  - first:
+      213: -3396832976781474679
+    second: vfx-active-command-v6_72
+  - first:
+      213: 7659329524679403043
+    second: vfx-active-command-v6_73
+  - first:
+      213: -811283467178688407
+    second: vfx-active-command-v6_74
+  - first:
+      213: 1483564349361485866
+    second: vfx-active-command-v6_75
+  - first:
+      213: -6826398744273923725
+    second: vfx-active-command-v6_76
+  - first:
+      213: -6952270603694923655
+    second: vfx-active-command-v6_77
+  - first:
+      213: 5850651262098791929
+    second: vfx-active-command-v6_78
+  - first:
+      213: 8750662231696776511
+    second: vfx-active-command-v6_79
+  - first:
+      213: -2005728096259524646
+    second: vfx-active-command-v6_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx-active-command-v6_0
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1079
+        width: 49
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee35ce428e6ad300800000000000000
+      internalID: 277655832983060207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1072
+        width: 71
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d4bb179b0252ec0800000000000000
+      internalID: -3592429146908963471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_2
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1080
+        width: 70
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af39d8bafec8c520800000000000000
+      internalID: 2722653550983856036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_3
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1079
+        width: 83
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451a6eab790bf7550800000000000000
+      internalID: 6160836980988354900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_4
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1163
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2a3f4708162a3a0800000000000000
+      internalID: -6655650094954339587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_5
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1079
+        width: 88
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7867737eca891a380800000000000000
+      internalID: -8961713915109607801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_6
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1081
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5842f088297994f0800000000000000
+      internalID: -821492242149390245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1081
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85275e985b726300800000000000000
+      internalID: 243892950375277964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_8
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1087
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bbead53040d8ff0800000000000000
+      internalID: -32365209818580106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 933
+        width: 84
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fcf186b6293116b0800000000000000
+      internalID: -5327414045769073417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 933
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcd5d4bd403c8130800000000000000
+      internalID: 3570281714902490366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_11
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 936
+        width: 84
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5cdb6e4dbf394b0800000000000000
+      internalID: -5434723433483221516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_12
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 927
+        width: 91
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b0c3f243fd022a0800000000000000
+      internalID: -6764161225086727265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_13
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 928
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613d6c20fef0be110800000000000000
+      internalID: 1291143237389964054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_14
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1028
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b090826dc8e489b0800000000000000
+      internalID: -5078678510948544336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_15
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1018
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d33c156cdbc36c40800000000000000
+      internalID: 5504467317026468825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 929
+        width: 94
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09af11bd3b7752100800000000000000
+      internalID: 82603782534462096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_17
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1029
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c67c28d50f618f0800000000000000
+      internalID: -570004018399056838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_18
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1024
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de672de060c51e7f0800000000000000
+      internalID: -585085295493220627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_19
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 928
+        width: 92
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd253ca2120a16550800000000000000
+      internalID: 6152374630276616925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_20
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 935
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994f3c967d25b4c10800000000000000
+      internalID: 2038814341461177497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_21
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 971
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034f876b6376318c0800000000000000
+      internalID: -4029763756879186896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_22
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 784
+        width: 85
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ddca26f72268000800000000000000
+      internalID: 37755577390914894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 853
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924097cdabec44710800000000000000
+      internalID: 1676692263246824489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_24
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 784
+        width: 88
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce5881888b648dc0800000000000000
+      internalID: -3637664364975595836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_25
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 785
+        width: 83
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8f956bc9933f890800000000000000
+      internalID: -7425528015366784817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_26
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 786
+        width: 72
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda0e486aa74532f0800000000000000
+      internalID: -993809345545368865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_27
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 764
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a972505b03d4bc0800000000000000
+      internalID: -3797325356769764737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_28
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 763
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78893b1e648a3ef90800000000000000
+      internalID: -6925506779577870201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_29
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 763
+        width: 91
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c29eaff7b688660800000000000000
+      internalID: 7388273386115902598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_30
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 764
+        width: 96
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2b7d9e85bafe890800000000000000
+      internalID: -7426528862141959498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_31
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 650
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ced749be5f54890800000000000000
+      internalID: -7474297614394070004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_32
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 651
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986f8dec279b5e120800000000000000
+      internalID: 2442562275666097801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_33
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 716
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6d9b500bfb5cb50800000000000000
+      internalID: 6612902390594655906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_34
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 685
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a1b6c1e8e15a5c0800000000000000
+      internalID: -4204921081369519614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_35
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 698
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b43d658b24081820800000000000000
+      internalID: 2889063745926804657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_36
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 712
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8867d08fb1dafb0800000000000000
+      internalID: -4635017689302660884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_37
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 698
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536a3297e59eee930800000000000000
+      internalID: 4174530496587605557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_38
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 704
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf02bb61632c546e0800000000000000
+      internalID: -1853862134027706116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_39
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 705
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6d8c23bd1a7ef00800000000000000
+      internalID: 1146062593011013298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_40
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 651
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db81bb35ceb1fba0800000000000000
+      internalID: -6056850269517280297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_41
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 705
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b939f90548622790800000000000000
+      internalID: -7556362579044910666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_42
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 652
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50adccec08be3960800000000000000
+      internalID: 7583701188190511194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_43
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 646
+        width: 67
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29149b3a0b22b430800000000000000
+      internalID: 3797144758775978287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_44
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 673
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c613fa9a426553710800000000000000
+      internalID: 1672337552103649644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_45
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 675
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f263ad5b9c83da740800000000000000
+      internalID: 5164846786654385711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_46
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 680
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2de030589910420800000000000000
+      internalID: 2594523656903119603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_47
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 685
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbe82ea89fb63710800000000000000
+      internalID: 1672734974092569556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_48
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 672
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7257cd6eb8d8347c0800000000000000
+      internalID: -4088268404709100249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_49
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 673
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae4986a4d5ca8ca0800000000000000
+      internalID: -6013776835282121055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_50
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 676
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0902527c1023610800000000000000
+      internalID: 1599342772502958254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_51
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 684
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b00c3702721bea90800000000000000
+      internalID: -7283707691384700750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_52
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 672
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e96c98b855988d0800000000000000
+      internalID: -2843647631907447214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_53
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 686
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed841ff58532c750800000000000000
+      internalID: 6323675676408057316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_54
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 651
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba4cdaa8d681d9a0800000000000000
+      internalID: -6210034146029581641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_55
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 648
+        width: 75
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3704dbbcfb46ae630800000000000000
+      internalID: 3957085997518110835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_56
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 664
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f736c5455aadc00800000000000000
+      internalID: 926234455123918672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_57
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 647
+        width: 80
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41502d3351f7cd30800000000000000
+      internalID: 4451792096489132366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_58
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 456
+        width: 69
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a871f440fbf430350800000000000000
+      internalID: 5981712411907790730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_59
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 494
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fcdeb3f9f2e4fa0800000000000000
+      internalID: -5814657707936985212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_60
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 452
+        width: 75
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64cc7310199b828e0800000000000000
+      internalID: -1717919225400013754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_61
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 452
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609b3a17e155ff790800000000000000
+      internalID: -7494177665677281018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_62
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 452
+        width: 85
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd4bd1d622d3a9e0800000000000000
+      internalID: -1611213177497104929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_63
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 310
+        width: 73
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b0c9b9075321690800000000000000
+      internalID: -7632979660676265067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_64
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 309
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2089fbf124eeb00800000000000000
+      internalID: 859697283000173284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_65
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 309
+        width: 87
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b0d3baba92392f0800000000000000
+      internalID: -967383677665473647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_66
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 309
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e95baeb3885e800800000000000000
+      internalID: 641068312892382816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_67
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 162
+        width: 84
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd72d4b1844e19070800000000000000
+      internalID: 8111515402217793500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_68
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 162
+        width: 85
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127e0adf5658bdcf0800000000000000
+      internalID: -226440683158706399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_69
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 161
+        width: 84
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35e07febc9ab9e70800000000000000
+      internalID: 9123072163529680189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_70
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 161
+        width: 86
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4cb608abcf377d0800000000000000
+      internalID: -2921713855284656934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_71
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 245
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095f38959c8e0b210800000000000000
+      internalID: 1346832240071669136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_72
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 199
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9848b91a7660cd0d0800000000000000
+      internalID: -3396832976781474679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_73
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 179
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3266d203f976b4a60800000000000000
+      internalID: 7659329524679403043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_74
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 107
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960caa62cfdbdb4f0800000000000000
+      internalID: -811283467178688407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_75
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 92
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28ff1d5aeda69410800000000000000
+      internalID: 1483564349361485866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_76
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 86
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37151688282c341a0800000000000000
+      internalID: -6826398744273923725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_77
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 53
+        width: 76
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970af5c78b2948f90800000000000000
+      internalID: -6952270603694923655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_78
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 87
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fdd6162350b13150800000000000000
+      internalID: 5850651262098791929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_79
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 53
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d96bdcfe8907970800000000000000
+      internalID: 8750662231696776511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-active-command-v6_80
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 55
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad73e6a5ce83a24e0800000000000000
+      internalID: -2005728096259524646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

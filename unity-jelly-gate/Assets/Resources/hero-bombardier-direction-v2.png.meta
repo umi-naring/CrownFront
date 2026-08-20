@@ -1,0 +1,693 @@
+fileFormatVersion: 2
+guid: 7029c66c2d984b34aa08ca482a2f6134
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5551064533053655501
+    second: hero-bombardier-direction-v2_0
+  - first:
+      213: -7299431824173016657
+    second: hero-bombardier-direction-v2_1
+  - first:
+      213: 888989032731910521
+    second: hero-bombardier-direction-v2_2
+  - first:
+      213: 2229674619206077476
+    second: hero-bombardier-direction-v2_3
+  - first:
+      213: 8495492152320824004
+    second: hero-bombardier-direction-v2_4
+  - first:
+      213: -2237822035901159909
+    second: hero-bombardier-direction-v2_5
+  - first:
+      213: 7415202220633916531
+    second: hero-bombardier-direction-v2_6
+  - first:
+      213: 3432426724945026054
+    second: hero-bombardier-direction-v2_7
+  - first:
+      213: 5766346092221788499
+    second: hero-bombardier-direction-v2_8
+  - first:
+      213: -7857852902198320839
+    second: hero-bombardier-direction-v2_9
+  - first:
+      213: 7334359659179901745
+    second: hero-bombardier-direction-v2_10
+  - first:
+      213: -6395193933348140576
+    second: hero-bombardier-direction-v2_11
+  - first:
+      213: -4647607389057339353
+    second: hero-bombardier-direction-v2_12
+  - first:
+      213: 4926841696700918198
+    second: hero-bombardier-direction-v2_13
+  - first:
+      213: 6141474164423837021
+    second: hero-bombardier-direction-v2_14
+  - first:
+      213: -4034517047634279107
+    second: hero-bombardier-direction-v2_15
+  - first:
+      213: -877626172814614285
+    second: hero-bombardier-direction-v2_16
+  - first:
+      213: -9047644843484340140
+    second: hero-bombardier-direction-v2_17
+  - first:
+      213: 7468923639568433179
+    second: hero-bombardier-direction-v2_18
+  - first:
+      213: -5924649919660980571
+    second: hero-bombardier-direction-v2_19
+  - first:
+      213: 8854642380596615776
+    second: hero-bombardier-direction-v2_20
+  - first:
+      213: 8482252996912968805
+    second: hero-bombardier-direction-v2_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 560
+        width: 138
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9cee138c7590d40800000000000000
+      internalID: 5551064533053655501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 559
+        width: 140
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa95cf11e6533ba90800000000000000
+      internalID: -7299431824173016657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_2
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 559
+        width: 135
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9712431b0d2565c00800000000000000
+      internalID: 888989032731910521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_3
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 560
+        width: 134
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c8b7ab04561fe10800000000000000
+      internalID: 2229674619206077476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_4
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 566
+        width: 209
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2933bf91d06e570800000000000000
+      internalID: 8495492152320824004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_5
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 565
+        width: 278
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16e19ff6b8a1f0e0800000000000000
+      internalID: -2237822035901159909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_6
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 565
+        width: 191
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374829ad12718e660800000000000000
+      internalID: 7415202220633916531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_7
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 315
+        width: 168
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cd7e9abed62af20800000000000000
+      internalID: 3432426724945026054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 313
+        width: 166
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35177de283d260050800000000000000
+      internalID: 5766346092221788499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_9
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 312
+        width: 163
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931623b0b6c43f290800000000000000
+      internalID: -7857852902198320839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_10
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 312
+        width: 166
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1338f5c3041e8c560800000000000000
+      internalID: 7334359659179901745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_11
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 315
+        width: 210
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e90d053005bf37a0800000000000000
+      internalID: -6395193933348140576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_12
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 314
+        width: 280
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720b1c724b1608fb0800000000000000
+      internalID: -4647607389057339353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_13
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 313
+        width: 183
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9e07c6b68af5440800000000000000
+      internalID: 4926841696700918198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 47
+        width: 143
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55c8bfa636ea3550800000000000000
+      internalID: 6141474164423837021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_15
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 47
+        width: 142
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d354087fe148208c0800000000000000
+      internalID: -4034517047634279107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_16
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 47
+        width: 141
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0accb45ab02d3f0800000000000000
+      internalID: -877626172814614285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_17
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 47
+        width: 141
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450a83a83fe407280800000000000000
+      internalID: -9047644843484340140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_18
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 50
+        width: 170
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b108ef66a72f6a760800000000000000
+      internalID: 7468923639568433179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_19
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 49
+        width: 170
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a68f08c94a67cda0800000000000000
+      internalID: -5924649919660980571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_20
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 145
+        width: 98
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a949cc45202ea70800000000000000
+      internalID: 8854642380596615776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-bombardier-direction-v2_21
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 48
+        width: 162
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5647df7e82407b570800000000000000
+      internalID: 8482252996912968805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

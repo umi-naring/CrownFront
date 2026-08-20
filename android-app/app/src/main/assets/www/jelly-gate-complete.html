@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>젤리 길목 수비대 — 달콤한 언덕 관문</title>
+  <style>
+    :root{--ink:#1b2240;--cream:#fff7df;--gold:#ffd765;--navy:#101a38;--coral:#ff745f;--mint:#68dfb5}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% 0,#2a4071,#0b1229 65%);color:#fff;font-family:"Arial Rounded MT Bold","Malgun Gothic",system-ui,sans-serif}
+    button{font:inherit}.shell{width:min(1120px,100%);margin:auto;padding:18px}.header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px}.kicker{margin:0;color:var(--gold);font-size:11px;letter-spacing:.18em;font-weight:900}.header h1{margin:3px 0 0;font-size:clamp(25px,4vw,39px);letter-spacing:-.06em}.stats{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.pill{padding:9px 12px;border:1px solid #6378ac;border-radius:13px;background:#1a2a52;box-shadow:inset 0 1px #ffffff1f;font-size:13px}.layout{display:grid;grid-template-columns:minmax(0,768px) minmax(250px,1fr);gap:14px}.board{position:relative;overflow:hidden;border:6px solid #e3b85e;border-radius:24px;background:#375343;box-shadow:0 20px 60px #0009}.map-img{display:block;width:100%;height:auto;pointer-events:none;user-select:none}.game-canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.toast{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);width:max-content;max-width:92%;padding:9px 15px;border-radius:999px;background:#111a36e8;color:#fff2bd;font-size:12px;text-align:center;box-shadow:0 5px 18px #0007;pointer-events:none}.side{display:flex;flex-direction:column;gap:12px}.panel{padding:15px;border:2px solid #495f91;border-radius:18px;background:linear-gradient(145deg,#1c2c55,#141f42);box-shadow:inset 0 1px #ffffff16,0 9px 24px #0004}.panel h2{margin:0 0 11px;font-size:16px}.shop{display:grid;gap:8px}.unit-card{position:relative;display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:9px;padding:10px;border:2px solid #536a9f;border-radius:13px;color:#fff;background:#26385f;text-align:left;cursor:pointer;transition:.14s}.unit-card:hover{transform:translateY(-1px);background:#304773}.unit-card.active{border-color:#ffe16b;box-shadow:0 0 0 3px #ffe16b33}.portrait{display:grid;width:40px;height:40px;place-items:center;border:3px solid #3d3157;border-radius:45% 45% 38% 38%;font-size:20px;box-shadow:inset 0 -8px #0002}.unit-card strong,.unit-card small{display:block}.unit-card small{margin-top:2px;color:#bfccec;font-size:10px}.cost{color:#ffe16b}.start{width:100%;padding:13px;border:0;border-radius:14px;color:#fff;background:linear-gradient(#ff806a,#da5548);font-weight:900;cursor:pointer;box-shadow:0 5px 0 #9f3934}.start:disabled{filter:grayscale(1);cursor:not-allowed}.guide{margin:0;color:#c5d2ef;font-size:12px;line-height:1.55}.builds{display:flex;gap:5px;flex-wrap:wrap}.build-chip{padding:5px 8px;border-radius:9px;background:#30466f;color:#ffe8a0;font-size:10px}.overlay{position:fixed;z-index:20;inset:0;display:none;place-items:center;padding:18px;background:#071027d9;backdrop-filter:blur(6px)}.overlay.show{display:grid}.dialog{width:min(720px,96vw);padding:24px;border:5px solid #ffe083;border-radius:25px;background:var(--cream);color:var(--ink);box-shadow:0 24px 70px #000a}.dialog h2{margin:0 0 5px;font-size:27px}.dialog>p{margin:5px 0 17px;color:#655c4a}.aug-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.aug{min-height:165px;padding:15px;border:3px solid;border-radius:17px;text-align:left;cursor:pointer;color:#312d43}.aug b,.aug strong,.aug small{display:block}.aug b{font-size:11px}.aug i{display:block;margin:9px 0;font-size:30px;font-style:normal}.aug small{margin-top:7px;line-height:1.45}.bronze{background:#efd0b1;border-color:#aa714e}.silver{background:#e3eaf3;border-color:#8797ad}.gold{background:#ffec9e;border-color:#d39a21}.platinum{background:#bdeee5;border-color:#3ba39b}.diamond{background:#e2d2ff;border-color:#8870d0}.lose-actions{display:flex;gap:8px;margin-top:16px}.lose-actions button{padding:11px 16px;border:0;border-radius:11px;color:#fff;background:#e05c4f;cursor:pointer;font-weight:900}.selection-help{color:#93a7d2;font-size:11px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}.board{max-height:72vh}.side{display:grid;grid-template-columns:1fr 1fr}.aug-grid{grid-template-columns:1fr}.aug{min-height:0}}@media(max-width:560px){.shell{padding:8px}.header{align-items:flex-start}.stats{max-width:170px}.side{grid-template-columns:1fr}.board{border-width:3px}.dialog{padding:16px}}
+  </style>
+  <style>
+    .modebar{display:grid;grid-template-columns:1fr auto auto;gap:7px;align-items:center;margin:10px 0}.mode-label{min-height:34px;display:flex;align-items:center;padding:7px 10px;border:1px solid #6075a8;border-radius:10px;background:#101b39;color:#bcd0ff;font-size:11px}.mode-label.building{border-color:#ffe16b;color:#ffeaa0;box-shadow:0 0 0 2px #ffe16b22}.micro-btn{padding:8px 9px;border:1px solid #677eb2;border-radius:9px;background:#2b416e;color:#fff;font-size:10px;cursor:pointer}.micro-btn:disabled{opacity:.35;cursor:not-allowed}.cancel-btn:not(:disabled){border-color:#ff9d89;background:#6f3541}.unit-card:disabled{opacity:.42;cursor:not-allowed;transform:none}.game-canvas.control{cursor:default}.game-canvas.place{cursor:copy}.hotkey{color:#ffe889}.control-note{margin-top:8px;padding:8px 10px;border-radius:10px;background:#0d1832;color:#9fb4e4;font-size:10px;line-height:1.45}@media(max-width:860px){.board{width:min(100%,48vh);max-height:none;aspect-ratio:2/3;margin-inline:auto}.map-img{width:100%;height:100%;object-fit:fill}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <header class="header"><div><p class="kicker">TOY KINGDOM TACTICS</p><h1>젤리 길목 수비대</h1></div><div class="stats"><span class="pill" id="roundPill">준비 라운드 1</span><span class="pill">🪙 <b id="moneyText">20</b></span><span class="pill">🏰 <b id="gateText">600 / 600</b></span></div></header>
+  <section class="layout">
+    <div class="board" id="board"><img class="map-img" src="toy-kingdom-natural-hill-v3.png" alt="자연스럽게 이어지는 굽은 오르막과 높은 언덕이 있는 장난감 왕국 전장"><canvas class="game-canvas control" id="game" width="768" height="1152"></canvas><div class="toast" id="toast">좁은 오르막에 전열을 세우고 계속 재배치하세요.</div></div>
+    <aside class="side">
+      <section class="panel"><h2>이번 라운드 편성</h2><div class="shop" id="shop"></div><div class="modebar"><span class="mode-label" id="modeText">조작 모드</span><button class="micro-btn cancel-btn" id="cancelBuild" disabled>배치 취소</button><button class="micro-btn" id="stopButton">정지</button></div><button class="start" id="startButton">웨이브 시작</button></section>
+      <section class="panel"><h2>실시간 컨트롤</h2><p class="guide"><span class="hotkey">유닛 카드</span>를 고른 동안만 배치 모드<br><span class="hotkey">ESC·우클릭</span>: 배치 취소<br>유닛을 <span class="hotkey">드래그</span>: 즉시 이동 명령<br>빈 곳 드래그: 다중 선택<br>선택 후 빈 곳 클릭: 편대 이동</p><p class="selection-help" id="selectionText">선택된 유닛 없음</p><div class="control-note">이동 중에는 공격하지 않습니다. 전열을 빼고 넣거나 후열을 짧게 끊어 움직이는 컨트롤이 핵심입니다.</div></section>
+      <section class="panel"><h2>중첩 증강</h2><div class="builds" id="buildList"><span class="build-chip">없음</span></div></section>
+    </aside>
+  </section>
+</main>
+<div class="overlay" id="augmentOverlay"><section class="dialog"><h2 id="augmentTitle">라운드 클리어!</h2><p id="augmentOdds"></p><div class="aug-grid" id="augmentGrid"></div></section></div>
+<div class="overlay" id="loseOverlay"><section class="dialog"><h2>성문이 파괴됐습니다</h2><p>적이 도달할 때마다 성문 내구도가 감소하며, 내구도가 0이 되면 패배합니다. 전열과 후열 배치를 다시 설계하세요.</p><div class="lose-actions"><button id="retryButton">처음부터 다시</button></div></section></div>
+<script type="text/plain" id="legacyScript">
+(() => {
+  const canvas=document.querySelector('#game'),ctx=canvas.getContext('2d'),shop=document.querySelector('#shop'),mapImage=document.querySelector('.map-img');
+  const W=768,H=1152;
+  const TYPES={
+    tank:{name:'왕관 방패병',cost:5,hp:240,damage:10,range:34,rate:850,radius:23,color:'#f6c744',role:'전열 · 넓은 충돌',mark:'◈'},
+    melee:{name:'코랄 망치병',cost:4,hp:125,damage:32,range:42,rate:620,radius:18,color:'#ff7f68',role:'근접 · 높은 지속 피해',mark:'◆'},
+    archer:{name:'민트 궁수',cost:4,hp:75,damage:23,range:165,rate:720,radius:16,color:'#5fe0b5',role:'원거리 · 빠른 투사체',mark:'➶'},
+    aoe:{name:'별가루 범위 마법사',cost:6,hp:66,damage:27,range:145,rate:1180,radius:17,color:'#b983f4',role:'마법 · 범위 폭발',mark:'✦',splash:62},
+    single:{name:'유리구슬 단일 마법사',cost:5,hp:62,damage:52,range:190,rate:1450,radius:16,color:'#55b8f3',role:'마법 · 정예 집중',mark:'●'}
+  };
+  const NAV={cols:128,rows:192,seeds:[[24,190],[64,190],[105,190]],goal:[28,43]};
+  const FALLBACK_PATHS=[
+    [[147,1143],[147,1029],[147,921],[147,813],[153,705],[183,597],[219,489],[225,381],[189,273]],
+    [[387,1143],[387,1029],[387,921],[387,813],[387,705],[387,597],[387,489],[297,381],[189,273]],
+    [[633,1143],[633,1029],[627,921],[621,813],[597,705],[507,597],[399,489],[297,381],[189,273]]
+  ];
+  let navMask=null,navPaths=[],navReady=false;
+  function roadPixel(r,g,b){return r>82&&r>b*1.16&&g>b*1.05&&r>g*.91&&r+g>190}
+  function navIndex(x,y){return y*NAV.cols+x}
+  function snapToRoad(seed){
+    for(let radius=0;radius<26;radius++){
+      let best=null;
+      for(let y=Math.max(0,seed[1]-radius);y<=Math.min(NAV.rows-1,seed[1]+radius);y++)for(let x=Math.max(0,seed[0]-radius);x<=Math.min(NAV.cols-1,seed[0]+radius);x++){
+        if(!navMask[navIndex(x,y)])continue;
+        const d=(x-seed[0])**2+(y-seed[1])**2;
+        if(!best||d<best.d)best={x,y,d};
+      }
+      if(best)return [best.x,best.y];
+    }
+    return null;
+  }
+  function findRoadPath(seed,goalSeed){
+    const start=snapToRoad(seed),goal=snapToRoad(goalSeed);
+    if(!start||!goal)return null;
+    const total=NAV.cols*NAV.rows,prev=new Int32Array(total);prev.fill(-2);
+    const queue=new Int32Array(total),startI=navIndex(start[0],start[1]),goalI=navIndex(goal[0],goal[1]);
+    let head=0,tail=0;queue[tail++]=startI;prev[startI]=-1;
+    const steps=[[1,0],[-1,0],[0,1],[0,-1],[1,1],[-1,1],[1,-1],[-1,-1]];
+    while(head<tail){
+      const at=queue[head++];if(at===goalI)break;
+      const x=at%NAV.cols,y=(at/NAV.cols)|0;
+      for(const [dx,dy] of steps){
+        const nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=NAV.cols||ny>=NAV.rows)continue;
+        const ni=navIndex(nx,ny);if(!navMask[ni]||prev[ni]!==-2)continue;
+        prev[ni]=at;queue[tail++]=ni;
+      }
+    }
+    if(prev[goalI]===-2)return null;
+    const cells=[];for(let at=goalI;at!==-1;at=prev[at])cells.push([at%NAV.cols,(at/NAV.cols)|0]);cells.reverse();
+    let points=cells.map(([x,y])=>[(x+.5)*W/NAV.cols,(y+.5)*H/NAV.rows]);
+    for(let pass=0;pass<3;pass++)points=points.map((p,i)=>i===0||i===points.length-1?p:[(points[i-1][0]+p[0]*2+points[i+1][0])/4,(points[i-1][1]+p[1]*2+points[i+1][1])/4]);
+    return points;
+  }
+  function useFallbackNavigation(reason){
+    navPaths=FALLBACK_PATHS.map(path=>path.map(p=>[...p]));navReady=true;syncUI();
+    window.__JELLY_DEBUG__={navSource:'embedded-map-fallback',reason,connected:navPaths.map(p=>p.length)};
+  }
+  function buildNavigation(){
+    try{
+      const scan=document.createElement('canvas');scan.width=NAV.cols;scan.height=NAV.rows;
+      const scanCtx=scan.getContext('2d',{willReadFrequently:true});scanCtx.drawImage(mapImage,0,0,NAV.cols,NAV.rows);
+      const pixels=scanCtx.getImageData(0,0,NAV.cols,NAV.rows).data;navMask=new Uint8Array(NAV.cols*NAV.rows);
+      for(let i=0;i<navMask.length;i++)navMask[i]=roadPixel(pixels[i*4],pixels[i*4+1],pixels[i*4+2])?1:0;
+      navPaths=NAV.seeds.map(seed=>findRoadPath(seed,NAV.goal));
+      if(navPaths.some(path=>!path||path.length<100))throw new Error('road-connectivity-check-failed');
+      navReady=true;syncUI();toast('세 갈래 길 연결 확인 완료 · 배치를 시작하세요.');
+      window.__JELLY_DEBUG__={navSource:'map-pixel-mask',connected:navPaths.map(p=>p.length),roadCells:navMask.reduce((a,b)=>a+b,0),paths:navPaths};
+    }catch(error){useFallbackNavigation(error.message)}
+  }
+  const AUGMENTS=[
+    {name:'단단한 방패',icon:'🛡️',desc:'방패병 최대 체력 +18%',apply:()=>{}},
+    {name:'정밀 조준',icon:'🎯',desc:'궁수·단일 마법사 공격력 +14%',apply:()=>{}},
+    {name:'별가루 확산',icon:'✨',desc:'범위 마법사의 폭발 반경 +16%',apply:()=>{}},
+    {name:'언덕의 맹세',icon:'⛰️',desc:'높은 지형에 있는 아군 공격력 +12%',apply:()=>{}},
+    {name:'긴급 증원',icon:'🎁',desc:'다음 라운드 시작 예산 +4',apply:()=>{}},
+    {name:'빠른 손놀림',icon:'⚡',desc:'모든 아군 공격 속도 +9%',apply:()=>{}}
+  ];
+  const tierClass={브론즈:'bronze',실버:'silver',골드:'gold',플레:'platinum',다이아:'diamond'};
+  const transitions={
+    브론즈:{실버:10,골드:20,플레:30,다이아:40},실버:{브론즈:12,골드:32,플레:38,다이아:18},
+    골드:{브론즈:15,실버:25,플레:32,다이아:28},플레:{브론즈:18,실버:30,골드:32,다이아:20},
+    다이아:{브론즈:12,실버:20,골드:28,플레:40}
+  };
+  let units=[],enemies=[],projectiles=[],effects=[],selected=[],buyType=null,round=1,money=20,state='prep',gateSafe=true,lastTier='브론즈',stacks={},spawnLeft=0,lastTime=performance.now(),pointerStart=null,moved=false,toastTimer=0;
+  function toast(text){document.querySelector('#toast').textContent=text;clearTimeout(toastTimer);toastTimer=setTimeout(()=>document.querySelector('#toast').textContent=state==='prep'?'편성을 마치면 웨이브를 시작하세요.':'전열을 재배치해 성문을 지키세요.',2600)}
+  function tierPower(tier){return {브론즈:1,실버:1.35,골드:1.75,플레:2.2,다이아:2.85}[tier]}
+  function statMultiplier(name){return 1+(stacks[name]||0)}
+  function startBudget(){return 16+round*3+(stacks['긴급 증원']||0)*4}
+  function syncUI(){document.querySelector('#roundPill').textContent=(state==='battle'?'전투 ':'준비 ')+'라운드 '+round+(round%5===0?' · 보스':'');document.querySelector('#moneyText').textContent=money;document.querySelector('#gateText').textContent=gateSafe?'안전':'돌파';document.querySelector('#selectionText').textContent=selected.length?selected.length+'개 유닛 선택됨':'선택된 유닛 없음';document.querySelector('#startButton').disabled=state!=='prep'||!navReady;document.querySelector('#buildList').innerHTML=Object.keys(stacks).length?Object.entries(stacks).map(([n,v])=>`<span class="build-chip">${n} ×${v}</span>`).join(''):'<span class="build-chip">없음</span>'}
+  function renderShop(){shop.innerHTML='';Object.entries(TYPES).forEach(([key,t])=>{const b=document.createElement('button');b.className='unit-card';b.dataset.type=key;b.innerHTML=`<span class="portrait" style="background:${t.color}">${t.mark}</span><span><strong>${t.name}</strong><small>${t.role}</small></span><b class="cost">${t.cost}</b>`;b.onclick=()=>{if(state!=='prep')return;buyType=key;document.querySelectorAll('.unit-card').forEach(x=>x.classList.toggle('active',x===b));toast(`${t.name} 선택 — 배치할 위치를 누르세요.`)};shop.appendChild(b)})}
+  function pos(ev){const r=canvas.getBoundingClientRect();return{x:(ev.clientX-r.left)*W/r.width,y:(ev.clientY-r.top)*H/r.height}}
+  function validPlacement(p){return p.y>260&&p.y<720&&p.x>65&&p.x<700&&!units.some(u=>Math.hypot(u.x-p.x,u.y-p.y)<u.radius*1.7)}
+  function addUnit(type,p){const t=TYPES[type];if(money<t.cost){toast('코인이 부족합니다.');return}if(!validPlacement(p)){toast('언덕의 빈 공간에 배치하세요.');return}money-=t.cost;const hp=t.hp*(1+(stacks['단단한 방패']||0)*(type==='tank'?.18:0));units.push({...t,type,x:p.x,y:p.y,hp,maxHp:hp,lastAttack:0});buyType=null;document.querySelectorAll('.unit-card').forEach(x=>x.classList.remove('active'));syncUI()}
+  function drawBlob(u){ctx.save();ctx.translate(u.x,u.y);ctx.fillStyle='#0005';ctx.beginPath();ctx.ellipse(4,u.radius*.72,u.radius*1.05,u.radius*.35,0,0,Math.PI*2);ctx.fill();ctx.fillStyle=u.color;ctx.beginPath();ctx.arc(0,0,u.radius,Math.PI,0);ctx.quadraticCurveTo(u.radius,u.radius*.85,0,u.radius*.75);ctx.quadraticCurveTo(-u.radius,u.radius*.85,-u.radius,0);ctx.fill();ctx.strokeStyle=selected.includes(u)?'#fff36e':'#34294d';ctx.lineWidth=selected.includes(u)?5:2.5;ctx.stroke();ctx.fillStyle='#302641';ctx.beginPath();ctx.arc(-u.radius*.32,-1,2.7,0,Math.PI*2);ctx.arc(u.radius*.32,-1,2.7,0,Math.PI*2);ctx.fill();ctx.font='bold 14px Arial';ctx.textAlign='center';ctx.fillText(u.mark,0,8);ctx.fillStyle='#17203c';ctx.fillRect(-u.radius,u.radius+7,u.radius*2,4);ctx.fillStyle='#6ef0ad';ctx.fillRect(-u.radius,u.radius+7,u.radius*2*Math.max(0,u.hp/u.maxHp),4);ctx.restore()}
+  function drawEnemy(e){ctx.save();ctx.translate(e.x,e.y);ctx.fillStyle='#0005';ctx.beginPath();ctx.ellipse(3,13,15,6,0,0,Math.PI*2);ctx.fill();ctx.fillStyle=e.boss?'#7c2d98':'#b45ee0';ctx.beginPath();ctx.arc(0,0,e.radius,Math.PI,0);ctx.quadraticCurveTo(e.radius,e.radius,0,e.radius*.75);ctx.quadraticCurveTo(-e.radius,e.radius,-e.radius,0);ctx.fill();ctx.fillStyle='#3c1750';ctx.beginPath();ctx.arc(-5,0,2.4,0,7);ctx.arc(5,0,2.4,0,7);ctx.fill();ctx.fillStyle='#251331';ctx.fillRect(-e.radius,e.radius+6,e.radius*2,4);ctx.fillStyle='#ff725f';ctx.fillRect(-e.radius,e.radius+6,e.radius*2*Math.max(0,e.hp/e.maxHp),4);ctx.restore()}
+  function draw(){ctx.clearRect(0,0,W,H);effects.forEach(f=>{ctx.save();ctx.globalAlpha=Math.max(0,f.life/f.max);ctx.strokeStyle=f.color;ctx.shadowColor=f.color;ctx.shadowBlur=14;ctx.lineWidth=f.width;ctx.beginPath();ctx.arc(f.x,f.y,f.radius*(1-f.life/f.max),0,Math.PI*2);ctx.stroke();ctx.restore()});projectiles.forEach(p=>{ctx.save();ctx.strokeStyle=p.color;ctx.shadowColor=p.color;ctx.shadowBlur=18;ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(p.x-p.vx*38,p.y-p.vy*38);ctx.stroke();ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(p.x,p.y,5.5,0,7);ctx.fill();ctx.restore()});enemies.forEach(drawEnemy);units.forEach(drawBlob);if(pointerStart&&moved){const p=currentPointer;ctx.fillStyle='#ffe36b22';ctx.strokeStyle='#ffe36b';ctx.setLineDash([8,5]);ctx.strokeRect(Math.min(pointerStart.x,p.x),Math.min(pointerStart.y,p.y),Math.abs(p.x-pointerStart.x),Math.abs(p.y-pointerStart.y));ctx.setLineDash([])}}
+  function spawnEnemy(index){const lane=index%3,path=navPaths[lane],boss=round%5===0&&index===0,maxHp=(72+round*15)*(boss?5:1);enemies.push({x:path[0][0],y:path[0][1],path,lane,node:0,vx:0,vy:-1,hp:maxHp,maxHp,radius:boss?25:14,speed:boss?.032:.047,damage:boss?25:8,boss,attackAt:0})}
+  function beginRound(){if(state!=='prep')return;if(!navReady){toast('길 연결을 확인하는 중입니다.');return}if(!units.length){toast('최소 한 명은 배치해야 합니다.');return}state='battle';buyType=null;selected=[];spawnLeft=5+round*2+(round%5===0?2:0);let i=0;const timer=setInterval(()=>{if(state!=='battle'){clearInterval(timer);return}spawnEnemy(i++);spawnLeft--;if(spawnLeft<=0)clearInterval(timer)},520);syncUI();toast(round%5===0?'보스 라운드 시작!':'세 갈래 길에서 적 무리가 올라옵니다.')}
+  function attack(dt,now){for(const u of units){const target=enemies.filter(e=>Math.hypot(e.x-u.x,e.y-u.y)<=u.range).sort((a,b)=>b.node-a.node)[0];if(!target||now-u.lastAttack<u.rate/(1+(stacks['빠른 손놀림']||0)*.09))continue;u.lastAttack=now;const bonus=(u.y<430?1+(stacks['언덕의 맹세']||0)*.12:1)*(1+((u.type==='archer'||u.type==='single')?(stacks['정밀 조준']||0)*.14:0));if(u.type==='melee'||u.type==='tank'){hit(target,u.damage*bonus,u);effects.push({x:target.x,y:target.y,radius:28,color:u.color,width:5,life:18,max:18})}else{const dx=target.x-u.x,dy=target.y-u.y,d=Math.hypot(dx,dy);projectiles.push({x:u.x,y:u.y,vx:dx/d*.45,vy:dy/d*.45,target,damage:u.damage*bonus,owner:u,color:u.color,splash:u.splash?u.splash+(stacks['별가루 확산']||0)*16:0})}}
+  }
+  function hit(enemy,damage,owner,splash=0){if(!enemies.includes(enemy))return;enemy.hp-=damage;if(splash){effects.push({x:enemy.x,y:enemy.y,radius:splash,color:'#deb0ff',width:7,life:24,max:24});enemies.filter(e=>e!==enemy&&Math.hypot(e.x-enemy.x,e.y-enemy.y)<splash).forEach(e=>e.hp-=damage*.65)}}
+  function updateProjectiles(dt){for(let i=projectiles.length-1;i>=0;i--){const p=projectiles[i];if(!enemies.includes(p.target)){projectiles.splice(i,1);continue}const dx=p.target.x-p.x,dy=p.target.y-p.y,d=Math.hypot(dx,dy);p.x+=dx/d*dt*.48;p.y+=dy/d*dt*.48;if(d<10){hit(p.target,p.damage,p.owner,p.splash);projectiles.splice(i,1)}}}
+  function updateEnemies(dt,now){for(const e of enemies){
+    const blocker=units.filter(u=>Math.hypot(u.x-e.x,u.y-e.y)<u.radius+e.radius+3).sort((a,b)=>b.radius-a.radius)[0];
+    if(blocker){if(now-e.attackAt>700){blocker.hp-=e.damage;e.attackAt=now;effects.push({x:blocker.x,y:blocker.y,radius:25,color:'#ff715f',width:4,life:14,max:14})}continue}
+    const last=e.path.length-1,gate=e.path[last];
+    while(e.node<last&&Math.hypot(e.path[e.node+1][0]-e.x,e.path[e.node+1][1]-e.y)<10)e.node++;
+    if(e.node>=last-1&&Math.hypot(gate[0]-e.x,gate[1]-e.y)<12){defeat();return}
+    const target=e.path[Math.min(last,e.node+5)],dx=target[0]-e.x,dy=target[1]-e.y,d=Math.max(1,Math.hypot(dx,dy));
+    let desiredX=dx/d,desiredY=dy/d,avoidX=0,avoidY=0;
+    for(const other of enemies){if(other===e)continue;const ox=e.x-other.x,oy=e.y-other.y,od=Math.hypot(ox,oy),space=e.radius+other.radius+9;if(od>0&&od<space){avoidX+=ox/od*(space-od)/space;avoidY+=oy/od*(space-od)/space}}
+    desiredX+=avoidX*.28;desiredY+=avoidY*.28;const desiredLength=Math.max(1,Math.hypot(desiredX,desiredY));desiredX/=desiredLength;desiredY/=desiredLength;
+    const turn=Math.min(1,dt*.009);e.vx+=(desiredX-e.vx)*turn;e.vy+=(desiredY-e.vy)*turn;const velocityLength=Math.max(.001,Math.hypot(e.vx,e.vy));e.vx/=velocityLength;e.vy/=velocityLength;
+    e.x+=e.vx*e.speed*dt;e.y+=e.vy*e.speed*dt;
+  }}
+  function cleanup(){units=units.filter(u=>u.hp>0);enemies=enemies.filter(e=>e.hp>0);effects.forEach(e=>e.life--);effects=effects.filter(e=>e.life>0)}
+  function defeat(){if(state==='lost')return;state='lost';gateSafe=false;syncUI();document.querySelector('#loseOverlay').classList.add('show')}
+  function finishRound(){state='augment';units=[];selected=[];enemies=[];projectiles=[];effects=[];money=0;showAugments()}
+  function rollTier(boss){const weights={...transitions[lastTier]};if(boss){['골드','플레','다이아'].forEach(t=>{if(weights[t])weights[t]*={골드:1.25,플레:1.65,다이아:2.2}[t]})}const sum=Object.values(weights).reduce((a,b)=>a+b,0),roll=Math.random()*sum;let n=0;for(const [tier,w] of Object.entries(weights)){n+=w;if(roll<=n)return tier}return '실버'}
+  function showAugments(){const boss=round%5===0,overlay=document.querySelector('#augmentOverlay'),grid=document.querySelector('#augmentGrid');document.querySelector('#augmentTitle').textContent=boss?'보스 격파!':'라운드 클리어!';document.querySelector('#augmentOdds').textContent=(boss?'보스 보상으로 상위 등급 확률이 증가했습니다. ':'')+'이전 증강 등급: '+lastTier;grid.innerHTML='';const used=[];for(let i=0;i<3;i++){let a;do{a=AUGMENTS[Math.floor(Math.random()*AUGMENTS.length)]}while(used.includes(a.name));used.push(a.name);const tier=rollTier(boss),power=tierPower(tier),b=document.createElement('button');b.className='aug '+tierClass[tier];b.innerHTML=`<b>${tier}</b><i>${a.icon}</i><strong>${a.name}</strong><small>${a.desc}<br>등급 계수 ×${power.toFixed(2)} · 현재 ${(stacks[a.name]||0)}중첩</small>`;b.onclick=()=>{stacks[a.name]=(stacks[a.name]||0)+1;lastTier=tier;round++;money=startBudget();state='prep';gateSafe=true;overlay.classList.remove('show');syncUI();toast('새 예산으로 라운드 '+round+' 편성을 시작하세요.')};grid.appendChild(b)}overlay.classList.add('show')}
+  function frame(now){const dt=Math.min(34,now-lastTime);lastTime=now;if(state==='battle'){updateEnemies(dt,now);attack(dt,now);updateProjectiles(dt);cleanup();if(state==='battle'&&spawnLeft===0&&enemies.length===0)finishRound()}draw();requestAnimationFrame(frame)}
+  let currentPointer={x:0,y:0};canvas.onpointerdown=e=>{pointerStart=pos(e);currentPointer=pointerStart;moved=false;canvas.setPointerCapture(e.pointerId)};canvas.onpointermove=e=>{if(!pointerStart)return;currentPointer=pos(e);moved=Math.hypot(currentPointer.x-pointerStart.x,currentPointer.y-pointerStart.y)>8};canvas.onpointerup=e=>{const p=pos(e),hit=units.find(u=>Math.hypot(u.x-pointerStart.x,u.y-pointerStart.y)<u.radius+5);if(state!=='prep'&&state!=='battle'){pointerStart=null;return}if(buyType&&state==='prep'){addUnit(buyType,p)}else if(moved&&!hit){const x1=Math.min(pointerStart.x,p.x),x2=Math.max(pointerStart.x,p.x),y1=Math.min(pointerStart.y,p.y),y2=Math.max(pointerStart.y,p.y);selected=units.filter(u=>u.x>=x1&&u.x<=x2&&u.y>=y1&&u.y<=y2)}else if(hit){selected=[hit]}else if(selected.length){const cx=selected.reduce((s,u)=>s+u.x,0)/selected.length,cy=selected.reduce((s,u)=>s+u.y,0)/selected.length,dx=p.x-cx,dy=p.y-cy;selected.forEach(u=>{u.x=Math.max(60,Math.min(705,u.x+dx));u.y=Math.max(275,Math.min(730,u.y+dy))})}else selected=[];pointerStart=null;moved=false;syncUI()};
+  document.querySelector('#startButton').onclick=beginRound;document.querySelector('#retryButton').onclick=()=>location.reload();
+  renderShop();money=startBudget();syncUI();
+  if(mapImage.complete&&mapImage.naturalWidth)buildNavigation();else{mapImage.addEventListener('load',buildNavigation,{once:true});mapImage.addEventListener('error',()=>useFallbackNavigation('map-image-load-failed'),{once:true})}
+  requestAnimationFrame(frame);
+})();
+</script>
+<script src="jelly-gate-game-v2.js?v=gate-hp-natural-hill-1"></script>
+</body>
+</html>

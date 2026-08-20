@@ -1,0 +1,1168 @@
+fileFormatVersion: 2
+guid: 3288022000fbaef44af790befb65561d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2305319312880306751
+    second: defender-direction-down-v1_0
+  - first:
+      213: 6914856523236695881
+    second: defender-direction-down-v1_1
+  - first:
+      213: -1974404817816704579
+    second: defender-direction-down-v1_2
+  - first:
+      213: 364367749285409709
+    second: defender-direction-down-v1_3
+  - first:
+      213: 2217322106375258138
+    second: defender-direction-down-v1_4
+  - first:
+      213: 4634088755202225641
+    second: defender-direction-down-v1_5
+  - first:
+      213: 6754283566099728681
+    second: defender-direction-down-v1_6
+  - first:
+      213: 2796306872588898905
+    second: defender-direction-down-v1_7
+  - first:
+      213: 1352626367362063688
+    second: defender-direction-down-v1_8
+  - first:
+      213: -5013854163986773450
+    second: defender-direction-down-v1_9
+  - first:
+      213: 2520780930020456668
+    second: defender-direction-down-v1_10
+  - first:
+      213: -4513792579943840265
+    second: defender-direction-down-v1_11
+  - first:
+      213: -8189141174837019919
+    second: defender-direction-down-v1_12
+  - first:
+      213: -9212804531910200564
+    second: defender-direction-down-v1_13
+  - first:
+      213: -5774306966680931503
+    second: defender-direction-down-v1_14
+  - first:
+      213: 2291029186347581201
+    second: defender-direction-down-v1_15
+  - first:
+      213: 2405899015856761553
+    second: defender-direction-down-v1_16
+  - first:
+      213: -7770100311896397744
+    second: defender-direction-down-v1_17
+  - first:
+      213: 6955608941374128495
+    second: defender-direction-down-v1_18
+  - first:
+      213: -2454934748891382214
+    second: defender-direction-down-v1_19
+  - first:
+      213: 5047424806980403304
+    second: defender-direction-down-v1_20
+  - first:
+      213: 6902076157127598380
+    second: defender-direction-down-v1_21
+  - first:
+      213: -1684455114173671018
+    second: defender-direction-down-v1_22
+  - first:
+      213: 6387970569444652943
+    second: defender-direction-down-v1_23
+  - first:
+      213: 7522794806221080759
+    second: defender-direction-down-v1_24
+  - first:
+      213: 1335690738609271361
+    second: defender-direction-down-v1_25
+  - first:
+      213: -7781084756413762612
+    second: defender-direction-down-v1_26
+  - first:
+      213: -3288483523960215443
+    second: defender-direction-down-v1_27
+  - first:
+      213: -5222493138152338870
+    second: defender-direction-down-v1_28
+  - first:
+      213: -4981159833346647262
+    second: defender-direction-down-v1_29
+  - first:
+      213: -5206366347838515547
+    second: defender-direction-down-v1_30
+  - first:
+      213: -1852820537792810104
+    second: defender-direction-down-v1_31
+  - first:
+      213: -2808565356881393843
+    second: defender-direction-down-v1_32
+  - first:
+      213: -5996476508580868187
+    second: defender-direction-down-v1_33
+  - first:
+      213: -7338268053944370464
+    second: defender-direction-down-v1_34
+  - first:
+      213: 8912462676125413308
+    second: defender-direction-down-v1_35
+  - first:
+      213: 2523838995785354066
+    second: defender-direction-down-v1_36
+  - first:
+      213: 3212019357038672505
+    second: defender-direction-down-v1_37
+  - first:
+      213: 6412252487064957381
+    second: defender-direction-down-v1_38
+  - first:
+      213: -1096036341900892352
+    second: defender-direction-down-v1_39
+  - first:
+      213: -7391897493329916174
+    second: defender-direction-down-v1_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: defender-direction-down-v1_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 803
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a041273b32eff10800000000000000
+      internalID: 2305319312880306751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 801
+        width: 151
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fd0541f5186ff50800000000000000
+      internalID: 6914856523236695881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 805
+        width: 146
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9273f67418994e0800000000000000
+      internalID: -1974404817816704579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_3
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 800
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3f3c7998e7e0500800000000000000
+      internalID: 364367749285409709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_4
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 804
+        width: 142
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a104e1735b285ce10800000000000000
+      internalID: 2217322106375258138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_5
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 806
+        width: 195
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5f57f9b279f4040800000000000000
+      internalID: 4634088755202225641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 806
+        width: 163
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92902ad1e190cbd50800000000000000
+      internalID: 6754283566099728681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 806
+        width: 142
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95215aff84a7ec620800000000000000
+      internalID: 2796306872588898905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 617
+        width: 192
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d517cb38e75c210800000000000000
+      internalID: 1352626367362063688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_9
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 613
+        width: 148
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a84ffc3363b6ab0800000000000000
+      internalID: -5013854163986773450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_10
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 612
+        width: 141
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8b27276ec9bf220800000000000000
+      internalID: 2520780930020456668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_11
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 619
+        width: 135
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f547aa4099cb51c0800000000000000
+      internalID: -4513792579943840265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_12
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 609
+        width: 174
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa705a4d735a5e80800000000000000
+      internalID: -8189141174837019919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 609
+        width: 172
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03326af61b852080800000000000000
+      internalID: -9212804531910200564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 609
+        width: 151
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1537bea486a8ddfa0800000000000000
+      internalID: -5774306966680931503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 611
+        width: 143
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fbc4618ee5bcf10800000000000000
+      internalID: 2291029186347581201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 430
+        width: 158
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1daaa9d6868736120800000000000000
+      internalID: 2405899015856761553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_17
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 432
+        width: 147
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05863402fee0b2490800000000000000
+      internalID: -7770100311896397744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_18
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 433
+        width: 147
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61c223da79478060800000000000000
+      internalID: 6955608941374128495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_19
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 432
+        width: 137
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ef0994ad15eedd0800000000000000
+      internalID: -2454934748891382214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_20
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 434
+        width: 165
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860cf8a9e1e0c0640800000000000000
+      internalID: 5047424806980403304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 434
+        width: 157
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21a84632b919cf50800000000000000
+      internalID: 6902076157127598380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 440
+        width: 185
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699969f8ffc9f98e0800000000000000
+      internalID: -1684455114173671018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 433
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87f5635361a6a850800000000000000
+      internalID: 6387970569444652943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 432
+        width: 144
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b806fec406566860800000000000000
+      internalID: 7522794806221080759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 229
+        width: 166
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142b59466a3598210800000000000000
+      internalID: 1335690738609271361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_26
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 231
+        width: 165
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc330c6d3a8040490800000000000000
+      internalID: -7781084756413762612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_27
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 232
+        width: 161
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6860a878a5fc52d0800000000000000
+      internalID: -3288483523960215443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_28
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 232
+        width: 166
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ac38a292af587b0800000000000000
+      internalID: -5222493138152338870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_29
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 238
+        width: 168
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bddebd58d5fdab0800000000000000
+      internalID: -4981159833346647262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_30
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 235
+        width: 149
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6998224654fb7b0800000000000000
+      internalID: -5206366347838515547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_31
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 230
+        width: 180
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883bf4c99857946e0800000000000000
+      internalID: -1852820537792810104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 230
+        width: 153
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47cd9630b8f509d0800000000000000
+      internalID: -2808565356881393843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_33
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 47
+        width: 162
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af001ad26c38cca0800000000000000
+      internalID: -5996476508580868187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_34
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 48
+        width: 165
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea7c02b51c392a90800000000000000
+      internalID: -7338268053944370464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_35
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 42
+        width: 152
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfe16c659d6fab70800000000000000
+      internalID: 8912462676125413308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_36
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b801ed13a760320800000000000000
+      internalID: 2523838995785354066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_37
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 41
+        width: 156
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97af7f35692639c20800000000000000
+      internalID: 3212019357038672505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_38
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 48
+        width: 168
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c13f95d9a5ecf850800000000000000
+      internalID: 6412252487064957381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 44
+        width: 392
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047241c01c81ac0f0800000000000000
+      internalID: -1096036341900892352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defender-direction-down-v1_40
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 46
+        width: 157
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe48fdc464ba6990800000000000000
+      internalID: -7391897493329916174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

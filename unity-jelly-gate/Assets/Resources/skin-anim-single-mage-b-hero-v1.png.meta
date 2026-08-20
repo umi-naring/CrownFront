@@ -1,0 +1,968 @@
+fileFormatVersion: 2
+guid: de8faffa7a605214486fa6da7fceb46b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6902406854227549679
+    second: skin-anim-single-mage-b-hero-v1_0
+  - first:
+      213: 3506020131413391374
+    second: skin-anim-single-mage-b-hero-v1_1
+  - first:
+      213: 3854183518822772212
+    second: skin-anim-single-mage-b-hero-v1_2
+  - first:
+      213: 417223377165613752
+    second: skin-anim-single-mage-b-hero-v1_3
+  - first:
+      213: 7924978827091705357
+    second: skin-anim-single-mage-b-hero-v1_4
+  - first:
+      213: -5262454588610991889
+    second: skin-anim-single-mage-b-hero-v1_5
+  - first:
+      213: 4439897840236860189
+    second: skin-anim-single-mage-b-hero-v1_6
+  - first:
+      213: -9221972132389805356
+    second: skin-anim-single-mage-b-hero-v1_7
+  - first:
+      213: 5692898451901865399
+    second: skin-anim-single-mage-b-hero-v1_8
+  - first:
+      213: 8112921052066524308
+    second: skin-anim-single-mage-b-hero-v1_9
+  - first:
+      213: -6981105668247853305
+    second: skin-anim-single-mage-b-hero-v1_10
+  - first:
+      213: 3665630630303351113
+    second: skin-anim-single-mage-b-hero-v1_11
+  - first:
+      213: 1806581846447140629
+    second: skin-anim-single-mage-b-hero-v1_12
+  - first:
+      213: 1379755485882646481
+    second: skin-anim-single-mage-b-hero-v1_13
+  - first:
+      213: -7115326946177098417
+    second: skin-anim-single-mage-b-hero-v1_14
+  - first:
+      213: -829951607102937181
+    second: skin-anim-single-mage-b-hero-v1_15
+  - first:
+      213: 8400501442011313393
+    second: skin-anim-single-mage-b-hero-v1_16
+  - first:
+      213: -2039743932995964122
+    second: skin-anim-single-mage-b-hero-v1_17
+  - first:
+      213: 3330826205273111752
+    second: skin-anim-single-mage-b-hero-v1_18
+  - first:
+      213: 99984849753684374
+    second: skin-anim-single-mage-b-hero-v1_19
+  - first:
+      213: 2795582436570099350
+    second: skin-anim-single-mage-b-hero-v1_20
+  - first:
+      213: -9104624786146299814
+    second: skin-anim-single-mage-b-hero-v1_21
+  - first:
+      213: 7641172665196100051
+    second: skin-anim-single-mage-b-hero-v1_22
+  - first:
+      213: -4129854649955644665
+    second: skin-anim-single-mage-b-hero-v1_23
+  - first:
+      213: 3301900118166114436
+    second: skin-anim-single-mage-b-hero-v1_24
+  - first:
+      213: 215933225733600916
+    second: skin-anim-single-mage-b-hero-v1_25
+  - first:
+      213: 2260206346107837615
+    second: skin-anim-single-mage-b-hero-v1_26
+  - first:
+      213: 2954469392706610575
+    second: skin-anim-single-mage-b-hero-v1_27
+  - first:
+      213: 3425278989150190419
+    second: skin-anim-single-mage-b-hero-v1_28
+  - first:
+      213: -4661748999064214872
+    second: skin-anim-single-mage-b-hero-v1_29
+  - first:
+      213: 9049867231655419394
+    second: skin-anim-single-mage-b-hero-v1_30
+  - first:
+      213: 6703038072970781700
+    second: skin-anim-single-mage-b-hero-v1_31
+  - first:
+      213: 3477719096125343208
+    second: skin-anim-single-mage-b-hero-v1_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 539
+        width: 225
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed5471a6764acf50800000000000000
+      internalID: 6902406854227549679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 540
+        width: 205
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08734cdbb2e7a030800000000000000
+      internalID: 3506020131413391374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_2
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 543
+        width: 210
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fda8927d7fcc7530800000000000000
+      internalID: 3854183518822772212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_3
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 540
+        width: 215
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8baf1f373764ac500800000000000000
+      internalID: 417223377165613752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 541
+        width: 238
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0efa41414e2bfd60800000000000000
+      internalID: 7924978827091705357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 540
+        width: 285
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8a73fee6108f6b0800000000000000
+      internalID: -5262454588610991889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 767
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d139756ef8fad9d30800000000000000
+      internalID: 4439897840236860189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 539
+        width: 216
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2aa58a439f40080800000000000000
+      internalID: -9221972132389805356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 721
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd5bffcafc310f40800000000000000
+      internalID: 5692898451901865399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 721
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ca63776b2e69070800000000000000
+      internalID: 8112921052066524308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_10
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 720
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707ee98d1612e1f90800000000000000
+      internalID: -6981105668247853305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_11
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 721
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941c50d03afeed230800000000000000
+      internalID: 3665630630303351113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 720
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fa62f1e94421910800000000000000
+      internalID: 1806581846447140629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 665
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df7eecdd40e52310800000000000000
+      internalID: 1379755485882646481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_14
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 657
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d595057d7414d90800000000000000
+      internalID: -7115326946177098417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 657
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a76ddd196b6b74f0800000000000000
+      internalID: -829951607102937181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 635
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4bd32cd83949470800000000000000
+      internalID: 8400501442011313393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 285
+        width: 222
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623740133bf51b3e0800000000000000
+      internalID: -2039743932995964122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_18
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 287
+        width: 226
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccbdd549c8793e20800000000000000
+      internalID: 3330826205273111752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_19
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 286
+        width: 222
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6993d7ce0b7336100800000000000000
+      internalID: 99984849753684374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_20
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 286
+        width: 235
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ee4181a67ebc620800000000000000
+      internalID: 2795582436570099350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 285
+        width: 259
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a507880deffd5a180800000000000000
+      internalID: -9104624786146299814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 285
+        width: 318
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d93078ed06ea0a60800000000000000
+      internalID: 7641172665196100051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 285
+        width: 233
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b0667a31fcfa6c0800000000000000
+      internalID: -4129854649955644665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 30
+        width: 203
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4809c1bc9a4b2dd20800000000000000
+      internalID: 3301900118166114436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_25
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 28
+        width: 204
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4963e0fef162ff200800000000000000
+      internalID: 215933225733600916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_26
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 27
+        width: 209
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac57da52bddd5f10800000000000000
+      internalID: 2260206346107837615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_27
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 27
+        width: 211
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85aa0c5242600920800000000000000
+      internalID: 2954469392706610575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 31
+        width: 234
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bf7ecb719098f20800000000000000
+      internalID: 3425278989150190419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 27
+        width: 239
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2aebefbf32e4fb0800000000000000
+      internalID: -4661748999064214872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_30
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 163
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ed4478c46979d70800000000000000
+      internalID: 9049867231655419394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_31
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 29
+        width: 212
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404a757fc99f50d50800000000000000
+      internalID: 6703038072970781700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-single-mage-b-hero-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 113
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5c4299717534030800000000000000
+      internalID: 3477719096125343208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 93e6d314c78b0d24bb252eeb952c3cfc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5873278476126406592
+    second: enemy-silence-shroud-attack-directions-v1_0
+  - first:
+      213: 3877267425704050836
+    second: enemy-silence-shroud-attack-directions-v1_1
+  - first:
+      213: 2665710514552725718
+    second: enemy-silence-shroud-attack-directions-v1_2
+  - first:
+      213: -453935016758062238
+    second: enemy-silence-shroud-attack-directions-v1_3
+  - first:
+      213: 4087319172965977856
+    second: enemy-silence-shroud-attack-directions-v1_4
+  - first:
+      213: -1759405510662458543
+    second: enemy-silence-shroud-attack-directions-v1_5
+  - first:
+      213: -7350493742320809989
+    second: enemy-silence-shroud-attack-directions-v1_6
+  - first:
+      213: -1404065970228048839
+    second: enemy-silence-shroud-attack-directions-v1_7
+  - first:
+      213: -2303497848087339244
+    second: enemy-silence-shroud-attack-directions-v1_8
+  - first:
+      213: 5316919890433954709
+    second: enemy-silence-shroud-attack-directions-v1_9
+  - first:
+      213: 2928362497406974618
+    second: enemy-silence-shroud-attack-directions-v1_10
+  - first:
+      213: 3580916135468486849
+    second: enemy-silence-shroud-attack-directions-v1_11
+  - first:
+      213: -753053697328783725
+    second: enemy-silence-shroud-attack-directions-v1_12
+  - first:
+      213: -5170433463894472045
+    second: enemy-silence-shroud-attack-directions-v1_13
+  - first:
+      213: -7996456049766527432
+    second: enemy-silence-shroud-attack-directions-v1_14
+  - first:
+      213: 3556825442533346073
+    second: enemy-silence-shroud-attack-directions-v1_15
+  - first:
+      213: -6933090474631020719
+    second: enemy-silence-shroud-attack-directions-v1_16
+  - first:
+      213: -2912598214336166810
+    second: enemy-silence-shroud-attack-directions-v1_17
+  - first:
+      213: 3208043847221090361
+    second: enemy-silence-shroud-attack-directions-v1_18
+  - first:
+      213: 4585141948955135006
+    second: enemy-silence-shroud-attack-directions-v1_19
+  - first:
+      213: 8184299545137710470
+    second: enemy-silence-shroud-attack-directions-v1_20
+  - first:
+      213: -8912850753939648970
+    second: enemy-silence-shroud-attack-directions-v1_21
+  - first:
+      213: -8248347391208454977
+    second: enemy-silence-shroud-attack-directions-v1_22
+  - first:
+      213: -7906002527483075827
+    second: enemy-silence-shroud-attack-directions-v1_23
+  - first:
+      213: -7576222583365134611
+    second: enemy-silence-shroud-attack-directions-v1_24
+  - first:
+      213: 4980479636134051215
+    second: enemy-silence-shroud-attack-directions-v1_25
+  - first:
+      213: -8357170447415176043
+    second: enemy-silence-shroud-attack-directions-v1_26
+  - first:
+      213: -5960199508275281980
+    second: enemy-silence-shroud-attack-directions-v1_27
+  - first:
+      213: 7061584710594242888
+    second: enemy-silence-shroud-attack-directions-v1_28
+  - first:
+      213: 3103220074956659148
+    second: enemy-silence-shroud-attack-directions-v1_29
+  - first:
+      213: 6832263338503212321
+    second: enemy-silence-shroud-attack-directions-v1_30
+  - first:
+      213: 430454401313468021
+    second: enemy-silence-shroud-attack-directions-v1_31
+  - first:
+      213: -528535743944235621
+    second: enemy-silence-shroud-attack-directions-v1_32
+  - first:
+      213: 125200755241121728
+    second: enemy-silence-shroud-attack-directions-v1_33
+  - first:
+      213: -6108175472482618406
+    second: enemy-silence-shroud-attack-directions-v1_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 800
+        width: 199
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048b98b085ced7ea0800000000000000
+      internalID: -5873278476126406592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 801
+        width: 159
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49088485e22dec530800000000000000
+      internalID: 3877267425704050836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 800
+        width: 266
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d060f5e6918ef420800000000000000
+      internalID: 2665710514552725718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 800
+        width: 158
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263560fd18c43b9f0800000000000000
+      internalID: -453935016758062238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 988
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fc74cd12319b830800000000000000
+      internalID: 4087319172965977856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 800
+        width: 198
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153791182065597e0800000000000000
+      internalID: -1759405510662458543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 800
+        width: 150
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf78c3dc2eccdf990800000000000000
+      internalID: -7350493742320809989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 597
+        width: 182
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93cc75b6071c38ce0800000000000000
+      internalID: -1404065970228048839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 597
+        width: 155
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f90ef59e45800e0800000000000000
+      internalID: -2303497848087339244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 598
+        width: 166
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5935688587e79c940800000000000000
+      internalID: 5316919890433954709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 597
+        width: 262
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ab48f1d22a3a820800000000000000
+      internalID: 2928362497406974618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 597
+        width: 159
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c05011b048f1b130800000000000000
+      internalID: 3580916135468486849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 597
+        width: 179
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e5ce1f6ad9c85f0800000000000000
+      internalID: -753053697328783725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 406
+        width: 185
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a07c1a82eee38b0800000000000000
+      internalID: -5170433463894472045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 570
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e84abf691e60190800000000000000
+      internalID: -7996456049766527432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 406
+        width: 175
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b854625e16c5130800000000000000
+      internalID: 3556825442533346073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 407
+        width: 171
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f39f742f6b8cf90800000000000000
+      internalID: -6933090474631020719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 406
+        width: 284
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6644e0d0b5f5497d0800000000000000
+      internalID: -2912598214336166810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 406
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9389d71d1e2458c20800000000000000
+      internalID: 3208043847221090361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 406
+        width: 181
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c86383f42b1af30800000000000000
+      internalID: 4585141948955135006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 213
+        width: 169
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6850353f219749170800000000000000
+      internalID: 8184299545137710470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 214
+        width: 134
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63eca5b26713f4480800000000000000
+      internalID: -8912850753939648970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 214
+        width: 139
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb40003dfbbf78d80800000000000000
+      internalID: -8248347391208454977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 213
+        width: 239
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03e70cc69c384290800000000000000
+      internalID: -7906002527483075827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 213
+        width: 154
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de69a3373b9dbd690800000000000000
+      internalID: -7576222583365134611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 214
+        width: 166
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d36d267d73e1540800000000000000
+      internalID: 4980479636134051215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 24
+        width: 178
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5941d6a91cd550c80800000000000000
+      internalID: -8357170447415176043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 195
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf3bce202e194da0800000000000000
+      internalID: -5960199508275281980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 190
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849ac4261e9cff160800000000000000
+      internalID: 7061584710594242888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 25
+        width: 143
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc917a3773ad01b20800000000000000
+      internalID: 3103220074956659148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 25
+        width: 173
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d8867be4311de50800000000000000
+      internalID: 6832263338503212321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 195
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57eea425ff749f500800000000000000
+      internalID: 430454401313468021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 25
+        width: 147
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b956b1b8a834aa8f0800000000000000
+      internalID: -528535743944235621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 25
+        width: 141
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7f1cd6c6dccb100800000000000000
+      internalID: 125200755241121728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-attack-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 24
+        width: 215
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad37be035c66b3ba0800000000000000
+      internalID: -6108175472482618406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy-silence-shroud-attack-directions-v1_0: -5873278476126406592
+      enemy-silence-shroud-attack-directions-v1_1: 3877267425704050836
+      enemy-silence-shroud-attack-directions-v1_10: 2928362497406974618
+      enemy-silence-shroud-attack-directions-v1_11: 3580916135468486849
+      enemy-silence-shroud-attack-directions-v1_12: -753053697328783725
+      enemy-silence-shroud-attack-directions-v1_13: -5170433463894472045
+      enemy-silence-shroud-attack-directions-v1_14: -7996456049766527432
+      enemy-silence-shroud-attack-directions-v1_15: 3556825442533346073
+      enemy-silence-shroud-attack-directions-v1_16: -6933090474631020719
+      enemy-silence-shroud-attack-directions-v1_17: -2912598214336166810
+      enemy-silence-shroud-attack-directions-v1_18: 3208043847221090361
+      enemy-silence-shroud-attack-directions-v1_19: 4585141948955135006
+      enemy-silence-shroud-attack-directions-v1_2: 2665710514552725718
+      enemy-silence-shroud-attack-directions-v1_20: 8184299545137710470
+      enemy-silence-shroud-attack-directions-v1_21: -8912850753939648970
+      enemy-silence-shroud-attack-directions-v1_22: -8248347391208454977
+      enemy-silence-shroud-attack-directions-v1_23: -7906002527483075827
+      enemy-silence-shroud-attack-directions-v1_24: -7576222583365134611
+      enemy-silence-shroud-attack-directions-v1_25: 4980479636134051215
+      enemy-silence-shroud-attack-directions-v1_26: -8357170447415176043
+      enemy-silence-shroud-attack-directions-v1_27: -5960199508275281980
+      enemy-silence-shroud-attack-directions-v1_28: 7061584710594242888
+      enemy-silence-shroud-attack-directions-v1_29: 3103220074956659148
+      enemy-silence-shroud-attack-directions-v1_3: -453935016758062238
+      enemy-silence-shroud-attack-directions-v1_30: 6832263338503212321
+      enemy-silence-shroud-attack-directions-v1_31: 430454401313468021
+      enemy-silence-shroud-attack-directions-v1_32: -528535743944235621
+      enemy-silence-shroud-attack-directions-v1_33: 125200755241121728
+      enemy-silence-shroud-attack-directions-v1_34: -6108175472482618406
+      enemy-silence-shroud-attack-directions-v1_4: 4087319172965977856
+      enemy-silence-shroud-attack-directions-v1_5: -1759405510662458543
+      enemy-silence-shroud-attack-directions-v1_6: -7350493742320809989
+      enemy-silence-shroud-attack-directions-v1_7: -1404065970228048839
+      enemy-silence-shroud-attack-directions-v1_8: -2303497848087339244
+      enemy-silence-shroud-attack-directions-v1_9: 5316919890433954709
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

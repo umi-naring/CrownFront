@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: 0618c81270bcc9841b0cf39a36906e6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7892721865100245977
+    second: boss-goblin-warchief-walk-directions-v1_0
+  - first:
+      213: -2627408956868422959
+    second: boss-goblin-warchief-walk-directions-v1_1
+  - first:
+      213: 2722793002240776562
+    second: boss-goblin-warchief-walk-directions-v1_2
+  - first:
+      213: -2818026804836061437
+    second: boss-goblin-warchief-walk-directions-v1_3
+  - first:
+      213: -8417205015471509920
+    second: boss-goblin-warchief-walk-directions-v1_4
+  - first:
+      213: -541754454897894519
+    second: boss-goblin-warchief-walk-directions-v1_5
+  - first:
+      213: 7724754853902729514
+    second: boss-goblin-warchief-walk-directions-v1_6
+  - first:
+      213: 2350221694199156157
+    second: boss-goblin-warchief-walk-directions-v1_7
+  - first:
+      213: 8096698380428089745
+    second: boss-goblin-warchief-walk-directions-v1_8
+  - first:
+      213: -3619422923318577398
+    second: boss-goblin-warchief-walk-directions-v1_9
+  - first:
+      213: -6308209729109462766
+    second: boss-goblin-warchief-walk-directions-v1_10
+  - first:
+      213: 8083680632804268873
+    second: boss-goblin-warchief-walk-directions-v1_11
+  - first:
+      213: -6387867330527321461
+    second: boss-goblin-warchief-walk-directions-v1_12
+  - first:
+      213: -3923065762020337700
+    second: boss-goblin-warchief-walk-directions-v1_13
+  - first:
+      213: -509350490182614878
+    second: boss-goblin-warchief-walk-directions-v1_14
+  - first:
+      213: 40560319040705040
+    second: boss-goblin-warchief-walk-directions-v1_15
+  - first:
+      213: -4232198383296528050
+    second: boss-goblin-warchief-walk-directions-v1_16
+  - first:
+      213: -4478028778354093460
+    second: boss-goblin-warchief-walk-directions-v1_17
+  - first:
+      213: 6971111609504144811
+    second: boss-goblin-warchief-walk-directions-v1_18
+  - first:
+      213: 5219061101150657619
+    second: boss-goblin-warchief-walk-directions-v1_19
+  - first:
+      213: -152142997673655573
+    second: boss-goblin-warchief-walk-directions-v1_20
+  - first:
+      213: 8106350587301529499
+    second: boss-goblin-warchief-walk-directions-v1_21
+  - first:
+      213: 1311841259936253066
+    second: boss-goblin-warchief-walk-directions-v1_22
+  - first:
+      213: 7068915039110739276
+    second: boss-goblin-warchief-walk-directions-v1_23
+  - first:
+      213: 1356550856090659656
+    second: boss-goblin-warchief-walk-directions-v1_24
+  - first:
+      213: 4668686123266105221
+    second: boss-goblin-warchief-walk-directions-v1_25
+  - first:
+      213: 8650308673887567945
+    second: boss-goblin-warchief-walk-directions-v1_26
+  - first:
+      213: -4615276083223362483
+    second: boss-goblin-warchief-walk-directions-v1_27
+  - first:
+      213: -986818434744482405
+    second: boss-goblin-warchief-walk-directions-v1_28
+  - first:
+      213: 4356378900688874651
+    second: boss-goblin-warchief-walk-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 904
+        width: 203
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724cdb7f74b677290800000000000000
+      internalID: -7892721865100245977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 906
+        width: 226
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d29d2e6971998bd0800000000000000
+      internalID: -2627408956868422959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 903
+        width: 222
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2791b7f3fcd49c520800000000000000
+      internalID: 2722793002240776562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 906
+        width: 217
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fa7323d8b54e8d0800000000000000
+      internalID: -2818026804836061437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 904
+        width: 216
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e2f2b72a4103b80800000000000000
+      internalID: -8417205015471509920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 899
+        width: 202
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b5350913d4b78f0800000000000000
+      internalID: -541754454897894519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 649
+        width: 206
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21c8d3bc97d33b60800000000000000
+      internalID: 7724754853902729514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 649
+        width: 230
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd482acd2aad9020800000000000000
+      internalID: 2350221694199156157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 645
+        width: 233
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19995e267404d5070800000000000000
+      internalID: 8096698380428089745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 646
+        width: 211
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07b0bb170a35cdc0800000000000000
+      internalID: -3619422923318577398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 649
+        width: 216
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21174c77cacb478a0800000000000000
+      internalID: -6308209729109462766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 643
+        width: 208
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bd004d4b00f2070800000000000000
+      internalID: 8083680632804268873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 410
+        width: 175
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82a89bd18cb957a0800000000000000
+      internalID: -6387867330527321461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 409
+        width: 189
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7d74889787e89c0800000000000000
+      internalID: -3923065762020337700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 400
+        width: 201
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a08e768d6c6ee8f0800000000000000
+      internalID: -509350490182614878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 399
+        width: 183
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012d5603569109000800000000000000
+      internalID: 40560319040705040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 401
+        width: 194
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c0a85ef53445c0800000000000000
+      internalID: -4232198383296528050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 401
+        width: 181
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c625a3c3d88dad1c0800000000000000
+      internalID: -4478028778354093460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 184
+        width: 145
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad9816031d5eb060800000000000000
+      internalID: 6971111609504144811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 182
+        width: 150
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cd4237b64dd6840800000000000000
+      internalID: 5219061101150657619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 181
+        width: 145
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2499cefba73edf0800000000000000
+      internalID: -152142997673655573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 182
+        width: 143
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9703ece8ea8f7070800000000000000
+      internalID: 8106350587301529499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 181
+        width: 148
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84833ceca8943210800000000000000
+      internalID: 1311841259936253066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 4
+        width: 123
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45bc9d76c4d91260800000000000000
+      internalID: 7068915039110739276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 182
+        width: 152
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b2909f0df63d210800000000000000
+      internalID: 1356550856090659656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 5
+        width: 124
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f52191b418ac040800000000000000
+      internalID: 4668686123266105221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 5
+        width: 122
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9408c8858e11c0870800000000000000
+      internalID: 8650308673887567945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 5
+        width: 127
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d448d17eade33ffb0800000000000000
+      internalID: -4615276083223362483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4
+        width: 126
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b958f3bacdd1e42f0800000000000000
+      internalID: -986818434744482405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-walk-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 4
+        width: 126
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c21927787f47c30800000000000000
+      internalID: 4356378900688874651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

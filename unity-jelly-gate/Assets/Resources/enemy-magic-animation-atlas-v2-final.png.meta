@@ -1,0 +1,1493 @@
+fileFormatVersion: 2
+guid: c57f7f9ed97dad5499beeffee1caf85a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1756847445796471199
+    second: enemy-magic-animation-atlas-v2-final_0
+  - first:
+      213: 6597711520463352679
+    second: enemy-magic-animation-atlas-v2-final_1
+  - first:
+      213: -3858076727078153911
+    second: enemy-magic-animation-atlas-v2-final_2
+  - first:
+      213: -4000662043915819549
+    second: enemy-magic-animation-atlas-v2-final_3
+  - first:
+      213: -4209071667730537604
+    second: enemy-magic-animation-atlas-v2-final_4
+  - first:
+      213: -2487651678681521143
+    second: enemy-magic-animation-atlas-v2-final_5
+  - first:
+      213: -2362307276485118997
+    second: enemy-magic-animation-atlas-v2-final_6
+  - first:
+      213: 7835602585839407182
+    second: enemy-magic-animation-atlas-v2-final_7
+  - first:
+      213: 3435760416101415922
+    second: enemy-magic-animation-atlas-v2-final_8
+  - first:
+      213: 8622045944851675149
+    second: enemy-magic-animation-atlas-v2-final_9
+  - first:
+      213: 4645009347961382296
+    second: enemy-magic-animation-atlas-v2-final_10
+  - first:
+      213: 811498378687235592
+    second: enemy-magic-animation-atlas-v2-final_11
+  - first:
+      213: -5888354189327387743
+    second: enemy-magic-animation-atlas-v2-final_12
+  - first:
+      213: -182004053118391786
+    second: enemy-magic-animation-atlas-v2-final_13
+  - first:
+      213: -6362635930701272296
+    second: enemy-magic-animation-atlas-v2-final_14
+  - first:
+      213: 1232457408432558068
+    second: enemy-magic-animation-atlas-v2-final_15
+  - first:
+      213: 8504275326827328912
+    second: enemy-magic-animation-atlas-v2-final_16
+  - first:
+      213: -1619809632625724877
+    second: enemy-magic-animation-atlas-v2-final_17
+  - first:
+      213: -6437582718654788295
+    second: enemy-magic-animation-atlas-v2-final_18
+  - first:
+      213: 1795590604566368738
+    second: enemy-magic-animation-atlas-v2-final_19
+  - first:
+      213: 7838176628858742855
+    second: enemy-magic-animation-atlas-v2-final_20
+  - first:
+      213: -8389321987138287770
+    second: enemy-magic-animation-atlas-v2-final_21
+  - first:
+      213: 2551359528144304289
+    second: enemy-magic-animation-atlas-v2-final_22
+  - first:
+      213: -5692877128137724784
+    second: enemy-magic-animation-atlas-v2-final_23
+  - first:
+      213: 5600325654510546415
+    second: enemy-magic-animation-atlas-v2-final_24
+  - first:
+      213: 3828585138598282473
+    second: enemy-magic-animation-atlas-v2-final_25
+  - first:
+      213: 8962938311815703306
+    second: enemy-magic-animation-atlas-v2-final_26
+  - first:
+      213: 2414593681983394260
+    second: enemy-magic-animation-atlas-v2-final_27
+  - first:
+      213: -2020882300533508009
+    second: enemy-magic-animation-atlas-v2-final_28
+  - first:
+      213: 4047247512912516693
+    second: enemy-magic-animation-atlas-v2-final_29
+  - first:
+      213: 8756068440365173868
+    second: enemy-magic-animation-atlas-v2-final_30
+  - first:
+      213: 2554458745474281215
+    second: enemy-magic-animation-atlas-v2-final_31
+  - first:
+      213: 4657006844576565712
+    second: enemy-magic-animation-atlas-v2-final_32
+  - first:
+      213: 9159536911687345081
+    second: enemy-magic-animation-atlas-v2-final_33
+  - first:
+      213: -1600961133397675938
+    second: enemy-magic-animation-atlas-v2-final_34
+  - first:
+      213: 8832664518804108950
+    second: enemy-magic-animation-atlas-v2-final_35
+  - first:
+      213: 6027615574140337691
+    second: enemy-magic-animation-atlas-v2-final_36
+  - first:
+      213: 2483926757244886086
+    second: enemy-magic-animation-atlas-v2-final_37
+  - first:
+      213: 5952973468259693626
+    second: enemy-magic-animation-atlas-v2-final_38
+  - first:
+      213: 3991015609250922065
+    second: enemy-magic-animation-atlas-v2-final_39
+  - first:
+      213: 6024709455506829634
+    second: enemy-magic-animation-atlas-v2-final_40
+  - first:
+      213: -7143503499990889100
+    second: enemy-magic-animation-atlas-v2-final_41
+  - first:
+      213: -7571749861807356013
+    second: enemy-magic-animation-atlas-v2-final_42
+  - first:
+      213: 934449948841828503
+    second: enemy-magic-animation-atlas-v2-final_43
+  - first:
+      213: 7891250149810330190
+    second: enemy-magic-animation-atlas-v2-final_44
+  - first:
+      213: 7263534752634254932
+    second: enemy-magic-animation-atlas-v2-final_45
+  - first:
+      213: -5547917487182218280
+    second: enemy-magic-animation-atlas-v2-final_46
+  - first:
+      213: -6634241399771022469
+    second: enemy-magic-animation-atlas-v2-final_47
+  - first:
+      213: -2381887951841631425
+    second: enemy-magic-animation-atlas-v2-final_48
+  - first:
+      213: -2181233553777702713
+    second: enemy-magic-animation-atlas-v2-final_49
+  - first:
+      213: -5111313662182645855
+    second: enemy-magic-animation-atlas-v2-final_50
+  - first:
+      213: -6652470535680932956
+    second: enemy-magic-animation-atlas-v2-final_51
+  - first:
+      213: -2600437179863661622
+    second: enemy-magic-animation-atlas-v2-final_52
+  - first:
+      213: 8167583179577299599
+    second: enemy-magic-animation-atlas-v2-final_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 651
+        width: 210
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91404b9173916810800000000000000
+      internalID: 1756847445796471199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 652
+        width: 192
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76378b3fba7cf8b50800000000000000
+      internalID: 6597711520463352679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_2
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 653
+        width: 176
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9411e4e58ab557ac0800000000000000
+      internalID: -3858076727078153911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 653
+        width: 172
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e56206411bca78c0800000000000000
+      internalID: -4000662043915819549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_4
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 652
+        width: 179
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73a2ca6e9f5695c0800000000000000
+      internalID: -4209071667730537604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_5
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 654
+        width: 184
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904a8477af51a7dd0800000000000000
+      internalID: -2487651678681521143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_6
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 654
+        width: 275
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3b8ce4c06673fd0800000000000000
+      internalID: -2362307276485118997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_7
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 840
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40171a7907adbc60800000000000000
+      internalID: 7835602585839407182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 393
+        width: 238
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbb21f15e54eaf20800000000000000
+      internalID: 3435760416101415922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 401
+        width: 228
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d083bf3fa19a7a770800000000000000
+      internalID: 8622045944851675149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_10
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 398
+        width: 229
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8956b934463667040800000000000000
+      internalID: 4645009347961382296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_11
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 403
+        width: 200
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8064575d975034b00800000000000000
+      internalID: 811498378687235592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_12
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 403
+        width: 195
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a33579001d584ea0800000000000000
+      internalID: -5888354189327387743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_13
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 552
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a623a2744697df0800000000000000
+      internalID: -182004053118391786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_14
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 562
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81be96be45063b7a0800000000000000
+      internalID: -6362635930701272296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_15
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 401
+        width: 209
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffcb6eab719a1110800000000000000
+      internalID: 1232457408432558068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_16
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 549
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09579a72a51450670800000000000000
+      internalID: 8504275326827328912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_17
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 410
+        width: 265
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3327693a8b74589e0800000000000000
+      internalID: -1619809632625724877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_18
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 513
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d436a00ac19a6a0800000000000000
+      internalID: -6437582718654788295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_19
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 480
+        width: 32
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1153334283be810800000000000000
+      internalID: 1795590604566368738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_20
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 503
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748e4e19d1cc6cc60800000000000000
+      internalID: 7838176628858742855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_21
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 511
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6678f3ae914239b80800000000000000
+      internalID: -8389321987138287770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_22
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 504
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8795129ff386320800000000000000
+      internalID: 2551359528144304289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_23
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 477
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ca7630a66def0b0800000000000000
+      internalID: -5692877128137724784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_24
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 223
+        width: 92
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedab9fc28a58bd40800000000000000
+      internalID: 5600325654510546415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_25
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 281
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e48d7a16edd12530800000000000000
+      internalID: 3828585138598282473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_26
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 220
+        width: 88
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ba38b28e0c26c70800000000000000
+      internalID: 8962938311815703306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_27
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 218
+        width: 94
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1d583292c528120800000000000000
+      internalID: 2414593681983394260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 282
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75873d7314264f3e0800000000000000
+      internalID: -2020882300533508009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_29
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 235
+        width: 110
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556db357b26ba2830800000000000000
+      internalID: 4047247512912516693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_30
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 305
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c89f8daddc38970800000000000000
+      internalID: 8756068440365173868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_31
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 224
+        width: 105
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe6265e1b2437320800000000000000
+      internalID: 2554458745474281215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_32
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 282
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d98c8f1d0301a040800000000000000
+      internalID: 4657006844576565712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_33
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 224
+        width: 97
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3e338ba463d1f70800000000000000
+      internalID: 9159536911687345081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_34
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 224
+        width: 181
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50ff98d45e38c9e0800000000000000
+      internalID: -1600961133397675938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_35
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 280
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696f387159de39a70800000000000000
+      internalID: 8832664518804108950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_36
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 278
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e3f33dd6466a350800000000000000
+      internalID: 6027615574140337691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_37
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 274
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c5bada93ea87220800000000000000
+      internalID: 2483926757244886086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_38
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 273
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34b1f444d53d9250800000000000000
+      internalID: 5952973468259693626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_39
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 277
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15eb0722d8fe26730800000000000000
+      internalID: 3991015609250922065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_40
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 271
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241fb6a54511c9350800000000000000
+      internalID: 6024709455506829634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_41
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 270
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d88472a6d2ddc90800000000000000
+      internalID: -7143503499990889100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_42
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 278
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3970cd61e9dbbe690800000000000000
+      internalID: -7571749861807356013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_43
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 255
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790691d0745d7fc00800000000000000
+      internalID: 934449948841828503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_44
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 253
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a513d933a538d60800000000000000
+      internalID: 7891250149810330190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_45
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 251
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4563878af524dc460800000000000000
+      internalID: 7263534752634254932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_46
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 50
+        width: 144
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db73558076d103b0800000000000000
+      internalID: -5547917487182218280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_47
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 48
+        width: 158
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b357cb8907ee3a0800000000000000
+      internalID: -6634241399771022469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_48
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 40
+        width: 188
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3362bf0785d1fed0800000000000000
+      internalID: -2381887951841631425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_49
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 39
+        width: 120
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8cae6b3a3bab1e0800000000000000
+      internalID: -2181233553777702713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_50
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 35
+        width: 147
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af900e1e47f019b0800000000000000
+      internalID: -5111313662182645855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_51
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 36
+        width: 183
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a34cf94b4dada3a0800000000000000
+      internalID: -6652470535680932956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_52
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 25
+        width: 172
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac30281a92469ebd0800000000000000
+      internalID: -2600437179863661622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-magic-animation-atlas-v2-final_53
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 103
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82192cc0a5195170800000000000000
+      internalID: 8167583179577299599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

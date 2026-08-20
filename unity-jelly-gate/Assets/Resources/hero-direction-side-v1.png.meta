@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: cdd0cbf3edb3c7c469a8a8dbce2e7dc8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5846356215118050479
+    second: hero-direction-side-v1_0
+  - first:
+      213: 6555169844273061501
+    second: hero-direction-side-v1_1
+  - first:
+      213: -5265158718238522436
+    second: hero-direction-side-v1_2
+  - first:
+      213: 7406211270817312354
+    second: hero-direction-side-v1_3
+  - first:
+      213: 4872554194921799630
+    second: hero-direction-side-v1_4
+  - first:
+      213: 3478905544762485596
+    second: hero-direction-side-v1_5
+  - first:
+      213: 6189494452260134063
+    second: hero-direction-side-v1_6
+  - first:
+      213: 132095619645662663
+    second: hero-direction-side-v1_7
+  - first:
+      213: -3115693117975368853
+    second: hero-direction-side-v1_8
+  - first:
+      213: 6393984726359694430
+    second: hero-direction-side-v1_9
+  - first:
+      213: -3188489403462233291
+    second: hero-direction-side-v1_10
+  - first:
+      213: 8499996494526322470
+    second: hero-direction-side-v1_11
+  - first:
+      213: -6015171497241559343
+    second: hero-direction-side-v1_12
+  - first:
+      213: -4766574185207235762
+    second: hero-direction-side-v1_13
+  - first:
+      213: -4731479639272308515
+    second: hero-direction-side-v1_14
+  - first:
+      213: -7114114545228179928
+    second: hero-direction-side-v1_15
+  - first:
+      213: -2314162257847143480
+    second: hero-direction-side-v1_16
+  - first:
+      213: 6028711522554441386
+    second: hero-direction-side-v1_17
+  - first:
+      213: 2741179480587417066
+    second: hero-direction-side-v1_18
+  - first:
+      213: 8554932328608544419
+    second: hero-direction-side-v1_19
+  - first:
+      213: -1517513773532967908
+    second: hero-direction-side-v1_20
+  - first:
+      213: -4335397909234722366
+    second: hero-direction-side-v1_21
+  - first:
+      213: 8207126628589543623
+    second: hero-direction-side-v1_22
+  - first:
+      213: -3777793212201774789
+    second: hero-direction-side-v1_23
+  - first:
+      213: 530525520669344319
+    second: hero-direction-side-v1_24
+  - first:
+      213: -8488653299885648025
+    second: hero-direction-side-v1_25
+  - first:
+      213: 182179312494610688
+    second: hero-direction-side-v1_26
+  - first:
+      213: -4732014978688623490
+    second: hero-direction-side-v1_27
+  - first:
+      213: 1475574456393144250
+    second: hero-direction-side-v1_28
+  - first:
+      213: -1630203552122262640
+    second: hero-direction-side-v1_29
+  - first:
+      213: 27801821911493172
+    second: hero-direction-side-v1_30
+  - first:
+      213: 4702178191824257755
+    second: hero-direction-side-v1_31
+  - first:
+      213: -1877071634961268808
+    second: hero-direction-side-v1_32
+  - first:
+      213: 3517969458485221511
+    second: hero-direction-side-v1_33
+  - first:
+      213: -6823062770074923838
+    second: hero-direction-side-v1_34
+  - first:
+      213: -4478804758290165474
+    second: hero-direction-side-v1_35
+  - first:
+      213: -5883624397079220111
+    second: hero-direction-side-v1_36
+  - first:
+      213: -3066021461907952640
+    second: hero-direction-side-v1_37
+  - first:
+      213: 2990517845047307126
+    second: hero-direction-side-v1_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero-direction-side-v1_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 743
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bcd776ff19ddea0800000000000000
+      internalID: -5846356215118050479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 744
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e9f3a1e34a8fa50800000000000000
+      internalID: 6555169844273061501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_2
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 741
+        width: 176
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb38751ba066ee6b0800000000000000
+      internalID: -5265158718238522436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_3
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 743
+        width: 176
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e6f8839e528c660800000000000000
+      internalID: 7406211270817312354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_4
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 735
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf3721793ace9340800000000000000
+      internalID: 4872554194921799630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 536
+        width: 206
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b64b2392e874030800000000000000
+      internalID: 3478905544762485596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 743
+        width: 182
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac5736396085e550800000000000000
+      internalID: 6189494452260134063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 743
+        width: 203
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c56d55244c45d100800000000000000
+      internalID: 132095619645662663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 535
+        width: 238
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6be2f9ed95d2c4d0800000000000000
+      internalID: -3115693117975368853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 357
+        width: 201
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c51f95b3ffbb850800000000000000
+      internalID: 6393984726359694430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_10
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 535
+        width: 244
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5335988e7c530c3d0800000000000000
+      internalID: -3188489403462233291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_11
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 535
+        width: 225
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6279e40e6cd06f570800000000000000
+      internalID: 8499996494526322470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_12
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 534
+        width: 223
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1debcdb9461d58ca0800000000000000
+      internalID: -6015171497241559343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 537
+        width: 241
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bfc2f680ab9ddb0800000000000000
+      internalID: -4766574185207235762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 537
+        width: 146
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd04e272658665eb0800000000000000
+      internalID: -4731479639272308515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 190
+        width: 176
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8261c386386954d90800000000000000
+      internalID: -7114114545228179928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_16
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 190
+        width: 217
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c3b76cffa172efd0800000000000000
+      internalID: -2314162257847143480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_17
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 10
+        width: 221
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae692330394aa350800000000000000
+      internalID: 6028711522554441386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_18
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 356
+        width: 199
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5b006d630aa0620800000000000000
+      internalID: 2741179480587417066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_19
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 190
+        width: 214
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6b73c70a939b670800000000000000
+      internalID: 8554932328608544419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 190
+        width: 218
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c0eca5345b0fae0800000000000000
+      internalID: -1517513773532967908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 357
+        width: 246
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9d71c429295d3c0800000000000000
+      internalID: -4335397909234722366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 358
+        width: 194
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0aabb7f2295e170800000000000000
+      internalID: 8207126628589543623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 191
+        width: 190
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31d4dfc615929bc0800000000000000
+      internalID: -3777793212201774789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_24
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 329
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3286c3762ecc5700800000000000000
+      internalID: 530525520669344319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 263
+        width: 194
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7675ede6cce323a80800000000000000
+      internalID: -8488653299885648025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_26
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 308
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0098aa69e1b378200800000000000000
+      internalID: 182179312494610688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_27
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 305
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cdf6bb271845eb0800000000000000
+      internalID: -4732014978688623490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_28
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 273
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab714f0762b4a7410800000000000000
+      internalID: 1475574456393144250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_29
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 10
+        width: 162
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b2c2ca18a5069e0800000000000000
+      internalID: -1630203552122262640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_30
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 11
+        width: 161
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43aa4271c95c26000800000000000000
+      internalID: 27801821911493172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_31
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 10
+        width: 152
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2064af62e714140800000000000000
+      internalID: 4702178191824257755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 11
+        width: 205
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bffb2c0b4d43f5e0800000000000000
+      internalID: -1877071634961268808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 128
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7885faf559652d030800000000000000
+      internalID: 3517969458485221511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 123
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cccd7d8f8c9f41a0800000000000000
+      internalID: -6823062770074923838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_35
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 128
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1119c35dc618d1c0800000000000000
+      internalID: -4478804758290165474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_36
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 116
+        width: 99
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170754c98ca295ea0800000000000000
+      internalID: -5883624397079220111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_37
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 10
+        width: 160
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ca04199bd4375d0800000000000000
+      internalID: -3066021461907952640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-side-v1_38
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 120
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67be288b224708920800000000000000
+      internalID: 2990517845047307126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

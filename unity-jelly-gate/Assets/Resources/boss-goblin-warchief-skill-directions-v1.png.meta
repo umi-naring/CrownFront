@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: f5d15b6e03fde2f45aea8fe5d630cce2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2276797232777724609
+    second: boss-goblin-warchief-skill-directions-v1_0
+  - first:
+      213: 4910297958174805602
+    second: boss-goblin-warchief-skill-directions-v1_1
+  - first:
+      213: -8176970544215119431
+    second: boss-goblin-warchief-skill-directions-v1_2
+  - first:
+      213: 4907644349072862951
+    second: boss-goblin-warchief-skill-directions-v1_3
+  - first:
+      213: 8026148310670145369
+    second: boss-goblin-warchief-skill-directions-v1_4
+  - first:
+      213: 2602749985660445721
+    second: boss-goblin-warchief-skill-directions-v1_5
+  - first:
+      213: 7456861023710660092
+    second: boss-goblin-warchief-skill-directions-v1_6
+  - first:
+      213: 3234711311184670223
+    second: boss-goblin-warchief-skill-directions-v1_7
+  - first:
+      213: 3143335880563370161
+    second: boss-goblin-warchief-skill-directions-v1_8
+  - first:
+      213: -1776567950387682476
+    second: boss-goblin-warchief-skill-directions-v1_9
+  - first:
+      213: 1923019239847806241
+    second: boss-goblin-warchief-skill-directions-v1_10
+  - first:
+      213: -7812642840742496078
+    second: boss-goblin-warchief-skill-directions-v1_11
+  - first:
+      213: 5505040923637980193
+    second: boss-goblin-warchief-skill-directions-v1_12
+  - first:
+      213: -1708697881873861395
+    second: boss-goblin-warchief-skill-directions-v1_13
+  - first:
+      213: -8655071519355788966
+    second: boss-goblin-warchief-skill-directions-v1_14
+  - first:
+      213: 6634383747663035403
+    second: boss-goblin-warchief-skill-directions-v1_15
+  - first:
+      213: 7590933967614027049
+    second: boss-goblin-warchief-skill-directions-v1_16
+  - first:
+      213: 1509791496512401612
+    second: boss-goblin-warchief-skill-directions-v1_17
+  - first:
+      213: 5073669220169906140
+    second: boss-goblin-warchief-skill-directions-v1_18
+  - first:
+      213: -7422701289411971277
+    second: boss-goblin-warchief-skill-directions-v1_19
+  - first:
+      213: -2380449351511086576
+    second: boss-goblin-warchief-skill-directions-v1_20
+  - first:
+      213: 3959034473209433487
+    second: boss-goblin-warchief-skill-directions-v1_21
+  - first:
+      213: 7018405450012038633
+    second: boss-goblin-warchief-skill-directions-v1_22
+  - first:
+      213: -5188625534005331106
+    second: boss-goblin-warchief-skill-directions-v1_23
+  - first:
+      213: -5528012673280028958
+    second: boss-goblin-warchief-skill-directions-v1_24
+  - first:
+      213: 579127393252421070
+    second: boss-goblin-warchief-skill-directions-v1_25
+  - first:
+      213: 6177797534328934214
+    second: boss-goblin-warchief-skill-directions-v1_26
+  - first:
+      213: 8009261114216049513
+    second: boss-goblin-warchief-skill-directions-v1_27
+  - first:
+      213: -5935482800431154459
+    second: boss-goblin-warchief-skill-directions-v1_28
+  - first:
+      213: -4569229100968121455
+    second: boss-goblin-warchief-skill-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 796
+        width: 153
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3df0b2daf03760e0800000000000000
+      internalID: -2276797232777724609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 795
+        width: 158
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ec5522af1e42440800000000000000
+      internalID: 4910297958174805602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 808
+        width: 158
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9a93d0d90958e80800000000000000
+      internalID: -8176970544215119431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 801
+        width: 175
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eee07e98847b1440800000000000000
+      internalID: 4907644349072862951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 803
+        width: 168
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957781c3d5b926f60800000000000000
+      internalID: 8026148310670145369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 794
+        width: 154
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914a17e6253de1420800000000000000
+      internalID: 2602749985660445721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 596
+        width: 129
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5cab9c7971c7760800000000000000
+      internalID: 7456861023710660092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 596
+        width: 147
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ea91e9cc004ec20800000000000000
+      internalID: 3234711311184670223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 607
+        width: 132
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b828ba445f5f9b20800000000000000
+      internalID: 3143335880563370161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 600
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4536ccd9cdc5857e0800000000000000
+      internalID: -1776567950387682476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 604
+        width: 145
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125ce5f5fcfefaa10800000000000000
+      internalID: 1923019239847806241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 595
+        width: 128
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b87b80cabae39390800000000000000
+      internalID: -7812642840742496078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 416
+        width: 89
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c1e679d85d56c40800000000000000
+      internalID: 5505040923637980193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 413
+        width: 116
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4327a545c7948e0800000000000000
+      internalID: -1708697881873861395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 418
+        width: 124
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51a2374f4203e780800000000000000
+      internalID: -8655071519355788966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 414
+        width: 160
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c74173ed0121c50800000000000000
+      internalID: 6634383747663035403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 415
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925a41d993a685960800000000000000
+      internalID: 7590933967614027049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 412
+        width: 90
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0f68aed5bd3f410800000000000000
+      internalID: 1509791496512401612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 248
+        width: 100
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd77f08364b496640800000000000000
+      internalID: 5073669220169906140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 246
+        width: 117
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337f3c221844df890800000000000000
+      internalID: -7422701289411971277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 247
+        width: 116
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a6f5d4de1f6fed0800000000000000
+      internalID: -2380449351511086576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 243
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d8c25a0e051f630800000000000000
+      internalID: 3959034473209433487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 246
+        width: 111
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e512a95292666160800000000000000
+      internalID: 7018405450012038633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 246
+        width: 95
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b371d319c4ef7b0800000000000000
+      internalID: -5188625534005331106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 54
+        width: 133
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee494723cd8843b0800000000000000
+      internalID: -5528012673280028958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 53
+        width: 118
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd228abb49790800800000000000000
+      internalID: 579127393252421070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 51
+        width: 130
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fc5f74022fbb550800000000000000
+      internalID: 6177797534328934214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 48
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b623a6c8c962f60800000000000000
+      internalID: 8009261114216049513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 51
+        width: 133
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea3cdd27dde0ada0800000000000000
+      internalID: -5935482800431154459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-goblin-warchief-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 50
+        width: 129
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19bea6b6756d690c0800000000000000
+      internalID: -4569229100968121455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

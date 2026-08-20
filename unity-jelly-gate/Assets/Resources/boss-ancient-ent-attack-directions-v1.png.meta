@@ -1,0 +1,1943 @@
+fileFormatVersion: 2
+guid: 6924a44967e203b4d887ab00c10e4cb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1908467036920464767
+    second: boss-ancient-ent-attack-directions-v1_0
+  - first:
+      213: 6081648297292932976
+    second: boss-ancient-ent-attack-directions-v1_1
+  - first:
+      213: 1318007486260565677
+    second: boss-ancient-ent-attack-directions-v1_2
+  - first:
+      213: -8036045854318809609
+    second: boss-ancient-ent-attack-directions-v1_3
+  - first:
+      213: -616513303135991155
+    second: boss-ancient-ent-attack-directions-v1_4
+  - first:
+      213: -4736503126388001439
+    second: boss-ancient-ent-attack-directions-v1_5
+  - first:
+      213: 2793036589288245376
+    second: boss-ancient-ent-attack-directions-v1_6
+  - first:
+      213: -8159857346862681792
+    second: boss-ancient-ent-attack-directions-v1_7
+  - first:
+      213: 4078111199179353531
+    second: boss-ancient-ent-attack-directions-v1_8
+  - first:
+      213: -6139540013192175325
+    second: boss-ancient-ent-attack-directions-v1_9
+  - first:
+      213: -3286351418180231501
+    second: boss-ancient-ent-attack-directions-v1_10
+  - first:
+      213: -6649901134484225169
+    second: boss-ancient-ent-attack-directions-v1_11
+  - first:
+      213: -6590578243953374169
+    second: boss-ancient-ent-attack-directions-v1_12
+  - first:
+      213: 1956065194094358865
+    second: boss-ancient-ent-attack-directions-v1_13
+  - first:
+      213: -3101430033881471173
+    second: boss-ancient-ent-attack-directions-v1_14
+  - first:
+      213: 7626985072147240401
+    second: boss-ancient-ent-attack-directions-v1_15
+  - first:
+      213: -3239847326052408431
+    second: boss-ancient-ent-attack-directions-v1_16
+  - first:
+      213: -7435452628309722392
+    second: boss-ancient-ent-attack-directions-v1_17
+  - first:
+      213: 2370294936178609227
+    second: boss-ancient-ent-attack-directions-v1_18
+  - first:
+      213: 7032109507602811407
+    second: boss-ancient-ent-attack-directions-v1_19
+  - first:
+      213: -1810545019351935186
+    second: boss-ancient-ent-attack-directions-v1_20
+  - first:
+      213: 765515124521817844
+    second: boss-ancient-ent-attack-directions-v1_21
+  - first:
+      213: -6717387844783188552
+    second: boss-ancient-ent-attack-directions-v1_22
+  - first:
+      213: 6580549478444820222
+    second: boss-ancient-ent-attack-directions-v1_23
+  - first:
+      213: -6897692903641978707
+    second: boss-ancient-ent-attack-directions-v1_24
+  - first:
+      213: 19987389049515995
+    second: boss-ancient-ent-attack-directions-v1_25
+  - first:
+      213: 4403554549646436948
+    second: boss-ancient-ent-attack-directions-v1_26
+  - first:
+      213: -7037510151902348715
+    second: boss-ancient-ent-attack-directions-v1_27
+  - first:
+      213: 243766211450674506
+    second: boss-ancient-ent-attack-directions-v1_28
+  - first:
+      213: -7464542260573874600
+    second: boss-ancient-ent-attack-directions-v1_29
+  - first:
+      213: -4221599414036242763
+    second: boss-ancient-ent-attack-directions-v1_30
+  - first:
+      213: 7958610623978688215
+    second: boss-ancient-ent-attack-directions-v1_31
+  - first:
+      213: -2557717203921864361
+    second: boss-ancient-ent-attack-directions-v1_32
+  - first:
+      213: -2886432779037426775
+    second: boss-ancient-ent-attack-directions-v1_33
+  - first:
+      213: -1854428274420000059
+    second: boss-ancient-ent-attack-directions-v1_34
+  - first:
+      213: 3796400352043818384
+    second: boss-ancient-ent-attack-directions-v1_35
+  - first:
+      213: 6456760540722227956
+    second: boss-ancient-ent-attack-directions-v1_36
+  - first:
+      213: -2214286562007109698
+    second: boss-ancient-ent-attack-directions-v1_37
+  - first:
+      213: 1155144839622981348
+    second: boss-ancient-ent-attack-directions-v1_38
+  - first:
+      213: -8195244087737322627
+    second: boss-ancient-ent-attack-directions-v1_39
+  - first:
+      213: -4519084276640145188
+    second: boss-ancient-ent-attack-directions-v1_40
+  - first:
+      213: -7904280119533107543
+    second: boss-ancient-ent-attack-directions-v1_41
+  - first:
+      213: -4927897615214246063
+    second: boss-ancient-ent-attack-directions-v1_42
+  - first:
+      213: 1968661127764346134
+    second: boss-ancient-ent-attack-directions-v1_43
+  - first:
+      213: 7319280202799393582
+    second: boss-ancient-ent-attack-directions-v1_44
+  - first:
+      213: 12631673662471351
+    second: boss-ancient-ent-attack-directions-v1_45
+  - first:
+      213: -3060141218159845613
+    second: boss-ancient-ent-attack-directions-v1_46
+  - first:
+      213: -5796835641275698095
+    second: boss-ancient-ent-attack-directions-v1_47
+  - first:
+      213: 1558763473374224968
+    second: boss-ancient-ent-attack-directions-v1_48
+  - first:
+      213: 8761205509687663544
+    second: boss-ancient-ent-attack-directions-v1_49
+  - first:
+      213: -8179949730382875340
+    second: boss-ancient-ent-attack-directions-v1_50
+  - first:
+      213: -6207835482788746852
+    second: boss-ancient-ent-attack-directions-v1_51
+  - first:
+      213: -2123253823813520005
+    second: boss-ancient-ent-attack-directions-v1_52
+  - first:
+      213: -3553755636751843434
+    second: boss-ancient-ent-attack-directions-v1_53
+  - first:
+      213: -6405470311708025227
+    second: boss-ancient-ent-attack-directions-v1_54
+  - first:
+      213: 5365915232068599736
+    second: boss-ancient-ent-attack-directions-v1_55
+  - first:
+      213: 2071055088424406826
+    second: boss-ancient-ent-attack-directions-v1_56
+  - first:
+      213: -2847294960627116568
+    second: boss-ancient-ent-attack-directions-v1_57
+  - first:
+      213: -8516393064685292632
+    second: boss-ancient-ent-attack-directions-v1_58
+  - first:
+      213: -7547303872537006388
+    second: boss-ancient-ent-attack-directions-v1_59
+  - first:
+      213: 9137913995526148759
+    second: boss-ancient-ent-attack-directions-v1_60
+  - first:
+      213: 2231325600789478195
+    second: boss-ancient-ent-attack-directions-v1_61
+  - first:
+      213: -2822464324956256693
+    second: boss-ancient-ent-attack-directions-v1_62
+  - first:
+      213: -8880592838229748489
+    second: boss-ancient-ent-attack-directions-v1_63
+  - first:
+      213: 7708061380455018448
+    second: boss-ancient-ent-attack-directions-v1_64
+  - first:
+      213: 6177843248718023768
+    second: boss-ancient-ent-attack-directions-v1_65
+  - first:
+      213: 5260476499875627212
+    second: boss-ancient-ent-attack-directions-v1_66
+  - first:
+      213: -4662824332451734887
+    second: boss-ancient-ent-attack-directions-v1_67
+  - first:
+      213: 4444338828686703267
+    second: boss-ancient-ent-attack-directions-v1_68
+  - first:
+      213: -7013825378673634743
+    second: boss-ancient-ent-attack-directions-v1_69
+  - first:
+      213: 5200936926175617578
+    second: boss-ancient-ent-attack-directions-v1_70
+  - first:
+      213: 2318331494654878999
+    second: boss-ancient-ent-attack-directions-v1_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 916
+        width: 152
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a30d66753c385e0800000000000000
+      internalID: -1908467036920464767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 916
+        width: 163
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077210987ea566450800000000000000
+      internalID: 6081648297292932976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 917
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6dddd53d08a4210800000000000000
+      internalID: 1318007486260565677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 917
+        width: 253
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fda39e4fda3a7090800000000000000
+      internalID: -8036045854318809609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1008
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ac64fca64b177f0800000000000000
+      internalID: -616513303135991155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 999
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165bd1a608f844eb0800000000000000
+      internalID: -4736503126388001439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 995
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088c135dafbd2c620800000000000000
+      internalID: 2793036589288245376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 915
+        width: 129
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041736ec9fc52ce80800000000000000
+      internalID: -8159857346862681792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 973
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbda0a5678c589830800000000000000
+      internalID: 4078111199179353531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 986
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321226df2e8fbcaa0800000000000000
+      internalID: -6139540013192175325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 969
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be14480cc88462d0800000000000000
+      internalID: -3286351418180231501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 702
+        width: 145
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63c99f962ec6b3a0800000000000000
+      internalID: -6649901134484225169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 702
+        width: 161
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ccdb861009984a0800000000000000
+      internalID: -6590578243953374169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 702
+        width: 194
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151ff7b2ee6552b10800000000000000
+      internalID: 1956065194094358865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 702
+        width: 229
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3764c6f0d185f4d0800000000000000
+      internalID: -3101430033881471173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 786
+        width: 78
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d51b8c738e78d960800000000000000
+      internalID: 7626985072147240401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 829
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193a52cb500c903d0800000000000000
+      internalID: -3239847326052408431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 701
+        width: 124
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eaba51ba37ffc890800000000000000
+      internalID: -7435452628309722392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 805
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c45d3afaaf4e020800000000000000
+      internalID: 2370294936178609227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 768
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a0056e652179160800000000000000
+      internalID: 7032109507602811407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 767
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27dca7c5e6afd6e0800000000000000
+      internalID: -1810545019351935186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 776
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6df4b23f7af9a00800000000000000
+      internalID: 765515124521817844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 762
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5db2d685b07c2a0800000000000000
+      internalID: -6717387844783188552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 758
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6e599a2eec25b50800000000000000
+      internalID: 6580549478444820222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 762
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8efa489d87640a0800000000000000
+      internalID: -6897692903641978707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 753
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfa848ac62074000800000000000000
+      internalID: 19987389049515995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 754
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a2bb828819c1d30800000000000000
+      internalID: 4403554549646436948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 492
+        width: 125
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ab7ac9dcdb55e90800000000000000
+      internalID: -7037510151902348715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 490
+        width: 124
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d92c9e318026300800000000000000
+      internalID: 243766211450674506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 490
+        width: 202
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8565a93ec5e986890800000000000000
+      internalID: -7464542260573874600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 490
+        width: 259
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be5f5e23bdd965c0800000000000000
+      internalID: -4221599414036242763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 623
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de46eb223aa27e60800000000000000
+      internalID: 7958610623978688215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 617
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759f45021c9218cd0800000000000000
+      internalID: -2557717203921864361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 488
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab3e613ea451f7d0800000000000000
+      internalID: -2886432779037426775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 611
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca51c14f4fb346e0800000000000000
+      internalID: -1854428274420000059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_35
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 586
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d5db881068fa430800000000000000
+      internalID: 3796400352043818384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_36
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 613
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fae18d90850b9950800000000000000
+      internalID: 6456760540722227956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_37
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 596
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf25a88a164541e0800000000000000
+      internalID: -2214286562007109698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_38
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 561
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e67ad58c16e70010800000000000000
+      internalID: 1155144839622981348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_39
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 573
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73fbc62ce4a44e80800000000000000
+      internalID: -8195244087737322627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_40
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 278
+        width: 141
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0afc42bccf841c0800000000000000
+      internalID: -4519084276640145188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_41
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 278
+        width: 137
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a60c062c1b5e4290800000000000000
+      internalID: -7904280119533107543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_42
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 276
+        width: 176
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15709a36a379c9bb0800000000000000
+      internalID: -4927897615214246063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_43
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 276
+        width: 233
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61583838dd6125b10800000000000000
+      internalID: 1968661127764346134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_44
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 383
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b2863b09e439560800000000000000
+      internalID: 7319280202799393582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_45
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 373
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcf195b070ec2000800000000000000
+      internalID: 12631673662471351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_46
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 277
+        width: 139
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f1d0186c13885d0800000000000000
+      internalID: -3060141218159845613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_47
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 337
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154307c72b08d8fa0800000000000000
+      internalID: -5796835641275698095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_48
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 374
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842235fce17d1a510800000000000000
+      internalID: 1558763473374224968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_49
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 367
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbd0210efd069970800000000000000
+      internalID: 8761205509687663544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_50
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 361
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435f9f73f0bfa7e80800000000000000
+      internalID: -8179949730382875340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_51
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 351
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99af48d48659d9a0800000000000000
+      internalID: -6207835482788746852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_52
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 330
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75fa9f85efa882e0800000000000000
+      internalID: -2123253823813520005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_53
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 338
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f3dd4b3168eaec0800000000000000
+      internalID: -3553755636751843434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_54
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 60
+        width: 154
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e155b60b23b17a0800000000000000
+      internalID: -6405470311708025227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_55
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 60
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf7e46497f877a40800000000000000
+      internalID: 5365915232068599736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_56
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 59
+        width: 156
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f4dc741adddbc10800000000000000
+      internalID: 2071055088424406826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_57
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 59
+        width: 183
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e59f05a1506c78d0800000000000000
+      internalID: -2847294960627116568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_58
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 140
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a335d321a1bfc980800000000000000
+      internalID: -8516393064685292632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_59
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 167
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce60818d17924790800000000000000
+      internalID: -7547303872537006388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_60
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 163
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792186b3d5460de70800000000000000
+      internalID: 9137913995526148759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_61
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 160
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33bba45dfc247fe10800000000000000
+      internalID: 2231325600789478195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_62
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 164
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4605c786a794d8d0800000000000000
+      internalID: -2822464324956256693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_63
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 124
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f410727ddbc1c480800000000000000
+      internalID: -8880592838229748489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_64
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 58
+        width: 156
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfade88cf888fa60800000000000000
+      internalID: 7708061380455018448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_65
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 119
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c02edf3bb1cb550800000000000000
+      internalID: 6177843248718023768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_66
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 139
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc080646187f00940800000000000000
+      internalID: 5260476499875627212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_67
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 151
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a9a2e69f15a4fb0800000000000000
+      internalID: -4662824332451734887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_68
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 142
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aab8591e967dad30800000000000000
+      internalID: 4444338828686703267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_69
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 131
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942d98b9af2e9ae90800000000000000
+      internalID: -7013825378673634743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_70
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 113
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22e8ef14907d2840800000000000000
+      internalID: 5200936926175617578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-attack-directions-v1_71
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 121
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715218a163e5c2020800000000000000
+      internalID: 2318331494654878999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

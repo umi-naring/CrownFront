@@ -1,0 +1,1043 @@
+fileFormatVersion: 2
+guid: 1e8adb6a3a144e8448b600f0a192e766
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4288753749049250824
+    second: boss-abyss-sovereign-attack-directions-v1_0
+  - first:
+      213: 4915636124633555239
+    second: boss-abyss-sovereign-attack-directions-v1_1
+  - first:
+      213: -2256300452766951120
+    second: boss-abyss-sovereign-attack-directions-v1_2
+  - first:
+      213: -6212933652265503199
+    second: boss-abyss-sovereign-attack-directions-v1_3
+  - first:
+      213: -8987868602185994549
+    second: boss-abyss-sovereign-attack-directions-v1_4
+  - first:
+      213: -4100788739157656814
+    second: boss-abyss-sovereign-attack-directions-v1_5
+  - first:
+      213: -7763623867284563168
+    second: boss-abyss-sovereign-attack-directions-v1_6
+  - first:
+      213: -3879602321769156869
+    second: boss-abyss-sovereign-attack-directions-v1_7
+  - first:
+      213: 5628880694607056015
+    second: boss-abyss-sovereign-attack-directions-v1_8
+  - first:
+      213: 7717593941689369846
+    second: boss-abyss-sovereign-attack-directions-v1_9
+  - first:
+      213: 862839502455298004
+    second: boss-abyss-sovereign-attack-directions-v1_10
+  - first:
+      213: 8887773786318091617
+    second: boss-abyss-sovereign-attack-directions-v1_11
+  - first:
+      213: 7460410050573092232
+    second: boss-abyss-sovereign-attack-directions-v1_12
+  - first:
+      213: 8591106698418061478
+    second: boss-abyss-sovereign-attack-directions-v1_13
+  - first:
+      213: -8814112883547030263
+    second: boss-abyss-sovereign-attack-directions-v1_14
+  - first:
+      213: 1862630558457529325
+    second: boss-abyss-sovereign-attack-directions-v1_15
+  - first:
+      213: -3384764564663392055
+    second: boss-abyss-sovereign-attack-directions-v1_16
+  - first:
+      213: 3231612521195034390
+    second: boss-abyss-sovereign-attack-directions-v1_17
+  - first:
+      213: 9182713363656891671
+    second: boss-abyss-sovereign-attack-directions-v1_18
+  - first:
+      213: 6085084988233213899
+    second: boss-abyss-sovereign-attack-directions-v1_19
+  - first:
+      213: -1414729180298035143
+    second: boss-abyss-sovereign-attack-directions-v1_20
+  - first:
+      213: -4072570766374105672
+    second: boss-abyss-sovereign-attack-directions-v1_21
+  - first:
+      213: 3101343805364156957
+    second: boss-abyss-sovereign-attack-directions-v1_22
+  - first:
+      213: -3251622683900800686
+    second: boss-abyss-sovereign-attack-directions-v1_23
+  - first:
+      213: 703684342190729513
+    second: boss-abyss-sovereign-attack-directions-v1_24
+  - first:
+      213: 357578699196575962
+    second: boss-abyss-sovereign-attack-directions-v1_25
+  - first:
+      213: -2675765428152106471
+    second: boss-abyss-sovereign-attack-directions-v1_26
+  - first:
+      213: -5109238061521959365
+    second: boss-abyss-sovereign-attack-directions-v1_27
+  - first:
+      213: -3258487357603752329
+    second: boss-abyss-sovereign-attack-directions-v1_28
+  - first:
+      213: 7651892635994761277
+    second: boss-abyss-sovereign-attack-directions-v1_29
+  - first:
+      213: -5146940498567471674
+    second: boss-abyss-sovereign-attack-directions-v1_30
+  - first:
+      213: 1979713338404551561
+    second: boss-abyss-sovereign-attack-directions-v1_31
+  - first:
+      213: 2666362607334097236
+    second: boss-abyss-sovereign-attack-directions-v1_32
+  - first:
+      213: 6535105384673131918
+    second: boss-abyss-sovereign-attack-directions-v1_33
+  - first:
+      213: 7871293746953949879
+    second: boss-abyss-sovereign-attack-directions-v1_34
+  - first:
+      213: 7255383515075554970
+    second: boss-abyss-sovereign-attack-directions-v1_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 918
+        width: 112
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb6bc220394b74c0800000000000000
+      internalID: -4288753749049250824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1004
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7216cddd209d73440800000000000000
+      internalID: 4915636124633555239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 977
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039d54e41b200b0e0800000000000000
+      internalID: -2256300452766951120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 915
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126f4a3c2c937c9a0800000000000000
+      internalID: -6212933652265503199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 985
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce21d6402da44380800000000000000
+      internalID: -8987868602185994549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 920
+        width: 144
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bf59f5e521717c0800000000000000
+      internalID: -4100788739157656814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 921
+        width: 164
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b52c4e931124490800000000000000
+      internalID: -7763623867284563168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 921
+        width: 180
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe2b2d4e32e82ac0800000000000000
+      internalID: -3879602321769156869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 921
+        width: 165
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c8b1d2b2dcd1e40800000000000000
+      internalID: 5628880694607056015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 978
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f40a17ecc66a1b60800000000000000
+      internalID: 7717593941689369846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 700
+        width: 114
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7d50ab4fb69fb00800000000000000
+      internalID: 862839502455298004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 764
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165b4815b27b75b70800000000000000
+      internalID: 8887773786318091617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 699
+        width: 111
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885c92ff963b88760800000000000000
+      internalID: 7460410050573092232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 763
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a000ba460eb93770800000000000000
+      internalID: 8591106698418061478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 702
+        width: 128
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d3cf5180bfda580800000000000000
+      internalID: -8814112883547030263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 705
+        width: 145
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de306a0df9469d910800000000000000
+      internalID: 1862630558457529325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 702
+        width: 144
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8a8eacf86e601d0800000000000000
+      internalID: -3384764564663392055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 703
+        width: 170
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617d889577ef8dc20800000000000000
+      internalID: 3231612521195034390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 488
+        width: 108
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d5003f62d8f6f70800000000000000
+      internalID: 9182713363656891671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 487
+        width: 87
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7e3bf7e80927450800000000000000
+      internalID: 6085084988233213899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 492
+        width: 126
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930c4fa5e4fdd5ce0800000000000000
+      internalID: -1414729180298035143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 492
+        width: 137
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd81a327725b77c0800000000000000
+      internalID: -4072570766374105672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 492
+        width: 130
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ab61562cf2a0b20800000000000000
+      internalID: 3101343805364156957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 488
+        width: 169
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2519d76956aefd2d0800000000000000
+      internalID: -3251622683900800686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 273
+        width: 95
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92968425e2df3c900800000000000000
+      internalID: 703684342190729513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 275
+        width: 108
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0bbd0beef56f400800000000000000
+      internalID: 357578699196575962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 275
+        width: 130
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91209b81585cddad0800000000000000
+      internalID: -2675765428152106471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 275
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36041e8d075819b0800000000000000
+      internalID: -5109238061521959365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 273
+        width: 165
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7765de0330787c2d0800000000000000
+      internalID: -3258487357603752329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 269
+        width: 147
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3825eb9fcbf03a60800000000000000
+      internalID: 7651892635994761277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 73
+        width: 112
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd50ded2e46298b0800000000000000
+      internalID: -5146940498567471674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 73
+        width: 127
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bb4b4daca597b10800000000000000
+      internalID: 1979713338404551561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 72
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45188841aa2d00520800000000000000
+      internalID: 2666362607334097236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 74
+        width: 147
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d3f2f09bb51ba50800000000000000
+      internalID: 6535105384673131918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 72
+        width: 151
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b291fd75f37c3d60800000000000000
+      internalID: 7871293746953949879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-abyss-sovereign-attack-directions-v1_35
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 68
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ead45cddc40b460800000000000000
+      internalID: 7255383515075554970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

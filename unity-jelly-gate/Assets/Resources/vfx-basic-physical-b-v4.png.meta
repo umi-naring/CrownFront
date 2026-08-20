@@ -1,0 +1,4443 @@
+fileFormatVersion: 2
+guid: f72ae6e6679b3414f8928e7b5f6e3e23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8189875857416740692
+    second: vfx-basic-physical-b-v4_0
+  - first:
+      213: 4684410427227509466
+    second: vfx-basic-physical-b-v4_1
+  - first:
+      213: 4986033064560157762
+    second: vfx-basic-physical-b-v4_2
+  - first:
+      213: -5675032102441474815
+    second: vfx-basic-physical-b-v4_3
+  - first:
+      213: 1649842595869211458
+    second: vfx-basic-physical-b-v4_4
+  - first:
+      213: -3092019292477456426
+    second: vfx-basic-physical-b-v4_5
+  - first:
+      213: -707313515818437646
+    second: vfx-basic-physical-b-v4_6
+  - first:
+      213: 5545452488017820504
+    second: vfx-basic-physical-b-v4_7
+  - first:
+      213: -1766179422373514410
+    second: vfx-basic-physical-b-v4_8
+  - first:
+      213: -2393129939489224491
+    second: vfx-basic-physical-b-v4_9
+  - first:
+      213: 1243215569403297297
+    second: vfx-basic-physical-b-v4_10
+  - first:
+      213: 2944712486195120097
+    second: vfx-basic-physical-b-v4_11
+  - first:
+      213: 1978546731241494501
+    second: vfx-basic-physical-b-v4_12
+  - first:
+      213: 6283290070778443581
+    second: vfx-basic-physical-b-v4_13
+  - first:
+      213: 8083500766955811367
+    second: vfx-basic-physical-b-v4_14
+  - first:
+      213: 6078463811973066636
+    second: vfx-basic-physical-b-v4_15
+  - first:
+      213: -9113706413792816138
+    second: vfx-basic-physical-b-v4_16
+  - first:
+      213: -8181432953685862138
+    second: vfx-basic-physical-b-v4_17
+  - first:
+      213: 2939154731163589502
+    second: vfx-basic-physical-b-v4_18
+  - first:
+      213: 7491706864953045824
+    second: vfx-basic-physical-b-v4_19
+  - first:
+      213: 5789240608100929120
+    second: vfx-basic-physical-b-v4_20
+  - first:
+      213: -1514225270457214771
+    second: vfx-basic-physical-b-v4_21
+  - first:
+      213: -1113411104685655453
+    second: vfx-basic-physical-b-v4_22
+  - first:
+      213: 8889329694198429997
+    second: vfx-basic-physical-b-v4_23
+  - first:
+      213: 695911204522220747
+    second: vfx-basic-physical-b-v4_24
+  - first:
+      213: 2754791217259529277
+    second: vfx-basic-physical-b-v4_25
+  - first:
+      213: 5343610121519015646
+    second: vfx-basic-physical-b-v4_26
+  - first:
+      213: -5079636429766494203
+    second: vfx-basic-physical-b-v4_27
+  - first:
+      213: 9072598861783626887
+    second: vfx-basic-physical-b-v4_28
+  - first:
+      213: 1187754808005867391
+    second: vfx-basic-physical-b-v4_29
+  - first:
+      213: 3157442727684857240
+    second: vfx-basic-physical-b-v4_30
+  - first:
+      213: 5119235343493673951
+    second: vfx-basic-physical-b-v4_31
+  - first:
+      213: -1608254876279507971
+    second: vfx-basic-physical-b-v4_32
+  - first:
+      213: 7154997449657584827
+    second: vfx-basic-physical-b-v4_33
+  - first:
+      213: -3084305468596303724
+    second: vfx-basic-physical-b-v4_34
+  - first:
+      213: 8056704918034747262
+    second: vfx-basic-physical-b-v4_35
+  - first:
+      213: 684736453003811311
+    second: vfx-basic-physical-b-v4_36
+  - first:
+      213: 2515648827020730244
+    second: vfx-basic-physical-b-v4_37
+  - first:
+      213: 6412427196541522819
+    second: vfx-basic-physical-b-v4_38
+  - first:
+      213: -8156203810378857102
+    second: vfx-basic-physical-b-v4_39
+  - first:
+      213: 5416643553984465139
+    second: vfx-basic-physical-b-v4_40
+  - first:
+      213: -7314851353914001468
+    second: vfx-basic-physical-b-v4_41
+  - first:
+      213: -3055180939163657925
+    second: vfx-basic-physical-b-v4_42
+  - first:
+      213: 3139351763422138503
+    second: vfx-basic-physical-b-v4_43
+  - first:
+      213: -8686209881148391588
+    second: vfx-basic-physical-b-v4_44
+  - first:
+      213: -609644651313387674
+    second: vfx-basic-physical-b-v4_45
+  - first:
+      213: -8139772123995146822
+    second: vfx-basic-physical-b-v4_46
+  - first:
+      213: 562794857541156719
+    second: vfx-basic-physical-b-v4_47
+  - first:
+      213: 9194843768576639723
+    second: vfx-basic-physical-b-v4_48
+  - first:
+      213: 9086026196121255582
+    second: vfx-basic-physical-b-v4_49
+  - first:
+      213: -7960497748912477503
+    second: vfx-basic-physical-b-v4_50
+  - first:
+      213: -8303254096018911404
+    second: vfx-basic-physical-b-v4_51
+  - first:
+      213: -118057753917650666
+    second: vfx-basic-physical-b-v4_52
+  - first:
+      213: 8931258832224999679
+    second: vfx-basic-physical-b-v4_53
+  - first:
+      213: 2070531157783035402
+    second: vfx-basic-physical-b-v4_54
+  - first:
+      213: -8297072067881710908
+    second: vfx-basic-physical-b-v4_55
+  - first:
+      213: -6615300454034509803
+    second: vfx-basic-physical-b-v4_56
+  - first:
+      213: -3936089232989830634
+    second: vfx-basic-physical-b-v4_57
+  - first:
+      213: -1987784415974708909
+    second: vfx-basic-physical-b-v4_58
+  - first:
+      213: -3235711354417433205
+    second: vfx-basic-physical-b-v4_59
+  - first:
+      213: -1051952432749936252
+    second: vfx-basic-physical-b-v4_60
+  - first:
+      213: -1812172234348302575
+    second: vfx-basic-physical-b-v4_61
+  - first:
+      213: -4837893392403680321
+    second: vfx-basic-physical-b-v4_62
+  - first:
+      213: -7835771407406180934
+    second: vfx-basic-physical-b-v4_63
+  - first:
+      213: 384962892002461708
+    second: vfx-basic-physical-b-v4_64
+  - first:
+      213: 6552964933941562690
+    second: vfx-basic-physical-b-v4_65
+  - first:
+      213: 172268120883991117
+    second: vfx-basic-physical-b-v4_66
+  - first:
+      213: -6217124932894313592
+    second: vfx-basic-physical-b-v4_67
+  - first:
+      213: -6396128618824847921
+    second: vfx-basic-physical-b-v4_68
+  - first:
+      213: 2752147263928464771
+    second: vfx-basic-physical-b-v4_69
+  - first:
+      213: -3157419199490371530
+    second: vfx-basic-physical-b-v4_70
+  - first:
+      213: -5125271458874154827
+    second: vfx-basic-physical-b-v4_71
+  - first:
+      213: -6963635087645862899
+    second: vfx-basic-physical-b-v4_72
+  - first:
+      213: 8130986969796524546
+    second: vfx-basic-physical-b-v4_73
+  - first:
+      213: 3690103614800546299
+    second: vfx-basic-physical-b-v4_74
+  - first:
+      213: 1045120613839218961
+    second: vfx-basic-physical-b-v4_75
+  - first:
+      213: 6543375149010915917
+    second: vfx-basic-physical-b-v4_76
+  - first:
+      213: 1762990747509123074
+    second: vfx-basic-physical-b-v4_77
+  - first:
+      213: -4098953400691926693
+    second: vfx-basic-physical-b-v4_78
+  - first:
+      213: -8095032327685859535
+    second: vfx-basic-physical-b-v4_79
+  - first:
+      213: 8476289054720931538
+    second: vfx-basic-physical-b-v4_80
+  - first:
+      213: 495348558550727024
+    second: vfx-basic-physical-b-v4_81
+  - first:
+      213: -1432265769471834052
+    second: vfx-basic-physical-b-v4_82
+  - first:
+      213: 4738553703505645633
+    second: vfx-basic-physical-b-v4_83
+  - first:
+      213: 4523819575388278316
+    second: vfx-basic-physical-b-v4_84
+  - first:
+      213: -9201256122227073056
+    second: vfx-basic-physical-b-v4_85
+  - first:
+      213: 2700830174918650878
+    second: vfx-basic-physical-b-v4_86
+  - first:
+      213: 2182348738512248564
+    second: vfx-basic-physical-b-v4_87
+  - first:
+      213: 9098140139235696556
+    second: vfx-basic-physical-b-v4_88
+  - first:
+      213: -3693603314677274275
+    second: vfx-basic-physical-b-v4_89
+  - first:
+      213: 1181772280540814110
+    second: vfx-basic-physical-b-v4_90
+  - first:
+      213: 4697187228514036242
+    second: vfx-basic-physical-b-v4_91
+  - first:
+      213: 7554861308785394994
+    second: vfx-basic-physical-b-v4_92
+  - first:
+      213: 7080265789153896691
+    second: vfx-basic-physical-b-v4_93
+  - first:
+      213: 6076915331323699461
+    second: vfx-basic-physical-b-v4_94
+  - first:
+      213: -7579834805216369567
+    second: vfx-basic-physical-b-v4_95
+  - first:
+      213: -3212849497522231914
+    second: vfx-basic-physical-b-v4_96
+  - first:
+      213: -6849162042736633499
+    second: vfx-basic-physical-b-v4_97
+  - first:
+      213: 7949202167129451333
+    second: vfx-basic-physical-b-v4_98
+  - first:
+      213: 3483145600823407860
+    second: vfx-basic-physical-b-v4_99
+  - first:
+      213: 8952542783917942714
+    second: vfx-basic-physical-b-v4_100
+  - first:
+      213: -79218507896372120
+    second: vfx-basic-physical-b-v4_101
+  - first:
+      213: -5799974123607196694
+    second: vfx-basic-physical-b-v4_102
+  - first:
+      213: -7609480138984911270
+    second: vfx-basic-physical-b-v4_103
+  - first:
+      213: -3865046857056889569
+    second: vfx-basic-physical-b-v4_104
+  - first:
+      213: 1136080098635832518
+    second: vfx-basic-physical-b-v4_105
+  - first:
+      213: 5499824691439690249
+    second: vfx-basic-physical-b-v4_106
+  - first:
+      213: -8073552432878336366
+    second: vfx-basic-physical-b-v4_107
+  - first:
+      213: -5387837241064666901
+    second: vfx-basic-physical-b-v4_108
+  - first:
+      213: -4746926289303147572
+    second: vfx-basic-physical-b-v4_109
+  - first:
+      213: 6080135955503253715
+    second: vfx-basic-physical-b-v4_110
+  - first:
+      213: 6730357709421101735
+    second: vfx-basic-physical-b-v4_111
+  - first:
+      213: -5258548383113014167
+    second: vfx-basic-physical-b-v4_112
+  - first:
+      213: -7702768297948912209
+    second: vfx-basic-physical-b-v4_113
+  - first:
+      213: -1901219350576382540
+    second: vfx-basic-physical-b-v4_114
+  - first:
+      213: 3437798630856824626
+    second: vfx-basic-physical-b-v4_115
+  - first:
+      213: -4352813866425357458
+    second: vfx-basic-physical-b-v4_116
+  - first:
+      213: 8831063582190013651
+    second: vfx-basic-physical-b-v4_117
+  - first:
+      213: 3664131730227394404
+    second: vfx-basic-physical-b-v4_118
+  - first:
+      213: 507350187882079946
+    second: vfx-basic-physical-b-v4_119
+  - first:
+      213: -1811909192299621872
+    second: vfx-basic-physical-b-v4_120
+  - first:
+      213: 3132925213673196511
+    second: vfx-basic-physical-b-v4_121
+  - first:
+      213: -1045320966402283294
+    second: vfx-basic-physical-b-v4_122
+  - first:
+      213: 6405268946125408222
+    second: vfx-basic-physical-b-v4_123
+  - first:
+      213: 366213931663216427
+    second: vfx-basic-physical-b-v4_124
+  - first:
+      213: -2971294607786216184
+    second: vfx-basic-physical-b-v4_125
+  - first:
+      213: -7035475784466382579
+    second: vfx-basic-physical-b-v4_126
+  - first:
+      213: 8045399643392410258
+    second: vfx-basic-physical-b-v4_127
+  - first:
+      213: -5234507096966123163
+    second: vfx-basic-physical-b-v4_128
+  - first:
+      213: 1469711014577368634
+    second: vfx-basic-physical-b-v4_129
+  - first:
+      213: -9215565919005209315
+    second: vfx-basic-physical-b-v4_130
+  - first:
+      213: -5998489642795089195
+    second: vfx-basic-physical-b-v4_131
+  - first:
+      213: 2195102786184197324
+    second: vfx-basic-physical-b-v4_132
+  - first:
+      213: 8603846496275210356
+    second: vfx-basic-physical-b-v4_133
+  - first:
+      213: -2294264803878927031
+    second: vfx-basic-physical-b-v4_134
+  - first:
+      213: 2362811508533242869
+    second: vfx-basic-physical-b-v4_135
+  - first:
+      213: -3695743786354970357
+    second: vfx-basic-physical-b-v4_136
+  - first:
+      213: 8709980618850788737
+    second: vfx-basic-physical-b-v4_137
+  - first:
+      213: 7352159562120399221
+    second: vfx-basic-physical-b-v4_138
+  - first:
+      213: 248113703566882252
+    second: vfx-basic-physical-b-v4_139
+  - first:
+      213: -2483362630771761548
+    second: vfx-basic-physical-b-v4_140
+  - first:
+      213: -3166682747886350188
+    second: vfx-basic-physical-b-v4_141
+  - first:
+      213: -1454838191897284316
+    second: vfx-basic-physical-b-v4_142
+  - first:
+      213: -5934423697105481112
+    second: vfx-basic-physical-b-v4_143
+  - first:
+      213: -1605662056470978583
+    second: vfx-basic-physical-b-v4_144
+  - first:
+      213: -5327390204517596675
+    second: vfx-basic-physical-b-v4_145
+  - first:
+      213: -4393039253399651447
+    second: vfx-basic-physical-b-v4_146
+  - first:
+      213: -1282308707090750138
+    second: vfx-basic-physical-b-v4_147
+  - first:
+      213: -6454091723942403192
+    second: vfx-basic-physical-b-v4_148
+  - first:
+      213: -2333805037226354766
+    second: vfx-basic-physical-b-v4_149
+  - first:
+      213: 3739872965006393095
+    second: vfx-basic-physical-b-v4_150
+  - first:
+      213: 1236628895644282077
+    second: vfx-basic-physical-b-v4_151
+  - first:
+      213: -2129164307201006603
+    second: vfx-basic-physical-b-v4_152
+  - first:
+      213: -3581761776536324095
+    second: vfx-basic-physical-b-v4_153
+  - first:
+      213: -7720188560134102962
+    second: vfx-basic-physical-b-v4_154
+  - first:
+      213: -5795096827434751975
+    second: vfx-basic-physical-b-v4_155
+  - first:
+      213: -6602328997800695533
+    second: vfx-basic-physical-b-v4_156
+  - first:
+      213: 9215481029696436271
+    second: vfx-basic-physical-b-v4_157
+  - first:
+      213: 2719724197138273012
+    second: vfx-basic-physical-b-v4_158
+  - first:
+      213: 6434352047033435301
+    second: vfx-basic-physical-b-v4_159
+  - first:
+      213: 2147602071530469726
+    second: vfx-basic-physical-b-v4_160
+  - first:
+      213: -5683731710085624180
+    second: vfx-basic-physical-b-v4_161
+  - first:
+      213: 4578956048924223202
+    second: vfx-basic-physical-b-v4_162
+  - first:
+      213: 2982555652971458991
+    second: vfx-basic-physical-b-v4_163
+  - first:
+      213: 4978833051638084495
+    second: vfx-basic-physical-b-v4_164
+  - first:
+      213: -5910635660549309150
+    second: vfx-basic-physical-b-v4_165
+  - first:
+      213: 5342392065634764942
+    second: vfx-basic-physical-b-v4_166
+  - first:
+      213: -5867094887252374145
+    second: vfx-basic-physical-b-v4_167
+  - first:
+      213: -8865547052106163309
+    second: vfx-basic-physical-b-v4_168
+  - first:
+      213: 7944376647810994842
+    second: vfx-basic-physical-b-v4_169
+  - first:
+      213: 1184004464836150148
+    second: vfx-basic-physical-b-v4_170
+  - first:
+      213: -7500991852793446041
+    second: vfx-basic-physical-b-v4_171
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1140
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f5fd353b848a170800000000000000
+      internalID: 8189875857416740692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1129
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad21809e67e520140800000000000000
+      internalID: 4684410427227509466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_2
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1120
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244e573b7a2f13540800000000000000
+      internalID: 4986033064560157762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_3
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1117
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105a905de5c3e31b0800000000000000
+      internalID: -5675032102441474815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_4
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1140
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bb716891b65e610800000000000000
+      internalID: 1649842595869211458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_5
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1127
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dff931f5d0f615d0800000000000000
+      internalID: -3092019292477456426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_6
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1110
+        width: 65
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f33fc8da1e1f26f0800000000000000
+      internalID: -707313515818437646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_7
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1114
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bbb1328a765fc40800000000000000
+      internalID: 5545452488017820504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 962
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65372d74c254d77e0800000000000000
+      internalID: -1766179422373514410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_9
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 965
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d88467dff4e9ced0800000000000000
+      internalID: -2393129939489224491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 992
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11eb48939f9c04110800000000000000
+      internalID: 1243215569403297297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 952
+        width: 69
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e741598768bdd820800000000000000
+      internalID: 2944712486195120097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_12
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 952
+        width: 104
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7d82fe4c5357b10800000000000000
+      internalID: 1978546731241494501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_13
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 965
+        width: 93
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37fc71770bb23750800000000000000
+      internalID: 6283290070778443581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_14
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 959
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722bffb8e1d5e2070800000000000000
+      internalID: 8083500766955811367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 953
+        width: 76
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fa8b4c1aa0b5450800000000000000
+      internalID: 6078463811973066636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_16
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 988
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f31eaa9d4c958180800000000000000
+      internalID: -9113706413792816138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_17
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 950
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60911e16316b57e80800000000000000
+      internalID: -8181432953685862138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_18
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 980
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b1aead7a9f9c820800000000000000
+      internalID: 2939154731163589502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_19
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 983
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043b1ee63b3e7f760800000000000000
+      internalID: 7491706864953045824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_20
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 982
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e4f1d09a3875050800000000000000
+      internalID: 5789240608100929120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_21
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 966
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc85a74a3246cfae0800000000000000
+      internalID: -1514225270457214771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 805
+        width: 91
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a7c38df7e5c80f0800000000000000
+      internalID: -1113411104685655453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_23
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 889
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29770a524e3d5b70800000000000000
+      internalID: 8889329694198429997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_24
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 856
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccd2ccad8f58a900800000000000000
+      internalID: 695911204522220747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_25
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 866
+        width: 11
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34ce1f340cfa3620800000000000000
+      internalID: 2754791217259529277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_26
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 807
+        width: 83
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6a2570811582a40800000000000000
+      internalID: 5343610121519015646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_27
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 867
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50872a784918189b0800000000000000
+      internalID: -5079636429766494203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_28
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 808
+        width: 81
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784f93a989858ed70800000000000000
+      internalID: 9072598861783626887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_29
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 863
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77b37374b0cb7010800000000000000
+      internalID: 1187754808005867391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_30
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 890
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ddb469e6d71db20800000000000000
+      internalID: 3157442727684857240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_31
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 856
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3b09a0c6d2b0740800000000000000
+      internalID: 5119235343493673951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_32
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 860
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3f11ff5b45ea9e0800000000000000
+      internalID: -1608254876279507971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_33
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 861
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc8aab8548ab4360800000000000000
+      internalID: 7154997449657584827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_34
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 867
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498c58584885235d0800000000000000
+      internalID: -3084305468596303724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_35
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 838
+        width: 92
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f8a9bcf6a2fcf60800000000000000
+      internalID: 8056704918034747262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_36
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 868
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe99d061d2ca08900800000000000000
+      internalID: 684736453003811311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_37
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 863
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fd23a974169e220800000000000000
+      internalID: 2515648827020730244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_38
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 867
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38359ed8f848df850800000000000000
+      internalID: 6412427196541522819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_39
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 817
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2754eae09d75fce80800000000000000
+      internalID: -8156203810378857102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 833
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8472e1d98cb2b40800000000000000
+      internalID: 5416643553984465139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_41
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 808
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7bb29037d6c7a90800000000000000
+      internalID: -7314851353914001468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_42
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 824
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b391b947f11d995d0800000000000000
+      internalID: -3055180939163657925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_43
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 808
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780d5cbbbc7319b20800000000000000
+      internalID: 3139351763422138503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_44
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 828
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f79a57222647780800000000000000
+      internalID: -8686209881148391588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_45
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 810
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667af3f6b6b1a87f0800000000000000
+      internalID: -609644651313387674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_46
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 814
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab574ac2168b90f80800000000000000
+      internalID: -8139772123995146822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_47
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 807
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f382de0f27fc700800000000000000
+      internalID: 562794857541156719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_48
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 812
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2893fe0b5aa9f70800000000000000
+      internalID: 9194843768576639723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_49
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 833
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e73bf7fac081e70800000000000000
+      internalID: 9086026196121255582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_50
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 811
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca66c05971a68190800000000000000
+      internalID: -7960497748912477503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_51
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 839
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f4cf6646ae4cc80800000000000000
+      internalID: -8303254096018911404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_52
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 828
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61902ca29139c5ef0800000000000000
+      internalID: -118057753917650666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_53
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 807
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff857db869432fb70800000000000000
+      internalID: 8931258832224999679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_54
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 828
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e390c2e110cbc10800000000000000
+      internalID: 2070531157783035402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_55
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 815
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca481ef9e0eadc80800000000000000
+      internalID: -8297072067881710908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_56
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 815
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510fac2594bb134a0800000000000000
+      internalID: -6615300454034509803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_57
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 821
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612c66762b33069c0800000000000000
+      internalID: -3936089232989830634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_58
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 819
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35925cbfa98f964e0800000000000000
+      internalID: -1987784415974708909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_59
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 811
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85304caaa17813d0800000000000000
+      internalID: -3235711354417433205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_60
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 742
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481055df5d6b661f0800000000000000
+      internalID: -1051952432749936252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_61
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 733
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fe7d344fed9d6e0800000000000000
+      internalID: -1812172234348302575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_62
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 694
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3b19487995cdcb0800000000000000
+      internalID: -4837893392403680321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_63
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 722
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab55460bb6fb14390800000000000000
+      internalID: -7835771407406180934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_64
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 671
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08838de5b9a75500800000000000000
+      internalID: 384962892002461708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_65
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 692
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d8d2963eec0fa50800000000000000
+      internalID: 6552964933941562690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_66
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 688
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d421a6771f4046200800000000000000
+      internalID: 172268120883991117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_67
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 724
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8833c9230d558b9a0800000000000000
+      internalID: -6217124932894313592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_68
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 720
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd2c39c8e26c37a0800000000000000
+      internalID: -6396128618824847921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_69
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 729
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385f404ea57913620800000000000000
+      internalID: 2752147263928464771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_70
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 730
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630d06f77f79e24d0800000000000000
+      internalID: -3157419199490371530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_71
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 677
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0ab5453c06fd8b0800000000000000
+      internalID: -5125271458874154827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_72
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 685
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d041c6f58c23c5f90800000000000000
+      internalID: -6963635087645862899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_73
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 700
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a3d08b19117d070800000000000000
+      internalID: 8130986969796524546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_74
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 704
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf94298cfa1e53330800000000000000
+      internalID: 3690103614800546299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_75
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 708
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119235739a3018e00800000000000000
+      internalID: 1045120613839218961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_76
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 713
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d421aec970dbeca50800000000000000
+      internalID: 6543375149010915917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_77
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 703
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208e49f7eb6677810800000000000000
+      internalID: 1762990747509123074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_78
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 699
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59d0e869979d17c0800000000000000
+      internalID: -4098953400691926693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_79
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 675
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1371bfebcfaa8af80800000000000000
+      internalID: -8095032327685859535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_80
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 671
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d63c286cf3d1a570800000000000000
+      internalID: 8476289054720931538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_81
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 683
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079fa68b3e4dfd600800000000000000
+      internalID: 495348558550727024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_82
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 678
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c380ea20fd19f1ce0800000000000000
+      internalID: -1432265769471834052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_83
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 682
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140d096cc79b2c140800000000000000
+      internalID: 4738553703505645633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_84
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 680
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e0af28fe5d7ce30800000000000000
+      internalID: 4523819575388278316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_85
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 669
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef5443ae429e4080800000000000000
+      internalID: -9201256122227073056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_86
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 680
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbaea60cb64b7520800000000000000
+      internalID: 2700830174918650878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_87
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 667
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe5b077d92494e10800000000000000
+      internalID: 2182348738512248564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_88
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 684
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafdddba046134e70800000000000000
+      internalID: 9098140139235696556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_89
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 678
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59a477da5fadbcc0800000000000000
+      internalID: -3693603314677274275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_90
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 684
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bd90bb0af766010800000000000000
+      internalID: 1181772280540814110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_91
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 672
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21aa417c5e2cf2140800000000000000
+      internalID: 4697187228514036242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_92
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 668
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2350f7d355248d860800000000000000
+      internalID: 7554861308785394994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_93
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 669
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f86edde838224260800000000000000
+      internalID: 7080265789153896691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_94
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 669
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501aca50c4a855450800000000000000
+      internalID: 6076915331323699461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_95
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 537
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164afe287640fc690800000000000000
+      internalID: -7579834805216369567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 530
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6952567876aa963d0800000000000000
+      internalID: -3212849497522231914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_97
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 519
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56918991963e2f0a0800000000000000
+      internalID: -6849162042736633499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_98
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 523
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b248b114d315e60800000000000000
+      internalID: 7949202167129451333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_99
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 539
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f43b0e287e965030800000000000000
+      internalID: 3483145600823407860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_100
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 526
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab76ae7ba32dd3c70800000000000000
+      internalID: 8952542783917942714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_101
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 509
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8644331df2f86eef0800000000000000
+      internalID: -79218507896372120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_102
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 514
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb7fef934a528fa0800000000000000
+      internalID: -5799974123607196694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_103
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 358
+        width: 87
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e0a6e5122b56690800000000000000
+      internalID: -7609480138984911270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_104
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 361
+        width: 83
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1552e48c589c5ac0800000000000000
+      internalID: -3865046857056889569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_105
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 355
+        width: 84
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc549b94da24cf00800000000000000
+      internalID: 1136080098635832518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_106
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 443
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9026f24ea6d435c40800000000000000
+      internalID: 5499824691439690249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_107
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 357
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296cbca76daf4ff80800000000000000
+      internalID: -8073552432878336366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_108
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 354
+        width: 89
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be848b2439e8a35b0800000000000000
+      internalID: -5387837241064666901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_109
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 354
+        width: 88
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb6f1fa0b78f1eb0800000000000000
+      internalID: -4746926289303147572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_110
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 359
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d80ad5007bf06450800000000000000
+      internalID: 6080135955503253715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_111
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 357
+        width: 106
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a24b518da8076d50800000000000000
+      internalID: 6730357709421101735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_112
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 406
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96418564b12e507b0800000000000000
+      internalID: -5258548383113014167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_113
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 207
+        width: 92
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa56d954b054a1590800000000000000
+      internalID: -7702768297948912209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_114
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 207
+        width: 98
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bdbbc0e2138d95e0800000000000000
+      internalID: -1901219350576382540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_115
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 280
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2379b89f3a385bf20800000000000000
+      internalID: 3437798630856824626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_116
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 216
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b6256c9d2b793c0800000000000000
+      internalID: -4352813866425357458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_117
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 212
+        width: 46
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc035df98d3e8a70800000000000000
+      internalID: 8831063582190013651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_118
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 207
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467f07e256c99d230800000000000000
+      internalID: 3664131730227394404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_119
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 206
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6607dce487a0700800000000000000
+      internalID: 507350187882079946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_120
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 206
+        width: 98
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01257b3803ecad6e0800000000000000
+      internalID: -1811909192299621872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_121
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 206
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb0bd402e26a7b20800000000000000
+      internalID: 3132925213673196511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_122
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 239
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8e2519e164e71f0800000000000000
+      internalID: -1045320966402283294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_123
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 250
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed745a08b2614e850800000000000000
+      internalID: 6405268946125408222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_124
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 226
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fc59c61ad051500800000000000000
+      internalID: 366213931663216427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_125
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 237
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8057edbfb47d3c6d0800000000000000
+      internalID: -2971294607786216184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_126
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 218
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01c401bc08fc5e90800000000000000
+      internalID: -7035475784466382579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_127
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 207
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292857c695007af60800000000000000
+      internalID: 8045399643392410258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_128
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 205
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561b217678b4b57b0800000000000000
+      internalID: -5234507096966123163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_129
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 81
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3eec528166756410800000000000000
+      internalID: 1469711014577368634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_130
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 135
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d8f717f9bbb1080800000000000000
+      internalID: -9215565919005209315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_131
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 133
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2c654837511cca0800000000000000
+      internalID: -5998489642795089195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_132
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 142
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4baf79a52967e10800000000000000
+      internalID: 2195102786184197324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_133
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 125
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4702970adc0076770800000000000000
+      internalID: 8603846496275210356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_134
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 132
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9458d1001522920e0800000000000000
+      internalID: -2294264803878927031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_135
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 71
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb245d5c846ac020800000000000000
+      internalID: 2362811508533242869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_136
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 70
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0174717b9416bcc0800000000000000
+      internalID: -3695743786354970357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_137
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 134
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1856323b93110e870800000000000000
+      internalID: 8709980618850788737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_138
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 129
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5798d281b2e180660800000000000000
+      internalID: 7352159562120399221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_139
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 128
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5b20d491a717300800000000000000
+      internalID: 248113703566882252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_140
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 123
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e9e5048d2598dd0800000000000000
+      internalID: -2483362630771761548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_141
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 119
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49050ef81dead04d0800000000000000
+      internalID: -3166682747886350188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_142
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 70
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4217a4e5f506fcbe0800000000000000
+      internalID: -1454838191897284316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_143
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 92
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8621e53e611b4ada0800000000000000
+      internalID: -5934423697105481112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_144
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 97
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef59b6edda87b9e0800000000000000
+      internalID: -1605662056470978583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_145
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 109
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df145dfa5de4116b0800000000000000
+      internalID: -5327390204517596675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_146
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 104
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b34c8031ac803c0800000000000000
+      internalID: -4393039253399651447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_147
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 107
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645277d5603543ee0800000000000000
+      internalID: -1282308707090750138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_148
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 101
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883ef96b5c57e66a0800000000000000
+      internalID: -6454091723942403192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_149
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 101
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b71b150fa8ac9fd0800000000000000
+      internalID: -2333805037226354766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_150
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 69
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ffa40a5a2b6e330800000000000000
+      internalID: 3739872965006393095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_151
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 70
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc6cdbbd63692110800000000000000
+      internalID: 1236628895644282077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_152
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 80
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3e7d8e750b372e0800000000000000
+      internalID: -2129164307201006603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_153
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108fa7724a60b4ec0800000000000000
+      internalID: -3581761776536324095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_154
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 70
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e402c2a68616cd490800000000000000
+      internalID: -7720188560134102962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_155
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 90
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91822c1a32ea39fa0800000000000000
+      internalID: -5795096827434751975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_156
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 96
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31924d3d1c0df54a0800000000000000
+      internalID: -6602328997800695533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_157
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 84
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f283869bb27f3ef70800000000000000
+      internalID: 9215481029696436271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_158
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 94
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f216716fb66eb520800000000000000
+      internalID: 2719724197138273012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_159
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 71
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a44c3b98196b4950800000000000000
+      internalID: 6434352047033435301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_160
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 72
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e597770a4b0ddcd10800000000000000
+      internalID: 2147602071530469726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_161
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 82
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e09b59f145f11b0800000000000000
+      internalID: -5683731710085624180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_162
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e621422448bb8f30800000000000000
+      internalID: 4578956048924223202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_163
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 82
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1723a609a246920800000000000000
+      internalID: 2982555652971458991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_164
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 83
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83bcde084e581540800000000000000
+      internalID: 4978833051638084495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_165
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 85
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22db330ce2439fda0800000000000000
+      internalID: -5910635660549309150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_166
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 74
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88860b474df32a40800000000000000
+      internalID: 5342392065634764942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_167
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 68
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7dcfc50944e39ea0800000000000000
+      internalID: -5867094887252374145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_168
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 76
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b53b38def37f480800000000000000
+      internalID: -8865547052106163309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_169
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 70
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92dea65878104e60800000000000000
+      internalID: 7944376647810994842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_170
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 73
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4830903a9cd6e6010800000000000000
+      internalID: 1184004464836150148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-basic-physical-b-v4_171
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 68
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761c52fd6af17e790800000000000000
+      internalID: -7500991852793446041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

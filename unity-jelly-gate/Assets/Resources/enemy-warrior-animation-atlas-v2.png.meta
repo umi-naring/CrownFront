@@ -1,0 +1,943 @@
+fileFormatVersion: 2
+guid: 801c6b78ecb393b408ee9526ec97e457
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5737906331553940569
+    second: enemy-warrior-animation-atlas-v2_0
+  - first:
+      213: -897478571920333883
+    second: enemy-warrior-animation-atlas-v2_1
+  - first:
+      213: -2403304156384358831
+    second: enemy-warrior-animation-atlas-v2_2
+  - first:
+      213: -779894364391283442
+    second: enemy-warrior-animation-atlas-v2_3
+  - first:
+      213: 8294320625951917941
+    second: enemy-warrior-animation-atlas-v2_4
+  - first:
+      213: 3684334757068458347
+    second: enemy-warrior-animation-atlas-v2_5
+  - first:
+      213: -3610427862560421015
+    second: enemy-warrior-animation-atlas-v2_6
+  - first:
+      213: -6485504253099231733
+    second: enemy-warrior-animation-atlas-v2_7
+  - first:
+      213: -5775931706951248952
+    second: enemy-warrior-animation-atlas-v2_8
+  - first:
+      213: -5407531038134168735
+    second: enemy-warrior-animation-atlas-v2_9
+  - first:
+      213: -6008236706243231266
+    second: enemy-warrior-animation-atlas-v2_10
+  - first:
+      213: 671279318515004595
+    second: enemy-warrior-animation-atlas-v2_11
+  - first:
+      213: -5547217246139981011
+    second: enemy-warrior-animation-atlas-v2_12
+  - first:
+      213: -6759520485928307598
+    second: enemy-warrior-animation-atlas-v2_13
+  - first:
+      213: -5733870244262162835
+    second: enemy-warrior-animation-atlas-v2_14
+  - first:
+      213: 877022890971717944
+    second: enemy-warrior-animation-atlas-v2_15
+  - first:
+      213: -555836164558509310
+    second: enemy-warrior-animation-atlas-v2_16
+  - first:
+      213: 850964083029090000
+    second: enemy-warrior-animation-atlas-v2_17
+  - first:
+      213: 5709812197120192138
+    second: enemy-warrior-animation-atlas-v2_18
+  - first:
+      213: 3689502992488187187
+    second: enemy-warrior-animation-atlas-v2_19
+  - first:
+      213: -4201072196881050378
+    second: enemy-warrior-animation-atlas-v2_20
+  - first:
+      213: 5592360862148584859
+    second: enemy-warrior-animation-atlas-v2_21
+  - first:
+      213: 5065051114988911284
+    second: enemy-warrior-animation-atlas-v2_22
+  - first:
+      213: -3218053479836017774
+    second: enemy-warrior-animation-atlas-v2_23
+  - first:
+      213: 3506386514655023428
+    second: enemy-warrior-animation-atlas-v2_24
+  - first:
+      213: 6726859273651340139
+    second: enemy-warrior-animation-atlas-v2_25
+  - first:
+      213: -4261484314722922133
+    second: enemy-warrior-animation-atlas-v2_26
+  - first:
+      213: -3396742134300714796
+    second: enemy-warrior-animation-atlas-v2_27
+  - first:
+      213: 8930318136172052243
+    second: enemy-warrior-animation-atlas-v2_28
+  - first:
+      213: -3325317453705071836
+    second: enemy-warrior-animation-atlas-v2_29
+  - first:
+      213: -6320700125750543812
+    second: enemy-warrior-animation-atlas-v2_30
+  - first:
+      213: -4924350083353380951
+    second: enemy-warrior-animation-atlas-v2_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 678
+        width: 128
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab3349979cde50b0800000000000000
+      internalID: -5737906331553940569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 677
+        width: 157
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3e92f6ef38b83f0800000000000000
+      internalID: -897478571920333883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 679
+        width: 165
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e8d7f5a9fb5aed0800000000000000
+      internalID: -2403304156384358831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_3
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 681
+        width: 199
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05e02825324d25f0800000000000000
+      internalID: -779894364391283442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_4
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 676
+        width: 149
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5774f030aa85b1370800000000000000
+      internalID: 8294320625951917941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_5
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 677
+        width: 186
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69c0bce0f2612330800000000000000
+      internalID: 3684334757068458347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_6
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 678
+        width: 169
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96bc9e4ecfe25edc0800000000000000
+      internalID: -3610427862560421015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_7
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 678
+        width: 177
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b063cb45e3cdef5a0800000000000000
+      internalID: -6485504253099231733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 467
+        width: 147
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c35148f6b4c7dfa0800000000000000
+      internalID: -5775931706951248952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_9
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 465
+        width: 153
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1631d10db2794f4b0800000000000000
+      internalID: -5407531038134168735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_10
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 467
+        width: 157
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1c8e57c847e9ca0800000000000000
+      internalID: -6008236706243231266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_11
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 468
+        width: 150
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4372dcbfcd05900800000000000000
+      internalID: 671279318515004595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_12
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 462
+        width: 131
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23e7e71e435403b0800000000000000
+      internalID: -5547217246139981011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_13
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 462
+        width: 163
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27474487eeb5132a0800000000000000
+      internalID: -6759520485928307598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_14
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 464
+        width: 156
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e429664633d60b0800000000000000
+      internalID: -5733870244262162835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_15
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 463
+        width: 170
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83161443cafcb2c00800000000000000
+      internalID: 877022890971717944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 264
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bac2a04f54948f0800000000000000
+      internalID: -555836164558509310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_17
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 265
+        width: 167
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de909d235b3fcb00800000000000000
+      internalID: 850964083029090000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_18
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 269
+        width: 150
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8eaa8ff0f35d3f40800000000000000
+      internalID: 5709812197120192138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_19
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 265
+        width: 170
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335cff08c6fb33330800000000000000
+      internalID: 3689502992488187187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_20
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 263
+        width: 147
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4922d581bc2b5c0800000000000000
+      internalID: -4201072196881050378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_21
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 265
+        width: 199
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95e924139e0c9d40800000000000000
+      internalID: 5592360862148584859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_22
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 265
+        width: 161
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba3c1e372daa4640800000000000000
+      internalID: 5065051114988911284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_23
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 256
+        width: 206
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b1a2af86d2753d0800000000000000
+      internalID: -3218053479836017774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 185
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4419b3b15ff29a030800000000000000
+      internalID: 3506386514655023428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_25
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 45
+        width: 193
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63c7047eda9a5d50800000000000000
+      internalID: 6726859273651340139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_26
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 46
+        width: 183
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b619a05189a2cd4c0800000000000000
+      internalID: -4261484314722922133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_27
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 46
+        width: 198
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8576b86095cd0d0800000000000000
+      internalID: -3396742134300714796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_28
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 43
+        width: 161
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f73cda70ddeeb70800000000000000
+      internalID: 8930318136172052243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_29
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 45
+        width: 206
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423b086e4691ad1d0800000000000000
+      internalID: -3325317453705071836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_30
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 44
+        width: 165
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a3fd069bc5848a0800000000000000
+      internalID: -6320700125750543812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-warrior-animation-atlas-v2_31
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 44
+        width: 196
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a77e0480b139abb0800000000000000
+      internalID: -4924350083353380951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

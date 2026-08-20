@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: dd39ee6e9e7abb44a83d118269a879fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6756096707240939101
+    second: boss-tempest-dragon-attack-directions-v2_0
+  - first:
+      213: -6731151039986995340
+    second: boss-tempest-dragon-attack-directions-v2_1
+  - first:
+      213: 330434468456131363
+    second: boss-tempest-dragon-attack-directions-v2_2
+  - first:
+      213: -3693534140973676393
+    second: boss-tempest-dragon-attack-directions-v2_3
+  - first:
+      213: -4834882789355589439
+    second: boss-tempest-dragon-attack-directions-v2_4
+  - first:
+      213: -4455744789534031113
+    second: boss-tempest-dragon-attack-directions-v2_5
+  - first:
+      213: 1216389170802970757
+    second: boss-tempest-dragon-attack-directions-v2_6
+  - first:
+      213: -1312365844595591033
+    second: boss-tempest-dragon-attack-directions-v2_7
+  - first:
+      213: -3568740379310937956
+    second: boss-tempest-dragon-attack-directions-v2_8
+  - first:
+      213: 1702075686595093722
+    second: boss-tempest-dragon-attack-directions-v2_9
+  - first:
+      213: -5420880647993782823
+    second: boss-tempest-dragon-attack-directions-v2_10
+  - first:
+      213: -8176042742652943183
+    second: boss-tempest-dragon-attack-directions-v2_11
+  - first:
+      213: -1801547200257813456
+    second: boss-tempest-dragon-attack-directions-v2_12
+  - first:
+      213: -9161376381073611045
+    second: boss-tempest-dragon-attack-directions-v2_13
+  - first:
+      213: -1020844923692576707
+    second: boss-tempest-dragon-attack-directions-v2_14
+  - first:
+      213: -1744138158338253627
+    second: boss-tempest-dragon-attack-directions-v2_15
+  - first:
+      213: 8959646720001969145
+    second: boss-tempest-dragon-attack-directions-v2_16
+  - first:
+      213: 6315036867137951927
+    second: boss-tempest-dragon-attack-directions-v2_17
+  - first:
+      213: -6090496412778485089
+    second: boss-tempest-dragon-attack-directions-v2_18
+  - first:
+      213: 4514750923613222280
+    second: boss-tempest-dragon-attack-directions-v2_19
+  - first:
+      213: 1904690634493234352
+    second: boss-tempest-dragon-attack-directions-v2_20
+  - first:
+      213: -1092461049191563889
+    second: boss-tempest-dragon-attack-directions-v2_21
+  - first:
+      213: 1789404324106229736
+    second: boss-tempest-dragon-attack-directions-v2_22
+  - first:
+      213: -8683682066952992734
+    second: boss-tempest-dragon-attack-directions-v2_23
+  - first:
+      213: -6581791032731444594
+    second: boss-tempest-dragon-attack-directions-v2_24
+  - first:
+      213: 3067617708332565888
+    second: boss-tempest-dragon-attack-directions-v2_25
+  - first:
+      213: -5621958771164523241
+    second: boss-tempest-dragon-attack-directions-v2_26
+  - first:
+      213: -5492827556410227358
+    second: boss-tempest-dragon-attack-directions-v2_27
+  - first:
+      213: -8401665554243526929
+    second: boss-tempest-dragon-attack-directions-v2_28
+  - first:
+      213: -7612873132057189249
+    second: boss-tempest-dragon-attack-directions-v2_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 945
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1b7b017d58d32a0800000000000000
+      internalID: -6756096707240939101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 947
+        width: 135
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fe214dac52692a0800000000000000
+      internalID: -6731151039986995340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 937
+        width: 144
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b6fd9f560f59400800000000000000
+      internalID: 330434468456131363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_3
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 932
+        width: 181
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7988c79944eedbcc0800000000000000
+      internalID: -3693534140973676393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_4
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 945
+        width: 136
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c07fc928bb07ecb0800000000000000
+      internalID: -4834882789355589439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_5
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 945
+        width: 135
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2c602b8b30a22c0800000000000000
+      internalID: -4455744789534031113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 735
+        width: 136
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580d752918b71e010800000000000000
+      internalID: 1216389170802970757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 735
+        width: 125
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7883681b73a89cde0800000000000000
+      internalID: -1312365844595591033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_8
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 735
+        width: 148
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9824937889497ec0800000000000000
+      internalID: -3568740379310937956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_9
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 733
+        width: 250
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad46458a1dcfe9710800000000000000
+      internalID: 1702075686595093722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_10
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 735
+        width: 165
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd8a8e85c925c4b0800000000000000
+      internalID: -5420880647993782823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_11
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 735
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4c2cfa17cd88e80800000000000000
+      internalID: -8176042742652943183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 526
+        width: 121
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034988acd5e9ff6e0800000000000000
+      internalID: -1801547200257813456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 526
+        width: 123
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6247078b04cd080800000000000000
+      internalID: -9161376381073611045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_14
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 526
+        width: 144
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d301b8853fa35d1f0800000000000000
+      internalID: -1020844923692576707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_15
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 525
+        width: 277
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc5b09f5939bc7e0800000000000000
+      internalID: -1744138158338253627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_16
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 526
+        width: 143
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb06bab83f075c70800000000000000
+      internalID: 8959646720001969145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_17
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 526
+        width: 121
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8d049729483a750800000000000000
+      internalID: 6315036867137951927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_18
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 325
+        width: 118
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a2c8a08c53a7ba0800000000000000
+      internalID: -6090496412778485089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 325
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885355b7b0e97ae30800000000000000
+      internalID: 4514750923613222280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_20
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 324
+        width: 136
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc8bf36a02de6a10800000000000000
+      internalID: 1904690634493234352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_21
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 323
+        width: 251
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d7cffb67cc6d0f0800000000000000
+      internalID: -1092461049191563889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_22
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 323
+        width: 115
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e756e980cd35d810800000000000000
+      internalID: 1789404324106229736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_23
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 325
+        width: 119
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22846d01b2d5d7780800000000000000
+      internalID: -8683682066952992734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_24
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 60
+        width: 144
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ad0347de7c8a4a0800000000000000
+      internalID: -6581791032731444594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_25
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 60
+        width: 139
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0854cd38d0e529a20800000000000000
+      internalID: 3067617708332565888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_26
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 57
+        width: 137
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715d8d6b84acaf1b0800000000000000
+      internalID: -5621958771164523241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_27
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 57
+        width: 132
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26501bf807e85c3b0800000000000000
+      internalID: -5492827556410227358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_28
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 58
+        width: 128
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feeddad31b9476b80800000000000000
+      internalID: -8401665554243526929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-tempest-dragon-attack-directions-v2_29
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 61
+        width: 139
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74ad9b9834a95690800000000000000
+      internalID: -7612873132057189249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

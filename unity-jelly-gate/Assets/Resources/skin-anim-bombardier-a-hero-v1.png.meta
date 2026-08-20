@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: 1204c69e0a94ec74383fa3e74d7ae046
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -738229248943579258
+    second: skin-anim-bombardier-a-hero-v1_0
+  - first:
+      213: 1000248952088081132
+    second: skin-anim-bombardier-a-hero-v1_1
+  - first:
+      213: -822027253309472101
+    second: skin-anim-bombardier-a-hero-v1_2
+  - first:
+      213: 8270894212203357166
+    second: skin-anim-bombardier-a-hero-v1_3
+  - first:
+      213: 3122530236029677609
+    second: skin-anim-bombardier-a-hero-v1_4
+  - first:
+      213: -6618625632736865684
+    second: skin-anim-bombardier-a-hero-v1_5
+  - first:
+      213: 3210368992390247682
+    second: skin-anim-bombardier-a-hero-v1_6
+  - first:
+      213: 6785297121656292775
+    second: skin-anim-bombardier-a-hero-v1_7
+  - first:
+      213: -583419864660554197
+    second: skin-anim-bombardier-a-hero-v1_8
+  - first:
+      213: -8488608650830891839
+    second: skin-anim-bombardier-a-hero-v1_9
+  - first:
+      213: -7817288029409525865
+    second: skin-anim-bombardier-a-hero-v1_10
+  - first:
+      213: 8088670944929279833
+    second: skin-anim-bombardier-a-hero-v1_11
+  - first:
+      213: -9046142752916325542
+    second: skin-anim-bombardier-a-hero-v1_12
+  - first:
+      213: -5267278897191153819
+    second: skin-anim-bombardier-a-hero-v1_13
+  - first:
+      213: -616858751977498062
+    second: skin-anim-bombardier-a-hero-v1_14
+  - first:
+      213: 7714602107124694570
+    second: skin-anim-bombardier-a-hero-v1_15
+  - first:
+      213: 8436291113215059420
+    second: skin-anim-bombardier-a-hero-v1_16
+  - first:
+      213: 7060794334378676096
+    second: skin-anim-bombardier-a-hero-v1_17
+  - first:
+      213: 7031786378842952605
+    second: skin-anim-bombardier-a-hero-v1_18
+  - first:
+      213: -801021042908578818
+    second: skin-anim-bombardier-a-hero-v1_19
+  - first:
+      213: 5327422003153003769
+    second: skin-anim-bombardier-a-hero-v1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 635
+        width: 142
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f1aedc86841c5f0800000000000000
+      internalID: -738229248943579258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 635
+        width: 142
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2ba245f1991ed00800000000000000
+      internalID: 1000248952088081132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 635
+        width: 141
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b928cc281929794f0800000000000000
+      internalID: -822027253309472101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_3
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 636
+        width: 140
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee32735077e18c270800000000000000
+      internalID: 8270894212203357166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 642
+        width: 218
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92037fea4b4755b20800000000000000
+      internalID: 3122530236029677609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 642
+        width: 233
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c629c63dd0be524a0800000000000000
+      internalID: -6618625632736865684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 642
+        width: 172
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205795dd6958d8c20800000000000000
+      internalID: 3210368992390247682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_7
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 369
+        width: 165
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5cdc738c73a2e50800000000000000
+      internalID: 6785297121656292775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_8
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 369
+        width: 162
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e400469b647e7f0800000000000000
+      internalID: -583419864660554197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_9
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 369
+        width: 164
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4bae91867623a80800000000000000
+      internalID: -8488608650830891839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_10
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 370
+        width: 158
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fb12c74f9638390800000000000000
+      internalID: -7817288029409525865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 371
+        width: 213
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f68896e5bb04070800000000000000
+      internalID: 8088670944929279833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 371
+        width: 249
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bb2f04815a57280800000000000000
+      internalID: -9046142752916325542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 371
+        width: 180
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f820010cdd6e6b0800000000000000
+      internalID: -5267278897191153819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 202
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a5acbbb3a7077f0800000000000000
+      internalID: -616858751977498062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 81
+        width: 134
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2eb5a22eb5cf0b60800000000000000
+      internalID: 7714602107124694570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 80
+        width: 136
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5e7f0f11ab31570800000000000000
+      internalID: 8436291113215059420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_17
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 81
+        width: 134
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f4bb4990bfcf160800000000000000
+      internalID: 7060794334378676096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 92
+        width: 169
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d935d5f947ce59160800000000000000
+      internalID: 7031786378842952605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 92
+        width: 248
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb32dffa9332e4f0800000000000000
+      internalID: -801021042908578818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-bombardier-a-hero-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 92
+        width: 163
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4e882061ecee940800000000000000
+      internalID: 5327422003153003769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

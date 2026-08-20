@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: db3bb6987e0014a4cbd6fea9456453bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4148954028581638279
+    second: boss-jelly-king-attack-directions-v2_0
+  - first:
+      213: -2680480463877021350
+    second: boss-jelly-king-attack-directions-v2_1
+  - first:
+      213: 6090095136968018664
+    second: boss-jelly-king-attack-directions-v2_2
+  - first:
+      213: -6876729331780780248
+    second: boss-jelly-king-attack-directions-v2_3
+  - first:
+      213: -7096093706127164211
+    second: boss-jelly-king-attack-directions-v2_4
+  - first:
+      213: -5070575084767001604
+    second: boss-jelly-king-attack-directions-v2_5
+  - first:
+      213: -6276245126577510392
+    second: boss-jelly-king-attack-directions-v2_6
+  - first:
+      213: 3405113594129904306
+    second: boss-jelly-king-attack-directions-v2_7
+  - first:
+      213: 8167293152171970649
+    second: boss-jelly-king-attack-directions-v2_8
+  - first:
+      213: -4353135845923666348
+    second: boss-jelly-king-attack-directions-v2_9
+  - first:
+      213: 3426899434460963452
+    second: boss-jelly-king-attack-directions-v2_10
+  - first:
+      213: 114602541263412575
+    second: boss-jelly-king-attack-directions-v2_11
+  - first:
+      213: -7336935010894945674
+    second: boss-jelly-king-attack-directions-v2_12
+  - first:
+      213: 7301038389102911771
+    second: boss-jelly-king-attack-directions-v2_13
+  - first:
+      213: -8960324119599070334
+    second: boss-jelly-king-attack-directions-v2_14
+  - first:
+      213: 1366256927619243023
+    second: boss-jelly-king-attack-directions-v2_15
+  - first:
+      213: 1942142620417558157
+    second: boss-jelly-king-attack-directions-v2_16
+  - first:
+      213: 8784021798406398918
+    second: boss-jelly-king-attack-directions-v2_17
+  - first:
+      213: -4258056347386785483
+    second: boss-jelly-king-attack-directions-v2_18
+  - first:
+      213: -7545761828560256956
+    second: boss-jelly-king-attack-directions-v2_19
+  - first:
+      213: 3109773232272930316
+    second: boss-jelly-king-attack-directions-v2_20
+  - first:
+      213: 3282211455243884746
+    second: boss-jelly-king-attack-directions-v2_21
+  - first:
+      213: -1271756845358342712
+    second: boss-jelly-king-attack-directions-v2_22
+  - first:
+      213: 5649152490854293657
+    second: boss-jelly-king-attack-directions-v2_23
+  - first:
+      213: 4272187877339138818
+    second: boss-jelly-king-attack-directions-v2_24
+  - first:
+      213: -4017021888037842519
+    second: boss-jelly-king-attack-directions-v2_25
+  - first:
+      213: 6714407423524534030
+    second: boss-jelly-king-attack-directions-v2_26
+  - first:
+      213: -9070157609560366725
+    second: boss-jelly-king-attack-directions-v2_27
+  - first:
+      213: -3907280536589224259
+    second: boss-jelly-king-attack-directions-v2_28
+  - first:
+      213: -4051313586617239689
+    second: boss-jelly-king-attack-directions-v2_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 903
+        width: 199
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780d807f4bb049930800000000000000
+      internalID: 4148954028581638279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 903
+        width: 209
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a516c3b48350dcad0800000000000000
+      internalID: -2680480463877021350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 903
+        width: 195
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea0057a24d548450800000000000000
+      internalID: 6090095136968018664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_3
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 903
+        width: 201
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f72b27b13f090a0800000000000000
+      internalID: -6876729331780780248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_4
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 903
+        width: 203
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccb769fe5c958d90800000000000000
+      internalID: -7096093706127164211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_5
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 903
+        width: 193
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3448153d2b1a9b0800000000000000
+      internalID: -5070575084767001604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 683
+        width: 189
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80822137f4c46e8a0800000000000000
+      internalID: -6276245126577510392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 677
+        width: 191
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b277f5d5c4614f20800000000000000
+      internalID: 3405113594129904306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_8
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 677
+        width: 188
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950d0b789dd085170800000000000000
+      internalID: 8167293152171970649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_9
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 677
+        width: 210
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45643b4130e8693c0800000000000000
+      internalID: -4353135845923666348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_10
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 676
+        width: 191
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72680011eace8f20800000000000000
+      internalID: 3426899434460963452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_11
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 678
+        width: 190
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ddc527766279100800000000000000
+      internalID: 114602541263412575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 448
+        width: 191
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672ea77fa78fd2a90800000000000000
+      internalID: -7336935010894945674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 447
+        width: 184
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1128f97bbf725560800000000000000
+      internalID: 7301038389102911771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 447
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283cee2efa886a380800000000000000
+      internalID: -8960324119599070334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_15
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 447
+        width: 201
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c59aadf6be5f210800000000000000
+      internalID: 1366256927619243023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_16
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 447
+        width: 185
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8682216c60e3fa10800000000000000
+      internalID: 1942142620417558157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_17
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 447
+        width: 179
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c32d41394d17e970800000000000000
+      internalID: 8784021798406398918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_18
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 227
+        width: 184
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531d96cef4858e4c0800000000000000
+      internalID: -4258056347386785483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_19
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 219
+        width: 204
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440c6f89891184790800000000000000
+      internalID: -7545761828560256956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_20
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 217
+        width: 202
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0675a94742282b20800000000000000
+      internalID: 3109773232272930316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_21
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 218
+        width: 205
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8978bbde1cc8d20800000000000000
+      internalID: 3282211455243884746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_22
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 217
+        width: 198
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd9ebf13efc95ee0800000000000000
+      internalID: -1271756845358342712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_23
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 223
+        width: 185
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990226b8242d56e40800000000000000
+      internalID: 5649152490854293657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_24
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 12
+        width: 174
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b878a4d3cd94b30800000000000000
+      internalID: 4272187877339138818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_25
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 9
+        width: 172
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1198c30eba048c0800000000000000
+      internalID: -4017021888037842519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_26
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 10
+        width: 177
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07fc6c2afd5e2d50800000000000000
+      internalID: 6714407423524534030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_27
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 11
+        width: 192
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b712959b5b3502280800000000000000
+      internalID: -9070157609560366725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_28
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 9
+        width: 173
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db63dcabd0d86c9c0800000000000000
+      internalID: -3907280536589224259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-jelly-king-attack-directions-v2_29
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 12
+        width: 173
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77737fbf1c7d6c7c0800000000000000
+      internalID: -4051313586617239689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boss-jelly-king-attack-directions-v2_0: 4148954028581638279
+      boss-jelly-king-attack-directions-v2_1: -2680480463877021350
+      boss-jelly-king-attack-directions-v2_10: 3426899434460963452
+      boss-jelly-king-attack-directions-v2_11: 114602541263412575
+      boss-jelly-king-attack-directions-v2_12: -7336935010894945674
+      boss-jelly-king-attack-directions-v2_13: 7301038389102911771
+      boss-jelly-king-attack-directions-v2_14: -8960324119599070334
+      boss-jelly-king-attack-directions-v2_15: 1366256927619243023
+      boss-jelly-king-attack-directions-v2_16: 1942142620417558157
+      boss-jelly-king-attack-directions-v2_17: 8784021798406398918
+      boss-jelly-king-attack-directions-v2_18: -4258056347386785483
+      boss-jelly-king-attack-directions-v2_19: -7545761828560256956
+      boss-jelly-king-attack-directions-v2_2: 6090095136968018664
+      boss-jelly-king-attack-directions-v2_20: 3109773232272930316
+      boss-jelly-king-attack-directions-v2_21: 3282211455243884746
+      boss-jelly-king-attack-directions-v2_22: -1271756845358342712
+      boss-jelly-king-attack-directions-v2_23: 5649152490854293657
+      boss-jelly-king-attack-directions-v2_24: 4272187877339138818
+      boss-jelly-king-attack-directions-v2_25: -4017021888037842519
+      boss-jelly-king-attack-directions-v2_26: 6714407423524534030
+      boss-jelly-king-attack-directions-v2_27: -9070157609560366725
+      boss-jelly-king-attack-directions-v2_28: -3907280536589224259
+      boss-jelly-king-attack-directions-v2_29: -4051313586617239689
+      boss-jelly-king-attack-directions-v2_3: -6876729331780780248
+      boss-jelly-king-attack-directions-v2_4: -7096093706127164211
+      boss-jelly-king-attack-directions-v2_5: -5070575084767001604
+      boss-jelly-king-attack-directions-v2_6: -6276245126577510392
+      boss-jelly-king-attack-directions-v2_7: 3405113594129904306
+      boss-jelly-king-attack-directions-v2_8: 8167293152171970649
+      boss-jelly-king-attack-directions-v2_9: -4353135845923666348
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

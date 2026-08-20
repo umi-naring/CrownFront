@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: 45dd78447f8dadb4d8af6fafb313d495
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 736810433112215476
+    second: boss-wraith-king-attack-directions-v1_0
+  - first:
+      213: 5021245009650691578
+    second: boss-wraith-king-attack-directions-v1_1
+  - first:
+      213: 2816356552537563435
+    second: boss-wraith-king-attack-directions-v1_2
+  - first:
+      213: -5406861545019201488
+    second: boss-wraith-king-attack-directions-v1_3
+  - first:
+      213: 4409886058713454682
+    second: boss-wraith-king-attack-directions-v1_4
+  - first:
+      213: -6752247528615750257
+    second: boss-wraith-king-attack-directions-v1_5
+  - first:
+      213: 8042766542446662002
+    second: boss-wraith-king-attack-directions-v1_6
+  - first:
+      213: 2541386642992565036
+    second: boss-wraith-king-attack-directions-v1_7
+  - first:
+      213: 1387383060158067986
+    second: boss-wraith-king-attack-directions-v1_8
+  - first:
+      213: 3841739027254115493
+    second: boss-wraith-king-attack-directions-v1_9
+  - first:
+      213: -2870367024762176162
+    second: boss-wraith-king-attack-directions-v1_10
+  - first:
+      213: -4632280515378373804
+    second: boss-wraith-king-attack-directions-v1_11
+  - first:
+      213: -5744468267783802690
+    second: boss-wraith-king-attack-directions-v1_12
+  - first:
+      213: 4773944473058284267
+    second: boss-wraith-king-attack-directions-v1_13
+  - first:
+      213: -7564749247070809173
+    second: boss-wraith-king-attack-directions-v1_14
+  - first:
+      213: 2414443526195270002
+    second: boss-wraith-king-attack-directions-v1_15
+  - first:
+      213: -4804727342421812772
+    second: boss-wraith-king-attack-directions-v1_16
+  - first:
+      213: 179981667030932145
+    second: boss-wraith-king-attack-directions-v1_17
+  - first:
+      213: 7255386002067774602
+    second: boss-wraith-king-attack-directions-v1_18
+  - first:
+      213: 2776061117851736907
+    second: boss-wraith-king-attack-directions-v1_19
+  - first:
+      213: 2381359730894712360
+    second: boss-wraith-king-attack-directions-v1_20
+  - first:
+      213: -860847752412162831
+    second: boss-wraith-king-attack-directions-v1_21
+  - first:
+      213: 3082623132449805629
+    second: boss-wraith-king-attack-directions-v1_22
+  - first:
+      213: -2798827747467364916
+    second: boss-wraith-king-attack-directions-v1_23
+  - first:
+      213: -3770289907388972563
+    second: boss-wraith-king-attack-directions-v1_24
+  - first:
+      213: -4393868235347776121
+    second: boss-wraith-king-attack-directions-v1_25
+  - first:
+      213: 1486182312867710008
+    second: boss-wraith-king-attack-directions-v1_26
+  - first:
+      213: 3434008074720039426
+    second: boss-wraith-king-attack-directions-v1_27
+  - first:
+      213: -232244563346498342
+    second: boss-wraith-king-attack-directions-v1_28
+  - first:
+      213: 6659011994120157543
+    second: boss-wraith-king-attack-directions-v1_29
+  - first:
+      213: 606758965103654309
+    second: boss-wraith-king-attack-directions-v1_30
+  - first:
+      213: 1247561792496201322
+    second: boss-wraith-king-attack-directions-v1_31
+  - first:
+      213: -3437245352163531301
+    second: boss-wraith-king-attack-directions-v1_32
+  - first:
+      213: 225329752783557889
+    second: boss-wraith-king-attack-directions-v1_33
+  - first:
+      213: -4032776007211068946
+    second: boss-wraith-king-attack-directions-v1_34
+  - first:
+      213: -6895525927532529243
+    second: boss-wraith-king-attack-directions-v1_35
+  - first:
+      213: -9056817755021159906
+    second: boss-wraith-king-attack-directions-v1_36
+  - first:
+      213: 3277079965361029266
+    second: boss-wraith-king-attack-directions-v1_37
+  - first:
+      213: -7576774093529436698
+    second: boss-wraith-king-attack-directions-v1_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 891
+        width: 147
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf84746f2da93a00800000000000000
+      internalID: 736810433112215476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 973
+        width: 19
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdae6a8bbb0fa540800000000000000
+      internalID: 5021245009650691578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 895
+        width: 131
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2168d2ec55b51720800000000000000
+      internalID: 2816356552537563435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 891
+        width: 138
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03829635218f6f4b0800000000000000
+      internalID: -5406861545019201488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 891
+        width: 193
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58109d7100133d30800000000000000
+      internalID: 4409886058713454682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 892
+        width: 154
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85595dc5a23b42a0800000000000000
+      internalID: -6752247528615750257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 985
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2711ee5de85ad9f60800000000000000
+      internalID: 8042766542446662002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 891
+        width: 142
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b8e7cdfa1d44320800000000000000
+      internalID: 2541386642992565036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 657
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215bd14ea89f04310800000000000000
+      internalID: 1387383060158067986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 658
+        width: 138
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac7c377a49905530800000000000000
+      internalID: 3841739027254115493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 658
+        width: 125
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d3e0a16686a28d0800000000000000
+      internalID: -2870367024762176162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 657
+        width: 202
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b98e40a65d6bfb0800000000000000
+      internalID: -4632280515378373804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 657
+        width: 156
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb03e33cb8c8740b0800000000000000
+      internalID: -5744468267783802690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 730
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2141e6435704240800000000000000
+      internalID: 4773944473058284267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 657
+        width: 140
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3d079b3ac940790800000000000000
+      internalID: -7564749247070809173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 428
+        width: 134
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2715c154893d18120800000000000000
+      internalID: 2414443526195270002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 510
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9575840fd225db0800000000000000
+      internalID: -4804727342421812772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 429
+        width: 129
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba16716f5c6f7200800000000000000
+      internalID: 179981667030932145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 428
+        width: 122
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c5791d02f40b460800000000000000
+      internalID: 7255386002067774602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 428
+        width: 151
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b9354e0ec868620800000000000000
+      internalID: 2776061117851736907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 424
+        width: 112
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e266aee0a4c0120800000000000000
+      internalID: 2381359730894712360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 486
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f497c7b787ad04f0800000000000000
+      internalID: -860847752412162831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 428
+        width: 127
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d359212186da7ca20800000000000000
+      internalID: 3082623132449805629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 201
+        width: 120
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc573b41ef09829d0800000000000000
+      internalID: -2798827747467364916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 275
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de107d91e4d3dabc0800000000000000
+      internalID: -3770289907388972563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 202
+        width: 145
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d2932ae18d503c0800000000000000
+      internalID: -4393868235347776121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 200
+        width: 123
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834c2fd70faff9410800000000000000
+      internalID: 1486182312867710008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 200
+        width: 181
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202d289562c08af20800000000000000
+      internalID: 3434008074720039426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 199
+        width: 128
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc57b4dcc6e6ccf0800000000000000
+      internalID: -232244563346498342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 259
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769f890b020996c50800000000000000
+      internalID: 6659011994120157543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 201
+        width: 115
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a579436014ab6800800000000000000
+      internalID: 606758965103654309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7
+        width: 123
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ee51527da305110800000000000000
+      internalID: 1247561792496201322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 46
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd52e6240937c40d0800000000000000
+      internalID: -3437245352163531301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 7
+        width: 140
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1059dff5738802300800000000000000
+      internalID: 225329752783557889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 6
+        width: 113
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee157778693b808c0800000000000000
+      internalID: -4032776007211068946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_35
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 6
+        width: 159
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a97de5f3bb2e40a0800000000000000
+      internalID: -6895525927532529243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_36
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 3
+        width: 119
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e125384ac38bf4280800000000000000
+      internalID: -9056817755021159906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_37
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 61
+        width: 34
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290c4e3add68a7d20800000000000000
+      internalID: 3277079965361029266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-wraith-king-attack-directions-v1_38
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 8
+        width: 112
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edabcbfa14e9d690800000000000000
+      internalID: -7576774093529436698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

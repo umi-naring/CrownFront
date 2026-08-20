@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: eb85f04da7ef9e547aae1a1c4b05dcee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7259907497543649180
+    second: enemy-veil-binder-attack-directions-v1_0
+  - first:
+      213: 6277901257198450352
+    second: enemy-veil-binder-attack-directions-v1_1
+  - first:
+      213: -3719433080003452303
+    second: enemy-veil-binder-attack-directions-v1_2
+  - first:
+      213: 7873516524672599356
+    second: enemy-veil-binder-attack-directions-v1_3
+  - first:
+      213: 6064401464650701922
+    second: enemy-veil-binder-attack-directions-v1_4
+  - first:
+      213: 4110924426785139981
+    second: enemy-veil-binder-attack-directions-v1_5
+  - first:
+      213: -8991709045070108765
+    second: enemy-veil-binder-attack-directions-v1_6
+  - first:
+      213: 8643142310576300683
+    second: enemy-veil-binder-attack-directions-v1_7
+  - first:
+      213: 9160898894664113812
+    second: enemy-veil-binder-attack-directions-v1_8
+  - first:
+      213: -885844050398586496
+    second: enemy-veil-binder-attack-directions-v1_9
+  - first:
+      213: 5993543217373443487
+    second: enemy-veil-binder-attack-directions-v1_10
+  - first:
+      213: -982378717079491932
+    second: enemy-veil-binder-attack-directions-v1_11
+  - first:
+      213: -5392851061460854030
+    second: enemy-veil-binder-attack-directions-v1_12
+  - first:
+      213: 4273677965104308815
+    second: enemy-veil-binder-attack-directions-v1_13
+  - first:
+      213: 1100766551817426617
+    second: enemy-veil-binder-attack-directions-v1_14
+  - first:
+      213: 8932188506344486281
+    second: enemy-veil-binder-attack-directions-v1_15
+  - first:
+      213: -3263053124661578469
+    second: enemy-veil-binder-attack-directions-v1_16
+  - first:
+      213: 5121547966350778028
+    second: enemy-veil-binder-attack-directions-v1_17
+  - first:
+      213: -5922877806391629275
+    second: enemy-veil-binder-attack-directions-v1_18
+  - first:
+      213: -3715571024047191870
+    second: enemy-veil-binder-attack-directions-v1_19
+  - first:
+      213: 3153849484390328759
+    second: enemy-veil-binder-attack-directions-v1_20
+  - first:
+      213: 530104152192009197
+    second: enemy-veil-binder-attack-directions-v1_21
+  - first:
+      213: -3120845714606412976
+    second: enemy-veil-binder-attack-directions-v1_22
+  - first:
+      213: 57303357884650813
+    second: enemy-veil-binder-attack-directions-v1_23
+  - first:
+      213: 3942642803489541794
+    second: enemy-veil-binder-attack-directions-v1_24
+  - first:
+      213: 77945667681038194
+    second: enemy-veil-binder-attack-directions-v1_25
+  - first:
+      213: -4806802454036722190
+    second: enemy-veil-binder-attack-directions-v1_26
+  - first:
+      213: -9187866004056595630
+    second: enemy-veil-binder-attack-directions-v1_27
+  - first:
+      213: 4371761919793304331
+    second: enemy-veil-binder-attack-directions-v1_28
+  - first:
+      213: 2938857643178720947
+    second: enemy-veil-binder-attack-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 835
+        width: 185
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46837ba7890af3b90800000000000000
+      internalID: -7259907497543649180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 835
+        width: 195
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6ba428ee59f1750800000000000000
+      internalID: 6277901257198450352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 836
+        width: 198
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172ae84f15be16cc0800000000000000
+      internalID: -3719433080003452303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 835
+        width: 210
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3547424099544d60800000000000000
+      internalID: 7873516524672599356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 835
+        width: 184
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c1dd36005192450800000000000000
+      internalID: 6064401464650701922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 835
+        width: 183
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d210d4cffec0930800000000000000
+      internalID: 4110924426785139981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 644
+        width: 185
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7edec7348073380800000000000000
+      internalID: -8991709045070108765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 644
+        width: 184
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82ac0d532c92f770800000000000000
+      internalID: 8643142310576300683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 644
+        width: 219
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e19b7120d022f70800000000000000
+      internalID: 9160898894664113812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 644
+        width: 219
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08959919789d4b3f0800000000000000
+      internalID: -885844050398586496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 644
+        width: 180
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95fe711dc75d2350800000000000000
+      internalID: 5993543217373443487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 644
+        width: 177
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aaa29df2c3ed52f0800000000000000
+      internalID: -982378717079491932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 452
+        width: 174
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa990b388eb825b0800000000000000
+      internalID: -5392851061460854030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 452
+        width: 201
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42e47267772f4b30800000000000000
+      internalID: 4273677965104308815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 452
+        width: 233
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b695b5c855b64f00800000000000000
+      internalID: 1100766551817426617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 452
+        width: 225
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9857d7b2f1285fb70800000000000000
+      internalID: 8932188506344486281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 452
+        width: 222
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b157155b87e47b2d0800000000000000
+      internalID: -3263053124661578469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 452
+        width: 172
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae56728db4631740800000000000000
+      internalID: 5121547966350778028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 260
+        width: 171
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a6bfd0406bdcda0800000000000000
+      internalID: -5922877806391629275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 260
+        width: 183
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8ceede6d3af6cc0800000000000000
+      internalID: -3715571024047191870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 260
+        width: 225
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b962207569b4cb20800000000000000
+      internalID: 3153849484390328759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 260
+        width: 205
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de34d55faee4b5700800000000000000
+      internalID: 530104152192009197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 260
+        width: 200
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ba5168b5780b4d0800000000000000
+      internalID: -3120845714606412976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 260
+        width: 171
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35d623b9159bc000800000000000000
+      internalID: 57303357884650813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 66
+        width: 174
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae8e32adb417b630800000000000000
+      internalID: 3942642803489541794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 66
+        width: 174
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fa8e9fb2be41100800000000000000
+      internalID: 77945667681038194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 65
+        width: 180
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd4aa5b2aeca4db0800000000000000
+      internalID: -4806802454036722190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 65
+        width: 189
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253a1587c842e7080800000000000000
+      internalID: -9187866004056595630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 66
+        width: 178
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b031cdfad4e9bac30800000000000000
+      internalID: 4371761919793304331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-veil-binder-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 65
+        width: 177
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3befb1ba47be8c820800000000000000
+      internalID: 2938857643178720947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy-veil-binder-attack-directions-v1_0: -7259907497543649180
+      enemy-veil-binder-attack-directions-v1_1: 6277901257198450352
+      enemy-veil-binder-attack-directions-v1_10: 5993543217373443487
+      enemy-veil-binder-attack-directions-v1_11: -982378717079491932
+      enemy-veil-binder-attack-directions-v1_12: -5392851061460854030
+      enemy-veil-binder-attack-directions-v1_13: 4273677965104308815
+      enemy-veil-binder-attack-directions-v1_14: 1100766551817426617
+      enemy-veil-binder-attack-directions-v1_15: 8932188506344486281
+      enemy-veil-binder-attack-directions-v1_16: -3263053124661578469
+      enemy-veil-binder-attack-directions-v1_17: 5121547966350778028
+      enemy-veil-binder-attack-directions-v1_18: -5922877806391629275
+      enemy-veil-binder-attack-directions-v1_19: -3715571024047191870
+      enemy-veil-binder-attack-directions-v1_2: -3719433080003452303
+      enemy-veil-binder-attack-directions-v1_20: 3153849484390328759
+      enemy-veil-binder-attack-directions-v1_21: 530104152192009197
+      enemy-veil-binder-attack-directions-v1_22: -3120845714606412976
+      enemy-veil-binder-attack-directions-v1_23: 57303357884650813
+      enemy-veil-binder-attack-directions-v1_24: 3942642803489541794
+      enemy-veil-binder-attack-directions-v1_25: 77945667681038194
+      enemy-veil-binder-attack-directions-v1_26: -4806802454036722190
+      enemy-veil-binder-attack-directions-v1_27: -9187866004056595630
+      enemy-veil-binder-attack-directions-v1_28: 4371761919793304331
+      enemy-veil-binder-attack-directions-v1_29: 2938857643178720947
+      enemy-veil-binder-attack-directions-v1_3: 7873516524672599356
+      enemy-veil-binder-attack-directions-v1_4: 6064401464650701922
+      enemy-veil-binder-attack-directions-v1_5: 4110924426785139981
+      enemy-veil-binder-attack-directions-v1_6: -8991709045070108765
+      enemy-veil-binder-attack-directions-v1_7: 8643142310576300683
+      enemy-veil-binder-attack-directions-v1_8: 9160898894664113812
+      enemy-veil-binder-attack-directions-v1_9: -885844050398586496
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

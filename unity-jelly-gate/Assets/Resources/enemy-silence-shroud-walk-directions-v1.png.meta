@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 10e85c0636aac444984fe27aeb1a4651
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2608637069614169430
+    second: enemy-silence-shroud-walk-directions-v1_0
+  - first:
+      213: 8276291318081221008
+    second: enemy-silence-shroud-walk-directions-v1_1
+  - first:
+      213: 5806477621026148702
+    second: enemy-silence-shroud-walk-directions-v1_2
+  - first:
+      213: -4044806995058102997
+    second: enemy-silence-shroud-walk-directions-v1_3
+  - first:
+      213: 2286512316093820916
+    second: enemy-silence-shroud-walk-directions-v1_4
+  - first:
+      213: 8383238704133792492
+    second: enemy-silence-shroud-walk-directions-v1_5
+  - first:
+      213: -6911799542774466745
+    second: enemy-silence-shroud-walk-directions-v1_6
+  - first:
+      213: 149006600749845712
+    second: enemy-silence-shroud-walk-directions-v1_7
+  - first:
+      213: 4068340733706401331
+    second: enemy-silence-shroud-walk-directions-v1_8
+  - first:
+      213: -2115949933544408926
+    second: enemy-silence-shroud-walk-directions-v1_9
+  - first:
+      213: 4741350567166424344
+    second: enemy-silence-shroud-walk-directions-v1_10
+  - first:
+      213: -5482018525396540764
+    second: enemy-silence-shroud-walk-directions-v1_11
+  - first:
+      213: 434282284202338028
+    second: enemy-silence-shroud-walk-directions-v1_12
+  - first:
+      213: 8952934152367813927
+    second: enemy-silence-shroud-walk-directions-v1_13
+  - first:
+      213: -200118322066986521
+    second: enemy-silence-shroud-walk-directions-v1_14
+  - first:
+      213: 6826227987091915082
+    second: enemy-silence-shroud-walk-directions-v1_15
+  - first:
+      213: 4361665775148429046
+    second: enemy-silence-shroud-walk-directions-v1_16
+  - first:
+      213: 2368532835732605963
+    second: enemy-silence-shroud-walk-directions-v1_17
+  - first:
+      213: 5628166111301776429
+    second: enemy-silence-shroud-walk-directions-v1_18
+  - first:
+      213: 755713345431677928
+    second: enemy-silence-shroud-walk-directions-v1_19
+  - first:
+      213: 7106050762620217453
+    second: enemy-silence-shroud-walk-directions-v1_20
+  - first:
+      213: 8691338666274275537
+    second: enemy-silence-shroud-walk-directions-v1_21
+  - first:
+      213: 337285197235555459
+    second: enemy-silence-shroud-walk-directions-v1_22
+  - first:
+      213: 7779426481257421010
+    second: enemy-silence-shroud-walk-directions-v1_23
+  - first:
+      213: 3676881087383124185
+    second: enemy-silence-shroud-walk-directions-v1_24
+  - first:
+      213: -5969253506832550395
+    second: enemy-silence-shroud-walk-directions-v1_25
+  - first:
+      213: -874320391596953793
+    second: enemy-silence-shroud-walk-directions-v1_26
+  - first:
+      213: -2011915939853928804
+    second: enemy-silence-shroud-walk-directions-v1_27
+  - first:
+      213: -2024998626662856947
+    second: enemy-silence-shroud-walk-directions-v1_28
+  - first:
+      213: -5612168207934178804
+    second: enemy-silence-shroud-walk-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 806
+        width: 178
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa24bb508624ccbd0800000000000000
+      internalID: -2608637069614169430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 806
+        width: 199
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09171e7aa1b4bd270800000000000000
+      internalID: 8276291318081221008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 806
+        width: 194
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51d48dd1a0c49050800000000000000
+      internalID: 5806477621026148702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 806
+        width: 169
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2deb82e775fdd7c0800000000000000
+      internalID: -4044806995058102997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 806
+        width: 169
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffe35746d25bbf10800000000000000
+      internalID: 2286512316093820916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 806
+        width: 171
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce263336f2f375470800000000000000
+      internalID: 8383238704133792492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 595
+        width: 191
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7477836afea5410a0800000000000000
+      internalID: -6911799542774466745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 595
+        width: 195
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc02e2c6b0611200800000000000000
+      internalID: 149006600749845712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 595
+        width: 184
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33672d1a756a57830800000000000000
+      internalID: 4068340733706401331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 595
+        width: 188
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8f2980fb2a2a2e0800000000000000
+      internalID: -2115949933544408926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 595
+        width: 191
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8153d875839acc140800000000000000
+      internalID: 4741350567166424344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 595
+        width: 178
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2e0a53235fbe3b0800000000000000
+      internalID: -5482018525396540764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 410
+        width: 221
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce62022cf61e60600800000000000000
+      internalID: 434282284202338028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 411
+        width: 207
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725b8594d263f3c70800000000000000
+      internalID: 8952934152367813927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 410
+        width: 206
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e966244279093df0800000000000000
+      internalID: -200118322066986521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 411
+        width: 201
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a418176ff22abbe50800000000000000
+      internalID: 6826227987091915082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 411
+        width: 211
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe63b4d9efb78c30800000000000000
+      internalID: 4361665775148429046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 411
+        width: 201
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cc0b8a018bed020800000000000000
+      internalID: 2368532835732605963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 229
+        width: 194
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24b80942434b1e40800000000000000
+      internalID: 5628166111301776429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 229
+        width: 189
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb2a72a845dc7a00800000000000000
+      internalID: 755713345431677928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 228
+        width: 187
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d682fd5e483cd9260800000000000000
+      internalID: 7106050762620217453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 229
+        width: 186
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d045e1e776dd9870800000000000000
+      internalID: 8691338666274275537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 228
+        width: 179
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c093199174ea400800000000000000
+      internalID: 337285197235555459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 229
+        width: 178
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d89d93ea2316fb60800000000000000
+      internalID: 7779426481257421010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 27
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8b2d63ed7e60330800000000000000
+      internalID: 3676881087383124185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 27
+        width: 165
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506bdfedf83f82da0800000000000000
+      internalID: -5969253506832550395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 27
+        width: 157
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fabf67c3acdd3f0800000000000000
+      internalID: -874320391596953793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 27
+        width: 152
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c967f0fbc1d3414e0800000000000000
+      internalID: -2011915939853928804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 27
+        width: 149
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d074b1b5a72c5e3e0800000000000000
+      internalID: -2024998626662856947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-silence-shroud-walk-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 27
+        width: 150
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ab75adfb29d12b0800000000000000
+      internalID: -5612168207934178804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy-silence-shroud-walk-directions-v1_0: -2608637069614169430
+      enemy-silence-shroud-walk-directions-v1_1: 8276291318081221008
+      enemy-silence-shroud-walk-directions-v1_10: 4741350567166424344
+      enemy-silence-shroud-walk-directions-v1_11: -5482018525396540764
+      enemy-silence-shroud-walk-directions-v1_12: 434282284202338028
+      enemy-silence-shroud-walk-directions-v1_13: 8952934152367813927
+      enemy-silence-shroud-walk-directions-v1_14: -200118322066986521
+      enemy-silence-shroud-walk-directions-v1_15: 6826227987091915082
+      enemy-silence-shroud-walk-directions-v1_16: 4361665775148429046
+      enemy-silence-shroud-walk-directions-v1_17: 2368532835732605963
+      enemy-silence-shroud-walk-directions-v1_18: 5628166111301776429
+      enemy-silence-shroud-walk-directions-v1_19: 755713345431677928
+      enemy-silence-shroud-walk-directions-v1_2: 5806477621026148702
+      enemy-silence-shroud-walk-directions-v1_20: 7106050762620217453
+      enemy-silence-shroud-walk-directions-v1_21: 8691338666274275537
+      enemy-silence-shroud-walk-directions-v1_22: 337285197235555459
+      enemy-silence-shroud-walk-directions-v1_23: 7779426481257421010
+      enemy-silence-shroud-walk-directions-v1_24: 3676881087383124185
+      enemy-silence-shroud-walk-directions-v1_25: -5969253506832550395
+      enemy-silence-shroud-walk-directions-v1_26: -874320391596953793
+      enemy-silence-shroud-walk-directions-v1_27: -2011915939853928804
+      enemy-silence-shroud-walk-directions-v1_28: -2024998626662856947
+      enemy-silence-shroud-walk-directions-v1_29: -5612168207934178804
+      enemy-silence-shroud-walk-directions-v1_3: -4044806995058102997
+      enemy-silence-shroud-walk-directions-v1_4: 2286512316093820916
+      enemy-silence-shroud-walk-directions-v1_5: 8383238704133792492
+      enemy-silence-shroud-walk-directions-v1_6: -6911799542774466745
+      enemy-silence-shroud-walk-directions-v1_7: 149006600749845712
+      enemy-silence-shroud-walk-directions-v1_8: 4068340733706401331
+      enemy-silence-shroud-walk-directions-v1_9: -2115949933544408926
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

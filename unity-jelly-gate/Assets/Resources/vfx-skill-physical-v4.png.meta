@@ -1,0 +1,4493 @@
+fileFormatVersion: 2
+guid: 3b7b4592f5ca93e4a957ab4805bf02cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2218806005261364997
+    second: vfx-skill-physical-v4_0
+  - first:
+      213: -2379894809782290336
+    second: vfx-skill-physical-v4_1
+  - first:
+      213: 8083614894487348514
+    second: vfx-skill-physical-v4_2
+  - first:
+      213: -6574516633254938334
+    second: vfx-skill-physical-v4_3
+  - first:
+      213: -6984346489886312730
+    second: vfx-skill-physical-v4_4
+  - first:
+      213: 2170607357250769832
+    second: vfx-skill-physical-v4_5
+  - first:
+      213: -2700946833962007508
+    second: vfx-skill-physical-v4_6
+  - first:
+      213: -3490485806656116638
+    second: vfx-skill-physical-v4_7
+  - first:
+      213: -4744643730207081406
+    second: vfx-skill-physical-v4_8
+  - first:
+      213: 2743576949862085114
+    second: vfx-skill-physical-v4_9
+  - first:
+      213: 3224344448178409743
+    second: vfx-skill-physical-v4_10
+  - first:
+      213: -8055270970014578397
+    second: vfx-skill-physical-v4_11
+  - first:
+      213: -1599790670906551721
+    second: vfx-skill-physical-v4_12
+  - first:
+      213: 210067430616215747
+    second: vfx-skill-physical-v4_13
+  - first:
+      213: 2851325814632534540
+    second: vfx-skill-physical-v4_14
+  - first:
+      213: 3579329754484885689
+    second: vfx-skill-physical-v4_15
+  - first:
+      213: 8953427868086083899
+    second: vfx-skill-physical-v4_16
+  - first:
+      213: -6175296295926554159
+    second: vfx-skill-physical-v4_17
+  - first:
+      213: 853727663830628803
+    second: vfx-skill-physical-v4_18
+  - first:
+      213: 7670159346339918774
+    second: vfx-skill-physical-v4_19
+  - first:
+      213: 7459991560199964957
+    second: vfx-skill-physical-v4_20
+  - first:
+      213: 2266305360015637658
+    second: vfx-skill-physical-v4_21
+  - first:
+      213: 2235136247991982120
+    second: vfx-skill-physical-v4_22
+  - first:
+      213: 8074762675077477555
+    second: vfx-skill-physical-v4_23
+  - first:
+      213: -5586269586461122618
+    second: vfx-skill-physical-v4_24
+  - first:
+      213: 8028706886138254811
+    second: vfx-skill-physical-v4_25
+  - first:
+      213: 1907502663868372759
+    second: vfx-skill-physical-v4_26
+  - first:
+      213: -449427440419701694
+    second: vfx-skill-physical-v4_27
+  - first:
+      213: -3596920408079356085
+    second: vfx-skill-physical-v4_28
+  - first:
+      213: 8666449013645346406
+    second: vfx-skill-physical-v4_29
+  - first:
+      213: 6837042722259397701
+    second: vfx-skill-physical-v4_30
+  - first:
+      213: -4712082303077040689
+    second: vfx-skill-physical-v4_31
+  - first:
+      213: 6151728844125824139
+    second: vfx-skill-physical-v4_32
+  - first:
+      213: 4998651997697511716
+    second: vfx-skill-physical-v4_33
+  - first:
+      213: 1162261580514839737
+    second: vfx-skill-physical-v4_34
+  - first:
+      213: 1375461289459175155
+    second: vfx-skill-physical-v4_35
+  - first:
+      213: -8648447960932947356
+    second: vfx-skill-physical-v4_36
+  - first:
+      213: 4642421740493163442
+    second: vfx-skill-physical-v4_37
+  - first:
+      213: -294533733025736419
+    second: vfx-skill-physical-v4_38
+  - first:
+      213: -7933185789504921357
+    second: vfx-skill-physical-v4_39
+  - first:
+      213: 6100946590027552336
+    second: vfx-skill-physical-v4_40
+  - first:
+      213: -4961511242036963168
+    second: vfx-skill-physical-v4_41
+  - first:
+      213: 3769315266672918661
+    second: vfx-skill-physical-v4_42
+  - first:
+      213: -160449258953408004
+    second: vfx-skill-physical-v4_43
+  - first:
+      213: 791711199674523004
+    second: vfx-skill-physical-v4_44
+  - first:
+      213: -3196546877765208889
+    second: vfx-skill-physical-v4_45
+  - first:
+      213: -8840451575108378128
+    second: vfx-skill-physical-v4_46
+  - first:
+      213: -3803161841339425306
+    second: vfx-skill-physical-v4_47
+  - first:
+      213: 5060907893843205844
+    second: vfx-skill-physical-v4_48
+  - first:
+      213: 1165010322708291230
+    second: vfx-skill-physical-v4_49
+  - first:
+      213: -4729920530520723698
+    second: vfx-skill-physical-v4_50
+  - first:
+      213: -4419795865504902607
+    second: vfx-skill-physical-v4_51
+  - first:
+      213: -4826018879284297340
+    second: vfx-skill-physical-v4_52
+  - first:
+      213: -2732019908216122907
+    second: vfx-skill-physical-v4_53
+  - first:
+      213: 8283460370297996136
+    second: vfx-skill-physical-v4_54
+  - first:
+      213: 1501457507668404163
+    second: vfx-skill-physical-v4_55
+  - first:
+      213: 1906024247978265211
+    second: vfx-skill-physical-v4_56
+  - first:
+      213: 1864880136935927415
+    second: vfx-skill-physical-v4_57
+  - first:
+      213: 7322665979563181726
+    second: vfx-skill-physical-v4_58
+  - first:
+      213: -1040774216157929251
+    second: vfx-skill-physical-v4_59
+  - first:
+      213: -6113086389183259464
+    second: vfx-skill-physical-v4_60
+  - first:
+      213: 3954000610921614699
+    second: vfx-skill-physical-v4_61
+  - first:
+      213: -3800296403658959475
+    second: vfx-skill-physical-v4_62
+  - first:
+      213: 4743688354590035041
+    second: vfx-skill-physical-v4_63
+  - first:
+      213: 3465624266712931908
+    second: vfx-skill-physical-v4_64
+  - first:
+      213: 8286987245811131007
+    second: vfx-skill-physical-v4_65
+  - first:
+      213: -2686943996521169066
+    second: vfx-skill-physical-v4_66
+  - first:
+      213: -3443740262112372754
+    second: vfx-skill-physical-v4_67
+  - first:
+      213: 8406823466069494445
+    second: vfx-skill-physical-v4_68
+  - first:
+      213: -6068676962871096924
+    second: vfx-skill-physical-v4_69
+  - first:
+      213: 485896941746040255
+    second: vfx-skill-physical-v4_70
+  - first:
+      213: -6427771231349011196
+    second: vfx-skill-physical-v4_71
+  - first:
+      213: 5001515118944813940
+    second: vfx-skill-physical-v4_72
+  - first:
+      213: -5176009713143805338
+    second: vfx-skill-physical-v4_73
+  - first:
+      213: -310980034698654083
+    second: vfx-skill-physical-v4_74
+  - first:
+      213: -9158099502502285538
+    second: vfx-skill-physical-v4_75
+  - first:
+      213: -7227825454375233210
+    second: vfx-skill-physical-v4_76
+  - first:
+      213: 8522935077070650165
+    second: vfx-skill-physical-v4_77
+  - first:
+      213: -6277965949610477690
+    second: vfx-skill-physical-v4_78
+  - first:
+      213: 5898596910593563802
+    second: vfx-skill-physical-v4_79
+  - first:
+      213: 6873162548766528130
+    second: vfx-skill-physical-v4_80
+  - first:
+      213: -1834342349455853656
+    second: vfx-skill-physical-v4_81
+  - first:
+      213: 9088190406098424958
+    second: vfx-skill-physical-v4_82
+  - first:
+      213: 48484241384111121
+    second: vfx-skill-physical-v4_83
+  - first:
+      213: 7327306489917373996
+    second: vfx-skill-physical-v4_84
+  - first:
+      213: -290385273785807130
+    second: vfx-skill-physical-v4_85
+  - first:
+      213: -2330248700992246997
+    second: vfx-skill-physical-v4_86
+  - first:
+      213: -3866392564885145655
+    second: vfx-skill-physical-v4_87
+  - first:
+      213: -3646722647447211457
+    second: vfx-skill-physical-v4_88
+  - first:
+      213: -5899991186224354074
+    second: vfx-skill-physical-v4_89
+  - first:
+      213: -3894215069899960116
+    second: vfx-skill-physical-v4_90
+  - first:
+      213: -3124472744620236590
+    second: vfx-skill-physical-v4_91
+  - first:
+      213: 4055968078153261584
+    second: vfx-skill-physical-v4_92
+  - first:
+      213: 8023371124577445263
+    second: vfx-skill-physical-v4_93
+  - first:
+      213: -6674677184398650681
+    second: vfx-skill-physical-v4_94
+  - first:
+      213: 628731026887415847
+    second: vfx-skill-physical-v4_95
+  - first:
+      213: -3681605859949421813
+    second: vfx-skill-physical-v4_96
+  - first:
+      213: -4208257395994917428
+    second: vfx-skill-physical-v4_97
+  - first:
+      213: -967388265307142230
+    second: vfx-skill-physical-v4_98
+  - first:
+      213: -5313022605205298094
+    second: vfx-skill-physical-v4_99
+  - first:
+      213: -8492484379199359470
+    second: vfx-skill-physical-v4_100
+  - first:
+      213: -885191277040270167
+    second: vfx-skill-physical-v4_101
+  - first:
+      213: 85652923157121519
+    second: vfx-skill-physical-v4_102
+  - first:
+      213: -6653543175081888923
+    second: vfx-skill-physical-v4_103
+  - first:
+      213: 6034204984721948941
+    second: vfx-skill-physical-v4_104
+  - first:
+      213: 2447098747096628681
+    second: vfx-skill-physical-v4_105
+  - first:
+      213: -7460958373703214576
+    second: vfx-skill-physical-v4_106
+  - first:
+      213: -6564482309057511812
+    second: vfx-skill-physical-v4_107
+  - first:
+      213: -1851916875232059200
+    second: vfx-skill-physical-v4_108
+  - first:
+      213: -6972552589262010077
+    second: vfx-skill-physical-v4_109
+  - first:
+      213: -7461367052431128955
+    second: vfx-skill-physical-v4_110
+  - first:
+      213: -1519083485261522176
+    second: vfx-skill-physical-v4_111
+  - first:
+      213: -5749738165425223300
+    second: vfx-skill-physical-v4_112
+  - first:
+      213: 889552045012366996
+    second: vfx-skill-physical-v4_113
+  - first:
+      213: -3679479912315904158
+    second: vfx-skill-physical-v4_114
+  - first:
+      213: 3397939138983497103
+    second: vfx-skill-physical-v4_115
+  - first:
+      213: 2736183795654592424
+    second: vfx-skill-physical-v4_116
+  - first:
+      213: -6315067472008493005
+    second: vfx-skill-physical-v4_117
+  - first:
+      213: -3286876697253420521
+    second: vfx-skill-physical-v4_118
+  - first:
+      213: -1009508667336679063
+    second: vfx-skill-physical-v4_119
+  - first:
+      213: -6391194848957069387
+    second: vfx-skill-physical-v4_120
+  - first:
+      213: 8123676364155588376
+    second: vfx-skill-physical-v4_121
+  - first:
+      213: -5497296684421490515
+    second: vfx-skill-physical-v4_122
+  - first:
+      213: -2845458173221096602
+    second: vfx-skill-physical-v4_123
+  - first:
+      213: 3636971902869204579
+    second: vfx-skill-physical-v4_124
+  - first:
+      213: -1418664766991088923
+    second: vfx-skill-physical-v4_125
+  - first:
+      213: -6908073108062209589
+    second: vfx-skill-physical-v4_126
+  - first:
+      213: -3895180418486761694
+    second: vfx-skill-physical-v4_127
+  - first:
+      213: -6826540196086975742
+    second: vfx-skill-physical-v4_128
+  - first:
+      213: 1520093360164987999
+    second: vfx-skill-physical-v4_129
+  - first:
+      213: 7659441860627790259
+    second: vfx-skill-physical-v4_130
+  - first:
+      213: 8059096640534340259
+    second: vfx-skill-physical-v4_131
+  - first:
+      213: -1735300771529287778
+    second: vfx-skill-physical-v4_132
+  - first:
+      213: -3206421517924100677
+    second: vfx-skill-physical-v4_133
+  - first:
+      213: -1426406671439825206
+    second: vfx-skill-physical-v4_134
+  - first:
+      213: 3448246607687704907
+    second: vfx-skill-physical-v4_135
+  - first:
+      213: -9172673086186181007
+    second: vfx-skill-physical-v4_136
+  - first:
+      213: -1630373502466915421
+    second: vfx-skill-physical-v4_137
+  - first:
+      213: -523560879260226579
+    second: vfx-skill-physical-v4_138
+  - first:
+      213: 5885198507190707165
+    second: vfx-skill-physical-v4_139
+  - first:
+      213: 4233228349748870637
+    second: vfx-skill-physical-v4_140
+  - first:
+      213: -2924616451714530355
+    second: vfx-skill-physical-v4_141
+  - first:
+      213: -9003510315283046188
+    second: vfx-skill-physical-v4_142
+  - first:
+      213: -9130464927951557421
+    second: vfx-skill-physical-v4_143
+  - first:
+      213: -5768292278613825725
+    second: vfx-skill-physical-v4_144
+  - first:
+      213: -5693524101454554445
+    second: vfx-skill-physical-v4_145
+  - first:
+      213: -4427811802928622204
+    second: vfx-skill-physical-v4_146
+  - first:
+      213: 3353254227639345142
+    second: vfx-skill-physical-v4_147
+  - first:
+      213: 6151882037675792169
+    second: vfx-skill-physical-v4_148
+  - first:
+      213: -162147244438148894
+    second: vfx-skill-physical-v4_149
+  - first:
+      213: 5603417628479857545
+    second: vfx-skill-physical-v4_150
+  - first:
+      213: 1492067394198068385
+    second: vfx-skill-physical-v4_151
+  - first:
+      213: 8997886848035212146
+    second: vfx-skill-physical-v4_152
+  - first:
+      213: 7186437577232207271
+    second: vfx-skill-physical-v4_153
+  - first:
+      213: -8884740359929575818
+    second: vfx-skill-physical-v4_154
+  - first:
+      213: -1093813034632017067
+    second: vfx-skill-physical-v4_155
+  - first:
+      213: -4493701475851562100
+    second: vfx-skill-physical-v4_156
+  - first:
+      213: 4549102128381025940
+    second: vfx-skill-physical-v4_157
+  - first:
+      213: -6405508168324874554
+    second: vfx-skill-physical-v4_158
+  - first:
+      213: 3428926258711372910
+    second: vfx-skill-physical-v4_159
+  - first:
+      213: -7268046333622454256
+    second: vfx-skill-physical-v4_160
+  - first:
+      213: 7221774858354282653
+    second: vfx-skill-physical-v4_161
+  - first:
+      213: 3770875608289951476
+    second: vfx-skill-physical-v4_162
+  - first:
+      213: 1827577022490888573
+    second: vfx-skill-physical-v4_163
+  - first:
+      213: -448322348301019035
+    second: vfx-skill-physical-v4_164
+  - first:
+      213: 8577790571784157643
+    second: vfx-skill-physical-v4_165
+  - first:
+      213: 5510584218348316142
+    second: vfx-skill-physical-v4_166
+  - first:
+      213: -5676418809136540872
+    second: vfx-skill-physical-v4_167
+  - first:
+      213: 9162441472702280238
+    second: vfx-skill-physical-v4_168
+  - first:
+      213: 731537081118325382
+    second: vfx-skill-physical-v4_169
+  - first:
+      213: -6443485482484142929
+    second: vfx-skill-physical-v4_170
+  - first:
+      213: 7083962239178701842
+    second: vfx-skill-physical-v4_171
+  - first:
+      213: 883615693701689929
+    second: vfx-skill-physical-v4_172
+  - first:
+      213: -1123751979541147154
+    second: vfx-skill-physical-v4_173
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1122
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f6b195e48cace10800000000000000
+      internalID: 2218806005261364997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1110
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068712c974ae8fed0800000000000000
+      internalID: -2379894809782290336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_2
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1107
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225a9feeae4ce2070800000000000000
+      internalID: 8083614894487348514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_3
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1105
+        width: 77
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22931f094ff92c4a0800000000000000
+      internalID: -6574516633254938334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_4
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1110
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e674124fdd921f90800000000000000
+      internalID: -6984346489886312730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_5
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1106
+        width: 74
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a318cb14eb8f1e10800000000000000
+      internalID: 2170607357250769832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_6
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1123
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c248a7c2a2f448ad0800000000000000
+      internalID: -2700946833962007508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_7
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1103
+        width: 74
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26828b8f6ad4f8fc0800000000000000
+      internalID: -3490485806656116638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_8
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1104
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24cf8336aa3a72eb0800000000000000
+      internalID: -4744643730207081406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 976
+        width: 73
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1ba7623b4231620800000000000000
+      internalID: 2743576949862085114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1031
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f015d2b313c2fbc20800000000000000
+      internalID: 3224344448178409743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 977
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329c3ce3bbde53090800000000000000
+      internalID: -8055270970014578397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_12
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 976
+        width: 82
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75291a16cd66cc9e0800000000000000
+      internalID: -1599790670906551721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_13
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1038
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c032c4173f4ae200800000000000000
+      internalID: 210067430616215747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_14
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 975
+        width: 83
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02d210b8b1f19720800000000000000
+      internalID: 2851325814632534540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_15
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1041
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8ce0692755ca130800000000000000
+      internalID: 3579329754484885689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_16
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 978
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31aa5f6537f04c70800000000000000
+      internalID: 8953427868086083899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_17
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 976
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1238aacb0fc4aa0800000000000000
+      internalID: -6175296295926554159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_18
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 976
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c97c8979cc09db00800000000000000
+      internalID: 853727663830628803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_19
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 974
+        width: 80
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3bb398941e17a60800000000000000
+      internalID: 7670159346339918774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 838
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19812d9cc6378760800000000000000
+      internalID: 7459991560199964957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 841
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cbb40b7b8837f10800000000000000
+      internalID: 2266305360015637658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_22
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 887
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8285926439cc40f10800000000000000
+      internalID: 2235136247991982120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 897
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4739dfed15f0070800000000000000
+      internalID: 8074762675077477555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_24
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 903
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf9a6f88659972b0800000000000000
+      internalID: -5586269586461122618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_25
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 888
+        width: 43
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5d0020062bb6f60800000000000000
+      internalID: 8028706886138254811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_26
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 840
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7175cfff09fc87a10800000000000000
+      internalID: 1907502663868372759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_27
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 839
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c7875cf1053c9f0800000000000000
+      internalID: -449427440419701694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_28
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 839
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fa31732fb251ec0800000000000000
+      internalID: -3596920408079356085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_29
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 838
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6668d5a0679654870800000000000000
+      internalID: 8666449013645346406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_30
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 837
+        width: 77
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ce076b12e02ee50800000000000000
+      internalID: 6837042722259397701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_31
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 892
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd30bc6c125b9eb0800000000000000
+      internalID: -4712082303077040689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_32
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 839
+        width: 69
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84e4ac5ac45f5550800000000000000
+      internalID: 6151728844125824139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_33
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 873
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4219e860287ce5540800000000000000
+      internalID: 4998651997697511716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 862
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bccba2efbe212010800000000000000
+      internalID: 1162261580514839737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_35
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 703
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fec38851ce961310800000000000000
+      internalID: 1375461289459175155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_36
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 757
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ae326a66a8af780800000000000000
+      internalID: -8648447960932947356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_37
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 759
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb45a3f9f13d6040800000000000000
+      internalID: 4642421740493163442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_38
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 748
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1991ac512b99ebf0800000000000000
+      internalID: -294533733025736419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_39
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 744
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0e1676e89a7e190800000000000000
+      internalID: -7933185789504921357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_40
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 719
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0561934799aeaa450800000000000000
+      internalID: 6100946590027552336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_41
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 759
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8974500db252bb0800000000000000
+      internalID: -4961511242036963168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_42
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 697
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5800f7ca34c4f4430800000000000000
+      internalID: 3769315266672918661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_43
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 699
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf18b93cf38f5cdf0800000000000000
+      internalID: -160449258953408004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_44
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 698
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d5c453429bcfa00800000000000000
+      internalID: 791711199674523004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_45
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 735
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4bbeafc8593a3d0800000000000000
+      internalID: -3196546877765208889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_46
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 703
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f16f939128605580800000000000000
+      internalID: -8840451575108378128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_47
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 746
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed94af8474783bc0800000000000000
+      internalID: -3803161841339425306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_48
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 726
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de9e756ae4fb3640800000000000000
+      internalID: 5060907893843205844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_49
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 746
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ed0bc47b2fa2010800000000000000
+      internalID: 1165010322708291230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_50
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 745
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f2c727652fb5eb0800000000000000
+      internalID: -4729920530520723698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_51
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 733
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13217d0d31bb9a2c0800000000000000
+      internalID: -4419795865504902607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_52
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 727
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4814eec0669860db0800000000000000
+      internalID: -4826018879284297340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_53
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 734
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e19b7b4e5ae51ad0800000000000000
+      internalID: -2732019908216122907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_54
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 724
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86343a2b153c4f270800000000000000
+      internalID: 8283460370297996136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_55
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 725
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c72bede5af36d410800000000000000
+      internalID: 1501457507668404163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_56
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 724
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a860a74fe837a10800000000000000
+      internalID: 1906024247978265211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_57
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 699
+        width: 61
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e6fbe9a9261e910800000000000000
+      internalID: 1864880136935927415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_58
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 697
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9683b849e55f9560800000000000000
+      internalID: 7322665979563181726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_59
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 725
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0658a5d5d6e81f0800000000000000
+      internalID: -1040774216157929251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_60
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 700
+        width: 59
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcd47b4154f92ba0800000000000000
+      internalID: -6113086389183259464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_61
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 718
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d09af3b9e6fd630800000000000000
+      internalID: 3954000610921614699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_62
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 710
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8596b24e82a24bc0800000000000000
+      internalID: -3800296403658959475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_63
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 504
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c0f74ec67f4d140800000000000000
+      internalID: 4743688354590035041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_64
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 501
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ed56ea8ee581030800000000000000
+      internalID: 3465624266712931908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_65
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 499
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72e3c46efa410370800000000000000
+      internalID: 8286987245811131007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_66
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 496
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fbcf3dbae06bad0800000000000000
+      internalID: -2686943996521169066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_67
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 494
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7d4123a706530d0800000000000000
+      internalID: -3443740262112372754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_68
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 559
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa8d70b6690ba470800000000000000
+      internalID: 8406823466069494445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_69
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 537
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9c87b947ab7cba0800000000000000
+      internalID: -6068676962871096924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_70
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 505
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbda832b1b04eb600800000000000000
+      internalID: 485896941746040255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_71
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 501
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d87f1fe18fbc6a0800000000000000
+      internalID: -6427771231349011196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_72
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 544
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47383736083f86540800000000000000
+      internalID: 5001515118944813940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_73
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 505
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a871ee69e1b28b0800000000000000
+      internalID: -5176009713143805338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_74
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 530
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e4c8b5e4d2fabf0800000000000000
+      internalID: -310980034698654083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_75
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 511
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f6baf2605e7e080800000000000000
+      internalID: -9158099502502285538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_76
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 518
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649107d3b0b91bb90800000000000000
+      internalID: -7227825454375233210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_77
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 358
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b3380db4c874670800000000000000
+      internalID: 8522935077070650165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_78
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 355
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687387d1b3f20e8a0800000000000000
+      internalID: -6277965949610477690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_79
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 353
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c552953a60cd150800000000000000
+      internalID: 5898596910593563802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_80
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 391
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2825fba2ce0626f50800000000000000
+      internalID: 6873162548766528130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_81
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 395
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a77a381a5b1b86e0800000000000000
+      internalID: -1834342349455853656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_82
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 413
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e741c96e50dbf1e70800000000000000
+      internalID: 9088190406098424958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_83
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 355
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c77e029204ca000800000000000000
+      internalID: 48484241384111121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_84
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 355
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e70fb4e62dfa560800000000000000
+      internalID: 7327306489917373996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_85
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 352
+        width: 71
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee0efbc12858fbf0800000000000000
+      internalID: -290385273785807130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_86
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 402
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2baa03172b49afd0800000000000000
+      internalID: -2330248700992246997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_87
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 351
+        width: 79
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c73fcf7270d75ac0800000000000000
+      internalID: -3866392564885145655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_88
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 405
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f327984c21d346dc0800000000000000
+      internalID: -3646722647447211457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_89
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 417
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec692f86450f1ea0800000000000000
+      internalID: -5899991186224354074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_90
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 362
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0d3afb608f4f9c0800000000000000
+      internalID: -3894215069899960116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_91
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 407
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0658ac794a3a4d0800000000000000
+      internalID: -3124472744620236590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_92
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 217
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01226a64a71b94830800000000000000
+      internalID: 4055968078153261584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_93
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 253
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85a095378db85f60800000000000000
+      internalID: 8023371124577445263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_94
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 272
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c29389f678ce53a0800000000000000
+      internalID: -6674677184398650681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_95
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 216
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72814eca983b9b800800000000000000
+      internalID: 628731026887415847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_96
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 276
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bd7b2f9fe48ecc0800000000000000
+      internalID: -3681605859949421813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_97
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 214
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc50054d1344995c0800000000000000
+      internalID: -4208257395994917428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_98
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 275
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa78c768f752392f0800000000000000
+      internalID: -967388265307142230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_99
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2542e15171a5446b0800000000000000
+      internalID: -5313022605205298094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_100
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 213
+        width: 69
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216b445c372a42a80800000000000000
+      internalID: -8492484379199359470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_101
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 263
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a48db5393b27b3f0800000000000000
+      internalID: -885191277040270167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_102
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 258
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe901ca31ec403100800000000000000
+      internalID: 85652923157121519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_103
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 276
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563f487fbbdd9a3a0800000000000000
+      internalID: -6653543175081888923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_104
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 275
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d014e38867dcdb350800000000000000
+      internalID: 6034204984721948941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_105
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 260
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd7ffe5857d5f120800000000000000
+      internalID: 2447098747096628681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_106
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 256
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a917393e9557890800000000000000
+      internalID: -7460958373703214576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_107
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 269
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e7a4abe1646e4a0800000000000000
+      internalID: -6564482309057511812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_108
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 256
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0ed32f96bac46e0800000000000000
+      internalID: -1851916875232059200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_109
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 272
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329ce4bbc548c3f90800000000000000
+      internalID: -6972552589262010077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_110
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 217
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5860a05a236e37890800000000000000
+      internalID: -7461367052431128955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_111
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 266
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b13dc5e912beae0800000000000000
+      internalID: -1519083485261522176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_112
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 264
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79c25a1a93d430b0800000000000000
+      internalID: -5749738165425223300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_113
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 262
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4963f243fd2585c00800000000000000
+      internalID: 889552045012366996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_114
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 269
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f9934b38cdfecc0800000000000000
+      internalID: -3679479912315904158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_115
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 212
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d0283d4a7e72f20800000000000000
+      internalID: 3397939138983497103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_116
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 246
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a70c2c4aa0e8f520800000000000000
+      internalID: 2736183795654592424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_117
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 246
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3384f46c79f5c58a0800000000000000
+      internalID: -6315067472008493005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_118
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 246
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71263b7fe0ba262d0800000000000000
+      internalID: -3286876697253420521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_119
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 253
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96128b537318df1f0800000000000000
+      internalID: -1009508667336679063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_120
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 245
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b78b99952aed47a0800000000000000
+      internalID: -6391194848957069387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_121
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 237
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f0bb3bc981db070800000000000000
+      internalID: 8123676364155588376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_122
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 251
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8df1c9acda5b3b0800000000000000
+      internalID: -5497296684421490515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_123
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 247
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663bce90ed6e288d0800000000000000
+      internalID: -2845458173221096602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_124
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 242
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e68981dae197230800000000000000
+      internalID: 3636971902869204579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_125
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 248
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2422c29e3ef4ce0800000000000000
+      internalID: -1418664766991088923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_126
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 241
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9f587db189120a0800000000000000
+      internalID: -6908073108062209589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_127
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 244
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2270a040c0a81f9c0800000000000000
+      internalID: -3895180418486761694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_128
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 239
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2037f473cd14341a0800000000000000
+      internalID: -6826540196086975742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_129
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 211
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5460167bd4781510800000000000000
+      internalID: 1520093360164987999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_130
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 210
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9f9707acdcb4a60800000000000000
+      internalID: 7659441860627790259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_131
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 237
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2e79512b9a7df60800000000000000
+      internalID: 8059096640534340259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_132
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 220
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97198e6429fae7e0800000000000000
+      internalID: -1735300771529287778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_133
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 225
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb517f72e908083d0800000000000000
+      internalID: -3206421517924100677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_134
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 223
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6f49390b2643ce0800000000000000
+      internalID: -1426406671439825206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_135
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 77
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41eb252502aadf20800000000000000
+      internalID: 3448246607687704907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_136
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 136
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e26115d6e14b080800000000000000
+      internalID: -9172673086186181007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_137
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 133
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3004600ffbf59e0800000000000000
+      internalID: -1630373502466915421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_138
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 129
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb276d7720fbb8f0800000000000000
+      internalID: -523560879260226579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_139
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 132
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3e2c57cdc6ca150800000000000000
+      internalID: 5885198507190707165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_140
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 111
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedf4e761c27fba30800000000000000
+      internalID: 4233228349748870637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_141
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 104
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3ca4b15dca967d0800000000000000
+      internalID: -2924616451714530355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_142
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 108
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d02df5221b1d0380800000000000000
+      internalID: -9003510315283046188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_143
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 102
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dce847f5821a4180800000000000000
+      internalID: -9130464927951557421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_144
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 124
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347289cfbb8e2ffa0800000000000000
+      internalID: -5768292278613825725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_145
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 126
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba1daccef98cf0b0800000000000000
+      internalID: -5693524101454554445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_146
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 120
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4855822ff904d82c0800000000000000
+      internalID: -4427811802928622204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_147
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 126
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff150824f6298e20800000000000000
+      internalID: 3353254227639345142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_148
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 126
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92795c38e10ef5550800000000000000
+      internalID: 6151882037675792169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_149
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 118
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8a4f5b0ffefbdf0800000000000000
+      internalID: -162147244438148894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_150
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 130
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98324b915a653cd40800000000000000
+      internalID: 5603417628479857545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_151
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 105
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac5e14c363e4b410800000000000000
+      internalID: 1492067394198068385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_152
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 111
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b4c4a5a6aeedc70800000000000000
+      internalID: 8997886848035212146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_153
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 102
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adc17fa6ea5bb360800000000000000
+      internalID: 7186437577232207271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_154
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 77
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67642dc47bf03b480800000000000000
+      internalID: -8884740359929575818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_155
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 108
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b011c17def1d0f0800000000000000
+      internalID: -1093813034632017067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_156
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 100
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83183df05a23a1c0800000000000000
+      internalID: -4493701475851562100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_157
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 89
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49edf199848a12f30800000000000000
+      internalID: 4549102128381025940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_158
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 112
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cef12d32401b17a0800000000000000
+      internalID: -6405508168324874554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_159
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 77
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64208bd34ef59f20800000000000000
+      internalID: 3428926258711372910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_160
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 102
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0187a590e56b22b90800000000000000
+      internalID: -7268046333622454256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_161
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 75
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90dd0898f5e83460800000000000000
+      internalID: 7221774858354282653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_162
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 113
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4febe440367d45430800000000000000
+      internalID: 3770875608289951476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_163
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 101
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d794c397e9bdc5910800000000000000
+      internalID: 1827577022490888573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_164
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 105
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56816a4133d37c9f0800000000000000
+      internalID: -448322348301019035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_165
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 75
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9b3e4f31f6a0770800000000000000
+      internalID: 8577790571784157643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_166
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 74
+        width: 53
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee566877627897c40800000000000000
+      internalID: 5510584218348316142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_167
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 84
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83312150b2f4931b0800000000000000
+      internalID: -5676418809136540872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_168
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 76
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22f9b789f7872f70800000000000000
+      internalID: 9162441472702280238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_169
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 81
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a75147911f62a00800000000000000
+      internalID: 731537081118325382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_170
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 74
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac652db7142496a0800000000000000
+      internalID: -6443485482484142929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_171
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 73
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cf684cf1a4f4260800000000000000
+      internalID: 7083962239178701842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_172
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942bc05bacb334c00800000000000000
+      internalID: 883615693701689929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-skill-physical-v4_173
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 77
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1decb4781a760f0800000000000000
+      internalID: -1123751979541147154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

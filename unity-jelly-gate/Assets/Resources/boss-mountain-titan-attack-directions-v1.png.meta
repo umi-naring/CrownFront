@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: ccb41b35c43dc194293388db8c4e2c06
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4190205545699491352
+    second: boss-mountain-titan-attack-directions-v1_0
+  - first:
+      213: 2392874075273398648
+    second: boss-mountain-titan-attack-directions-v1_1
+  - first:
+      213: 3632765284611421341
+    second: boss-mountain-titan-attack-directions-v1_2
+  - first:
+      213: -7190555399821131874
+    second: boss-mountain-titan-attack-directions-v1_3
+  - first:
+      213: -7084439267476947906
+    second: boss-mountain-titan-attack-directions-v1_4
+  - first:
+      213: -2700711556247263128
+    second: boss-mountain-titan-attack-directions-v1_5
+  - first:
+      213: -778743495890453548
+    second: boss-mountain-titan-attack-directions-v1_6
+  - first:
+      213: 1703100873729989058
+    second: boss-mountain-titan-attack-directions-v1_7
+  - first:
+      213: -2687100224615269151
+    second: boss-mountain-titan-attack-directions-v1_8
+  - first:
+      213: -5172021465664945684
+    second: boss-mountain-titan-attack-directions-v1_9
+  - first:
+      213: 2655716626841896751
+    second: boss-mountain-titan-attack-directions-v1_10
+  - first:
+      213: 4623415294417944345
+    second: boss-mountain-titan-attack-directions-v1_11
+  - first:
+      213: 7562467183641423252
+    second: boss-mountain-titan-attack-directions-v1_12
+  - first:
+      213: -7146526140266765071
+    second: boss-mountain-titan-attack-directions-v1_13
+  - first:
+      213: -963927196499293822
+    second: boss-mountain-titan-attack-directions-v1_14
+  - first:
+      213: -75307885890313901
+    second: boss-mountain-titan-attack-directions-v1_15
+  - first:
+      213: 3598204837127934743
+    second: boss-mountain-titan-attack-directions-v1_16
+  - first:
+      213: 7941061895959951345
+    second: boss-mountain-titan-attack-directions-v1_17
+  - first:
+      213: -6065337019529230924
+    second: boss-mountain-titan-attack-directions-v1_18
+  - first:
+      213: 1046812004977946406
+    second: boss-mountain-titan-attack-directions-v1_19
+  - first:
+      213: -8187999802354838797
+    second: boss-mountain-titan-attack-directions-v1_20
+  - first:
+      213: -3467992467204256621
+    second: boss-mountain-titan-attack-directions-v1_21
+  - first:
+      213: -8097159975771694789
+    second: boss-mountain-titan-attack-directions-v1_22
+  - first:
+      213: 3284156568278625700
+    second: boss-mountain-titan-attack-directions-v1_23
+  - first:
+      213: -3407491735782332895
+    second: boss-mountain-titan-attack-directions-v1_24
+  - first:
+      213: 1090095747161430241
+    second: boss-mountain-titan-attack-directions-v1_25
+  - first:
+      213: 5182334010625911990
+    second: boss-mountain-titan-attack-directions-v1_26
+  - first:
+      213: -6918972377675586911
+    second: boss-mountain-titan-attack-directions-v1_27
+  - first:
+      213: 883287587180145222
+    second: boss-mountain-titan-attack-directions-v1_28
+  - first:
+      213: -8810193310226270842
+    second: boss-mountain-titan-attack-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 900
+        width: 163
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e3a4f3eb9962a30800000000000000
+      internalID: 4190205545699491352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 898
+        width: 177
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87989e02b42353120800000000000000
+      internalID: 2392874075273398648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 899
+        width: 198
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9472a577cc2a6230800000000000000
+      internalID: 3632765284611421341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 898
+        width: 256
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ff4e706f3063c90800000000000000
+      internalID: -7190555399821131874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 899
+        width: 164
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c353d65040fad90800000000000000
+      internalID: -7084439267476947906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 900
+        width: 162
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868e6190625258ad0800000000000000
+      internalID: -2700711556247263128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 672
+        width: 155
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbbd4c9ae85135f0800000000000000
+      internalID: -778743495890453548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 671
+        width: 170
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c95553a831a2a710800000000000000
+      internalID: 1703100873729989058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 671
+        width: 205
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec3fe3259085bad0800000000000000
+      internalID: -2687100224615269151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 670
+        width: 259
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1885821e94938b0800000000000000
+      internalID: -5172021465664945684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 671
+        width: 155
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27820793300bd420800000000000000
+      internalID: 2655716626841896751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 672
+        width: 154
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fb3e0e6bba92040800000000000000
+      internalID: 4623415294417944345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 454
+        width: 117
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dee7af5d743f860800000000000000
+      internalID: 7562467183641423252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 454
+        width: 126
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f42b5fd65072dc90800000000000000
+      internalID: -7146526140266765071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 454
+        width: 162
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289425762517f92f0800000000000000
+      internalID: -963927196499293822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 454
+        width: 256
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351e8b470e374fef0800000000000000
+      internalID: -75307885890313901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 454
+        width: 121
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7135a1a3c346fe130800000000000000
+      internalID: 3598204837127934743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 454
+        width: 117
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7351888b1543e60800000000000000
+      internalID: 7941061895959951345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 248
+        width: 137
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b50fe3cd1893dba0800000000000000
+      internalID: -6065337019529230924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 247
+        width: 143
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f2357e8f5078e00800000000000000
+      internalID: 1046812004977946406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 247
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2dba7cf816e5e80800000000000000
+      internalID: -8187999802354838797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 247
+        width: 233
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c4f8ca9373fdfc0800000000000000
+      internalID: -3467992467204256621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 248
+        width: 135
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b391e9217eb11af80800000000000000
+      internalID: -8097159975771694789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 248
+        width: 135
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad6307affaa39d20800000000000000
+      internalID: 3284156568278625700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 32
+        width: 154
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1266d99e15826b0d0800000000000000
+      internalID: -3407491735782332895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 32
+        width: 163
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e898b47e4cc02f00800000000000000
+      internalID: 1090095747161430241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 32
+        width: 202
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc68c253595be740800000000000000
+      internalID: 5182334010625911990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 32
+        width: 236
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a228e1e74fdaff90800000000000000
+      internalID: -6918972377675586911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 32
+        width: 148
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a62647161124c00800000000000000
+      internalID: 883287587180145222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-attack-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 32
+        width: 152
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685b07ddcd7ebb580800000000000000
+      internalID: -8810193310226270842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

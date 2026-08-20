@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: 98f076581ad973d40b3522d20e7a7445
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3219296267732938245
+    second: hero-direction-up-v1_0
+  - first:
+      213: 8803303865526952423
+    second: hero-direction-up-v1_1
+  - first:
+      213: -1588993061727473140
+    second: hero-direction-up-v1_2
+  - first:
+      213: 1805561793127424265
+    second: hero-direction-up-v1_3
+  - first:
+      213: 8669166092631135152
+    second: hero-direction-up-v1_4
+  - first:
+      213: -2877889572602179650
+    second: hero-direction-up-v1_5
+  - first:
+      213: 715996694224239479
+    second: hero-direction-up-v1_6
+  - first:
+      213: 70104220685967588
+    second: hero-direction-up-v1_7
+  - first:
+      213: 6952537043481331995
+    second: hero-direction-up-v1_8
+  - first:
+      213: -8976246882915501277
+    second: hero-direction-up-v1_9
+  - first:
+      213: 1507759245143756765
+    second: hero-direction-up-v1_10
+  - first:
+      213: -1325600728185114024
+    second: hero-direction-up-v1_11
+  - first:
+      213: -2118384315591967406
+    second: hero-direction-up-v1_12
+  - first:
+      213: 8648392970853108876
+    second: hero-direction-up-v1_13
+  - first:
+      213: -4117924254300672039
+    second: hero-direction-up-v1_14
+  - first:
+      213: -7205572749020887502
+    second: hero-direction-up-v1_15
+  - first:
+      213: -7606557474981316227
+    second: hero-direction-up-v1_16
+  - first:
+      213: -8406468951575347270
+    second: hero-direction-up-v1_17
+  - first:
+      213: -7655777164729279798
+    second: hero-direction-up-v1_18
+  - first:
+      213: 1118217960072062362
+    second: hero-direction-up-v1_19
+  - first:
+      213: -2374002667800929507
+    second: hero-direction-up-v1_20
+  - first:
+      213: 2933820551068937498
+    second: hero-direction-up-v1_21
+  - first:
+      213: -3191904084931421321
+    second: hero-direction-up-v1_22
+  - first:
+      213: 2467595958624171632
+    second: hero-direction-up-v1_23
+  - first:
+      213: 9084743093919303055
+    second: hero-direction-up-v1_24
+  - first:
+      213: -5966552042084961259
+    second: hero-direction-up-v1_25
+  - first:
+      213: -8526536830175000732
+    second: hero-direction-up-v1_26
+  - first:
+      213: 9103750018191870429
+    second: hero-direction-up-v1_27
+  - first:
+      213: -4206973679456718523
+    second: hero-direction-up-v1_28
+  - first:
+      213: 6353929938453631567
+    second: hero-direction-up-v1_29
+  - first:
+      213: -538271209908739971
+    second: hero-direction-up-v1_30
+  - first:
+      213: -3826913619330169687
+    second: hero-direction-up-v1_31
+  - first:
+      213: 728362148179077423
+    second: hero-direction-up-v1_32
+  - first:
+      213: 2117154798781855884
+    second: hero-direction-up-v1_33
+  - first:
+      213: 5623995983736279242
+    second: hero-direction-up-v1_34
+  - first:
+      213: -4044694891341861110
+    second: hero-direction-up-v1_35
+  - first:
+      213: -8911310654217735517
+    second: hero-direction-up-v1_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero-direction-up-v1_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1009
+        width: 180
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1990fd913c253d0800000000000000
+      internalID: -3219296267732938245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1012
+        width: 175
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1ae8a493e9b2a70800000000000000
+      internalID: 8803303865526952423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1016
+        width: 168
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c027c2daa33c2f9e0800000000000000
+      internalID: -1588993061727473140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_3
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1008
+        width: 141
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901a06372e4ae0910800000000000000
+      internalID: 1805561793127424265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_4
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1002
+        width: 156
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3d32a41a01f4870800000000000000
+      internalID: 8669166092631135152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_5
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1000
+        width: 154
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf0f327eaeaf08d0800000000000000
+      internalID: -2877889572602179650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1000
+        width: 147
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77bf69b233bbfe900800000000000000
+      internalID: 715996694224239479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 751
+        width: 171
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e02e33da6f09f000800000000000000
+      internalID: 70104220685967588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 757
+        width: 165
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19037cda9f5c7060800000000000000
+      internalID: 6952537043481331995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_9
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 751
+        width: 159
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b3d97a407fd6380800000000000000
+      internalID: -8976246882915501277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 750
+        width: 150
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfca958b03ace410800000000000000
+      internalID: 1507759245143756765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_11
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 751
+        width: 172
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852f68a39258a9de0800000000000000
+      internalID: -1325600728185114024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_12
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 745
+        width: 185
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25db16b40bcf992e0800000000000000
+      internalID: -2118384315591967406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 745
+        width: 142
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c4fa9f593450870800000000000000
+      internalID: 8648392970853108876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_14
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 524
+        width: 171
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df617a55b13ad6c0800000000000000
+      internalID: -4117924254300672039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 525
+        width: 167
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2360063f2c9a00c90800000000000000
+      internalID: -7205572749020887502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 524
+        width: 163
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79752c1744107690800000000000000
+      internalID: -7606557474981316227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_17
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 524
+        width: 154
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf30062709365b80800000000000000
+      internalID: -8406468951575347270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_18
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 523
+        width: 123
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca93c01b3731c590800000000000000
+      internalID: -7655777164729279798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_19
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 583
+        width: 82
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95ae836f45b48f00800000000000000
+      internalID: 1118217960072062362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_20
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 608
+        width: 93
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b55e1d629dd0fd0800000000000000
+      internalID: -2374002667800929507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_21
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 524
+        width: 149
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d64354f3607b820800000000000000
+      internalID: 2933820551068937498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 297
+        width: 180
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b5b8c652414b3d0800000000000000
+      internalID: -3191904084931421321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_23
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 295
+        width: 180
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076bbf25379ae3220800000000000000
+      internalID: 2467595958624171632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_24
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 295
+        width: 177
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f854ebcf5bd731e70800000000000000
+      internalID: 9084743093919303055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_25
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 295
+        width: 144
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514f4a5a78c823da0800000000000000
+      internalID: -5966552042084961259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_26
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 294
+        width: 147
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4674221bde7aba980800000000000000
+      internalID: -8526536830175000732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_27
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 289
+        width: 351
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd948466864075e70800000000000000
+      internalID: 9103750018191870429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_28
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 55
+        width: 156
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54170906ab3dd95c0800000000000000
+      internalID: -4206973679456718523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_29
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 55
+        width: 159
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f429f3d4d91bd2850800000000000000
+      internalID: 6353929938453631567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_30
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 55
+        width: 160
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70e19cbf2da788f0800000000000000
+      internalID: -538271209908739971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_31
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 54
+        width: 173
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a488bdc65214eac0800000000000000
+      internalID: -3826913619330169687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_32
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 240
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29ed06c389ab1a00800000000000000
+      internalID: 728362148179077423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_33
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 234
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88f7e38215a16d10800000000000000
+      internalID: 2117154798781855884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_34
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 55
+        width: 151
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac013dccc827c0e40800000000000000
+      internalID: 5623995983736279242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_35
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 134
+        width: 110
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f2bb01d6b5ed7c0800000000000000
+      internalID: -4044694891341861110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero-direction-up-v1_36
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 51
+        width: 147
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2b2349c2aa45480800000000000000
+      internalID: -8911310654217735517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

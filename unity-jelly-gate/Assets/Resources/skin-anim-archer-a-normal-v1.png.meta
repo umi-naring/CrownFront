@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: 53de023c7837098469d835a90732ecec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 284628615905259713
+    second: skin-anim-archer-a-normal-v1_0
+  - first:
+      213: 7711005739446813283
+    second: skin-anim-archer-a-normal-v1_1
+  - first:
+      213: 3078939379875241081
+    second: skin-anim-archer-a-normal-v1_2
+  - first:
+      213: 366287214284079470
+    second: skin-anim-archer-a-normal-v1_3
+  - first:
+      213: -7654693560990015368
+    second: skin-anim-archer-a-normal-v1_4
+  - first:
+      213: 8776573965649636618
+    second: skin-anim-archer-a-normal-v1_5
+  - first:
+      213: 2189660950591836161
+    second: skin-anim-archer-a-normal-v1_6
+  - first:
+      213: -685200121336718781
+    second: skin-anim-archer-a-normal-v1_7
+  - first:
+      213: -1177448634461307753
+    second: skin-anim-archer-a-normal-v1_8
+  - first:
+      213: -4612314816581534841
+    second: skin-anim-archer-a-normal-v1_9
+  - first:
+      213: 6998443112350279751
+    second: skin-anim-archer-a-normal-v1_10
+  - first:
+      213: 4611593060526799058
+    second: skin-anim-archer-a-normal-v1_11
+  - first:
+      213: -7962778740568673781
+    second: skin-anim-archer-a-normal-v1_12
+  - first:
+      213: 2507949302000873290
+    second: skin-anim-archer-a-normal-v1_13
+  - first:
+      213: -8733046357921666250
+    second: skin-anim-archer-a-normal-v1_14
+  - first:
+      213: -3826210251475741410
+    second: skin-anim-archer-a-normal-v1_15
+  - first:
+      213: -5980390351219721833
+    second: skin-anim-archer-a-normal-v1_16
+  - first:
+      213: -6638199091484038976
+    second: skin-anim-archer-a-normal-v1_17
+  - first:
+      213: 3481428625306567723
+    second: skin-anim-archer-a-normal-v1_18
+  - first:
+      213: -2030287491594881340
+    second: skin-anim-archer-a-normal-v1_19
+  - first:
+      213: 3105975093315090100
+    second: skin-anim-archer-a-normal-v1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 707
+        width: 217
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0b1f7d73433f300800000000000000
+      internalID: 284628615905259713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 707
+        width: 208
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362c9b88ddef20b60800000000000000
+      internalID: 7711005739446813283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_2
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 708
+        width: 208
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97cdc669d079aba20800000000000000
+      internalID: 3078939379875241081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_3
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 709
+        width: 217
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e618b2dd740551500800000000000000
+      internalID: 366287214284079470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_4
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 707
+        width: 226
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87068b833c015c590800000000000000
+      internalID: -7654693560990015368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 707
+        width: 219
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dec7f7587acc970800000000000000
+      internalID: 8776573965649636618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 709
+        width: 195
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1001292880d336e10800000000000000
+      internalID: 2189660950591836161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_7
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 396
+        width: 225
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a9ba7be1ead76f0800000000000000
+      internalID: -685200121336718781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_8
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 395
+        width: 228
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c3aa194bcd8afe0800000000000000
+      internalID: -1177448634461307753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 395
+        width: 222
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bf2658c14cdffb0800000000000000
+      internalID: -4612314816581534841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_10
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 396
+        width: 221
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748ea6c6ee67f1160800000000000000
+      internalID: 6998443112350279751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_11
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 395
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d83b5d847bafff30800000000000000
+      internalID: 4611593060526799058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 396
+        width: 218
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b023f5f8ce68e7190800000000000000
+      internalID: -7962778740568673781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 396
+        width: 207
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f637c3a960ec220800000000000000
+      internalID: 2507949302000873290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 229
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b6f0d6b9cfdc680800000000000000
+      internalID: -8733046357921666250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 86
+        width: 194
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1594d46c0296eac0800000000000000
+      internalID: -3826210251475741410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_16
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 86
+        width: 204
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799ff5939a2610da0800000000000000
+      internalID: -5980390351219721833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_17
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 85
+        width: 203
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8e5c3d81160e3a0800000000000000
+      internalID: -6638199091484038976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_18
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 86
+        width: 209
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24464aa3e4805030800000000000000
+      internalID: 3481428625306567723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 85
+        width: 204
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c671978848f2d3e0800000000000000
+      internalID: -2030287491594881340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-normal-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 85
+        width: 188
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6b14624e3aa1b20800000000000000
+      internalID: 3105975093315090100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

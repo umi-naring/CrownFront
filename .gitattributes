@@ -1,0 +1,25 @@
+* text=auto
+
+# Keep source and Unity YAML consistent across Windows and CI.
+*.cs text eol=lf
+*.java text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.ps1 text eol=crlf
+*.shader text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+
+# Binary art and audio must never receive line-ending conversion.
+*.blend binary
+*.blend1 binary
+*.fbx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.wav binary
+*.mp3 binary
+*.ogg binary

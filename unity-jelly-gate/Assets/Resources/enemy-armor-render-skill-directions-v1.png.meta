@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: 04ae0bbde7ec9ea409d7f3d7497a104b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6768801003417584685
+    second: enemy-armor-render-skill-directions-v1_0
+  - first:
+      213: -2755616913826770633
+    second: enemy-armor-render-skill-directions-v1_1
+  - first:
+      213: 8562718410735846534
+    second: enemy-armor-render-skill-directions-v1_2
+  - first:
+      213: -4342939347948088673
+    second: enemy-armor-render-skill-directions-v1_3
+  - first:
+      213: 9180230472181669208
+    second: enemy-armor-render-skill-directions-v1_4
+  - first:
+      213: 3294759320243497106
+    second: enemy-armor-render-skill-directions-v1_5
+  - first:
+      213: 6675262734362812235
+    second: enemy-armor-render-skill-directions-v1_6
+  - first:
+      213: -3114778085130902051
+    second: enemy-armor-render-skill-directions-v1_7
+  - first:
+      213: 4403945730691254485
+    second: enemy-armor-render-skill-directions-v1_8
+  - first:
+      213: -5303919303813301286
+    second: enemy-armor-render-skill-directions-v1_9
+  - first:
+      213: 1486031822833960352
+    second: enemy-armor-render-skill-directions-v1_10
+  - first:
+      213: -6781702303374702186
+    second: enemy-armor-render-skill-directions-v1_11
+  - first:
+      213: -8106918251975867088
+    second: enemy-armor-render-skill-directions-v1_12
+  - first:
+      213: 4967647463594456131
+    second: enemy-armor-render-skill-directions-v1_13
+  - first:
+      213: 2866757752348972831
+    second: enemy-armor-render-skill-directions-v1_14
+  - first:
+      213: 2865434849442105838
+    second: enemy-armor-render-skill-directions-v1_15
+  - first:
+      213: -5457479612629813184
+    second: enemy-armor-render-skill-directions-v1_16
+  - first:
+      213: -8899092205151890531
+    second: enemy-armor-render-skill-directions-v1_17
+  - first:
+      213: -1000453666198271815
+    second: enemy-armor-render-skill-directions-v1_18
+  - first:
+      213: -8052601524563200392
+    second: enemy-armor-render-skill-directions-v1_19
+  - first:
+      213: 8174578533618338619
+    second: enemy-armor-render-skill-directions-v1_20
+  - first:
+      213: -8593682054143385570
+    second: enemy-armor-render-skill-directions-v1_21
+  - first:
+      213: 9044872547240399622
+    second: enemy-armor-render-skill-directions-v1_22
+  - first:
+      213: 2783020966648780620
+    second: enemy-armor-render-skill-directions-v1_23
+  - first:
+      213: 7503475220968194321
+    second: enemy-armor-render-skill-directions-v1_24
+  - first:
+      213: -7747920243555358210
+    second: enemy-armor-render-skill-directions-v1_25
+  - first:
+      213: -2153036737567475728
+    second: enemy-armor-render-skill-directions-v1_26
+  - first:
+      213: 1869990673478411074
+    second: enemy-armor-render-skill-directions-v1_27
+  - first:
+      213: -6130418420856988036
+    second: enemy-armor-render-skill-directions-v1_28
+  - first:
+      213: 2133811791870211683
+    second: enemy-armor-render-skill-directions-v1_29
+  - first:
+      213: -1814531499311321730
+    second: enemy-armor-render-skill-directions-v1_30
+  - first:
+      213: 6998635730601929393
+    second: enemy-armor-render-skill-directions-v1_31
+  - first:
+      213: 4306066410976548564
+    second: enemy-armor-render-skill-directions-v1_32
+  - first:
+      213: 4706024292584718000
+    second: enemy-armor-render-skill-directions-v1_33
+  - first:
+      213: 8593513469438395445
+    second: enemy-armor-render-skill-directions-v1_34
+  - first:
+      213: 8421075933672768758
+    second: enemy-armor-render-skill-directions-v1_35
+  - first:
+      213: 2745893580167408640
+    second: enemy-armor-render-skill-directions-v1_36
+  - first:
+      213: -2629845542447588857
+    second: enemy-armor-render-skill-directions-v1_37
+  - first:
+      213: -4021834249791842566
+    second: enemy-armor-render-skill-directions-v1_38
+  - first:
+      213: 2621631877513761506
+    second: enemy-armor-render-skill-directions-v1_39
+  - first:
+      213: 1716259490510277102
+    second: enemy-armor-render-skill-directions-v1_40
+  - first:
+      213: 1785441343954601374
+    second: enemy-armor-render-skill-directions-v1_41
+  - first:
+      213: 2903694827307191152
+    second: enemy-armor-render-skill-directions-v1_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 808
+        width: 216
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24430466ac9fed50800000000000000
+      internalID: 6768801003417584685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 807
+        width: 241
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7311c4a440512c9d0800000000000000
+      internalID: -2755616913826770633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 831
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6848b9ff603e4d670800000000000000
+      internalID: 8562718410735846534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 807
+        width: 266
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92dc744ca7cab3c0800000000000000
+      internalID: -4342939347948088673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 828
+        width: 32
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85dda9ab9fab66f70800000000000000
+      internalID: 9180230472181669208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 807
+        width: 215
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2986587352659bd20800000000000000
+      internalID: 3294759320243497106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 866
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f1910071c43ac50800000000000000
+      internalID: 6675262734362812235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 805
+        width: 196
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5e99995d516c4d0800000000000000
+      internalID: -3114778085130902051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 807
+        width: 203
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d843f71f45fd1d30800000000000000
+      internalID: 4403945730691254485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 600
+        width: 203
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbfeda9e71b466b0800000000000000
+      internalID: -5303919303813301286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 600
+        width: 233
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5c1fcc1127f9410800000000000000
+      internalID: 1486031822833960352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 759
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69907e2afad82e1a0800000000000000
+      internalID: -6781702303374702186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 598
+        width: 272
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03509d75dc07e7f80800000000000000
+      internalID: -8106918251975867088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 599
+        width: 206
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344fae46c01a0f440800000000000000
+      internalID: 4967647463594456131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 647
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f179bddacf4c8c720800000000000000
+      internalID: 2866757752348972831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 599
+        width: 197
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9850850d114c720800000000000000
+      internalID: 2865434849442105838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 599
+        width: 193
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048734015332344b0800000000000000
+      internalID: -5457479612629813184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 413
+        width: 176
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d935970f9c2108480800000000000000
+      internalID: -8899092205151890531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 412
+        width: 191
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8c304f0bcad12f0800000000000000
+      internalID: -1000453666198271815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 555
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87634a2f3996f3090800000000000000
+      internalID: -8052601524563200392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 412
+        width: 247
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bcad49ddfe17170800000000000000
+      internalID: 8174578533618338619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 411
+        width: 229
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10622af3bb1db880800000000000000
+      internalID: -8593682054143385570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 412
+        width: 165
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60352f0f8a7d58d70800000000000000
+      internalID: 9044872547240399622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 439
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c479097f2d64f9620800000000000000
+      internalID: 2783020966648780620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 464
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11141c655f2b12860800000000000000
+      internalID: 7503475220968194321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 412
+        width: 198
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef923d6b69bd97490800000000000000
+      internalID: -7747920243555358210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 228
+        width: 250
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7bce49e70ee12e0800000000000000
+      internalID: -2153036737567475728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 376
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24369f12c9a83f910800000000000000
+      internalID: 1869990673478411074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 367
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ede443de06ceaa0800000000000000
+      internalID: -6130418420856988036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 228
+        width: 206
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366b6ffe482dc9d10800000000000000
+      internalID: 2133811791870211683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_30
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 228
+        width: 276
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7daac5173d71d6e0800000000000000
+      internalID: -1814531499311321730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_31
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 228
+        width: 232
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba62eadd16202160800000000000000
+      internalID: 6998635730601929393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_32
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 228
+        width: 198
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d69f75169832cb30800000000000000
+      internalID: 4306066410976548564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_33
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 228
+        width: 190
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0befed719282f4140800000000000000
+      internalID: 4706024292584718000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_34
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 39
+        width: 212
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534096658fa424770800000000000000
+      internalID: 8593513469438395445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_35
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 39
+        width: 224
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f40825e1fbadd470800000000000000
+      internalID: 8421075933672768758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_36
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 192
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c67eca9af5b1620800000000000000
+      internalID: 2745893580167408640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_37
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 60
+        width: 38
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a5444a969e08bd0800000000000000
+      internalID: -2629845542447588857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_38
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 39
+        width: 274
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af658a3fe039f28c0800000000000000
+      internalID: -4021834249791842566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_39
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 60
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e25c077d48e16420800000000000000
+      internalID: 2621631877513761506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_40
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 39
+        width: 243
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9024ad9e061d710800000000000000
+      internalID: 1716259490510277102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_41
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 39
+        width: 189
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95c5b1517927c810800000000000000
+      internalID: 1785441343954601374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-armor-render-skill-directions-v1_42
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 39
+        width: 193
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bc8cd9f0ffb4820800000000000000
+      internalID: 2903694827307191152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy-armor-render-skill-directions-v1_0: 6768801003417584685
+      enemy-armor-render-skill-directions-v1_1: -2755616913826770633
+      enemy-armor-render-skill-directions-v1_10: 1486031822833960352
+      enemy-armor-render-skill-directions-v1_11: -6781702303374702186
+      enemy-armor-render-skill-directions-v1_12: -8106918251975867088
+      enemy-armor-render-skill-directions-v1_13: 4967647463594456131
+      enemy-armor-render-skill-directions-v1_14: 2866757752348972831
+      enemy-armor-render-skill-directions-v1_15: 2865434849442105838
+      enemy-armor-render-skill-directions-v1_16: -5457479612629813184
+      enemy-armor-render-skill-directions-v1_17: -8899092205151890531
+      enemy-armor-render-skill-directions-v1_18: -1000453666198271815
+      enemy-armor-render-skill-directions-v1_19: -8052601524563200392
+      enemy-armor-render-skill-directions-v1_2: 8562718410735846534
+      enemy-armor-render-skill-directions-v1_20: 8174578533618338619
+      enemy-armor-render-skill-directions-v1_21: -8593682054143385570
+      enemy-armor-render-skill-directions-v1_22: 9044872547240399622
+      enemy-armor-render-skill-directions-v1_23: 2783020966648780620
+      enemy-armor-render-skill-directions-v1_24: 7503475220968194321
+      enemy-armor-render-skill-directions-v1_25: -7747920243555358210
+      enemy-armor-render-skill-directions-v1_26: -2153036737567475728
+      enemy-armor-render-skill-directions-v1_27: 1869990673478411074
+      enemy-armor-render-skill-directions-v1_28: -6130418420856988036
+      enemy-armor-render-skill-directions-v1_29: 2133811791870211683
+      enemy-armor-render-skill-directions-v1_3: -4342939347948088673
+      enemy-armor-render-skill-directions-v1_30: -1814531499311321730
+      enemy-armor-render-skill-directions-v1_31: 6998635730601929393
+      enemy-armor-render-skill-directions-v1_32: 4306066410976548564
+      enemy-armor-render-skill-directions-v1_33: 4706024292584718000
+      enemy-armor-render-skill-directions-v1_34: 8593513469438395445
+      enemy-armor-render-skill-directions-v1_35: 8421075933672768758
+      enemy-armor-render-skill-directions-v1_36: 2745893580167408640
+      enemy-armor-render-skill-directions-v1_37: -2629845542447588857
+      enemy-armor-render-skill-directions-v1_38: -4021834249791842566
+      enemy-armor-render-skill-directions-v1_39: 2621631877513761506
+      enemy-armor-render-skill-directions-v1_4: 9180230472181669208
+      enemy-armor-render-skill-directions-v1_40: 1716259490510277102
+      enemy-armor-render-skill-directions-v1_41: 1785441343954601374
+      enemy-armor-render-skill-directions-v1_42: 2903694827307191152
+      enemy-armor-render-skill-directions-v1_5: 3294759320243497106
+      enemy-armor-render-skill-directions-v1_6: 6675262734362812235
+      enemy-armor-render-skill-directions-v1_7: -3114778085130902051
+      enemy-armor-render-skill-directions-v1_8: 4403945730691254485
+      enemy-armor-render-skill-directions-v1_9: -5303919303813301286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

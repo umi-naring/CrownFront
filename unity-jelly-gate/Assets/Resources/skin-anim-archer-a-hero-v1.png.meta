@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: d6726c08ff6e9a14da982cfb71836eb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4625209993558049618
+    second: skin-anim-archer-a-hero-v1_0
+  - first:
+      213: -1645762844236420937
+    second: skin-anim-archer-a-hero-v1_1
+  - first:
+      213: -5770317780484084242
+    second: skin-anim-archer-a-hero-v1_2
+  - first:
+      213: -4572014783803343727
+    second: skin-anim-archer-a-hero-v1_3
+  - first:
+      213: -6611598043582332122
+    second: skin-anim-archer-a-hero-v1_4
+  - first:
+      213: -5458353612471479784
+    second: skin-anim-archer-a-hero-v1_5
+  - first:
+      213: -2713832665653249412
+    second: skin-anim-archer-a-hero-v1_6
+  - first:
+      213: -2771598314929454970
+    second: skin-anim-archer-a-hero-v1_7
+  - first:
+      213: 5139771879626412154
+    second: skin-anim-archer-a-hero-v1_8
+  - first:
+      213: 3719390527770687627
+    second: skin-anim-archer-a-hero-v1_9
+  - first:
+      213: 3298265452354128917
+    second: skin-anim-archer-a-hero-v1_10
+  - first:
+      213: 7328972484728817164
+    second: skin-anim-archer-a-hero-v1_11
+  - first:
+      213: -274392836018083373
+    second: skin-anim-archer-a-hero-v1_12
+  - first:
+      213: -4111794751971088895
+    second: skin-anim-archer-a-hero-v1_13
+  - first:
+      213: -8287288759970858863
+    second: skin-anim-archer-a-hero-v1_14
+  - first:
+      213: -6566011734212845355
+    second: skin-anim-archer-a-hero-v1_15
+  - first:
+      213: 1015747374368566305
+    second: skin-anim-archer-a-hero-v1_16
+  - first:
+      213: -1567098757106309578
+    second: skin-anim-archer-a-hero-v1_17
+  - first:
+      213: 7334782258805401693
+    second: skin-anim-archer-a-hero-v1_18
+  - first:
+      213: -4871052797861081435
+    second: skin-anim-archer-a-hero-v1_19
+  - first:
+      213: 3941270673184695696
+    second: skin-anim-archer-a-hero-v1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 655
+        width: 251
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2534d95dbfb003040800000000000000
+      internalID: 4625209993558049618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_1
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 656
+        width: 233
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b860cca9631929e0800000000000000
+      internalID: -1645762844236420937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_2
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 655
+        width: 230
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed20251d86bbefa0800000000000000
+      internalID: -5770317780484084242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_3
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 657
+        width: 236
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c319717c0fc80c0800000000000000
+      internalID: -4572014783803343727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_4
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 644
+        width: 239
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6238b9eeb92ee34a0800000000000000
+      internalID: -6611598043582332122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 644
+        width: 245
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812da2e1f480044b0800000000000000
+      internalID: -5458353612471479784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_6
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 653
+        width: 220
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7af2efa197865ad0800000000000000
+      internalID: -2713832665653249412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 366
+        width: 252
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6800f82640e4989d0800000000000000
+      internalID: -2771598314929454970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 371
+        width: 234
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a709ca7fa43245740800000000000000
+      internalID: 5139771879626412154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_9
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 371
+        width: 218
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8879b49afded9330800000000000000
+      internalID: 3719390527770687627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_10
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 371
+        width: 242
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51cc28634fac5cd20800000000000000
+      internalID: 3298265452354128917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_11
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 365
+        width: 262
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c068fd0f4adb5b560800000000000000
+      internalID: 7328972484728817164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 365
+        width: 263
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9ea306b29213cf0800000000000000
+      internalID: -274392836018083373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 365
+        width: 246
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106a2735578ffe6c0800000000000000
+      internalID: -4111794751971088895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 249
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19879ded7c2adfc80800000000000000
+      internalID: -8287288759970858863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 70
+        width: 234
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0623fad17d0e4a0800000000000000
+      internalID: -6566011734212845355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_16
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 70
+        width: 230
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c26c6fad8a81e00800000000000000
+      internalID: 1015747374368566305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 68
+        width: 231
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636e8b6bbfb804ae0800000000000000
+      internalID: -1567098757106309578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_18
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 69
+        width: 233
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58eee06a916ac560800000000000000
+      internalID: 7334782258805401693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 67
+        width: 207
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae415dc94b866cb0800000000000000
+      internalID: -4871052797861081435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-archer-a-hero-v1_20
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 68
+        width: 220
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095a6d6abc432b630800000000000000
+      internalID: 3941270673184695696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

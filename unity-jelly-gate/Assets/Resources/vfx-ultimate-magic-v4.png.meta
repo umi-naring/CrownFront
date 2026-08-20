@@ -1,0 +1,4693 @@
+fileFormatVersion: 2
+guid: b71ba72ed5f2618429f56663f476823c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8280468752720237811
+    second: vfx-ultimate-magic-v4_0
+  - first:
+      213: -650431741520366409
+    second: vfx-ultimate-magic-v4_1
+  - first:
+      213: -4152570549515534716
+    second: vfx-ultimate-magic-v4_2
+  - first:
+      213: -1189166820321800230
+    second: vfx-ultimate-magic-v4_3
+  - first:
+      213: -617885742772859781
+    second: vfx-ultimate-magic-v4_4
+  - first:
+      213: 712835009415630860
+    second: vfx-ultimate-magic-v4_5
+  - first:
+      213: -518259810119874048
+    second: vfx-ultimate-magic-v4_6
+  - first:
+      213: 2076967486045898889
+    second: vfx-ultimate-magic-v4_7
+  - first:
+      213: -8376322772185200299
+    second: vfx-ultimate-magic-v4_8
+  - first:
+      213: -2987165665638858737
+    second: vfx-ultimate-magic-v4_9
+  - first:
+      213: -300592023859435668
+    second: vfx-ultimate-magic-v4_10
+  - first:
+      213: 4780244851081614500
+    second: vfx-ultimate-magic-v4_11
+  - first:
+      213: -2670008494418103351
+    second: vfx-ultimate-magic-v4_12
+  - first:
+      213: -5898748920236618285
+    second: vfx-ultimate-magic-v4_13
+  - first:
+      213: 4212449343902205281
+    second: vfx-ultimate-magic-v4_14
+  - first:
+      213: 3626589578016274786
+    second: vfx-ultimate-magic-v4_15
+  - first:
+      213: -5850241805752998773
+    second: vfx-ultimate-magic-v4_16
+  - first:
+      213: 20129351790387534
+    second: vfx-ultimate-magic-v4_17
+  - first:
+      213: -1958756002398648837
+    second: vfx-ultimate-magic-v4_18
+  - first:
+      213: -6782755554818652350
+    second: vfx-ultimate-magic-v4_19
+  - first:
+      213: -1588218253168701532
+    second: vfx-ultimate-magic-v4_20
+  - first:
+      213: -3873965202472997622
+    second: vfx-ultimate-magic-v4_21
+  - first:
+      213: 4845042645175159834
+    second: vfx-ultimate-magic-v4_22
+  - first:
+      213: 4590262499145836205
+    second: vfx-ultimate-magic-v4_23
+  - first:
+      213: -6265792472263666842
+    second: vfx-ultimate-magic-v4_24
+  - first:
+      213: 5225774450073282904
+    second: vfx-ultimate-magic-v4_25
+  - first:
+      213: -5585710717846051801
+    second: vfx-ultimate-magic-v4_26
+  - first:
+      213: 3446011232426644246
+    second: vfx-ultimate-magic-v4_27
+  - first:
+      213: 5634292525442383067
+    second: vfx-ultimate-magic-v4_28
+  - first:
+      213: -7324611556694586770
+    second: vfx-ultimate-magic-v4_29
+  - first:
+      213: 580228015799675782
+    second: vfx-ultimate-magic-v4_30
+  - first:
+      213: -7230053589824602776
+    second: vfx-ultimate-magic-v4_31
+  - first:
+      213: -3836860710899692677
+    second: vfx-ultimate-magic-v4_32
+  - first:
+      213: -1836349808992355953
+    second: vfx-ultimate-magic-v4_33
+  - first:
+      213: -651001022278808650
+    second: vfx-ultimate-magic-v4_34
+  - first:
+      213: -6408940825620650695
+    second: vfx-ultimate-magic-v4_35
+  - first:
+      213: -4941893057064285002
+    second: vfx-ultimate-magic-v4_36
+  - first:
+      213: 7376384783820692503
+    second: vfx-ultimate-magic-v4_37
+  - first:
+      213: -9076671245052743505
+    second: vfx-ultimate-magic-v4_38
+  - first:
+      213: -1426281373572677581
+    second: vfx-ultimate-magic-v4_39
+  - first:
+      213: 2423288125055927120
+    second: vfx-ultimate-magic-v4_40
+  - first:
+      213: -4065384682030890402
+    second: vfx-ultimate-magic-v4_41
+  - first:
+      213: -5002249197681375344
+    second: vfx-ultimate-magic-v4_42
+  - first:
+      213: -1196220923126983630
+    second: vfx-ultimate-magic-v4_43
+  - first:
+      213: 1021712405163025702
+    second: vfx-ultimate-magic-v4_44
+  - first:
+      213: 2834962605733258313
+    second: vfx-ultimate-magic-v4_45
+  - first:
+      213: -7500405107679849705
+    second: vfx-ultimate-magic-v4_46
+  - first:
+      213: -2863341942542641102
+    second: vfx-ultimate-magic-v4_47
+  - first:
+      213: -1640292867933722853
+    second: vfx-ultimate-magic-v4_48
+  - first:
+      213: -3227137723177312014
+    second: vfx-ultimate-magic-v4_49
+  - first:
+      213: -5255141845649054328
+    second: vfx-ultimate-magic-v4_50
+  - first:
+      213: 5193028484980429243
+    second: vfx-ultimate-magic-v4_51
+  - first:
+      213: 9168719705215974028
+    second: vfx-ultimate-magic-v4_52
+  - first:
+      213: -4847879389990684191
+    second: vfx-ultimate-magic-v4_53
+  - first:
+      213: 1823553056936234719
+    second: vfx-ultimate-magic-v4_54
+  - first:
+      213: -6766672965576766409
+    second: vfx-ultimate-magic-v4_55
+  - first:
+      213: -6062433094424719708
+    second: vfx-ultimate-magic-v4_56
+  - first:
+      213: -1871844878359784637
+    second: vfx-ultimate-magic-v4_57
+  - first:
+      213: 4671736877112872270
+    second: vfx-ultimate-magic-v4_58
+  - first:
+      213: -4798726880104265571
+    second: vfx-ultimate-magic-v4_59
+  - first:
+      213: 7710843327399401458
+    second: vfx-ultimate-magic-v4_60
+  - first:
+      213: -8176180342288086525
+    second: vfx-ultimate-magic-v4_61
+  - first:
+      213: 784654410454059810
+    second: vfx-ultimate-magic-v4_62
+  - first:
+      213: -8291436959995947710
+    second: vfx-ultimate-magic-v4_63
+  - first:
+      213: 5367279290946236007
+    second: vfx-ultimate-magic-v4_64
+  - first:
+      213: -8797958459033226805
+    second: vfx-ultimate-magic-v4_65
+  - first:
+      213: -3911139998454761869
+    second: vfx-ultimate-magic-v4_66
+  - first:
+      213: -9087923957199100156
+    second: vfx-ultimate-magic-v4_67
+  - first:
+      213: 5426584387051486050
+    second: vfx-ultimate-magic-v4_68
+  - first:
+      213: -5268559069475568941
+    second: vfx-ultimate-magic-v4_69
+  - first:
+      213: 2954571550523315317
+    second: vfx-ultimate-magic-v4_70
+  - first:
+      213: -7486997719668061016
+    second: vfx-ultimate-magic-v4_71
+  - first:
+      213: -5927256681889630817
+    second: vfx-ultimate-magic-v4_72
+  - first:
+      213: 5757777740998823254
+    second: vfx-ultimate-magic-v4_73
+  - first:
+      213: -2102076264186903522
+    second: vfx-ultimate-magic-v4_74
+  - first:
+      213: -5811063597966486827
+    second: vfx-ultimate-magic-v4_75
+  - first:
+      213: 4742782533409822532
+    second: vfx-ultimate-magic-v4_76
+  - first:
+      213: 7127684688819577787
+    second: vfx-ultimate-magic-v4_77
+  - first:
+      213: -1886970092416152588
+    second: vfx-ultimate-magic-v4_78
+  - first:
+      213: 4989629039664724435
+    second: vfx-ultimate-magic-v4_79
+  - first:
+      213: -5513444239115783195
+    second: vfx-ultimate-magic-v4_80
+  - first:
+      213: 8996208722475381334
+    second: vfx-ultimate-magic-v4_81
+  - first:
+      213: 5140220076231717239
+    second: vfx-ultimate-magic-v4_82
+  - first:
+      213: -7207590438655258116
+    second: vfx-ultimate-magic-v4_83
+  - first:
+      213: 498180734426885246
+    second: vfx-ultimate-magic-v4_84
+  - first:
+      213: -8322020656068413865
+    second: vfx-ultimate-magic-v4_85
+  - first:
+      213: 4831574899258367305
+    second: vfx-ultimate-magic-v4_86
+  - first:
+      213: 2032289752834849662
+    second: vfx-ultimate-magic-v4_87
+  - first:
+      213: -880839138773123053
+    second: vfx-ultimate-magic-v4_88
+  - first:
+      213: -4219973887235659325
+    second: vfx-ultimate-magic-v4_89
+  - first:
+      213: -4416589626777274196
+    second: vfx-ultimate-magic-v4_90
+  - first:
+      213: -8289217121207310927
+    second: vfx-ultimate-magic-v4_91
+  - first:
+      213: 4344222068043305693
+    second: vfx-ultimate-magic-v4_92
+  - first:
+      213: -8387370513673650001
+    second: vfx-ultimate-magic-v4_93
+  - first:
+      213: -1963828111004203047
+    second: vfx-ultimate-magic-v4_94
+  - first:
+      213: -7508912747617584576
+    second: vfx-ultimate-magic-v4_95
+  - first:
+      213: -7135131144867363633
+    second: vfx-ultimate-magic-v4_96
+  - first:
+      213: -2236304869531821491
+    second: vfx-ultimate-magic-v4_97
+  - first:
+      213: -4727438000098013929
+    second: vfx-ultimate-magic-v4_98
+  - first:
+      213: 2280880831198976093
+    second: vfx-ultimate-magic-v4_99
+  - first:
+      213: 1767475782592616399
+    second: vfx-ultimate-magic-v4_100
+  - first:
+      213: -4414915857686260520
+    second: vfx-ultimate-magic-v4_101
+  - first:
+      213: 8097050250998370236
+    second: vfx-ultimate-magic-v4_102
+  - first:
+      213: 118750339845048133
+    second: vfx-ultimate-magic-v4_103
+  - first:
+      213: -4201738989437355374
+    second: vfx-ultimate-magic-v4_104
+  - first:
+      213: -8045965784626150444
+    second: vfx-ultimate-magic-v4_105
+  - first:
+      213: 226329343783435589
+    second: vfx-ultimate-magic-v4_106
+  - first:
+      213: 9213872338660514342
+    second: vfx-ultimate-magic-v4_107
+  - first:
+      213: -4705022194821467533
+    second: vfx-ultimate-magic-v4_108
+  - first:
+      213: 8557285547659876721
+    second: vfx-ultimate-magic-v4_109
+  - first:
+      213: -6050863794080562334
+    second: vfx-ultimate-magic-v4_110
+  - first:
+      213: -765733559086409945
+    second: vfx-ultimate-magic-v4_111
+  - first:
+      213: -5496145300912884295
+    second: vfx-ultimate-magic-v4_112
+  - first:
+      213: 6271893815370787724
+    second: vfx-ultimate-magic-v4_113
+  - first:
+      213: -7192180446778365970
+    second: vfx-ultimate-magic-v4_114
+  - first:
+      213: 4395371741334586755
+    second: vfx-ultimate-magic-v4_115
+  - first:
+      213: -186535551498406741
+    second: vfx-ultimate-magic-v4_116
+  - first:
+      213: 3625103825589382845
+    second: vfx-ultimate-magic-v4_117
+  - first:
+      213: 511356072846963285
+    second: vfx-ultimate-magic-v4_118
+  - first:
+      213: -4570774686688608011
+    second: vfx-ultimate-magic-v4_119
+  - first:
+      213: -5646891015476432653
+    second: vfx-ultimate-magic-v4_120
+  - first:
+      213: -8679520885664209964
+    second: vfx-ultimate-magic-v4_121
+  - first:
+      213: -8035942709095511897
+    second: vfx-ultimate-magic-v4_122
+  - first:
+      213: 4193243131203841701
+    second: vfx-ultimate-magic-v4_123
+  - first:
+      213: -6601462974413271268
+    second: vfx-ultimate-magic-v4_124
+  - first:
+      213: 2530557849929691649
+    second: vfx-ultimate-magic-v4_125
+  - first:
+      213: 3510366842773949743
+    second: vfx-ultimate-magic-v4_126
+  - first:
+      213: -1835367144190938113
+    second: vfx-ultimate-magic-v4_127
+  - first:
+      213: -345309655918377342
+    second: vfx-ultimate-magic-v4_128
+  - first:
+      213: -8764688185784209402
+    second: vfx-ultimate-magic-v4_129
+  - first:
+      213: -4858414650771087641
+    second: vfx-ultimate-magic-v4_130
+  - first:
+      213: -4364669086709860623
+    second: vfx-ultimate-magic-v4_131
+  - first:
+      213: 8421699685259934152
+    second: vfx-ultimate-magic-v4_132
+  - first:
+      213: 3449762869053169617
+    second: vfx-ultimate-magic-v4_133
+  - first:
+      213: 5448366197987787773
+    second: vfx-ultimate-magic-v4_134
+  - first:
+      213: -5731995857759818934
+    second: vfx-ultimate-magic-v4_135
+  - first:
+      213: 8980631304986971208
+    second: vfx-ultimate-magic-v4_136
+  - first:
+      213: 5224858751591993007
+    second: vfx-ultimate-magic-v4_137
+  - first:
+      213: -3122212299138595465
+    second: vfx-ultimate-magic-v4_138
+  - first:
+      213: 2012311437456881518
+    second: vfx-ultimate-magic-v4_139
+  - first:
+      213: -7762623406231245525
+    second: vfx-ultimate-magic-v4_140
+  - first:
+      213: 3313372896971087923
+    second: vfx-ultimate-magic-v4_141
+  - first:
+      213: -1935828267177688472
+    second: vfx-ultimate-magic-v4_142
+  - first:
+      213: 3799546797665248550
+    second: vfx-ultimate-magic-v4_143
+  - first:
+      213: 8134734237008326826
+    second: vfx-ultimate-magic-v4_144
+  - first:
+      213: 5986616104719126328
+    second: vfx-ultimate-magic-v4_145
+  - first:
+      213: -6420598987920572465
+    second: vfx-ultimate-magic-v4_146
+  - first:
+      213: -1037004183163331928
+    second: vfx-ultimate-magic-v4_147
+  - first:
+      213: -1793497159979217765
+    second: vfx-ultimate-magic-v4_148
+  - first:
+      213: -4907421143151964996
+    second: vfx-ultimate-magic-v4_149
+  - first:
+      213: -595179100678319770
+    second: vfx-ultimate-magic-v4_150
+  - first:
+      213: -1154702369224217649
+    second: vfx-ultimate-magic-v4_151
+  - first:
+      213: 1727598678308083614
+    second: vfx-ultimate-magic-v4_152
+  - first:
+      213: 981719462572025203
+    second: vfx-ultimate-magic-v4_153
+  - first:
+      213: 1913784769165895919
+    second: vfx-ultimate-magic-v4_154
+  - first:
+      213: -1757909456085436047
+    second: vfx-ultimate-magic-v4_155
+  - first:
+      213: 5879601868698340244
+    second: vfx-ultimate-magic-v4_156
+  - first:
+      213: 8487679588475389858
+    second: vfx-ultimate-magic-v4_157
+  - first:
+      213: -5125684584939637726
+    second: vfx-ultimate-magic-v4_158
+  - first:
+      213: -1399664202642697499
+    second: vfx-ultimate-magic-v4_159
+  - first:
+      213: 2194704433937659464
+    second: vfx-ultimate-magic-v4_160
+  - first:
+      213: -645603301090498598
+    second: vfx-ultimate-magic-v4_161
+  - first:
+      213: -7483646460631182313
+    second: vfx-ultimate-magic-v4_162
+  - first:
+      213: -6607852288844165243
+    second: vfx-ultimate-magic-v4_163
+  - first:
+      213: -3707856837859381573
+    second: vfx-ultimate-magic-v4_164
+  - first:
+      213: -5057972470941224624
+    second: vfx-ultimate-magic-v4_165
+  - first:
+      213: 5206303206938598214
+    second: vfx-ultimate-magic-v4_166
+  - first:
+      213: 5065558416313870990
+    second: vfx-ultimate-magic-v4_167
+  - first:
+      213: -582591372457641394
+    second: vfx-ultimate-magic-v4_168
+  - first:
+      213: 3351874556068427992
+    second: vfx-ultimate-magic-v4_169
+  - first:
+      213: -5124331813924811993
+    second: vfx-ultimate-magic-v4_170
+  - first:
+      213: -1731427639601642966
+    second: vfx-ultimate-magic-v4_171
+  - first:
+      213: 6927533871883907804
+    second: vfx-ultimate-magic-v4_172
+  - first:
+      213: 2186717088014502366
+    second: vfx-ultimate-magic-v4_173
+  - first:
+      213: 1869573490586330893
+    second: vfx-ultimate-magic-v4_174
+  - first:
+      213: 1930784398318290175
+    second: vfx-ultimate-magic-v4_175
+  - first:
+      213: -5509195166028709953
+    second: vfx-ultimate-magic-v4_176
+  - first:
+      213: -1944505471054785225
+    second: vfx-ultimate-magic-v4_177
+  - first:
+      213: 6659173062855543467
+    second: vfx-ultimate-magic-v4_178
+  - first:
+      213: -6469250364942788905
+    second: vfx-ultimate-magic-v4_179
+  - first:
+      213: -5137324085287750409
+    second: vfx-ultimate-magic-v4_180
+  - first:
+      213: 3448733207971986830
+    second: vfx-ultimate-magic-v4_181
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_0
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1078
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f49c9375722ae270800000000000000
+      internalID: 8280468752720237811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_1
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1143
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b43a08f6c339f6f0800000000000000
+      internalID: -650431741520366409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1077
+        width: 63
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48eb063261b1f56c0800000000000000
+      internalID: -4152570549515534716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_3
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1116
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfc900d31b3f7fe0800000000000000
+      internalID: -1189166820321800230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_4
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1124
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cce3ec034dc67f0800000000000000
+      internalID: -617885742772859781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_5
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1074
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c005eaf0aaf74e900800000000000000
+      internalID: 712835009415630860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1079
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a8174d275cec8f0800000000000000
+      internalID: -518259810119874048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_7
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1083
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9884dcf9ceed2dc10800000000000000
+      internalID: 2076967486045898889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_8
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1118
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559c2ef71d251cb80800000000000000
+      internalID: -8376322772185200299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1119
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f004a5e57a47b86d0800000000000000
+      internalID: -2987165665638858737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_10
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1077
+        width: 75
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67ea8b952514dbf0800000000000000
+      internalID: -300592023859435668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_11
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1120
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a41c108d57d65240800000000000000
+      internalID: 4780244851081614500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_12
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1122
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3feeeab6932fad0800000000000000
+      internalID: -2670008494418103351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_13
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1106
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddc3162c1f632ea0800000000000000
+      internalID: -5898748920236618285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_14
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1078
+        width: 72
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1654e991c50a57a30800000000000000
+      internalID: 4212449343902205281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1080
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2693bc7b10c345230800000000000000
+      internalID: 3626589578016274786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_16
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1090
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84e3f5d214cfcea0800000000000000
+      internalID: -5850241805752998773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_17
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1090
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41660fe983874000800000000000000
+      internalID: 20129351790387534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 946
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf54d533bc911d4e0800000000000000
+      internalID: -1958756002398648837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_19
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 944
+        width: 68
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2470abc62cfced1a0800000000000000
+      internalID: -6782755554818652350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 944
+        width: 76
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af861ad9e385f9e0800000000000000
+      internalID: -1588218253168701532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_21
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 942
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d6f5a6c29ec3ac0800000000000000
+      internalID: -3873965202472997622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_22
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 943
+        width: 95
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1cc84b9d9c0d3340800000000000000
+      internalID: 4845042645175159834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_23
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 961
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da662673c63e3bf30800000000000000
+      internalID: 4590262499145836205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_24
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 939
+        width: 111
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663586ea1fe6b09a0800000000000000
+      internalID: -6265792472263666842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_25
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 941
+        width: 100
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8592eeccc2ea58840800000000000000
+      internalID: 5225774450073282904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_26
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 943
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724a1bc42b19b72b0800000000000000
+      internalID: -5585710717846051801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 873
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613dbc845f0b2df20800000000000000
+      internalID: 3446011232426644246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_28
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 873
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdcb1ab3337013e40800000000000000
+      internalID: 5634292525442383067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 815
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a8f7db890c95a90800000000000000
+      internalID: -7324611556694586770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_30
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 881
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b28726e426d0800800000000000000
+      internalID: 580228015799675782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_31
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 878
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d77770190b9ab90800000000000000
+      internalID: -7230053589824602776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 814
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bcb22138bb0cac0800000000000000
+      internalID: -3836860710899692677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_33
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 815
+        width: 103
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8977aff399f386e0800000000000000
+      internalID: -1836349808992355953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_34
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 811
+        width: 95
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbc7a6f40e27f6f0800000000000000
+      internalID: -651001022278808650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_35
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 809
+        width: 101
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935e16e664ede07a0800000000000000
+      internalID: -6408940825620650695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_36
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 880
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bcc6b7a27eda6bb0800000000000000
+      internalID: -4941893057064285002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_37
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 875
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c9a3e01ee2e5660800000000000000
+      internalID: 7376384783820692503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_38
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 879
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0f0a7c79f290280800000000000000
+      internalID: -9076671245052743505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_39
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 876
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330c172c5a4d43ce0800000000000000
+      internalID: -1426281373572677581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_40
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 883
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053816ae5bf31a120800000000000000
+      internalID: 2423288125055927120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 816
+        width: 81
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e520c38cb2ad497c0800000000000000
+      internalID: -4065384682030890402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_42
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 812
+        width: 85
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09708369bd0749ab0800000000000000
+      internalID: -5002249197681375344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_43
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 861
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2345024886b266fe0800000000000000
+      internalID: -1196220923126983630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_44
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 814
+        width: 81
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6252a5ce40add2e00800000000000000
+      internalID: 1021712405163025702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_45
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 863
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9442f3a387fc75720800000000000000
+      internalID: 2834962605733258313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_46
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 859
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713973d1b4539e790800000000000000
+      internalID: -7500405107679849705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_47
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 695
+        width: 75
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238d4448cad5348d0800000000000000
+      internalID: -2863341942542641102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_48
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 736
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b172437c3528c39e0800000000000000
+      internalID: -1640292867933722853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_49
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 697
+        width: 38
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0e0c0c657e633d0800000000000000
+      internalID: -3227137723177312014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_50
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 696
+        width: 68
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8852cc5955cf117b0800000000000000
+      internalID: -5255141845649054328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_51
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 757
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb15ebba4e7511840800000000000000
+      internalID: 5193028484980429243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_52
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 762
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ab5827ef5dd3f70800000000000000
+      internalID: 9168719705215974028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_53
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 741
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9faa5416fd8bcb0800000000000000
+      internalID: -4847879389990684191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_54
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 695
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde03cbf7df8e4910800000000000000
+      internalID: 1823553056936234719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_55
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 729
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cce870ac2f712a0800000000000000
+      internalID: -6766672965576766409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_56
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 695
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae0e348839eddba0800000000000000
+      internalID: -6062433094424719708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_57
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 736
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3431bb6200fd506e0800000000000000
+      internalID: -1871844878359784637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_58
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 696
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4dc76410f755d040800000000000000
+      internalID: 4671736877112872270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_59
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 695
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d984449c35f776db0800000000000000
+      internalID: -4798726880104265571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_60
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 697
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f71558072b620b60800000000000000
+      internalID: 7710843327399401458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_61
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 497
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a03664c4f588e80800000000000000
+      internalID: -8176180342288086525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_62
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 497
+        width: 47
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bce8e6707a3ea00800000000000000
+      internalID: 784654410454059810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_63
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 494
+        width: 76
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24595e9c306eeec80800000000000000
+      internalID: -8291436959995947710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_64
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 542
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e292bf3186c7a40800000000000000
+      internalID: 5367279290946236007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_65
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 484
+        width: 77
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc17ea4256f57e580800000000000000
+      internalID: -8797958459033226805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_66
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 554
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376384db4e6d8b9c0800000000000000
+      internalID: -3911139998454761869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_67
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 486
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407a2619f4531e180800000000000000
+      internalID: -9087923957199100156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_68
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 545
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b72edafb91f4b40800000000000000
+      internalID: 5426584387051486050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_69
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 498
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d20fb9b07152e6b0800000000000000
+      internalID: -5268559069475568941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_70
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 523
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574da64db2fb00920800000000000000
+      internalID: 2954571550523315317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_71
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 489
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac8605ed37d81890800000000000000
+      internalID: -7486997719668061016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_72
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 486
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f957867a3772ebda0800000000000000
+      internalID: -5927256681889630817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_73
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 501
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dc2e3795cb7ef40800000000000000
+      internalID: 5757777740998823254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_74
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 498
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e140c5666cce3d2e0800000000000000
+      internalID: -2102076264186903522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_75
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 509
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2110c2274fa5fa0800000000000000
+      internalID: -5811063597966486827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_76
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 498
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447d1d6f59fb1d140800000000000000
+      internalID: 4742782533409822532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_77
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 356
+        width: 88
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3e41cd57f9ae260800000000000000
+      internalID: 7127684688819577787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_78
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 356
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbcfb3d2b220d5e0800000000000000
+      internalID: -1886970092416152588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_79
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 355
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d97036ec29be3540800000000000000
+      internalID: 4989629039664724435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_80
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 355
+        width: 107
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3749e0daf4c73b0800000000000000
+      internalID: -5513444239115783195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_81
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 351
+        width: 86
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6527a6c4b24f8dc70800000000000000
+      internalID: 8996208722475381334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_82
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 420
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7717f1fdceab55740800000000000000
+      internalID: 5140220076231717239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_83
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 425
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf19379feae79fb90800000000000000
+      internalID: -7207590438655258116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_84
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 424
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c257d0db4e9e600800000000000000
+      internalID: 498180734426885246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_85
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 349
+        width: 86
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75634952e4e328c80800000000000000
+      internalID: -8322020656068413865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_86
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 429
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d1df7a5c33d0340800000000000000
+      internalID: 4831574899258367305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_87
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 350
+        width: 75
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b336e33c4243c10800000000000000
+      internalID: 2032289752834849662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_88
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 407
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310ca2d5871a6c3f0800000000000000
+      internalID: -880839138773123053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_89
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 353
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9e4e1ab14af65c0800000000000000
+      internalID: -4219973887235659325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_90
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 417
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8f341722f15b2c0800000000000000
+      internalID: -4416589626777274196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_91
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 403
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b52a5842f8c6fc80800000000000000
+      internalID: -8289217121207310927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_92
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 383
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2522744f6c94c30800000000000000
+      internalID: 4344222068043305693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_93
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 384
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa085ecb4f21a9b80800000000000000
+      internalID: -8387370513673650001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_94
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 373
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d70ba3ecb41fb4e0800000000000000
+      internalID: -1963828111004203047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_95
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 233
+        width: 84
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04af9d4d3abfac790800000000000000
+      internalID: -7508912747617584576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_96
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 302
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4ca5cf60ceafc90800000000000000
+      internalID: -7135131144867363633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_97
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 303
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a5412d19c07f0e0800000000000000
+      internalID: -2236304869531821491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_98
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 231
+        width: 99
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d897a9f24c46eb0800000000000000
+      internalID: -4727438000098013929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_99
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 299
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58dc96080157af10800000000000000
+      internalID: 2280880831198976093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_100
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 231
+        width: 107
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7d98a1cd5578810800000000000000
+      internalID: 1767475782592616399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_101
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 228
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d41f5d2b611bb2c0800000000000000
+      internalID: -4414915857686260520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_102
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 304
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfce33ad408e5070800000000000000
+      internalID: 8097050250998370236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_103
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 303
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547cb6f0ec2e5a100800000000000000
+      internalID: 118750339845048133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_104
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 308
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a7daf96ac60b5c0800000000000000
+      internalID: -4201738989437355374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_105
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 282
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3496c8fbcf65090800000000000000
+      internalID: -8045965784626150444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 231
+        width: 89
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d757ac655142300800000000000000
+      internalID: 226329343783435589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_107
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 296
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a58a723104edf70800000000000000
+      internalID: 9213872338660514342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_108
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 297
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3727659fd3764beb0800000000000000
+      internalID: -4705022194821467533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_109
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 296
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179d9ddfdd591c670800000000000000
+      internalID: 8557285547659876721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_110
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 289
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2634e892073070ca0800000000000000
+      internalID: -6050863794080562334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_111
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 294
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7271f0292619f55f0800000000000000
+      internalID: -765733559086409945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_112
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 290
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5b729f7f4c9b3b0800000000000000
+      internalID: -5496145300912884295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_113
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 289
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b2526f13e3a0750800000000000000
+      internalID: 6271893815370787724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_114
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 293
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7e34d4dfd303c90800000000000000
+      internalID: -7192180446778365970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_115
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 297
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385c902af4f7ffc30800000000000000
+      internalID: 4395371741334586755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_116
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 278
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4b4fa77ea496df0800000000000000
+      internalID: -186535551498406741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_117
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 290
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe2a2609b4fe4230800000000000000
+      internalID: 3625103825589382845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_118
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 283
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55238c393a3b81700800000000000000
+      internalID: 511356072846963285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_119
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 283
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f00493b3a85190c0800000000000000
+      internalID: -4570774686688608011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_120
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 278
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0be293a8632a1b0800000000000000
+      internalID: -5646891015476432653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_121
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 281
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3a6659db52c8780800000000000000
+      internalID: -8679520885664209964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_122
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 280
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8c8fcaea89a7090800000000000000
+      internalID: -8035942709095511897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_123
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 288
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae604c3964613a30800000000000000
+      internalID: 4193243131203841701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_124
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 283
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f043c9664e264a0800000000000000
+      internalID: -6601462974413271268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_125
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 230
+        width: 77
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102b2a005f85e1320800000000000000
+      internalID: 2530557849929691649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_126
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 275
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2dc9d67b0457b030800000000000000
+      internalID: 3510366842773949743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_127
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 278
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3731a7e477786e0800000000000000
+      internalID: -1835367144190938113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_128
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 280
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286097d82b6353bf0800000000000000
+      internalID: -345309655918377342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_129
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 268
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600f44748829d5680800000000000000
+      internalID: -8764688185784209402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_130
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 257
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee5c39bd91739cb0800000000000000
+      internalID: -4858414650771087641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_131
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 229
+        width: 78
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6b78437949d63c0800000000000000
+      internalID: -4364669086709860623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_132
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 272
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9ffe06e33efd470800000000000000
+      internalID: 8421699685259934152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_133
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 271
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df1f314d0500ef20800000000000000
+      internalID: 3449762869053169617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_134
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 268
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3ce4db03c7c9b40800000000000000
+      internalID: 5448366197987787773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_135
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 231
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b2734032cd370b0800000000000000
+      internalID: -5731995857759818934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_136
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 115
+        width: 73
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c4088279c91ac70800000000000000
+      internalID: 8980631304986971208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_137
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 177
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae4b322a5d628840800000000000000
+      internalID: 5224858751591993007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_138
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 184
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7750d74c47caba4d0800000000000000
+      internalID: -3122212299138595465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_139
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 166
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67b217379a2deb10800000000000000
+      internalID: 2012311437456881518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_140
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 180
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d2472e32f954490800000000000000
+      internalID: -7762623406231245525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_141
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 176
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3306e5448177bfd20800000000000000
+      internalID: 3313372896971087923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_142
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 178
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862c6bc827e8225e0800000000000000
+      internalID: -1935828267177688472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_143
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 167
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6256f4e7ea3bab430800000000000000
+      internalID: 3799546797665248550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_144
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 177
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0f61b50b164e070800000000000000
+      internalID: 8134734237008326826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_145
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 170
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f8a68f0abb41350800000000000000
+      internalID: 5986616104719126328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_146
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 114
+        width: 74
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcff2cffc3375e6a0800000000000000
+      internalID: -6420598987920572465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_147
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 167
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa94ff8032db91f0800000000000000
+      internalID: -1037004183163331928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_148
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 170
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c44c9d5d73c17e0800000000000000
+      internalID: -1793497159979217765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_149
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 156
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc8f2f887655ebb0800000000000000
+      internalID: -4907421143151964996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_150
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 153
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6611556e2cf7db7f0800000000000000
+      internalID: -595179100678319770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_151
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 118
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcba615205ca9ffe0800000000000000
+      internalID: -1154702369224217649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_152
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 162
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97dcfe38d9a9f710800000000000000
+      internalID: 1727598678308083614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_153
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 155
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37561bb56a4cf9d00800000000000000
+      internalID: 981719462572025203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_154
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 167
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8afae9b112f8a10800000000000000
+      internalID: 1913784769165895919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_155
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 162
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1793abad9a6aa97e0800000000000000
+      internalID: -1757909456085436047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_156
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 161
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bcc748fba889150800000000000000
+      internalID: 5879601868698340244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_157
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 165
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7c866bd9b4ac570800000000000000
+      internalID: 8487679588475389858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_158
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 166
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2243afbe609edd8b0800000000000000
+      internalID: -5125684584939637726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_159
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 164
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2d6acc2d4639ce0800000000000000
+      internalID: -1399664202642697499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_160
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 160
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84634dbfd08257e10800000000000000
+      internalID: 2194704433937659464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_161
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 149
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad76eacd73b5a07f0800000000000000
+      internalID: -645603301090498598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_162
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 152
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7141871b13fb42890800000000000000
+      internalID: -7483646460631182313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_163
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 156
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f013b6a513c44a0800000000000000
+      internalID: -6607852288844165243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_164
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 159
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe636dd9db0b8cc0800000000000000
+      internalID: -3707856837859381573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_165
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 154
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051f7d106d87ec9b0800000000000000
+      internalID: -5057972470941224624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_166
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 144
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b5d8abe21804840800000000000000
+      internalID: 5206303206938598214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_167
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 116
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ae0698a8a7c4640800000000000000
+      internalID: 5065558416313870990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_168
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 146
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a7473cb383ae7f0800000000000000
+      internalID: -582591372457641394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_169
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 113
+        width: 72
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8f0265620448e20800000000000000
+      internalID: 3351874556068427992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_170
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 145
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b47c77d57b2e8b0800000000000000
+      internalID: -5124331813924811993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_171
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 142
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22404b3cbbb8f7e0800000000000000
+      internalID: -1731427639601642966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_172
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 152
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd270235a5b832060800000000000000
+      internalID: 6927533871883907804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_173
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 146
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed981671b97c85e10800000000000000
+      internalID: 2186717088014502366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_174
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 152
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07a2eb2f2f02f910800000000000000
+      internalID: 1869573490586330893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_175
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 113
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4c0a73e268bca10800000000000000
+      internalID: 1930784398318290175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_176
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 136
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf3f8a7f286b83b0800000000000000
+      internalID: -5509195166028709953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_177
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 113
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735d9f5939ab305e0800000000000000
+      internalID: -1944505471054785225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_178
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 122
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baaca5d6e922a6c50800000000000000
+      internalID: 6659173062855543467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_179
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 119
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6d482911b9836a0800000000000000
+      internalID: -6469250364942788905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_180
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 115
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f47d5096fe84b8b0800000000000000
+      internalID: -5137324085287750409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx-ultimate-magic-v4_181
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 117
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d734a949c5cdf20800000000000000
+      internalID: 3448733207971986830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

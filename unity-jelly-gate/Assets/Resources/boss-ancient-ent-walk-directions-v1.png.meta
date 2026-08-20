@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: a5e89a23e80f6ff45b3cfba5530ec514
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4543458376016687196
+    second: boss-ancient-ent-walk-directions-v1_0
+  - first:
+      213: 5163097213560032949
+    second: boss-ancient-ent-walk-directions-v1_1
+  - first:
+      213: 1071441614127611586
+    second: boss-ancient-ent-walk-directions-v1_2
+  - first:
+      213: 1213520782464278211
+    second: boss-ancient-ent-walk-directions-v1_3
+  - first:
+      213: -6880212203845519779
+    second: boss-ancient-ent-walk-directions-v1_4
+  - first:
+      213: -5083400279089933005
+    second: boss-ancient-ent-walk-directions-v1_5
+  - first:
+      213: -3158094501707369382
+    second: boss-ancient-ent-walk-directions-v1_6
+  - first:
+      213: 3123027372217318543
+    second: boss-ancient-ent-walk-directions-v1_7
+  - first:
+      213: 5909985813826939371
+    second: boss-ancient-ent-walk-directions-v1_8
+  - first:
+      213: 782638983128160735
+    second: boss-ancient-ent-walk-directions-v1_9
+  - first:
+      213: 8997696031463471410
+    second: boss-ancient-ent-walk-directions-v1_10
+  - first:
+      213: -659651289560636706
+    second: boss-ancient-ent-walk-directions-v1_11
+  - first:
+      213: -1022526114094780887
+    second: boss-ancient-ent-walk-directions-v1_12
+  - first:
+      213: 6876177577079399318
+    second: boss-ancient-ent-walk-directions-v1_13
+  - first:
+      213: -7650722759294784836
+    second: boss-ancient-ent-walk-directions-v1_14
+  - first:
+      213: 381919356419604847
+    second: boss-ancient-ent-walk-directions-v1_15
+  - first:
+      213: 5089635728957663919
+    second: boss-ancient-ent-walk-directions-v1_16
+  - first:
+      213: 1275070773676168424
+    second: boss-ancient-ent-walk-directions-v1_17
+  - first:
+      213: -5217088925915854981
+    second: boss-ancient-ent-walk-directions-v1_18
+  - first:
+      213: 1846404453047626005
+    second: boss-ancient-ent-walk-directions-v1_19
+  - first:
+      213: 8730682647957765662
+    second: boss-ancient-ent-walk-directions-v1_20
+  - first:
+      213: -51989069623548598
+    second: boss-ancient-ent-walk-directions-v1_21
+  - first:
+      213: 5161128075375503221
+    second: boss-ancient-ent-walk-directions-v1_22
+  - first:
+      213: -558246730986598450
+    second: boss-ancient-ent-walk-directions-v1_23
+  - first:
+      213: 4168062861354235678
+    second: boss-ancient-ent-walk-directions-v1_24
+  - first:
+      213: 8972750398898219759
+    second: boss-ancient-ent-walk-directions-v1_25
+  - first:
+      213: -4403305503038177506
+    second: boss-ancient-ent-walk-directions-v1_26
+  - first:
+      213: 3193978182606925168
+    second: boss-ancient-ent-walk-directions-v1_27
+  - first:
+      213: -6334233594240799913
+    second: boss-ancient-ent-walk-directions-v1_28
+  - first:
+      213: 4917678316892177366
+    second: boss-ancient-ent-walk-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1004
+        width: 187
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af80c5eda462f0c0800000000000000
+      internalID: -4543458376016687196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1006
+        width: 180
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be0e0b7f8107a740800000000000000
+      internalID: 5163097213560032949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1004
+        width: 178
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ceb5a7a8768ede00800000000000000
+      internalID: 1071441614127611586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1006
+        width: 184
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce565ed8ba47d010800000000000000
+      internalID: 1213520782464278211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1005
+        width: 172
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56fa7a14739480a0800000000000000
+      internalID: -6880212203845519779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1004
+        width: 169
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33519b111622479b0800000000000000
+      internalID: -5083400279089933005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 752
+        width: 162
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a543e9278c13c24d0800000000000000
+      internalID: -3158094501707369382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 750
+        width: 162
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8cb5d839d8375b20800000000000000
+      internalID: 3123027372217318543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 747
+        width: 154
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9a0c409cc740250800000000000000
+      internalID: 5909985813826939371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 746
+        width: 155
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd91ab0320e7cda00800000000000000
+      internalID: 782638983128160735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 749
+        width: 153
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23972586edc3edc70800000000000000
+      internalID: 8997696031463471410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 745
+        width: 151
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed22c1aa5a278d6f0800000000000000
+      internalID: -659651289560636706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 493
+        width: 161
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ee1d3bae14fc1f0800000000000000
+      internalID: -1022526114094780887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 495
+        width: 153
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693e25623171d6f50800000000000000
+      internalID: 6876177577079399318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 495
+        width: 154
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbaec398f2c23d590800000000000000
+      internalID: -7650722759294784836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 494
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f618c3491a9dc4500800000000000000
+      internalID: 381919356419604847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 495
+        width: 142
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa68acbab402a640800000000000000
+      internalID: 5089635728957663919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 493
+        width: 135
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e45370fc16f1b110800000000000000
+      internalID: 1275070773676168424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 257
+        width: 173
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b774921634d2997b0800000000000000
+      internalID: -5217088925915854981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 258
+        width: 170
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5196a9f311fbf9910800000000000000
+      internalID: 1846404453047626005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 254
+        width: 173
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e70367c9d992970800000000000000
+      internalID: 8730682647957765662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 255
+        width: 162
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45a2e4773c474ff0800000000000000
+      internalID: -51989069623548598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 257
+        width: 152
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5776d05c3a200a740800000000000000
+      internalID: 5161128075375503221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 254
+        width: 159
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf458e4e85b048f0800000000000000
+      internalID: -558246730986598450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 26
+        width: 170
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17748cc61fe7d930800000000000000
+      internalID: 4168062861354235678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 27
+        width: 171
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaa298b2fc958c70800000000000000
+      internalID: 8972750398898219759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 25
+        width: 164
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ff2e589f054e2c0800000000000000
+      internalID: -4403305503038177506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 25
+        width: 168
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d22a21c3a435c20800000000000000
+      internalID: 3193978182606925168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 26
+        width: 168
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b6ee23b184818a0800000000000000
+      internalID: -6334233594240799913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-ancient-ent-walk-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 25
+        width: 165
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3cffdcf5a1f3440800000000000000
+      internalID: 4917678316892177366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

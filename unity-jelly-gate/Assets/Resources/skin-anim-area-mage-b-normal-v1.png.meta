@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: 5e29b0e1f43362c428e71d2f6ae77042
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2631798487519047488
+    second: skin-anim-area-mage-b-normal-v1_0
+  - first:
+      213: -6249108729422291327
+    second: skin-anim-area-mage-b-normal-v1_1
+  - first:
+      213: 5312312616159567488
+    second: skin-anim-area-mage-b-normal-v1_2
+  - first:
+      213: 6891269660743516359
+    second: skin-anim-area-mage-b-normal-v1_3
+  - first:
+      213: 400900353930032754
+    second: skin-anim-area-mage-b-normal-v1_4
+  - first:
+      213: 5007084443210599754
+    second: skin-anim-area-mage-b-normal-v1_5
+  - first:
+      213: -8674009679579562930
+    second: skin-anim-area-mage-b-normal-v1_6
+  - first:
+      213: 7310397393751714568
+    second: skin-anim-area-mage-b-normal-v1_7
+  - first:
+      213: 6613670051530840107
+    second: skin-anim-area-mage-b-normal-v1_8
+  - first:
+      213: 3352376378184821219
+    second: skin-anim-area-mage-b-normal-v1_9
+  - first:
+      213: 1398385305378045131
+    second: skin-anim-area-mage-b-normal-v1_10
+  - first:
+      213: 6985747106221981383
+    second: skin-anim-area-mage-b-normal-v1_11
+  - first:
+      213: -5350811971364101301
+    second: skin-anim-area-mage-b-normal-v1_12
+  - first:
+      213: 4724942544633429077
+    second: skin-anim-area-mage-b-normal-v1_13
+  - first:
+      213: 5580544010010019730
+    second: skin-anim-area-mage-b-normal-v1_14
+  - first:
+      213: 2903345898517633563
+    second: skin-anim-area-mage-b-normal-v1_15
+  - first:
+      213: -4664730357330190421
+    second: skin-anim-area-mage-b-normal-v1_16
+  - first:
+      213: 6284167332392359618
+    second: skin-anim-area-mage-b-normal-v1_17
+  - first:
+      213: 528510713606182547
+    second: skin-anim-area-mage-b-normal-v1_18
+  - first:
+      213: -5313734373905908054
+    second: skin-anim-area-mage-b-normal-v1_19
+  - first:
+      213: -865069897158689900
+    second: skin-anim-area-mage-b-normal-v1_20
+  - first:
+      213: -7590043376473856708
+    second: skin-anim-area-mage-b-normal-v1_21
+  - first:
+      213: -4972832247224412775
+    second: skin-anim-area-mage-b-normal-v1_22
+  - first:
+      213: 3873730472337430345
+    second: skin-anim-area-mage-b-normal-v1_23
+  - first:
+      213: 3898824309581278398
+    second: skin-anim-area-mage-b-normal-v1_24
+  - first:
+      213: -5051145536932360390
+    second: skin-anim-area-mage-b-normal-v1_25
+  - first:
+      213: -6824376552112157539
+    second: skin-anim-area-mage-b-normal-v1_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 625
+        width: 210
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0540f2839f97bd0800000000000000
+      internalID: -2631798487519047488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 842
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18eddf348b4b649a0800000000000000
+      internalID: -6249108729422291327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 624
+        width: 199
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e5406bd2029b940800000000000000
+      internalID: 5312312616159567488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 834
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c04b04be35b2af50800000000000000
+      internalID: 6891269660743516359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_4
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 627
+        width: 197
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276f3527fb8409500800000000000000
+      internalID: 400900353930032754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_5
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 828
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4dc3fdb5ccbc7540800000000000000
+      internalID: 5007084443210599754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_6
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 627
+        width: 192
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c3c5e372abf9780800000000000000
+      internalID: -8674009679579562930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_7
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 832
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b238d82bfb37560800000000000000
+      internalID: 7310397393751714568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_8
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 628
+        width: 189
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2892230fd978cb50800000000000000
+      internalID: 6613670051530840107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_9
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 626
+        width: 253
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9ed17ed88068e20800000000000000
+      internalID: 3352376378184821219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_10
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 628
+        width: 216
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc3f2ab600186310800000000000000
+      internalID: 1398385305378045131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 828
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cef2152bfb52f060800000000000000
+      internalID: 6985747106221981383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_12
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 346
+        width: 181
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b436fe2acd81eb5b0800000000000000
+      internalID: -5350811971364101301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 346
+        width: 175
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c7105e53e529140800000000000000
+      internalID: 4724942544633429077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_14
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 557
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297c41ac533127d40800000000000000
+      internalID: 5580544010010019730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_15
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 345
+        width: 187
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a1b3d46b1ca4820800000000000000
+      internalID: 2903345898517633563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_16
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 344
+        width: 181
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf5a5e647c834fb0800000000000000
+      internalID: -4664730357330190421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_17
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 345
+        width: 175
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c65c54d4e8d53750800000000000000
+      internalID: 6284167332392359618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_18
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 338
+        width: 217
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3961c70a1b5a55700800000000000000
+      internalID: 528510713606182547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_19
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 341
+        width: 192
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae3e848db2d146b0800000000000000
+      internalID: -5313734373905908054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 63
+        width: 211
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bf8f90387aef3f0800000000000000
+      internalID: -865069897158689900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_21
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 66
+        width: 197
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35287b43cfbaa690800000000000000
+      internalID: -7590043376473856708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_22
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 65
+        width: 185
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995d4981b63fcfab0800000000000000
+      internalID: -4972832247224412775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_23
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 64
+        width: 175
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9475747375142c530800000000000000
+      internalID: 3873730472337430345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_24
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 64
+        width: 182
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcef3e7d086b1630800000000000000
+      internalID: 3898824309581278398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_25
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 64
+        width: 229
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fc85275e9b6e9b0800000000000000
+      internalID: -5051145536932360390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skin-anim-area-mage-b-normal-v1_26
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 63
+        width: 191
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c89d5dea1fa41a0800000000000000
+      internalID: -6824376552112157539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

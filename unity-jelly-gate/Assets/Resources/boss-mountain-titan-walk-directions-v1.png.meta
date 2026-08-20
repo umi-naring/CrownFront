@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: f5dfb0766ddc579488339c26ad6f2301
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3931890091505860423
+    second: boss-mountain-titan-walk-directions-v1_0
+  - first:
+      213: 719328257440427261
+    second: boss-mountain-titan-walk-directions-v1_1
+  - first:
+      213: 544282662663715425
+    second: boss-mountain-titan-walk-directions-v1_2
+  - first:
+      213: 4940978825516310855
+    second: boss-mountain-titan-walk-directions-v1_3
+  - first:
+      213: 5293950794313687038
+    second: boss-mountain-titan-walk-directions-v1_4
+  - first:
+      213: 3111912779737812107
+    second: boss-mountain-titan-walk-directions-v1_5
+  - first:
+      213: 1832114045414716646
+    second: boss-mountain-titan-walk-directions-v1_6
+  - first:
+      213: -910471902743811330
+    second: boss-mountain-titan-walk-directions-v1_7
+  - first:
+      213: 7085213144168714058
+    second: boss-mountain-titan-walk-directions-v1_8
+  - first:
+      213: -1845962045948567282
+    second: boss-mountain-titan-walk-directions-v1_9
+  - first:
+      213: -2106829843908495621
+    second: boss-mountain-titan-walk-directions-v1_10
+  - first:
+      213: -6220470240122858287
+    second: boss-mountain-titan-walk-directions-v1_11
+  - first:
+      213: -4569861355254445487
+    second: boss-mountain-titan-walk-directions-v1_12
+  - first:
+      213: -5476610910682298859
+    second: boss-mountain-titan-walk-directions-v1_13
+  - first:
+      213: -8641035631997375388
+    second: boss-mountain-titan-walk-directions-v1_14
+  - first:
+      213: -7596890623181562338
+    second: boss-mountain-titan-walk-directions-v1_15
+  - first:
+      213: -3318167203314871178
+    second: boss-mountain-titan-walk-directions-v1_16
+  - first:
+      213: -2675980151754245459
+    second: boss-mountain-titan-walk-directions-v1_17
+  - first:
+      213: -1999930176766951189
+    second: boss-mountain-titan-walk-directions-v1_18
+  - first:
+      213: -3334649019623222685
+    second: boss-mountain-titan-walk-directions-v1_19
+  - first:
+      213: 3155031063483912424
+    second: boss-mountain-titan-walk-directions-v1_20
+  - first:
+      213: -4733932644067038028
+    second: boss-mountain-titan-walk-directions-v1_21
+  - first:
+      213: -8505100472433199592
+    second: boss-mountain-titan-walk-directions-v1_22
+  - first:
+      213: -7280162205246277693
+    second: boss-mountain-titan-walk-directions-v1_23
+  - first:
+      213: -4912585500572555937
+    second: boss-mountain-titan-walk-directions-v1_24
+  - first:
+      213: 4009703682565735908
+    second: boss-mountain-titan-walk-directions-v1_25
+  - first:
+      213: -7680834315799643251
+    second: boss-mountain-titan-walk-directions-v1_26
+  - first:
+      213: 6292968806868275177
+    second: boss-mountain-titan-walk-directions-v1_27
+  - first:
+      213: -2452022436882565846
+    second: boss-mountain-titan-walk-directions-v1_28
+  - first:
+      213: -6934099905127033310
+    second: boss-mountain-titan-walk-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 913
+        width: 164
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b04ae73bce1f69c0800000000000000
+      internalID: -3931890091505860423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 913
+        width: 164
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc23ad2d319bf900800000000000000
+      internalID: 719328257440427261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 914
+        width: 148
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a797da23ead8700800000000000000
+      internalID: 544282662663715425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 913
+        width: 152
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74160a93012e19440800000000000000
+      internalID: 4940978825516310855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 913
+        width: 166
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: effd679e234e77940800000000000000
+      internalID: 5293950794313687038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 913
+        width: 165
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c45408f2cbf2b20800000000000000
+      internalID: 3111912779737812107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 690
+        width: 133
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4b2f0740afc6910800000000000000
+      internalID: 1832114045414716646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 690
+        width: 150
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa2bfad0aa5d53f0800000000000000
+      internalID: -910471902743811330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 691
+        width: 131
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4fca18c0dbb35260800000000000000
+      internalID: 7085213144168714058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 690
+        width: 140
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01e16eac43d166e0800000000000000
+      internalID: -1845962045948567282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 692
+        width: 136
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf674af5b6903c2e0800000000000000
+      internalID: -2106829843908495621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 693
+        width: 130
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4969926437ca9a0800000000000000
+      internalID: -6220470240122858287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 478
+        width: 78
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a064f3f479490c0800000000000000
+      internalID: -4569861355254445487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 478
+        width: 81
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516c0cf946b2ff3b0800000000000000
+      internalID: -5476610910682298859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 479
+        width: 107
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cad47ffdfd41880800000000000000
+      internalID: -8641035631997375388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 479
+        width: 77
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e54cf6a3c629690800000000000000
+      internalID: -7596890623181562338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 478
+        width: 79
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674d01d428083f1d0800000000000000
+      internalID: -3318167203314871178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 479
+        width: 88
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa31bcda320ddad0800000000000000
+      internalID: -2675980151754245459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 274
+        width: 120
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0c83ea912de34e0800000000000000
+      internalID: -1999930176766951189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 272
+        width: 133
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362d0c66262f8b1d0800000000000000
+      internalID: -3334649019623222685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 272
+        width: 139
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e01842490ce8cb20800000000000000
+      internalID: 3155031063483912424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 273
+        width: 136
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc22c77751bd4eb0800000000000000
+      internalID: -4733932644067038028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 272
+        width: 135
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816bc99ae20d7f980800000000000000
+      internalID: -8505100472433199592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 272
+        width: 135
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c73219db0ba7fa90800000000000000
+      internalID: -7280162205246277693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 69
+        width: 145
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5563a5e38df2dbb0800000000000000
+      internalID: -4912585500572555937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 65
+        width: 144
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e508e5414455a730800000000000000
+      internalID: 4009703682565735908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 66
+        width: 142
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bb12472e1386590800000000000000
+      internalID: -7680834315799643251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 65
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef4ffbc9cd155750800000000000000
+      internalID: 6292968806868275177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 67
+        width: 138
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25b354c59aa8fdd0800000000000000
+      internalID: -2452022436882565846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-mountain-titan-walk-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 65
+        width: 140
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22655ddefd025cf90800000000000000
+      internalID: -6934099905127033310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

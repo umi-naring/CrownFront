@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: 4d3f5e0d6dfc0cc41975362509a1b40b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8937212171480967060
+    second: boss-iron-colossus-skill-directions-v1_0
+  - first:
+      213: 6414362622305911154
+    second: boss-iron-colossus-skill-directions-v1_1
+  - first:
+      213: 4165680600846229155
+    second: boss-iron-colossus-skill-directions-v1_2
+  - first:
+      213: -2322978529125921050
+    second: boss-iron-colossus-skill-directions-v1_3
+  - first:
+      213: 5491720160660057383
+    second: boss-iron-colossus-skill-directions-v1_4
+  - first:
+      213: 7208804236642877521
+    second: boss-iron-colossus-skill-directions-v1_5
+  - first:
+      213: 666479847792628802
+    second: boss-iron-colossus-skill-directions-v1_6
+  - first:
+      213: -4619045854635573629
+    second: boss-iron-colossus-skill-directions-v1_7
+  - first:
+      213: -1037435103173186319
+    second: boss-iron-colossus-skill-directions-v1_8
+  - first:
+      213: -4956442297242882403
+    second: boss-iron-colossus-skill-directions-v1_9
+  - first:
+      213: -4774122071504286324
+    second: boss-iron-colossus-skill-directions-v1_10
+  - first:
+      213: 1418397548347918370
+    second: boss-iron-colossus-skill-directions-v1_11
+  - first:
+      213: 479257352327295178
+    second: boss-iron-colossus-skill-directions-v1_12
+  - first:
+      213: 7859868260692094645
+    second: boss-iron-colossus-skill-directions-v1_13
+  - first:
+      213: 1814471781975637570
+    second: boss-iron-colossus-skill-directions-v1_14
+  - first:
+      213: 4741267991547595136
+    second: boss-iron-colossus-skill-directions-v1_15
+  - first:
+      213: -4932373469468088024
+    second: boss-iron-colossus-skill-directions-v1_16
+  - first:
+      213: 6669346161396679430
+    second: boss-iron-colossus-skill-directions-v1_17
+  - first:
+      213: 5113132002373656914
+    second: boss-iron-colossus-skill-directions-v1_18
+  - first:
+      213: 9175163221239341740
+    second: boss-iron-colossus-skill-directions-v1_19
+  - first:
+      213: -877080556330090582
+    second: boss-iron-colossus-skill-directions-v1_20
+  - first:
+      213: 5944264414655539702
+    second: boss-iron-colossus-skill-directions-v1_21
+  - first:
+      213: -4245546203747157648
+    second: boss-iron-colossus-skill-directions-v1_22
+  - first:
+      213: -469598662459239786
+    second: boss-iron-colossus-skill-directions-v1_23
+  - first:
+      213: -5760254403331529674
+    second: boss-iron-colossus-skill-directions-v1_24
+  - first:
+      213: 4165575802476977222
+    second: boss-iron-colossus-skill-directions-v1_25
+  - first:
+      213: 8420674425053841465
+    second: boss-iron-colossus-skill-directions-v1_26
+  - first:
+      213: -2075979132115854148
+    second: boss-iron-colossus-skill-directions-v1_27
+  - first:
+      213: 2886085152558338517
+    second: boss-iron-colossus-skill-directions-v1_28
+  - first:
+      213: -1235490640046536662
+    second: boss-iron-colossus-skill-directions-v1_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 82
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 928
+        width: 185
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c685494a1e4a8f380800000000000000
+      internalID: -8937212171480967060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 928
+        width: 186
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271461bf1d4640950800000000000000
+      internalID: 6414362622305911154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 928
+        width: 185
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aedc2d8f687fc930800000000000000
+      internalID: 4165680600846229155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_3
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 928
+        width: 191
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee079ed55f13cfd0800000000000000
+      internalID: -2322978529125921050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_4
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 928
+        width: 193
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d6ef5c362863c40800000000000000
+      internalID: 5491720160660057383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_5
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 928
+        width: 185
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1500e646241da0460800000000000000
+      internalID: 7208804236642877521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 710
+        width: 172
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244d2a1f3efcf3900800000000000000
+      internalID: 666479847792628802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 709
+        width: 172
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38eb439944ad5efb0800000000000000
+      internalID: -4619045854635573629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_8
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 709
+        width: 171
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc67dd254a4a91f0800000000000000
+      internalID: -1037435103173186319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_9
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 710
+        width: 171
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9eed13bdfd273bb0800000000000000
+      internalID: -4956442297242882403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_10
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 709
+        width: 173
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d82a53549eebdb0800000000000000
+      internalID: -4774122071504286324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_11
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 710
+        width: 180
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22800932e092fa310800000000000000
+      internalID: 1418397548347918370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_12
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 499
+        width: 155
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac07671d50aa6a600800000000000000
+      internalID: 479257352327295178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_13
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 499
+        width: 155
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be6beb2a8cd31d60800000000000000
+      internalID: 7859868260692094645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_14
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 499
+        width: 159
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24eb0a3e87c4e2910800000000000000
+      internalID: 1814471781975637570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_15
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 499
+        width: 160
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089cf153e1e5cc140800000000000000
+      internalID: 4741267991547595136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_16
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 499
+        width: 166
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8292bcc5670bc8bb0800000000000000
+      internalID: -4932373469468088024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_17
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 499
+        width: 163
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6030a228ff64e8c50800000000000000
+      internalID: 6669346161396679430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 294
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251e923377e75f640800000000000000
+      internalID: 5113132002373656914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_19
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 294
+        width: 161
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2233e665ab45f70800000000000000
+      internalID: 9175163221239341740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_20
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 294
+        width: 182
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaffa8881ebf3d3f0800000000000000
+      internalID: -877080556330090582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_21
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 294
+        width: 188
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9e986bdf44e7250800000000000000
+      internalID: 5944264414655539702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_22
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 293
+        width: 164
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0797428b83ac415c0800000000000000
+      internalID: -4245546203747157648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_23
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 293
+        width: 170
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6925e192186ab79f0800000000000000
+      internalID: -469598662459239786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_24
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 64
+        width: 174
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6346b89a3277f00b0800000000000000
+      internalID: -5760254403331529674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_25
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 64
+        width: 172
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c5a974f191fc930800000000000000
+      internalID: 4165575802476977222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_26
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 64
+        width: 185
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9380d8266ce3cd470800000000000000
+      internalID: 8420674425053841465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_27
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 64
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc5c157af3a033e0800000000000000
+      internalID: -2075979132115854148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_28
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 63
+        width: 174
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1d4c5b72f6d0820800000000000000
+      internalID: 2886085152558338517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss-iron-colossus-skill-directions-v1_29
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 63
+        width: 167
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28c4bc0fc7aadee0800000000000000
+      internalID: -1235490640046536662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
