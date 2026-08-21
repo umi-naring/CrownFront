@@ -1,5 +1,7 @@
 {
   "useTestAds": false,
   "adMobAppId": "ca-app-pub-1688606489162660~5049427486",
-  "interstitialAdUnitId": "ca-app-pub-1688606489162660/1175233834"
+  "interstitialAdUnitId": "ca-app-pub-1688606489162660/1175233834",
+  "unityAdsAndroidGameId": "",
+  "unityAdsInterstitialPlacementId": "Interstitial_Android"
 }

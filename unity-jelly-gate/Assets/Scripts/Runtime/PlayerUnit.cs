@@ -402,7 +402,10 @@ namespace JellyGate
             }
             bodyBaseScale = Vector3.one * (definition.Radius * (IsHero ? 4.32f : 2.95f));
             body.transform.localScale = bodyBaseScale;
-            bodyBaseColor = skinAnimation != null || authored != null
+            // Every authored directional timeline already contains its final skin and skin-tone
+            // colours. Hero tinting is reserved for the geometric fallback only; applying it to
+            // a loaded base/skin atlas recoloured the face, hands and clothing at level five.
+            bodyBaseColor = presentationAnimation != null || authored != null
                 ? Color.white
                 : IsHero ? game.GetHeroSpriteTint(Archetype) : game.GetUnitSpriteTint(Archetype);
             body.color = bodyBaseColor;
@@ -877,7 +880,7 @@ namespace JellyGate
                     bodyBaseScale = body.transform.localScale;
                 }
             }
-            bodyBaseColor = game.GetHeroSpriteTint(Archetype);
+            bodyBaseColor = directionalAnimation != null ? Color.white : game.GetHeroSpriteTint(Archetype);
             body.color = bodyBaseColor;
             heroAura.enabled = false;
             heroCrestOuter.enabled = true;

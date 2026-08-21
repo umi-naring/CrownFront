@@ -479,7 +479,7 @@ namespace JellyGate
                 var family = GuideEnemies[chapter];
                 var variant = EnemyVariantCatalog.ForChapterStage(chapter, 4);
                 var identity = BossIdentityCatalog.For(family);
-                var rect = new Rect(4f, y, width - 8f, 220f);
+                var rect = new Rect(4f, y, width - 8f, 238f);
                 DrawOrnatePanel(rect, new Color(.062f, .025f, .07f, .995f), identity.Accent, 3f);
                 var sprite = GuideBossPortraitSprite(chapter);
                 var portraitFrame = GuideBossPortraitFrameRect(rect);
@@ -493,21 +493,22 @@ namespace JellyGate
                 DrawPanel(new Rect(portraitFrame.xMax - 11f, portraitFrame.y + 7f, 4f, 4f),
                     new Color(1f, .91f, .62f, .9f));
                 var textX = portraitFrame.xMax + 10f;
-                GUI.Label(new Rect(textX, rect.y + 7f, rect.xMax - textX - 8f, 25f),
-                    $"BOSS R{(chapter + 1) * 5} · {variant.Name}", GuideTitleStyle(15));
-                GUI.Label(new Rect(textX, rect.y + 36f, rect.xMax - textX - 8f, 50f),
+                var titleRect = new Rect(textX, rect.y + 7f, rect.xMax - textX - 10f, 39f);
+                DrawFittedWrappedLabel(titleRect, $"BOSS R{(chapter + 1) * 5} · {variant.Name}",
+                    GuideTitleStyle(15), 10);
+                DrawFittedWrappedLabel(new Rect(textX, rect.y + 50f, rect.xMax - textX - 10f, 68f),
                     L($"기본 공격: {GuideEnemyBasicAttack(variant.CombatClass)}",
                         $"BASIC: {GuideEnemyBasicAttack(variant.CombatClass)}"),
-                    GuideBodyStyle(10, TextAnchor.UpperLeft));
-                GUI.Label(new Rect(rect.x + 12f, rect.y + 138f, rect.width - 24f, 34f),
+                    GuideBodyStyle(10, TextAnchor.UpperLeft), 8);
+                DrawFittedWrappedLabel(new Rect(rect.x + 12f, rect.y + 140f, rect.width - 24f, 39f),
                     L($"고유 스킬: {GuideBossActiveName(family)} — {GuideBossSkillEffect(family)}",
                         $"SIGNATURE: {GuideBossActiveName(family)} — {GuideBossSkillEffect(family)}"),
-                    GuideBodyStyle(10, TextAnchor.UpperLeft));
-                GUI.Label(new Rect(rect.x + 12f, rect.y + 174f, rect.width - 24f, 40f),
+                    GuideBodyStyle(10, TextAnchor.UpperLeft), 8);
+                DrawFittedWrappedLabel(new Rect(rect.x + 12f, rect.y + 184f, rect.width - 24f, 47f),
                     L($"지속 효과: {identity.PassiveName} — {identity.PassiveDescription}",
                         $"PASSIVE: {identity.PassiveName} — {identity.PassiveDescription}"),
-                    GuideBodyStyle(10, TextAnchor.UpperLeft));
-                y += 229f;
+                    GuideBodyStyle(10, TextAnchor.UpperLeft), 8);
+                y += 247f;
             }
         }
 
@@ -520,16 +521,19 @@ namespace JellyGate
             return GetEnemyVariantSprite(profile, true);
         }
 
-        private static Rect GuideBossPortraitFrameRect(Rect card) =>
-            new(card.x + 10f, card.y + 10f, 132f, 120f);
+        private static Rect GuideBossPortraitFrameRect(Rect card)
+        {
+            var width = Mathf.Clamp(card.width * .3f, 96f, 116f);
+            return new Rect(card.x + 10f, card.y + 10f, width, 120f);
+        }
 
         private static Rect GuideBossPortraitRect(Rect card)
         {
             var frame = GuideBossPortraitFrameRect(card);
-            // Ten logical pixels on every edge remain visible around the complete opaque body.
+            // Twelve logical pixels on every edge remain visible around the complete opaque body.
             // The portrait therefore communicates an intentional frame instead of an accidental
             // crop, even for the Ent's canopy and the Iron Colossus' wide fists.
-            return new Rect(frame.x + 10f, frame.y + 9f, frame.width - 20f, frame.height - 19f);
+            return new Rect(frame.x + 12f, frame.y + 11f, frame.width - 24f, frame.height - 23f);
         }
 
         private static string GuideEnemyBasicAttack(EnemyClass enemyClass) => enemyClass switch

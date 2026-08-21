@@ -17,6 +17,7 @@ namespace JellyGate
         private Texture2D reviveTicketTexture;
         private Texture2D tacticalItemAtlasTexture;
         private Texture2D removeAdsTexture;
+        private Texture2D unitSkillIconAtlasTexture;
         private readonly Dictionary<int, Texture2D> gemPackTextures = new();
         private int inspectedPregameItem = -1;
         private int inspectedRunItem = -1;
@@ -28,6 +29,10 @@ namespace JellyGate
         private int pressedRunItem = -1;
         private float pressedRunItemAt;
         private float inspectedRunItemUntil;
+        private int pressedUnitAbilitySlot = -1;
+        private float pressedUnitAbilityAt;
+        private int inspectedUnitAbilitySlot = -1;
+        private float inspectedUnitAbilityUntil;
         private const float TacticalItemLongPressSeconds = .52f;
 
         private void InitializeEconomy()
@@ -37,6 +42,7 @@ namespace JellyGate
             reviveTicketTexture = Resources.Load<Texture2D>("Shop/revive-ticket");
             tacticalItemAtlasTexture = Resources.Load<Texture2D>("Shop/tactical-item-atlas-v1");
             removeAdsTexture = Resources.Load<Texture2D>("Shop/remove-ads-v1");
+            unitSkillIconAtlasTexture = Resources.Load<Texture2D>("Shop/unit-skill-icons-v2");
             var gemAssets = new[]
             {
                 (100, 100), (305, 310), (515, 525), (1040, 1075), (2100, 2200)
@@ -468,22 +474,26 @@ namespace JellyGate
                 product.Description, new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft,
                     wordWrap = true }, 9);
             DrawFittedLabel(new Rect(panel.x + 24f, panel.y + 202f, panel.width - 48f, 30f),
-                L($"보유 · 골드 {economy.Gold:N0}   보석 {economy.Gems:N0}",
-                    $"OWNED · {economy.Gold:N0} GOLD   {economy.Gems:N0} GEMS"),
-                new GUIStyle(centeredStyle) { alignment = TextAnchor.MiddleCenter }, 10);
+                $"● {economy.Gold:N0}G     ◆ {economy.Gems:N0}",
+                new GUIStyle(centeredStyle)
+                {
+                    alignment = TextAnchor.MiddleCenter,
+                    richText = true,
+                    normal = { textColor = new Color(.78f, .93f, 1f) }
+                }, 10);
 
             var gemEnabled = product.GemPrice > 0 && economy.Gems >= product.GemPrice;
             if (product.HasTacticalItem)
             {
                 var goldEnabled = product.GoldPrice > 0 && economy.Gold >= product.GoldPrice;
                 if (DrawPremiumButton(new Rect(panel.x + 24f, panel.y + 244f, panel.width - 48f, 48f),
-                        L($"골드 {product.GoldPrice:N0}로 구매", $"BUY FOR {product.GoldPrice:N0} GOLD"),
+                        L($"구매  ·  ● {product.GoldPrice:N0}G", $"BUY  ·  ● {product.GoldPrice:N0}G"),
                         new Color(.16f, .105f, .025f, .99f), new Color(1f, .79f, .3f), goldEnabled) &&
                     TryPurchaseInGameProduct(product, ShopCurrency.Gold)) pendingPurchaseProduct = null;
             }
             var gemY = product.HasTacticalItem ? panel.y + 302f : panel.y + 272f;
             if (DrawPremiumButton(new Rect(panel.x + 24f, gemY, panel.width - 48f, 52f),
-                    L($"보석 {product.GemPrice:N0}로 구매", $"BUY FOR {product.GemPrice:N0} GEMS"),
+                    L($"구매  ·  ◆ {product.GemPrice:N0}", $"BUY  ·  ◆ {product.GemPrice:N0}"),
                     new Color(.035f, .10f, .14f, .99f), new Color(.52f, .9f, 1f), product.GemPrice > 0))
             {
                 if (TryPurchaseInGameProduct(product, ShopCurrency.Gems)) pendingPurchaseProduct = null;

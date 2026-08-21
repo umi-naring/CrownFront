@@ -7,6 +7,8 @@ namespace JellyGate
     {
         private Action pendingInterstitialTransition;
         private bool interstitialTransitionPending;
+        private bool interstitialTransitionLostFocus;
+        private float interstitialTransitionStartedAt;
         private int pendingMainMenuGoldNotice;
         private float mainMenuGoldNoticeUntil;
 
@@ -16,6 +18,8 @@ namespace JellyGate
             if (monetization != null && monetization.NotifyRunEnded())
             {
                 interstitialTransitionPending = true;
+                interstitialTransitionLostFocus = false;
+                interstitialTransitionStartedAt = Time.unscaledTime;
                 pendingInterstitialTransition = transition;
                 monetization.InterstitialClosed -= FinishInterstitialTransition;
                 monetization.InterstitialClosed += FinishInterstitialTransition;
@@ -35,16 +39,55 @@ namespace JellyGate
             transition?.Invoke();
         }
 
+        private void UpdateInterstitialTransition()
+        {
+            if (!interstitialTransitionPending) return;
+            var elapsed = Time.unscaledTime - interstitialTransitionStartedAt;
+            // A failed/no-fill request can leave the Android bridge waiting for a load callback.
+            // Do not trap the player on a black transition screen when no ad became ready.
+            if (elapsed >= 8f && (monetization == null || !monetization.AdsReady))
+                FinishInterstitialTransition();
+            else if (elapsed >= 45f)
+                FinishInterstitialTransition();
+        }
+
+        private void OnInterstitialApplicationFocus(bool focused)
+        {
+            if (!interstitialTransitionPending) return;
+            if (!focused)
+            {
+                interstitialTransitionLostFocus = true;
+                return;
+            }
+            // Full-screen ad activities commonly pause/focus the Unity activity. If an adapter
+            // fails to forward onAdDismissed, focus restoration is the reliable final signal.
+            if (interstitialTransitionLostFocus && Time.unscaledTime - interstitialTransitionStartedAt >= .35f)
+                FinishInterstitialTransition();
+        }
+
         private void QueueMainMenuGoldNotice(int awarded)
         {
             if (awarded <= 0) return;
             pendingMainMenuGoldNotice = awarded;
-            mainMenuGoldNoticeUntil = Time.unscaledTime + 5f;
+            // The interstitial can remain open longer than the notice. Start the five-second
+            // display only after the menu is actually visible.
+            mainMenuGoldNoticeUntil = float.PositiveInfinity;
+        }
+
+        private void ActivateMainMenuGoldNotice()
+        {
+            if (pendingMainMenuGoldNotice > 0)
+                mainMenuGoldNoticeUntil = Time.unscaledTime + 5f;
         }
 
         private void DrawMainMenuGoldRewardNotice()
         {
-            if (pendingMainMenuGoldNotice <= 0 || Time.unscaledTime > mainMenuGoldNoticeUntil) return;
+            if (pendingMainMenuGoldNotice <= 0) return;
+            if (Time.unscaledTime > mainMenuGoldNoticeUntil)
+            {
+                pendingMainMenuGoldNotice = 0;
+                return;
+            }
             var safe = SafeGuiRect;
             var width = Mathf.Min(286f, safe.width - 24f);
             var rect = new Rect(safe.center.x - width * .5f, safe.y + 47f, width, 43f);

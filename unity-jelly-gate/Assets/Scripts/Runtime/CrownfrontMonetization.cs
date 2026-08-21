@@ -47,8 +47,9 @@ namespace JellyGate
 
     /// <summary>
     /// Owns Google Play one-time products, cosmetic entitlements and post-run interstitial ads.
-    /// AdMob mediation selects Google demand first and can fill with Unity Ads bidding without
-    /// a second fullscreen request, keeping consent, frequency and transition callbacks unified.
+    /// AdMob mediation selects Google demand first and can fill with Unity Ads bidding. If that
+    /// complete request fails, the Android bridge performs one direct Unity Ads fallback using
+    /// the dashboard Game ID and interstitial placement configured in the services asset.
     /// The Android bridge is injected into the Gradle project by GooglePlayAndroidPostprocessor.
     /// Editor/desktop builds retain the complete shop UI but never grant paid products.
     /// </summary>
@@ -116,6 +117,8 @@ namespace JellyGate
         {
             public bool useTestAds = true;
             public string interstitialAdUnitId = string.Empty;
+            public string unityAdsAndroidGameId = string.Empty;
+            public string unityAdsInterstitialPlacementId = string.Empty;
         }
 
         public void Initialize(Action<string> messageSink)
@@ -137,9 +140,15 @@ namespace JellyGate
                 var directProducts = products.FindAll(product => product.DirectPurchase);
                 var productIds = new string[directProducts.Count];
                 for (var i = 0; i < directProducts.Count; i++) productIds[i] = directProducts[i].Id;
-                var interstitialId = ResolveInterstitialId();
+                var config = ResolveServicesConfig();
+                var testAds = config == null || config.useTestAds || !IsPlayStoreInstall();
+                var interstitialId = testAds
+                    ? TestInterstitialId
+                    : config.interstitialAdUnitId?.Trim() ?? string.Empty;
+                var unityGameId = config?.unityAdsAndroidGameId?.Trim() ?? string.Empty;
+                var unityPlacementId = config?.unityAdsInterstitialPlacementId?.Trim() ?? string.Empty;
                 androidBridge = bridgeClass.CallStatic<AndroidJavaObject>("create", activity, name,
-                    productIds, interstitialId);
+                    productIds, interstitialId, unityGameId, unityPlacementId, testAds);
             }
             catch (Exception exception)
             {
@@ -154,22 +163,17 @@ namespace JellyGate
 #endif
         }
 
-        private static string ResolveInterstitialId()
+        private static GoogleServicesConfig ResolveServicesConfig()
         {
             var configAsset = Resources.Load<TextAsset>("crownfront-google-services");
-            if (configAsset == null) return TestInterstitialId;
+            if (configAsset == null) return null;
             try
             {
-                var config = JsonUtility.FromJson<GoogleServicesConfig>(configAsset.text);
-                if (config == null || config.useTestAds || !IsPlayStoreInstall())
-                    return TestInterstitialId;
-                return string.IsNullOrWhiteSpace(config.interstitialAdUnitId)
-                    ? string.Empty
-                    : config.interstitialAdUnitId.Trim();
+                return JsonUtility.FromJson<GoogleServicesConfig>(configAsset.text);
             }
             catch
             {
-                return TestInterstitialId;
+                return null;
             }
         }
 
@@ -649,6 +653,11 @@ namespace JellyGate
                     LastAdNetwork = nativeEvent.message ?? string.Empty;
                     if (!string.IsNullOrWhiteSpace(LastAdNetwork))
                         Debug.Log($"Interstitial mediation adapter ready: {LastAdNetwork}");
+                    break;
+                case "unity_ad_loaded":
+                    AdsReady = true;
+                    LastAdNetwork = "UNITY_DIRECT";
+                    Debug.Log("Direct Unity Ads fallback ready.");
                     break;
                 case "ads_initialized":
                     ConsentStatusKnown = true;

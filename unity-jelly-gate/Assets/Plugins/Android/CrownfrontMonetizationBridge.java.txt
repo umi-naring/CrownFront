@@ -27,6 +27,16 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.ump.ConsentInformation;
 import com.google.android.ump.ConsentRequestParameters;
 import com.google.android.ump.UserMessagingPlatform;
+import com.unity3d.ads.IUnityAdsInitializationListener;
+import com.unity3d.ads.IUnityAdsLoadListener;
+import com.unity3d.ads.IUnityAdsShowListener;
+import com.unity3d.ads.UnityAds;
+import com.unity3d.ads.UnityAdsLoadOptions;
+import com.unity3d.ads.UnityAdsShowOptions;
+import com.unity3d.ads.UnityAds.UnityAdsInitializationError;
+import com.unity3d.ads.UnityAds.UnityAdsLoadError;
+import com.unity3d.ads.UnityAds.UnityAdsShowCompletionState;
+import com.unity3d.ads.UnityAds.UnityAdsShowError;
 import com.unity3d.player.UnityPlayer;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,6 +48,9 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
     private final String callbackObject;
     private final String[] productIds;
     private final String interstitialId;
+    private final String unityGameId;
+    private final String unityPlacementId;
+    private final boolean unityTestMode;
     private final Map<String, ProductDetails> productDetails = new HashMap<>();
     private BillingClient billingClient;
     private ConsentInformation consentInformation;
@@ -45,24 +58,36 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
     private boolean mobileAdsInitialized;
     private boolean interstitialLoading;
     private boolean pendingInterstitialShow;
+    private boolean unityAdsInitialized;
+    private boolean unityAdLoading;
+    private boolean unityAdLoaded;
+    private boolean pendingUnityShow;
     private boolean billingConnectionStarting;
     private String pendingProductId = "";
     private boolean disposed;
 
     public static CrownfrontMonetizationBridge create(Activity activity, String callbackObject,
-                                                        String[] productIds, String interstitialId) {
+                                                        String[] productIds, String interstitialId,
+                                                        String unityGameId, String unityPlacementId,
+                                                        boolean unityTestMode) {
         CrownfrontMonetizationBridge bridge =
-            new CrownfrontMonetizationBridge(activity, callbackObject, productIds, interstitialId);
+            new CrownfrontMonetizationBridge(activity, callbackObject, productIds, interstitialId,
+                unityGameId, unityPlacementId, unityTestMode);
         bridge.initialize();
         return bridge;
     }
 
     private CrownfrontMonetizationBridge(Activity activity, String callbackObject,
-                                         String[] productIds, String interstitialId) {
+                                         String[] productIds, String interstitialId,
+                                         String unityGameId, String unityPlacementId,
+                                         boolean unityTestMode) {
         this.activity = activity;
         this.callbackObject = callbackObject;
         this.productIds = productIds;
         this.interstitialId = interstitialId;
+        this.unityGameId = unityGameId == null ? "" : unityGameId;
+        this.unityPlacementId = unityPlacementId == null ? "" : unityPlacementId;
+        this.unityTestMode = unityTestMode;
     }
 
     private void initialize() {
@@ -130,7 +155,99 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
         MobileAds.initialize(activity, initializationStatus -> {
             send("ads_initialized", "", "", "");
             loadInterstitial();
+            initializeUnityFallback();
         });
+    }
+
+    private boolean hasUnityFallbackConfiguration() {
+        return !unityGameId.isEmpty() && !unityPlacementId.isEmpty();
+    }
+
+    private void initializeUnityFallback() {
+        if (disposed || unityAdsInitialized || !hasUnityFallbackConfiguration()) return;
+        UnityAds.initialize(activity, unityGameId, unityTestMode,
+            new IUnityAdsInitializationListener() {
+                @Override
+                public void onInitializationComplete() {
+                    unityAdsInitialized = true;
+                    loadUnityFallback();
+                }
+
+                @Override
+                public void onInitializationFailed(UnityAdsInitializationError error,
+                                                   String message) {
+                    unityAdsInitialized = false;
+                    if (pendingUnityShow) {
+                        pendingUnityShow = false;
+                        send("ad_error", "", "", "UNITY_INIT_FAILED|" + error + ";" + message);
+                    }
+                }
+            });
+    }
+
+    private void loadUnityFallback() {
+        if (disposed || !unityAdsInitialized || unityAdLoaded || unityAdLoading ||
+            !hasUnityFallbackConfiguration()) return;
+        unityAdLoading = true;
+        UnityAds.load(unityPlacementId, new UnityAdsLoadOptions(), new IUnityAdsLoadListener() {
+            @Override
+            public void onUnityAdsAdLoaded(String placementId) {
+                unityAdLoading = false;
+                unityAdLoaded = true;
+                send("unity_ad_loaded", "", "", "UNITY_DIRECT");
+                if (pendingUnityShow) showUnityFallback("UNITY_READY");
+            }
+
+            @Override
+            public void onUnityAdsFailedToLoad(String placementId, UnityAdsLoadError error,
+                                               String message) {
+                unityAdLoading = false;
+                unityAdLoaded = false;
+                if (pendingUnityShow) {
+                    pendingUnityShow = false;
+                    send("ad_error", "", "", "UNITY_LOAD_FAILED|" + error + ";" + message);
+                }
+            }
+        });
+    }
+
+    private void showUnityFallback(String primaryFailure) {
+        if (disposed) return;
+        if (!hasUnityFallbackConfiguration()) {
+            pendingUnityShow = false;
+            send("ad_error", "", "", primaryFailure + "|UNITY_FALLBACK_NOT_CONFIGURED");
+            return;
+        }
+        pendingUnityShow = true;
+        if (!unityAdsInitialized) {
+            initializeUnityFallback();
+            return;
+        }
+        if (!unityAdLoaded) {
+            loadUnityFallback();
+            return;
+        }
+        pendingUnityShow = false;
+        unityAdLoaded = false;
+        UnityAds.show(activity, unityPlacementId, new UnityAdsShowOptions(),
+            new IUnityAdsShowListener() {
+                @Override
+                public void onUnityAdsShowFailure(String placementId, UnityAdsShowError error,
+                                                  String message) {
+                    send("ad_error", "", "", "UNITY_SHOW_FAILED|" + error + ";" + message);
+                    loadUnityFallback();
+                }
+
+                @Override public void onUnityAdsShowStart(String placementId) { }
+                @Override public void onUnityAdsShowClick(String placementId) { }
+
+                @Override
+                public void onUnityAdsShowComplete(String placementId,
+                                                   UnityAdsShowCompletionState state) {
+                    send("ad_dismissed", "", "", "UNITY_DIRECT");
+                    loadUnityFallback();
+                }
+            });
     }
 
     public void showPrivacyOptions() {
@@ -364,8 +481,7 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                         public void onAdFailedToShowFullScreenContent(@NonNull AdError error) {
                             interstitial = null;
                             pendingInterstitialShow = false;
-                            send("ad_error", "", "",
-                                "AD_SHOW_FAILED|code=" + error.getCode());
+                            showUnityFallback("ADMOB_SHOW_FAILED|code=" + error.getCode());
                             loadInterstitial();
                         }
                     });
@@ -386,8 +502,7 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                     interstitial = null;
                     if (pendingInterstitialShow) {
                         pendingInterstitialShow = false;
-                        send("ad_error", "", "",
-                            "AD_LOAD_FAILED|code=" + error.getCode());
+                        showUnityFallback("ADMOB_LOAD_FAILED|code=" + error.getCode());
                         activity.getWindow().getDecorView().postDelayed(
                             () -> loadInterstitial(), 4500L);
                     }
@@ -421,8 +536,12 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
         pendingProductId = "";
         billingConnectionStarting = false;
         pendingInterstitialShow = false;
+        pendingUnityShow = false;
         interstitialLoading = false;
         interstitial = null;
+        unityAdLoading = false;
+        unityAdLoaded = false;
+        unityAdsInitialized = false;
         if (billingClient != null) billingClient.endConnection();
         billingClient = null;
         consentInformation = null;

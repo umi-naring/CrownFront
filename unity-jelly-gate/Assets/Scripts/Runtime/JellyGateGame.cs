@@ -652,6 +652,10 @@ namespace JellyGate
         {
             Application.targetFrameRate = 60;
             Application.runInBackground = true;
+            // Android must route the system Back key into HandleBackButton. Leaving this at the
+            // platform default lets some devices background the activity before Unity receives
+            // KeyCode.Escape, which looked like the game window had closed.
+            Input.backButtonLeavesApp = false;
             // Real mobile sessions must open immersive. Automated desktop runners stay windowed;
             // Windows throttles an unfocused fullscreen player and would report a false 1-2 FPS.
             if (!IsQaMode())
@@ -2709,6 +2713,7 @@ namespace JellyGate
             UpdateBattlefieldMood();
             UpdateAttackOrderMarker();
             UpdateRunCheckpointAutosave();
+            UpdateInterstitialTransition();
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 HandleBackButton();
@@ -2860,6 +2865,7 @@ namespace JellyGate
             showGuidePanel = false;
             exitConfirmFromSystemMenu = false;
             showMainMenu = true;
+            ActivateMainMenuGoldNotice();
             mainMenuInputReadyAt = Time.unscaledTime + .42f;
             voiceBarks?.SetBattleMusic(false, true);
         }
@@ -16403,10 +16409,22 @@ namespace JellyGate
                     var price = owned ? L("보유", "OWNED") : product.DirectPurchase
                         ? monetization.PriceFor(product)
                         : product.HasTacticalItem
-                            ? L($"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆",
-                                $"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆")
-                            : L($"보석 {product.GemPrice:N0}", $"{product.GemPrice:N0} GEMS");
-                    DrawFittedLabel(new Rect(row.xMax - 94f, row.y + 10f, 82f, 25f), price, centeredStyle, 10);
+                            ? $"● {product.GoldPrice:N0}G / ◆ {product.GemPrice:N0}"
+                            : $"◆ {product.GemPrice:N0}";
+                    var priceStyle = new GUIStyle(centeredStyle)
+                    {
+                        alignment = TextAnchor.MiddleCenter,
+                        fontStyle = FontStyle.Bold,
+                        normal =
+                        {
+                            textColor = product.DirectPurchase || owned
+                                ? new Color(1f, .9f, .58f)
+                                : product.HasTacticalItem
+                                    ? new Color(.9f, .91f, .72f)
+                                    : new Color(.48f, .88f, 1f)
+                        }
+                    };
+                    DrawFittedLabel(new Rect(row.xMax - 100f, row.y + 9f, 90f, 27f), price, priceStyle, 9);
                     var waitingForThisProduct = monetization.PurchaseInProgress &&
                                                 monetization.LastRequestedProductId == product.Id;
                     var actionText = waitingForThisProduct ? L("처리 중…", "WAITING…") : product.Category == ShopCategory.Utility
@@ -17932,59 +17950,109 @@ namespace JellyGate
             }
 
             var skillRect = SelectedUnitSkillRect();
-            var skillState = unit.SkillCooldownRemaining <= 0f
-                ? L("준비", "READY")
-                : L($"{unit.SkillCooldownRemaining:0.0}초", $"{unit.SkillCooldownRemaining:0.0}s");
-            DrawPanel(new Rect(skillRect.x, skillRect.y + 3f, 3f, skillRect.height - 6f),
-                new Color(.48f, .82f, 1f, .92f));
-            var skillStyle = new GUIStyle(statStyle)
-            {
-                fontSize = 13, fontStyle = FontStyle.Bold, alignment = TextAnchor.MiddleLeft,
-                clipping = TextClipping.Clip
-            };
-            var skillLabel = L($"스킬 : {unit.SkillName}  {skillState}",
-                $"SKILL: {unit.SkillName}  {skillState}");
-            var skillLabelRect = new Rect(skillRect.x + 9f, skillRect.y, skillRect.width - 9f,
-                skillRect.height);
-            if (GameLocalization.Current == GameLanguage.Korean)
-                DrawFittedLabel(skillLabelRect, skillLabel, skillStyle, 10);
-            else
-                DrawFittedWrappedLabel(skillLabelRect, skillLabel, skillStyle, 8);
+            DrawSelectedUnitAbilityButton(skillRect, unit, false, true);
 
-            if (!unit.IsHero) return;
-            var ultimateRect = SelectedUnitUltimateRect();
-            var ultimateLabel = unit.UltimateCooldownRemaining <= 0f
-                ? L($"궁극기 : {unit.UltimateName}  사용", $"ULTIMATE: {unit.UltimateName}  USE")
-                : L($"궁극기 : {unit.UltimateName}  {unit.UltimateCooldownRemaining:0.0}초",
-                    $"ULTIMATE: {unit.UltimateName}  {unit.UltimateCooldownRemaining:0.0}s");
-            if (DrawSelectedUnitUltimateButton(ultimateRect, ultimateLabel, unit.CanUseUltimate))
+            if (unit.IsHero && DrawSelectedUnitAbilityButton(SelectedUnitUltimateRect(), unit, true,
+                    unit.CanUseUltimate))
             {
                 if (!unit.TryUseUltimate()) ShowToast(UltimateContextRequirement(unit));
             }
+            DrawSelectedUnitAbilityTooltip(rect, unit);
         }
 
-        private bool DrawSelectedUnitUltimateButton(Rect rect, string label, bool enabled)
+        private bool DrawSelectedUnitAbilityButton(Rect rect, PlayerUnit unit, bool ultimate, bool enabled)
         {
-            var fill = enabled ? new Color(.18f, .08f, .22f, .98f) : new Color(.055f, .06f, .08f, .96f);
-            var accent = enabled ? new Color(.9f, .54f, 1f) : new Color(.34f, .37f, .46f);
-            DrawOrnatePanel(rect, fill, accent, 2f);
-            var clicked = GUI.Button(rect, GUIContent.none, GUIStyle.none);
+            if (rect.width <= 0f || unit == null) return false;
+            var slot = ultimate ? 1 : 0;
+            var accent = ultimate
+                ? new Color(1f, .68f, .18f)
+                : new Color(.36f, .82f, 1f);
+            if (!enabled) accent = new Color(.35f, .39f, .48f);
+            DrawOrnatePanel(rect, new Color(.025f, .045f, .075f, .97f), accent, 1.5f);
+
+            var iconSize = Mathf.Min(rect.height - 4f, 30f);
+            var iconRect = new Rect(rect.x + 3f, rect.center.y - iconSize * .5f, iconSize, iconSize);
             var previous = GUI.color;
-            GUI.color = enabled ? Color.white : new Color(.66f, .69f, .76f);
-            var labelRect = new Rect(rect.x + 7f, rect.y + 3f, rect.width - 14f, rect.height - 6f);
-            var labelStyle = new GUIStyle(premiumButtonLabelStyle)
-            {
-                fontSize = GameLocalization.Current == GameLanguage.Korean ? 13 : 11,
-                fontStyle = FontStyle.Bold,
-                alignment = TextAnchor.MiddleCenter,
-                clipping = TextClipping.Clip
-            };
-            if (rect.width >= 175f && GameLocalization.Current == GameLanguage.Korean)
-                DrawFittedLabel(labelRect, label, labelStyle, 10);
-            else
-                DrawFittedWrappedLabel(labelRect, label, labelStyle, 8);
+            GUI.color = accent;
+            if (CircleSprite != null) GUI.DrawTexture(iconRect, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+            GUI.color = enabled ? Color.white : new Color(.58f, .61f, .68f);
+            DrawUnitAbilityAtlasCell(new Rect(iconRect.x + 2f, iconRect.y + 2f,
+                iconRect.width - 4f, iconRect.height - 4f), unit.Archetype, ultimate);
             GUI.color = previous;
-            return enabled && clicked;
+
+            var remaining = ultimate ? unit.UltimateCooldownRemaining : unit.SkillCooldownRemaining;
+            var state = remaining <= 0f
+                ? ultimate ? L("궁극 · 준비", "ULT · READY") : L("자동 · 준비", "AUTO · READY")
+                : L($"재사용 {remaining:0.0}초", $"COOLDOWN {remaining:0.0}s");
+            DrawFittedLabel(new Rect(iconRect.xMax + 5f, rect.y + 2f,
+                    rect.xMax - iconRect.xMax - 8f, rect.height - 4f), state,
+                new GUIStyle(statStyle)
+                {
+                    fontSize = 12,
+                    fontStyle = FontStyle.Bold,
+                    alignment = TextAnchor.MiddleCenter,
+                    normal = { textColor = enabled ? Color.white : new Color(.62f, .66f, .73f) }
+                }, 8);
+
+            var evt = Event.current;
+            var clicked = false;
+            if (evt.type == EventType.MouseDown && evt.button == 0 && rect.Contains(evt.mousePosition))
+            {
+                pressedUnitAbilitySlot = slot;
+                pressedUnitAbilityAt = Time.unscaledTime;
+                evt.Use();
+            }
+            if (pressedUnitAbilitySlot == slot && Input.GetMouseButton(0) &&
+                Time.unscaledTime - pressedUnitAbilityAt >= TacticalItemLongPressSeconds)
+            {
+                inspectedUnitAbilitySlot = slot;
+                inspectedUnitAbilityUntil = Time.unscaledTime + 2.8f;
+            }
+            if (evt.type == EventType.MouseUp && evt.button == 0 && pressedUnitAbilitySlot == slot)
+            {
+                var held = Time.unscaledTime - pressedUnitAbilityAt;
+                clicked = rect.Contains(evt.mousePosition) && held < TacticalItemLongPressSeconds;
+                pressedUnitAbilitySlot = -1;
+                evt.Use();
+            }
+            return ultimate && enabled && clicked;
+        }
+
+        private void DrawUnitAbilityAtlasCell(Rect rect, UnitArchetype archetype, bool ultimate)
+        {
+            if (unitSkillIconAtlasTexture == null)
+            {
+                if (CircleSprite != null) GUI.DrawTexture(rect, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+                return;
+            }
+            var index = Mathf.Clamp((int)archetype - 1, 0, 9) + (ultimate ? 10 : 0);
+            const float columns = 5f;
+            const float rows = 4f;
+            var column = index % 5;
+            var rowFromTop = index / 5;
+            var uv = new Rect(column / columns, 1f - (rowFromTop + 1f) / rows,
+                1f / columns, 1f / rows);
+            GUI.DrawTextureWithTexCoords(rect, unitSkillIconAtlasTexture, uv, true);
+        }
+
+        private void DrawSelectedUnitAbilityTooltip(Rect statusRect, PlayerUnit unit)
+        {
+            if (unit == null || inspectedUnitAbilitySlot < 0 ||
+                Time.unscaledTime > inspectedUnitAbilityUntil) return;
+            var ultimate = inspectedUnitAbilitySlot == 1;
+            if (ultimate && !unit.IsHero) return;
+            var name = ultimate ? unit.UltimateName : unit.SkillName;
+            var prefix = ultimate ? L("궁극기", "ULTIMATE") : L("자동 스킬", "AUTO SKILL");
+            var tooltip = new Rect(statusRect.x + 8f, statusRect.y - 43f, statusRect.width - 16f, 39f);
+            DrawOrnatePanel(tooltip, new Color(.018f, .035f, .07f, .985f),
+                ultimate ? new Color(1f, .69f, .2f) : new Color(.42f, .82f, 1f), 2f);
+            DrawFittedLabel(new Rect(tooltip.x + 9f, tooltip.y + 3f,
+                    tooltip.width - 18f, tooltip.height - 6f), $"{prefix} · {name}",
+                new GUIStyle(centeredStyle)
+                {
+                    alignment = TextAnchor.MiddleCenter,
+                    fontStyle = FontStyle.Bold
+                }, 10);
         }
 
         private string SelectedUnitPrimaryStats(PlayerUnit unit) =>
@@ -18142,9 +18210,9 @@ namespace JellyGate
             var rect = SelectedUnitStatusRect();
             var y = rect.y + 35f + SelectedUnitStatRowHeight() * 2f;
             if (!selectedUnits[0].IsHero)
-                return new Rect(rect.x + 10f, y, rect.width - 20f, 25f);
+                return new Rect(rect.x + 10f, y, rect.width - 20f, 32f);
             var rightWidth = SelectedUnitActionColumnWidth(rect);
-            return new Rect(rect.x + 10f, y, rect.width - rightWidth - 27f, 28f);
+            return new Rect(rect.x + 10f, y, rect.width - rightWidth - 27f, 32f);
         }
 
         private Rect SelectedUnitUltimateRect()

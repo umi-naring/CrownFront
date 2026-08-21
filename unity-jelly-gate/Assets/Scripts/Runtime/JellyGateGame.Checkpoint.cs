@@ -475,6 +475,7 @@ namespace JellyGate
         private void OnApplicationFocus(bool focused)
         {
             if (!focused) SaveRunCheckpoint();
+            OnInterstitialApplicationFocus(focused);
         }
 
         private void OnApplicationQuit()

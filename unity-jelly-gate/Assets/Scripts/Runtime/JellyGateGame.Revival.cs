@@ -143,7 +143,7 @@ namespace JellyGate
                 {
                     var third = (panel.width - 56f) / 3f;
                     if (DrawPremiumButton(new Rect(panel.x + 16f, actionY, third, 52f),
-                            L("골드 250", "250 GOLD"), new Color(.16f, .1f, .025f, .995f),
+                            "● 250G", new Color(.16f, .1f, .025f, .995f),
                             new Color(1f, .78f, .28f), validCount > 0 && economy != null && economy.Gold >= 250))
                     {
                         if (economy.TrySpend(ShopCurrency.Gold, 250))
@@ -153,7 +153,7 @@ namespace JellyGate
                         }
                     }
                     if (DrawPremiumButton(new Rect(panel.x + 20f + third, actionY, third, 52f),
-                            L("보석 11", "11 GEMS"), new Color(.025f, .095f, .14f, .995f),
+                            "◆ 11", new Color(.025f, .095f, .14f, .995f),
                             new Color(.42f, .84f, 1f), validCount > 0 && economy != null && economy.Gems >= 11))
                     {
                         if (economy.TrySpend(ShopCurrency.Gems, 11))
@@ -162,10 +162,15 @@ namespace JellyGate
                             TryExecuteSelectedRevive();
                         }
                     }
+                    var emergencyProduct = monetization?.FindProduct(CrownfrontMonetization.EmergencyReviveId);
+                    var emergencyPrice = emergencyProduct != null
+                        ? monetization.PriceFor(emergencyProduct)
+                        : L("₩150", "$0.15");
                     if (DrawPremiumButton(new Rect(panel.x + 24f + third * 2f, actionY, third, 52f),
-                            L("긴급 구매 · ₩150", "EMERGENCY · $0.15"), new Color(.055f, .09f, .14f, .995f),
+                            L($"긴급 구매 · {emergencyPrice}", $"EMERGENCY · {emergencyPrice}"),
+                            new Color(.055f, .09f, .14f, .995f),
                             new Color(.52f, .88f, 1f), validCount > 0))
-                        monetization?.Purchase(monetization.FindProduct(CrownfrontMonetization.EmergencyReviveId));
+                        monetization?.Purchase(emergencyProduct);
                 }
             }
             else
@@ -210,16 +215,8 @@ namespace JellyGate
         private void AbandonDefeatedRunToMainMenu()
         {
             QueueMainMenuGoldNotice(AwardRunGold());
-            if (!finalDefeatAdRequested)
-            {
-                finalDefeatAdRequested = monetization?.NotifyRunEnded() == true;
-                if (finalDefeatAdRequested)
-                {
-                    monetization.InterstitialClosed += FinishDefeatedRunToMainMenu;
-                    return;
-                }
-            }
-            FinishDefeatedRunToMainMenu();
+            finalDefeatAdRequested = true;
+            RequestInterstitialThen(FinishDefeatedRunToMainMenu);
         }
 
         private void FinishDefeatedRunToMainMenu()
@@ -228,6 +225,7 @@ namespace JellyGate
             ClearRevivalSnapshots();
             RestartGame();
             showMainMenu = true;
+            ActivateMainMenuGoldNotice();
             mainMenuInputReadyAt = Time.unscaledTime + .42f;
             voiceBarks?.SetBattleMusic(false, true);
         }
