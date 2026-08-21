@@ -78,6 +78,12 @@ namespace JellyGate
         private void Awake()
         {
             Application.runInBackground = true;
+            if (!IsQaCommandLine())
+            {
+                Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+                Screen.fullScreen = true;
+            }
+            Screen.orientation = ScreenOrientation.Portrait;
             GameLocalization.Current = GameLocalization.LoadInitialLanguage();
             artwork = Resources.Load<Texture2D>("loading-screen-v3");
             pixel = new Texture2D(1, 1, TextureFormat.RGBA32, false)
@@ -200,6 +206,13 @@ namespace JellyGate
         {
             foreach (var argument in Environment.GetCommandLineArgs())
                 if (string.Equals(argument, value, StringComparison.OrdinalIgnoreCase)) return true;
+            return false;
+        }
+
+        private static bool IsQaCommandLine()
+        {
+            foreach (var argument in Environment.GetCommandLineArgs())
+                if (argument.StartsWith("-qa", StringComparison.OrdinalIgnoreCase)) return true;
             return false;
         }
 

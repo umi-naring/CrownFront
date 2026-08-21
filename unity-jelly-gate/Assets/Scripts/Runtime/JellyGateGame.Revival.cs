@@ -141,8 +141,8 @@ namespace JellyGate
                 }
                 else
                 {
-                    var half = (panel.width - 50f) * .5f;
-                    if (DrawPremiumButton(new Rect(panel.x + 20f, actionY, half, 52f),
+                    var third = (panel.width - 56f) / 3f;
+                    if (DrawPremiumButton(new Rect(panel.x + 16f, actionY, third, 52f),
                             L("골드 250", "250 GOLD"), new Color(.16f, .1f, .025f, .995f),
                             new Color(1f, .78f, .28f), validCount > 0 && economy != null && economy.Gold >= 250))
                     {
@@ -152,8 +152,18 @@ namespace JellyGate
                             TryExecuteSelectedRevive();
                         }
                     }
-                    if (DrawPremiumButton(new Rect(panel.x + 30f + half, actionY, half, 52f),
-                            L("긴급 구매 · ₩700", "EMERGENCY · $0.49"), new Color(.055f, .09f, .14f, .995f),
+                    if (DrawPremiumButton(new Rect(panel.x + 20f + third, actionY, third, 52f),
+                            L("보석 11", "11 GEMS"), new Color(.025f, .095f, .14f, .995f),
+                            new Color(.42f, .84f, 1f), validCount > 0 && economy != null && economy.Gems >= 11))
+                    {
+                        if (economy.TrySpend(ShopCurrency.Gems, 11))
+                        {
+                            emergencyRevivePaymentConfirmed = true;
+                            TryExecuteSelectedRevive();
+                        }
+                    }
+                    if (DrawPremiumButton(new Rect(panel.x + 24f + third * 2f, actionY, third, 52f),
+                            L("긴급 구매 · ₩150", "EMERGENCY · $0.15"), new Color(.055f, .09f, .14f, .995f),
                             new Color(.52f, .88f, 1f), validCount > 0))
                         monetization?.Purchase(monetization.FindProduct(CrownfrontMonetization.EmergencyReviveId));
                 }
@@ -174,8 +184,7 @@ namespace JellyGate
                     L("처음부터 다시", "RESTART"), new Color(.14f, .065f, .045f, .995f),
                     new Color(.94f, .46f, .28f), true))
             {
-                ClearRevivalSnapshots();
-                RestartGame();
+                RestartDefeatedRunWithPreparation();
             }
         }
 
@@ -200,7 +209,7 @@ namespace JellyGate
 
         private void AbandonDefeatedRunToMainMenu()
         {
-            AwardRunGold();
+            QueueMainMenuGoldNotice(AwardRunGold());
             if (!finalDefeatAdRequested)
             {
                 finalDefeatAdRequested = monetization?.NotifyRunEnded() == true;

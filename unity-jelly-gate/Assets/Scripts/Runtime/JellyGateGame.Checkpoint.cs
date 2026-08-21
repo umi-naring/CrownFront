@@ -460,7 +460,11 @@ namespace JellyGate
             if (DrawPremiumButton(new Rect(panel.x + 22f, panel.y + 264f, panel.width - 44f, 44f),
                     L("새 전선 시작", "START NEW FRONT"), new Color(.14f, .055f, .045f, .99f),
                     new Color(1f, .58f, .4f), true))
-                StartNewFront();
+            {
+                showResumePrompt = false;
+                ClearRunCheckpoint();
+                OpenPregameLoadout();
+            }
         }
 
         private void OnApplicationPause(bool paused)

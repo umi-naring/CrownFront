@@ -92,10 +92,10 @@ namespace JellyGate
             if (monetization.Products.Count(product => product.DirectPurchase) != 7)
                 failures.Add("direct-product-count");
             var revive = items.FirstOrDefault(item => item.Id == TacticalItemId.ReviveTicket);
-            if (revive == null || revive.GoldPrice != 200 || revive.GemPrice != 6)
+            if (revive == null || revive.GoldPrice != 200 || revive.GemPrice != 9)
                 failures.Add("revive-standard-price");
             var all = items.FirstOrDefault(item => item.Id == TacticalItemId.AllBoost);
-            if (all == null || all.GoldPrice >= 90 * 5 || all.GemPrice >= 2 * 5)
+            if (all == null || all.GoldPrice >= 90 * 5 || all.GemPrice >= 7 * 5)
                 failures.Add("all-boost-bundle-price");
 
             activeRunItems.Clear();
@@ -160,7 +160,7 @@ namespace JellyGate
             var passed = failures.Count == 0;
             Debug.Log($"QA_ECONOMY_300 passed={passed} failures={string.Join(",", failures)} " +
                       $"items={items.Count} gemProducts={gemProducts.Length} direct=7 snapshots=3 " +
-                      "rewardedRevive=false standardRevive=200g/6gem emergency=250g/or-play");
+                      "rewardedRevive=false standardRevive=200g/9gem emergency=250g/or-play");
             Application.Quit(passed ? 0 : 100);
         }
     }

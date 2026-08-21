@@ -652,6 +652,13 @@ namespace JellyGate
         {
             Application.targetFrameRate = 60;
             Application.runInBackground = true;
+            // Real mobile sessions must open immersive. Automated desktop runners stay windowed;
+            // Windows throttles an unfocused fullscreen player and would report a false 1-2 FPS.
+            if (!IsQaMode())
+            {
+                Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+                Screen.fullScreen = true;
+            }
             Screen.orientation = ScreenOrientation.Portrait;
             GameLocalization.Current = GameLocalization.LoadInitialLanguage();
             showSettings = showMissionPanel = showShopPanel = showSkinPanel = showGuidePanel = false;
@@ -2831,8 +2838,14 @@ namespace JellyGate
 
         private void ReturnToMainMenu(bool saveCheckpoint)
         {
+            QueueMainMenuGoldNotice(AwardRunGold());
             if (saveCheckpoint) SaveRunCheckpoint();
             else ClearRunCheckpoint();
+            RequestInterstitialThen(FinishReturnToMainMenu);
+        }
+
+        private void FinishReturnToMainMenu()
+        {
             runInProgress = false;
             Time.timeScale = 1f;
             RestartGame(false);
@@ -2870,10 +2883,7 @@ namespace JellyGate
         private void QuitApplication()
         {
             SaveRunCheckpoint();
-            // The confirm panel now exclusively owns the tap area (the paused system menu is
-            // hidden before it opens), so Unity's supported cross-platform Android exit path
-            // receives the press instead of a covered button.
-            Application.Quit();
+            RequestInterstitialThen(Application.Quit);
         }
 
         public void PlayUnitVoice(Transform emitter, UnitArchetype archetype, VoiceCue cue)
@@ -9097,6 +9107,8 @@ namespace JellyGate
             if (selectedStatus.width > 0f && selectedStatus.Contains(guiPoint)) return true;
             var selectedUltimate = SelectedUnitUltimateRect();
             if (selectedUltimate.width > 0f && selectedUltimate.Contains(guiPoint)) return true;
+            var tacticalRail = TacticalItemRailRect();
+            if (tacticalRail.width > 0f && tacticalRail.Contains(guiPoint)) return true;
             // Do not reserve one huge invisible lower band. Only actual cards and buttons eat
             // input; visible battlefield behind status/toast gaps must remain commandable.
             if (guiY > safe.yMax - BottomHudHeight && IsInteractiveBottomHud(guiPoint)) return true;
@@ -14105,13 +14117,15 @@ namespace JellyGate
             for (var first = 0; first < count && Phase == GamePhase.Battle; first += squadSize)
             {
                 var members = Mathf.Min(squadSize, count - first);
-                var burstSize = WaveSpawnBurstSize(Round);
+                // Two initialized actors per rendered frame keeps sprite slicing and animation-rig
+                // setup below the mobile frame budget without reducing the authored wave count.
+                var burstSize = Mathf.Min(2, WaveSpawnBurstSize(Round));
                 for (var member = 0; member < members && Phase == GamePhase.Battle; member++)
                 {
                     var index = first + member;
                     SpawnEnemy(index, profileForIndex(index));
                     if (member < members - 1 && (member + 1) % burstSize == 0)
-                        yield return new WaitForSeconds(WaveMemberInterval(Round));
+                        yield return null;
                 }
                 if (first + members < count) yield return new WaitForSeconds(WaveSquadInterval(Round));
             }
@@ -14146,13 +14160,16 @@ namespace JellyGate
                     var bossProfile = EnemyVariantCatalog.ForChapterStage(chapter, 4);
                     var escortProfile = EnemyVariantCatalog.ForChapterStage(chapter, 3);
                     var baseHealth = BaseEnemyHealth(Round);
-                    SpawnBossFormation(bossProfile, escortProfile,
+                    yield return SpawnBossFormationStaggeredRoutine(bossProfile, escortProfile,
                         baseHealth * (6.80f + chapter * .34f), baseHealth * 1.08f);
                     // Boss rounds add a simultaneous ten-body flank push. Side entrances no
                     // longer go quiet while the southern boss procession is on screen.
                     for (var flank = 0; flank < 10; flank++)
+                    {
                         SpawnEnemy(regularCount + flank,
                             EnemyVariantCatalog.ForChapterStage(chapter, flank % 4));
+                        if ((flank + 1) % 2 == 0) yield return null;
+                    }
                 }
             }
             spawning = false;
@@ -14273,6 +14290,39 @@ namespace JellyGate
                 escort.ConfigureBossEntrance(escortOffsets[i], escortBackRows[i]);
                 enemies.Add(escort);
                 bossFormationSpawnCount++;
+            }
+            ShowBossWarning(L("보스 부대가 남쪽 관문에서 진입합니다", "BOSS FORMATION ENTERING"));
+            StartCoroutine(BossEntrancePresentationRoutine(boss, bossProfile.FamilyClass));
+        }
+
+        private IEnumerator SpawnBossFormationStaggeredRoutine(EnemyVariantProfile bossProfile,
+            EnemyVariantProfile escortProfile, float bossHealth, float escortHealth)
+        {
+            // Boss art rigs are substantially heavier than regular enemies. Creating the body,
+            // directional animation channels, five guards and ten flankers in a single frame made
+            // the entrance look like a device stall. Preserve the authored formation while giving
+            // initialization a strict two-actors-per-frame budget.
+            var enemyClass = bossProfile.CombatClass;
+            var boss = new GameObject($"{bossProfile.Name} Chapter Boss").AddComponent<EnemyUnit>();
+            boss.Initialize(this, 0, bossHealth, true, 0, enemyClass, bossProfile);
+            boss.ConfigureBossEntrance(0f, 0f);
+            enemies.Add(boss);
+            RegisterBossSilhouetteExclusion(boss);
+            bossFormationSpawnCount = 1;
+            yield return null;
+
+            var escortOffsets = new[] { -1.72f, -.86f, 0f, .86f, 1.72f };
+            var escortBackRows = new[] { .62f, 1.18f, 1.72f, 1.18f, .62f };
+            for (var i = 0; i < escortOffsets.Length; i++)
+            {
+                var escort = new GameObject($"{escortProfile.Name} Boss Honour Guard {i + 1}")
+                    .AddComponent<EnemyUnit>();
+                escort.Initialize(this, i + 1, escortHealth * (i == 2 ? 1.08f : .92f),
+                    false, 0, escortProfile.CombatClass, escortProfile);
+                escort.ConfigureBossEntrance(escortOffsets[i], escortBackRows[i]);
+                enemies.Add(escort);
+                bossFormationSpawnCount++;
+                if ((i + 1) % 2 == 0) yield return null;
             }
             ShowBossWarning(L("보스 부대가 남쪽 관문에서 진입합니다", "BOSS FORMATION ENTERING"));
             StartCoroutine(BossEntrancePresentationRoutine(boss, bossProfile.FamilyClass));
@@ -15628,6 +15678,7 @@ namespace JellyGate
                 if (showGuidePanel) DrawGuideOverlay();
                 if (showExitConfirm) DrawExitConfirm();
                 DrawEconomyWallet();
+                DrawMainMenuGoldRewardNotice();
                 GUI.enabled = previousEnabled;
                 if (resumePromptVisible) DrawResumeRunPrompt();
                 if (purchasePromptVisible) DrawPurchaseConfirmation();
@@ -16351,8 +16402,10 @@ namespace JellyGate
                         product.Description, descriptionStyle);
                     var price = owned ? L("보유", "OWNED") : product.DirectPurchase
                         ? monetization.PriceFor(product)
-                        : L($"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆",
-                            $"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆");
+                        : product.HasTacticalItem
+                            ? L($"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆",
+                                $"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆")
+                            : L($"보석 {product.GemPrice:N0}", $"{product.GemPrice:N0} GEMS");
                     DrawFittedLabel(new Rect(row.xMax - 94f, row.y + 10f, 82f, 25f), price, centeredStyle, 10);
                     var waitingForThisProduct = monetization.PurchaseInProgress &&
                                                 monetization.LastRequestedProductId == product.Id;

@@ -199,10 +199,10 @@ namespace JellyGate
             products.Clear();
             Add("crownfront.castle.azure", ShopCategory.Castle, "청람 왕성", "AZURE CITADEL",
                 "왕성을 청금석 지붕, 푸른 깃발과 성벽 광채로 단장합니다.", "Blue roofs, banners and a citadel wall glow.",
-                "보석 45", "45 GEMS", new Color(.25f, .66f, 1f), goldPrice: 2400, gemPrice: 45);
+                "보석 45", "45 GEMS", new Color(.25f, .66f, 1f), gemPrice: 45);
             Add("crownfront.castle.ember", ShopCategory.Castle, "홍염 왕성", "EMBER CITADEL",
                 "왕성에 붉은 금속 장식, 불꽃 봉화와 성벽 광채를 적용합니다.", "Crimson metalwork, ember beacons and a wall glow.",
-                "보석 45", "45 GEMS", new Color(1f, .35f, .16f), goldPrice: 2400, gemPrice: 45);
+                "보석 45", "45 GEMS", new Color(1f, .35f, .16f), gemPrice: 45);
             AddUnitSkins(UnitArchetype.Tank, "tank", "왕관 방패병", "CROWN SHIELD GUARD",
                 ("청람 성기사", "AZURE PALADIN", new Color(.38f, .78f, 1f)),
                 ("흑금 수호자", "OBSIDIAN WARDEN", new Color(.95f, .62f, .18f)));
@@ -235,10 +235,10 @@ namespace JellyGate
                 ("새벽 성녀", "DAWN SAINT", new Color(1f, .8f, .38f)));
             Add("crownfront.menu.sunrise", ShopCategory.MainMenu, "새벽 출정", "DAWN MUSTER",
                 "불타는 여명, 왕실 군기와 공성전의 역광으로 메인 화면을 연출합니다.", "A hand-painted royal muster framed by burning dawn and siege-lit banners.",
-                "보석 25", "25 GEMS", new Color(1f, .68f, .24f), goldPrice: 1400, gemPrice: 25);
+                "보석 25", "25 GEMS", new Color(1f, .68f, .24f), gemPrice: 25);
             Add("crownfront.menu.moonlit", ShopCategory.MainMenu, "월광 전선", "MOONLIT FRONT",
                 "거대한 월식, 폭풍운과 절제된 수정광으로 메인 화면을 연출합니다.", "A hand-painted lunar front with a vast eclipse, storm clouds, and restrained crystal light.",
-                "보석 25", "25 GEMS", new Color(.48f, .54f, 1f), goldPrice: 1400, gemPrice: 25);
+                "보석 25", "25 GEMS", new Color(.48f, .54f, 1f), gemPrice: 25);
             var economy = GetComponent<CrownfrontEconomy>();
             if (economy != null)
             {
@@ -262,7 +262,7 @@ namespace JellyGate
             Add(EmergencyReviveId, ShopCategory.Utility, "긴급 전선 복귀", "EMERGENCY FRONT RETURN",
                 "패배 화면에서 선택한 안전 편성으로 즉시 복귀합니다.",
                 "Immediately return to the selected safe formation after defeat.",
-                "₩700", "$0.49", new Color(.42f, .95f, .82f), directPurchase: true,
+                "₩150", "$0.15", new Color(.42f, .95f, .82f), directPurchase: true,
                 showInShop: false, consumable: true);
         }
 
@@ -289,11 +289,11 @@ namespace JellyGate
             Add($"crownfront.unit.{id}.a", ShopCategory.Unit, first.ko, first.en,
                 $"{koUnit}와 영웅 진화 외형에 전용 색상·광채·문양을 적용합니다.",
                 $"Applies an exclusive palette, glow and crest to {enUnit} and its hero form.",
-                "보석 35", "35 GEMS", first.color, target, 1800, 35);
+                "보석 35", "35 GEMS", first.color, target, gemPrice: 35);
             Add($"crownfront.unit.{id}.b", ShopCategory.Unit, second.ko, second.en,
                 $"{koUnit}와 영웅 진화 외형에 전용 색상·광채·문양을 적용합니다.",
                 $"Applies an exclusive palette, glow and crest to {enUnit} and its hero form.",
-                "보석 35", "35 GEMS", second.color, target, 1800, 35);
+                "보석 35", "35 GEMS", second.color, target, gemPrice: 35);
         }
 
         private void Add(string id, ShopCategory category, string koName, string enName,

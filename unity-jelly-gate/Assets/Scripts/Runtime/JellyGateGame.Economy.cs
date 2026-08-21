@@ -25,6 +25,10 @@ namespace JellyGate
         private int perfectRoundsThisRun;
         private float gateHealthAtWaveStart;
         private bool runGoldAwarded;
+        private int pressedRunItem = -1;
+        private float pressedRunItemAt;
+        private float inspectedRunItemUntil;
+        private const float TacticalItemLongPressSeconds = .52f;
 
         private void InitializeEconomy()
         {
@@ -197,13 +201,17 @@ namespace JellyGate
 
         private void DrawActiveTacticalItemRail()
         {
-            if (economy == null || activeRunItems.Count == 0) return;
+            if (economy == null) return;
             var safe = SafeGuiRect;
-            var ordered = activeRunItems.OrderBy(id => (int)id).Take(3).ToArray();
+            var ordered = activeRunItems.OrderBy(id => (int)id).Take(3).ToList();
+            if (economy.Count(TacticalItemId.FieldAid) > 0 && !ordered.Contains(TacticalItemId.FieldAid))
+                ordered.Add(TacticalItemId.FieldAid);
+            if (ordered.Count == 0) return;
             const float iconSize = 46f;
             const float gap = 6f;
             var top = safe.y + TopHudHeight + 62f;
-            for (var i = 0; i < ordered.Length; i++)
+            var evt = Event.current;
+            for (var i = 0; i < ordered.Count; i++)
             {
                 var id = ordered[i];
                 var rect = new Rect(safe.x + 7f, top + i * (iconSize + gap), iconSize, iconSize);
@@ -211,13 +219,48 @@ namespace JellyGate
                 DrawOrnatePanel(rect, new Color(.09f, .072f, .047f, .94f),
                     inspected ? new Color(1f, .78f, .32f) : new Color(.52f, .43f, .3f), inspected ? 3f : 2f);
                 DrawTacticalItemIcon(new Rect(rect.x + 4f, rect.y + 4f, rect.width - 8f, rect.height - 8f), id, Color.white);
-                if (GUI.Button(rect, GUIContent.none, GUIStyle.none))
-                    inspectedRunItem = inspected ? -1 : (int)id;
+                var count = id == TacticalItemId.FieldAid ? economy.Count(id) : 1;
+                DrawFittedLabel(new Rect(rect.x + 22f, rect.yMax - 18f, 21f, 15f), $"×{count}",
+                    new GUIStyle(smallStyle)
+                    {
+                        alignment = TextAnchor.MiddleRight,
+                        fontStyle = FontStyle.Bold,
+                        normal = { textColor = Color.white }
+                    }, 8);
+
+                if (evt.type == EventType.MouseDown && evt.button == 0 && rect.Contains(evt.mousePosition))
+                {
+                    pressedRunItem = (int)id;
+                    pressedRunItemAt = Time.unscaledTime;
+                    evt.Use();
+                }
+                else if (pressedRunItem == (int)id && Input.GetMouseButton(0) &&
+                         Time.unscaledTime - pressedRunItemAt >= TacticalItemLongPressSeconds)
+                {
+                    inspectedRunItem = (int)id;
+                    inspectedRunItemUntil = Time.unscaledTime + 3.5f;
+                }
+                else if (evt.type == EventType.MouseUp && evt.button == 0 && pressedRunItem == (int)id)
+                {
+                    var held = Time.unscaledTime - pressedRunItemAt;
+                    pressedRunItem = -1;
+                    if (held >= TacticalItemLongPressSeconds)
+                    {
+                        inspectedRunItem = (int)id;
+                        inspectedRunItemUntil = Time.unscaledTime + 3.5f;
+                    }
+                    else if (id == TacticalItemId.FieldAid)
+                    {
+                        TryUseFieldAid();
+                    }
+                    evt.Use();
+                }
             }
 
-            if (inspectedRunItem < 0) return;
+            if (inspectedRunItem < 0 || Time.unscaledTime > inspectedRunItemUntil) return;
             var detail = economy.Definition((TacticalItemId)inspectedRunItem);
-            if (detail == null || !activeRunItems.Contains(detail.Id))
+            if (detail == null || !activeRunItems.Contains(detail.Id) &&
+                !(detail.Id == TacticalItemId.FieldAid && economy.Count(detail.Id) > 0))
             {
                 inspectedRunItem = -1;
                 return;
@@ -230,6 +273,33 @@ namespace JellyGate
             DrawFittedLabel(new Rect(info.x + 10f, info.y + 33f, info.width - 20f, info.height - 40f), detail.Description,
                 new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft, wordWrap = true,
                     normal = { textColor = new Color(.92f, .88f, .79f) } }, 9);
+        }
+
+        private Rect TacticalItemRailRect()
+        {
+            if (economy == null) return Rect.zero;
+            var count = Mathf.Min(3, activeRunItems.Count) +
+                        (economy.Count(TacticalItemId.FieldAid) > 0 &&
+                         !activeRunItems.Contains(TacticalItemId.FieldAid) ? 1 : 0);
+            if (count <= 0) return Rect.zero;
+            var safe = SafeGuiRect;
+            return new Rect(safe.x + 4f, safe.y + TopHudHeight + 59f, 53f, count * 52f + 2f);
+        }
+
+        private bool TryUseFieldAid()
+        {
+            if (economy == null || fieldAidUsesThisRun >= 2 ||
+                Phase is GamePhase.Defeat or GamePhase.Victory || !economy.TryConsume(TacticalItemId.FieldAid))
+                return false;
+            foreach (var unit in units)
+                if (unit != null && unit.IsAlive) unit.RestoreHealth(unit.MaxHealth * .12f);
+            fieldAidUsesThisRun++;
+            usedAnyTacticalItemThisRun = true;
+            inspectedRunItem = (int)TacticalItemId.FieldAid;
+            inspectedRunItemUntil = Time.unscaledTime + 2.4f;
+            ShowToast(L($"야전 구호품 사용 · 남은 수량 {economy.Count(TacticalItemId.FieldAid)}",
+                $"FIELD AID USED · {economy.Count(TacticalItemId.FieldAid)} LEFT"));
+            return true;
         }
 
         private void DrawSortieGateTransition()
@@ -256,37 +326,58 @@ namespace JellyGate
         {
             if (economy == null) return;
             var rerolls = economy.Count(TacticalItemId.TacticalReroll);
-            if (DrawPremiumButton(new Rect(panel.x + 14f, panel.y + 96f, 108f, 32f),
-                    L($"재정비 {rerolls}", $"REROLL {rerolls}"), new Color(.06f, .045f, .12f, .99f),
-                    new Color(.72f, .52f, 1f), rerolls > 0))
-            {
-                var tier = currentOffers.Length > 0 ? currentOffers[0].Tier : AugmentTier.Bronze;
-                var pool = GetAvailableAugmentTemplates(tier).OrderBy(_ => UnityEngine.Random.value).Take(3).ToArray();
-                if (pool.Length == 3 && economy.TryConsume(TacticalItemId.TacticalReroll))
+            var id = TacticalItemId.TacticalReroll;
+            var icon = new Rect(panel.x + 14f, panel.y + 88f, 46f, 46f);
+            var inspected = inspectedRunItem == (int)id && Time.unscaledTime <= inspectedRunItemUntil;
+            DrawOrnatePanel(icon, new Color(.06f, .045f, .12f, .99f),
+                inspected ? new Color(1f, .78f, .32f) : new Color(.72f, .52f, 1f), inspected ? 3f : 2f);
+            DrawTacticalItemIcon(new Rect(icon.x + 4f, icon.y + 4f, icon.width - 8f, icon.height - 8f), id,
+                rerolls > 0 ? Color.white : new Color(.38f, .38f, .4f));
+            DrawFittedLabel(new Rect(icon.x + 22f, icon.yMax - 18f, 21f, 15f), $"×{rerolls}",
+                new GUIStyle(smallStyle)
                 {
-                    currentOffers = pool.Select(template =>
-                    {
-                        var power = TierPower(tier);
-                        return new AugmentOffer(
-                            GameLocalization.AugmentName(template.EffectKey, template.Name),
-                            GameLocalization.AugmentDescription(template.EffectKey, power,
-                                DescribeAugment(template, power)), template.EffectKey, tier, power);
-                    }).ToArray();
-                    usedAnyTacticalItemThisRun = true;
-                }
+                    alignment = TextAnchor.MiddleRight,
+                    fontStyle = FontStyle.Bold,
+                    normal = { textColor = Color.white }
+                }, 8);
+
+            var evt = Event.current;
+            if (evt.type == EventType.MouseDown && evt.button == 0 && icon.Contains(evt.mousePosition))
+            {
+                pressedRunItem = (int)id;
+                pressedRunItemAt = Time.unscaledTime;
+                evt.Use();
             }
-            var aid = economy.Count(TacticalItemId.FieldAid);
-            if (DrawPremiumButton(new Rect(panel.x + 130f, panel.y + 96f, 108f, 32f),
-                    L($"구호품 {aid}", $"FIELD AID {aid}"), new Color(.035f, .105f, .09f, .99f),
-                    new Color(.42f, 1f, .72f), aid > 0 && fieldAidUsesThisRun < 2))
+            else if (pressedRunItem == (int)id && Input.GetMouseButton(0) &&
+                     Time.unscaledTime - pressedRunItemAt >= TacticalItemLongPressSeconds && !inspected)
             {
-                if (economy.TryConsume(TacticalItemId.FieldAid))
+                inspectedRunItem = (int)id;
+                inspectedRunItemUntil = Time.unscaledTime + 3.5f;
+                var definition = economy.Definition(id);
+                if (definition != null) ShowToast($"{definition.Name} · {definition.Description}");
+            }
+            else if (evt.type == EventType.MouseUp && evt.button == 0 && pressedRunItem == (int)id)
+            {
+                var held = Time.unscaledTime - pressedRunItemAt;
+                pressedRunItem = -1;
+                if (held < TacticalItemLongPressSeconds && rerolls > 0)
                 {
-                    foreach (var unit in units)
-                        if (unit != null && unit.IsAlive) unit.RestoreHealth(unit.MaxHealth * .12f);
-                    fieldAidUsesThisRun++;
-                    usedAnyTacticalItemThisRun = true;
+                    var tier = currentOffers.Length > 0 ? currentOffers[0].Tier : AugmentTier.Bronze;
+                    var pool = GetAvailableAugmentTemplates(tier).OrderBy(_ => UnityEngine.Random.value).Take(3).ToArray();
+                    if (pool.Length == 3 && economy.TryConsume(id))
+                    {
+                        currentOffers = pool.Select(template =>
+                        {
+                            var power = TierPower(tier);
+                            return new AugmentOffer(
+                                GameLocalization.AugmentName(template.EffectKey, template.Name),
+                                GameLocalization.AugmentDescription(template.EffectKey, power,
+                                    DescribeAugment(template, power)), template.EffectKey, tier, power);
+                        }).ToArray();
+                        usedAnyTacticalItemThisRun = true;
+                    }
                 }
+                evt.Use();
             }
         }
 
@@ -332,11 +423,15 @@ namespace JellyGate
         private bool TryPurchaseInGameProduct(CrownfrontShopProduct product, ShopCurrency currency)
         {
             if (product == null || economy == null || product.DirectPurchase) return false;
+            // Gold is deliberately restricted to consumable tactical supplies. Cosmetics remain
+            // gem-only even if malformed catalog data or a stale UI attempts a gold transaction.
+            if (currency == ShopCurrency.Gold && !product.HasTacticalItem) return false;
             var price = currency == ShopCurrency.Gold ? product.GoldPrice : product.GemPrice;
             if (price <= 0 || !economy.TrySpend(currency, price))
             {
                 if (currency == ShopCurrency.Gems)
                 {
+                    showShopPanel = true;
                     shopCategory = ShopCategory.Currency;
                     shopScroll = Vector2.zero;
                     ShowToast(L("보석이 부족합니다. 보석 구매 상품을 확인하세요.",
@@ -377,15 +472,17 @@ namespace JellyGate
                     $"OWNED · {economy.Gold:N0} GOLD   {economy.Gems:N0} GEMS"),
                 new GUIStyle(centeredStyle) { alignment = TextAnchor.MiddleCenter }, 10);
 
-            var goldEnabled = product.GoldPrice > 0 && economy.Gold >= product.GoldPrice;
             var gemEnabled = product.GemPrice > 0 && economy.Gems >= product.GemPrice;
-            if (DrawPremiumButton(new Rect(panel.x + 24f, panel.y + 244f, panel.width - 48f, 48f),
-                    L($"골드 {product.GoldPrice:N0}로 구매", $"BUY FOR {product.GoldPrice:N0} GOLD"),
-                    new Color(.16f, .105f, .025f, .99f), new Color(1f, .79f, .3f), goldEnabled))
+            if (product.HasTacticalItem)
             {
-                if (TryPurchaseInGameProduct(product, ShopCurrency.Gold)) pendingPurchaseProduct = null;
+                var goldEnabled = product.GoldPrice > 0 && economy.Gold >= product.GoldPrice;
+                if (DrawPremiumButton(new Rect(panel.x + 24f, panel.y + 244f, panel.width - 48f, 48f),
+                        L($"골드 {product.GoldPrice:N0}로 구매", $"BUY FOR {product.GoldPrice:N0} GOLD"),
+                        new Color(.16f, .105f, .025f, .99f), new Color(1f, .79f, .3f), goldEnabled) &&
+                    TryPurchaseInGameProduct(product, ShopCurrency.Gold)) pendingPurchaseProduct = null;
             }
-            if (DrawPremiumButton(new Rect(panel.x + 24f, panel.y + 302f, panel.width - 48f, 48f),
+            var gemY = product.HasTacticalItem ? panel.y + 302f : panel.y + 272f;
+            if (DrawPremiumButton(new Rect(panel.x + 24f, gemY, panel.width - 48f, 52f),
                     L($"보석 {product.GemPrice:N0}로 구매", $"BUY FOR {product.GemPrice:N0} GEMS"),
                     new Color(.035f, .10f, .14f, .99f), new Color(.52f, .9f, 1f), product.GemPrice > 0))
             {

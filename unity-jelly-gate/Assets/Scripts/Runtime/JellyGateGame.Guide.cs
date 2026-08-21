@@ -14,6 +14,7 @@ namespace JellyGate
         private int guideTouchFingerId = -1;
         private int guideTouchProcessedFrame = -1;
         private Vector2 guideTouchLast;
+        private Texture2D privacyBrandLogo;
 
         private const float GuideUnitCardHeight = 292f;
         private const float GuideUnitCardStride = 301f;
@@ -53,7 +54,8 @@ namespace JellyGate
             var tabs = new[]
             {
                 L("기본", "BASICS"), L("아군", "UNITS"), L("보스", "BOSSES"),
-                L("전투", "COMBAT"), L("증강", "AUGMENTS")
+                L("전투", "COMBAT"), L("증강", "AUGMENTS"),
+                L("개인정보처리방침", "PRIVACY")
             };
             const float tabGap = 4f;
             var tabWidth = (panel.width - 28f - tabGap * 2f) / 3f;
@@ -82,7 +84,8 @@ namespace JellyGate
                 case 1: DrawGuideUnitRoster(viewport.width - 18f, ref y); break;
                 case 2: DrawGuideBossRoster(viewport.width - 18f, ref y); break;
                 case 3: DrawGuideCombatRules(viewport.width - 18f, ref y); break;
-                default: DrawGuideAugmentsAndStore(viewport.width - 18f, ref y); break;
+                case 4: DrawGuideAugmentsAndStore(viewport.width - 18f, ref y); break;
+                default: DrawGuidePrivacyPolicy(viewport.width - 18f, ref y); break;
             }
             GUI.EndScrollView();
 
@@ -97,8 +100,59 @@ namespace JellyGate
             1 => GuideUnitRosterContentHeight(),
             2 => 2390f,
             3 => 1110f,
-            _ => 7200f
+            4 => 7200f,
+            _ => 2260f
         };
+
+        private void DrawGuidePrivacyPolicy(float width, ref float y)
+        {
+            if (privacyBrandLogo == null) privacyBrandLogo = Resources.Load<Texture2D>("Legal/umi-logo");
+            var logoCard = new Rect(4f, y, width - 8f, 132f);
+            DrawOrnatePanel(logoCard, new Color(.97f, .985f, .99f, 1f), new Color(.42f, .82f, .82f), 2f);
+            if (privacyBrandLogo != null)
+                GUI.DrawTexture(new Rect(logoCard.x + 20f, logoCard.y + 12f, logoCard.width - 40f, 82f),
+                    privacyBrandLogo, ScaleMode.ScaleToFit, true);
+            DrawFittedLabel(new Rect(logoCard.x + 12f, logoCard.yMax - 34f, logoCard.width - 24f, 24f),
+                L("CROWNFRONT 개인정보처리방침 · 2026년 8월 20일", "CROWNFRONT PRIVACY POLICY · AUGUST 20, 2026"),
+                new GUIStyle(centeredStyle)
+                {
+                    alignment = TextAnchor.MiddleCenter,
+                    fontStyle = FontStyle.Bold,
+                    normal = { textColor = new Color(.04f, .24f, .34f) }
+                }, 10);
+            y += 143f;
+
+            DrawGuideCard(width, ref y, L("개요", "OVERVIEW"),
+                L("CROWNFRONT는 사용자의 개인정보를 중요하게 생각하며 Google Play 정책 및 관련 법령에 따라 사용자 데이터를 처리합니다.",
+                    "CROWNFRONT values user privacy and processes data under Google Play policies and applicable law."), 92f);
+            DrawGuideCard(width, ref y, L("1. 개발자가 직접 수집하는 정보", "1. DATA COLLECTED DIRECTLY"),
+                L("별도 회원가입·로그인을 제공하지 않으며 이름, 이메일, 전화번호, 정확한 위치, 결제수단 정보를 직접 수집하거나 자체 서버에 저장하지 않습니다. 게임 진행·도전 기록, 언어·음향 설정, 보유·장착 스킨은 기기에 저장됩니다. Android 백업이 켜진 경우 Google 계정으로 백업·복원될 수 있으나 개발자는 해당 백업에 직접 접근하지 않습니다.",
+                    "No account or login is required. We do not directly collect or store names, email addresses, phone numbers, precise location, or payment credentials. Progress, challenges, settings, and cosmetic ownership are stored on-device and may be included in Android backup without developer access."), 188f);
+            DrawGuideCard(width, ref y, L("2. 광고와 자동 처리 정보", "2. ADS AND AUTOMATIC PROCESSING"),
+                L("Google AdMob 및 Google Mobile Ads SDK가 IP 기반 대략적 위치, 앱 실행·탭·광고 노출 등 상호작용, 진단 정보, 광고 ID·App Set ID 등의 식별자를 처리할 수 있습니다. 광고 제공·측정·분석·부정행위 방지·보안·규정 준수 목적이며, 해당 지역에서는 Google UMP 동의 및 개인정보 보호 옵션을 제공합니다.",
+                    "Google AdMob and the Mobile Ads SDK may process approximate IP-based location, app and ad interactions, diagnostics, advertising ID, App Set ID, and related identifiers for ads, measurement, analytics, fraud prevention, security, and compliance. Google UMP consent and privacy options are shown where required."), 196f);
+            DrawGuideCard(width, ref y, L("3. 인앱 구매", "3. IN-APP PURCHASES"),
+                L("광고 제거와 디지털 상품 결제는 Google Play Billing이 처리하며 개발자는 결제수단 정보를 수집·저장하지 않습니다. 상품 제공과 재설치·기기 변경 후 소유권 확인을 위해 상품 식별자와 구매 상태를 조회할 수 있습니다. 환불·취소·결제수단은 Google Play 정책과 계정 설정에 따라 관리됩니다.",
+                    "Google Play Billing processes digital purchases. We do not collect or store payment credentials. Product identifiers and purchase status may be queried to deliver and restore ownership. Refunds, cancellations, and payment methods are managed under Google Play policies and account settings."), 176f);
+            DrawGuideCard(width, ref y, L("4. 이용하는 제3자 서비스", "4. THIRD-PARTY SERVICES"),
+                L("Google AdMob / Google Mobile Ads SDK, Google User Messaging Platform, Google Play Billing, Android 백업·기기 이전 기능을 이용합니다. 각 제공자는 자체 개인정보처리방침에 따라 데이터를 처리할 수 있습니다.\nGoogle 개인정보처리방침: policies.google.com/privacy\n광고 및 개인정보 보호: policies.google.com/technologies/ads\nPlay 약관: play.google.com/about/play-terms/",
+                    "Services used: Google AdMob / Mobile Ads SDK, Google User Messaging Platform, Google Play Billing, and optional Android backup/device transfer. Providers may process data under their own policies.\nPrivacy: policies.google.com/privacy\nAds: policies.google.com/technologies/ads\nPlay Terms: play.google.com/about/play-terms/"), 218f);
+            DrawGuideCard(width, ref y, L("5. 데이터 보안", "5. DATA SECURITY"),
+                L("Google 서비스 SDK를 통해 전송되는 데이터는 전송 과정에서 암호화됩니다. 앱은 필요한 기능에 한해 데이터를 사용하고 합리적인 보안 조치를 적용하지만 인터넷 전송 또는 전자 저장 방식의 절대적 보안을 보장할 수는 없습니다.",
+                    "Data transmitted through Google service SDKs is encrypted in transit. The app limits use to necessary functions and applies reasonable safeguards, but no internet transmission or electronic storage method is absolutely secure."), 144f);
+            DrawGuideCard(width, ref y, L("6. 보관·삭제 및 사용자 선택권", "6. RETENTION, DELETION, AND CHOICES"),
+                L("개발자는 별도 계정 데이터베이스를 운영하지 않습니다. 기기 게임 데이터는 Android 설정의 앱 데이터 삭제 또는 앱 제거로 삭제할 수 있습니다. Android 백업, 광고 정보, Play 결제 기록은 Google 계정과 각 서비스 정책에 따라 관리됩니다. 앱의 개인정보 보호 옵션과 Google 광고 설정을 이용할 수 있으며 열람·정정·삭제는 아래 문의처로 요청할 수 있습니다.",
+                    "We operate no separate account database. On-device data can be deleted through Android app-data settings or uninstalling the app. Android backup, advertising data, and Play purchase records follow Google account and service policies. Privacy options and Google ad settings are available; access, correction, or deletion inquiries can be sent below."), 202f);
+            DrawGuideCard(width, ref y, L("7. 아동 및 청소년의 개인정보", "7. CHILDREN AND TEENS"),
+                L("Google Play Console에 신고한 대상 연령과 관련 정책을 준수합니다. 대상 연령, 광고 방식 또는 사용 SDK가 변경되면 필요한 보호 설정과 본 방침을 함께 갱신합니다.",
+                    "We follow the target age declared in Google Play Console and applicable policies. If target age, advertising, or SDK use changes, safeguards and this policy will be updated together."), 126f);
+            DrawGuideCard(width, ref y, L("8. 방침 변경", "8. POLICY CHANGES"),
+                L("앱 기능, 사용 SDK 또는 관련 정책 변경에 따라 본 방침을 수정할 수 있습니다. 변경 내용은 공식 페이지에 게시하고 최종 업데이트일을 함께 변경합니다.",
+                    "This policy may change with app features, SDKs, or applicable policies. Updates are posted on the official page with a revised update date."), 116f);
+            DrawGuideCard(width, ref y, L("9. 문의", "9. CONTACT"),
+                L("개발자: 우미\n이메일: iprite359@gmail.com\n공식 방침: https://sites.google.com/view/crownfront",
+                    "Developer: UMI\nEmail: iprite359@gmail.com\nOfficial policy: https://sites.google.com/view/crownfront"), 126f);
+        }
 
         private static float GuideUnitRosterContentHeight() =>
             GuideUnitRosterHeaderHeight + GuideUnits.Length * GuideUnitCardStride + GuideScrollBottomPadding;
