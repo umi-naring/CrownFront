@@ -21,7 +21,6 @@ $roamingApplicationData = [Environment]::GetFolderPath('ApplicationData')
 if ([string]::IsNullOrWhiteSpace($roamingApplicationData)) { $roamingApplicationData = Join-Path $userProfilePath 'AppData\Roaming' }
 $temporaryPath = Join-Path $localApplicationData 'Temp'
 $env:USERPROFILE = $userProfilePath
-$env:HOME = $userProfilePath
 $env:LOCALAPPDATA = $localApplicationData
 $env:APPDATA = $roamingApplicationData
 $env:TEMP = $temporaryPath
@@ -41,9 +40,9 @@ if ([string]::IsNullOrWhiteSpace($KeystorePath)) {
     $KeystorePath = Join-Path $workspacePath 'release-keys\Crownfront-upload.keystore'
 }
 if ([string]::IsNullOrWhiteSpace($OutputPath)) {
-    $OutputPath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code4.aab'
+    $OutputPath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code5.aab'
 }
-$logPath = Join-Path $workspacePath 'android-aab-build-100-code4.log'
+$logPath = Join-Path $workspacePath 'android-aab-build-100-code5.log'
 
 if (-not (Test-Path -LiteralPath $UnityPath)) { throw "Unity executable not found: $UnityPath" }
 if (-not (Test-Path -LiteralPath $KeystorePath)) { throw "Upload keystore not found: $KeystorePath" }
