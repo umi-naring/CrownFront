@@ -33,6 +33,8 @@ namespace JellyGate
         private float pressedUnitAbilityAt;
         private int inspectedUnitAbilitySlot = -1;
         private float inspectedUnitAbilityUntil;
+        private int pendingTacticalItemUse = -1;
+        private float tacticalItemPromptPreviousTimeScale = 1f;
         private const float TacticalItemLongPressSeconds = .52f;
 
         private void InitializeEconomy()
@@ -255,10 +257,7 @@ namespace JellyGate
                         inspectedRunItem = (int)id;
                         inspectedRunItemUntil = Time.unscaledTime + 3.5f;
                     }
-                    else if (id == TacticalItemId.FieldAid)
-                    {
-                        TryUseFieldAid();
-                    }
+                    else if (id == TacticalItemId.FieldAid) RequestTacticalItemUse(id);
                     evt.Use();
                 }
             }
@@ -271,14 +270,79 @@ namespace JellyGate
                 inspectedRunItem = -1;
                 return;
             }
-            var info = new Rect(safe.x + 60f, top, Mathf.Min(250f, safe.width - 76f), 88f);
+            var infoWidth = Mathf.Min(326f, safe.width - 76f);
+            var info = new Rect(safe.x + 60f, top, infoWidth, 116f);
             DrawOrnatePanel(info, new Color(.11f, .085f, .052f, .97f), new Color(.68f, .55f, .34f), 2f);
-            DrawFittedLabel(new Rect(info.x + 10f, info.y + 7f, info.width - 20f, 25f), detail.Name,
+            DrawFittedLabel(new Rect(info.x + 12f, info.y + 8f, info.width - 24f, 26f), detail.Name,
                 new GUIStyle(smallStyle) { alignment = TextAnchor.MiddleLeft, fontStyle = FontStyle.Bold,
                     normal = { textColor = new Color(1f, .86f, .54f) } }, 11);
-            DrawFittedLabel(new Rect(info.x + 10f, info.y + 33f, info.width - 20f, info.height - 40f), detail.Description,
-                new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft, wordWrap = true,
+            DrawFittedWrappedLabel(new Rect(info.x + 12f, info.y + 38f, info.width - 24f, info.height - 47f),
+                detail.Description, new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft, wordWrap = true,
+                    clipping = TextClipping.Clip,
                     normal = { textColor = new Color(.92f, .88f, .79f) } }, 9);
+        }
+
+        private bool TacticalItemUsePromptVisible => pendingTacticalItemUse >= 0;
+
+        private void RequestTacticalItemUse(TacticalItemId id)
+        {
+            if (economy == null || economy.Count(id) <= 0 || pendingTacticalItemUse >= 0) return;
+            pendingTacticalItemUse = (int)id;
+            tacticalItemPromptPreviousTimeScale = Time.timeScale;
+            pointerHeld = pointerDragged = false;
+            pressedUnit = null;
+            pressedEnemy = null;
+            Time.timeScale = 0f;
+        }
+
+        private void CancelTacticalItemUse()
+        {
+            pendingTacticalItemUse = -1;
+            Time.timeScale = tacticalItemPromptPreviousTimeScale;
+        }
+
+        private void ConfirmTacticalItemUse()
+        {
+            if (pendingTacticalItemUse < 0) return;
+            var id = (TacticalItemId)pendingTacticalItemUse;
+            pendingTacticalItemUse = -1;
+            Time.timeScale = tacticalItemPromptPreviousTimeScale;
+            if (id == TacticalItemId.FieldAid) TryUseFieldAid();
+            else if (id == TacticalItemId.TacticalReroll) TryUseTacticalReroll();
+        }
+
+        private void DrawTacticalItemUsePrompt()
+        {
+            if (pendingTacticalItemUse < 0 || economy == null) return;
+            var id = (TacticalItemId)pendingTacticalItemUse;
+            var definition = economy.Definition(id);
+            if (definition == null) { CancelTacticalItemUse(); return; }
+            var safe = SafeGuiRect;
+            DrawPanel(new Rect(0f, 0f, GuiWidth, GuiHeight), new Color(0f, .004f, .015f, .78f));
+            var width = Mathf.Min(354f, safe.width - 28f);
+            var panel = new Rect(safe.center.x - width * .5f, safe.center.y - 143f, width, 286f);
+            DrawOrnatePanel(panel, new Color(.075f, .055f, .035f, .998f), new Color(.92f, .72f, .3f), 3f);
+            DrawTacticalItemIcon(new Rect(panel.x + 20f, panel.y + 18f, 68f, 68f), id, Color.white);
+            DrawFittedLabel(new Rect(panel.x + 102f, panel.y + 18f, panel.width - 122f, 34f),
+                definition.Name, new GUIStyle(smallStyle) { alignment = TextAnchor.MiddleLeft,
+                    fontStyle = FontStyle.Bold }, 12);
+            DrawFittedLabel(new Rect(panel.x + 102f, panel.y + 54f, panel.width - 122f, 26f),
+                L($"보유 ×{economy.Count(id)}", $"OWNED ×{economy.Count(id)}"),
+                new GUIStyle(statStyle) { alignment = TextAnchor.MiddleLeft }, 10);
+            DrawFittedWrappedLabel(new Rect(panel.x + 20f, panel.y + 101f, panel.width - 40f, 72f),
+                definition.Description, new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft,
+                    wordWrap = true, clipping = TextClipping.Clip }, 9);
+            DrawPanel(new Rect(panel.x + 18f, panel.y + 184f, panel.width - 36f, 2f),
+                new Color(.68f, .55f, .34f, .85f));
+            DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 191f, panel.width - 36f, 28f),
+                L("이 아이템을 사용합니까?", "USE THIS ITEM?"), centeredStyle, 10);
+            var buttonWidth = (panel.width - 54f) * .5f;
+            if (DrawPremiumButton(new Rect(panel.x + 18f, panel.yMax - 67f, buttonWidth, 48f),
+                    L("취소", "CANCEL"), new Color(.06f, .075f, .1f), new Color(.56f, .68f, .82f), true))
+                CancelTacticalItemUse();
+            if (DrawPremiumButton(new Rect(panel.x + 36f + buttonWidth, panel.yMax - 67f, buttonWidth, 48f),
+                    L("사용", "USE"), new Color(.22f, .13f, .035f), new Color(1f, .76f, .25f), true))
+                ConfirmTacticalItemUse();
         }
 
         private Rect TacticalItemRailRect()
@@ -366,25 +430,26 @@ namespace JellyGate
             {
                 var held = Time.unscaledTime - pressedRunItemAt;
                 pressedRunItem = -1;
-                if (held < TacticalItemLongPressSeconds && rerolls > 0)
-                {
-                    var tier = currentOffers.Length > 0 ? currentOffers[0].Tier : AugmentTier.Bronze;
-                    var pool = GetAvailableAugmentTemplates(tier).OrderBy(_ => UnityEngine.Random.value).Take(3).ToArray();
-                    if (pool.Length == 3 && economy.TryConsume(id))
-                    {
-                        currentOffers = pool.Select(template =>
-                        {
-                            var power = TierPower(tier);
-                            return new AugmentOffer(
-                                GameLocalization.AugmentName(template.EffectKey, template.Name),
-                                GameLocalization.AugmentDescription(template.EffectKey, power,
-                                    DescribeAugment(template, power)), template.EffectKey, tier, power);
-                        }).ToArray();
-                        usedAnyTacticalItemThisRun = true;
-                    }
-                }
+                if (held < TacticalItemLongPressSeconds && rerolls > 0) RequestTacticalItemUse(id);
                 evt.Use();
             }
+        }
+
+        private void TryUseTacticalReroll()
+        {
+            if (economy == null || currentOffers.Length == 0) return;
+            var tier = currentOffers[0].Tier;
+            var pool = GetAvailableAugmentTemplates(tier).OrderBy(_ => UnityEngine.Random.value).Take(3).ToArray();
+            if (pool.Length != 3 || !economy.TryConsume(TacticalItemId.TacticalReroll)) return;
+            currentOffers = pool.Select(template =>
+            {
+                var power = TierPower(tier);
+                return new AugmentOffer(
+                    GameLocalization.AugmentName(template.EffectKey, template.Name),
+                    GameLocalization.AugmentDescription(template.EffectKey, power,
+                        DescribeAugment(template, power)), template.EffectKey, tier, power);
+            }).ToArray();
+            usedAnyTacticalItemThisRun = true;
         }
 
         public bool HasActiveTacticalItem(TacticalItemId id) => activeRunItems.Contains(id);
@@ -525,24 +590,36 @@ namespace JellyGate
         private void ScoreCompletedRoundGold()
         {
             var chapter = Mathf.Clamp((Round - 1) / 5, 0, 9);
-            runGoldScore += 15 + chapter * 2;
+            // Gold is a long-term collection currency, not a duplicate of the round formation
+            // budget.  The former 15+ per-round base paid roughly 200G by round 12 and erased the
+            // value of challenges/ads.  Keep a readable one-point clear score, a one-point perfect
+            // bonus, and a modest boss premium that grows only every second chapter.
+            runGoldScore += 1;
             if (gateHealth >= gateHealthAtWaveStart - .01f)
             {
                 perfectRoundsThisRun++;
-                runGoldScore += 8 + chapter;
+                runGoldScore += 1;
             }
-            if (Round % 5 == 0) runGoldScore += 25 + chapter * 5;
+            if (Round % 5 == 0) runGoldScore += 2 + Mathf.CeilToInt(chapter * .5f);
         }
 
         private int AwardRunGold()
         {
             if (runGoldAwarded || economy == null) return 0;
-            var preservation = Mathf.RoundToInt(roundsCleared * Mathf.Clamp01(gateHealth / GateMaxHealth) * 3f);
-            var noRevive = revivalUsedThisRun ? 0 : roundsCleared * 2;
-            var total = Mathf.Max(0, runGoldScore + preservation + noRevive);
+            var total = CalculateRunGoldReward(runGoldScore, roundsCleared,
+                Mathf.Clamp01(gateHealth / GateMaxHealth), revivalUsedThisRun);
             economy.GrantGold(total);
             runGoldAwarded = true;
             return total;
+        }
+
+        internal static int CalculateRunGoldReward(int clearScore, int clearedRounds,
+            float gateHealthRatio, bool revivalUsed)
+        {
+            var preservation = Mathf.RoundToInt(Mathf.Max(0, clearedRounds) *
+                                                Mathf.Clamp01(gateHealthRatio) * .25f);
+            var noRevive = revivalUsed ? 0 : Mathf.RoundToInt(Mathf.Max(0, clearedRounds) * .15f);
+            return Mathf.Max(0, clearScore + preservation + noRevive);
         }
     }
 }

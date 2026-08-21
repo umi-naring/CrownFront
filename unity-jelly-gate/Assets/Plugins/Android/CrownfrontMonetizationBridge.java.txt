@@ -238,7 +238,10 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                     loadUnityFallback();
                 }
 
-                @Override public void onUnityAdsShowStart(String placementId) { }
+                @Override
+                public void onUnityAdsShowStart(String placementId) {
+                    send("ad_shown", "", "", "UNITY_DIRECT");
+                }
                 @Override public void onUnityAdsShowClick(String placementId) { }
 
                 @Override
@@ -471,6 +474,11 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                     interstitial = ad;
                     interstitial.setFullScreenContentCallback(new FullScreenContentCallback() {
                         @Override
+                        public void onAdShowedFullScreenContent() {
+                            send("ad_shown", "", "", "ADMOB");
+                        }
+
+                        @Override
                         public void onAdDismissedFullScreenContent() {
                             interstitial = null;
                             send("ad_dismissed", "", "", "");
@@ -528,6 +536,13 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                 pendingInterstitialShow = true;
                 loadInterstitial();
             }
+        });
+    }
+
+    public void cancelInterstitialShow() {
+        activity.runOnUiThread(() -> {
+            pendingInterstitialShow = false;
+            pendingUnityShow = false;
         });
     }
 

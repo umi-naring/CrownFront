@@ -637,7 +637,7 @@ namespace JellyGate
                 L("수치형 증강은 중첩되며 중첩할수록 증가량이 완만해집니다. 액티브 스킬, 복제, 마법 재현, 도탄 사격과 신규 유닛 편입은 한 번 획득하면 같은 플레이에서 다시 등장하지 않습니다.",
                     "Numeric augments stack with diminishing gains. Active skills, duplication, spell reprise, ricochet and recruit contracts disappear from the pool once acquired."), 120f);
             DrawGuideCard(width, ref y, L("다섯 병과", "FIVE ROLES"),
-                L("탱커는 피해 흡수·반격, 근접은 방어 파쇄·처형, 원거리는 사거리·치명타·도탄, 마법사는 범위·마법 재현, 서포터는 회복·재사용 대기시간을 중심으로 강화됩니다.",
+                L("탱커는 피해 흡수·반격, 근접은 방어 파쇄·처형, 원거리는 사거리·관통·도탄, 마법사는 범위·마법 재현, 서포터는 회복·재사용 대기시간을 중심으로 강화됩니다.",
                     "Tank augments focus on mitigation and counters; Melee on shatter and execution; Ranged on range, criticals and ricochet; Mage on area and reprise; Support on healing and cooldowns."), 116f);
             DrawGuideCard(width, ref y, L("언덕 증강", "HIGH-GROUND AUGMENTS"),
                 L("언덕 전용 방어·공격·사거리·공격 속도 강화가 등급별로 존재하며, 다이아 등급의 언덕 지배는 여러 효과를 한 번에 강화합니다.",

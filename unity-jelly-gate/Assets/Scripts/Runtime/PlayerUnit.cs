@@ -219,7 +219,8 @@ namespace JellyGate
                 UnitArchetype.Lancer ? 1.15f : .35f) +
             (IsHero ? Archetype is UnitArchetype.Tank or UnitArchetype.Melee or
                 UnitArchetype.Archer or UnitArchetype.Musketeer or UnitArchetype.Bombardier or
-                UnitArchetype.Lancer ? 4f : 1f : 0f));
+                UnitArchetype.Lancer ? 4f : 1f : 0f) +
+            (game != null ? game.GetRolePhysicalPenetrationBonus(this) : 0f));
         public float MagicPenetration => Mathf.Max(0f, definition.MagicPenetration +
             (Level - 1) * (Archetype is UnitArchetype.AreaMage or UnitArchetype.SingleMage or
                 UnitArchetype.Druid or UnitArchetype.Oracle ? 1.15f : .35f) +
@@ -1810,13 +1811,25 @@ namespace JellyGate
                     actionAccent.transform.localEulerAngles = new Vector3(0f, 0f, angle);
                     break;
                 case UnitArchetype.Archer:
-                case UnitArchetype.Musketeer:
                     actionAccent.transform.localPosition = handOrigin +
                                                            forward * (definition.Radius * (.55f + curve * .45f));
                     actionAccent.transform.localScale = new Vector3(
                         definition.Radius * Mathf.Lerp(.78f, 2.45f, curve) * actionPower,
                         definition.Radius * (.11f + contactFlash * .08f), 1f);
                     actionAccent.transform.localEulerAngles = new Vector3(0f, 0f, angle);
+                    break;
+                case UnitArchetype.Musketeer:
+                    // A musket owns a compact muzzle flash, not the archer's long travelling
+                    // streak. Keeping the accent on the quantized weapon axis prevents a flash
+                    // from appearing on the actor's left when the pose turns or mirrors.
+                    actionAccent.transform.localPosition = handOrigin +
+                        forward * (definition.Radius * 1.22f);
+                    actionAccent.transform.localScale = new Vector3(
+                        definition.Radius * Mathf.Lerp(.18f, .72f, contactFlash) * actionPower,
+                        definition.Radius * Mathf.Lerp(.11f, .25f, contactFlash), 1f);
+                    actionAccent.transform.localEulerAngles = new Vector3(0f, 0f, angle);
+                    color.a = .08f + contactFlash * .9f;
+                    actionAccent.color = Color.Lerp(color, Color.white, contactFlash * .52f);
                     break;
                 case UnitArchetype.Bombardier:
                     actionAccent.transform.localPosition = handOrigin +

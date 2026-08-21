@@ -794,6 +794,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaLocaleDefault283")) StartCoroutine(QaLocaleDefault283Routine());
             else if (HasCommandLineArgument("-qaChallengeScroll284")) StartCoroutine(QaChallengeScroll284Routine());
             else if (HasCommandLineArgument("-qaEconomy300")) StartCoroutine(QaEconomy300Routine());
+            else if (HasCommandLineArgument("-qaRelease301")) StartCoroutine(QaRelease301Routine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
             else if (HasCommandLineArgument("-qaActiveTacticalItemsView")) ConfigureActiveTacticalItemsPreview();
@@ -2716,9 +2717,11 @@ namespace JellyGate
             UpdateInterstitialTransition();
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                if (InterstitialConsumesBackInput) return;
                 HandleBackButton();
                 return;
             }
+            if (TacticalItemUsePromptVisible) return;
             if (showGuidePanel) UpdateGuideTouchInput();
             if (showMissionPanel) UpdateChallengeTouchInput();
             if (showMainMenu || showSystemMenu || showReturnToMainMenuSavePrompt || showSettings || showExitConfirm || showMissionPanel ||
@@ -2773,6 +2776,12 @@ namespace JellyGate
 
         private void HandleBackButton()
         {
+            if (InterstitialConsumesBackInput) return;
+            if (TacticalItemUsePromptVisible)
+            {
+                CancelTacticalItemUse();
+                return;
+            }
             if (showReturnToMainMenuSavePrompt)
             {
                 CancelReturnToMainMenu();
@@ -8068,7 +8077,7 @@ namespace JellyGate
                 if (musketeerAtlas)
                     musketeerCheckerPixelsRemoved += RemoveConnectedCheckerboard(pixels, width, height);
                 var isolation = KeepPrimarySpriteComponent(pixels, width, height,
-                    expectedCenter, cellWidth, cellHeight);
+                    expectedCenter, cellWidth, cellHeight, strictEdgeOwnership: musketeerAtlas);
                 if (musketeerAtlas)
                     musketeerLowerMattePixelsRemoved += NormalizeMusketeerLowerBodyMatte(pixels, width, height,
                         expectedCenter, cellWidth);
@@ -10902,12 +10911,6 @@ namespace JellyGate
                 damage *= 1f + StackPower("MeleeExecution") * .22f;
             if (RoleFor(source.Archetype) == DefenderRole.Melee && target.IsBoss)
                 damage *= 1f + StackPower("MeleeDuelist") * .12f;
-            if (UnityEngine.Random.value < GetCriticalChance(source))
-            {
-                damage *= GetCriticalDamageMultiplier(source);
-                SpawnCombatImpact(target.HitPoint, source.Archetype, Color.white, .88f,
-                    target.Position - source.Position, CombatVfxTier.Skill, source);
-            }
             if (source.Archetype is UnitArchetype.Tank or UnitArchetype.Melee or UnitArchetype.Lancer)
             {
                 var palette = ResolveCombatVfxPalette(source, source.Archetype,
@@ -14594,7 +14597,7 @@ namespace JellyGate
                 new AugmentTemplate("고지대 조준경", "언덕 위 유닛의 사거리 증가", "HillRange"),
                 new AugmentTemplate("가시 방진", "탱커를 공격한 적에게 물리 피해로 반격", "TankThorns"),
                 new AugmentTemplate("갑옷 분쇄", "근접 유닛의 공격이 적 방어력을 일시 감소", "MeleeShatter"),
-                new AugmentTemplate("약점 사격", "원거리 유닛이 확률적으로 치명타 발동", "RangedCrit"),
+                new AugmentTemplate("정밀 탄도", "원거리 유닛의 방어력 관통을 강화", "RangedPrecision"),
                 new AugmentTemplate("과부하 마법진", "마법사의 공격력과 공격 범위를 강화", "MageOverload"),
                 new AugmentTemplate("치유의 메아리", "서포터가 스킬을 사용하면 주변 아군을 회복", "SupportAura"),
                 new AugmentTemplate("쌍발 장난감 화살", "원거리 공격에 약한 추가 투사체 발사", "DoubleShot"),
@@ -14602,7 +14605,7 @@ namespace JellyGate
                 new AugmentTemplate("생존자 구호대", "라운드 통과 시 생존 유닛의 체력을 일부 회복", "RoundRecovery"),
                 new AugmentTemplate("Shield Rally", "Tank skills restore some of the caster's health.", "TankRally"),
                 new AugmentTemplate("Giant Duel", "Melee units deal extra damage to bosses.", "MeleeDuelist"),
-                new AugmentTemplate("Hunter's Mark", "Ranged attacks gain critical chance.", "RangedMark"),
+                new AugmentTemplate("제압 사격", "자리를 지킨 원거리 유닛의 피해와 공격 속도를 강화", "RangedSuppress"),
                 new AugmentTemplate("Lingering Flame", "Mage skills leave a delayed second impact.", "MageBurn"),
                 new AugmentTemplate("Quickening Chorus", "Support skills advance nearby allies' cooldowns.", "SupportHaste")
             },
@@ -14776,12 +14779,12 @@ namespace JellyGate
                 "HillRange" => $"언덕 위 유닛 사거리 +{power * .16f:0.00}",
                 "TankThorns" => $"탱커 피격 시 공격자에게 물리 피해 {Value(9f)}",
                 "MeleeShatter" => $"근접 공격이 3.2초간 적 방어력 -{Value(8f)}",
-                "RangedCrit" => $"원거리 치명타 확률 +{Percent(.13f)}% · 치명타 피해 +{Percent(.24f)}%p (기본 150%, 중첩 증가)",
+                "RangedPrecision" => $"원거리 유닛 방어력 관통 +{Value(8f)}",
                 "MageOverload" => $"마법사 피해 +{Percent(.16f)}% · 공격 범위 +{power * .14f:0.00}",
                 "SupportAura" => $"서포터 스킬 사용 시 주변 아군을 마력의 {Percent(.18f)}%만큼 회복",
                 "TankRally" => $"탱커 스킬 사용 시 최대 체력의 약 {Mathf.RoundToInt((.015f + power * .02f) * 100f)}% 회복",
                 "MeleeDuelist" => $"근접 유닛의 보스 대상 피해 +{Percent(.12f)}%",
-                "RangedMark" => $"원거리 치명타 확률 +{Percent(.12f)}%",
+                "RangedSuppress" => $"정지 중인 원거리 유닛 피해 +{Percent(.07f)}% · 공격 속도 +{Percent(.06f)}%",
                 "MageBurn" => $"마법사 스킬이 마력의 {Percent(.12f)}% 지연 피해 추가",
                 "SupportHaste" => $"서포터 스킬이 주변 아군 재사용 대기시간을 {.22f + power * .35f:0.00}초 단축",
                 "DoubleShot" => $"원거리 공격 시 원 피해의 {Mathf.RoundToInt(Mathf.Clamp(power * .14f, .08f, .42f) * 100f)}% 추가탄",
@@ -14803,7 +14806,7 @@ namespace JellyGate
                 "SupportAscension" => $"서포터 재사용 -{Percent(.10f)}% · 광역 회복에 마력의 {Percent(.26f)}% 추가",
                 "TankCitadel" => $"체력 35% 이하 탱커 피해 감소·방어 강화",
                 "MeleeOverdrive" => $"체력 50% 이하 근접 유닛 피해·공격 속도 강화",
-                "RangedTempest" => $"원거리 피해·공격 속도·치명타를 함께 강화",
+                "RangedTempest" => $"원거리 피해·공격 속도·사거리를 함께 강화",
                 "MageSingularity" => $"마법 범위 +{power * .08f:0.00} · 마력의 {Percent(.20f)}% 지연 피해",
                 "SupportMiracle" => $"서포터 재사용 -{Percent(.05f)}% · 광역 회복에 마력의 {Percent(.28f)}% 추가",
                 "HillDominion" => $"언덕 위 유닛 피해 +{Percent(.07f)}% · 사거리 +{power * .08f:0.00} · 양 방어력 +{Value(6f)}",
@@ -14892,29 +14895,13 @@ namespace JellyGate
         private int StartBudget() => Mathf.RoundToInt(19f + StackPower("Budget") * 4f);
         private float StackPower(string name) => augmentPower.TryGetValue(name, out var value) ? value : 0f;
 
-        public float GetCriticalChance(PlayerUnit unit)
-        {
-            if (unit == null) return 0f;
-            const float baseCriticalChance = .25f;
-            if (RoleFor(unit.Archetype) != DefenderRole.Ranged) return baseCriticalChance;
-            var rangedBonus = StackPower("RangedCrit") * .13f +
-                              StackPower("RangedMark") * .12f +
-                              StackPower("RangedTempest") * .06f;
-            // Every defender owns the same 25% baseline. Ranged augments remain meaningful,
-            // but their combined ceiling prevents a high-roll build from becoming deterministic.
-            return Mathf.Clamp(baseCriticalChance + rangedBonus, baseCriticalChance, .55f);
-        }
+        // Kept as compatibility probes for older QA assemblies and save migrations. Combat,
+        // HUD and augment pools no longer expose or roll critical hits.
+        [Obsolete("Critical hits were removed in release code 8.")]
+        public float GetCriticalChance(PlayerUnit unit) => 0f;
 
-        public float GetCriticalDamageMultiplier(PlayerUnit unit)
-        {
-            // Critical hits start at 150%. Weak-point Shot raises the multiplier as its
-            // diminishing stack power grows; it no longer leaves every stack fixed at 165%.
-            // The 225% ceiling keeps repeated Gold offerings from invalidating later waves.
-            var rangedPower = unit != null && RoleFor(unit.Archetype) == DefenderRole.Ranged
-                ? StackPower("RangedCrit")
-                : 0f;
-            return 1.5f + Mathf.Clamp(rangedPower * .24f, 0f, .75f);
-        }
+        [Obsolete("Critical hits were removed in release code 8.")]
+        public float GetCriticalDamageMultiplier(PlayerUnit unit) => 1f;
 
         public static DefenderRole RoleFor(UnitArchetype archetype) => archetype switch
         {
@@ -14936,6 +14923,7 @@ namespace JellyGate
                                       (unit.HealthRatio <= .5f ? StackPower("MeleeOverdrive") * .10f : 0f),
                 DefenderRole.Ranged => StackPower("RangedPractice") * .10f +
                                        (unit.IsHoldingPosition ? StackPower("RangedFocus") * .08f : 0f) +
+                                       (unit.IsHoldingPosition ? StackPower("RangedSuppress") * .07f : 0f) +
                                        StackPower("RangedTempest") * .05f,
                 DefenderRole.Mage => StackPower("MageFocus") * .11f +
                                      StackPower("MageOverload") * .16f +
@@ -14953,6 +14941,7 @@ namespace JellyGate
             {
                 DefenderRole.Melee => StackPower("MeleeTempo") * .10f,
                 DefenderRole.Ranged => StackPower("RangedBarrage") * .10f +
+                                       (unit.IsHoldingPosition ? StackPower("RangedSuppress") * .06f : 0f) +
                                        StackPower("RangedTempest") * .05f,
                 _ => 0f
             };
@@ -14966,6 +14955,12 @@ namespace JellyGate
             if (unit == null || RoleFor(unit.Archetype) != DefenderRole.Ranged) return 0f;
             return StackPower("RangedRange") * .20f + StackPower("RangedBarrage") * .11f +
                    StackPower("RangedTempest") * .06f;
+        }
+
+        public float GetRolePhysicalPenetrationBonus(PlayerUnit unit)
+        {
+            if (unit == null || RoleFor(unit.Archetype) != DefenderRole.Ranged) return 0f;
+            return StackPower("RangedPrecision") * 8f;
         }
 
         public float GetRoleDetectionRangeBonus(PlayerUnit unit)
@@ -15701,8 +15696,9 @@ namespace JellyGate
                 return;
             }
             var returnSavePromptVisible = showReturnToMainMenuSavePrompt;
+            var tacticalItemPromptVisible = TacticalItemUsePromptVisible;
             var gameplayGuiEnabled = GUI.enabled;
-            if (returnSavePromptVisible) GUI.enabled = false;
+            if (returnSavePromptVisible || tacticalItemPromptVisible) GUI.enabled = false;
             DrawTopHud();
             DrawTacticalMiniMap();
             DrawBottomHud();
@@ -15742,6 +15738,7 @@ namespace JellyGate
             if (showExitConfirm) DrawExitConfirm();
             GUI.enabled = gameplayGuiEnabled;
             if (returnSavePromptVisible) DrawReturnToMainMenuSavePrompt();
+            if (tacticalItemPromptVisible) DrawTacticalItemUsePrompt();
             GUI.matrix = previousMatrix;
         }
 
@@ -17926,14 +17923,10 @@ namespace JellyGate
             DrawPanel(new Rect(rect.x + 10f, rect.y + 27f, rect.width - 20f, 2f),
                 new Color(.36f, .68f, .91f, .92f));
             var statsRect = SelectedUnitStatsRect();
-            var compactStatStyle = new GUIStyle(statStyle)
-            {
-                fontSize = 14, alignment = TextAnchor.MiddleLeft, clipping = TextClipping.Clip
-            };
-            var statCells = SelectedUnitStatCells(unit);
-            const int statColumns = 4;
-            const float statColumnGap = 6f;
-            var statRowHeight = SelectedUnitStatRowHeight();
+            var statCells = SelectedUnitStatCellModels(unit);
+            const int statColumns = 3;
+            const float statColumnGap = 4f;
+            var statRowHeight = statsRect.height * .5f;
             var statColumnWidth = (statsRect.width - statColumnGap * (statColumns - 1)) / statColumns;
             for (var i = 0; i < statCells.Length; i++)
             {
@@ -17941,12 +17934,7 @@ namespace JellyGate
                 var row = i / statColumns;
                 var cell = new Rect(statsRect.x + column * (statColumnWidth + statColumnGap),
                     statsRect.y + row * statRowHeight, statColumnWidth, statRowHeight);
-                var needsWrappedCell = GameLocalization.Current != GameLanguage.Korean ||
-                                       SafeGuiRect.width < 370f || i == 6;
-                if (!needsWrappedCell)
-                    DrawFittedLabel(cell, statCells[i], compactStatStyle, 10);
-                else
-                    DrawFittedWrappedLabel(cell, statCells[i], compactStatStyle, 8);
+                DrawSelectedUnitStatCell(cell, statCells[i]);
             }
 
             var skillRect = SelectedUnitSkillRect();
@@ -17957,7 +17945,86 @@ namespace JellyGate
             {
                 if (!unit.TryUseUltimate()) ShowToast(UltimateContextRequirement(unit));
             }
+            DrawSelectedUnitExperienceBar(unit, rect);
+            DrawSelectedUnitStatTooltip(rect);
             DrawSelectedUnitAbilityTooltip(rect, unit);
+        }
+
+        private enum SelectedStatIcon { Health, Attack, Magic, Armor, Resistance, PhysicalPenetration,
+            MagicPenetration, Range }
+
+        private readonly struct SelectedStatCell
+        {
+            public readonly SelectedStatIcon Icon;
+            public readonly string Value;
+            public readonly string Label;
+            public readonly Color Color;
+            public SelectedStatCell(SelectedStatIcon icon, string value, string label, Color color)
+            { Icon = icon; Value = value; Label = label; Color = color; }
+        }
+
+        private string inspectedSelectedStat = string.Empty;
+        private float inspectedSelectedStatUntil;
+
+        private void DrawSelectedUnitStatCell(Rect rect, SelectedStatCell stat)
+        {
+            var iconSize = Mathf.Min(25f, rect.height - 4f);
+            var icon = new Rect(rect.x + 1f, rect.center.y - iconSize * .5f, iconSize, iconSize);
+            var previous = GUI.color;
+            GUI.color = new Color(stat.Color.r, stat.Color.g, stat.Color.b, .94f);
+            if (CircleSprite != null) GUI.DrawTexture(icon, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+            GUI.color = Color.white;
+            var glyph = stat.Icon switch
+            {
+                SelectedStatIcon.Health => "♥",
+                SelectedStatIcon.Attack => "⚔",
+                SelectedStatIcon.Magic => "✦",
+                SelectedStatIcon.Armor => "⬟",
+                SelectedStatIcon.Resistance => "◆",
+                SelectedStatIcon.PhysicalPenetration => "➤",
+                SelectedStatIcon.MagicPenetration => "✧",
+                _ => "◎"
+            };
+            GUI.Label(icon, glyph, new GUIStyle(centeredStyle)
+            {
+                fontSize = 14, fontStyle = FontStyle.Bold, alignment = TextAnchor.MiddleCenter,
+                normal = { textColor = new Color(.035f, .05f, .08f) }
+            });
+            GUI.color = previous;
+            DrawFittedLabel(new Rect(icon.xMax + 3f, rect.y + 1f, rect.xMax - icon.xMax - 4f,
+                    rect.height - 2f), stat.Value,
+                new GUIStyle(statStyle) { fontSize = 14, alignment = TextAnchor.MiddleLeft,
+                    fontStyle = FontStyle.Bold, clipping = TextClipping.Clip }, 10);
+            if (GUI.Button(rect, GUIContent.none, GUIStyle.none))
+            {
+                inspectedSelectedStat = stat.Label;
+                inspectedSelectedStatUntil = Time.unscaledTime + 2.4f;
+            }
+        }
+
+        private void DrawSelectedUnitStatTooltip(Rect statusRect)
+        {
+            if (string.IsNullOrEmpty(inspectedSelectedStat) || Time.unscaledTime > inspectedSelectedStatUntil) return;
+            var tooltip = new Rect(statusRect.x + 24f, statusRect.y - 37f, statusRect.width - 48f, 33f);
+            DrawOrnatePanel(tooltip, new Color(.018f, .035f, .07f, .985f), new Color(.48f, .74f, .94f), 2f);
+            DrawFittedLabel(new Rect(tooltip.x + 8f, tooltip.y + 3f, tooltip.width - 16f, tooltip.height - 6f),
+                inspectedSelectedStat, new GUIStyle(centeredStyle) { alignment = TextAnchor.MiddleCenter,
+                    fontStyle = FontStyle.Bold }, 10);
+        }
+
+        private void DrawSelectedUnitExperienceBar(PlayerUnit unit, Rect statusRect)
+        {
+            var bar = new Rect(statusRect.x + 11f, statusRect.yMax - 17f, statusRect.width - 22f, 11f);
+            DrawPanel(bar, new Color(.015f, .024f, .045f, 1f));
+            var current = unit.IsHero ? 1f : unit.ExperienceWithinCurrentLevel();
+            var required = unit.IsHero ? 1f : unit.ExperienceRequiredForCurrentLevel();
+            var ratio = unit.IsHero ? 1f : Mathf.Clamp01(current / Mathf.Max(1f, required));
+            DrawPanel(new Rect(bar.x + 2f, bar.y + 2f, (bar.width - 4f) * ratio, bar.height - 4f),
+                unit.IsHero ? new Color(1f, .72f, .2f) : new Color(.35f, .8f, .95f));
+            var text = unit.IsHero ? "EXP MAX" : $"EXP {Mathf.FloorToInt(current)}/{Mathf.CeilToInt(required)}";
+            GUI.Label(new Rect(bar.x, bar.y - 2f, bar.width, bar.height + 4f), text,
+                new GUIStyle(centeredStyle) { fontSize = 8, fontStyle = FontStyle.Bold,
+                    alignment = TextAnchor.MiddleCenter });
         }
 
         private bool DrawSelectedUnitAbilityButton(Rect rect, PlayerUnit unit, bool ultimate, bool enabled)
@@ -17968,31 +18035,23 @@ namespace JellyGate
                 ? new Color(1f, .68f, .18f)
                 : new Color(.36f, .82f, 1f);
             if (!enabled) accent = new Color(.35f, .39f, .48f);
-            DrawOrnatePanel(rect, new Color(.025f, .045f, .075f, .97f), accent, 1.5f);
-
-            var iconSize = Mathf.Min(rect.height - 4f, 30f);
-            var iconRect = new Rect(rect.x + 3f, rect.center.y - iconSize * .5f, iconSize, iconSize);
+            var iconRect = rect;
             var previous = GUI.color;
             GUI.color = accent;
             if (CircleSprite != null) GUI.DrawTexture(iconRect, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+            var inner = new Rect(iconRect.x + 3f, iconRect.y + 3f, iconRect.width - 6f, iconRect.height - 6f);
+            GUI.color = new Color(.025f, .045f, .075f, .98f);
+            if (CircleSprite != null) GUI.DrawTexture(inner, CircleSprite.texture, ScaleMode.ScaleToFit, true);
             GUI.color = enabled ? Color.white : new Color(.58f, .61f, .68f);
-            DrawUnitAbilityAtlasCell(new Rect(iconRect.x + 2f, iconRect.y + 2f,
-                iconRect.width - 4f, iconRect.height - 4f), unit.Archetype, ultimate);
+            DrawUnitAbilityAtlasCell(new Rect(inner.x + 3f, inner.y + 3f,
+                inner.width - 6f, inner.height - 6f), unit.Archetype, ultimate);
             GUI.color = previous;
 
             var remaining = ultimate ? unit.UltimateCooldownRemaining : unit.SkillCooldownRemaining;
-            var state = remaining <= 0f
-                ? ultimate ? L("궁극 · 준비", "ULT · READY") : L("자동 · 준비", "AUTO · READY")
-                : L($"재사용 {remaining:0.0}초", $"COOLDOWN {remaining:0.0}s");
-            DrawFittedLabel(new Rect(iconRect.xMax + 5f, rect.y + 2f,
-                    rect.xMax - iconRect.xMax - 8f, rect.height - 4f), state,
-                new GUIStyle(statStyle)
-                {
-                    fontSize = 12,
-                    fontStyle = FontStyle.Bold,
-                    alignment = TextAnchor.MiddleCenter,
-                    normal = { textColor = enabled ? Color.white : new Color(.62f, .66f, .73f) }
-                }, 8);
+            if (remaining > 0f)
+                GUI.Label(inner, $"{remaining:0}", new GUIStyle(centeredStyle) { fontSize = 12,
+                    fontStyle = FontStyle.Bold, alignment = TextAnchor.MiddleCenter,
+                    normal = { textColor = Color.white } });
 
             var evt = Event.current;
             var clicked = false;
@@ -18055,52 +18114,65 @@ namespace JellyGate
                 }, 10);
         }
 
-        private string SelectedUnitPrimaryStats(PlayerUnit unit) =>
-            L($"HP {Mathf.CeilToInt(unit.Health)}/{Mathf.CeilToInt(unit.MaxHealth)}  |  공격 {unit.AttackPower:0}  |  마력 {unit.MagicPower:0}",
-                $"HP {Mathf.CeilToInt(unit.Health)}/{Mathf.CeilToInt(unit.MaxHealth)}  |  ATK {unit.AttackPower:0}  |  MAG {unit.MagicPower:0}");
-
-        private string SelectedUnitDefenseAndPenetration(PlayerUnit unit) =>
-            L($"방어 {unit.Armor:0}  |  마저 {unit.MagicResistance:0}  |  방관 {unit.PhysicalPenetration:0}  |  마관 {unit.MagicPenetration:0}",
-                $"DEF {unit.Armor:0}  |  RES {unit.MagicResistance:0}  |  ARM PEN {unit.PhysicalPenetration:0}  |  MAG PEN {unit.MagicPenetration:0}");
-
-        private string SelectedUnitCombatRangesAndCritical(PlayerUnit unit)
+        private SelectedStatCell[] SelectedUnitStatCellModels(PlayerUnit unit)
         {
-            var chance = Mathf.RoundToInt(GetCriticalChance(unit) * 100f);
-            var damage = Mathf.RoundToInt(GetCriticalDamageMultiplier(unit) * 100f);
-            return L($"사거리 {unit.AttackRange:0.00}  |  탐지 {unit.DetectionRange:0.00}  |  치명 {chance}%  |  치피 {damage}%",
-                $"RNG {unit.AttackRange:0.00}  |  DET {unit.DetectionRange:0.00}  |  CRIT {chance}%  |  C.DMG {damage}%");
+            var usesMagic = SelectedUnitUsesMagicStats(unit);
+            return new[]
+            {
+                new SelectedStatCell(SelectedStatIcon.Health,
+                    $"{Mathf.CeilToInt(unit.Health)}/{Mathf.CeilToInt(unit.MaxHealth)}", L("생명력", "HEALTH"),
+                    new Color(.96f, .36f, .42f)),
+                new SelectedStatCell(usesMagic ? SelectedStatIcon.Magic : SelectedStatIcon.Attack,
+                    $"{(usesMagic ? unit.MagicPower : unit.AttackPower):0}",
+                    usesMagic ? L("마력", "MAGIC POWER") : L("공격력", "ATTACK POWER"),
+                    usesMagic ? new Color(.55f, .48f, 1f) : new Color(1f, .62f, .25f)),
+                new SelectedStatCell(SelectedStatIcon.Armor, $"{unit.Armor:0}", L("방어력", "ARMOR"),
+                    new Color(.55f, .68f, .82f)),
+                new SelectedStatCell(SelectedStatIcon.Resistance, $"{unit.MagicResistance:0}",
+                    L("마법 저항", "MAGIC RESISTANCE"), new Color(.32f, .86f, .84f)),
+                new SelectedStatCell(usesMagic ? SelectedStatIcon.MagicPenetration : SelectedStatIcon.PhysicalPenetration,
+                    $"{(usesMagic ? unit.MagicPenetration : unit.PhysicalPenetration):0}",
+                    usesMagic ? L("마법 관통", "MAGIC PENETRATION") : L("방어력 관통", "ARMOR PENETRATION"),
+                    usesMagic ? new Color(.76f, .42f, 1f) : new Color(1f, .78f, .31f)),
+                new SelectedStatCell(SelectedStatIcon.Range, $"{unit.AttackRange:0.00}",
+                    L("공격 사거리", "ATTACK RANGE"), new Color(.42f, .75f, 1f))
+            };
         }
 
+        // Compatibility surface for archived layout QA. The live HUD consumes icon models and
+        // the strings below are never rendered. Critical fields were deliberately removed.
         private string[] SelectedUnitStatCells(PlayerUnit unit)
         {
-            var chance = Mathf.RoundToInt(GetCriticalChance(unit) * 100f);
-            var damage = Mathf.RoundToInt(GetCriticalDamageMultiplier(unit) * 100f);
             var usesMagic = SelectedUnitUsesMagicStats(unit);
-            var primaryPower = usesMagic
-                ? L($"마력 {unit.MagicPower:0}", $"MAGIC {unit.MagicPower:0}")
-                : L($"공격력 {unit.AttackPower:0}", $"ATTACK {unit.AttackPower:0}");
-            var primaryPenetration = usesMagic
-                ? L($"마법 관통 {unit.MagicPenetration:0}",
-                    $"MAGIC PENETRATION {unit.MagicPenetration:0}")
-                : L($"방어력 관통 {unit.PhysicalPenetration:0}",
-                    $"ARMOR PENETRATION {unit.PhysicalPenetration:0}");
             return new[]
             {
                 $"HP {Mathf.CeilToInt(unit.Health)}/{Mathf.CeilToInt(unit.MaxHealth)}",
-                primaryPower,
+                usesMagic ? L($"마력 {unit.MagicPower:0}", $"MAGIC {unit.MagicPower:0}")
+                    : L($"공격력 {unit.AttackPower:0}", $"ATTACK {unit.AttackPower:0}"),
                 L($"방어력 {unit.Armor:0}", $"ARMOR {unit.Armor:0}"),
                 L($"마법 저항 {unit.MagicResistance:0}", $"MAGIC RESIST {unit.MagicResistance:0}"),
-                primaryPenetration,
+                usesMagic ? L($"마법 관통 {unit.MagicPenetration:0}", $"MAGIC PENETRATION {unit.MagicPenetration:0}")
+                    : L($"방어력 관통 {unit.PhysicalPenetration:0}", $"ARMOR PENETRATION {unit.PhysicalPenetration:0}"),
                 L($"공격 사거리 {unit.AttackRange:0.00}", $"ATTACK RANGE {unit.AttackRange:0.00}"),
-                L($"치명타 {chance}% · 피해 {damage}%", $"CRITICAL {chance}% · DAMAGE {damage}%"),
-                unit.IsHero
-                    ? L("경험치 MAX", "EXPERIENCE MAX")
-                    : L($"경험치 {Mathf.FloorToInt(unit.ExperienceWithinCurrentLevel())}/" +
-                        $"{Mathf.CeilToInt(unit.ExperienceRequiredForCurrentLevel())}",
-                        $"EXPERIENCE {Mathf.FloorToInt(unit.ExperienceWithinCurrentLevel())}/" +
-                        $"{Mathf.CeilToInt(unit.ExperienceRequiredForCurrentLevel())}")
+                unit.IsHero ? L("경험치 MAX", "EXPERIENCE MAX")
+                    : L($"경험치 {Mathf.FloorToInt(unit.ExperienceWithinCurrentLevel())}/{Mathf.CeilToInt(unit.ExperienceRequiredForCurrentLevel())}",
+                        $"EXPERIENCE {Mathf.FloorToInt(unit.ExperienceWithinCurrentLevel())}/{Mathf.CeilToInt(unit.ExperienceRequiredForCurrentLevel())}")
             };
         }
+
+        // Legacy QA formatting probes. The live HUD above is icon-only; these strings are never
+        // rendered and intentionally contain no critical-hit fields.
+        private string SelectedUnitPrimaryStats(PlayerUnit unit) =>
+            L($"HP {Mathf.CeilToInt(unit.Health)}/{Mathf.CeilToInt(unit.MaxHealth)} | 공격 {unit.AttackPower:0} | 마력 {unit.MagicPower:0}",
+                $"HP {Mathf.CeilToInt(unit.Health)}/{Mathf.CeilToInt(unit.MaxHealth)} | ATK {unit.AttackPower:0} | MAG {unit.MagicPower:0}");
+
+        private string SelectedUnitDefenseAndPenetration(PlayerUnit unit) =>
+            L($"방어력 {unit.Armor:0} | 마법 저항 {unit.MagicResistance:0} | 방어력 관통 {unit.PhysicalPenetration:0} | 마법 관통 {unit.MagicPenetration:0}",
+                $"ARMOR {unit.Armor:0} | MAGIC RESISTANCE {unit.MagicResistance:0} | ARMOR PENETRATION {unit.PhysicalPenetration:0} | MAGIC PENETRATION {unit.MagicPenetration:0}");
+
+        private string SelectedUnitCombatRangesAndCritical(PlayerUnit unit) =>
+            L($"공격 사거리 {unit.AttackRange:0.00} | 탐지 범위 {unit.DetectionRange:0.00}",
+                $"ATTACK RANGE {unit.AttackRange:0.00} | DETECTION RANGE {unit.DetectionRange:0.00}");
 
         // The HUD follows the unit's authored basic-combat identity, never whichever live stat
         // happens to be numerically larger after augments. Hybrid bombardiers remain physical
@@ -18183,8 +18255,7 @@ namespace JellyGate
 
         private float SelectedUnitStatusHeight()
         {
-            if (GameLocalization.Current != GameLanguage.Korean) return 126f;
-            return SafeGuiRect.width < 370f ? 132f : 115f;
+            return SafeGuiRect.width < 370f ? 124f : 118f;
         }
 
         private float SelectedUnitStatRowHeight()
@@ -18197,8 +18268,7 @@ namespace JellyGate
         {
             var rect = SelectedUnitStatusRect();
             if (rect.width <= 0f) return Rect.zero;
-            return new Rect(rect.x + 10f, rect.y + 33f, rect.width - 20f,
-                SelectedUnitStatRowHeight() * 2f);
+            return new Rect(rect.x + 10f, rect.y + 33f, rect.width - 76f, rect.height - 55f);
         }
 
         private static float SelectedUnitActionColumnWidth(Rect statusRect) =>
@@ -18208,11 +18278,9 @@ namespace JellyGate
         {
             if (selectedUnits.Count != 1 || selectedUnits[0] == null) return Rect.zero;
             var rect = SelectedUnitStatusRect();
-            var y = rect.y + 35f + SelectedUnitStatRowHeight() * 2f;
-            if (!selectedUnits[0].IsHero)
-                return new Rect(rect.x + 10f, y, rect.width - 20f, 32f);
-            var rightWidth = SelectedUnitActionColumnWidth(rect);
-            return new Rect(rect.x + 10f, y, rect.width - rightWidth - 27f, 32f);
+            const float size = 39f;
+            var y = selectedUnits[0].IsHero ? rect.y + 32f : rect.y + 45f;
+            return new Rect(rect.xMax - size - 14f, y, size, size);
         }
 
         private Rect SelectedUnitUltimateRect()
@@ -18220,9 +18288,8 @@ namespace JellyGate
             if (selectedUnits.Count != 1 || selectedUnits[0] == null || !selectedUnits[0].IsHero)
                 return Rect.zero;
             var rect = SelectedUnitStatusRect();
-            var rightWidth = SelectedUnitActionColumnWidth(rect);
-            var y = rect.y + 35f + SelectedUnitStatRowHeight() * 2f;
-            return new Rect(rect.xMax - rightWidth - 7f, y, rightWidth, 32f);
+            const float size = 39f;
+            return new Rect(rect.xMax - size - 14f, rect.y + 73f, size, size);
         }
 
         private Rect AugmentSummaryRect() =>
@@ -18639,6 +18706,7 @@ namespace JellyGate
             pointerHeld = pointerDragged = false;
             pressedUnit = null;
             pressedEnemy = null;
+            pendingTacticalItemUse = -1;
             showShopPanel = showSkinPanel = showMissionPanel = showGuidePanel = showSettings = false;
             victoryRewardText = string.Empty;
             showFormationPanel = true; showAugmentSummary = false; augmentOverlayHidden = false; inspectedAugmentKey = string.Empty;

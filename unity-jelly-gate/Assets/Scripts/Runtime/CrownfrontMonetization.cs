@@ -73,7 +73,11 @@ namespace JellyGate
 #endif
         private Action<string> statusSink;
         private bool initialized;
-        private bool runAdShown;
+        // Interstitials are tied to explicit exit/restart transitions, not to a once-per-run
+        // latch.  The old runAdShown flag silently suppressed every later valid request after
+        // one impression.  Keep only a real in-flight guard so duplicate taps cannot launch two
+        // activities while each completed transition is still eligible for a fresh ad request.
+        private bool interstitialRequestInFlight;
 
         private static bool IsRuntimeQa => Array.Exists(Environment.GetCommandLineArgs(), arg =>
             arg.StartsWith("-qa", StringComparison.OrdinalIgnoreCase) &&
@@ -569,20 +573,28 @@ namespace JellyGate
             return Color.clear;
         }
 
-        public void BeginRun() => runAdShown = false;
+        public void BeginRun() => interstitialRequestInFlight = false;
 
         public bool NotifyRunEnded()
         {
-            if (runAdShown || AdsRemoved) return false;
+            if (interstitialRequestInFlight || AdsRemoved) return false;
 #if UNITY_ANDROID && !UNITY_EDITOR
             if (androidBridge != null)
             {
-                runAdShown = true;
+                interstitialRequestInFlight = true;
                 androidBridge.Call("showInterstitial");
                 return true;
             }
 #endif
             return false;
+        }
+
+        public void CancelInterstitialRequest()
+        {
+            interstitialRequestInFlight = false;
+#if UNITY_ANDROID && !UNITY_EDITOR
+            androidBridge?.Call("cancelInterstitialShow");
+#endif
         }
 
         public void OnMonetizationEvent(string json)
@@ -683,11 +695,13 @@ namespace JellyGate
                     break;
                 case "ad_error":
                     AdsReady = false;
+                    interstitialRequestInFlight = false;
                     Debug.LogWarning($"Interstitial ad unavailable: {nativeEvent.message}");
                     InterstitialClosed?.Invoke();
                     break;
                 case "ad_dismissed":
                     AdsReady = false;
+                    interstitialRequestInFlight = false;
 #if UNITY_ANDROID && !UNITY_EDITOR
                     androidBridge?.Call("loadInterstitial");
 #endif

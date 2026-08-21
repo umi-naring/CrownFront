@@ -9,6 +9,7 @@ namespace JellyGate
         private bool interstitialTransitionPending;
         private bool interstitialTransitionLostFocus;
         private float interstitialTransitionStartedAt;
+        private float interstitialBackInputBlockedUntil;
         private int pendingMainMenuGoldNotice;
         private float mainMenuGoldNoticeUntil;
 
@@ -35,6 +36,10 @@ namespace JellyGate
             var transition = pendingInterstitialTransition;
             pendingInterstitialTransition = null;
             interstitialTransitionPending = false;
+            // Android can deliver the Back press that dismissed a full-screen ad to Unity again
+            // on the same focus-restoration frame.  Swallow that trailing key instead of opening
+            // the exit dialog (or quitting from the newly restored main menu).
+            interstitialBackInputBlockedUntil = Time.unscaledTime + .9f;
             Time.timeScale = 1f;
             transition?.Invoke();
         }
@@ -46,9 +51,15 @@ namespace JellyGate
             // A failed/no-fill request can leave the Android bridge waiting for a load callback.
             // Do not trap the player on a black transition screen when no ad became ready.
             if (elapsed >= 8f && (monetization == null || !monetization.AdsReady))
+            {
+                monetization?.CancelInterstitialRequest();
                 FinishInterstitialTransition();
+            }
             else if (elapsed >= 45f)
+            {
+                monetization?.CancelInterstitialRequest();
                 FinishInterstitialTransition();
+            }
         }
 
         private void OnInterstitialApplicationFocus(bool focused)
@@ -59,11 +70,14 @@ namespace JellyGate
                 interstitialTransitionLostFocus = true;
                 return;
             }
-            // Full-screen ad activities commonly pause/focus the Unity activity. If an adapter
-            // fails to forward onAdDismissed, focus restoration is the reliable final signal.
-            if (interstitialTransitionLostFocus && Time.unscaledTime - interstitialTransitionStartedAt >= .35f)
-                FinishInterstitialTransition();
+            // Do not treat focus restoration as dismissal. Several mediated video players briefly
+            // bounce focus while still running; the old fallback transitioned underneath them and
+            // left the ad apparently frozen. The SDK's explicit dismissal/error callback owns the
+            // transition, with UpdateInterstitialTransition as the bounded no-callback fallback.
         }
+
+        private bool InterstitialConsumesBackInput => interstitialTransitionPending ||
+                                                      Time.unscaledTime < interstitialBackInputBlockedUntil;
 
         private void QueueMainMenuGoldNotice(int awarded)
         {
