@@ -369,7 +369,11 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                             loadInterstitial();
                         }
                     });
-                    send("ad_loaded", "", "", "");
+                    // AdMob mediation chooses Google or Unity Ads from the same request.
+                    // Preserve the winning adapter name for device QA without showing it in UI.
+                    String adapter = ad.getResponseInfo() == null ? "" :
+                        ad.getResponseInfo().getMediationAdapterClassName();
+                    send("ad_loaded", "", "", adapter == null ? "" : adapter);
                     if (pendingInterstitialShow) {
                         pendingInterstitialShow = false;
                         interstitial.show(activity);

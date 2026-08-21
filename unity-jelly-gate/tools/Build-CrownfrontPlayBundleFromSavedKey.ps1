@@ -8,7 +8,7 @@ $ErrorActionPreference = 'Stop'
 $workspacePath = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $keyInfoPath = Join-Path $workspacePath 'release-keys\IMPORTANT-Crownfront-upload-key.txt'
 $buildScript = Join-Path $PSScriptRoot 'Build-CrownfrontPlayBundle.ps1'
-$outputPath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code5.aab'
+$outputPath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code6.aab'
 
 if (-not (Test-Path -LiteralPath $keyInfoPath)) {
     throw 'Saved upload-key metadata was not found.'

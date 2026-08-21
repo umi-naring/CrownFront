@@ -113,7 +113,7 @@ namespace JellyGate
                 GUI.DrawTexture(new Rect(logoCard.x + 20f, logoCard.y + 12f, logoCard.width - 40f, 82f),
                     privacyBrandLogo, ScaleMode.ScaleToFit, true);
             DrawFittedLabel(new Rect(logoCard.x + 12f, logoCard.yMax - 34f, logoCard.width - 24f, 24f),
-                L("CROWNFRONT 개인정보처리방침 · 2026년 8월 20일", "CROWNFRONT PRIVACY POLICY · AUGUST 20, 2026"),
+                L("CROWNFRONT 개인정보처리방침 · 2026년 8월 22일", "CROWNFRONT PRIVACY POLICY · AUGUST 22, 2026"),
                 new GUIStyle(centeredStyle)
                 {
                     alignment = TextAnchor.MiddleCenter,
@@ -129,17 +129,17 @@ namespace JellyGate
                 L("별도 회원가입·로그인을 제공하지 않으며 이름, 이메일, 전화번호, 정확한 위치, 결제수단 정보를 직접 수집하거나 자체 서버에 저장하지 않습니다. 게임 진행·도전 기록, 언어·음향 설정, 보유·장착 스킨은 기기에 저장됩니다. Android 백업이 켜진 경우 Google 계정으로 백업·복원될 수 있으나 개발자는 해당 백업에 직접 접근하지 않습니다.",
                     "No account or login is required. We do not directly collect or store names, email addresses, phone numbers, precise location, or payment credentials. Progress, challenges, settings, and cosmetic ownership are stored on-device and may be included in Android backup without developer access."), 188f);
             DrawGuideCard(width, ref y, L("2. 광고와 자동 처리 정보", "2. ADS AND AUTOMATIC PROCESSING"),
-                L("Google AdMob 및 Google Mobile Ads SDK가 IP 기반 대략적 위치, 앱 실행·탭·광고 노출 등 상호작용, 진단 정보, 광고 ID·App Set ID 등의 식별자를 처리할 수 있습니다. 광고 제공·측정·분석·부정행위 방지·보안·규정 준수 목적이며, 해당 지역에서는 Google UMP 동의 및 개인정보 보호 옵션을 제공합니다.",
-                    "Google AdMob and the Mobile Ads SDK may process approximate IP-based location, app and ad interactions, diagnostics, advertising ID, App Set ID, and related identifiers for ads, measurement, analytics, fraud prevention, security, and compliance. Google UMP consent and privacy options are shown where required."), 196f);
+                L("Google AdMob, Google Mobile Ads SDK 및 중재 광고 파트너인 Unity Ads가 IP 기반 대략적 위치, 앱·광고 상호작용, 진단 정보, 광고 ID·App Set ID 등의 식별자를 처리할 수 있습니다. 광고 제공·입찰·측정·분석·부정행위 방지·보안·규정 준수 목적이며, 해당 지역에서는 Google UMP 동의 및 개인정보 보호 옵션을 제공합니다.",
+                    "Google AdMob, the Mobile Ads SDK, and the mediated advertising partner Unity Ads may process approximate IP-based location, app and ad interactions, diagnostics, advertising ID, App Set ID, and related identifiers for ad delivery, bidding, measurement, analytics, fraud prevention, security, and compliance. Google UMP consent and privacy options are shown where required."), 218f);
             DrawGuideCard(width, ref y, L("3. 인앱 구매", "3. IN-APP PURCHASES"),
                 L("광고 제거와 디지털 상품 결제는 Google Play Billing이 처리하며 개발자는 결제수단 정보를 수집·저장하지 않습니다. 상품 제공과 재설치·기기 변경 후 소유권 확인을 위해 상품 식별자와 구매 상태를 조회할 수 있습니다. 환불·취소·결제수단은 Google Play 정책과 계정 설정에 따라 관리됩니다.",
                     "Google Play Billing processes digital purchases. We do not collect or store payment credentials. Product identifiers and purchase status may be queried to deliver and restore ownership. Refunds, cancellations, and payment methods are managed under Google Play policies and account settings."), 176f);
             DrawGuideCard(width, ref y, L("4. 이용하는 제3자 서비스", "4. THIRD-PARTY SERVICES"),
-                L("Google AdMob / Google Mobile Ads SDK, Google User Messaging Platform, Google Play Billing, Android 백업·기기 이전 기능을 이용합니다. 각 제공자는 자체 개인정보처리방침에 따라 데이터를 처리할 수 있습니다.\nGoogle 개인정보처리방침: policies.google.com/privacy\n광고 및 개인정보 보호: policies.google.com/technologies/ads\nPlay 약관: play.google.com/about/play-terms/",
-                    "Services used: Google AdMob / Mobile Ads SDK, Google User Messaging Platform, Google Play Billing, and optional Android backup/device transfer. Providers may process data under their own policies.\nPrivacy: policies.google.com/privacy\nAds: policies.google.com/technologies/ads\nPlay Terms: play.google.com/about/play-terms/"), 218f);
+                L("Google AdMob / Google Mobile Ads SDK, Google User Messaging Platform, Unity Ads, Google Play Billing, Android 백업·기기 이전 기능을 이용합니다. 각 제공자는 자체 개인정보처리방침에 따라 데이터를 처리할 수 있습니다.\nGoogle 개인정보처리방침: policies.google.com/privacy\nUnity 개인정보처리방침: unity.com/legal/privacy-policy\n광고 및 개인정보 보호: policies.google.com/technologies/ads\nPlay 약관: play.google.com/about/play-terms/",
+                    "Services used: Google AdMob / Mobile Ads SDK, Google User Messaging Platform, Unity Ads, Google Play Billing, and optional Android backup/device transfer. Providers may process data under their own policies.\nGoogle Privacy: policies.google.com/privacy\nUnity Privacy: unity.com/legal/privacy-policy\nAds: policies.google.com/technologies/ads\nPlay Terms: play.google.com/about/play-terms/"), 248f);
             DrawGuideCard(width, ref y, L("5. 데이터 보안", "5. DATA SECURITY"),
-                L("Google 서비스 SDK를 통해 전송되는 데이터는 전송 과정에서 암호화됩니다. 앱은 필요한 기능에 한해 데이터를 사용하고 합리적인 보안 조치를 적용하지만 인터넷 전송 또는 전자 저장 방식의 절대적 보안을 보장할 수는 없습니다.",
-                    "Data transmitted through Google service SDKs is encrypted in transit. The app limits use to necessary functions and applies reasonable safeguards, but no internet transmission or electronic storage method is absolutely secure."), 144f);
+                L("Google 및 Unity 광고 서비스 SDK를 통해 전송되는 데이터는 전송 과정에서 암호화됩니다. 앱은 필요한 기능에 한해 데이터를 사용하고 합리적인 보안 조치를 적용하지만 인터넷 전송 또는 전자 저장 방식의 절대적 보안을 보장할 수는 없습니다.",
+                    "Data transmitted through Google and Unity advertising SDKs is encrypted in transit. The app limits use to necessary functions and applies reasonable safeguards, but no internet transmission or electronic storage method is absolutely secure."), 154f);
             DrawGuideCard(width, ref y, L("6. 보관·삭제 및 사용자 선택권", "6. RETENTION, DELETION, AND CHOICES"),
                 L("개발자는 별도 계정 데이터베이스를 운영하지 않습니다. 기기 게임 데이터는 Android 설정의 앱 데이터 삭제 또는 앱 제거로 삭제할 수 있습니다. Android 백업, 광고 정보, Play 결제 기록은 Google 계정과 각 서비스 정책에 따라 관리됩니다. 앱의 개인정보 보호 옵션과 Google 광고 설정을 이용할 수 있으며 열람·정정·삭제는 아래 문의처로 요청할 수 있습니다.",
                     "We operate no separate account database. On-device data can be deleted through Android app-data settings or uninstalling the app. Android backup, advertising data, and Play purchase records follow Google account and service policies. Privacy options and Google ad settings are available; access, correction, or deletion inquiries can be sent below."), 202f);

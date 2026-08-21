@@ -47,6 +47,8 @@ namespace JellyGate
 
     /// <summary>
     /// Owns Google Play one-time products, cosmetic entitlements and post-run interstitial ads.
+    /// AdMob mediation selects Google demand first and can fill with Unity Ads bidding without
+    /// a second fullscreen request, keeping consent, frequency and transition callbacks unified.
     /// The Android bridge is injected into the Gradle project by GooglePlayAndroidPostprocessor.
     /// Editor/desktop builds retain the complete shop UI but never grant paid products.
     /// </summary>
@@ -90,6 +92,7 @@ namespace JellyGate
         public string PurchaseStatusMessage { get; private set; } = string.Empty;
         public string LastRequestedProductId { get; private set; } = string.Empty;
         public string LastNativeEventType { get; private set; } = string.Empty;
+        public string LastAdNetwork { get; private set; } = string.Empty;
         public int CataloguedProductCount => localizedPrices.Count;
         public bool AdsRemoved => IsOwned(RemoveAdsId);
         public bool AllProductsOwnedForTesting =>
@@ -643,6 +646,9 @@ namespace JellyGate
                     break;
                 case "ad_loaded":
                     AdsReady = true;
+                    LastAdNetwork = nativeEvent.message ?? string.Empty;
+                    if (!string.IsNullOrWhiteSpace(LastAdNetwork))
+                        Debug.Log($"Interstitial mediation adapter ready: {LastAdNetwork}");
                     break;
                 case "ads_initialized":
                     ConsentStatusKnown = true;

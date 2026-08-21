@@ -8,8 +8,9 @@ namespace JellyGate.Editor
 {
     /// <summary>
     /// Keeps the Unity project free of generated Maven binaries while producing a Play-ready
-    /// Gradle project with Billing 9.1, Google Mobile Ads 25.4, UMP consent 4.0 and
-    /// login-free Android backup rules for the portable challenge/run checkpoint file.
+    /// Gradle project with Billing 9.1, Google Mobile Ads 25.4, Unity Ads 4.19,
+    /// the Google Unity mediation adapter 4.19.0.1, UMP consent 4.0 and login-free
+    /// Android backup rules for the portable challenge/run checkpoint file.
     /// </summary>
     public sealed class GooglePlayAndroidPostprocessor : IPostGenerateGradleAndroidProject
     {
@@ -46,10 +47,12 @@ namespace JellyGate.Editor
             var text = File.ReadAllText(gradlePath);
             const string billing = "implementation 'com.android.billingclient:billing:9.1.0'";
             const string ads = "implementation 'com.google.android.gms:play-services-ads:25.4.0'";
+            const string unityAds = "implementation 'com.unity3d.ads:unity-ads:4.19.0'";
+            const string unityAdapter = "implementation 'com.google.ads.mediation:unity:4.19.0.1'";
             const string ump = "implementation 'com.google.android.ump:user-messaging-platform:4.0.0'";
             foreach (var dependency in new[]
                      {
-                         billing, ads, ump,
+                         billing, ads, unityAds, unityAdapter, ump,
                          "implementation 'com.google.android.gms:play-services-" + "games-v2:21.0.0'"
                      })
             {
@@ -63,7 +66,8 @@ namespace JellyGate.Editor
                 return;
             }
             var insertAt = dependencyIndex + "dependencies {".Length;
-            text = text.Insert(insertAt, $"\n    {billing}\n    {ads}\n    {ump}\n");
+            text = text.Insert(insertAt,
+                $"\n    {billing}\n    {ads}\n    {unityAds}\n    {unityAdapter}\n    {ump}\n");
             File.WriteAllText(gradlePath, text, new UTF8Encoding(false));
         }
 
