@@ -1,0 +1,441 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+namespace JellyGate
+{
+    public sealed partial class JellyGateGame
+    {
+        private CrownfrontEconomy economy;
+        private readonly HashSet<TacticalItemId> activeRunItems = new();
+        private readonly HashSet<TacticalItemId> pendingRunItems = new();
+        private bool usedAnyTacticalItemThisRun;
+        private bool showPregameLoadout;
+        private bool sortieGateTransition;
+        private float sortieGateTransitionStartedAt;
+        private Texture2D reviveTicketTexture;
+        private Texture2D tacticalItemAtlasTexture;
+        private Texture2D removeAdsTexture;
+        private readonly Dictionary<int, Texture2D> gemPackTextures = new();
+        private int inspectedPregameItem = -1;
+        private int inspectedRunItem = -1;
+        private int fieldAidUsesThisRun;
+        private int runGoldScore;
+        private int perfectRoundsThisRun;
+        private float gateHealthAtWaveStart;
+        private bool runGoldAwarded;
+
+        private void InitializeEconomy()
+        {
+            economy = gameObject.AddComponent<CrownfrontEconomy>();
+            economy.Initialize();
+            reviveTicketTexture = Resources.Load<Texture2D>("Shop/revive-ticket");
+            tacticalItemAtlasTexture = Resources.Load<Texture2D>("Shop/tactical-item-atlas-v1");
+            removeAdsTexture = Resources.Load<Texture2D>("Shop/remove-ads-v1");
+            var gemAssets = new[]
+            {
+                (100, 100), (305, 310), (515, 525), (1040, 1075), (2100, 2200)
+            };
+            foreach (var (granted, asset) in gemAssets)
+                gemPackTextures[granted] = Resources.Load<Texture2D>($"Shop/Products/gem-{asset}");
+        }
+
+        private void BindMonetizationEconomy()
+        {
+            if (monetization == null || economy == null) return;
+            monetization.GemsPurchased += economy.GrantGems;
+            monetization.EmergencyRevivePurchased += CompleteEmergencyRevivePurchase;
+        }
+
+        private void OpenPregameLoadout()
+        {
+            if (economy == null)
+            {
+                BeginSortieGateTransition();
+                return;
+            }
+            showPregameLoadout = true;
+        }
+
+        private void ConfirmPregameLoadout()
+        {
+            pendingRunItems.Clear();
+            foreach (var item in economy.ConsumeSelectedPregameItems()) pendingRunItems.Add(item);
+            usedAnyTacticalItemThisRun = pendingRunItems.Count > 0;
+            showPregameLoadout = false;
+            BeginSortieGateTransition();
+        }
+
+        private void BeginSortieGateTransition()
+        {
+            sortieGateTransition = true;
+            sortieGateTransitionStartedAt = Time.unscaledTime;
+        }
+
+        private void UpdateSortieGateTransition()
+        {
+            if (!sortieGateTransition || Time.unscaledTime - sortieGateTransitionStartedAt < 1.45f) return;
+            sortieGateTransition = false;
+            StartNewFront();
+            activeRunItems.Clear();
+            foreach (var item in pendingRunItems) activeRunItems.Add(item);
+            pendingRunItems.Clear();
+        }
+
+        private void DrawEconomyWallet()
+        {
+            if (economy == null) return;
+            var safe = SafeGuiRect;
+            var width = Mathf.Min(188f, safe.width * .45f);
+            var rect = new Rect(safe.xMax - width - 8f, safe.y + 8f, width, 31f);
+            DrawPanel(rect, new Color(.012f, .02f, .034f, .82f));
+            var half = rect.width * .5f;
+            DrawFittedLabel(new Rect(rect.x + 5f, rect.y + 1f, half - 6f, rect.height - 2f),
+                $"●  {economy.Gold:N0}", new GUIStyle(centeredStyle)
+                {
+                    alignment = TextAnchor.MiddleCenter,
+                    normal = { textColor = new Color(1f, .84f, .35f) }
+                }, 10);
+            DrawFittedLabel(new Rect(rect.x + half, rect.y + 1f, half - 5f, rect.height - 2f),
+                $"◆  {economy.Gems:N0}", new GUIStyle(centeredStyle)
+                {
+                    alignment = TextAnchor.MiddleCenter,
+                    normal = { textColor = new Color(.43f, .86f, 1f) }
+                }, 10);
+        }
+
+        private void DrawPregameLoadout()
+        {
+            var screen = new Rect(0f, 0f, GuiWidth, GuiHeight);
+            DrawPanel(screen, new Color(0f, .008f, .025f, .82f));
+            var safe = SafeGuiRect;
+            var width = Mathf.Min(424f, safe.width * .94f);
+            var height = Mathf.Min(590f, safe.height * .84f);
+            var panel = new Rect(safe.center.x - width * .5f, safe.center.y - height * .5f, width, height);
+            DrawOrnatePanel(panel, new Color(.075f, .055f, .035f, .995f), new Color(.76f, .62f, .38f), 3f);
+            DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 14f, panel.width - 36f, 40f),
+                L("출전 준비", "FRONT PREPARATION"), modalTitleStyle, 16);
+            DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 52f, panel.width - 36f, 34f),
+                L($"보유 아이템 중 최대 {economy.PregameSelectionLimit}개 선택 · 선택 {economy.SelectedPregameItems.Count}/{economy.PregameSelectionLimit}",
+                    $"SELECT UP TO {economy.PregameSelectionLimit} OWNED ITEMS · {economy.SelectedPregameItems.Count}/{economy.PregameSelectionLimit}"),
+                new GUIStyle(statStyle) { alignment = TextAnchor.MiddleCenter, wordWrap = true }, 9);
+
+            var items = economy.Catalog.Where(item => item.PregameSelectable).ToArray();
+            if (inspectedPregameItem < 0 && items.Length > 0) inspectedPregameItem = (int)items[0].Id;
+            var listTop = panel.y + 96f;
+            const float gap = 7f;
+            var cardWidth = (panel.width - 42f - gap * 3f) * .25f;
+            const float cardHeight = 103f;
+            for (var i = 0; i < items.Length; i++)
+            {
+                var item = items[i];
+                var col = i % 4;
+                var row = i / 4;
+                var rect = new Rect(panel.x + 21f + col * (cardWidth + gap),
+                    listTop + row * (cardHeight + gap), cardWidth, cardHeight);
+                var selected = economy.SelectedPregameItems.Contains(item.Id);
+                var owned = economy.Count(item.Id);
+                var inspected = inspectedPregameItem == (int)item.Id;
+                DrawOrnatePanel(rect, selected ? new Color(.17f, .14f, .075f, .99f) :
+                    new Color(.09f, .075f, .055f, .99f), selected ? new Color(1f, .79f, .34f) :
+                    inspected ? new Color(.82f, .7f, .5f) : new Color(.42f, .36f, .27f), selected ? 3f : 2f);
+                DrawTacticalItemIcon(new Rect(rect.x + 9f, rect.y + 7f, rect.width - 18f, rect.height - 34f), item.Id,
+                    owned > 0 ? Color.white : new Color(.42f, .42f, .42f, .7f));
+                DrawFittedLabel(new Rect(rect.x + 5f, rect.yMax - 27f, rect.width - 10f, 22f), $"× {owned}",
+                    new GUIStyle(centeredStyle)
+                    {
+                        fontStyle = FontStyle.Bold,
+                        normal = { textColor = owned > 0 ? new Color(.96f, .9f, .73f) : new Color(.55f, .52f, .48f) }
+                    }, 11);
+                if (selected) DrawFittedLabel(new Rect(rect.xMax - 27f, rect.y + 4f, 22f, 22f), "✓",
+                    new GUIStyle(centeredStyle) { fontStyle = FontStyle.Bold,
+                        normal = { textColor = new Color(1f, .85f, .32f) } }, 12);
+                var available = owned > 0 && (selected || economy.SelectedPregameItems.Count < economy.PregameSelectionLimit);
+                if (GUI.Button(rect, GUIContent.none, GUIStyle.none))
+                {
+                    inspectedPregameItem = (int)item.Id;
+                    if (available) economy.TogglePregameSelection(item.Id);
+                }
+            }
+
+            var detail = items.FirstOrDefault(item => (int)item.Id == inspectedPregameItem) ?? items.FirstOrDefault();
+            var detailRect = new Rect(panel.x + 21f, listTop + cardHeight * 2f + gap * 2f,
+                panel.width - 42f, 98f);
+            DrawOrnatePanel(detailRect, new Color(.13f, .105f, .067f, .995f), new Color(.58f, .47f, .31f), 2f);
+            if (detail != null)
+            {
+                DrawTacticalItemIcon(new Rect(detailRect.x + 10f, detailRect.y + 10f, 72f, 72f), detail.Id, Color.white);
+                DrawFittedLabel(new Rect(detailRect.x + 92f, detailRect.y + 7f, detailRect.width - 104f, 27f), detail.Name,
+                    new GUIStyle(smallStyle) { alignment = TextAnchor.MiddleLeft, fontStyle = FontStyle.Bold,
+                        normal = { textColor = new Color(1f, .87f, .57f) } }, 12);
+                DrawFittedLabel(new Rect(detailRect.x + 92f, detailRect.y + 34f, detailRect.width - 104f, 53f),
+                    detail.Description, new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft, wordWrap = true,
+                        normal = { textColor = new Color(.91f, .87f, .78f) } }, 10);
+            }
+
+            if (DrawPremiumButton(new Rect(panel.x + 20f, panel.yMax - 105f, panel.width - 40f, 46f),
+                    L("선택 완료 · 전선 출전", "CONFIRM · DEPLOY"), new Color(.2f, .13f, .045f, .99f),
+                    new Color(.92f, .72f, .3f), true)) ConfirmPregameLoadout();
+            if (DrawPremiumButton(new Rect(panel.x + 20f, panel.yMax - 51f, panel.width - 40f, 34f),
+                    L("뒤로", "BACK"), new Color(.08f, .07f, .055f, .99f),
+                    new Color(.55f, .48f, .37f), true)) showPregameLoadout = false;
+        }
+
+        private void DrawTacticalItemIcon(Rect rect, TacticalItemId id, Color tint)
+        {
+            if (tacticalItemAtlasTexture == null) return;
+            var index = Mathf.Clamp((int)id, 0, 10);
+            var column = index % 4;
+            var row = index / 4;
+            var uv = new Rect(column * .25f, 1f - (row + 1f) / 3f, .25f, 1f / 3f);
+            var previous = GUI.color;
+            GUI.color = tint;
+            GUI.DrawTextureWithTexCoords(rect, tacticalItemAtlasTexture, uv, true);
+            GUI.color = previous;
+        }
+
+        private void DrawActiveTacticalItemRail()
+        {
+            if (economy == null || activeRunItems.Count == 0) return;
+            var safe = SafeGuiRect;
+            var ordered = activeRunItems.OrderBy(id => (int)id).Take(3).ToArray();
+            const float iconSize = 46f;
+            const float gap = 6f;
+            var top = safe.y + TopHudHeight + 62f;
+            for (var i = 0; i < ordered.Length; i++)
+            {
+                var id = ordered[i];
+                var rect = new Rect(safe.x + 7f, top + i * (iconSize + gap), iconSize, iconSize);
+                var inspected = inspectedRunItem == (int)id;
+                DrawOrnatePanel(rect, new Color(.09f, .072f, .047f, .94f),
+                    inspected ? new Color(1f, .78f, .32f) : new Color(.52f, .43f, .3f), inspected ? 3f : 2f);
+                DrawTacticalItemIcon(new Rect(rect.x + 4f, rect.y + 4f, rect.width - 8f, rect.height - 8f), id, Color.white);
+                if (GUI.Button(rect, GUIContent.none, GUIStyle.none))
+                    inspectedRunItem = inspected ? -1 : (int)id;
+            }
+
+            if (inspectedRunItem < 0) return;
+            var detail = economy.Definition((TacticalItemId)inspectedRunItem);
+            if (detail == null || !activeRunItems.Contains(detail.Id))
+            {
+                inspectedRunItem = -1;
+                return;
+            }
+            var info = new Rect(safe.x + 60f, top, Mathf.Min(250f, safe.width - 76f), 88f);
+            DrawOrnatePanel(info, new Color(.11f, .085f, .052f, .97f), new Color(.68f, .55f, .34f), 2f);
+            DrawFittedLabel(new Rect(info.x + 10f, info.y + 7f, info.width - 20f, 25f), detail.Name,
+                new GUIStyle(smallStyle) { alignment = TextAnchor.MiddleLeft, fontStyle = FontStyle.Bold,
+                    normal = { textColor = new Color(1f, .86f, .54f) } }, 11);
+            DrawFittedLabel(new Rect(info.x + 10f, info.y + 33f, info.width - 20f, info.height - 40f), detail.Description,
+                new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft, wordWrap = true,
+                    normal = { textColor = new Color(.92f, .88f, .79f) } }, 9);
+        }
+
+        private void DrawSortieGateTransition()
+        {
+            UpdateSortieGateTransition();
+            if (!sortieGateTransition) return;
+            var screen = new Rect(0f, 0f, GuiWidth, GuiHeight);
+            var elapsed = Time.unscaledTime - sortieGateTransitionStartedAt;
+            var opening = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((elapsed - .24f) / 1.05f));
+            DrawPanel(screen, new Color(.01f, .02f, .04f, Mathf.Lerp(.82f, 0f, opening)));
+            var doorWidth = GuiWidth * .51f;
+            var slide = opening * (doorWidth + 12f);
+            var left = new Rect(-slide, 0f, doorWidth, GuiHeight);
+            var right = new Rect(GuiWidth - doorWidth + slide, 0f, doorWidth, GuiHeight);
+            DrawOrnatePanel(left, new Color(.055f, .075f, .11f, 1f), new Color(.95f, .72f, .24f), 5f);
+            DrawOrnatePanel(right, new Color(.055f, .075f, .11f, 1f), new Color(.95f, .72f, .24f), 5f);
+            var glow = new Rect(GuiWidth * .5f - 16f - opening * 70f, 0f, 32f + opening * 140f, GuiHeight);
+            DrawPanel(glow, new Color(1f, .88f, .58f, Mathf.Clamp01(.55f - opening * .4f)));
+            DrawFittedLabel(new Rect(20f, GuiHeight * .44f, GuiWidth - 40f, 52f),
+                L("왕성의 문이 열립니다", "THE CITADEL GATE OPENS"), overlayTitleStyle, 15);
+        }
+
+        private void DrawTacticalAugmentButtons(Rect panel)
+        {
+            if (economy == null) return;
+            var rerolls = economy.Count(TacticalItemId.TacticalReroll);
+            if (DrawPremiumButton(new Rect(panel.x + 14f, panel.y + 96f, 108f, 32f),
+                    L($"재정비 {rerolls}", $"REROLL {rerolls}"), new Color(.06f, .045f, .12f, .99f),
+                    new Color(.72f, .52f, 1f), rerolls > 0))
+            {
+                var tier = currentOffers.Length > 0 ? currentOffers[0].Tier : AugmentTier.Bronze;
+                var pool = GetAvailableAugmentTemplates(tier).OrderBy(_ => UnityEngine.Random.value).Take(3).ToArray();
+                if (pool.Length == 3 && economy.TryConsume(TacticalItemId.TacticalReroll))
+                {
+                    currentOffers = pool.Select(template =>
+                    {
+                        var power = TierPower(tier);
+                        return new AugmentOffer(
+                            GameLocalization.AugmentName(template.EffectKey, template.Name),
+                            GameLocalization.AugmentDescription(template.EffectKey, power,
+                                DescribeAugment(template, power)), template.EffectKey, tier, power);
+                    }).ToArray();
+                    usedAnyTacticalItemThisRun = true;
+                }
+            }
+            var aid = economy.Count(TacticalItemId.FieldAid);
+            if (DrawPremiumButton(new Rect(panel.x + 130f, panel.y + 96f, 108f, 32f),
+                    L($"구호품 {aid}", $"FIELD AID {aid}"), new Color(.035f, .105f, .09f, .99f),
+                    new Color(.42f, 1f, .72f), aid > 0 && fieldAidUsesThisRun < 2))
+            {
+                if (economy.TryConsume(TacticalItemId.FieldAid))
+                {
+                    foreach (var unit in units)
+                        if (unit != null && unit.IsAlive) unit.RestoreHealth(unit.MaxHealth * .12f);
+                    fieldAidUsesThisRun++;
+                    usedAnyTacticalItemThisRun = true;
+                }
+            }
+        }
+
+        public bool HasActiveTacticalItem(TacticalItemId id) => activeRunItems.Contains(id);
+
+        public float GetTacticalDamageMultiplier(PlayerUnit unit)
+        {
+            if (unit == null) return 1f;
+            var bonus = activeRunItems.Contains(TacticalItemId.AllBoost) ? .02f : 0f;
+            bonus += RoleFor(unit.Archetype) switch
+            {
+                DefenderRole.Tank when activeRunItems.Contains(TacticalItemId.TankBoost) => .03f,
+                DefenderRole.Melee when activeRunItems.Contains(TacticalItemId.MeleeBoost) => .03f,
+                DefenderRole.Ranged when activeRunItems.Contains(TacticalItemId.RangedBoost) => .03f,
+                DefenderRole.Mage when activeRunItems.Contains(TacticalItemId.MageBoost) => .03f,
+                DefenderRole.Support when activeRunItems.Contains(TacticalItemId.SupportBoost) => .03f,
+                _ => 0f
+            };
+            return 1f + bonus;
+        }
+
+        public float GetTacticalHealthMultiplier(UnitArchetype archetype) =>
+            GetTacticalRoleBonus(archetype, true);
+
+        public float GetTacticalDefenseBonus(PlayerUnit unit, float baseDefense) =>
+            unit == null ? 0f : baseDefense * (GetTacticalRoleBonus(unit.Archetype, true) - 1f);
+
+        public float GetTacticalExperienceMultiplier() =>
+            activeRunItems.Contains(TacticalItemId.MasteryManual) ? 1.06f : 1f;
+
+        private float GetTacticalRoleBonus(UnitArchetype archetype, bool includeAll)
+        {
+            var bonus = includeAll && activeRunItems.Contains(TacticalItemId.AllBoost) ? .02f : 0f;
+            var role = RoleFor(archetype);
+            if (role == DefenderRole.Tank && activeRunItems.Contains(TacticalItemId.TankBoost) ||
+                role == DefenderRole.Melee && activeRunItems.Contains(TacticalItemId.MeleeBoost) ||
+                role == DefenderRole.Ranged && activeRunItems.Contains(TacticalItemId.RangedBoost) ||
+                role == DefenderRole.Mage && activeRunItems.Contains(TacticalItemId.MageBoost) ||
+                role == DefenderRole.Support && activeRunItems.Contains(TacticalItemId.SupportBoost)) bonus += .03f;
+            return 1f + bonus;
+        }
+
+        private bool TryPurchaseInGameProduct(CrownfrontShopProduct product, ShopCurrency currency)
+        {
+            if (product == null || economy == null || product.DirectPurchase) return false;
+            var price = currency == ShopCurrency.Gold ? product.GoldPrice : product.GemPrice;
+            if (price <= 0 || !economy.TrySpend(currency, price))
+            {
+                if (currency == ShopCurrency.Gems)
+                {
+                    shopCategory = ShopCategory.Currency;
+                    shopScroll = Vector2.zero;
+                    ShowToast(L("보석이 부족합니다. 보석 구매 상품을 확인하세요.",
+                        "NOT ENOUGH GEMS. GEM PACKS ARE NOW OPEN."));
+                }
+                else ShowToast(L("골드가 부족합니다.", "NOT ENOUGH GOLD."));
+                return false;
+            }
+            if (product.HasTacticalItem)
+            {
+                // Spending was completed above; credit the purchased item without charging twice.
+                economy.GrantPurchasedItem(product.TacticalItem);
+                usedAnyTacticalItemThisRun |= !showMainMenu;
+            }
+            else monetization.GrantInGameProduct(product.Id);
+            ShowToast(L($"{product.Name} 구매 완료", $"{product.Name} PURCHASED"));
+            return true;
+        }
+
+        private void DrawInGamePurchaseConfirmation(CrownfrontShopProduct product)
+        {
+            var safe = SafeGuiRect;
+            DrawPanel(new Rect(0f, 0f, GuiWidth, GuiHeight), new Color(0f, 0f, .015f, .8f));
+            var width = Mathf.Min(420f, safe.width - 24f);
+            var panel = new Rect(safe.center.x - width * .5f, safe.center.y - 205f, width, 410f);
+            DrawOrnatePanel(panel, new Color(.018f, .04f, .082f, .998f), product.Accent, 4f);
+            DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 15f, panel.width - 36f, 38f),
+                L("구매 방법 선택", "CHOOSE PAYMENT"), modalTitleStyle, 16);
+            DrawShopProductPreview(product, new Rect(panel.x + 26f, panel.y + 65f, 116f, 124f));
+            DrawFittedLabel(new Rect(panel.x + 158f, panel.y + 67f, panel.width - 184f, 34f),
+                product.Name, new GUIStyle(smallStyle) { alignment = TextAnchor.MiddleLeft,
+                    fontStyle = FontStyle.Bold }, 12);
+            DrawFittedLabel(new Rect(panel.x + 158f, panel.y + 105f, panel.width - 184f, 84f),
+                product.Description, new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft,
+                    wordWrap = true }, 9);
+            DrawFittedLabel(new Rect(panel.x + 24f, panel.y + 202f, panel.width - 48f, 30f),
+                L($"보유 · 골드 {economy.Gold:N0}   보석 {economy.Gems:N0}",
+                    $"OWNED · {economy.Gold:N0} GOLD   {economy.Gems:N0} GEMS"),
+                new GUIStyle(centeredStyle) { alignment = TextAnchor.MiddleCenter }, 10);
+
+            var goldEnabled = product.GoldPrice > 0 && economy.Gold >= product.GoldPrice;
+            var gemEnabled = product.GemPrice > 0 && economy.Gems >= product.GemPrice;
+            if (DrawPremiumButton(new Rect(panel.x + 24f, panel.y + 244f, panel.width - 48f, 48f),
+                    L($"골드 {product.GoldPrice:N0}로 구매", $"BUY FOR {product.GoldPrice:N0} GOLD"),
+                    new Color(.16f, .105f, .025f, .99f), new Color(1f, .79f, .3f), goldEnabled))
+            {
+                if (TryPurchaseInGameProduct(product, ShopCurrency.Gold)) pendingPurchaseProduct = null;
+            }
+            if (DrawPremiumButton(new Rect(panel.x + 24f, panel.y + 302f, panel.width - 48f, 48f),
+                    L($"보석 {product.GemPrice:N0}로 구매", $"BUY FOR {product.GemPrice:N0} GEMS"),
+                    new Color(.035f, .10f, .14f, .99f), new Color(.52f, .9f, 1f), product.GemPrice > 0))
+            {
+                if (TryPurchaseInGameProduct(product, ShopCurrency.Gems)) pendingPurchaseProduct = null;
+                else pendingPurchaseProduct = null;
+            }
+            if (DrawPremiumButton(new Rect(panel.x + 24f, panel.yMax - 46f, panel.width - 48f, 31f),
+                    L("취소", "CANCEL"), new Color(.04f, .06f, .095f, .99f),
+                    new Color(.5f, .64f, .8f), true)) pendingPurchaseProduct = null;
+        }
+
+        private void CompleteEmergencyRevivePurchase()
+        {
+            emergencyRevivePaymentConfirmed = true;
+            TryExecuteSelectedRevive();
+        }
+
+        private void UpdateItemlessChallengeProgress()
+        {
+            if (usedAnyTacticalItemThisRun) return;
+            var best = Mathf.Max(PlayerPrefs.GetInt("Crownfront.Challenge.ItemlessBest", 0), roundsCleared);
+            PlayerPrefs.SetInt("Crownfront.Challenge.ItemlessBest", best);
+            foreach (var goal in new[] { 10, 25, 50 })
+                if (best >= goal) CompleteChallenge("itemless_" + goal);
+            PlayerPrefs.Save();
+        }
+
+        private void BeginWaveGoldScoring() => gateHealthAtWaveStart = gateHealth;
+
+        private void ScoreCompletedRoundGold()
+        {
+            var chapter = Mathf.Clamp((Round - 1) / 5, 0, 9);
+            runGoldScore += 15 + chapter * 2;
+            if (gateHealth >= gateHealthAtWaveStart - .01f)
+            {
+                perfectRoundsThisRun++;
+                runGoldScore += 8 + chapter;
+            }
+            if (Round % 5 == 0) runGoldScore += 25 + chapter * 5;
+        }
+
+        private int AwardRunGold()
+        {
+            if (runGoldAwarded || economy == null) return 0;
+            var preservation = Mathf.RoundToInt(roundsCleared * Mathf.Clamp01(gateHealth / GateMaxHealth) * 3f);
+            var noRevive = revivalUsedThisRun ? 0 : roundsCleared * 2;
+            var total = Mathf.Max(0, runGoldScore + preservation + noRevive);
+            economy.GrantGold(total);
+            runGoldAwarded = true;
+            return total;
+        }
+    }
+}

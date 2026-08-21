@@ -25,6 +25,12 @@ namespace JellyGate
                 System.Globalization.CultureInfo.InvariantCulture, out var parsedDelay)
                 ? Mathf.Clamp(parsedDelay, 1f, 30f)
                 : 4.5f;
+            // The production boot loader performs atlas and boss-presentation prewarming.
+            // An absolute timer could fire at its 29% stage and falsely certify the loading
+            // illustration instead of the requested UI. Start the capture delay only after
+            // the loader has completed and removed itself.
+            while (FindFirstObjectByType<CrownfrontBootLoader>() != null)
+                yield return null;
             yield return new WaitForSecondsRealtime(delay);
             Debug.Log($"Capturing QA screenshot to {outputPath}");
             yield return new WaitForEndOfFrame();

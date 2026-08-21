@@ -202,14 +202,16 @@ namespace JellyGate
         public float HealthRatio => Mathf.Clamp01(health / Mathf.Max(1f, maxHealth));
         private bool DefensiveStanceActive => Time.time < defensiveStanceUntil;
         public float Armor => Mathf.Max(0f, definition.Armor + (Level - 1) * 4f + (IsHero ? 12f : 0f) +
-                              (DefensiveStanceActive ? defensiveArmorBonus : 0f) +
-                              (game != null ? game.GetHighGroundDefenseBonus(this) +
-                                              game.GetRoleDefenseBonus(this) : 0f) -
+                               (DefensiveStanceActive ? defensiveArmorBonus : 0f) +
+                               (game != null ? game.GetHighGroundDefenseBonus(this) +
+                                               game.GetRoleDefenseBonus(this) +
+                                               game.GetTacticalDefenseBonus(this, definition.Armor) : 0f) -
                               (Time.time < armorShredUntil ? armorShredAmount : 0f));
         public float MagicResistance => Mathf.Max(0f, definition.MagicResistance + (Level - 1) * 3.5f + (IsHero ? 10f : 0f) +
                                         (DefensiveStanceActive ? defensiveResistanceBonus : 0f) +
                                         (game != null ? game.GetHighGroundDefenseBonus(this) +
-                                                        game.GetRoleResistanceBonus(this) : 0f) -
+                                                        game.GetRoleResistanceBonus(this) +
+                                                        game.GetTacticalDefenseBonus(this, definition.MagicResistance) : 0f) -
                                         (Time.time < resistanceCurseUntil ? resistanceCurseAmount : 0f));
         public float PhysicalPenetration => Mathf.Max(0f, definition.PhysicalPenetration +
             (Level - 1) * (Archetype is UnitArchetype.Tank or UnitArchetype.Melee or
@@ -248,10 +250,12 @@ namespace JellyGate
         };
         public float AttackPower => definition.AttackPower * DamageMultiplier *
                                     (game != null ? game.GetHighGroundDamageMultiplier(this) *
-                                                    game.GetRoleDamageMultiplier(this) : 1f);
+                                                    game.GetRoleDamageMultiplier(this) *
+                                                    game.GetTacticalDamageMultiplier(this) : 1f);
         public float MagicPower => definition.MagicPower * DamageMultiplier *
                                    (game != null ? game.GetHighGroundDamageMultiplier(this) *
-                                                   game.GetRoleDamageMultiplier(this) : 1f);
+                                                   game.GetRoleDamageMultiplier(this) *
+                                                   game.GetTacticalDamageMultiplier(this) : 1f);
         public float AttackRange => definition.Range +
                                     (game != null ? game.GetHighGroundRangeBonus(this) +
                                                     game.GetRoleRangeBonus(this) : 0f);
@@ -423,7 +427,9 @@ namespace JellyGate
             Archetype = archetype;
             cachedSkinVariant = game != null ? game.GetUnitSkinVariant(archetype) : 0;
             definition = unitDefinition;
-            maxHealth = definition.MaxHealth;
+            maxHealth = definition.MaxHealth * (game != null
+                ? game.GetTacticalHealthMultiplier(archetype)
+                : 1f);
             health = maxHealth;
             moveTarget = position;
             moveDestination = position;
@@ -803,7 +809,7 @@ namespace JellyGate
         public void AddExperience(float amount)
         {
             if (!IsAlive || Level >= 5 || amount <= 0f) return;
-            experience += amount;
+            experience += amount * (game != null ? game.GetTacticalExperienceMultiplier() : 1f);
             var leveled = false;
             while (Level < 5 && experience >= RequiredExperience(Level + 1))
             {
@@ -897,7 +903,9 @@ namespace JellyGate
             // avoids replaying level-up particles, voices and analytics while a save is loaded.
             Level = Mathf.Clamp(savedLevel, 1, 5);
             experience = Mathf.Max(0f, savedExperience);
-            maxHealth = definition.MaxHealth;
+            maxHealth = definition.MaxHealth * (game != null
+                ? game.GetTacticalHealthMultiplier(Archetype)
+                : 1f);
             for (var level = 2; level <= Level; level++)
                 maxHealth *= level switch { 2 => 1.08f, 3 => 1.12f, 4 => 1.16f, _ => 1.28f };
 

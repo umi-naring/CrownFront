@@ -9,6 +9,14 @@ namespace JellyGate
         public static bool English => Current == GameLanguage.English;
         public static string Text(string korean, string english) => English ? english : korean;
 
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        private static void InitializeBeforeFirstScene()
+        {
+            // The loading scene is the first visible frame. Resolve the persisted/system language
+            // before any MonoBehaviour builds text so English devices never flash Korean first.
+            Current = LoadInitialLanguage();
+        }
+
         public static GameLanguage DefaultForSystemLanguage(SystemLanguage systemLanguage) =>
             systemLanguage == SystemLanguage.Korean ? GameLanguage.Korean : GameLanguage.English;
 

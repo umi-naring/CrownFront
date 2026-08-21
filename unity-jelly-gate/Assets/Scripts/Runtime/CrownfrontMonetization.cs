@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace JellyGate
@@ -9,6 +10,8 @@ namespace JellyGate
         Castle,
         Unit,
         MainMenu,
+        Supplies,
+        Currency,
         Utility
     }
 
@@ -25,6 +28,14 @@ namespace JellyGate
         public string EnglishFallbackPrice;
         public Color Accent;
         public UnitArchetype TargetUnit;
+        public int GoldPrice;
+        public int GemPrice;
+        public int GrantedGems;
+        public bool DirectPurchase;
+        public bool ShowInShop = true;
+        public bool Consumable;
+        public TacticalItemId TacticalItem;
+        public bool HasTacticalItem;
 
         public string Name => GameLocalization.English ? EnglishName : KoreanName;
         public string Description => GameLocalization.English ? EnglishDescription : KoreanDescription;
@@ -42,6 +53,7 @@ namespace JellyGate
     public sealed class CrownfrontMonetization : MonoBehaviour
     {
         public const string RemoveAdsId = "crownfront.remove_ads_2000";
+        public const string EmergencyReviveId = "crownfront.revive.emergency";
         public const string TestInterstitialId = "ca-app-pub-3940256099942544/1033173712";
 
         private const string OwnedPrefix = "Crownfront.Shop.Owned.";
@@ -68,6 +80,8 @@ namespace JellyGate
         public IReadOnlyList<CrownfrontShopProduct> Products => products;
         public event Action CosmeticsChanged;
         public event Action InterstitialClosed;
+        public event Action<int> GemsPurchased;
+        public event Action EmergencyRevivePurchased;
         public bool BillingReady { get; private set; }
         public bool AdsReady { get; private set; }
         public bool ConsentStatusKnown { get; private set; }
@@ -79,7 +93,9 @@ namespace JellyGate
         public int CataloguedProductCount => localizedPrices.Count;
         public bool AdsRemoved => IsOwned(RemoveAdsId);
         public bool AllProductsOwnedForTesting =>
-            products.Count > 0 && products.TrueForAll(product => IsOwned(product.Id));
+            products.Exists(product => !product.Consumable && !product.HasTacticalItem) &&
+            products.Where(product => !product.Consumable && !product.HasTacticalItem)
+                .All(product => IsOwned(product.Id));
         public string EquippedCastle { get; private set; } = string.Empty;
         public string EquippedMenu { get; private set; } = string.Empty;
 
@@ -115,8 +131,9 @@ namespace JellyGate
                 using var activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
                 using var bridgeClass = new AndroidJavaClass(
                     "com.crownfront.monetization.CrownfrontMonetizationBridge");
-                var productIds = new string[products.Count];
-                for (var i = 0; i < products.Count; i++) productIds[i] = products[i].Id;
+                var directProducts = products.FindAll(product => product.DirectPurchase);
+                var productIds = new string[directProducts.Count];
+                for (var i = 0; i < directProducts.Count; i++) productIds[i] = directProducts[i].Id;
                 var interstitialId = ResolveInterstitialId();
                 androidBridge = bridgeClass.CallStatic<AndroidJavaObject>("create", activity, name,
                     productIds, interstitialId);
@@ -182,10 +199,10 @@ namespace JellyGate
             products.Clear();
             Add("crownfront.castle.azure", ShopCategory.Castle, "청람 왕성", "AZURE CITADEL",
                 "왕성을 청금석 지붕, 푸른 깃발과 성벽 광채로 단장합니다.", "Blue roofs, banners and a citadel wall glow.",
-                "₩4,900", "$4.00", new Color(.25f, .66f, 1f));
+                "보석 45", "45 GEMS", new Color(.25f, .66f, 1f), goldPrice: 2400, gemPrice: 45);
             Add("crownfront.castle.ember", ShopCategory.Castle, "홍염 왕성", "EMBER CITADEL",
                 "왕성에 붉은 금속 장식, 불꽃 봉화와 성벽 광채를 적용합니다.", "Crimson metalwork, ember beacons and a wall glow.",
-                "₩4,900", "$4.00", new Color(1f, .35f, .16f));
+                "보석 45", "45 GEMS", new Color(1f, .35f, .16f), goldPrice: 2400, gemPrice: 45);
             AddUnitSkins(UnitArchetype.Tank, "tank", "왕관 방패병", "CROWN SHIELD GUARD",
                 ("청람 성기사", "AZURE PALADIN", new Color(.38f, .78f, 1f)),
                 ("흑금 수호자", "OBSIDIAN WARDEN", new Color(.95f, .62f, .18f)));
@@ -218,13 +235,52 @@ namespace JellyGate
                 ("새벽 성녀", "DAWN SAINT", new Color(1f, .8f, .38f)));
             Add("crownfront.menu.sunrise", ShopCategory.MainMenu, "새벽 출정", "DAWN MUSTER",
                 "불타는 여명, 왕실 군기와 공성전의 역광으로 메인 화면을 연출합니다.", "A hand-painted royal muster framed by burning dawn and siege-lit banners.",
-                "₩2,900", "$2.00", new Color(1f, .68f, .24f));
+                "보석 25", "25 GEMS", new Color(1f, .68f, .24f), goldPrice: 1400, gemPrice: 25);
             Add("crownfront.menu.moonlit", ShopCategory.MainMenu, "월광 전선", "MOONLIT FRONT",
                 "거대한 월식, 폭풍운과 절제된 수정광으로 메인 화면을 연출합니다.", "A hand-painted lunar front with a vast eclipse, storm clouds, and restrained crystal light.",
-                "₩2,900", "$2.00", new Color(.48f, .54f, 1f));
+                "보석 25", "25 GEMS", new Color(.48f, .54f, 1f), goldPrice: 1400, gemPrice: 25);
+            var economy = GetComponent<CrownfrontEconomy>();
+            if (economy != null)
+            {
+                foreach (var item in economy.Catalog)
+                    Add($"crownfront.item.{item.Id.ToString().ToLowerInvariant()}", ShopCategory.Supplies,
+                        item.KoreanName, item.EnglishName, item.KoreanDescription, item.EnglishDescription,
+                        $"골드 {item.GoldPrice:N0} / 보석 {item.GemPrice:N0}",
+                        $"{item.GoldPrice:N0} GOLD / {item.GemPrice:N0} GEMS", item.Accent,
+                        goldPrice: item.GoldPrice, gemPrice: item.GemPrice,
+                        tacticalItem: item.Id, hasTacticalItem: true);
+            }
             Add(RemoveAdsId, ShopCategory.Utility, "광고 제거", "REMOVE ADS",
-                "게임 종료 후 전면 광고를 영구히 제거합니다.", "Permanently removes post-run interstitial ads.",
-                "₩4,900", "$4.00", new Color(1f, .82f, .3f));
+                "전투 결과 뒤에 표시되는 전면 광고를 영구히 제거합니다.",
+                "Permanently removes interstitial ads shown after battle results.",
+                "₩4,900", "$4.00", new Color(1f, .82f, .3f), directPurchase: true);
+            AddGemPack("crownfront.gems.100", 100, "₩1,100", "$0.99", new Color(.4f, .86f, 1f));
+            AddGemPack("crownfront.gems.310", 305, "₩4,200", "$2.99", new Color(.46f, .82f, 1f));
+            AddGemPack("crownfront.gems.525", 515, "₩7,000", "$4.99", new Color(.58f, .72f, 1f));
+            AddGemPack("crownfront.gems.1075", 1040, "₩14,000", "$9.99", new Color(.72f, .6f, 1f));
+            AddGemPack("crownfront.gems.2200", 2100, "₩28,000", "$19.99", new Color(.94f, .58f, 1f));
+            Add(EmergencyReviveId, ShopCategory.Utility, "긴급 전선 복귀", "EMERGENCY FRONT RETURN",
+                "패배 화면에서 선택한 안전 편성으로 즉시 복귀합니다.",
+                "Immediately return to the selected safe formation after defeat.",
+                "₩700", "$0.49", new Color(.42f, .95f, .82f), directPurchase: true,
+                showInShop: false, consumable: true);
+        }
+
+        private void AddGemPack(string id, int grantedGems, string koreanPrice, string englishPrice, Color accent)
+        {
+            var bonusText = grantedGems switch
+            {
+                305 => "300 + 5",
+                515 => "500 + 15",
+                1040 => "1,000 + 40",
+                2100 => "2,000 + 100",
+                _ => "100"
+            };
+            Add(id, ShopCategory.Currency, $"보석 {bonusText}", $"{bonusText} GEMS",
+                "Google Play 결제 완료 즉시 보석 지갑에 지급됩니다.",
+                "Added to your gem wallet immediately after Google Play confirms payment.",
+                koreanPrice, englishPrice, accent, grantedGems: grantedGems,
+                directPurchase: true, consumable: true);
         }
 
         private void AddUnitSkins(UnitArchetype target, string id, string koUnit, string enUnit,
@@ -233,16 +289,19 @@ namespace JellyGate
             Add($"crownfront.unit.{id}.a", ShopCategory.Unit, first.ko, first.en,
                 $"{koUnit}와 영웅 진화 외형에 전용 색상·광채·문양을 적용합니다.",
                 $"Applies an exclusive palette, glow and crest to {enUnit} and its hero form.",
-                "₩3,900", "$3.00", first.color, target);
+                "보석 35", "35 GEMS", first.color, target, 1800, 35);
             Add($"crownfront.unit.{id}.b", ShopCategory.Unit, second.ko, second.en,
                 $"{koUnit}와 영웅 진화 외형에 전용 색상·광채·문양을 적용합니다.",
                 $"Applies an exclusive palette, glow and crest to {enUnit} and its hero form.",
-                "₩3,900", "$3.00", second.color, target);
+                "보석 35", "35 GEMS", second.color, target, 1800, 35);
         }
 
         private void Add(string id, ShopCategory category, string koName, string enName,
             string koDescription, string enDescription, string koreanPrice, string englishPrice, Color accent,
-            UnitArchetype targetUnit = UnitArchetype.None)
+            UnitArchetype targetUnit = UnitArchetype.None, int goldPrice = 0, int gemPrice = 0,
+            int grantedGems = 0, bool directPurchase = false, bool showInShop = true,
+            bool consumable = false, TacticalItemId tacticalItem = TacticalItemId.ReviveTicket,
+            bool hasTacticalItem = false)
         {
             products.Add(new CrownfrontShopProduct
             {
@@ -255,7 +314,15 @@ namespace JellyGate
                 FallbackPrice = koreanPrice,
                 EnglishFallbackPrice = englishPrice,
                 Accent = accent,
-                TargetUnit = targetUnit
+                TargetUnit = targetUnit,
+                GoldPrice = goldPrice,
+                GemPrice = gemPrice,
+                GrantedGems = grantedGems,
+                DirectPurchase = directPurchase,
+                ShowInShop = showInShop,
+                Consumable = consumable,
+                TacticalItem = tacticalItem,
+                HasTacticalItem = hasTacticalItem
             });
         }
 
@@ -317,7 +384,14 @@ namespace JellyGate
                 return;
             }
             LastRequestedProductId = product.Id;
-            if (IsOwned(product.Id))
+            if (!product.DirectPurchase)
+            {
+                SetPurchaseStatus(GameLocalization.Text(
+                    "이 상품은 게임 내 골드 또는 보석으로 구매합니다.",
+                    "BUY THIS ITEM WITH IN-GAME GOLD OR GEMS."), false);
+                return;
+            }
+            if (!product.Consumable && IsOwned(product.Id))
             {
                 SetPurchaseStatus(GameLocalization.Text(
                     "이미 보유한 스킨입니다. 메인 메뉴의 스킨 보관함에서 장착할 수 있습니다.",
@@ -557,15 +631,15 @@ namespace JellyGate
                         "PURCHASE CANCELLED."), false);
                     break;
                 case "owned":
-                    Grant(nativeEvent.productId);
+                    GrantNativePurchase(nativeEvent.productId, true);
                     SetPurchaseStatus(GameLocalization.Text("구매 소유권을 확인했습니다.",
                         "PURCHASE OWNERSHIP CONFIRMED."), false);
                     break;
                 case "purchased":
-                    Grant(nativeEvent.productId);
+                    GrantNativePurchase(nativeEvent.productId, false);
                     SetPurchaseStatus(GameLocalization.Text(
-                        "구매가 확인되었습니다. 메인 메뉴의 스킨 보관함에서 장착할 수 있습니다.",
-                        "PURCHASE CONFIRMED. EQUIP IT FROM THE SKIN VAULT."), false);
+                        "구매가 확인되어 상품을 지급했습니다.",
+                        "PURCHASE CONFIRMED AND DELIVERED."), false);
                     break;
                 case "ad_loaded":
                     AdsReady = true;
@@ -638,6 +712,34 @@ namespace JellyGate
             }
         }
 
+        public void GrantInGameProduct(string productId)
+        {
+            var product = FindProduct(productId);
+            if (product == null || product.DirectPurchase || product.Consumable) return;
+            Grant(productId);
+            CosmeticsChanged?.Invoke();
+        }
+
+        private void GrantNativePurchase(string productId, bool restored)
+        {
+            var product = FindProduct(productId);
+            if (product == null) return;
+            if (product.GrantedGems > 0)
+            {
+                // Consumables are never granted during ownership restoration; the Android bridge
+                // consumes them and reports only a completed fresh purchase.
+                if (!restored) GemsPurchased?.Invoke(product.GrantedGems);
+                return;
+            }
+            if (product.Id == EmergencyReviveId)
+            {
+                if (!restored) EmergencyRevivePurchased?.Invoke();
+                return;
+            }
+            Grant(productId);
+            CosmeticsChanged?.Invoke();
+        }
+
         internal void GrantForQa(string productId)
         {
             Grant(productId);
@@ -645,7 +747,8 @@ namespace JellyGate
 
         public void GrantAllProductsForTesting()
         {
-            foreach (var product in products) Grant(product.Id);
+            foreach (var product in products)
+                if (!product.Consumable && !product.HasTacticalItem) Grant(product.Id);
             CosmeticsChanged?.Invoke();
             statusSink?.Invoke(GameLocalization.Text(
                 "\uD14C\uC2A4\uD2B8 \uC0C1\uD488\uC744 \uBAA8\uB450 \uC7A0\uAE08 \uD574\uC81C\uD588\uC2B5\uB2C8\uB2E4.",

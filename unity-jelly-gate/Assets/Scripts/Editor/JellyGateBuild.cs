@@ -31,8 +31,9 @@ namespace JellyGate.Editor
             PlayerSettings.productName = "CROWNFRONT";
             PlayerSettings.bundleVersion = "1.00";
             // Google Play requires this internal integer to increase on every uploaded release.
-            // Keep the user-facing version name at 1.00, but ship this corrected commerce build as code 2.
-            PlayerSettings.Android.bundleVersionCode = 2;
+            // Version codes 1-3 have already been used by prior Google Play uploads.
+            // Keep the user-facing version name at 1.00 and publish this verified update as code 4.
+            PlayerSettings.Android.bundleVersionCode = 4;
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.toykingdom.jellygate");
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
@@ -180,10 +181,33 @@ namespace JellyGate.Editor
             Debug.Log($"Jelly Gate APK built: {outputPath}");
         }
 
+        public static void ConfigureAndroidSdkForRelease()
+        {
+            var androidSdkRoot = Environment.GetEnvironmentVariable("CROWNFRONT_ANDROID_SDK");
+            if (string.IsNullOrWhiteSpace(androidSdkRoot) || !Directory.Exists(androidSdkRoot))
+                throw new BuildFailedException("CROWNFRONT_ANDROID_SDK must point to the verified Android SDK.");
+            AndroidExternalToolsSettings.sdkRootPath = Path.GetFullPath(androidSdkRoot);
+            Debug.Log($"CROWNFRONT Android SDK configured: {AndroidExternalToolsSettings.sdkRootPath}");
+        }
+
         [MenuItem("Jelly Gate/Build Google Play AAB")]
         public static void BuildAndroidAppBundle()
         {
-            ConfigureProject();
+            Debug.Log($"CROWNFRONT Windows build shell: ComSpec={Environment.GetEnvironmentVariable("ComSpec")}; PATHEXT={Environment.GetEnvironmentVariable("PATHEXT")}");
+            var androidNdkRoot = Environment.GetEnvironmentVariable("CROWNFRONT_ANDROID_NDK");
+            if (!string.IsNullOrWhiteSpace(androidNdkRoot))
+            {
+                if (!Directory.Exists(androidNdkRoot))
+                    throw new BuildFailedException("CROWNFRONT_ANDROID_NDK does not exist.");
+                AndroidExternalToolsSettings.ndkRootPath = Path.GetFullPath(androidNdkRoot);
+                Debug.Log($"CROWNFRONT Android NDK configured: {AndroidExternalToolsSettings.ndkRootPath}");
+            }
+            // Unity 6.0.60f1+ can cache the Android Platform Tools version as 0.0 when
+            // PlayerSettings are rewritten immediately before an Android build. Project
+            // configuration is persisted separately; this entry point validates it and
+            // starts the build without mutating the Android settings cache.
+            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 4)
+                throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 4) before building.");
             var keystorePath = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE");
             var keystorePass = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE_PASS");
             var aliasName = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_ALIAS");

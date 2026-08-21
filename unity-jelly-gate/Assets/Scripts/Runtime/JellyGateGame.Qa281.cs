@@ -99,7 +99,7 @@ namespace JellyGate
 
             var passed = failures.Count == 0;
             Debug.Log($"QA_LOGIN_FREE_PERSISTENCE_281 passed={passed} " +
-                      $"purchaseAuthority=play-billing challenges=48 checkpoint={passed} " +
+                      $"purchaseAuthority=play-billing challenges=51 checkpoint={passed} " +
                       $"fail={string.Join(",", failures)}");
             Application.Quit(passed ? 0 : 121);
         }

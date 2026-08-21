@@ -228,8 +228,12 @@ namespace JellyGate
         private float timeFrozenUntil;
         private float lastMovementAt;
         private float nextPathReanchorAt;
+        private float nextTerrainAuditAt;
+        private float nextVisualUpdateAt;
+        private float lastVisualUpdateAt;
         private float nextRecoveryAt;
         private float nextTargetScanAt;
+        private float nextBlockerScanAt;
         private float ignoredTargetUntil;
         private float nextPursuitApproachScanAt;
         private float moveSpeedFactor = .65f;
@@ -251,6 +255,7 @@ namespace JellyGate
         private bool engagingDefender;
         private bool avoidsBossSilhouette;
         private PlayerUnit detectedTarget;
+        private PlayerUnit cachedBlocker;
         private PlayerUnit temporarilyIgnoredTarget;
         private PlayerUnit pursuitApproachTarget;
         private Vector2 pursuitApproachTargetPosition;
@@ -1634,12 +1639,15 @@ namespace JellyGate
             var enteringFromBossPortal = usesBossEntrance && pathIndex == 0 &&
                                          Vector2.Distance(Position,
                                              game.GetBossEntrancePathTarget(0, lateralOffset, wriggle)) > .08f;
-            if (!IsFlying && !enteringFromBossPortal &&
-                (!game.IsWalkableWithClearance(Position, Radius * .42f) ||
-                 !game.IsWithinGroundEnemyRoadCorridor(Position, Radius * .42f)))
+            if (!IsFlying && !enteringFromBossPortal && Time.time >= nextTerrainAuditAt)
             {
-                RecoverToForwardPath();
-                return;
+                nextTerrainAuditAt = Time.time + .10f + (GetInstanceID() & 7) * .006f;
+                if (!game.IsWalkableWithClearance(Position, Radius * .42f) ||
+                    !game.IsWithinGroundEnemyRoadCorridor(Position, Radius * .42f))
+                {
+                    RecoverToForwardPath();
+                    return;
+                }
             }
 
             if (attackingGate)
@@ -1708,7 +1716,24 @@ namespace JellyGate
                 }
             }
 
-            var blocker = IsFlying ? null : game.FindBlocker(Position, Radius, IsRanged);
+            PlayerUnit blocker = null;
+            if (!IsFlying)
+            {
+                if (cachedBlocker != null)
+                {
+                    var contactRadius = cachedBlocker.Radius + Radius + .08f;
+                    if (!cachedBlocker.IsAlive ||
+                        (!IsRanged && cachedBlocker.IsOnHighGround) ||
+                        Vector2.SqrMagnitude(cachedBlocker.Position - Position) >= contactRadius * contactRadius)
+                        cachedBlocker = null;
+                }
+                if (Time.time >= nextBlockerScanAt)
+                {
+                    cachedBlocker = game.FindBlocker(Position, Radius, IsRanged);
+                    nextBlockerScanAt = Time.time + .12f + (GetInstanceID() & 7) * .009f;
+                }
+                blocker = cachedBlocker;
+            }
             if (blocker != null)
             {
                 engagingDefender = true;
@@ -1834,6 +1859,12 @@ namespace JellyGate
             // before that decision left one stale walking frame at every sharp turn and could
             // make a monster appear to run backwards.  Commit the pose from the final movement
             // vector instead; attack/cast locks still win because those states zero velocity.
+            // Movement remains continuous on the parent transform, while the expensive
+            // multi-renderer pose rig is sampled at a stable 30 FPS (bosses at 45 FPS).
+            // Staggering prevents a crowd from rebuilding every limb in the same frame.
+            if (Time.time < nextVisualUpdateAt) return;
+            var visualInterval = IsBoss ? 1f / 45f : 1f / 30f;
+            nextVisualUpdateAt = Time.time + visualInterval + (GetInstanceID() & 3) * .0007f;
             UpdateVisualMotion();
         }
 
@@ -1866,7 +1897,7 @@ namespace JellyGate
             if (targetInvalid)
             {
                 detectedTarget = game.FindDefenderTargetForEnemy(this, restrictToGateSector);
-                nextTargetScanAt = Time.time + .1f + (GetInstanceID() & 7) * .012f;
+                nextTargetScanAt = Time.time + .2f + (GetInstanceID() & 7) * .014f;
             }
             else if (Time.time >= nextTargetScanAt)
             {
@@ -1875,7 +1906,7 @@ namespace JellyGate
                     Vector2.SqrMagnitude(Position - nearest.Position) + .16f <
                     Vector2.SqrMagnitude(Position - detectedTarget.Position))
                     detectedTarget = nearest;
-                nextTargetScanAt = Time.time + .12f + (GetInstanceID() & 7) * .014f;
+                nextTargetScanAt = Time.time + .24f + (GetInstanceID() & 7) * .016f;
             }
 
             if (Class == EnemyClass.Silencer && Time.time >= nextSkillAt)
@@ -2168,7 +2199,11 @@ namespace JellyGate
 
         private void UpdateVisualMotion()
         {
-            var motionDelta = Mathf.Min(Time.deltaTime, .05f);
+            var now = Time.time;
+            var motionDelta = lastVisualUpdateAt <= 0f
+                ? Mathf.Min(Time.deltaTime, .05f)
+                : Mathf.Min(now - lastVisualUpdateAt, .05f);
+            lastVisualUpdateAt = now;
             hitMotion = Mathf.Max(0f, hitMotion - motionDelta * 7.5f);
             var attackSpeed = Class switch
             {

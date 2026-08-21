@@ -34,6 +34,13 @@ namespace JellyGate
             public List<int> unlockedUnits = new();
             public List<CheckpointUnit> units = new();
             public List<CheckpointOffer> currentOffers = new();
+            public List<int> activeTacticalItems = new();
+            public bool usedAnyTacticalItem;
+            public bool revivalUsed;
+            public int fieldAidUses;
+            public int runGoldScore;
+            public int perfectRounds;
+            public bool runGoldAwarded;
         }
 
         [Serializable]
@@ -132,6 +139,7 @@ namespace JellyGate
             preparedBattleCheckpointJson = string.Empty;
             showResumePrompt = false;
             PlayerPrefs.DeleteKey(RunCheckpointKey);
+            ClearRevivalSnapshots();
             PlayerPrefs.Save();
             SavePortableProgressBackup();
         }
@@ -154,6 +162,13 @@ namespace JellyGate
                 roundsCleared = roundsCleared,
                 unitsPlaced = unitsPlaced
             };
+            data.activeTacticalItems.AddRange(activeRunItems.Select(item => (int)item));
+            data.usedAnyTacticalItem = usedAnyTacticalItemThisRun;
+            data.revivalUsed = revivalUsedThisRun;
+            data.fieldAidUses = fieldAidUsesThisRun;
+            data.runGoldScore = runGoldScore;
+            data.perfectRounds = perfectRoundsThisRun;
+            data.runGoldAwarded = runGoldAwarded;
 
             data.augmentPower.AddRange(augmentPower.Select(pair =>
                 new CheckpointFloat { key = pair.Key, value = pair.Value }));
@@ -249,7 +264,7 @@ namespace JellyGate
                 showResumePrompt = true;
                 return;
             }
-            StartNewFront();
+            OpenPregameLoadout();
         }
 
         private void RequestReturnToMainMenu()
@@ -331,6 +346,15 @@ namespace JellyGate
             skillsCast = Mathf.Max(0, data.skillsCast);
             roundsCleared = Mathf.Max(0, data.roundsCleared);
             unitsPlaced = Mathf.Max(0, data.unitsPlaced);
+            activeRunItems.Clear();
+            foreach (var value in data.activeTacticalItems ?? new List<int>())
+                if (Enum.IsDefined(typeof(TacticalItemId), value)) activeRunItems.Add((TacticalItemId)value);
+            usedAnyTacticalItemThisRun = data.usedAnyTacticalItem;
+            revivalUsedThisRun = data.revivalUsed;
+            fieldAidUsesThisRun = Mathf.Clamp(data.fieldAidUses, 0, 2);
+            runGoldScore = Mathf.Max(0, data.runGoldScore);
+            perfectRoundsThisRun = Mathf.Max(0, data.perfectRounds);
+            runGoldAwarded = data.runGoldAwarded;
 
             foreach (var pair in data.augmentPower ?? new List<CheckpointFloat>())
                 if (!string.IsNullOrEmpty(pair.key)) augmentPower[pair.key] = pair.value;

@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 687561ac5cdc5824ead0f3cd7ebf8565
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4475321863946661837
+    second: tactical-item-atlas-v1_0
+  - first:
+      213: -4718206145281882991
+    second: tactical-item-atlas-v1_1
+  - first:
+      213: -6311039302858931080
+    second: tactical-item-atlas-v1_2
+  - first:
+      213: 5637489807096221136
+    second: tactical-item-atlas-v1_3
+  - first:
+      213: -8150402589344089590
+    second: tactical-item-atlas-v1_4
+  - first:
+      213: 1860331211890037568
+    second: tactical-item-atlas-v1_5
+  - first:
+      213: 1591020699656996655
+    second: tactical-item-atlas-v1_6
+  - first:
+      213: 1393754746211971361
+    second: tactical-item-atlas-v1_7
+  - first:
+      213: 6969031908410557976
+    second: tactical-item-atlas-v1_8
+  - first:
+      213: -4669781483867941336
+    second: tactical-item-atlas-v1_9
+  - first:
+      213: 1434126261503044123
+    second: tactical-item-atlas-v1_10
+  - first:
+      213: 509215081325548042
+    second: tactical-item-atlas-v1_11
+  - first:
+      213: -4375695492776701780
+    second: tactical-item-atlas-v1_12
+  - first:
+      213: 781156994064908600
+    second: tactical-item-atlas-v1_13
+  - first:
+      213: 4136318099233254440
+    second: tactical-item-atlas-v1_14
+  - first:
+      213: 7918374099820067506
+    second: tactical-item-atlas-v1_15
+  - first:
+      213: -5228629207343565668
+    second: tactical-item-atlas-v1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 749
+        width: 358
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3309bebd97674e1c0800000000000000
+      internalID: -4475321863946661837
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_1
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 753
+        width: 341
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194886d4280958eb0800000000000000
+      internalID: -4718206145281882991
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_2
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 712
+        width: 360
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874809df03faa68a0800000000000000
+      internalID: -6311039302858931080
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_3
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 728
+        width: 338
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd0bd06c136c3e40800000000000000
+      internalID: 5637489807096221136
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 387
+        width: 352
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ab8b51704f3ee80800000000000000
+      internalID: -8150402589344089590
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 696
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0431749716931d910800000000000000
+      internalID: 1860331211890037568
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_6
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 374
+        width: 286
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27495195e0741610800000000000000
+      internalID: 1591020699656996655
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_7
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 384
+        width: 337
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121baf7ae8c975310800000000000000
+      internalID: 1393754746211971361
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 331
+        width: 308
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8168c21e899f6b060800000000000000
+      internalID: 6969031908410557976
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 14
+        width: 327
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826da536b7a913fb0800000000000000
+      internalID: -4669781483867941336
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 28
+        width: 309
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1aa2fb8c3a07e310800000000000000
+      internalID: 1434126261503044123
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_11
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 371
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a025ea42b68111700800000000000000
+      internalID: 509215081325548042
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 341
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca054cbf1286643c0800000000000000
+      internalID: -4375695492776701780
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_13
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 33
+        width: 156
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8310d09b52a37da00800000000000000
+      internalID: 781156994064908600
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_14
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 283
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c21d66567276930800000000000000
+      internalID: 4136318099233254440
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 299
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2babd6a5a47b3ed60800000000000000
+      internalID: 7918374099820067506
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tactical-item-atlas-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 260
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94fd0a307d2077b0800000000000000
+      internalID: -5228629207343565668
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID:
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tactical-item-atlas-v1_0: -4475321863946661837
+      tactical-item-atlas-v1_1: -4718206145281882991
+      tactical-item-atlas-v1_10: 1434126261503044123
+      tactical-item-atlas-v1_11: 509215081325548042
+      tactical-item-atlas-v1_12: -4375695492776701780
+      tactical-item-atlas-v1_13: 781156994064908600
+      tactical-item-atlas-v1_14: 4136318099233254440
+      tactical-item-atlas-v1_15: 7918374099820067506
+      tactical-item-atlas-v1_16: -5228629207343565668
+      tactical-item-atlas-v1_2: -6311039302858931080
+      tactical-item-atlas-v1_3: 5637489807096221136
+      tactical-item-atlas-v1_4: -8150402589344089590
+      tactical-item-atlas-v1_5: 1860331211890037568
+      tactical-item-atlas-v1_6: 1591020699656996655
+      tactical-item-atlas-v1_7: 1393754746211971361
+      tactical-item-atlas-v1_8: 6969031908410557976
+      tactical-item-atlas-v1_9: -4669781483867941336
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

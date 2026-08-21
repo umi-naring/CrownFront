@@ -1,12 +1,14 @@
 param(
-    [string]$ApkPath = 'C:\Users\Administrator\Documents\Codex\2026-07-22\new-chat\outputs\Crownfront-v2.72.4.apk',
+    [string]$ApkPath = 'C:\Users\Administrator\Documents\Codex\2026-07-22\new-chat\outputs\Crownfront-v1.00-code3-security-qa.apk',
+    [string]$ExpectedVersionName = '1.00',
+    [int]$ExpectedVersionCode = 3,
     [switch]$RequireProductionConfiguration
 )
 
 $ErrorActionPreference = 'Stop'
 $projectPath = Split-Path -Parent $PSScriptRoot
 $workspacePath = Split-Path -Parent $projectPath
-$outputDirectory = Join-Path $workspacePath 'qa-logs\v2.72.4-google-play'
+$outputDirectory = Join-Path $workspacePath 'qa-logs\v1.00-code3-security-google-play'
 $outputPath = Join-Path $outputDirectory 'service-preflight.json'
 New-Item -ItemType Directory -Path $outputDirectory -Force | Out-Null
 if (-not (Test-Path -LiteralPath $ApkPath)) { throw "APK not found: $ApkPath" }
@@ -48,8 +50,8 @@ $extractionRuleRef = if ($extractionRuleMatch.Success) { '@' + $extractionRuleMa
 
 $checks = [ordered]@{
     package = $badging.Contains("package: name='com.toykingdom.jellygate'")
-    versionName = $badging.Contains("versionName='2.72.4'")
-    versionCode = $badging.Contains("versionCode='130'")
+    versionName = $badging.Contains("versionName='$ExpectedVersionName'")
+    versionCode = $badging.Contains("versionCode='$ExpectedVersionCode'")
     billingPermission = $manifest.Contains('com.android.vending.BILLING')
     billingLibrary = $manifest.Contains('com.android.billingclient.api.ProxyBillingActivity') -and
         $manifest.Contains('9.1.0')
@@ -117,7 +119,8 @@ $productionPassed = $wiringPassed -and [bool]$checks.productionAdConfiguration -
     [bool]$checks.releaseSigning
 
 $result = [ordered]@{
-    version = '2.72.4'
+    version = $ExpectedVersionName
+    versionCode = $ExpectedVersionCode
     generatedAt = (Get-Date).ToString('o')
     apk = (Resolve-Path -LiteralPath $ApkPath).Path
     runtimeServiceWiringPassed = $wiringPassed

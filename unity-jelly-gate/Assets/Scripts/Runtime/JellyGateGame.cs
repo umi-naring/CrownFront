@@ -404,6 +404,7 @@ namespace JellyGate
         private bool showMissionPanel;
         private bool showShopPanel;
         private bool showSkinPanel;
+        private CrownfrontShopProduct pendingPurchaseProduct;
         private ShopCategory shopCategory = ShopCategory.Castle;
         private ShopCategory skinCategory = ShopCategory.Castle;
         private UnitArchetype skinUnit = UnitArchetype.Tank;
@@ -471,6 +472,9 @@ namespace JellyGate
         private int hitFeedbackFrame = -1;
         private int hitFeedbackVisualsThisFrame;
         private int activeHitFeedbackEffects;
+        private int damagePipFrame = -1;
+        private int damagePipsThisFrame;
+        private int activeDamagePips;
         private int movementDustFrame = -1;
         private int movementDustVisualsThisFrame;
         private int activeEnemyClassEffects;
@@ -568,7 +572,8 @@ namespace JellyGate
             "place_25", "place_100", "place_250", "place_500", "place_1000", "place_2500", "place_5000", "place_10000",
             "skills_50", "skills_200", "skills_500", "skills_1000", "skills_2500", "skills_5000", "skills_10000", "skills_25000",
             "heroes_5", "heroes_20", "heroes_50", "heroes_100", "heroes_250", "heroes_500", "heroes_1000", "heroes_2500",
-            "bosses_3", "bosses_10", "bosses_25", "bosses_50", "bosses_100", "bosses_250", "bosses_500", "bosses_1000"
+            "bosses_3", "bosses_10", "bosses_25", "bosses_50", "bosses_100", "bosses_250", "bosses_500", "bosses_1000",
+            "itemless_10", "itemless_25", "itemless_50"
         };
 
         public GamePhase Phase { get; private set; } = GamePhase.Preparation;
@@ -639,7 +644,8 @@ namespace JellyGate
 
         private bool MainMenuBaseInputEnabled =>
             !showSettings && !showMissionPanel && !showShopPanel && !showSkinPanel &&
-            !showGuidePanel && !showExitConfirm && !showResumePrompt &&
+            !showGuidePanel && !showExitConfirm && !showResumePrompt && !showPregameLoadout &&
+            !sortieGateTransition && pendingPurchaseProduct == null &&
             (IsQaMode() || Time.unscaledTime >= mainMenuInputReadyAt);
 
         private void Awake()
@@ -652,6 +658,7 @@ namespace JellyGate
             mainMenuInputReadyAt = Time.unscaledTime + .42f;
             RestorePortableProgressBackup();
             LoadChallengeCollection();
+            InitializeEconomy();
             simulateSafeArea = HasCommandLineArgument("-qaSafeArea");
             CircleSprite = MakeCircleSprite(64);
             SelectionRearSprite = MakeHalfRingSprite(96, false);
@@ -714,6 +721,7 @@ namespace JellyGate
             monetization = gameObject.AddComponent<CrownfrontMonetization>();
             monetization.Initialize(ShowToast);
             monetization.CosmeticsChanged += RefreshEquippedCosmetics;
+            BindMonetizationEconomy();
             RefreshEquippedCosmetics();
             Money = StartBudget();
             InitializeRunCheckpointPrompt();
@@ -774,6 +782,10 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaAdPresentation282")) StartCoroutine(QaAdPresentation282Routine());
             else if (HasCommandLineArgument("-qaLocaleDefault283")) StartCoroutine(QaLocaleDefault283Routine());
             else if (HasCommandLineArgument("-qaChallengeScroll284")) StartCoroutine(QaChallengeScroll284Routine());
+            else if (HasCommandLineArgument("-qaEconomy300")) StartCoroutine(QaEconomy300Routine());
+            else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
+            else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
+            else if (HasCommandLineArgument("-qaActiveTacticalItemsView")) ConfigureActiveTacticalItemsPreview();
             else if (HasCommandLineArgument("-qaRelease263")) StartCoroutine(QaRelease263Routine());
             else if (HasCommandLineArgument("-qaBossGallery263")) StartCoroutine(QaBossGallery263Routine());
             else if (HasCommandLineArgument("-qaBattleDesign258")) StartCoroutine(QaBattleDesign258Routine());
@@ -1111,7 +1123,7 @@ namespace JellyGate
             var defaultRestored = actor.SkinVariant == 0 && actor.SkinSignaturePartCount == 0;
 
             var items = BuildChallengeItems();
-            var longTermChallenges = items.Count == 48 && ChallengeKeys.Length == 48 &&
+            var longTermChallenges = items.Count == 51 && ChallengeKeys.Length == 51 &&
                                      items.Where(item => item.Key.StartsWith("round_")).Min(item => item.Goal) >= 10 &&
                                      items.Where(item => item.Key.StartsWith("kills_")).Min(item => item.Goal) >= 100 &&
                                      items.Max(item => item.Goal) >= 50000;
@@ -2652,7 +2664,7 @@ namespace JellyGate
             var individualSkins = unitSkins.Length == 20 &&
                                   unitSkins.GroupBy(product => product.TargetUnit).Count() == 10 &&
                                   unitSkins.GroupBy(product => product.TargetUnit).All(group => group.Count() == 2);
-            var challenges = BuildChallengeItems().Count == 48 && ChallengeKeys.Length == 48;
+            var challenges = BuildChallengeItems().Count == 51 && ChallengeKeys.Length == 51;
 
             var previousLanguage = GameLocalization.Current;
             GameLocalization.Current = GameLanguage.English;
@@ -2821,7 +2833,6 @@ namespace JellyGate
         {
             if (saveCheckpoint) SaveRunCheckpoint();
             else ClearRunCheckpoint();
-            monetization?.NotifyRunEnded();
             runInProgress = false;
             Time.timeScale = 1f;
             RestartGame(false);
@@ -2862,23 +2873,6 @@ namespace JellyGate
             // The confirm panel now exclusively owns the tap area (the paused system menu is
             // hidden before it opens), so Unity's supported cross-platform Android exit path
             // receives the press instead of a covered button.
-            var adRequested = monetization != null && monetization.NotifyRunEnded();
-            if (!adRequested)
-            {
-                Application.Quit();
-                return;
-            }
-            StartCoroutine(QuitAfterInterstitialRoutine());
-        }
-
-        private IEnumerator QuitAfterInterstitialRoutine()
-        {
-            var closed = false;
-            void MarkClosed() => closed = true;
-            monetization.InterstitialClosed += MarkClosed;
-            var timeoutAt = Time.realtimeSinceStartup + 15f;
-            while (!closed && Time.realtimeSinceStartup < timeoutAt) yield return null;
-            monetization.InterstitialClosed -= MarkClosed;
             Application.Quit();
         }
 
@@ -5070,6 +5064,12 @@ namespace JellyGate
 
         private IEnumerator QaPerformance240Routine()
         {
+            // Automated players run without focus.  Windows otherwise throttles the
+            // unfocused player to roughly 2 FPS, which measures OS background policy
+            // instead of the battle simulation.
+            Application.runInBackground = true;
+            QualitySettings.vSyncCount = 0;
+            Application.targetFrameRate = 60;
             yield return null;
             showMainMenu = false;
             showFormationPanel = false;
@@ -10767,7 +10767,8 @@ namespace JellyGate
             {
                 if (unit == null || !unit.IsAlive ||
                     (!canAttackHighGround && unit.IsOnHighGround) ||
-                    Vector2.Distance(unit.Position, enemyPosition) >= unit.Radius + enemyRadius + .05f ||
+                    Vector2.SqrMagnitude(unit.Position - enemyPosition) >=
+                    (unit.Radius + enemyRadius + .05f) * (unit.Radius + enemyRadius + .05f) ||
                     unit.Radius <= widest) continue;
                 best = unit;
                 widest = unit.Radius;
@@ -10778,14 +10779,14 @@ namespace JellyGate
         public PlayerUnit FindDefenderTarget(Vector2 origin, float range, bool canAttackHighGround)
         {
             PlayerUnit best = null;
-            var bestDistance = float.MaxValue;
+            var bestDistanceSq = range * range;
             foreach (var unit in units)
             {
                 if (unit == null || !unit.IsAlive || (!canAttackHighGround && unit.IsOnHighGround)) continue;
-                var distance = Vector2.Distance(origin, unit.Position);
-                if (distance > range || distance >= bestDistance) continue;
+                var distanceSq = Vector2.SqrMagnitude(origin - unit.Position);
+                if (distanceSq >= bestDistanceSq) continue;
                 best = unit;
-                bestDistance = distance;
+                bestDistanceSq = distanceSq;
             }
             return best;
         }
@@ -10801,15 +10802,15 @@ namespace JellyGate
             int laneIndex, bool restrictToGateSector)
         {
             PlayerUnit best = null;
-            var bestDistance = float.MaxValue;
+            var bestDistanceSq = range * range;
             foreach (var unit in units)
             {
                 if (unit == null || !unit.IsAlive || (!canAttackHighGround && unit.IsOnHighGround) ||
                     restrictToGateSector && !IsDefenderInGateSector(laneIndex, unit)) continue;
-                var distance = Vector2.Distance(origin, unit.Position);
-                if (distance > range || distance >= bestDistance) continue;
+                var distanceSq = Vector2.SqrMagnitude(origin - unit.Position);
+                if (distanceSq >= bestDistanceSq) continue;
                 best = unit;
-                bestDistance = distance;
+                bestDistanceSq = distanceSq;
             }
             return best;
         }
@@ -10822,16 +10823,16 @@ namespace JellyGate
             while (true)
             {
                 PlayerUnit nearest = null;
-                var nearestDistance = float.MaxValue;
+                var nearestDistanceSq = seeker.DetectionRange * seeker.DetectionRange;
                 foreach (var unit in units)
                 {
                     if (unit == null || !unit.IsAlive || rejected != null && rejected.Contains(unit) ||
                         mageOnly && unit.Archetype is not (UnitArchetype.AreaMage or UnitArchetype.SingleMage) ||
                         restrictToGateSector && !IsDefenderInGateSector(seeker.LaneIndex, unit)) continue;
-                    var distance = Vector2.Distance(seeker.Position, unit.Position);
-                    if (distance >= nearestDistance || distance > seeker.DetectionRange) continue;
+                    var distanceSq = Vector2.SqrMagnitude(seeker.Position - unit.Position);
+                    if (distanceSq >= nearestDistanceSq) continue;
                     nearest = unit;
-                    nearestDistance = distance;
+                    nearestDistanceSq = distanceSq;
                 }
                 if (nearest == null) return null;
                 if (seeker.CanAcquireDetectedTarget(nearest)) return nearest;
@@ -10844,16 +10845,16 @@ namespace JellyGate
             bool restrictToGateSector)
         {
             PlayerUnit best = null;
-            var bestDistance = float.MaxValue;
+            var bestDistanceSq = range * range;
             foreach (var unit in units)
             {
                 if (unit == null || !unit.IsAlive ||
                     unit.Archetype is not (UnitArchetype.AreaMage or UnitArchetype.SingleMage) ||
                     restrictToGateSector && !IsDefenderInGateSector(laneIndex, unit)) continue;
-                var distance = Vector2.Distance(origin, unit.Position);
-                if (distance > range || distance >= bestDistance) continue;
+                var distanceSq = Vector2.SqrMagnitude(origin - unit.Position);
+                if (distanceSq >= bestDistanceSq) continue;
                 best = unit;
-                bestDistance = distance;
+                bestDistanceSq = distanceSq;
             }
             return best;
         }
@@ -12026,11 +12027,16 @@ namespace JellyGate
                 enemy.IsBoss ? 2.05f : 1.25f, true);
             if (gateHealth <= 0f)
             {
-                ClearRunCheckpoint();
                 Phase = GamePhase.Defeat;
                 spawning = false;
-                monetization?.NotifyRunEnded();
-                runInProgress = false;
+                // First defeat opens the recovery decision without an advertisement. A second
+                // defeat after the one-per-run return is final and may request an interstitial.
+                if (revivalUsedThisRun)
+                {
+                    AwardRunGold();
+                    finalDefeatAdRequested = monetization?.NotifyRunEnded() == true;
+                    runInProgress = false;
+                }
                 ShowToast(L("성문이 파괴됐습니다.", "THE GATE HAS FALLEN."));
             }
         }
@@ -12061,7 +12067,11 @@ namespace JellyGate
                 movementDustFrame = Time.frameCount;
                 movementDustVisualsThisFrame = 0;
             }
-            if (movementDustVisualsThisFrame++ >= 2) return;
+            // Crowd waves can request hundreds of footstep puffs at once.  Keep
+            // character motion continuous, but admit only one transient dust
+            // visual per rendered frame so animation does not allocate itself
+            // into a frame spike on mobile GPUs.
+            if (movementDustVisualsThisFrame++ >= 1) return;
             if (Use2p5DPresentation) Stylized2p5DMeshEffect.SpawnDust(position, color, radius);
             StartCoroutine(MovementDustRoutine(position, color, radius, direction));
         }
@@ -12230,7 +12240,7 @@ namespace JellyGate
                 hitFeedbackFrame = Time.frameCount;
                 hitFeedbackVisualsThisFrame = 0;
             }
-            if ((hitFeedbackVisualsThisFrame++ >= 5 && intensity < 2f) || activeHitFeedbackEffects >= 16) return;
+            if ((hitFeedbackVisualsThisFrame++ >= 3 && intensity < 2f) || activeHitFeedbackEffects >= 10) return;
             activeHitFeedbackEffects++;
             StartCoroutine(MeleeImpactFeedbackRoutine(position, incomingDirection, color,
                 Mathf.Clamp(intensity, .65f, 3f), defenderWasHit));
@@ -12247,7 +12257,7 @@ namespace JellyGate
                 new Color(hot.r, hot.g, hot.b, .9f), .16f, 84);
             var ring = CreateSpriteChild(effect.transform, "Impact Ring", CommandRingSprite,
                 new Color(hot.r, hot.g, hot.b, .92f), .12f, 86);
-            const int fragmentCount = 7;
+            const int fragmentCount = 5;
             var fragments = new SpriteRenderer[fragmentCount];
             var directions = new Vector2[fragmentCount];
             var baseAngle = incomingDirection.sqrMagnitude > .001f
@@ -12298,7 +12308,7 @@ namespace JellyGate
                 hitFeedbackVisualsThisFrame = 0;
             }
             // Keep damage/audio deterministic while bounding transient render objects in mob bursts.
-            if ((hitFeedbackVisualsThisFrame++ >= 5 && intensity < 2f) || activeHitFeedbackEffects >= 16) return;
+            if ((hitFeedbackVisualsThisFrame++ >= 3 && intensity < 2f) || activeHitFeedbackEffects >= 10) return;
             activeHitFeedbackEffects++;
             StartCoroutine(HitFeedbackRoutine(position, incomingDirection, color,
                 Mathf.Clamp(intensity, .65f, 3f), defenderWasHit));
@@ -12416,7 +12426,7 @@ namespace JellyGate
                 new Color(hot.r, hot.g, hot.b, .86f), .2f, 80);
             var pressure = CreateSpriteChild(effect.transform, "Hit Pressure Ring", CommandRingSprite,
                 new Color(1f, .94f, .72f, .95f), .12f, 83);
-            var sparkCount = Mathf.RoundToInt(10f + intensity * 5f);
+            var sparkCount = Mathf.RoundToInt(5f + intensity * 3f);
             var sparks = new SpriteRenderer[sparkCount];
             var directions = new Vector2[sparkCount];
             for (var i = 0; i < sparkCount; i++)
@@ -12467,6 +12477,13 @@ namespace JellyGate
             // Dense world-space numbers obscured small enemies and inherited broken fallback
             // glyphs on Android. Damage is now communicated with a compact typed hit pip while
             // the detailed value remains available in the selected unit/enemy information UI.
+            if (damagePipFrame != Time.frameCount)
+            {
+                damagePipFrame = Time.frameCount;
+                damagePipsThisFrame = 0;
+            }
+            if (damagePipsThisFrame++ >= 3 || activeDamagePips >= 8) return;
+            activeDamagePips++;
             StartCoroutine(DamagePipRoutine(position, damageType, absorbed));
         }
 
@@ -12491,7 +12508,11 @@ namespace JellyGate
             const float duration = .34f;
             for (var elapsed = 0f; elapsed < duration; elapsed += Time.deltaTime)
             {
-                if (root == null || core == null || left == null || right == null) yield break;
+                if (root == null || core == null || left == null || right == null)
+                {
+                    activeDamagePips = Mathf.Max(0, activeDamagePips - 1);
+                    yield break;
+                }
                 var t = Mathf.Clamp01(elapsed / duration);
                 var ease = 1f - Mathf.Pow(1f - t, 3f);
                 root.transform.position = start + Vector3.up * (ease * .28f);
@@ -12507,6 +12528,7 @@ namespace JellyGate
                 yield return null;
             }
             Destroy(root);
+            activeDamagePips = Mathf.Max(0, activeDamagePips - 1);
         }
 
         public void ShowBossWarning(string message)
@@ -13996,6 +14018,8 @@ namespace JellyGate
             // Persist the fully arranged formation immediately before combat. A forced close
             // during the wave restarts this stage from this deterministic safe point.
             SaveRunCheckpoint(true);
+            CaptureRevivalSnapshot();
+            BeginWaveGoldScoring();
             buildMode = UnitArchetype.None;
             ClearSelection();
             showFormationPanel = false;
@@ -14406,10 +14430,13 @@ namespace JellyGate
         private void CompleteRound()
         {
             roundsCleared++;
+            ScoreCompletedRoundGold();
+            UpdateItemlessChallengeProgress();
             lifetimeRoundsCleared++;
             SaveLifetimeProgress();
             if (Round >= MaxRounds)
             {
+                var earnedGold = AwardRunGold();
                 ClearRunCheckpoint();
                 foreach (var survivor in units)
                     if (survivor != null && survivor.IsAlive)
@@ -14419,10 +14446,10 @@ namespace JellyGate
                 spawning = false;
                 var reward = monetization?.GrantRandomVictoryCosmetic();
                 victoryRewardText = reward == null
-                    ? L("모든 스킨을 이미 보유해 추가 선물을 지급할 수 없습니다.",
-                        "YOU ALREADY OWN EVERY SKIN, SO THERE IS NO NEW GIFT TO AWARD.")
-                    : L($"50라운드 보상 · {reward.Name} 스킨을 획득했습니다!",
-                        $"ROUND 50 REWARD · {reward.Name.ToUpperInvariant()} UNLOCKED!");
+                    ? L($"전선 평가 보상 · 골드 {earnedGold:N0}",
+                        $"FRONT SCORE REWARD · {earnedGold:N0} GOLD")
+                    : L($"골드 {earnedGold:N0} · {reward.Name} 스킨 획득!",
+                        $"{earnedGold:N0} GOLD · {reward.Name.ToUpperInvariant()} UNLOCKED!");
                 monetization?.NotifyRunEnded();
                 runInProgress = false;
                 ShowToast(L("50단계 전선을 모두 정복했습니다!", "ALL 50 FRONTS CONQUERED!"));
@@ -14607,8 +14634,11 @@ namespace JellyGate
 
         private AugmentTier RollTier(bool boss)
         {
+            var roll = UnityEngine.Random.value;
+            if (HasActiveTacticalItem(TacticalItemId.FateCompass))
+                roll = Mathf.Clamp01(roll + .03f);
             var tier = ResolveAugmentTier(lastTier, boss, augmentOffersWithoutHighTier,
-                UnityEngine.Random.value);
+                roll);
             augmentOffersWithoutHighTier = tier >= AugmentTier.Platinum
                 ? 0
                 : augmentOffersWithoutHighTier + 1;
@@ -15569,6 +15599,7 @@ namespace JellyGate
             var previousMatrix = GUI.matrix;
             GUI.matrix = Matrix4x4.Scale(new Vector3(UiScale, UiScale, 1f));
             SetupGuiStyles();
+            EnforceEconomyVisualPreviewState();
             if (HasCommandLineArgument("-qaBossGallery263"))
             {
                 DrawQaBossGallery263();
@@ -15584,17 +15615,24 @@ namespace JellyGate
             if (showMainMenu)
             {
                 var resumePromptVisible = showResumePrompt;
+                var purchasePromptVisible = pendingPurchaseProduct != null;
+                var loadoutPromptVisible = showPregameLoadout;
                 var previousEnabled = GUI.enabled;
-                if (resumePromptVisible) GUI.enabled = false;
+                if (resumePromptVisible || purchasePromptVisible || loadoutPromptVisible || sortieGateTransition)
+                    GUI.enabled = false;
                 DrawMainMenu();
-                GUI.enabled = previousEnabled;
                 if (showSettings) DrawSettingsOverlay();
                 if (showMissionPanel) DrawMissionOverlay();
                 if (showShopPanel) DrawShopOverlay();
                 if (showSkinPanel) DrawSkinVaultOverlay();
                 if (showGuidePanel) DrawGuideOverlay();
                 if (showExitConfirm) DrawExitConfirm();
+                DrawEconomyWallet();
+                GUI.enabled = previousEnabled;
                 if (resumePromptVisible) DrawResumeRunPrompt();
+                if (purchasePromptVisible) DrawPurchaseConfirmation();
+                if (loadoutPromptVisible) DrawPregameLoadout();
+                if (sortieGateTransition) DrawSortieGateTransition();
                 GUI.matrix = previousMatrix;
                 return;
             }
@@ -15611,6 +15649,7 @@ namespace JellyGate
             DrawTopHud();
             DrawTacticalMiniMap();
             DrawBottomHud();
+            DrawActiveTacticalItemRail();
             if (showAugmentSummary && Phase != GamePhase.Augment) DrawAugmentSummary();
             DrawSelectedUnitStatus();
             DrawSelectedSquadPortraitRail();
@@ -16237,23 +16276,34 @@ namespace JellyGate
             DrawFittedLabel(new Rect(panel.x + 16f, panel.y + 12f, panel.width - 32f, 39f),
                 L("왕실 상점", "ROYAL SHOP"), modalTitleStyle, 13);
             DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 48f, panel.width - 36f, 20f),
-                L("능력치 판매 없이 외형만 변경됩니다.", "COSMETICS ONLY · NO STAT POWER"),
+                shopCategory == ShopCategory.Supplies
+                    ? L("전술 아이템은 골드 또는 보석 중 하나로 구매합니다.",
+                        "TACTICAL ITEMS ACCEPT EITHER GOLD OR GEMS.")
+                    : shopCategory == ShopCategory.Currency
+                        ? L("보석은 Google Play 결제 완료 후 즉시 지급됩니다.",
+                            "GEMS ARE DELIVERED AFTER GOOGLE PLAY CONFIRMS PAYMENT.")
+                        : L("스킨은 전투 능력치를 변경하지 않습니다.", "COSMETICS DO NOT CHANGE COMBAT STATS."),
                 centeredStyle, 9);
 
             var categories = new[]
             {
-                ShopCategory.Castle, ShopCategory.Unit, ShopCategory.MainMenu, ShopCategory.Utility
+                ShopCategory.Castle, ShopCategory.Unit, ShopCategory.MainMenu,
+                ShopCategory.Supplies, ShopCategory.Currency, ShopCategory.Utility
             };
             var labels = new[]
             {
-                L("성", "CASTLE"), L("유닛", "UNITS"), L("메인", "MENU"), L("기능", "UTILITY")
+                L("성", "CASTLE"), L("유닛", "UNITS"), L("메인", "MENU"),
+                L("아이템", "ITEMS"), L("보석", "GEMS"), L("기능", "UTILITY")
             };
             var tabGap = 5f;
-            var tabWidth = (panel.width - 32f - tabGap * 3f) / 4f;
+            var tabWidth = (panel.width - 32f - tabGap * 2f) / 3f;
             for (var i = 0; i < categories.Length; i++)
             {
                 var selected = shopCategory == categories[i];
-                var rect = new Rect(panel.x + 16f + i * (tabWidth + tabGap), panel.y + 77f, tabWidth, 38f);
+                var col = i % 3;
+                var rowIndex = i / 3;
+                var rect = new Rect(panel.x + 16f + col * (tabWidth + tabGap),
+                    panel.y + 77f + rowIndex * 36f, tabWidth, 32f);
                 if (DrawPremiumButton(rect, labels[i],
                         selected ? new Color(.18f, .12f, .035f, .99f) : new Color(.035f, .065f, .12f, .99f),
                         selected ? new Color(1f, .76f, .24f) : new Color(.4f, .58f, .78f), true))
@@ -16270,9 +16320,10 @@ namespace JellyGate
             }
             else
             {
-                var visible = monetization.Products.Where(product => product.Category == shopCategory).ToArray();
+                var visible = monetization.Products.Where(product => product.Category == shopCategory &&
+                    product.ShowInShop).ToArray();
                 const float rowStep = 154f;
-                var listRect = new Rect(panel.x + 10f, panel.y + 126f, panel.width - 20f, panel.height - 242f);
+                var listRect = new Rect(panel.x + 10f, panel.y + 157f, panel.width - 20f, panel.height - 273f);
                 var contentWidth = listRect.width - 18f;
                 var contentHeight = Mathf.Max(listRect.height - 2f, visible.Length * rowStep);
                 var blockProductClick = HandleShopTouchDrag(listRect, contentHeight);
@@ -16282,7 +16333,7 @@ namespace JellyGate
                 {
                     var product = visible[i];
                     var row = new Rect(4f, i * rowStep, contentWidth - 8f, 142f);
-                    var owned = monetization.IsOwned(product.Id);
+                    var owned = !product.Consumable && !product.HasTacticalItem && monetization.IsOwned(product.Id);
                     DrawOrnatePanel(row, new Color(.026f, .055f, .105f, .99f),
                         owned ? Color.Lerp(product.Accent, Color.white, .28f) : product.Accent, 3f);
                     DrawShopProductPreview(product, new Rect(row.x + 11f, row.y + 12f, 88f, 94f));
@@ -16298,7 +16349,10 @@ namespace JellyGate
                     };
                     GUI.Label(new Rect(row.x + 108f, row.y + 39f, row.width - 120f, 55f),
                         product.Description, descriptionStyle);
-                    var price = owned ? L("보유", "OWNED") : monetization.PriceFor(product);
+                    var price = owned ? L("보유", "OWNED") : product.DirectPurchase
+                        ? monetization.PriceFor(product)
+                        : L($"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆",
+                            $"{product.GoldPrice:N0} G / {product.GemPrice:N0} ◆");
                     DrawFittedLabel(new Rect(row.xMax - 94f, row.y + 10f, 82f, 25f), price, centeredStyle, 10);
                     var waitingForThisProduct = monetization.PurchaseInProgress &&
                                                 monetization.LastRequestedProductId == product.Id;
@@ -16309,9 +16363,14 @@ namespace JellyGate
                     if (DrawPremiumButton(new Rect(row.xMax - 103f, row.yMax - 48f, 91f, 37f), actionText,
                             new Color(.08f, .075f, .12f, .99f), product.Accent, actionEnabled))
                     {
-                        monetization.Purchase(product);
+                        pendingPurchaseProduct = product;
                     }
-                    var skinState = owned && product.Category != ShopCategory.Utility
+                    var skinState = product.HasTacticalItem
+                        ? L($"보유 {economy?.Count(product.TacticalItem) ?? 0}개",
+                            $"OWNED {economy?.Count(product.TacticalItem) ?? 0}")
+                        : product.Category == ShopCategory.Currency
+                            ? L("Google Play 소모성 보석 팩", "GOOGLE PLAY CONSUMABLE GEM PACK")
+                        : owned && product.Category != ShopCategory.Utility
                         ? L("보유 · 스킨 보관함에서 선택", "OWNED · SELECT IN SKIN VAULT") :
                         product.Category == ShopCategory.Unit ? L("일반 · 영웅 외형 동시 변경", "BASE + HERO DESIGNS") :
                         product.Category == ShopCategory.Utility ? L("계정 영구 적용", "PERMANENT") :
@@ -16340,6 +16399,74 @@ namespace JellyGate
             if (DrawPremiumButton(new Rect(panel.x + 22f, panel.yMax - 62f, panel.width - 44f, 42f),
                     L("닫기", "CLOSE"), new Color(.06f, .075f, .11f, .98f),
                     new Color(.58f, .68f, .82f), true)) showShopPanel = false;
+        }
+
+        private void DrawPurchaseConfirmation()
+        {
+            var product = pendingPurchaseProduct;
+            if (product == null) return;
+            if (!product.DirectPurchase)
+            {
+                DrawInGamePurchaseConfirmation(product);
+                return;
+            }
+            var safe = SafeGuiRect;
+            var previousColor = GUI.color;
+            GUI.color = new Color(0f, 0f, 0f, .78f);
+            GUI.DrawTexture(safe, Texture2D.whiteTexture);
+            GUI.color = previousColor;
+
+            var width = Mathf.Min(440f, safe.width - 28f);
+            var height = Mathf.Min(430f, safe.height - 32f);
+            var panel = new Rect(safe.center.x - width * .5f, safe.center.y - height * .5f, width, height);
+            DrawOrnatePanel(panel, new Color(.025f, .045f, .085f, .995f), product.Accent, 4f);
+            DrawFittedLabel(new Rect(panel.x + 24f, panel.y + 18f, panel.width - 48f, 37f),
+                L("구매 확인", "CONFIRM PURCHASE"), new GUIStyle(titleStyle)
+                {
+                    alignment = TextAnchor.MiddleCenter,
+                    normal = { textColor = Color.Lerp(product.Accent, Color.white, .45f) }
+                }, 18);
+
+            var preview = new Rect(panel.x + 28f, panel.y + 68f, 142f, 164f);
+            DrawOrnatePanel(preview, new Color(.035f, .06f, .105f, 1f), product.Accent, 2f);
+            DrawShopProductPreview(product, new Rect(preview.x + 9f, preview.y + 9f,
+                preview.width - 18f, preview.height - 18f));
+            DrawFittedLabel(new Rect(panel.x + 188f, panel.y + 71f, panel.width - 216f, 42f),
+                product.Name, new GUIStyle(smallStyle)
+                {
+                    alignment = TextAnchor.MiddleLeft,
+                    fontStyle = FontStyle.Bold
+                }, 13);
+            DrawFittedLabel(new Rect(panel.x + 188f, panel.y + 118f, panel.width - 216f, 86f),
+                product.Description, new GUIStyle(statStyle)
+                {
+                    alignment = TextAnchor.UpperLeft,
+                    wordWrap = true
+                }, 10);
+            DrawFittedLabel(new Rect(panel.x + 188f, panel.y + 205f, panel.width - 216f, 30f),
+                monetization.PriceFor(product), new GUIStyle(centeredStyle)
+                {
+                    alignment = TextAnchor.MiddleLeft,
+                    fontStyle = FontStyle.Bold,
+                    normal = { textColor = new Color(1f, .9f, .48f) }
+                }, 13);
+            GUI.Label(new Rect(panel.x + 28f, panel.y + 250f, panel.width - 56f, 58f),
+                L("Google Play의 안전한 결제 화면에서 최종 가격과 상품을 다시 확인합니다.",
+                    "YOU WILL REVIEW THE FINAL PRODUCT AND PRICE IN GOOGLE PLAY'S SECURE CHECKOUT."),
+                new GUIStyle(statStyle) { alignment = TextAnchor.UpperCenter, wordWrap = true });
+
+            var buttonY = panel.yMax - 72f;
+            if (DrawPremiumButton(new Rect(panel.x + 28f, buttonY, panel.width * .42f, 46f),
+                    L("취소", "CANCEL"), new Color(.055f, .07f, .105f, .99f),
+                    new Color(.5f, .62f, .76f), true))
+                pendingPurchaseProduct = null;
+            if (DrawPremiumButton(new Rect(panel.center.x - 2f, buttonY, panel.width * .5f - 26f, 46f),
+                    L("Google Play에서 결제", "PAY WITH GOOGLE PLAY"),
+                    new Color(.075f, .13f, .11f, .99f), product.Accent, true))
+            {
+                pendingPurchaseProduct = null;
+                monetization.Purchase(product);
+            }
         }
 
         private bool HandleShopTouchDrag(Rect viewport, float contentHeight)
@@ -16434,17 +16561,39 @@ namespace JellyGate
                     else DrawPanel(inner, new Color(.06f, .09f, .16f));
                     break;
                 }
-                default:
-                    DrawPanel(inner, new Color(.035f, .065f, .11f, 1f));
-                    if (titleCrestSprite != null)
-                        DrawSpriteInGui(titleCrestSprite, new Rect(inner.x + 12f, inner.y + 6f,
-                            inner.width - 24f, inner.height * .58f), Color.white);
-                    DrawFittedLabel(new Rect(inner.x + 4f, inner.yMax - 29f, inner.width - 8f, 23f),
-                        L("광고 제거", "NO ADS"), new GUIStyle(centeredStyle)
+                case ShopCategory.Supplies:
+                {
+                    DrawPanel(inner, new Color(.075f, .06f, .04f, 1f));
+                    if (product.HasTacticalItem)
+                        DrawTacticalItemIcon(new Rect(inner.x + 5f, inner.y + 5f, inner.width - 10f, inner.height - 10f),
+                            product.TacticalItem, Color.white);
+                    break;
+                }
+                case ShopCategory.Currency:
+                {
+                    DrawPanel(inner, new Color(.025f, .07f, .105f, 1f));
+                    var artworkRect = new Rect(inner.x + 6f, inner.y + 4f, inner.width - 12f, inner.height - 31f);
+                    if (gemPackTextures.TryGetValue(product.GrantedGems, out var gemTexture) && gemTexture != null)
+                        GUI.DrawTexture(artworkRect, gemTexture, ScaleMode.ScaleToFit, true);
+                    else
+                    {
+                        var gemRect = new Rect(inner.center.x - inner.width * .23f, inner.y + 12f,
+                            inner.width * .46f, inner.width * .46f);
+                        DrawOrnatePanel(gemRect, new Color(.1f, .42f, .62f, .98f), product.Accent, 3f);
+                    }
+                    DrawFittedLabel(new Rect(inner.x + 4f, inner.yMax - 31f, inner.width - 8f, 25f),
+                        $"◆ {product.GrantedGems:N0}", new GUIStyle(centeredStyle)
                         {
                             fontStyle = FontStyle.Bold,
-                            normal = { textColor = product.Accent }
-                        }, 9);
+                            normal = { textColor = new Color(.7f, .95f, 1f) }
+                        }, 11);
+                    break;
+                }
+                default:
+                    DrawPanel(inner, new Color(.075f, .06f, .04f, 1f));
+                    if (removeAdsTexture != null)
+                        GUI.DrawTexture(new Rect(inner.x + 5f, inner.y + 5f, inner.width - 10f, inner.height - 10f),
+                            removeAdsTexture, ScaleMode.ScaleToFit, true);
                     break;
             }
             GUI.color = previous;
@@ -17125,7 +17274,7 @@ namespace JellyGate
             var savedScroll = challengeScroll;
             var savedFingerId = challengeTouchFingerId;
             var viewport = new Rect(0f, 0f, 380f, 450f);
-            var contentHeight = 48f * ChallengeRowStride;
+            var contentHeight = 51f * ChallengeRowStride;
             challengeScroll = Vector2.zero;
             ApplyChallengeDragDelta(-190f, viewport, contentHeight);
             var movedDown = Mathf.Abs(challengeScroll.y - 190f) < .01f;
@@ -17136,7 +17285,7 @@ namespace JellyGate
             var clampedBottom = Mathf.Abs(challengeScroll.y - max) < .01f;
             challengeScroll = savedScroll;
             challengeTouchFingerId = savedFingerId;
-            return movedDown && clampedTop && clampedBottom && BuildChallengeItems().Count == 48;
+            return movedDown && clampedTop && clampedBottom && BuildChallengeItems().Count == 51;
         }
 
         private readonly struct ChallengeItem
@@ -17197,7 +17346,7 @@ namespace JellyGate
 #endif
         private List<ChallengeItem> BuildChallengeItems()
         {
-            var result = new List<ChallengeItem>(48);
+            var result = new List<ChallengeItem>(51);
             foreach (var goal in new[] { 10, 25, 50, 100, 250, 500, 1000, 2500 })
                 result.Add(new ChallengeItem($"round_{goal}",
                     L($"\uC804\uC120 \uC644\uC218 \u00B7 {goal}", $"FRONT CLEAR \u00B7 {goal}"),
@@ -17228,6 +17377,12 @@ namespace JellyGate
                     L($"\uBCF4\uC2A4 \uACA9\uD30C \u00B7 {goal}", $"BOSS BREAKER \u00B7 {goal}"),
                     L($"\uBCF4\uC2A4\uB97C \uB204\uC801 {goal}\uB9C8\uB9AC \uCC98\uCE58",
                         $"Defeat {goal} bosses in total"), lifetimeBossesDefeated, goal));
+            var itemlessBest = PlayerPrefs.GetInt("Crownfront.Challenge.ItemlessBest", 0);
+            foreach (var goal in new[] { 10, 25, 50 })
+                result.Add(new ChallengeItem($"itemless_{goal}",
+                    L($"무보급 완수 · {goal}", $"NO-ITEM FRONT · {goal}"),
+                    L($"준비·전술 아이템 없이 한 전선에서 {goal}라운드 완료",
+                        $"Clear {goal} rounds in one run without tactical items"), itemlessBest, goal));
             return result;
         }
 
@@ -18260,11 +18415,12 @@ namespace JellyGate
             GUI.Label(new Rect(panel.x + 14f, panel.y + 15f, panel.width - 28f, 52f), L("증강 선택", "CHOOSE AN AUGMENT"), title);
             GUI.Label(new Rect(panel.x + 24f, panel.y + 66f, panel.width - 48f, 28f),
                 L("이번 전선의 전략을 완성하세요", "DEFINE THIS FRONTLINE'S STRATEGY"), desc);
+            DrawTacticalAugmentButtons(panel);
             if (DrawPremiumButton(new Rect(panel.xMax - 112f, panel.y + 16f, 92f, 40f), L("숨기기", "HIDE"),
                     new Color(.05f, .07f, .12f, .98f), new Color(.5f, .62f, .82f), true)) augmentOverlayHidden = true;
-            var cardTop = panel.y + 105f;
+            var cardTop = panel.y + 137f;
             var gap = 12f;
-            var cardHeight = (panel.height - 124f - gap * 2f) / 3f;
+            var cardHeight = (panel.height - 156f - gap * 2f) / 3f;
             for (var i = 0; i < currentOffers.Length; i++)
             {
                 var offer = currentOffers[i];
@@ -18321,23 +18477,7 @@ namespace JellyGate
 
         private void DrawDefeatOverlay()
         {
-            GUI.color = new Color(.02f, .04f, .1f, .9f);
-            GUI.DrawTexture(new Rect(0, 0, GuiWidth, GuiHeight), Texture2D.whiteTexture);
-            GUI.color = Color.white;
-            var safe = SafeGuiRect;
-            var panel = new Rect(safe.x + safe.width * .12f, safe.y + safe.height * .35f, safe.width * .76f, safe.height * .25f);
-            DrawOrnatePanel(panel, new Color(.035f, .045f, .075f, .98f), new Color(.82f, .35f, .25f), 4f);
-            GUI.Label(new Rect(panel.x, panel.y + 18f, panel.width, 52f),
-                L("성문이 파괴됐습니다", "THE GATE HAS FALLEN"), overlayTitleStyle);
-            if (DrawPremiumButton(new Rect(panel.x + 18f, panel.y + panel.height - 68f, panel.width * .48f - 22f, 50f),
-                    L("처음부터 다시", "RESTART"), new Color(.14f, .06f, .045f, .98f), new Color(.92f, .45f, .28f))) RestartGame();
-            if (DrawPremiumButton(new Rect(panel.center.x + 4f, panel.y + panel.height - 68f, panel.width * .48f - 22f, 50f),
-                    L("메인 메뉴", "MAIN MENU"), new Color(.04f, .055f, .085f, .98f), new Color(.42f, .56f, .72f)))
-            {
-                RestartGame();
-                showMainMenu = true;
-                mainMenuInputReadyAt = Time.unscaledTime + .42f;
-            }
+            DrawRevivalDefeatOverlay();
         }
 
         private void RestartGame(bool clearCheckpoint = true)
@@ -18350,6 +18490,7 @@ namespace JellyGate
             foreach (var enemy in enemies) if (enemy != null) Destroy(enemy.gameObject);
             units.Clear(); enemies.Clear(); ClearSelection(); augmentPower.Clear(); augmentCount.Clear();
             acquiredAugments.Clear(); activeAugmentReadyAt.Clear(); unlockedUnits.Clear();
+            activeRunItems.Clear();
             monstersDefeated = 0; skillsCast = 0; roundsCleared = 0; unitsPlaced = 0;
             nextPlacementBatchId = 1;
             Round = 1;
@@ -18360,6 +18501,15 @@ namespace JellyGate
             buildMode = UnitArchetype.None;
             spawning = false;
             runInProgress = false;
+            revivalUsedThisRun = false;
+            emergencyRevivePaymentConfirmed = false;
+            finalDefeatAdRequested = false;
+            usedAnyTacticalItemThisRun = false;
+            fieldAidUsesThisRun = 0;
+            runGoldScore = 0;
+            perfectRoundsThisRun = 0;
+            gateHealthAtWaveStart = GateMaxHealth;
+            runGoldAwarded = false;
             lastStandCharges = 0;
             bossFormationSpawnCount = 0;
             Phase = GamePhase.Preparation;
@@ -18381,6 +18531,8 @@ namespace JellyGate
             activeEnemyClassEffects = 0;
             activeHitFeedbackEffects = 0;
             hitFeedbackVisualsThisFrame = 0;
+            activeDamagePips = 0;
+            damagePipsThisFrame = 0;
             movementDustVisualsThisFrame = 0;
         }
 

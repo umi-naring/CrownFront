@@ -1,6 +1,5 @@
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
 namespace JellyGate.Editor
 {
@@ -11,10 +10,13 @@ namespace JellyGate.Editor
 
         public static void Configure()
         {
-            var renderer = AssetDatabase.LoadAssetAtPath<ScriptableRendererData>(RendererPath);
+            // Keep this setup utility compilable even while the Package Manager is
+            // temporarily unavailable in a headless CI run.  The serialized asset
+            // references are sufficient here; no URP runtime type is required.
+            var renderer = AssetDatabase.LoadMainAssetAtPath(RendererPath);
             if (renderer == null) return;
 
-            var pipeline = AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>(PipelinePath);
+            var pipeline = AssetDatabase.LoadMainAssetAtPath(PipelinePath);
             if (pipeline == null) return;
             var serialized = new SerializedObject(pipeline);
             var list = serialized.FindProperty("m_RendererDataList");

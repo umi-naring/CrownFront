@@ -78,6 +78,7 @@ namespace JellyGate
         private void Awake()
         {
             Application.runInBackground = true;
+            GameLocalization.Current = GameLocalization.LoadInitialLanguage();
             artwork = Resources.Load<Texture2D>("loading-screen-v3");
             pixel = new Texture2D(1, 1, TextureFormat.RGBA32, false)
             {

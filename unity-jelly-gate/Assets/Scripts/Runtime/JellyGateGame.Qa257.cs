@@ -126,6 +126,20 @@ namespace JellyGate
             if (!koreanPrices || !dollarPrices)
                 failures.Add($"prices:ko={koreanPrices}:usd={dollarPrices}");
             var purchaseProbe = monetization.Products.FirstOrDefault(product => product.Category == ShopCategory.Castle);
+            var purchasePreviewSourcesReady = castleAzureTexture != null && castleEmberTexture != null &&
+                                              mainMenuSunriseTexture != null && mainMenuMoonlitTexture != null &&
+                                              monetization.Products.Where(product => product.Category == ShopCategory.Unit)
+                                                  .All(product =>
+                                                  {
+                                                      var variant = product.Id.EndsWith(".b", StringComparison.Ordinal) ? 2 : 1;
+                                                      var normal = GetAuthoredSkinAnimation(product.TargetUnit, variant, false);
+                                                      var hero = GetAuthoredSkinAnimation(product.TargetUnit, variant, true);
+                                                      return normal != null && normal.Down.Length > 0 &&
+                                                             hero != null && hero.Down.Length > 0;
+                                                  });
+            pendingPurchaseProduct = purchaseProbe;
+            var purchaseModalBlocksUnderlyingInput = !MainMenuBaseInputEnabled;
+            pendingPurchaseProduct = null;
             var toastBeforePurchase = toastText;
             monetization.Purchase(purchaseProbe);
             var editorClickVisible = purchaseProbe != null &&
@@ -141,9 +155,11 @@ namespace JellyGate
             var statusBeforeLegacyLoginEvent = monetization.PurchaseStatusMessage;
             monetization.OnMonetizationEvent("{\"type\":\"legacy_login_event\",\"message\":\"LEGACY\"}");
             var legacyLoginIgnored = monetization.PurchaseStatusMessage == statusBeforeLegacyLoginEvent;
-            if (!editorClickVisible || !waitingState || !unavailableState || !legacyLoginIgnored)
+            if (!editorClickVisible || !waitingState || !unavailableState || !legacyLoginIgnored ||
+                !purchasePreviewSourcesReady || !purchaseModalBlocksUnderlyingInput)
                 failures.Add($"commerce:click={editorClickVisible}:wait={waitingState}:" +
-                             $"unavailable={unavailableState}:loginRemoved={legacyLoginIgnored}");
+                             $"unavailable={unavailableState}:loginRemoved={legacyLoginIgnored}:" +
+                             $"preview={purchasePreviewSourcesReady}:modal={purchaseModalBlocksUnderlyingInput}");
 
             monetization.ResetAllProductsForTesting();
             var passed = failures.Count == 0;
@@ -151,7 +167,8 @@ namespace JellyGate
                       $"poses={sampledPoses} restored={restoredCount} bodySpread={maxBodySpread:P2} " +
                       $"groundDrift={maxGroundDrift:0.000} cardFill={minimumCardFill:P0} " +
                       $"catalog={catalogValid} prices={koreanPrices}/{dollarPrices} commerce={editorClickVisible}/{waitingState}/" +
-                      $"{unavailableState}/{legacyLoginIgnored} fail={string.Join(",", failures.Take(20))}");
+                      $"{unavailableState}/{legacyLoginIgnored} preview={purchasePreviewSourcesReady} " +
+                      $"modal={purchaseModalBlocksUnderlyingInput} fail={string.Join(",", failures.Take(20))}");
             Application.Quit(passed ? 0 : 117);
         }
 
