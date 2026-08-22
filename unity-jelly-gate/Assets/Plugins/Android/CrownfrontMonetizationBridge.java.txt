@@ -65,6 +65,8 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
     private boolean billingConnectionStarting;
     private String pendingProductId = "";
     private boolean disposed;
+    private int interstitialRequestSerial;
+    private static final long GOOGLE_INTERSTITIAL_TIMEOUT_MS = 4500L;
 
     public static CrownfrontMonetizationBridge create(Activity activity, String callbackObject,
                                                         String[] productIds, String interstitialId,
@@ -155,7 +157,10 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
         MobileAds.initialize(activity, initializationStatus -> {
             send("ads_initialized", "", "", "");
             loadInterstitial();
-            initializeUnityFallback();
+            if (pendingInterstitialShow) {
+                scheduleGoogleInterstitialTimeout(interstitialRequestSerial,
+                    "ADMOB_INITIAL_LOAD_TIMEOUT");
+            }
         });
     }
 
@@ -251,6 +256,15 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                     loadUnityFallback();
                 }
             });
+    }
+
+    private void scheduleGoogleInterstitialTimeout(int requestSerial, String reason) {
+        activity.getWindow().getDecorView().postDelayed(() -> {
+            if (disposed || !pendingInterstitialShow || requestSerial != interstitialRequestSerial ||
+                interstitial != null) return;
+            pendingInterstitialShow = false;
+            showUnityFallback(reason);
+        }, GOOGLE_INTERSTITIAL_TIMEOUT_MS);
     }
 
     public void showPrivacyOptions() {
@@ -521,6 +535,7 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
 
     public void showInterstitial() {
         activity.runOnUiThread(() -> {
+            int requestSerial = ++interstitialRequestSerial;
             if (!mobileAdsInitialized) {
                 pendingInterstitialShow = true;
                 startMobileAdsWhenAllowed();
@@ -535,12 +550,14 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
             } else {
                 pendingInterstitialShow = true;
                 loadInterstitial();
+                scheduleGoogleInterstitialTimeout(requestSerial, "ADMOB_REQUEST_TIMEOUT");
             }
         });
     }
 
     public void cancelInterstitialShow() {
         activity.runOnUiThread(() -> {
+            interstitialRequestSerial++;
             pendingInterstitialShow = false;
             pendingUnityShow = false;
         });

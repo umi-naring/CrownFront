@@ -235,6 +235,8 @@ namespace JellyGate
         private float nextTargetScanAt;
         private float nextBlockerScanAt;
         private float ignoredTargetUntil;
+        private float nextDetectionAllowedAt;
+        private float bossSilhouetteSeparationUntil;
         private float nextPursuitApproachScanAt;
         private float moveSpeedFactor = .65f;
         private float wriggle;
@@ -1088,10 +1090,10 @@ namespace JellyGate
         {
             if (game == null || !IsAlive || game.GetBossEntrancePathCount() == 0) return;
             usesBossEntrance = true;
-            // Honour guards and later summons share the boss route, but never its silhouette.
-            // Keeping this enabled for every non-boss member prevents a valid minion sprite from
-            // reading as a second body embedded in a large boss.
+            // Honour guards start outside the boss silhouette. The separation expires after the
+            // entrance settles so a wide boss can never become a permanent navigation collider.
             avoidsBossSilhouette = !IsBoss;
+            bossSilhouetteSeparationUntil = Time.time + 1.25f;
             attackingGate = false;
             engagingDefender = false;
             detectedTarget = null;
@@ -1691,7 +1693,7 @@ namespace JellyGate
             // Every enemy now owns a detection range larger than its weapon range. Ground
             // melee units chase only legal ground targets, while ranged and flying enemies may
             // acquire defenders deployed on isolated high-ground islands.
-            if (TryEngageDetectedDefender()) return;
+            if (Time.time >= nextDetectionAllowedAt && TryEngageDetectedDefender()) return;
 
             // Ranged enemies do not have to touch the gate.  Once the defenders are outside
             // their spell range, they stop on the road and visibly bombard the fortress.
@@ -1824,13 +1826,15 @@ namespace JellyGate
                     return;
                 }
             }
-            if (avoidsBossSilhouette && game.BossExclusionActive)
+            if (avoidsBossSilhouette && Time.time < bossSilhouetteSeparationUntil &&
+                game.BossExclusionActive)
                 next = game.ResolveBossSilhouetteExclusion(this, next);
             transform.position = game.ActorWorldPosition(next, true);
             if (Vector2.Distance(next, lastMovementPosition) >= .045f)
             {
                 lastMovementPosition = next;
                 lastMovementAt = Time.time;
+                stallRecoveryCount = 0;
             }
             var footstepGaitSpeed = Class switch
             {
@@ -1877,6 +1881,15 @@ namespace JellyGate
             lastMovementPosition = safe;
             lastMovementAt = Time.time;
             lateralOffset = Mathf.MoveTowards(lateralOffset, 0f, .14f);
+            if (stallRecoveryCount >= 2)
+            {
+                // An unreachable defender or a wide boss can repeatedly pull the unit back into
+                // the same failed pursuit. Give the authored lane a short uncontested window so
+                // the unit advances past the obstruction before detection resumes.
+                detectedTarget = null;
+                cachedBlocker = null;
+                nextDetectionAllowedAt = Time.time + .65f;
+            }
             var nextIndex = Mathf.Min(CurrentPathCount - 1, recoveredIndex + 1);
             velocity = (CurrentPathTarget(nextIndex, 0f, 0f) - safe).normalized;
             if (velocity.sqrMagnitude > .001f) facingDirection = velocity;
@@ -2015,6 +2028,7 @@ namespace JellyGate
             {
                 lastMovementPosition = next;
                 lastMovementAt = Time.time;
+                stallRecoveryCount = 0;
             }
             return true;
         }
@@ -3369,6 +3383,7 @@ namespace JellyGate
         {
             if (game == null || !IsAlive) return;
             avoidsBossSilhouette = true;
+            bossSilhouetteSeparationUntil = Time.time + .95f;
             usesBossEntrance = inheritBossEntrance;
             attackingGate = false;
             castingBossSkill = false;

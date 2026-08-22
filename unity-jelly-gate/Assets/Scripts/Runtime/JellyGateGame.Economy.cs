@@ -397,16 +397,8 @@ namespace JellyGate
             var right = new Rect(GuiWidth - doorWidth + slide, 0f, doorWidth, GuiHeight);
             DrawSortieDoorLeaf(left, true, opening);
             DrawSortieDoorLeaf(right, false, opening);
-
-            var seamAlpha = Mathf.Clamp01(.94f - opening * .72f);
-            var seamWidth = Mathf.Lerp(16f, 54f, opening);
-            var glow = new Rect(GuiWidth * .5f - seamWidth * .5f, GuiHeight * .08f,
-                seamWidth, GuiHeight * .84f);
-            if (GlowSprite != null)
-                DrawSpriteInGui(GlowSprite, glow, new Color(.35f, .76f, 1f, seamAlpha));
-            DrawPanel(new Rect(GuiWidth * .5f - Mathf.Lerp(2f, 10f, opening), GuiHeight * .12f,
-                    Mathf.Lerp(4f, 20f, opening), GuiHeight * .76f),
-                new Color(.72f, .9f, 1f, seamAlpha * .72f));
+            // Keep the opened gap genuinely black. A former glow-and-panel seam remained as a
+            // grey vertical stripe at the exact screen centre on narrow Android aspect ratios.
 
             var caption = new Rect(20f, GuiHeight * .435f, GuiWidth - 40f, 60f);
             DrawPanel(new Rect(caption.x + 20f, caption.y + 8f, caption.width - 40f, caption.height - 16f),

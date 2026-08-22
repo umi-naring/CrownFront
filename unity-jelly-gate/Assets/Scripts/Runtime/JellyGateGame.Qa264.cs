@@ -203,10 +203,10 @@ namespace JellyGate
             var failures = new List<string>();
             var expectedWaveCounts = new[]
             {
-                12,15,18,21,24, 22,25,28,31,30, 28,31,34,37,36,
-                34,38,42,46,44, 40,44,48,52,50, 46,50,54,58,56,
-                52,56,60,64,62, 58,62,66,70,68, 64,68,72,76,74,
-                72,78,84,90,88
+                14,17,20,23,26, 24,27,30,33,34, 30,33,36,39,40,
+                36,40,44,48,48, 42,46,50,54,54, 47,51,55,59,59,
+                52,56,60,64,64, 57,61,65,69,69, 62,66,70,74,74,
+                66,70,74,78,80
             };
             var waveCurve = Enumerable.Range(1, 50)
                 .Select(WaveEnemyCount).SequenceEqual(expectedWaveCounts);
@@ -220,7 +220,7 @@ namespace JellyGate
                 var bossTotal = WaveEnemyCount(firstRound + 4) + 6;
                 return first < second && second < third && third < fourth && bossTotal > fourth;
             });
-            var burstCurve = WaveSquadSize(1) == 4 && WaveSquadSize(50) == 10 &&
+            var burstCurve = WaveSquadSize(1) == 5 && WaveSquadSize(50) == 10 &&
                              WaveSpawnBurstSize(1) == 2 && WaveSpawnBurstSize(50) == 4;
             var sideRatio = Enumerable.Range(0, 100)
                 .Count(index => DeploymentLaneForIndex(index) >= 4) / 100f;
@@ -231,7 +231,7 @@ namespace JellyGate
 
             var ranges = definitions[UnitArchetype.Tank].Range < definitions[UnitArchetype.Melee].Range &&
                          definitions[UnitArchetype.Melee].Range < definitions[UnitArchetype.Lancer].Range &&
-                         Mathf.Abs(definitions[UnitArchetype.Melee].Range - .86f) < .001f &&
+                Mathf.Abs(definitions[UnitArchetype.Melee].Range - .94f) < .001f &&
                          Mathf.Abs(definitions[UnitArchetype.Lancer].Range - 1.02f) < .001f;
             if (!ranges) failures.Add($"ranges={definitions[UnitArchetype.Tank].Range:0.00}/" +
                                       $"{definitions[UnitArchetype.Melee].Range:0.00}/" +

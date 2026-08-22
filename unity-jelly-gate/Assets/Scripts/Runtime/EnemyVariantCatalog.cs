@@ -162,7 +162,7 @@ namespace JellyGate
 
         private static readonly int[][] MixedWaveLineups =
         {
-            new[] { 0, 0, 1, 0, 2, 0, 1, 0, 0, 1 },
+            new[] { 0, 0, 1, 0, 2, 0, 1, 3, 0, 1 },
             new[] { 0, 1, 0, 2, 1, 0, 3, 1, 0, 2 },
             new[] { 0, 1, 2, 0, 3, 1, 0, 2, 3, 1 },
             new[] { 0, 2, 1, 3, 0, 2, 3, 1, 2, 0 },
@@ -174,7 +174,8 @@ namespace JellyGate
             var chapter = Mathf.Clamp((round - 1) / 5, 0, 9);
             var stage = Mathf.Clamp((round - 1) % 5, 0, 4);
             var member = Mathf.Abs(memberIndex);
-            if (chapter == 1 && stage >= 2 && member % (stage == 2 ? 9 : stage == 3 ? 7 : 6) == 4)
+            if (chapter == 1 && stage >= 1 &&
+                member % (stage == 1 ? 11 : stage == 2 ? 9 : stage == 3 ? 7 : 6) == 4)
                 return VeilBinder;
             if (chapter == 5 && stage >= 2 && member % (stage == 2 ? 9 : stage == 3 ? 7 : 6) == 3)
                 return ArmorRender;

@@ -438,6 +438,17 @@ namespace JellyGate
         private EnemyUnit pressedEnemy;
         private bool pointerHeld;
         private bool pointerDragged;
+        private UnitArchetype rosterDragKind = UnitArchetype.None;
+        private Vector2 rosterDragPressGui;
+        private bool rosterDragArmed;
+        private bool rosterDragActive;
+        private GameObject singleSelectionRangeRoot;
+        private LineRenderer singleSelectionRangeRing;
+        private SpriteRenderer singleSelectionRangeFill;
+        private PlayerUnit singleSelectionRangeOwner;
+        private float singleSelectionRangeDiameter;
+        private bool rosterDragPreviewCircularFrameDrawn;
+        private Vector2? rosterDragPreviewGuiOverrideForQa;
         private bool showFormationPanel = true;
         private int formationPage;
         private bool showAugmentSummary;
@@ -624,6 +635,17 @@ namespace JellyGate
         public bool BossExclusionActive => bossExclusionActive;
         public int SelectedPortraitCountForQa => selectedUnits.Count(unit => unit != null && unit.IsAlive);
         public bool SelectionPortraitRailCollapsedForQa => selectionPortraitRailCollapsed;
+        public bool RosterDragActiveForQa => rosterDragActive;
+        public bool SingleSelectionRangeVisibleForQa => singleSelectionRangeRing != null &&
+                                                         singleSelectionRangeRing.enabled;
+        public bool SingleSelectionRangeFillVisibleForQa => singleSelectionRangeFill != null &&
+                                                             singleSelectionRangeFill.enabled;
+        public int SingleSelectionRangeVertexCountForQa => singleSelectionRangeRing != null
+            ? singleSelectionRangeRing.positionCount
+            : 0;
+        public float SingleSelectionRangeDiameterForQa => singleSelectionRangeDiameter;
+        public bool RosterDragPreviewCircularForQa => CircleSprite != null && CommandRingSprite != null;
+        public bool RosterDragPreviewDrawnForQa => rosterDragPreviewCircularFrameDrawn;
 
         private float BottomHudHeight => showFormationPanel && Phase == GamePhase.Preparation ? 178f :
             Phase == GamePhase.Battle && activeAugmentReadyAt.Count > 0 ? 132f : 76f;
@@ -801,6 +823,9 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaRelease301")) StartCoroutine(QaRelease301Routine());
             else if (HasCommandLineArgument("-qaRelease302")) StartCoroutine(QaRelease302Routine());
             else if (HasCommandLineArgument("-qaRelease303")) StartCoroutine(QaRelease303Routine());
+            else if (HasCommandLineArgument("-qaBalance304")) StartCoroutine(QaBalance304Routine());
+            else if (HasCommandLineArgument("-qaRosterRange305")) StartCoroutine(QaRosterRange305Routine());
+            else if (HasCommandLineArgument("-qaInteractionVisual306")) StartCoroutine(QaInteractionVisual306Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
@@ -1175,8 +1200,8 @@ namespace JellyGate
                              return bossVariantSprites.ContainsKey(profile.Id) &&
                                     bossBackVariantSprites.ContainsKey(profile.Id);
                          });
-            var waveCurve = WaveEnemyCount(1) == 12 && WaveEnemyCount(5) == 24 &&
-                            WaveEnemyCount(6) == 22 && WaveEnemyCount(50) == 88 &&
+            var waveCurve = WaveEnemyCount(1) == 14 && WaveEnemyCount(5) == 26 &&
+                            WaveEnemyCount(6) == 24 && WaveEnemyCount(50) == 80 &&
                             Enumerable.Range(0, 10).All(chapter =>
                             {
                                 var opener = WaveEnemyCount(chapter * 5 + 1);
@@ -1990,9 +2015,9 @@ namespace JellyGate
                                    routeFaces.Select(face => Mathf.RoundToInt(face.x * 100f)).Distinct().Count() == 6 &&
                                    routeFaces.Max(face => face.x) - routeFaces.Min(face => face.x) >= 3.9f &&
                                    Enumerable.Range(0, 6).Select(DeploymentLaneForIndex).Distinct().Count() == 6;
-            var squadPressure = WaveEnemyCount(1) == 12 && WaveEnemyCount(5) == 24 &&
-                                WaveEnemyCount(6) == 22 && WaveEnemyCount(50) == 88 &&
-                                WaveSquadSize(1) == 4 && WaveSquadSize(50) == 10 &&
+            var squadPressure = WaveEnemyCount(1) == 14 && WaveEnemyCount(5) == 26 &&
+                                WaveEnemyCount(6) == 24 && WaveEnemyCount(50) == 80 &&
+                                WaveSquadSize(1) == 5 && WaveSquadSize(50) == 10 &&
                                 WaveMemberInterval(1) < .08f && WaveSquadInterval(1) < .65f;
             var authoredGolemDesigns = true;
             var authoredDesignCodes = new HashSet<int>();
@@ -2720,6 +2745,7 @@ namespace JellyGate
         {
             UpdateBattlefieldMood();
             UpdateAttackOrderMarker();
+            UpdateSingleSelectionRangeIndicator();
             UpdateRunCheckpointAutosave();
             UpdateInterstitialTransition();
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -5807,9 +5833,9 @@ namespace JellyGate
             definitions[UnitArchetype.Tank] = new UnitDefinition(L("왕관 방패병", "Crown Shield Guard"), "◆", 5, 260f, 20f, 4f,
                 .82f, .94f, .36f, 1.30f, new Color(.96f, .73f, .16f),
                 armor: 60f, magicResistance: 44f, skillCooldown: 7.3f, physicalPenetration: 2f, magicPenetration: 1f);
-            definitions[UnitArchetype.Melee] = new UnitDefinition(L("대지 망치병", "Earthshaker Guard"), "◇", 4, 138f, 34f, 4f,
-                .86f, .72f, .29f, 1.72f, new Color(1f, .42f, .35f),
-                armor: 29f, magicResistance: 20f, skillCooldown: 5.8f, physicalPenetration: 8f, magicPenetration: 1f);
+            definitions[UnitArchetype.Melee] = new UnitDefinition(L("대지 망치병", "Earthshaker Guard"), "◇", 4, 150f, 34f, 4f,
+                .94f, .70f, .29f, 1.72f, new Color(1f, .42f, .35f),
+                armor: 34f, magicResistance: 22f, skillCooldown: 5.5f, physicalPenetration: 8f, magicPenetration: 1f);
             definitions[UnitArchetype.Archer] = new UnitDefinition(L("바람길 궁수", "Gale Pathfinder"), ">", 4, 62f, 17f, 5f,
                 4.25f, .86f, .24f, 1.56f, new Color(.31f, .88f, .68f),
                 armor: 10f, magicResistance: 12f, skillCooldown: 7.3f, physicalPenetration: 7f, magicPenetration: 2f);
@@ -9598,6 +9624,7 @@ namespace JellyGate
             if (unit == null) return;
             selectedUnits.Add(unit);
             unit.SetSelected(true);
+            UpdateSingleSelectionRangeIndicator();
         }
 
         private void SelectInRectangle(Vector2 start, Vector2 end)
@@ -9619,6 +9646,67 @@ namespace JellyGate
         {
             foreach (var unit in selectedUnits) if (unit != null) unit.SetSelected(false);
             selectedUnits.Clear();
+            UpdateSingleSelectionRangeIndicator();
+        }
+
+        private void UpdateSingleSelectionRangeIndicator()
+        {
+            var owner = !showMainMenu && buildMode == UnitArchetype.None && selectedUnits.Count == 1 &&
+                        selectedUnits[0] != null && selectedUnits[0].IsAlive
+                ? selectedUnits[0]
+                : null;
+            if (owner == null)
+            {
+                singleSelectionRangeOwner = null;
+                singleSelectionRangeDiameter = 0f;
+                if (singleSelectionRangeRing != null) singleSelectionRangeRing.enabled = false;
+                if (singleSelectionRangeFill != null) singleSelectionRangeFill.enabled = false;
+                return;
+            }
+
+            if (singleSelectionRangeRing == null)
+            {
+                singleSelectionRangeRoot = new GameObject("Single Selection Exact Attack Range");
+                var fillObject = new GameObject("Exact Range Ground Fill");
+                fillObject.transform.SetParent(singleSelectionRangeRoot.transform, false);
+                singleSelectionRangeFill = fillObject.AddComponent<SpriteRenderer>();
+                singleSelectionRangeFill.sprite = CircleSprite;
+                singleSelectionRangeFill.color = new Color(.12f, .68f, 1f, .085f);
+                singleSelectionRangeFill.sortingOrder = 0;
+                singleSelectionRangeRing = singleSelectionRangeRoot.AddComponent<LineRenderer>();
+                singleSelectionRangeRing.useWorldSpace = false;
+                singleSelectionRangeRing.loop = true;
+                singleSelectionRangeRing.positionCount = 96;
+                singleSelectionRangeRing.sharedMaterial = attackOrderLineMaterial;
+                singleSelectionRangeRing.textureMode = LineTextureMode.Stretch;
+                singleSelectionRangeRing.alignment = LineAlignment.TransformZ;
+                singleSelectionRangeRing.numCornerVertices = 2;
+                singleSelectionRangeRing.numCapVertices = 2;
+                singleSelectionRangeRing.startWidth = .046f;
+                singleSelectionRangeRing.endWidth = .046f;
+                singleSelectionRangeRing.sortingOrder = 1;
+            }
+            var diameter = Mathf.Max(.18f, owner.AttackRange * 2f);
+            if (singleSelectionRangeOwner != owner || Mathf.Abs(singleSelectionRangeDiameter - diameter) > .001f)
+            {
+                var radius = diameter * .5f;
+                for (var i = 0; i < singleSelectionRangeRing.positionCount; i++)
+                {
+                    var angle = i * Mathf.PI * 2f / singleSelectionRangeRing.positionCount;
+                    singleSelectionRangeRing.SetPosition(i,
+                        new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0f));
+                }
+                singleSelectionRangeFill.transform.localScale = new Vector3(diameter, diameter, 1f);
+                singleSelectionRangeDiameter = diameter;
+            }
+            singleSelectionRangeOwner = owner;
+            singleSelectionRangeRing.enabled = true;
+            singleSelectionRangeFill.enabled = true;
+            singleSelectionRangeRoot.transform.position = new Vector3(owner.Position.x, owner.Position.y, .025f);
+            var pulse = .86f + Mathf.Sin(Time.unscaledTime * 4.6f) * .1f;
+            singleSelectionRangeRing.startColor = new Color(.22f, .82f, 1f, pulse);
+            singleSelectionRangeRing.endColor = singleSelectionRangeRing.startColor;
+            singleSelectionRangeFill.color = new Color(.1f, .62f, 1f, .07f + pulse * .025f);
         }
 
         private void StopSelected()
@@ -9629,6 +9717,7 @@ namespace JellyGate
 
         private void CancelBuildMode()
         {
+            ResetRosterDragState();
             buildMode = UnitArchetype.None;
             ShowToast(L("배치 취소 · 선택과 이동 모드", "DEPLOYMENT CANCELLED · SELECT AND MOVE MODE"));
         }
@@ -9943,7 +10032,11 @@ namespace JellyGate
             {
                 var point = paths[laneIndex][pointIndex];
                 sampledCells++;
-                if (IsWalkableWithClearance(point, .22f)) clearSamples++;
+                // The four authored gate-mouth points use the same 0.20 world-unit
+                // clearance as the largest ground agent. Interior lane samples keep
+                // the stricter audit margin so scenery leaks are still caught.
+                var auditClearance = pointIndex == 0 ? .2f : .22f;
+                if (IsWalkableWithClearance(point, auditClearance)) clearSamples++;
                 else Debug.LogWarning($"NAV_PATH_BLOCKED lane={laneIndex} sample={pointIndex} point={point}");
                 var region = GetNavigationRegion(point);
                 if (expectedRegion == 0) expectedRegion = region;
@@ -11051,10 +11144,10 @@ namespace JellyGate
                     SpawnDefensiveStanceEffect(source, skillColor, 4.2f);
                     break;
                 case UnitArchetype.Melee:
-                    DamageEnemies(target.Position, 1.02f, attack * 1.78f + magic * .2f,
+                    DamageEnemies(target.Position, 1.08f, attack * 1.86f + magic * .2f,
                         target, source, DamageType.Physical);
-                    BreakEnemyArmor(target.Position, 1.02f, 4.5f, 16f);
-                    StunEnemies(target.Position, 1.02f, .58f);
+                    BreakEnemyArmor(target.Position, 1.08f, 4.8f, 18f);
+                    StunEnemies(target.Position, 1.08f, .66f);
                     SpawnCoralHammerSkillEffect(source, target.Position, skillColor);
                     break;
                 case UnitArchetype.Lancer:
@@ -11171,7 +11264,7 @@ namespace JellyGate
                     {
                         if (target == null || !target.IsAlive) target = FindEnemyInRange(source.Position, 2.5f, source);
                         if (target == null) break;
-                        DamageEnemies(target.Position, 1.12f, attack * 1.45f + magic * .35f,
+                        DamageEnemies(target.Position, 1.18f, attack * 1.52f + magic * .35f,
                             target, source, DamageType.Physical);
                         SpawnCoralHammerSkillEffect(source, target.HitPoint, ultimateColor);
                         yield return new WaitForSeconds(.12f);
@@ -11623,13 +11716,14 @@ namespace JellyGate
             if (RoleFor(source.Archetype) == DefenderRole.Melee && shatter > 0f)
                 target.ApplyArmorBreak(3.2f, Mathf.RoundToInt(shatter * 8f));
             var cleavePower = StackPower("MeleeCleave");
-            var cleave = source.Archetype == UnitArchetype.Melee ? .28f : 0f;
+            var cleave = source.Archetype == UnitArchetype.Melee ? .34f : 0f;
             if (RoleFor(source.Archetype) == DefenderRole.Melee)
                 cleave += cleavePower * .32f;
             if (cleave > 0f)
                 foreach (var nearby in enemies.ToArray())
                     if (nearby != null && nearby.IsAlive && nearby != target &&
-                        Vector2.Distance(target.Position, nearby.Position) <= .46f + cleavePower * .12f)
+                        Vector2.Distance(target.Position, nearby.Position) <=
+                        (source.Archetype == UnitArchetype.Melee ? .54f : .46f) + cleavePower * .12f)
                         nearby.TakeDamage(damage * Mathf.Clamp(cleave, 0f, .68f), source, DamageType.Physical);
             SpawnCombatImpact(target.HitPoint, source.Archetype, style.Primary, .62f,
                 target.Position - source.Position, CombatVfxTier.Basic, source);
@@ -14082,19 +14176,19 @@ namespace JellyGate
 
         private static readonly int[] AuthoredWaveEnemyCounts =
         {
-            12, 15, 18, 21, 24,
-            22, 25, 28, 31, 30,
-            28, 31, 34, 37, 36,
-            34, 38, 42, 46, 44,
-            40, 44, 48, 52, 50,
-            46, 50, 54, 58, 56,
-            52, 56, 60, 64, 62,
-            58, 62, 66, 70, 68,
-            64, 68, 72, 76, 74,
-            72, 78, 84, 90, 88
+            14, 17, 20, 23, 26,
+            24, 27, 30, 33, 34,
+            30, 33, 36, 39, 40,
+            36, 40, 44, 48, 48,
+            42, 46, 50, 54, 54,
+            47, 51, 55, 59, 59,
+            52, 56, 60, 64, 64,
+            57, 61, 65, 69, 69,
+            62, 66, 70, 74, 74,
+            66, 70, 74, 78, 80
         };
 
-        private static readonly int[] WaveSquadBaseByChapter = { 4, 5, 5, 6, 6, 7, 7, 8, 8, 9 };
+        private static readonly int[] WaveSquadBaseByChapter = { 5, 5, 6, 6, 7, 7, 8, 8, 9, 9 };
 
         private static int WaveSquadSize(int round)
         {
@@ -14114,7 +14208,7 @@ namespace JellyGate
             Mathf.Lerp(.045f, .022f, Mathf.Clamp01((round - 1) / 49f));
 
         private static float WaveSquadInterval(int round) =>
-            Mathf.Lerp(.46f, .23f, Mathf.Clamp01((round - 1) / 49f));
+            Mathf.Lerp(.40f, .24f, Mathf.Clamp01((round - 1) / 49f));
 
         // Four of every ten regular bodies use the side doors. This raises side pressure from
         // one third without starving either of the four southern tactical routes.
@@ -14217,27 +14311,27 @@ namespace JellyGate
                 // choices instead of functioning as an extended tutorial.  The curve descends
                 // gradually as kit complexity increases, rather than banking all pressure for
                 // chapter ten.
-                0 => 1.08f,
-                1 => 1.07f,
-                2 => 1.06f,
-                3 => 1.05f,
-                4 => 1.04f,
-                5 => 1.03f,
+                0 => 1.14f,
+                1 => 1.12f,
+                2 => 1.10f,
+                3 => 1.08f,
+                4 => 1.06f,
+                5 => 1.04f,
                 6 => 1.02f,
                 // Spirit/Wisp used to combine the normal global curve with extreme Armor and
                 // caster density, creating an abrupt wall. Its five stages now ramp smoothly.
-                7 => 1.005f + stage * .003f,
-                8 => 1f,
+                7 => 1f + stage * .002f,
+                8 => .98f,
                 // The abyss roster already combines runner, spirit, support and siege tools.
                 // Its statistics therefore enter below the sky chapter and climb gently across
                 // 46-50 instead of producing a one-round wall.
                 _ => stage switch
                 {
                     0 => .96f,
-                    1 => .90f,
-                    2 => .85f,
-                    3 => .80f,
-                    _ => .78f
+                    1 => .94f,
+                    2 => .92f,
+                    3 => .90f,
+                    _ => .88f
                 }
             };
         }
@@ -14250,22 +14344,22 @@ namespace JellyGate
             var stage = Mathf.Clamp((round - 1) % 5, 0, 4);
             return chapter switch
             {
-                0 => 1.07f,
-                1 => 1.06f,
-                2 => 1.05f,
-                3 => 1.04f,
+                0 => 1.12f,
+                1 => 1.10f,
+                2 => 1.08f,
+                3 => 1.06f,
                 4 => 1.03f,
                 5 => 1.02f,
                 6 => 1.01f,
                 7 => 1f + stage * .002f,
-                8 => .995f,
+                8 => .98f,
                 _ => stage switch
                 {
                     0 => .94f,
-                    1 => .89f,
-                    2 => .84f,
-                    3 => .80f,
-                    _ => .78f
+                    1 => .92f,
+                    2 => .90f,
+                    3 => .88f,
+                    _ => .86f
                 }
             };
         }
@@ -14407,9 +14501,18 @@ namespace JellyGate
         public int SpawnBossMinions(EnemyUnit source, EnemyClass minionClass, int count)
         {
             if (source == null || !source.IsAlive || Phase != GamePhase.Battle) return 0;
-            var spawned = 0;
+            var scheduled = Mathf.Clamp(count, 1, 6);
+            StartCoroutine(SpawnBossMinionsStaggeredRoutine(source, minionClass, scheduled));
+            return scheduled;
+        }
+
+        private IEnumerator SpawnBossMinionsStaggeredRoutine(EnemyUnit source, EnemyClass minionClass,
+            int count)
+        {
+            if (source == null || !source.IsAlive || Phase != GamePhase.Battle) yield break;
             var health = Mathf.Max(48f + Round * 3f, source.MaxHealth * .075f);
-            for (var i = 0; i < Mathf.Clamp(count, 1, 6); i++)
+            for (var i = 0; i < count && source != null && source.IsAlive &&
+                            Phase == GamePhase.Battle; i++)
             {
                 // A boss may request a runner-like combat role, but the summoned body must stay
                 // in its own chapter family: jelly creates jelly, lich creates skeletons, etc.
@@ -14424,9 +14527,11 @@ namespace JellyGate
                     angle, minimumRadius, i);
                 minion.SetSummonedPosition(summonPosition, source.PathIndex, source.UsesBossEntrance);
                 enemies.Add(minion);
-                spawned++;
+                // Sprite slicing, eight-direction animation rig construction and route recovery are
+                // deliberately amortized. Building an entire summon pack in one frame caused a
+                // visible hitch on low/mid-range Android devices.
+                yield return null;
             }
-            return spawned;
         }
 
         private Vector2 FindSeparatedBossSummonPosition(EnemyUnit source, float minionRadius,
@@ -15709,6 +15814,7 @@ namespace JellyGate
             DrawTopHud();
             DrawTacticalMiniMap();
             DrawBottomHud();
+            DrawRosterDragPreview();
             DrawActiveTacticalItemRail();
             if (showAugmentSummary && Phase != GamePhase.Augment) DrawAugmentSummary();
             DrawSelectedUnitStatus();
@@ -17790,14 +17896,7 @@ namespace JellyGate
                 : affordable ? new Color(.34f, .52f, .76f) : new Color(.22f, .25f, .3f);
             DrawOrnatePanel(rect, affordable ? new Color(.035f, .055f, .105f, .98f) : new Color(.04f, .045f, .055f, .98f),
                 cardAccent, 2f);
-            if (GUI.Button(rect, GUIContent.none, GUIStyle.none))
-            {
-                buildMode = buildMode == kind ? UnitArchetype.None : kind;
-                ClearSelection();
-                ShowToast(buildMode == UnitArchetype.None
-                    ? L("배치 취소", "DEPLOYMENT CANCELLED")
-                    : L($"{definition.Name} 배치", $"DEPLOY {definition.Name}"));
-            }
+            HandleUnitCardPointer(kind, rect, definition);
             var skinVariant = GetUnitSkinVariant(kind);
             var sprite = GetEquippedUnitCardSprite(kind);
             if (sprite != null)
@@ -17811,6 +17910,114 @@ namespace JellyGate
             var priceRect = new Rect(rect.x + 2f, rect.yMax - 28f, rect.width - 4f, 26f);
             DrawPanel(priceRect, new Color(.02f, .035f, .08f, .78f));
             GUI.Label(priceRect, $"● {definition.Cost}", centeredStyle);
+        }
+
+        private void HandleUnitCardPointer(UnitArchetype kind, Rect rect, UnitDefinition definition)
+        {
+            var evt = Event.current;
+            if (evt == null || !GUI.enabled || Phase != GamePhase.Preparation) return;
+            if (evt.type == EventType.MouseDown && evt.button == 0 && rect.Contains(evt.mousePosition))
+            {
+                BeginRosterDragGesture(kind, evt.mousePosition);
+                evt.Use();
+                return;
+            }
+            if (!rosterDragArmed || rosterDragKind != kind) return;
+            if (evt.type == EventType.MouseDrag && evt.button == 0)
+            {
+                AdvanceRosterDragGesture(evt.mousePosition);
+                evt.Use();
+                return;
+            }
+            if (evt.type != EventType.MouseUp || evt.button != 0) return;
+
+            var releaseGui = evt.mousePosition;
+            var wasDrag = rosterDragActive;
+            ResetRosterDragState();
+            if (wasDrag)
+            {
+                var releaseScreen = GuiPointToScreen(releaseGui);
+                if (!IsHudPointer(releaseScreen))
+                    CompleteRosterDragAtWorld(kind, ScreenToWorld(releaseScreen));
+                else
+                {
+                    buildMode = UnitArchetype.None;
+                    ShowToast(L("전장 위에 놓아 배치하세요.", "DROP THE UNIT ON THE BATTLEFIELD."));
+                }
+            }
+            else if (rect.Contains(releaseGui)) ToggleRosterBuildMode(kind, definition);
+            evt.Use();
+        }
+
+        private void BeginRosterDragGesture(UnitArchetype kind, Vector2 guiPoint)
+        {
+            rosterDragKind = kind;
+            rosterDragPressGui = guiPoint;
+            rosterDragArmed = true;
+            rosterDragActive = false;
+        }
+
+        private void AdvanceRosterDragGesture(Vector2 guiPoint)
+        {
+            if (!rosterDragArmed || rosterDragKind == UnitArchetype.None || rosterDragActive ||
+                Vector2.Distance(rosterDragPressGui, guiPoint) < 10f) return;
+            rosterDragActive = true;
+            buildMode = rosterDragKind;
+            ClearSelection();
+        }
+
+        private void ToggleRosterBuildMode(UnitArchetype kind, UnitDefinition definition)
+        {
+            buildMode = buildMode == kind ? UnitArchetype.None : kind;
+            ClearSelection();
+            ShowToast(buildMode == UnitArchetype.None
+                ? L("배치 취소", "DEPLOYMENT CANCELLED")
+                : L($"{definition.Name} 배치", $"DEPLOY {definition.Name}"));
+        }
+
+        private void ResetRosterDragState()
+        {
+            rosterDragKind = UnitArchetype.None;
+            rosterDragArmed = false;
+            rosterDragActive = false;
+        }
+
+        private void CompleteRosterDragAtWorld(UnitArchetype kind, Vector2 world)
+        {
+            buildMode = kind;
+            TryPlaceUnit(kind, world);
+            // A direct card drag is one self-contained order. Failed drops must not leave an
+            // invisible placement mode armed underneath the next map tap.
+            buildMode = UnitArchetype.None;
+            UpdateSingleSelectionRangeIndicator();
+        }
+
+        private Vector2 GuiPointToScreen(Vector2 guiPoint) =>
+            new(guiPoint.x * UiScale, Screen.height - guiPoint.y * UiScale);
+
+        private void DrawRosterDragPreview()
+        {
+            rosterDragPreviewCircularFrameDrawn = false;
+            if (!rosterDragActive || rosterDragKind == UnitArchetype.None) return;
+            var pointer = rosterDragPreviewGuiOverrideForQa ?? (Event.current != null
+                ? Event.current.mousePosition
+                : new Vector2(Input.mousePosition.x / UiScale, (Screen.height - Input.mousePosition.y) / UiScale));
+            var preview = new Rect(pointer.x - 38f, pointer.y - 38f, 76f, 76f);
+            var screen = GuiPointToScreen(pointer);
+            var valid = Phase == GamePhase.Preparation && !IsHudPointer(screen);
+            var accent = valid ? new Color(.28f, .92f, .72f, .96f) : new Color(1f, .38f, .28f, .94f);
+            if (CircleSprite != null)
+                DrawSpriteInGui(CircleSprite, preview, new Color(.018f, .045f, .075f, .78f));
+            if (CommandRingSprite != null)
+                DrawSpriteInGui(CommandRingSprite, preview, accent);
+            rosterDragPreviewCircularFrameDrawn = CircleSprite != null && CommandRingSprite != null;
+            var sprite = GetEquippedUnitCardSprite(rosterDragKind);
+            if (sprite == null) return;
+            var previous = GUI.color;
+            GUI.color = new Color(1f, 1f, 1f, .92f);
+            DrawSpriteContained(new Rect(preview.x + 12f, preview.y + 8f, preview.width - 24f,
+                preview.height - 16f), sprite);
+            GUI.color = previous;
         }
 
         private static void DrawSpriteContained(Rect bounds, Sprite sprite)
@@ -18938,6 +19145,7 @@ namespace JellyGate
             toastText = bossWarningText = string.Empty;
             toastUntil = bossWarningUntil = 0f;
             pointerHeld = pointerDragged = false;
+            ResetRosterDragState();
             pressedUnit = null;
             pressedEnemy = null;
             pendingTacticalItemUse = -1;

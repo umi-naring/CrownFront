@@ -147,6 +147,7 @@ namespace JellyGate
                     Phase = GamePhase.Battle;
                     var before = formation.Length;
                     var spawned = SpawnBossMinions(formationBoss, EnemyClass.Runner, 4);
+                    for (var frame = 0; frame < spawned + 1; frame++) yield return null;
                     var summons = enemies.Where(enemy => enemy != null && enemy.IsAlive)
                         .Skip(before).ToArray();
                     var summonGroup = summons.Concat(new[] { formationBoss }).ToArray();

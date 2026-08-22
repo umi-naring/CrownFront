@@ -178,8 +178,8 @@ namespace JellyGate
                 }
                 previousPressure = pressure;
             }
-            var campaignPassed = campaignFailures.Count == 0 && WaveEnemyCount(1) == 16 &&
-                                 WaveEnemyCount(50) == 81 && minimumStep >= .76f &&
+            var campaignPassed = campaignFailures.Count == 0 && WaveEnemyCount(1) == 14 &&
+                                 WaveEnemyCount(50) == 80 && minimumStep >= .76f &&
                                  maximumStep <= 1.18f;
             if (!campaignPassed)
                 failures.Add($"campaign={string.Join("|", campaignFailures.Take(12))}:" +

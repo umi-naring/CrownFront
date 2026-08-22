@@ -96,7 +96,7 @@ namespace JellyGate
 
         private static float GuideContentHeight(int tab) => tab switch
         {
-            0 => 1030f,
+            0 => 1440f,
             1 => GuideUnitRosterContentHeight(),
             2 => 2390f,
             3 => 1110f,
@@ -270,30 +270,47 @@ namespace JellyGate
 
         private void DrawGuideBasics(float width, ref float y)
         {
-            DrawGuideChapter(width, ref y, L("전장 진행", "BATTLE FLOW"));
-            DrawGuideCard(width, ref y, L("1. 편성 및 배치", "1. FORMATION & DEPLOYMENT"),
-                L("라운드 시작 코인으로 아군을 소환합니다. 소환할 유닛을 고른 동안만 배치 모드가 켜지며, 취소 후에는 한 명 클릭 또는 빈 땅 드래그로 여러 명을 선택해 즉시 재배치할 수 있습니다.",
-                    "Spend the round budget to summon defenders. Placement mode exists only while a unit is armed; cancel it to click one unit or drag-select a group and reposition them immediately."), 116f);
-            DrawGuideCard(width, ref y, L("2. 웨이브", "2. WAVE"),
-                L("웨이브가 시작되면 같은 세력의 전열·기동·원거리·특수 병력이 매 라운드 혼합 편성되어 외곽 성문에서 진격합니다. 한 마리가 닿는다고 즉시 패배하지 않으며, 성벽 내구도가 0이 될 때 패배합니다.",
-                    "Every round mixes frontline, mobile, ranged and specialist troops from one faction. They advance from the outer gates; defeat occurs only when citadel durability reaches zero."), 116f);
-            DrawGuideCard(width, ref y, L("3. 라운드 종료", "3. ROUND END"),
-                L("살아남은 아군은 삭제되지 않고 다음 라운드에 유지됩니다. 성벽 내구도는 자동 회복하지 않습니다. 기본 코인도 라운드 수로 증가하지 않으며, 코인 증가는 증강으로만 얻습니다.",
-                    "Surviving defenders persist into the next round. Gate durability never auto-heals, and base coins do not rise with round number; only augments can increase the budget."), 109f);
+            DrawGuideChapter(width, ref y, L("전투 전", "BEFORE BATTLE"));
+            DrawGuideCard(width, ref y, L("1. 역할을 나눠 배치", "1. BUILD A FORMATION"),
+                L("방패병은 앞에서 길을 막고, 근접 유닛은 옆을 지킵니다. 궁수와 마법사는 뒤에 두세요. 한 길에만 몰아두면 다른 입구가 비게 됩니다.",
+                    "Shield guards hold the front, melee units cover their sides, and ranged units stay behind. Do not leave another entrance undefended."), 96f);
+            DrawGuideCard(width, ref y, L("2. 배치와 되돌리기", "2. PLACE AND UNDO"),
+                L("유닛 카드를 누른 뒤 전장을 누르거나, 카드를 원하는 위치까지 끌어 놓아 배치합니다. 되돌리기는 이번 라운드에 새로 놓은 유닛만 회수합니다.",
+                    "Tap a unit card and then the field, or drag the card directly to its position. Undo refunds only defenders placed this round."), 96f);
+            DrawGuideCard(width, ref y, L("3. 웨이브 시작 전 확인", "3. CHECK EVERY LANE"),
+                L("전열이 끊긴 길, 원거리 지원이 없는 길, 보스가 들어올 넓은 길을 확인한 뒤 웨이브를 시작하세요.",
+                    "Before starting, check for an open lane, an unsupported frontline, and the wide route used by boss formations."), 82f);
 
-            DrawGuideChapter(width, ref y, L("컨트롤", "CONTROLS"));
-            DrawGuideCard(width, ref y, L("이동 우선 전투", "MOVE PRIORITY"),
-                L("선택한 아군으로 땅을 누르면 현재 공격보다 이동 명령이 우선됩니다. 공격 도중에도 즉시 위치를 바꿀 수 있으며, 지정 지점은 선명한 전술 핑으로 표시됩니다.",
-                    "Tap the ground with defenders selected to override the current attack. Units can reposition during combat, and a clear tactical ping marks the destination."), 100f);
-            DrawGuideCard(width, ref y, L("집중 공격", "FOCUS FIRE"),
-                L("적을 누르면 지정 표적이 됩니다. 사거리 밖이라면 공격 가능한 최대 사거리까지 접근한 뒤 공격하며, 표적을 직접 지정하지 않았을 때는 탐지 범위 안의 가장 가까운 적을 우선합니다.",
-                    "Tap an enemy to assign a focus target. Units approach to maximum firing range if needed; without a focus order they prioritize the nearest enemy inside detection range."), 111f);
-            DrawGuideCard(width, ref y, L("정지", "HOLD"),
-                L("정지는 추적과 이동만 멈춥니다. 정지 상태는 유닛 아래 아이콘으로 표시되며, 공격 사거리 안으로 들어온 적은 계속 공격합니다.",
-                    "Hold stops movement and pursuit only. A clean ground marker shows the state, and the unit still attacks enemies that enter attack range."), 96f);
-            DrawGuideCard(width, ref y, L("카메라와 미니맵", "CAMERA & MINIMAP"),
-                L("두 손가락 핀치 또는 마우스 휠로 확대·축소하고, 드래그로 넓은 맵을 이동합니다. 우측 상단 미니맵으로 전선과 유닛 분포를 빠르게 확인합니다.",
-                    "Pinch or use the mouse wheel to zoom, and pan across the expanded battlefield. The top-right minimap summarizes fronts and unit positions."), 96f);
+            DrawGuideChapter(width, ref y, L("전투 중", "DURING BATTLE"));
+            DrawGuideCard(width, ref y, L("4. 이동 명령이 최우선", "4. MOVEMENT HAS PRIORITY"),
+                L("아군을 선택하고 땅을 누르면 공격 중에도 즉시 이동합니다. 위험 범위를 피하거나 무너진 길을 지원할 때 사용하세요.",
+                    "Select defenders and tap the ground to move immediately, even while attacking. Use this to evade danger or reinforce a failing lane."), 92f);
+            DrawGuideCard(width, ref y, L("5. 위험한 적부터 집중 공격", "5. FOCUS PRIORITY TARGETS"),
+                L("한 명만 선택하면 실제 공격 사거리가 바닥에 표시됩니다. 적을 누르면 집중 공격하며, 사거리 밖이면 공격 가능한 거리까지 접근합니다.",
+                    "Selecting one defender shows its true attack range. Tap an enemy to focus it; the defender approaches until it can attack."), 96f);
+            DrawGuideCard(width, ref y, L("6. 정지는 이동만 멈춤", "6. HOLD STOPS MOVEMENT"),
+                L("정지 상태에서도 사거리 안의 적은 공격합니다. 방패병이 길을 비우지 않게 하거나 원거리 유닛의 자리를 고정할 때 유용합니다.",
+                    "Held units still attack enemies in range. Use Hold to keep a shield wall intact or anchor ranged defenders."), 88f);
+            DrawGuideCard(width, ref y, L("7. 스킬과 궁극기", "7. SKILLS AND ULTIMATES"),
+                L("일반 스킬은 자동으로 사용됩니다. 영웅의 궁극기는 상황 조건이 맞을 때 직접 누릅니다. 버튼을 길게 누르면 효과를 확인할 수 있습니다.",
+                    "Regular skills cast automatically. Hero ultimates are manual and require a valid situation. Hold an ability icon to read its effect."), 94f);
+
+            DrawGuideChapter(width, ref y, L("라운드와 성장", "ROUNDS AND GROWTH"));
+            DrawGuideCard(width, ref y, L("8. 생존한 아군은 유지", "8. SURVIVORS PERSIST"),
+                L("살아남은 아군은 다음 라운드에도 남고 전투 기여도만큼 경험치를 얻습니다. 5레벨이 되면 영웅으로 진화합니다.",
+                    "Surviving defenders remain for the next round and gain experience from combat contribution. At level 5 they become heroes."), 88f);
+            DrawGuideCard(width, ref y, L("9. 성벽은 자동 회복하지 않음", "9. THE CITADEL DOES NOT AUTO-HEAL"),
+                L("적은 성벽에 도착한 뒤 계속 피해를 줍니다. 내구도가 0이 되면 패배합니다. 회복은 아이템이나 관련 증강이 필요합니다.",
+                    "Enemies keep damaging the citadel after reaching it. You lose at zero durability; recovery requires an item or a matching augment."), 92f);
+            DrawGuideCard(width, ref y, L("10. 증강은 누적", "10. AUGMENTS STACK"),
+                L("라운드마다 같은 등급의 세 후보 중 하나를 고릅니다. 기존 증강과 중첩되므로 현재 편성과 역할에 맞는 효과를 선택하세요.",
+                    "Choose one of three augments from the same tier after each round. Effects stack, so build around your current formation and roles."), 90f);
+            DrawGuideCard(width, ref y, L("11. 보스 라운드", "11. BOSS ROUNDS"),
+                L("5라운드마다 보스가 호위대와 늦게 등장합니다. 경고 범위를 피하고, 소환된 졸개를 정리할 유닛과 보스를 붙잡을 전열을 나누세요.",
+                    "Every fifth round brings a delayed boss formation. Evade telegraphs and split duties between clearing summons and holding the boss."), 96f);
+            DrawGuideCard(width, ref y, L("12. 카메라와 미니맵", "12. CAMERA AND MINIMAP"),
+                L("두 손가락으로 확대·축소하고 화면을 드래그해 이동합니다. 우측 상단 미니맵으로 비어 있는 길과 적의 밀집 위치를 빠르게 확인하세요.",
+                    "Pinch to zoom and drag to pan. Use the top-right minimap to spot open lanes and enemy concentrations."), 88f);
         }
 
         private void DrawGuideUnitRoster(float width, ref float y)

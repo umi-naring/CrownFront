@@ -167,7 +167,7 @@ namespace JellyGate
             float skillMagic = 0f;
             switch (archetype)
             {
-                case UnitArchetype.Melee: skillPhysical = attack * 1.78f + magic * .20f; break;
+                case UnitArchetype.Melee: skillPhysical = attack * 1.86f + magic * .20f; break;
                 case UnitArchetype.Archer: skillPhysical = attack * 1.65f + magic * .35f; break;
                 case UnitArchetype.AreaMage: skillMagic = magic * 2.28f + attack * .20f; break;
                 case UnitArchetype.SingleMage: skillMagic = magic * 2.82f + attack * .20f; break;
