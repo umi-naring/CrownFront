@@ -17979,40 +17979,10 @@ namespace JellyGate
 
         private void DrawSelectedUnitStatCell(Rect rect, SelectedStatCell stat)
         {
-            var iconSize = Mathf.Min(27f, rect.height - 3f);
+            var iconSize = Mathf.Min(29f, rect.height - 2f);
             var icon = new Rect(rect.x + 1f, rect.center.y - iconSize * .5f, iconSize, iconSize);
             var previous = GUI.color;
-            if (CircleSprite != null)
-            {
-                GUI.color = new Color(0f, 0f, 0f, .55f);
-                GUI.DrawTexture(new Rect(icon.x + 1.5f, icon.y + 2f, icon.width, icon.height),
-                    CircleSprite.texture, ScaleMode.ScaleToFit, true);
-                GUI.color = new Color(.025f, .045f, .075f, 1f);
-                GUI.DrawTexture(icon, CircleSprite.texture, ScaleMode.ScaleToFit, true);
-                var enamel = new Rect(icon.x + 2.2f, icon.y + 2.2f, icon.width - 4.4f, icon.height - 4.4f);
-                GUI.color = Color.Lerp(stat.Color, new Color(.025f, .055f, .09f), .46f);
-                GUI.DrawTexture(enamel, CircleSprite.texture, ScaleMode.ScaleToFit, true);
-                if (GlowSprite != null)
-                {
-                    GUI.color = new Color(stat.Color.r, stat.Color.g, stat.Color.b, .28f);
-                    GUI.DrawTexture(enamel, GlowSprite.texture, ScaleMode.ScaleToFit, true);
-                }
-                if (CommandRingSprite != null)
-                {
-                    GUI.color = new Color(stat.Color.r, stat.Color.g, stat.Color.b, .96f);
-                    GUI.DrawTexture(icon, CommandRingSprite.texture, ScaleMode.ScaleToFit, true);
-                }
-            }
-            GUI.color = previous;
-            DrawSelectedStatGlyph(new Rect(icon.x + .8f, icon.y + 1.1f, icon.width, icon.height), stat.Icon,
-                new Color(.005f, .012f, .025f, .8f));
-            DrawSelectedStatGlyph(icon, stat.Icon, new Color(1f, .96f, .78f, 1f));
-            if (CircleSprite != null)
-            {
-                GUI.color = new Color(1f, 1f, 1f, .75f);
-                GUI.DrawTexture(new Rect(icon.x + icon.width * .26f, icon.y + icon.height * .19f,
-                    icon.width * .13f, icon.height * .13f), CircleSprite.texture, ScaleMode.ScaleToFit, true);
-            }
+            DrawSelectedStatAtlasCell(icon, stat.Icon);
             GUI.color = previous;
             DrawFittedLabel(new Rect(icon.xMax + 3f, rect.y + 1f, rect.xMax - icon.xMax - 4f,
                     rect.height - 2f), stat.Value,
@@ -18023,6 +17993,26 @@ namespace JellyGate
                 inspectedSelectedStat = stat.Label;
                 inspectedSelectedStatUntil = Time.unscaledTime + 2.4f;
             }
+        }
+
+        private void DrawSelectedStatAtlasCell(Rect rect, SelectedStatIcon icon)
+        {
+            if (selectedStatIconAtlasTexture == null)
+            {
+                DrawSelectedStatGlyph(rect, icon, Color.white);
+                return;
+            }
+            const float columns = 4f;
+            const float rows = 2f;
+            var index = Mathf.Clamp((int)icon, 0, 7);
+            var column = index % 4;
+            var rowFromTop = index / 4;
+            var uv = new Rect(column / columns, 1f - (rowFromTop + 1f) / rows,
+                1f / columns, 1f / rows);
+            var previous = GUI.color;
+            GUI.color = Color.white;
+            GUI.DrawTextureWithTexCoords(rect, selectedStatIconAtlasTexture, uv, true);
+            GUI.color = previous;
         }
 
         private void DrawSelectedStatGlyph(Rect rect, SelectedStatIcon icon, Color ink)

@@ -60,6 +60,32 @@ namespace JellyGate
                 statModels.Any(model => string.IsNullOrWhiteSpace(model.Value) ||
                                         string.IsNullOrWhiteSpace(model.Label)))
                 failures.Add($"stat-icons:{statModels.Length}/{statModels.Select(model => model.Icon).Distinct().Count()}");
+            var statAtlasReady = selectedStatIconAtlasTexture != null && selectedStatIconAtlasTexture.isReadable &&
+                                 selectedStatIconAtlasTexture.width == 1024 &&
+                                 selectedStatIconAtlasTexture.height == 512;
+            var statAtlasCellsOpaque = statAtlasReady;
+            var statAtlasCornersClear = statAtlasReady;
+            if (statAtlasReady)
+            {
+                for (var index = 0; index < 8; index++)
+                {
+                    var column = index % 4;
+                    var rowFromTop = index / 4;
+                    var centerU = (column + .5f) / 4f;
+                    var centerV = 1f - (rowFromTop + .5f) / 2f;
+                    statAtlasCellsOpaque &= selectedStatIconAtlasTexture.GetPixelBilinear(centerU, centerV).a > .9f;
+                    var leftU = (column + .01f) / 4f;
+                    var rightU = (column + .99f) / 4f;
+                    var topV = 1f - (rowFromTop + .01f) / 2f;
+                    var bottomV = 1f - (rowFromTop + .99f) / 2f;
+                    statAtlasCornersClear &= selectedStatIconAtlasTexture.GetPixelBilinear(leftU, topV).a < .05f &&
+                                             selectedStatIconAtlasTexture.GetPixelBilinear(rightU, topV).a < .05f &&
+                                             selectedStatIconAtlasTexture.GetPixelBilinear(leftU, bottomV).a < .05f &&
+                                             selectedStatIconAtlasTexture.GetPixelBilinear(rightU, bottomV).a < .05f;
+                }
+            }
+            if (!statAtlasReady || !statAtlasCellsOpaque || !statAtlasCornersClear)
+                failures.Add($"stat-atlas:{statAtlasReady}/{statAtlasCellsOpaque}/{statAtlasCornersClear}");
 
             var roster = Enum.GetValues(typeof(UnitArchetype)).Cast<UnitArchetype>()
                 .Where(archetype => archetype != UnitArchetype.None).ToArray();
@@ -110,7 +136,8 @@ namespace JellyGate
             Debug.Log($"QA_RELEASE_303 passed={passed} returnTicket=11gem fieldAid=60% " +
                       $"icons={selectedAbilityIconTextures.Count}/20 verified={selectedAbilityMaskVerifiedCount}/20 " +
                       $"transparent={abilityCornersClear} " +
-                      $"stats={statModels.Length}/6 balance={balanceSignature} failures={string.Join(",", failures)}");
+                      $"stats={statModels.Length}/6 atlas=8/8:{statAtlasReady}/{statAtlasCornersClear} " +
+                      $"balance={balanceSignature} failures={string.Join(",", failures)}");
             Application.Quit(passed ? 0 : 123);
         }
 
@@ -187,6 +214,19 @@ namespace JellyGate
             selectedUnits.Clear();
             units.Remove(probe);
             Destroy(probeObject);
+            var mageDefinition = definitions[UnitArchetype.SingleMage];
+            var mageObject = new GameObject("QA 303 Magic Stat HUD Probe");
+            var mage = mageObject.AddComponent<PlayerUnit>();
+            mage.Initialize(this, UnitArchetype.SingleMage, mageDefinition,
+                NearestWalkable(new Vector2(0f, -4.8f), mageDefinition.Radius));
+            units.Add(mage);
+            selectedUnits.Add(mage);
+            yield return new WaitForSecondsRealtime(.16f);
+            yield return CaptureFullFrameRoutine("Crownfront-code10-stat-hud-magic.ppm");
+
+            selectedUnits.Clear();
+            units.Remove(mage);
+            Destroy(mageObject);
             showMainMenu = true;
             sortieGateTransition = true;
             sortieGateTransitionStartedAt = Time.unscaledTime - .42f;

@@ -18,6 +18,7 @@ namespace JellyGate
         private Texture2D tacticalItemAtlasTexture;
         private Texture2D removeAdsTexture;
         private Texture2D unitSkillIconAtlasTexture;
+        private Texture2D selectedStatIconAtlasTexture;
         private readonly Dictionary<int, Texture2D> gemPackTextures = new();
         private int inspectedPregameItem = -1;
         private int inspectedRunItem = -1;
@@ -45,6 +46,7 @@ namespace JellyGate
             tacticalItemAtlasTexture = Resources.Load<Texture2D>("Shop/tactical-item-atlas-v1");
             removeAdsTexture = Resources.Load<Texture2D>("Shop/remove-ads-v1");
             unitSkillIconAtlasTexture = Resources.Load<Texture2D>("Shop/unit-skill-icons-v2");
+            selectedStatIconAtlasTexture = Resources.Load<Texture2D>("UI/stat-icons-v4");
             var gemAssets = new[]
             {
                 (100, 100), (305, 310), (515, 525), (1040, 1075), (2100, 2200)
