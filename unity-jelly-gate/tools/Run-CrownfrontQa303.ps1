@@ -8,7 +8,7 @@ $projectPath = Split-Path -Parent $PSScriptRoot
 $workspacePath = Split-Path -Parent $projectPath
 $qaDirectory = Join-Path $workspacePath 'qa-artifacts\Crownfront-QA-303'
 $qaExecutable = Join-Path $qaDirectory 'Crownfront-QA.exe'
-$logDirectory = Join-Path $workspacePath 'qa-logs\v1.00-code10'
+$logDirectory = Join-Path $workspacePath 'qa-logs\v1.00-code11'
 $buildLog = Join-Path $logDirectory 'windows-player-build.log'
 $summaryPath = Join-Path $logDirectory 'qa-summary.json'
 New-Item -ItemType Directory -Path $qaDirectory, $logDirectory -Force | Out-Null
@@ -21,7 +21,7 @@ if (-not $ReuseBuild -or -not (Test-Path -LiteralPath $qaExecutable)) {
     ) -WindowStyle Hidden -Wait -PassThru
     if ($build.ExitCode -ne 0 -or -not (Test-Path -LiteralPath $qaExecutable) -or
         @(Select-String -LiteralPath $buildLog -Pattern 'error CS|Scripts have compiler errors|BuildFailedException').Count -gt 0) {
-        throw "CROWNFRONT code 10 QA build failed. See $buildLog"
+        throw "CROWNFRONT code 11 QA build failed. See $buildLog"
     }
 }
 
@@ -44,8 +44,8 @@ foreach ($probe in $probes) {
     Write-Output "$($probe.Name): passed=$passed exit=$($process.ExitCode)"
 }
 $passed = -not ($results.passed -contains $false)
-[ordered]@{ version='1.00'; versionCode=10; generatedAt=(Get-Date).ToString('o');
+[ordered]@{ version='1.00'; versionCode=11; generatedAt=(Get-Date).ToString('o');
     passed=$passed; buildLog=$buildLog; probes=$results } |
     ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $summaryPath -Encoding utf8
-if (-not $passed) { throw "CROWNFRONT code 10 QA failed. See $summaryPath" }
-Write-Output "CROWNFRONT code 10 QA completed: $summaryPath"
+if (-not $passed) { throw "CROWNFRONT code 11 QA failed. See $summaryPath" }
+Write-Output "CROWNFRONT code 11 QA completed: $summaryPath"

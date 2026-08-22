@@ -209,7 +209,7 @@ namespace JellyGate
             selectedUnits.Clear();
             selectedUnits.Add(probe);
             yield return new WaitForSecondsRealtime(.2f);
-            yield return CaptureFullFrameRoutine("Crownfront-code10-ability-hud.ppm");
+            yield return CaptureFullFrameRoutine("Crownfront-code11-ability-hud.ppm");
 
             selectedUnits.Clear();
             units.Remove(probe);
@@ -222,7 +222,7 @@ namespace JellyGate
             units.Add(mage);
             selectedUnits.Add(mage);
             yield return new WaitForSecondsRealtime(.16f);
-            yield return CaptureFullFrameRoutine("Crownfront-code10-stat-hud-magic.ppm");
+            yield return CaptureFullFrameRoutine("Crownfront-code11-stat-hud-magic.ppm");
 
             selectedUnits.Clear();
             units.Remove(mage);
@@ -231,7 +231,7 @@ namespace JellyGate
             sortieGateTransition = true;
             sortieGateTransitionStartedAt = Time.unscaledTime - .42f;
             yield return new WaitForSecondsRealtime(.08f);
-            yield return CaptureFullFrameRoutine("Crownfront-code10-sortie-gate.ppm");
+            yield return CaptureFullFrameRoutine("Crownfront-code11-sortie-gate.ppm");
             Application.Quit(0);
         }
     }
