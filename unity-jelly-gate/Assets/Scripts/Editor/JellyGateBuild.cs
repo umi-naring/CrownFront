@@ -31,9 +31,9 @@ namespace JellyGate.Editor
             PlayerSettings.productName = "CROWNFRONT";
             PlayerSettings.bundleVersion = "1.00";
             // Google Play requires this internal integer to increase on every uploaded release.
-            // Version codes 1-9 have already been used by prior Google Play uploads.
-            // Keep the user-facing version name at 1.00 and publish this verified update as code 10.
-            PlayerSettings.Android.bundleVersionCode = 11;
+            // Earlier version codes have already been used by prior Google Play uploads.
+            // Keep the user-facing version name at 1.00 and publish this verified update as code 12.
+            PlayerSettings.Android.bundleVersionCode = 12;
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.toykingdom.jellygate");
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
@@ -206,8 +206,8 @@ namespace JellyGate.Editor
             // PlayerSettings are rewritten immediately before an Android build. Project
             // configuration is persisted separately; this entry point validates it and
             // starts the build without mutating the Android settings cache.
-            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 11)
-                throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 11) before building.");
+            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 12)
+                throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 12) before building.");
             var keystorePath = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE");
             var keystorePass = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE_PASS");
             var aliasName = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_ALIAS");
@@ -244,7 +244,7 @@ namespace JellyGate.Editor
                     locationPathName = outputPath,
                     targetGroup = BuildTargetGroup.Android,
                     target = BuildTarget.Android,
-                    options = BuildOptions.None
+                    options = BuildOptions.CleanBuildCache
                 });
             }
             finally

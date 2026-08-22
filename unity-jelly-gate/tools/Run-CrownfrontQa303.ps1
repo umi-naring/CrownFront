@@ -8,7 +8,7 @@ $projectPath = Split-Path -Parent $PSScriptRoot
 $workspacePath = Split-Path -Parent $projectPath
 $qaDirectory = Join-Path $workspacePath 'qa-artifacts\Crownfront-QA-303'
 $qaExecutable = Join-Path $qaDirectory 'Crownfront-QA.exe'
-$logDirectory = Join-Path $workspacePath 'qa-logs\v1.00-code11'
+$logDirectory = Join-Path $workspacePath 'qa-logs\v1.00-code12'
 $buildLog = Join-Path $logDirectory 'windows-player-build.log'
 $summaryPath = Join-Path $logDirectory 'qa-summary.json'
 New-Item -ItemType Directory -Path $qaDirectory, $logDirectory -Force | Out-Null
@@ -47,5 +47,5 @@ $passed = -not ($results.passed -contains $false)
 [ordered]@{ version='1.00'; versionCode=11; generatedAt=(Get-Date).ToString('o');
     passed=$passed; buildLog=$buildLog; probes=$results } |
     ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $summaryPath -Encoding utf8
-if (-not $passed) { throw "CROWNFRONT code 11 QA failed. See $summaryPath" }
-Write-Output "CROWNFRONT code 11 QA completed: $summaryPath"
+if (-not $passed) { throw "CROWNFRONT code 12 QA failed. See $summaryPath" }
+Write-Output "CROWNFRONT code 12 QA completed: $summaryPath"
