@@ -337,13 +337,19 @@ namespace JellyGate
             DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 191f, panel.width - 36f, 28f),
                 L("이 아이템을 사용합니까?", "USE THIS ITEM?"), centeredStyle, 10);
             var buttonWidth = (panel.width - 54f) * .5f;
-            if (DrawPremiumButton(new Rect(panel.x + 18f, panel.yMax - 67f, buttonWidth, 48f),
-                    L("취소", "CANCEL"), new Color(.06f, .075f, .1f), new Color(.56f, .68f, .82f), true))
-                CancelTacticalItemUse();
-            if (DrawPremiumButton(new Rect(panel.x + 36f + buttonWidth, panel.yMax - 67f, buttonWidth, 48f),
+            if (DrawPremiumButton(TacticalItemUseButtonRect(panel, buttonWidth),
                     L("사용", "USE"), new Color(.22f, .13f, .035f), new Color(1f, .76f, .25f), true))
                 ConfirmTacticalItemUse();
+            if (DrawPremiumButton(TacticalItemCancelButtonRect(panel, buttonWidth),
+                    L("취소", "CANCEL"), new Color(.06f, .075f, .1f), new Color(.56f, .68f, .82f), true))
+                CancelTacticalItemUse();
         }
+
+        private static Rect TacticalItemUseButtonRect(Rect panel, float buttonWidth) =>
+            new(panel.x + 18f, panel.yMax - 67f, buttonWidth, 48f);
+
+        private static Rect TacticalItemCancelButtonRect(Rect panel, float buttonWidth) =>
+            new(panel.x + 36f + buttonWidth, panel.yMax - 67f, buttonWidth, 48f);
 
         private Rect TacticalItemRailRect()
         {

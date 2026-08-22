@@ -31,9 +31,9 @@ namespace JellyGate.Editor
             PlayerSettings.productName = "CROWNFRONT";
             PlayerSettings.bundleVersion = "1.00";
             // Google Play requires this internal integer to increase on every uploaded release.
-            // Version codes 1-7 have already been used by prior Google Play uploads.
-            // Keep the user-facing version name at 1.00 and publish this verified update as code 8.
-            PlayerSettings.Android.bundleVersionCode = 8;
+            // Version codes 1-8 have already been used by prior Google Play uploads.
+            // Keep the user-facing version name at 1.00 and publish this verified update as code 9.
+            PlayerSettings.Android.bundleVersionCode = 9;
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.toykingdom.jellygate");
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
@@ -206,8 +206,8 @@ namespace JellyGate.Editor
             // PlayerSettings are rewritten immediately before an Android build. Project
             // configuration is persisted separately; this entry point validates it and
             // starts the build without mutating the Android settings cache.
-            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 8)
-                throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 8) before building.");
+            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 9)
+                throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 9) before building.");
             var keystorePath = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE");
             var keystorePass = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE_PASS");
             var aliasName = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_ALIAS");

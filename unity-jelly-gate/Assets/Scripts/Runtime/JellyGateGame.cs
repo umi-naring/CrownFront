@@ -405,7 +405,7 @@ namespace JellyGate
         private bool showShopPanel;
         private bool showSkinPanel;
         private CrownfrontShopProduct pendingPurchaseProduct;
-        private ShopCategory shopCategory = ShopCategory.Castle;
+        private ShopCategory shopCategory = ShopCategory.Supplies;
         private ShopCategory skinCategory = ShopCategory.Castle;
         private UnitArchetype skinUnit = UnitArchetype.Tank;
         private Vector2 shopScroll;
@@ -533,6 +533,7 @@ namespace JellyGate
         private const int ActiveCommandVfxFrameCount = 16;
         private readonly Dictionary<int, Sprite[]> combatVfxAnimations = new();
         private readonly Dictionary<int, Sprite[]> activeCommandVfxAnimations = new();
+        private readonly Dictionary<int, Texture2D> selectedAbilityRadialMasks = new();
         private Font koreanFont;
         private ToyVoiceBarks voiceBarks;
         private CrownfrontMonetization monetization;
@@ -795,6 +796,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaChallengeScroll284")) StartCoroutine(QaChallengeScroll284Routine());
             else if (HasCommandLineArgument("-qaEconomy300")) StartCoroutine(QaEconomy300Routine());
             else if (HasCommandLineArgument("-qaRelease301")) StartCoroutine(QaRelease301Routine());
+            else if (HasCommandLineArgument("-qaRelease302")) StartCoroutine(QaRelease302Routine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
             else if (HasCommandLineArgument("-qaActiveTacticalItemsView")) ConfigureActiveTacticalItemsPreview();
@@ -5803,8 +5805,8 @@ namespace JellyGate
             definitions[UnitArchetype.Melee] = new UnitDefinition(L("대지 망치병", "Earthshaker Guard"), "◇", 4, 138f, 34f, 4f,
                 .86f, .72f, .29f, 1.72f, new Color(1f, .42f, .35f),
                 armor: 29f, magicResistance: 20f, skillCooldown: 5.8f, physicalPenetration: 8f, magicPenetration: 1f);
-            definitions[UnitArchetype.Archer] = new UnitDefinition(L("바람길 궁수", "Gale Pathfinder"), ">", 4, 62f, 18f, 5f,
-                4.25f, .82f, .24f, 1.56f, new Color(.31f, .88f, .68f),
+            definitions[UnitArchetype.Archer] = new UnitDefinition(L("바람길 궁수", "Gale Pathfinder"), ">", 4, 62f, 17f, 5f,
+                4.25f, .86f, .24f, 1.56f, new Color(.31f, .88f, .68f),
                 armor: 10f, magicResistance: 12f, skillCooldown: 7.3f, physicalPenetration: 7f, magicPenetration: 2f);
             definitions[UnitArchetype.AreaMage] = new UnitDefinition(L("별가루 범위 마법사", "Stardust Area Mage"), "*", 6, 60f, 4f, 42f,
                 2.55f, 1.38f, .25f, 1.42f, new Color(.68f, .4f, .9f),
@@ -11058,7 +11060,7 @@ namespace JellyGate
                         castDirection, CombatVfxTier.Skill, source);
                     break;
                 case UnitArchetype.Archer:
-                    DamageEnemies(target.Position, .52f, attack * 1.78f + magic * .35f,
+                    DamageEnemies(target.Position, .52f, attack * 1.65f + magic * .35f,
                         target, source, DamageType.Physical);
                     SpawnArcherSkillVolleyEffect(source, target.Position, castDirection);
                     break;
@@ -11186,7 +11188,7 @@ namespace JellyGate
                     foreach (var enemy in enemies.Where(enemy => enemy != null && enemy.IsAlive).ToArray())
                     {
                         if (!CanUnitTargetEnemy(source, enemy)) continue;
-                        enemy.TakeDamage(attack * 2.05f + magic * .45f, source,
+                        enemy.TakeDamage(attack * 1.90f + magic * .45f, source,
                             DamageType.Physical, true);
                     }
                     break;
@@ -15929,7 +15931,11 @@ namespace JellyGate
             if (DrawPremiumButton(new Rect(actionX, actionY + buttonStep, actionWidth, buttonHeight),
                     L("\uC655\uC2E4 \uC0C1\uC810", "ROYAL SHOP"),
                     new Color(.11f, .065f, .025f, .98f), new Color(1f, .67f, .2f), true))
+            {
+                shopCategory = ShopCategory.Supplies;
+                shopScroll = Vector2.zero;
                 showShopPanel = true;
+            }
             if (DrawPremiumButton(new Rect(actionX, actionY + buttonStep * 2f, actionWidth, buttonHeight),
                     L("\uC2A4\uD0A8 \uBCF4\uAD00\uD568", "SKIN VAULT"),
                     new Color(.075f, .035f, .095f, .98f), new Color(.82f, .48f, 1f), true))
@@ -16341,13 +16347,13 @@ namespace JellyGate
 
             var categories = new[]
             {
-                ShopCategory.Castle, ShopCategory.Unit, ShopCategory.MainMenu,
-                ShopCategory.Supplies, ShopCategory.Currency, ShopCategory.Utility
+                ShopCategory.Supplies, ShopCategory.Castle, ShopCategory.Unit,
+                ShopCategory.MainMenu, ShopCategory.Currency, ShopCategory.Utility
             };
             var labels = new[]
             {
-                L("성", "CASTLE"), L("유닛", "UNITS"), L("메인", "MENU"),
-                L("아이템", "ITEMS"), L("보석", "GEMS"), L("기능", "UTILITY")
+                L("아이템", "ITEMS"), L("성", "CASTLE"), L("유닛", "UNITS"),
+                L("메인", "MENU"), L("보석", "GEMS"), L("기능", "UTILITY")
             };
             var tabGap = 5f;
             var tabWidth = (panel.width - 32f - tabGap * 2f) / 3f;
@@ -17973,23 +17979,8 @@ namespace JellyGate
             var previous = GUI.color;
             GUI.color = new Color(stat.Color.r, stat.Color.g, stat.Color.b, .94f);
             if (CircleSprite != null) GUI.DrawTexture(icon, CircleSprite.texture, ScaleMode.ScaleToFit, true);
-            GUI.color = Color.white;
-            var glyph = stat.Icon switch
-            {
-                SelectedStatIcon.Health => "♥",
-                SelectedStatIcon.Attack => "⚔",
-                SelectedStatIcon.Magic => "✦",
-                SelectedStatIcon.Armor => "⬟",
-                SelectedStatIcon.Resistance => "◆",
-                SelectedStatIcon.PhysicalPenetration => "➤",
-                SelectedStatIcon.MagicPenetration => "✧",
-                _ => "◎"
-            };
-            GUI.Label(icon, glyph, new GUIStyle(centeredStyle)
-            {
-                fontSize = 14, fontStyle = FontStyle.Bold, alignment = TextAnchor.MiddleCenter,
-                normal = { textColor = new Color(.035f, .05f, .08f) }
-            });
+            GUI.color = previous;
+            DrawSelectedStatGlyph(icon, stat.Icon, new Color(.025f, .045f, .075f, 1f));
             GUI.color = previous;
             DrawFittedLabel(new Rect(icon.xMax + 3f, rect.y + 1f, rect.xMax - icon.xMax - 4f,
                     rect.height - 2f), stat.Value,
@@ -17999,6 +17990,76 @@ namespace JellyGate
             {
                 inspectedSelectedStat = stat.Label;
                 inspectedSelectedStatUntil = Time.unscaledTime + 2.4f;
+            }
+        }
+
+        private void DrawSelectedStatGlyph(Rect rect, SelectedStatIcon icon, Color ink)
+        {
+            var center = rect.center;
+            var unit = rect.width / 25f;
+            void Solid(Rect shape, Color color)
+            {
+                var saved = GUI.color;
+                GUI.color = color;
+                GUI.DrawTexture(shape, Texture2D.whiteTexture, ScaleMode.StretchToFill, true);
+                GUI.color = saved;
+            }
+            void Rotated(Rect shape, float degrees, Color color)
+            {
+                var savedMatrix = GUI.matrix;
+                GUIUtility.RotateAroundPivot(degrees, shape.center);
+                Solid(shape, color);
+                GUI.matrix = savedMatrix;
+            }
+            void Disc(Rect shape, Color color)
+            {
+                if (CircleSprite == null) { Solid(shape, color); return; }
+                var saved = GUI.color;
+                GUI.color = color;
+                GUI.DrawTexture(shape, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+                GUI.color = saved;
+            }
+
+            switch (icon)
+            {
+                case SelectedStatIcon.Health:
+                    Disc(new Rect(center.x - 7.3f * unit, center.y - 6.2f * unit, 8.5f * unit, 8.5f * unit), ink);
+                    Disc(new Rect(center.x - 1.2f * unit, center.y - 6.2f * unit, 8.5f * unit, 8.5f * unit), ink);
+                    Rotated(new Rect(center.x - 5.4f * unit, center.y - 3.5f * unit, 10.8f * unit, 10.8f * unit), 45f, ink);
+                    break;
+                case SelectedStatIcon.Attack:
+                    Rotated(new Rect(center.x - 1.25f * unit, center.y - 8.2f * unit, 2.5f * unit, 14.8f * unit), 43f, ink);
+                    Rotated(new Rect(center.x - 4.8f * unit, center.y + 3.5f * unit, 9.6f * unit, 2.2f * unit), 43f, ink);
+                    Rotated(new Rect(center.x - 1.9f * unit, center.y + 6.2f * unit, 3.8f * unit, 4.1f * unit), 43f, ink);
+                    break;
+                case SelectedStatIcon.Magic:
+                    Rotated(new Rect(center.x - 1.5f * unit, center.y - 8.8f * unit, 3f * unit, 17.6f * unit), 0f, ink);
+                    Rotated(new Rect(center.x - 1.5f * unit, center.y - 8.8f * unit, 3f * unit, 17.6f * unit), 90f, ink);
+                    Rotated(new Rect(center.x - 3.9f * unit, center.y - 3.9f * unit, 7.8f * unit, 7.8f * unit), 45f, ink);
+                    break;
+                case SelectedStatIcon.Armor:
+                    Solid(new Rect(center.x - 6.6f * unit, center.y - 7.2f * unit, 13.2f * unit, 9.7f * unit), ink);
+                    Rotated(new Rect(center.x - 4.7f * unit, center.y - 2.2f * unit, 9.4f * unit, 9.4f * unit), 45f, ink);
+                    Solid(new Rect(center.x - 2.1f * unit, center.y - 6.2f * unit, 1.8f * unit, 9.5f * unit), new Color(1f, 1f, 1f, .55f));
+                    break;
+                case SelectedStatIcon.Resistance:
+                    Rotated(new Rect(center.x - 6.6f * unit, center.y - 6.6f * unit, 13.2f * unit, 13.2f * unit), 45f, ink);
+                    Rotated(new Rect(center.x - 2.7f * unit, center.y - 2.7f * unit, 5.4f * unit, 5.4f * unit), 45f, new Color(1f, 1f, 1f, .65f));
+                    break;
+                case SelectedStatIcon.PhysicalPenetration:
+                    Solid(new Rect(center.x - 8.2f * unit, center.y - 1.35f * unit, 12.8f * unit, 2.7f * unit), ink);
+                    Rotated(new Rect(center.x + 2.1f * unit, center.y - 5.2f * unit, 7.5f * unit, 2.4f * unit), 45f, ink);
+                    Rotated(new Rect(center.x + 2.1f * unit, center.y + 2.8f * unit, 7.5f * unit, 2.4f * unit), -45f, ink);
+                    break;
+                case SelectedStatIcon.MagicPenetration:
+                    Rotated(new Rect(center.x - 6.4f * unit, center.y - 6.4f * unit, 12.8f * unit, 12.8f * unit), 45f, ink);
+                    Solid(new Rect(center.x - 8.6f * unit, center.y - 1.1f * unit, 17.2f * unit, 2.2f * unit), new Color(1f, 1f, 1f, .72f));
+                    break;
+                default:
+                    Disc(new Rect(center.x - 7.8f * unit, center.y - 7.8f * unit, 15.6f * unit, 15.6f * unit), ink);
+                    Disc(new Rect(center.x - 4.5f * unit, center.y - 4.5f * unit, 9f * unit, 9f * unit), new Color(1f, 1f, 1f, .76f));
+                    Disc(new Rect(center.x - 1.7f * unit, center.y - 1.7f * unit, 3.4f * unit, 3.4f * unit), ink);
+                    break;
             }
         }
 
@@ -18031,6 +18092,8 @@ namespace JellyGate
         {
             if (rect.width <= 0f || unit == null) return false;
             var slot = ultimate ? 1 : 0;
+            var remaining = ultimate ? unit.UltimateCooldownRemaining : unit.SkillCooldownRemaining;
+            var duration = ultimate ? unit.UltimateCooldownDuration : unit.SkillCooldownDuration;
             var accent = ultimate
                 ? new Color(1f, .68f, .18f)
                 : new Color(.36f, .82f, 1f);
@@ -18042,12 +18105,17 @@ namespace JellyGate
             var inner = new Rect(iconRect.x + 3f, iconRect.y + 3f, iconRect.width - 6f, iconRect.height - 6f);
             GUI.color = new Color(.025f, .045f, .075f, .98f);
             if (CircleSprite != null) GUI.DrawTexture(inner, CircleSprite.texture, ScaleMode.ScaleToFit, true);
-            GUI.color = enabled ? Color.white : new Color(.58f, .61f, .68f);
+            GUI.color = remaining > 0f || !enabled ? new Color(.38f, .41f, .48f) : Color.white;
             DrawUnitAbilityAtlasCell(new Rect(inner.x + 3f, inner.y + 3f,
                 inner.width - 6f, inner.height - 6f), unit.Archetype, ultimate);
+            if (remaining > 0f)
+            {
+                var recovery = 1f - Mathf.Clamp01(remaining / Mathf.Max(.1f, duration));
+                GUI.color = new Color(accent.r, accent.g, accent.b, .58f);
+                GUI.DrawTexture(inner, SelectedAbilityRadialMask(recovery), ScaleMode.ScaleToFit, true);
+            }
             GUI.color = previous;
 
-            var remaining = ultimate ? unit.UltimateCooldownRemaining : unit.SkillCooldownRemaining;
             if (remaining > 0f)
                 GUI.Label(inner, $"{remaining:0}", new GUIStyle(centeredStyle) { fontSize = 12,
                     fontStyle = FontStyle.Bold, alignment = TextAnchor.MiddleCenter,
@@ -18077,6 +18145,40 @@ namespace JellyGate
             return ultimate && enabled && clicked;
         }
 
+        private Texture2D SelectedAbilityRadialMask(float progress)
+        {
+            const int steps = 60;
+            const int size = 64;
+            var bucket = Mathf.Clamp(Mathf.RoundToInt(progress * steps), 0, steps);
+            if (selectedAbilityRadialMasks.TryGetValue(bucket, out var cached) && cached != null)
+                return cached;
+            var texture = new Texture2D(size, size, TextureFormat.RGBA32, false)
+            {
+                name = $"Ability Cooldown Radial {bucket}",
+                filterMode = FilterMode.Bilinear,
+                wrapMode = TextureWrapMode.Clamp,
+                hideFlags = HideFlags.HideAndDontSave
+            };
+            var pixels = new Color32[size * size];
+            var limit = bucket / (float)steps * Mathf.PI * 2f;
+            var center = (size - 1f) * .5f;
+            var radius = size * .485f;
+            for (var y = 0; y < size; y++)
+            for (var x = 0; x < size; x++)
+            {
+                var dx = x - center;
+                var dy = y - center;
+                if (dx * dx + dy * dy > radius * radius) continue;
+                var clockwiseFromTop = Mathf.Atan2(dx, dy);
+                if (clockwiseFromTop < 0f) clockwiseFromTop += Mathf.PI * 2f;
+                if (clockwiseFromTop <= limit) pixels[y * size + x] = new Color32(255, 255, 255, 255);
+            }
+            texture.SetPixels32(pixels);
+            texture.Apply(false, true);
+            selectedAbilityRadialMasks[bucket] = texture;
+            return texture;
+        }
+
         private void DrawUnitAbilityAtlasCell(Rect rect, UnitArchetype archetype, bool ultimate)
         {
             if (unitSkillIconAtlasTexture == null)
@@ -18101,17 +18203,47 @@ namespace JellyGate
             var ultimate = inspectedUnitAbilitySlot == 1;
             if (ultimate && !unit.IsHero) return;
             var name = ultimate ? unit.UltimateName : unit.SkillName;
-            var prefix = ultimate ? L("궁극기", "ULTIMATE") : L("자동 스킬", "AUTO SKILL");
-            var tooltip = new Rect(statusRect.x + 8f, statusRect.y - 43f, statusRect.width - 16f, 39f);
+            var prefix = ultimate ? L("궁극기", "ULTIMATE") : L("스킬", "SKILL");
+            var tooltip = new Rect(statusRect.x + 8f, statusRect.y - 81f, statusRect.width - 16f, 77f);
             DrawOrnatePanel(tooltip, new Color(.018f, .035f, .07f, .985f),
                 ultimate ? new Color(1f, .69f, .2f) : new Color(.42f, .82f, 1f), 2f);
-            DrawFittedLabel(new Rect(tooltip.x + 9f, tooltip.y + 3f,
-                    tooltip.width - 18f, tooltip.height - 6f), $"{prefix} · {name}",
-                new GUIStyle(centeredStyle)
-                {
-                    alignment = TextAnchor.MiddleCenter,
-                    fontStyle = FontStyle.Bold
-                }, 10);
+            DrawFittedLabel(new Rect(tooltip.x + 11f, tooltip.y + 5f,
+                    tooltip.width - 22f, 26f), $"{prefix} : {name}",
+                new GUIStyle(centeredStyle) { alignment = TextAnchor.MiddleLeft, fontStyle = FontStyle.Bold }, 11);
+            DrawFittedWrappedLabel(new Rect(tooltip.x + 11f, tooltip.y + 32f,
+                    tooltip.width - 22f, 37f), SelectedUnitAbilitySummary(unit.Archetype, ultimate),
+                new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft, wordWrap = true,
+                    clipping = TextClipping.Clip }, 9);
+        }
+
+        private static string SelectedUnitAbilitySummary(UnitArchetype archetype, bool ultimate)
+        {
+            if (!ultimate) return archetype switch
+            {
+                UnitArchetype.Tank => L("방패를 세워 자신이 받는 피해를 줄입니다.", "BRACES THE SHIELD TO REDUCE INCOMING DAMAGE."),
+                UnitArchetype.Melee => L("주변 적의 갑주를 부수는 회전 강타입니다.", "A SWEEPING BLOW THAT BREAKS NEARBY ARMOR."),
+                UnitArchetype.Archer => L("직선상의 적을 꿰뚫는 빠른 연사입니다.", "A RAPID VOLLEY THAT PIERCES A STRAIGHT LINE."),
+                UnitArchetype.AreaMage => L("넓은 지역에 별무리 폭발을 일으킵니다.", "DETONATES A STAR CLUSTER OVER A WIDE AREA."),
+                UnitArchetype.SingleMage => L("한 대상에게 강한 수정창을 발사합니다.", "FIRES A POWERFUL CRYSTAL LANCE AT ONE TARGET."),
+                UnitArchetype.Bombardier => L("목표 지역을 여러 차례 포격합니다.", "BOMBARDS THE TARGET AREA SEVERAL TIMES."),
+                UnitArchetype.Lancer => L("적진을 가르며 경로의 적을 공격합니다.", "CHARGES THROUGH ENEMIES ALONG ITS PATH."),
+                UnitArchetype.Druid => L("주변 아군을 보호하는 꽃잎 결계를 펼칩니다.", "RAISES A PETAL WARD AROUND NEARBY ALLIES."),
+                UnitArchetype.Musketeer => L("한 대상에게 정밀 일제사격을 가합니다.", "DELIVERS A PRECISE VOLLEY TO ONE TARGET."),
+                _ => L("달빛 파동으로 적을 치고 가까운 아군을 돕습니다.", "STRIKES WITH MOONLIGHT AND AIDS NEARBY ALLIES.")
+            };
+            return archetype switch
+            {
+                UnitArchetype.Tank => L("성스러운 방벽으로 자신을 강하게 보호합니다.", "SURROUNDS ITSELF WITH A POWERFUL SACRED BARRIER."),
+                UnitArchetype.Melee => L("주변 전장을 연속 강타로 휩씁니다.", "SWEEPS THE NEARBY FIELD WITH REPEATED BLOWS."),
+                UnitArchetype.Archer => L("전장 전역의 적에게 금빛 화살비를 내립니다.", "RAINS GOLDEN ARROWS ON ENEMIES ACROSS THE FIELD."),
+                UnitArchetype.AreaMage => L("거대한 별을 떨어뜨려 넓은 지역을 덮칩니다.", "DROPS A MASSIVE STAR ACROSS A WIDE AREA."),
+                UnitArchetype.SingleMage => L("결정적인 한 발의 절대 수정창을 발사합니다.", "FIRES ONE DECISIVE ABSOLUTE CRYSTAL LANCE."),
+                UnitArchetype.Bombardier => L("모든 포신을 열어 집중 포격합니다.", "OPENS EVERY BARREL FOR A CONCENTRATED SALVO."),
+                UnitArchetype.Lancer => L("적이 가장 밀집한 곳을 돌파합니다.", "DIVES THROUGH THE DENSEST ENEMY FORMATION."),
+                UnitArchetype.Druid => L("아군을 감싸는 만개한 성역을 만듭니다.", "CREATES A BLOOMING SANCTUARY AROUND ALLIES."),
+                UnitArchetype.Musketeer => L("핵심 적에게 강력한 세 발을 연속 사격합니다.", "FIRES THREE POWERFUL SHOTS AT A PRIORITY TARGET."),
+                _ => L("보름달의 힘으로 전장을 심판합니다.", "JUDGES THE FIELD WITH THE POWER OF THE FULL MOON.")
+            };
         }
 
         private SelectedStatCell[] SelectedUnitStatCellModels(PlayerUnit unit)
@@ -18268,7 +18400,10 @@ namespace JellyGate
         {
             var rect = SelectedUnitStatusRect();
             if (rect.width <= 0f) return Rect.zero;
-            return new Rect(rect.x + 10f, rect.y + 33f, rect.width - 76f, rect.height - 55f);
+            var actionWidth = selectedUnits.Count == 1 && selectedUnits[0] != null && selectedUnits[0].IsHero
+                ? 126f
+                : 72f;
+            return new Rect(rect.x + 10f, rect.y + 33f, rect.width - actionWidth, rect.height - 55f);
         }
 
         private static float SelectedUnitActionColumnWidth(Rect statusRect) =>
@@ -18278,9 +18413,11 @@ namespace JellyGate
         {
             if (selectedUnits.Count != 1 || selectedUnits[0] == null) return Rect.zero;
             var rect = SelectedUnitStatusRect();
-            const float size = 39f;
-            var y = selectedUnits[0].IsHero ? rect.y + 32f : rect.y + 45f;
-            return new Rect(rect.xMax - size - 14f, y, size, size);
+            var hero = selectedUnits[0].IsHero;
+            var size = hero ? 40f : 44f;
+            var x = hero ? rect.xMax - 14f - 52f - 8f - size : rect.xMax - size - 14f;
+            var y = hero ? rect.y + 43f : rect.y + 40f;
+            return new Rect(x, y, size, size);
         }
 
         private Rect SelectedUnitUltimateRect()
@@ -18288,8 +18425,8 @@ namespace JellyGate
             if (selectedUnits.Count != 1 || selectedUnits[0] == null || !selectedUnits[0].IsHero)
                 return Rect.zero;
             var rect = SelectedUnitStatusRect();
-            const float size = 39f;
-            return new Rect(rect.xMax - size - 14f, rect.y + 73f, size, size);
+            const float size = 52f;
+            return new Rect(rect.xMax - size - 14f, rect.y + 37f, size, size);
         }
 
         private Rect AugmentSummaryRect() =>

@@ -301,6 +301,7 @@ namespace JellyGate
         };
 
         public float SkillCooldownRemaining => Mathf.Max(0f, skillCooldownRemaining);
+        public float SkillCooldownDuration => Mathf.Max(.1f, definition.SkillCooldown);
         public float UltimateCooldownRemaining => Mathf.Max(0f, ultimateCooldownRemaining);
         public float UltimateCooldownDuration => Archetype switch
         {
