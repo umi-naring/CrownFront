@@ -79,14 +79,14 @@ namespace JellyGate
             Add(TacticalItemId.ReviveTicket, "전선 복귀권", "FRONT RETURN TOKEN",
                 "패배 시 이번 전선에서 한 번, 1~3라운드 전 편성으로 복귀합니다.",
                 "Once per run, return to a formation from 1–3 rounds earlier after defeat.",
-                200, 9, false, new Color(.42f, .9f, .82f));
+                200, 11, false, new Color(.42f, .9f, .82f));
             Add(TacticalItemId.TacticalReroll, "증강 재정비권", "AUGMENT REROLL",
                 "증강 선택지를 같은 등급 안에서 한 번 다시 구성합니다.",
                 "Reroll the current choices once within the same augment tier.",
                 80, 7, false, new Color(.68f, .52f, 1f));
             Add(TacticalItemId.FieldAid, "야전 구호품", "FIELD AID",
-                "전투 화면에서 사용하면 생존 유닛의 체력을 12% 회복합니다. 전선당 최대 2회.",
-                "Use in battle to heal surviving units by 12%. Maximum twice per run.",
+                "전투 화면에서 사용하면 생존 유닛의 체력을 60% 회복합니다. 전선당 최대 2회.",
+                "Use in battle to heal surviving units by 60%. Maximum twice per run.",
                 100, 8, false, new Color(.38f, 1f, .68f));
             Add(TacticalItemId.FateCompass, "운명의 나침반", "COMPASS OF FATE",
                 "이번 전선의 상위 등급 증강 가중치를 3%p 높입니다.",

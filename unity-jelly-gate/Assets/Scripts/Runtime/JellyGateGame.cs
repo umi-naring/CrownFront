@@ -534,6 +534,9 @@ namespace JellyGate
         private readonly Dictionary<int, Sprite[]> combatVfxAnimations = new();
         private readonly Dictionary<int, Sprite[]> activeCommandVfxAnimations = new();
         private readonly Dictionary<int, Texture2D> selectedAbilityRadialMasks = new();
+        private readonly Dictionary<int, Texture2D> selectedAbilityIconTextures = new();
+        private int selectedAbilityMaskVerifiedCount;
+        private bool selectedAbilityMaskPixelsValid = true;
         private Font koreanFont;
         private ToyVoiceBarks voiceBarks;
         private CrownfrontMonetization monetization;
@@ -797,6 +800,8 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaEconomy300")) StartCoroutine(QaEconomy300Routine());
             else if (HasCommandLineArgument("-qaRelease301")) StartCoroutine(QaRelease301Routine());
             else if (HasCommandLineArgument("-qaRelease302")) StartCoroutine(QaRelease302Routine());
+            else if (HasCommandLineArgument("-qaRelease303")) StartCoroutine(QaRelease303Routine());
+            else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
             else if (HasCommandLineArgument("-qaActiveTacticalItemsView")) ConfigureActiveTacticalItemsPreview();
@@ -5808,27 +5813,27 @@ namespace JellyGate
             definitions[UnitArchetype.Archer] = new UnitDefinition(L("바람길 궁수", "Gale Pathfinder"), ">", 4, 62f, 17f, 5f,
                 4.25f, .86f, .24f, 1.56f, new Color(.31f, .88f, .68f),
                 armor: 10f, magicResistance: 12f, skillCooldown: 7.3f, physicalPenetration: 7f, magicPenetration: 2f);
-            definitions[UnitArchetype.AreaMage] = new UnitDefinition(L("별가루 범위 마법사", "Stardust Area Mage"), "*", 6, 60f, 4f, 42f,
+            definitions[UnitArchetype.AreaMage] = new UnitDefinition(L("별가루 범위 마법사", "Stardust Area Mage"), "*", 6, 64f, 4f, 44f,
                 2.55f, 1.38f, .25f, 1.42f, new Color(.68f, .4f, .9f),
                 1.45f, 8f, 36f, 5.8f, 1f, 8f);
-            definitions[UnitArchetype.SingleMage] = new UnitDefinition(L("유리구슬 단일 마법사", "Glass Orb Mage"), "●", 5, 54f, 4f, 72f,
+            definitions[UnitArchetype.SingleMage] = new UnitDefinition(L("유리구슬 단일 마법사", "Glass Orb Mage"), "●", 5, 58f, 4f, 68f,
                 3.25f, 1.62f, .24f, 1.49f, new Color(.25f, .65f, .94f),
-                armor: 7f, magicResistance: 38f, skillCooldown: 6.8f, physicalPenetration: 1f, magicPenetration: 11f);
-            definitions[UnitArchetype.Bombardier] = new UnitDefinition(L("시계태엽 포병", "Clockwork Bombardier"), "✹", 7, 76f, 32f, 20f,
-                4.55f, 1.12f, .26f, 1.36f, new Color(.88f, .63f, .22f),
-                .66f, 16f, 22f, 7.6f, 5f, 5f);
-            definitions[UnitArchetype.Lancer] = new UnitDefinition(L("용맥 창기병", "Dragonvein Lancer"), "▲", 6, 165f, 44f, 6f,
-                1.02f, .64f, .28f, 1.90f, new Color(.2f, .82f, .7f),
-                armor: 34f, magicResistance: 28f, skillCooldown: 5.0f, physicalPenetration: 10f, magicPenetration: 1f);
-            definitions[UnitArchetype.Druid] = new UnitDefinition(L("숲의 정령술사", "Grove Spiritcaller"), "✦", 7, 68f, 5f, 51f,
+                armor: 7f, magicResistance: 38f, skillCooldown: 6.9f, physicalPenetration: 1f, magicPenetration: 11f);
+            definitions[UnitArchetype.Bombardier] = new UnitDefinition(L("시계태엽 포병", "Clockwork Bombardier"), "✹", 7, 82f, 35f, 24f,
+                4.55f, 1.08f, .26f, 1.36f, new Color(.88f, .63f, .22f),
+                .72f, 18f, 24f, 7.2f, 6f, 6f);
+            definitions[UnitArchetype.Lancer] = new UnitDefinition(L("용맥 창기병", "Dragonvein Lancer"), "▲", 6, 172f, 38f, 6f,
+                1.00f, .70f, .28f, 1.86f, new Color(.2f, .82f, .7f),
+                armor: 35f, magicResistance: 29f, skillCooldown: 5.4f, physicalPenetration: 10f, magicPenetration: 1f);
+            definitions[UnitArchetype.Druid] = new UnitDefinition(L("숲의 정령술사", "Grove Spiritcaller"), "✦", 7, 74f, 5f, 55f,
                 3.35f, 1.28f, .24f, 1.42f, new Color(.48f, .92f, .6f),
-                .82f, 10f, 42f, 6.0f, 1f, 7f);
-            definitions[UnitArchetype.Musketeer] = new UnitDefinition(L("왕실 머스킷병", "Royal Musketeer"), "✦", 7, 66f, 41f, 4f,
-                4.25f, .98f, .25f, 1.44f, new Color(.98f, .72f, .24f),
-                armor: 12f, magicResistance: 14f, skillCooldown: 7.0f, physicalPenetration: 12f, magicPenetration: 1f);
-            definitions[UnitArchetype.Oracle] = new UnitDefinition(L("달빛 예언자", "Moonlight Oracle"), "◈", 8, 68f, 4f, 61f,
+                .86f, 11f, 44f, 5.8f, 1f, 8f);
+            definitions[UnitArchetype.Musketeer] = new UnitDefinition(L("왕실 머스킷병", "Royal Musketeer"), "✦", 7, 70f, 43f, 4f,
+                4.25f, .96f, .25f, 1.44f, new Color(.98f, .72f, .24f),
+                armor: 13f, magicResistance: 15f, skillCooldown: 7.0f, physicalPenetration: 12f, magicPenetration: 1f);
+            definitions[UnitArchetype.Oracle] = new UnitDefinition(L("달빛 예언자", "Moonlight Oracle"), "◈", 8, 80f, 4f, 68f,
                 3.80f, 1.28f, .24f, 1.38f, new Color(.42f, .78f, 1f),
-                1.05f, 9f, 48f, 6.2f, 1f, 10f);
+                1.10f, 11f, 50f, 5.9f, 1f, 11f);
         }
 
         private void LoadCharacterSprites()
@@ -15453,7 +15458,7 @@ namespace JellyGate
                 pixels[y * size + x] = new Color(1f, 1f, 1f, alpha * edge);
             }
             texture.SetPixels(pixels);
-            texture.Apply(false, true);
+            texture.Apply();
             return Sprite.Create(texture, new Rect(0, 0, size, size), new Vector2(.5f, .5f), size);
         }
 
@@ -17974,13 +17979,40 @@ namespace JellyGate
 
         private void DrawSelectedUnitStatCell(Rect rect, SelectedStatCell stat)
         {
-            var iconSize = Mathf.Min(25f, rect.height - 4f);
+            var iconSize = Mathf.Min(27f, rect.height - 3f);
             var icon = new Rect(rect.x + 1f, rect.center.y - iconSize * .5f, iconSize, iconSize);
             var previous = GUI.color;
-            GUI.color = new Color(stat.Color.r, stat.Color.g, stat.Color.b, .94f);
-            if (CircleSprite != null) GUI.DrawTexture(icon, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+            if (CircleSprite != null)
+            {
+                GUI.color = new Color(0f, 0f, 0f, .55f);
+                GUI.DrawTexture(new Rect(icon.x + 1.5f, icon.y + 2f, icon.width, icon.height),
+                    CircleSprite.texture, ScaleMode.ScaleToFit, true);
+                GUI.color = new Color(.025f, .045f, .075f, 1f);
+                GUI.DrawTexture(icon, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+                var enamel = new Rect(icon.x + 2.2f, icon.y + 2.2f, icon.width - 4.4f, icon.height - 4.4f);
+                GUI.color = Color.Lerp(stat.Color, new Color(.025f, .055f, .09f), .46f);
+                GUI.DrawTexture(enamel, CircleSprite.texture, ScaleMode.ScaleToFit, true);
+                if (GlowSprite != null)
+                {
+                    GUI.color = new Color(stat.Color.r, stat.Color.g, stat.Color.b, .28f);
+                    GUI.DrawTexture(enamel, GlowSprite.texture, ScaleMode.ScaleToFit, true);
+                }
+                if (CommandRingSprite != null)
+                {
+                    GUI.color = new Color(stat.Color.r, stat.Color.g, stat.Color.b, .96f);
+                    GUI.DrawTexture(icon, CommandRingSprite.texture, ScaleMode.ScaleToFit, true);
+                }
+            }
             GUI.color = previous;
-            DrawSelectedStatGlyph(icon, stat.Icon, new Color(.025f, .045f, .075f, 1f));
+            DrawSelectedStatGlyph(new Rect(icon.x + .8f, icon.y + 1.1f, icon.width, icon.height), stat.Icon,
+                new Color(.005f, .012f, .025f, .8f));
+            DrawSelectedStatGlyph(icon, stat.Icon, new Color(1f, .96f, .78f, 1f));
+            if (CircleSprite != null)
+            {
+                GUI.color = new Color(1f, 1f, 1f, .75f);
+                GUI.DrawTexture(new Rect(icon.x + icon.width * .26f, icon.y + icon.height * .19f,
+                    icon.width * .13f, icon.height * .13f), CircleSprite.texture, ScaleMode.ScaleToFit, true);
+            }
             GUI.color = previous;
             DrawFittedLabel(new Rect(icon.xMax + 3f, rect.y + 1f, rect.xMax - icon.xMax - 4f,
                     rect.height - 2f), stat.Value,
@@ -18038,27 +18070,38 @@ namespace JellyGate
                     Rotated(new Rect(center.x - 3.9f * unit, center.y - 3.9f * unit, 7.8f * unit, 7.8f * unit), 45f, ink);
                     break;
                 case SelectedStatIcon.Armor:
-                    Solid(new Rect(center.x - 6.6f * unit, center.y - 7.2f * unit, 13.2f * unit, 9.7f * unit), ink);
-                    Rotated(new Rect(center.x - 4.7f * unit, center.y - 2.2f * unit, 9.4f * unit, 9.4f * unit), 45f, ink);
-                    Solid(new Rect(center.x - 2.1f * unit, center.y - 6.2f * unit, 1.8f * unit, 9.5f * unit), new Color(1f, 1f, 1f, .55f));
+                    Solid(new Rect(center.x - 6.8f * unit, center.y - 7.5f * unit, 13.6f * unit, 9.8f * unit), ink);
+                    Rotated(new Rect(center.x - 4.9f * unit, center.y - 2.4f * unit, 9.8f * unit, 9.8f * unit), 45f, ink);
+                    Solid(new Rect(center.x - 1.1f * unit, center.y - 5.8f * unit, 2.2f * unit, 10.2f * unit),
+                        new Color(.08f, .13f, .19f, .82f));
                     break;
                 case SelectedStatIcon.Resistance:
                     Rotated(new Rect(center.x - 6.6f * unit, center.y - 6.6f * unit, 13.2f * unit, 13.2f * unit), 45f, ink);
-                    Rotated(new Rect(center.x - 2.7f * unit, center.y - 2.7f * unit, 5.4f * unit, 5.4f * unit), 45f, new Color(1f, 1f, 1f, .65f));
+                    Rotated(new Rect(center.x - 3.3f * unit, center.y - 3.3f * unit, 6.6f * unit, 6.6f * unit), 45f,
+                        new Color(.07f, .14f, .2f, .92f));
+                    Disc(new Rect(center.x - 1.9f * unit, center.y - 1.9f * unit, 3.8f * unit, 3.8f * unit), ink);
                     break;
                 case SelectedStatIcon.PhysicalPenetration:
-                    Solid(new Rect(center.x - 8.2f * unit, center.y - 1.35f * unit, 12.8f * unit, 2.7f * unit), ink);
-                    Rotated(new Rect(center.x + 2.1f * unit, center.y - 5.2f * unit, 7.5f * unit, 2.4f * unit), 45f, ink);
-                    Rotated(new Rect(center.x + 2.1f * unit, center.y + 2.8f * unit, 7.5f * unit, 2.4f * unit), -45f, ink);
+                    Rotated(new Rect(center.x - 5.4f * unit, center.y - 5.4f * unit, 10.8f * unit, 10.8f * unit), 45f, ink);
+                    Rotated(new Rect(center.x - 3.1f * unit, center.y - 3.1f * unit, 6.2f * unit, 6.2f * unit), 45f,
+                        new Color(.07f, .13f, .18f, .95f));
+                    Solid(new Rect(center.x - 8.5f * unit, center.y - 1.25f * unit, 13.8f * unit, 2.5f * unit), ink);
+                    Rotated(new Rect(center.x + 2.6f * unit, center.y - 5.1f * unit, 7.2f * unit, 2.4f * unit), 45f, ink);
+                    Rotated(new Rect(center.x + 2.6f * unit, center.y + 2.7f * unit, 7.2f * unit, 2.4f * unit), -45f, ink);
                     break;
                 case SelectedStatIcon.MagicPenetration:
                     Rotated(new Rect(center.x - 6.4f * unit, center.y - 6.4f * unit, 12.8f * unit, 12.8f * unit), 45f, ink);
-                    Solid(new Rect(center.x - 8.6f * unit, center.y - 1.1f * unit, 17.2f * unit, 2.2f * unit), new Color(1f, 1f, 1f, .72f));
+                    Rotated(new Rect(center.x - 3.2f * unit, center.y - 3.2f * unit, 6.4f * unit, 6.4f * unit), 45f,
+                        new Color(.07f, .12f, .19f, .94f));
+                    Rotated(new Rect(center.x - 8.3f * unit, center.y - 1.25f * unit, 16.6f * unit, 2.5f * unit), -35f, ink);
                     break;
                 default:
                     Disc(new Rect(center.x - 7.8f * unit, center.y - 7.8f * unit, 15.6f * unit, 15.6f * unit), ink);
-                    Disc(new Rect(center.x - 4.5f * unit, center.y - 4.5f * unit, 9f * unit, 9f * unit), new Color(1f, 1f, 1f, .76f));
+                    Disc(new Rect(center.x - 5.0f * unit, center.y - 5.0f * unit, 10f * unit, 10f * unit),
+                        new Color(.07f, .13f, .19f, .95f));
                     Disc(new Rect(center.x - 1.7f * unit, center.y - 1.7f * unit, 3.4f * unit, 3.4f * unit), ink);
+                    Solid(new Rect(center.x - 9f * unit, center.y - .85f * unit, 18f * unit, 1.7f * unit), ink);
+                    Solid(new Rect(center.x - .85f * unit, center.y - 9f * unit, 1.7f * unit, 18f * unit), ink);
                     break;
             }
         }
@@ -18100,19 +18143,28 @@ namespace JellyGate
             if (!enabled) accent = new Color(.35f, .39f, .48f);
             var iconRect = rect;
             var previous = GUI.color;
+            GUI.color = new Color(0f, 0f, 0f, .62f);
+            if (CircleSprite != null) GUI.DrawTexture(new Rect(rect.x + 2f, rect.y + 2.5f, rect.width, rect.height),
+                CircleSprite.texture, ScaleMode.ScaleToFit, true);
             GUI.color = accent;
             if (CircleSprite != null) GUI.DrawTexture(iconRect, CircleSprite.texture, ScaleMode.ScaleToFit, true);
             var inner = new Rect(iconRect.x + 3f, iconRect.y + 3f, iconRect.width - 6f, iconRect.height - 6f);
             GUI.color = new Color(.025f, .045f, .075f, .98f);
             if (CircleSprite != null) GUI.DrawTexture(inner, CircleSprite.texture, ScaleMode.ScaleToFit, true);
             GUI.color = remaining > 0f || !enabled ? new Color(.38f, .41f, .48f) : Color.white;
-            DrawUnitAbilityAtlasCell(new Rect(inner.x + 3f, inner.y + 3f,
-                inner.width - 6f, inner.height - 6f), unit.Archetype, ultimate);
+            var artInset = ultimate ? 1.5f : 2.5f;
+            DrawUnitAbilityAtlasCell(new Rect(inner.x + artInset, inner.y + artInset,
+                inner.width - artInset * 2f, inner.height - artInset * 2f), unit.Archetype, ultimate);
             if (remaining > 0f)
             {
                 var recovery = 1f - Mathf.Clamp01(remaining / Mathf.Max(.1f, duration));
                 GUI.color = new Color(accent.r, accent.g, accent.b, .58f);
                 GUI.DrawTexture(inner, SelectedAbilityRadialMask(recovery), ScaleMode.ScaleToFit, true);
+            }
+            if (CommandRingSprite != null)
+            {
+                GUI.color = new Color(accent.r, accent.g, accent.b, ultimate ? .98f : .86f);
+                GUI.DrawTexture(iconRect, CommandRingSprite.texture, ScaleMode.ScaleToFit, true);
             }
             GUI.color = previous;
 
@@ -18187,6 +18239,12 @@ namespace JellyGate
                 return;
             }
             var index = Mathf.Clamp((int)archetype - 1, 0, 9) + (ultimate ? 10 : 0);
+            var clipped = SelectedAbilityIconTexture(index);
+            if (clipped != null)
+            {
+                GUI.DrawTexture(rect, clipped, ScaleMode.ScaleToFit, true);
+                return;
+            }
             const float columns = 5f;
             const float rows = 4f;
             var column = index % 5;
@@ -18194,6 +18252,55 @@ namespace JellyGate
             var uv = new Rect(column / columns, 1f - (rowFromTop + 1f) / rows,
                 1f / columns, 1f / rows);
             GUI.DrawTextureWithTexCoords(rect, unitSkillIconAtlasTexture, uv, true);
+        }
+
+        private Texture2D SelectedAbilityIconTexture(int index)
+        {
+            if (selectedAbilityIconTextures.TryGetValue(index, out var cached) && cached != null) return cached;
+            if (unitSkillIconAtlasTexture == null || !unitSkillIconAtlasTexture.isReadable) return null;
+            const int columns = 5;
+            const int rows = 4;
+            const int outputSize = 128;
+            var column = index % columns;
+            var rowFromTop = index / columns;
+            var uMin = column / (float)columns;
+            var uMax = (column + 1f) / columns;
+            var vMin = 1f - (rowFromTop + 1f) / rows;
+            var vMax = 1f - rowFromTop / (float)rows;
+            var texture = new Texture2D(outputSize, outputSize, TextureFormat.RGBA32, false)
+            {
+                name = $"Circular Ability Icon {index}",
+                filterMode = FilterMode.Bilinear,
+                wrapMode = TextureWrapMode.Clamp,
+                hideFlags = HideFlags.HideAndDontSave
+            };
+            var pixels = new Color[outputSize * outputSize];
+            for (var y = 0; y < outputSize; y++)
+            for (var x = 0; x < outputSize; x++)
+            {
+                var nx = (x + .5f) / outputSize;
+                var ny = (y + .5f) / outputSize;
+                var dx = nx - .5f;
+                var dy = ny - .5f;
+                var distance = Mathf.Sqrt(dx * dx + dy * dy);
+                if (distance >= .472f) continue;
+                var sample = unitSkillIconAtlasTexture.GetPixelBilinear(
+                    Mathf.Lerp(uMin, uMax, nx), Mathf.Lerp(vMin, vMax, ny));
+                sample.a = Mathf.Clamp01((.472f - distance) / .018f);
+                pixels[y * outputSize + x] = sample;
+            }
+            texture.SetPixels(pixels);
+            var centerPixel = pixels[(outputSize / 2) * outputSize + outputSize / 2];
+            selectedAbilityMaskPixelsValid &= pixels[0].a <= .01f &&
+                                              pixels[outputSize - 1].a <= .01f &&
+                                              pixels[(outputSize - 1) * outputSize].a <= .01f &&
+                                              pixels[pixels.Length - 1].a <= .01f &&
+                                              centerPixel.a >= .98f;
+            selectedAbilityMaskVerifiedCount++;
+            // The CPU copy is no longer needed after validating the generated alpha silhouette.
+            texture.Apply(false, true);
+            selectedAbilityIconTextures[index] = texture;
+            return texture;
         }
 
         private void DrawSelectedUnitAbilityTooltip(Rect statusRect, PlayerUnit unit)

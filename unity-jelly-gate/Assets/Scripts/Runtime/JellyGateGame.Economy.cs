@@ -368,7 +368,7 @@ namespace JellyGate
                 Phase is GamePhase.Defeat or GamePhase.Victory || !economy.TryConsume(TacticalItemId.FieldAid))
                 return false;
             foreach (var unit in units)
-                if (unit != null && unit.IsAlive) unit.RestoreHealth(unit.MaxHealth * .12f);
+                if (unit != null && unit.IsAlive) unit.RestoreHealth(unit.MaxHealth * .60f);
             fieldAidUsesThisRun++;
             usedAnyTacticalItemThisRun = true;
             inspectedRunItem = (int)TacticalItemId.FieldAid;
@@ -385,17 +385,95 @@ namespace JellyGate
             var screen = new Rect(0f, 0f, GuiWidth, GuiHeight);
             var elapsed = Time.unscaledTime - sortieGateTransitionStartedAt;
             var opening = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((elapsed - .24f) / 1.05f));
-            DrawPanel(screen, new Color(.01f, .02f, .04f, Mathf.Lerp(.82f, 0f, opening)));
+            // The sortie is a dedicated stage beat. Keeping a true black matte behind the doors
+            // prevents the busy menu illustration from leaking through the opening and gives the
+            // short animation the same visual authority on bright and dark menu skins.
+            DrawPanel(screen, Color.black);
             var doorWidth = GuiWidth * .51f;
             var slide = opening * (doorWidth + 12f);
             var left = new Rect(-slide, 0f, doorWidth, GuiHeight);
             var right = new Rect(GuiWidth - doorWidth + slide, 0f, doorWidth, GuiHeight);
-            DrawOrnatePanel(left, new Color(.055f, .075f, .11f, 1f), new Color(.95f, .72f, .24f), 5f);
-            DrawOrnatePanel(right, new Color(.055f, .075f, .11f, 1f), new Color(.95f, .72f, .24f), 5f);
-            var glow = new Rect(GuiWidth * .5f - 16f - opening * 70f, 0f, 32f + opening * 140f, GuiHeight);
-            DrawPanel(glow, new Color(1f, .88f, .58f, Mathf.Clamp01(.55f - opening * .4f)));
-            DrawFittedLabel(new Rect(20f, GuiHeight * .44f, GuiWidth - 40f, 52f),
-                L("왕성의 문이 열립니다", "THE CITADEL GATE OPENS"), overlayTitleStyle, 15);
+            DrawSortieDoorLeaf(left, true, opening);
+            DrawSortieDoorLeaf(right, false, opening);
+
+            var seamAlpha = Mathf.Clamp01(.94f - opening * .72f);
+            var seamWidth = Mathf.Lerp(16f, 54f, opening);
+            var glow = new Rect(GuiWidth * .5f - seamWidth * .5f, GuiHeight * .08f,
+                seamWidth, GuiHeight * .84f);
+            if (GlowSprite != null)
+                DrawSpriteInGui(GlowSprite, glow, new Color(.35f, .76f, 1f, seamAlpha));
+            DrawPanel(new Rect(GuiWidth * .5f - Mathf.Lerp(2f, 10f, opening), GuiHeight * .12f,
+                    Mathf.Lerp(4f, 20f, opening), GuiHeight * .76f),
+                new Color(.72f, .9f, 1f, seamAlpha * .72f));
+
+            var caption = new Rect(20f, GuiHeight * .435f, GuiWidth - 40f, 60f);
+            DrawPanel(new Rect(caption.x + 20f, caption.y + 8f, caption.width - 40f, caption.height - 16f),
+                new Color(0f, 0f, 0f, Mathf.Lerp(.68f, .35f, opening)));
+            DrawFittedLabel(caption, L("왕성의 문이 열립니다", "THE CITADEL GATE OPENS"),
+                new GUIStyle(overlayTitleStyle)
+                {
+                    fontStyle = FontStyle.Bold,
+                    normal = { textColor = new Color(1f, .9f, .58f) }
+                }, 15);
+        }
+
+        private void DrawSortieDoorLeaf(Rect leaf, bool leftLeaf, float opening)
+        {
+            if (leaf.width <= 0f || leaf.height <= 0f) return;
+            var edge = new Color(.92f, .68f, .22f, 1f);
+            var steel = new Color(.035f, .062f, .105f, 1f);
+            DrawOrnatePanel(leaf, steel, edge, 5f);
+            var inset = new Rect(leaf.x + 11f, leaf.y + 13f, leaf.width - 22f, leaf.height - 26f);
+            DrawOrnatePanel(inset, new Color(.022f, .042f, .076f, 1f),
+                new Color(.28f, .48f, .66f, 1f), 2f);
+
+            // Repeating ribs, inset plates and rivets make the gate read as a constructed royal
+            // object instead of two flat rectangles. The pattern mirrors perfectly at the seam.
+            const int plateCount = 7;
+            var plateHeight = inset.height / plateCount;
+            for (var i = 0; i < plateCount; i++)
+            {
+                var plate = new Rect(inset.x + 5f, inset.y + 5f + i * plateHeight,
+                    inset.width - 10f, Mathf.Max(8f, plateHeight - 10f));
+                var tone = i % 2 == 0
+                    ? new Color(.055f, .095f, .15f, 1f)
+                    : new Color(.035f, .072f, .12f, 1f);
+                DrawOrnatePanel(plate, tone, new Color(.18f, .34f, .5f, .94f), 1.4f);
+                DrawSortieDoorRivet(new Vector2(plate.x + 10f, plate.center.y), edge);
+                DrawSortieDoorRivet(new Vector2(plate.xMax - 10f, plate.center.y), edge);
+            }
+
+            var seamX = leftLeaf ? leaf.xMax - 18f : leaf.x + 8f;
+            DrawPanel(new Rect(seamX, leaf.y + 6f, 10f, leaf.height - 12f),
+                new Color(.68f, .46f, .13f, 1f));
+            DrawPanel(new Rect(seamX + (leftLeaf ? 2f : 5f), leaf.y + 9f, 3f, leaf.height - 18f),
+                new Color(1f, .82f, .37f, .88f));
+
+            var crestSize = Mathf.Min(leaf.width * .38f, 126f);
+            var crestX = leftLeaf ? leaf.xMax - crestSize * .78f : leaf.x - crestSize * .22f;
+            var crest = new Rect(crestX, leaf.center.y - crestSize * .5f, crestSize, crestSize);
+            if (CircleSprite != null)
+                DrawSpriteInGui(CircleSprite, crest, new Color(.025f, .08f, .14f, 1f));
+            if (CommandRingSprite != null)
+                DrawSpriteInGui(CommandRingSprite, crest, new Color(1f, .7f, .2f, .96f));
+            if (SparkSprite != null)
+                DrawSpriteInGui(SparkSprite, new Rect(crest.x + crest.width * .25f, crest.y + crest.height * .25f,
+                    crest.width * .5f, crest.height * .5f), new Color(.54f, .86f, 1f, .9f));
+
+            var shimmer = Mathf.Clamp01(1f - opening * 1.3f) * (.55f + Mathf.Sin(Time.unscaledTime * 7f) * .12f);
+            if (GlowSprite != null)
+                DrawSpriteInGui(GlowSprite, new Rect(seamX - 22f, leaf.center.y - 60f, 54f, 120f),
+                    new Color(.32f, .74f, 1f, shimmer));
+        }
+
+        private void DrawSortieDoorRivet(Vector2 center, Color color)
+        {
+            if (CircleSprite == null) return;
+            DrawSpriteInGui(CircleSprite, new Rect(center.x - 3.5f, center.y - 3.5f, 7f, 7f),
+                new Color(.01f, .02f, .035f, .9f));
+            DrawSpriteInGui(CircleSprite, new Rect(center.x - 2.3f, center.y - 2.5f, 4.6f, 4.6f), color);
+            DrawSpriteInGui(CircleSprite, new Rect(center.x - 1.2f, center.y - 1.5f, 1.8f, 1.8f),
+                new Color(1f, .94f, .7f, .95f));
         }
 
         private void DrawTacticalAugmentButtons(Rect panel)
