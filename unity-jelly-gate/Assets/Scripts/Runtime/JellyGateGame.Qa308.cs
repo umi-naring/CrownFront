@@ -21,8 +21,12 @@ namespace JellyGate
                            Mathf.Approximately(CastlePreviewUv.y, .54f) &&
                            Mathf.Approximately(CastlePreviewUv.width, 1f) &&
                            Mathf.Approximately(CastlePreviewUv.height, .46f);
-            var menuArtPassed = mainMenuTexture != null && mainMenuTexture.name == "main-menu-core-v6" &&
-                                 mainMenuTexture.width == 941 && mainMenuTexture.height == 1672;
+            var menuArtPassed = mainMenuTexture != null && mainMenuTexture.name == "main-menu-core-v7" &&
+                                  mainMenuTexture.width == 941 && mainMenuTexture.height == 1672 &&
+                                  mainMenuMoonlitTexture != null &&
+                                  mainMenuMoonlitTexture.name == "main-menu-moonlit-v12" &&
+                                  mainMenuMoonlitTexture.width == 941 && mainMenuMoonlitTexture.height == 1672 &&
+                                  EnemyVariantCatalog.AllProfiles.Length == 53;
             var playRect = MainMenuPlayRect(SafeGuiRect);
             var dockRect = MainMenuDockRect(SafeGuiRect);
             var hubLayoutPassed = playRect.width >= 240f && playRect.yMax + 10f <= dockRect.y &&
@@ -56,7 +60,8 @@ namespace JellyGate
             var passed = namesPassed && uvPassed && menuArtPassed && hubLayoutPassed && shortageBlocksInput &&
                          gemRoutePassed && goldDialogPassed && RosterDragPreviewCircularForQa;
             Debug.Log($"QA_ROYAL_UI_308 passed={passed} names={namesPassed}:{string.Join("/", castleNames)} " +
-                       $"castleUv={uvPassed}:{CastlePreviewUv} menuArt={menuArtPassed}:{mainMenuTexture?.name} " +
+                       $"castleUv={uvPassed}:{CastlePreviewUv} menuArt={menuArtPassed}:" +
+                       $"{mainMenuTexture?.name}/{mainMenuMoonlitTexture?.name}/roster{EnemyVariantCatalog.AllProfiles.Length} " +
                        $"hubLayout={hubLayoutPassed}:{playRect}/{dockRect} " +
                       $"shortageBlock={shortageBlocksInput} gemRoute={gemRoutePassed} " +
                       $"goldDialog={goldDialogPassed} dragRing={RosterDragPreviewCircularForQa}");

@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
@@ -33,7 +34,7 @@ namespace JellyGate.Editor
             // Google Play requires this internal integer to increase on every uploaded release.
             // Earlier version codes have already been used by prior Google Play uploads.
             // Keep the user-facing version name at 1.00 and publish this verified update as code 17.
-            PlayerSettings.Android.bundleVersionCode = 17;
+            PlayerSettings.Android.bundleVersionCode = 18;
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.toykingdom.jellygate");
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
@@ -206,7 +207,7 @@ namespace JellyGate.Editor
             // PlayerSettings are rewritten immediately before an Android build. Project
             // configuration is persisted separately; this entry point validates it and
             // starts the build without mutating the Android settings cache.
-            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 17)
+            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 18)
                 throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 17) before building.");
             var keystorePath = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE");
             var keystorePass = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE_PASS");
@@ -225,7 +226,7 @@ namespace JellyGate.Editor
 
             var outputPath = ReadArgument("-outputPath");
             if (string.IsNullOrWhiteSpace(outputPath))
-                outputPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../outputs/Crownfront-v1.00-code17.aab"));
+                outputPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../outputs/Crownfront-v1.00-code18.aab"));
             var outputDirectory = Path.GetDirectoryName(outputPath);
             if (!string.IsNullOrEmpty(outputDirectory)) Directory.CreateDirectory(outputDirectory);
 
@@ -356,8 +357,15 @@ namespace JellyGate.Editor
                 "Assets/Resources/skin-musketeer-variants-v1.png",
                 "Assets/Resources/skin-oracle-variants-v1.png",
                 "Assets/Resources/main-menu-core-v5.png",
+                "Assets/Resources/main-menu-core-v6.png",
+                "Assets/Resources/main-menu-core-v7.png",
                 "Assets/Resources/main-menu-sunrise-v5.png",
+                "Assets/Resources/main-menu-sunrise-v6.png",
                 "Assets/Resources/main-menu-moonlit-v6.png",
+                "Assets/Resources/main-menu-moonlit-v7.png",
+                "Assets/Resources/main-menu-moonlit-v8.png",
+                "Assets/Resources/main-menu-moonlit-v9.png",
+                "Assets/Resources/main-menu-moonlit-v12.png",
                 "Assets/Resources/boss-lineup-a-v1.png",
                 "Assets/Resources/boss-lineup-b-v1.png",
                 "Assets/Resources/boss-lineup-a-back-v1.png",
@@ -388,6 +396,7 @@ namespace JellyGate.Editor
                 "Assets/Resources/crownfront-logo-crest-v1.png",
                 "Assets/Resources/crownfront-logo-title-v2.png",
                 "Assets/Resources/loading-screen-v3.png",
+                "Assets/Resources/loading-screen-v4.png",
                 "Assets/Resources/vfx-basic-focused-v4.png",
                 "Assets/Resources/vfx-basic-ground-v4.png",
                 "Assets/Resources/vfx-basic-physical-b-v4.png",
@@ -414,6 +423,56 @@ namespace JellyGate.Editor
             }
         }
 
+        [MenuItem("Jelly Gate/QA/Verify Smoothed Art 3.11")]
+        public static void VerifySmoothedArt311()
+        {
+            ConfigureImportedArt();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+
+            var requiredPortraits = new[]
+            {
+                "Assets/Resources/main-menu-core-v7.png",
+                "Assets/Resources/main-menu-sunrise-v6.png",
+                "Assets/Resources/main-menu-moonlit-v12.png",
+                "Assets/Resources/loading-screen-v4.png"
+            };
+            foreach (var assetPath in requiredPortraits)
+            {
+                var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(assetPath);
+                if (texture == null)
+                    throw new BuildFailedException($"Smoothed art is missing: {assetPath}");
+                if (texture.width != 941 || texture.height != 1672)
+                    throw new BuildFailedException($"Smoothed portrait has invalid dimensions: {assetPath} {texture.width}x{texture.height}");
+                VerifyHighQualityAndroidTexture(assetPath);
+            }
+
+            var skinAssets = AssetDatabase.GetAllAssetPaths()
+                .Where(assetPath => assetPath.StartsWith("Assets/Resources/skin-", StringComparison.OrdinalIgnoreCase) &&
+                                    assetPath.EndsWith(".png", StringComparison.OrdinalIgnoreCase))
+                .ToArray();
+            if (skinAssets.Length < 10)
+                throw new BuildFailedException($"Expected at least 10 skin atlases, found {skinAssets.Length}.");
+            foreach (var assetPath in skinAssets) VerifyHighQualityAndroidTexture(assetPath);
+
+            VerifyHighQualityAndroidTexture("Assets/Resources/battlefield-castle-azure-v1.png");
+            VerifyHighQualityAndroidTexture("Assets/Resources/battlefield-castle-ember-v2.png");
+            Debug.Log($"QA_SMOOTHED_ART_311_PASS portraits={requiredPortraits.Length} skins={skinAssets.Length} " +
+                      "android=ASTC_4x4 quality=100 layout=preserved");
+        }
+
+        private static void VerifyHighQualityAndroidTexture(string assetPath)
+        {
+            if (AssetImporter.GetAtPath(assetPath) is not TextureImporter importer)
+                throw new BuildFailedException($"Texture importer is missing: {assetPath}");
+            var android = importer.GetPlatformTextureSettings("Android");
+            if (!android.overridden || android.maxTextureSize != 2048 ||
+                android.format != TextureImporterFormat.ASTC_4x4 ||
+                android.textureCompression != TextureImporterCompression.CompressedHQ ||
+                android.compressionQuality != 100 || importer.filterMode != FilterMode.Bilinear ||
+                importer.wrapMode != TextureWrapMode.Clamp || importer.mipmapEnabled)
+                throw new BuildFailedException($"High-quality Android import is not applied: {assetPath}");
+        }
+
         private static void ConfigureMapTexture()
         {
             if (AssetImporter.GetAtPath(MapAsset) is not TextureImporter importer) return;
@@ -438,6 +497,14 @@ namespace JellyGate.Editor
         {
             if (AssetImporter.GetAtPath(assetPath) is not TextureImporter importer) return;
             var android = importer.GetPlatformTextureSettings("Android");
+            // Character, skin, castle and menu silhouettes need denser ASTC blocks.  The previous
+            // 6x6/82 setting amplified generated micro-noise and introduced colour bleeding around
+            // weapons and alpha edges on real devices.  VFX remain at 6x6 because their soft additive
+            // gradients do not benefit enough from the extra memory; authored surfaces use 4x4/100.
+            var isVfx = assetPath.Contains("vfx-", StringComparison.OrdinalIgnoreCase);
+            var desiredFormat = isVfx ? TextureImporterFormat.ASTC_6x6 : TextureImporterFormat.ASTC_4x4;
+            var desiredQuality = isVfx ? 90 : 100;
+            var desiredAniso = isVfx ? 1 : 2;
             var needsRuntimeReadback = assetPath.Contains("direction-", StringComparison.OrdinalIgnoreCase) ||
                                        assetPath.Contains("walk-", StringComparison.OrdinalIgnoreCase) ||
                                        assetPath.Contains("attack-directions-", StringComparison.OrdinalIgnoreCase) ||
@@ -457,11 +524,12 @@ namespace JellyGate.Editor
             var changed = importer.textureType != TextureImporterType.Default || importer.mipmapEnabled ||
                           importer.isReadable != needsRuntimeReadback ||
                           !importer.alphaIsTransparency || importer.npotScale != TextureImporterNPOTScale.None ||
-                          importer.wrapMode != TextureWrapMode.Clamp || !android.overridden ||
-                          android.maxTextureSize != 2048 ||
-                          android.format != TextureImporterFormat.ASTC_6x6 ||
-                          android.textureCompression != TextureImporterCompression.CompressedHQ ||
-                          android.compressionQuality != 82;
+                           importer.wrapMode != TextureWrapMode.Clamp || importer.filterMode != FilterMode.Bilinear ||
+                           importer.anisoLevel != desiredAniso || !android.overridden ||
+                           android.maxTextureSize != 2048 ||
+                           android.format != desiredFormat ||
+                           android.textureCompression != TextureImporterCompression.CompressedHQ ||
+                           android.compressionQuality != desiredQuality;
             if (!changed) return;
 
             importer.textureType = TextureImporterType.Default;
@@ -471,20 +539,19 @@ namespace JellyGate.Editor
             importer.npotScale = TextureImporterNPOTScale.None;
             importer.sRGBTexture = true;
             importer.filterMode = FilterMode.Bilinear;
+            importer.anisoLevel = desiredAniso;
             importer.wrapMode = TextureWrapMode.Clamp;
             importer.maxTextureSize = 2048;
-            // API 26+ devices support ASTC. A 6x6 block is the mobile quality/size midpoint:
-            // alpha-edged character silhouettes remain clean while the previous ETC2-sized
-            // package and GPU residency are cut substantially. Readability is retained only for
-            // atlases whose runtime alpha metrics genuinely require it.
+            // API 26+ devices support ASTC. Readability is retained only for atlases whose runtime
+            // alpha metrics genuinely require it.
             importer.SetPlatformTextureSettings(new TextureImporterPlatformSettings
             {
                 name = "Android",
                 overridden = true,
                 maxTextureSize = 2048,
-                format = TextureImporterFormat.ASTC_6x6,
+                format = desiredFormat,
                 textureCompression = TextureImporterCompression.CompressedHQ,
-                compressionQuality = 82,
+                compressionQuality = desiredQuality,
                 allowsAlphaSplitting = false
             });
             importer.SaveAndReimport();

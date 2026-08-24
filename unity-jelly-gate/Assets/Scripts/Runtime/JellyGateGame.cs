@@ -732,10 +732,16 @@ namespace JellyGate
             koreanFont = Resources.Load<Font>("NanumGothic");
             // The menu has its own character-free staging ground.  Characters are layered by
             // the renderer from the same battle roster used in play, so its cast never drifts.
-            mainMenuTexture = Resources.Load<Texture2D>("main-menu-core-v6") ??
+            mainMenuTexture = Resources.Load<Texture2D>("main-menu-core-v7") ??
+                              Resources.Load<Texture2D>("main-menu-core-v6") ??
                               Resources.Load<Texture2D>("main-menu-core-v5");
-            mainMenuSunriseTexture = Resources.Load<Texture2D>("main-menu-sunrise-v5");
-            mainMenuMoonlitTexture = Resources.Load<Texture2D>("main-menu-moonlit-v6");
+            mainMenuSunriseTexture = Resources.Load<Texture2D>("main-menu-sunrise-v6") ??
+                                     Resources.Load<Texture2D>("main-menu-sunrise-v5");
+            mainMenuMoonlitTexture = Resources.Load<Texture2D>("main-menu-moonlit-v12") ??
+                                     Resources.Load<Texture2D>("main-menu-moonlit-v9") ??
+                                     Resources.Load<Texture2D>("main-menu-moonlit-v8") ??
+                                     Resources.Load<Texture2D>("main-menu-moonlit-v7") ??
+                                     Resources.Load<Texture2D>("main-menu-moonlit-v6");
             castleAzureTexture = Resources.Load<Texture2D>("battlefield-castle-azure-v1");
             castleEmberTexture = Resources.Load<Texture2D>("battlefield-castle-ember-v2") ??
                                  Resources.Load<Texture2D>("battlefield-castle-ember-v1");
@@ -839,6 +845,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaInteractionVisual306")) StartCoroutine(QaInteractionVisual306Routine());
             else if (HasCommandLineArgument("-qaBattlefieldSprite307")) StartCoroutine(QaBattlefieldSprite307Routine());
             else if (HasCommandLineArgument("-qaRoyalUi308")) StartCoroutine(QaRoyalUi308Routine());
+            else if (HasCommandLineArgument("-qaStoreCapture318")) StartCoroutine(QaStoreCapture318Routine());
             else if (HasCommandLineArgument("-qaUiReview309")) StartCoroutine(QaUiReview309Routine());
             else if (HasCommandLineArgument("-qaSpawnPool310")) StartCoroutine(QaSpawnPool310Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
@@ -1734,11 +1741,18 @@ namespace JellyGate
                 waveProgression &= profiles.Select(profile => profile.Id).Distinct().Count() == expectedVariety;
             }
 
-            var coreMenuArt = Resources.Load<Texture2D>("main-menu-core-v6") ??
+            var coreMenuArt = Resources.Load<Texture2D>("main-menu-core-v7") ??
+                              Resources.Load<Texture2D>("main-menu-core-v6") ??
                               Resources.Load<Texture2D>("main-menu-core-v5");
-            var sunriseMenuArt = Resources.Load<Texture2D>("main-menu-sunrise-v5");
-            var moonlitMenuArt = Resources.Load<Texture2D>("main-menu-moonlit-v6");
-            var loadingArtTexture = Resources.Load<Texture2D>("loading-screen-v3");
+            var sunriseMenuArt = Resources.Load<Texture2D>("main-menu-sunrise-v6") ??
+                                 Resources.Load<Texture2D>("main-menu-sunrise-v5");
+            var moonlitMenuArt = Resources.Load<Texture2D>("main-menu-moonlit-v12") ??
+                                 Resources.Load<Texture2D>("main-menu-moonlit-v9") ??
+                                 Resources.Load<Texture2D>("main-menu-moonlit-v8") ??
+                                 Resources.Load<Texture2D>("main-menu-moonlit-v7") ??
+                                 Resources.Load<Texture2D>("main-menu-moonlit-v6");
+            var loadingArtTexture = Resources.Load<Texture2D>("loading-screen-v4") ??
+                                    Resources.Load<Texture2D>("loading-screen-v3");
             var menuArt = coreMenuArt != null && sunriseMenuArt != null && moonlitMenuArt != null &&
                           coreMenuArt.width == sunriseMenuArt.width &&
                           coreMenuArt.height == sunriseMenuArt.height &&
@@ -2116,7 +2130,8 @@ namespace JellyGate
             var slots = SkinPairSlots(new Rect(0f, 0f, 100f, 100f));
             var slotsSeparated = slots.normal.xMax <= slots.hero.xMin + .01f &&
                                  slots.hero.height > slots.normal.height * 1.12f;
-            var loadingReady = Resources.Load<Texture2D>("loading-screen-v3") != null;
+            var loadingReady = (Resources.Load<Texture2D>("loading-screen-v4") ??
+                                Resources.Load<Texture2D>("loading-screen-v3")) != null;
             var cleanKingReady = bossVariantSprites.TryGetValue("jelly_king", out var cleanKing) &&
                                  cleanKing != null && cleanKing.texture != null &&
                                  cleanKing.texture.name.Contains("boss-jelly-king-clean-v1") &&
@@ -19534,9 +19549,14 @@ namespace JellyGate
             var panel = new Rect(safe.center.x - panelWidth * .5f, safe.center.y - panelHeight * .5f, panelWidth, panelHeight);
             DrawPanel(new Rect(0f, 0f, GuiWidth, GuiHeight), new Color(0f, 0f, .025f, .54f));
             DrawOrnatePanel(panel, new Color(.016f, .032f, .066f, .985f), new Color(.72f, .62f, .38f), 3f);
-            var title = new GUIStyle(overlayTitleStyle) { fontSize = 38, alignment = TextAnchor.MiddleCenter };
+            var title = new GUIStyle(overlayTitleStyle)
+            {
+                fontSize = GameLocalization.Current == GameLanguage.Korean ? 38 : 31,
+                alignment = TextAnchor.MiddleCenter
+            };
             var desc = new GUIStyle(augmentDescriptionStyle) { fontSize = 19, alignment = TextAnchor.MiddleCenter };
-            GUI.Label(new Rect(panel.x + 14f, panel.y + 15f, panel.width - 28f, 52f), L("증강 선택", "CHOOSE AN AUGMENT"), title);
+            GUI.Label(new Rect(panel.x + 14f, panel.y + 15f, panel.width - 142f, 52f),
+                L("증강 선택", "CHOOSE AN AUGMENT"), title);
             GUI.Label(new Rect(panel.x + 24f, panel.y + 66f, panel.width - 48f, 28f),
                 L("이번 전선의 전략을 완성하세요", "DEFINE THIS FRONTLINE'S STRATEGY"), desc);
             DrawTacticalAugmentButtons(panel);
