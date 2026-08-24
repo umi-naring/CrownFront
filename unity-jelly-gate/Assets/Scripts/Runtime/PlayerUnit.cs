@@ -1967,6 +1967,15 @@ namespace JellyGate
             return new Vector4(position.x, position.y, angle, scaleRatio);
         }
 
+        public void UseDirectionalAnimationForQa(DirectionalAnimationSet presentation)
+        {
+            if (presentation == null || body == null) return;
+            directionalAnimation = presentation;
+            animationFrames = directionalAnimation.FramesFor(visualOctant);
+            if (animationFrames.Length > 0) SetMotionSprite(animationFrames[0]);
+            CaptureVisualReferenceHeight();
+        }
+
         public float PreviewGroundContactForQa(Vector2 direction, float normalizedPhase)
         {
             PreviewMotionPoseForQa(direction, 0, normalizedPhase);

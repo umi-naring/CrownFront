@@ -386,6 +386,7 @@ namespace JellyGate
         private Texture2D mainMenuMoonlitTexture;
         private Texture2D castleAzureTexture;
         private Texture2D castleEmberTexture;
+        private static readonly Rect CastlePreviewUv = new(0f, .54f, 1f, .46f);
         private Texture2D archerSkinReferenceTexture;
         private Texture2D placementUndoIcon;
         private readonly Dictionary<UnitArchetype, Texture2D> unitSkinReferenceTextures = new();
@@ -671,7 +672,7 @@ namespace JellyGate
         private bool MainMenuBaseInputEnabled =>
             !showSettings && !showMissionPanel && !showShopPanel && !showSkinPanel &&
             !showGuidePanel && !showExitConfirm && !showResumePrompt && !showPregameLoadout &&
-            !sortieGateTransition && pendingPurchaseProduct == null &&
+            !sortieGateTransition && pendingPurchaseProduct == null && !CurrencyShortagePromptVisible &&
             (IsQaMode() || Time.unscaledTime >= mainMenuInputReadyAt);
 
         private void Awake()
@@ -723,7 +724,8 @@ namespace JellyGate
             koreanFont = Resources.Load<Font>("NanumGothic");
             // The menu has its own character-free staging ground.  Characters are layered by
             // the renderer from the same battle roster used in play, so its cast never drifts.
-            mainMenuTexture = Resources.Load<Texture2D>("main-menu-core-v5");
+            mainMenuTexture = Resources.Load<Texture2D>("main-menu-core-v6") ??
+                              Resources.Load<Texture2D>("main-menu-core-v5");
             mainMenuSunriseTexture = Resources.Load<Texture2D>("main-menu-sunrise-v5");
             mainMenuMoonlitTexture = Resources.Load<Texture2D>("main-menu-moonlit-v6");
             castleAzureTexture = Resources.Load<Texture2D>("battlefield-castle-azure-v1");
@@ -826,6 +828,8 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaBalance304")) StartCoroutine(QaBalance304Routine());
             else if (HasCommandLineArgument("-qaRosterRange305")) StartCoroutine(QaRosterRange305Routine());
             else if (HasCommandLineArgument("-qaInteractionVisual306")) StartCoroutine(QaInteractionVisual306Routine());
+            else if (HasCommandLineArgument("-qaBattlefieldSprite307")) StartCoroutine(QaBattlefieldSprite307Routine());
+            else if (HasCommandLineArgument("-qaRoyalUi308")) StartCoroutine(QaRoyalUi308Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
@@ -1719,7 +1723,8 @@ namespace JellyGate
                 waveProgression &= profiles.Select(profile => profile.Id).Distinct().Count() == expectedVariety;
             }
 
-            var coreMenuArt = Resources.Load<Texture2D>("main-menu-core-v5");
+            var coreMenuArt = Resources.Load<Texture2D>("main-menu-core-v6") ??
+                              Resources.Load<Texture2D>("main-menu-core-v5");
             var sunriseMenuArt = Resources.Load<Texture2D>("main-menu-sunrise-v5");
             var moonlitMenuArt = Resources.Load<Texture2D>("main-menu-moonlit-v6");
             var loadingArtTexture = Resources.Load<Texture2D>("loading-screen-v3");
@@ -2810,6 +2815,11 @@ namespace JellyGate
         private void HandleBackButton()
         {
             if (InterstitialConsumesBackInput) return;
+            if (CurrencyShortagePromptVisible)
+            {
+                CloseCurrencyShortageDialog();
+                return;
+            }
             if (TacticalItemUsePromptVisible)
             {
                 CancelTacticalItemUse();
@@ -8072,6 +8082,7 @@ namespace JellyGate
                 var strictJellyGrid = texture.name.IndexOf("enemy-jelly-animation-atlas",
                     StringComparison.OrdinalIgnoreCase) >= 0;
                 var lancerAtlas = texture.name.IndexOf("lancer-direction", StringComparison.OrdinalIgnoreCase) >= 0;
+                var playerProductionGrid = !enemySheet && !lancerAtlas;
                 // Enemy sheets remain strict production grids. Lancer art is different: the
                 // spear and hero mantle intentionally cross the nominal cell, so inspect a wider
                 // ownership window and let component isolation reject the neighbouring actor.
@@ -8092,6 +8103,46 @@ namespace JellyGate
                 for (var x = 0; x < width; x++)
                     pixels[y * width + x] = sourcePixels[(bottom + y) * texture.width + left + x];
 
+                if (playerProductionGrid)
+                {
+                    // The production defender sheets were painted as tightly packed pose rows.
+                    // Several attack cells touch or overlap the neighbouring pose at the nominal
+                    // divider (the glass-orb mage's side cast was the clearest device repro).
+                    // Cut only those ownership dividers before component selection.  This keeps
+                    // the wider inspection window for hands, weapons and spell props while making
+                    // it impossible for a connected neighbour to enter the live frame.  Lancers
+                    // are deliberately excluded because their authored spear crosses the divider.
+                    const int ownershipDividerHalfWidth = 2;
+                    var localCellLeft = cellLeft - left;
+                    var localCellRight = cellRight - left;
+                    var localCellBottom = cellBottom - bottom;
+                    var localCellTop = cellTop - bottom;
+                    void ClearVerticalDivider(int divider)
+                    {
+                        for (var dividerX = divider - ownershipDividerHalfWidth;
+                             dividerX <= divider + ownershipDividerHalfWidth; dividerX++)
+                        {
+                            if (dividerX < 0 || dividerX >= width) continue;
+                            for (var dividerY = 0; dividerY < height; dividerY++)
+                                pixels[dividerY * width + dividerX] = default;
+                        }
+                    }
+                    void ClearHorizontalDivider(int divider)
+                    {
+                        for (var dividerY = divider - ownershipDividerHalfWidth;
+                             dividerY <= divider + ownershipDividerHalfWidth; dividerY++)
+                        {
+                            if (dividerY < 0 || dividerY >= height) continue;
+                            for (var dividerX = 0; dividerX < width; dividerX++)
+                                pixels[dividerY * width + dividerX] = default;
+                        }
+                    }
+                    if (cellLeft > 0) ClearVerticalDivider(localCellLeft);
+                    if (cellRight < texture.width) ClearVerticalDivider(localCellRight);
+                    if (cellBottom > 0) ClearHorizontalDivider(localCellBottom);
+                    if (cellTop < texture.height) ClearHorizontalDivider(localCellTop);
+                }
+
                 if (strictJellyGrid)
                 {
                     // Adjacent poses touch a few source-cell borders. Erase the tiny ownership
@@ -8110,7 +8161,8 @@ namespace JellyGate
                 if (musketeerAtlas)
                     musketeerCheckerPixelsRemoved += RemoveConnectedCheckerboard(pixels, width, height);
                 var isolation = KeepPrimarySpriteComponent(pixels, width, height,
-                    expectedCenter, cellWidth, cellHeight, strictEdgeOwnership: musketeerAtlas);
+                    expectedCenter, cellWidth, cellHeight,
+                    strictEdgeOwnership: musketeerAtlas || playerProductionGrid);
                 if (musketeerAtlas)
                     musketeerLowerMattePixelsRemoved += NormalizeMusketeerLowerBodyMatte(pixels, width, height,
                         expectedCenter, cellWidth);
@@ -8118,8 +8170,8 @@ namespace JellyGate
                 // isolation. Regular enemies previously had none, so their widest attack and
                 // side frames could touch the texture edge even when the source cell looked safe.
                 {
-                    var framePaddingX = enemySheet ? 14 : lancerAtlas ? 18 : 10;
-                    var framePaddingY = enemySheet ? 14 : lancerAtlas ? 16 : 10;
+                    var framePaddingX = enemySheet ? 14 : lancerAtlas ? 18 : 14;
+                    var framePaddingY = enemySheet ? 14 : lancerAtlas ? 16 : 14;
                     var paddedWidth = width + framePaddingX * 2;
                     var paddedHeight = height + framePaddingY * 2;
                     var padded = new Color32[paddedWidth * paddedHeight];
@@ -8398,6 +8450,15 @@ namespace JellyGate
                     // Guide/roster lineups are presentation crops, not effect atlases. A detached
                     // component cut by the cell edge belongs to the neighbouring portrait. This
                     // removes the orphan skull/arm slivers that survived the older centre test.
+                    removedForeignComponents++;
+                    continue;
+                }
+                if (strictEdgeOwnership && (dx > .46f || dy > .46f))
+                {
+                    // Detached material centred in the outer ownership band is a neighbouring
+                    // actor fragment, even when the padded inspection window means it no longer
+                    // touches the texture edge.  Real weapons joined to the main silhouette are
+                    // already part of primaryLabel and are therefore never removed here.
                     removedForeignComponents++;
                     continue;
                 }
@@ -8855,16 +8916,13 @@ namespace JellyGate
                 gameCamera.gameObject.AddComponent<AudioListener>();
             gameCamera.orthographic = true;
             var screenAspect = Mathf.Max(.32f, Screen.width / (float)Mathf.Max(1, Screen.height));
-            // Keep the full enlarged map reachable while starting close enough for the restored
-            // directional sprites to remain readable. The minimap remains the fast navigation
-            // method between the lower staging plaza, side gates and castle defence plaza.
+            // The first battle frame must establish the complete tactical board.  Players may
+            // zoom in afterwards, but starting at a centre crop hides the side approaches and
+            // makes the battlefield read like a single lane.
             var visibleHalfWidth = PlayableHalfWidth + .5f;
             cameraZoomMax = Mathf.Max(MapHeight * .5f, visibleHalfWidth / screenAspect);
             cameraZoomMin = Mathf.Clamp(cameraZoomMax * .48f, 5.20f, 6.45f);
-            cameraZoom = Mathf.Lerp(cameraZoomMax, cameraZoomMin, .82f);
-            cameraZoomTarget = cameraZoom;
-            cameraMapCenter = new Vector2(0f, .35f);
-            ApplyCameraPose();
+            ResetCameraToFullBattlefield();
             gameCamera.clearFlags = CameraClearFlags.SolidColor;
             gameCamera.backgroundColor = new Color(.04f, .07f, .14f);
 
@@ -9056,6 +9114,18 @@ namespace JellyGate
             gameCamera.orthographicSize = cameraZoom;
             gameCamera.transform.position = new Vector3(cameraMapCenter.x, cameraMapCenter.y, -10f);
             gameCamera.transform.rotation = Quaternion.identity;
+        }
+
+        private void ResetCameraToFullBattlefield()
+        {
+            if (gameCamera == null) return;
+            var screenAspect = Mathf.Max(.32f, Screen.width / (float)Mathf.Max(1, Screen.height));
+            var visibleHalfWidth = PlayableHalfWidth + .5f;
+            cameraZoomMax = Mathf.Max(MapHeight * .5f, visibleHalfWidth / screenAspect);
+            cameraZoomMin = Mathf.Clamp(cameraZoomMax * .48f, 5.20f, 6.45f);
+            cameraZoom = cameraZoomTarget = cameraZoomMax;
+            cameraMapCenter = Vector2.zero;
+            ApplyCameraPose();
         }
 
         private void UpdatePointerControls()
@@ -15780,8 +15850,10 @@ namespace JellyGate
                 var resumePromptVisible = showResumePrompt;
                 var purchasePromptVisible = pendingPurchaseProduct != null;
                 var loadoutPromptVisible = showPregameLoadout;
+                var shortagePromptVisible = CurrencyShortagePromptVisible;
                 var previousEnabled = GUI.enabled;
-                if (resumePromptVisible || purchasePromptVisible || loadoutPromptVisible || sortieGateTransition)
+                if (resumePromptVisible || purchasePromptVisible || loadoutPromptVisible ||
+                    shortagePromptVisible || sortieGateTransition)
                     GUI.enabled = false;
                 DrawMainMenu();
                 if (showSettings) DrawSettingsOverlay();
@@ -15796,6 +15868,7 @@ namespace JellyGate
                 if (resumePromptVisible) DrawResumeRunPrompt();
                 if (purchasePromptVisible) DrawPurchaseConfirmation();
                 if (loadoutPromptVisible) DrawPregameLoadout();
+                if (shortagePromptVisible) DrawCurrencyShortageDialog();
                 if (sortieGateTransition) DrawSortieGateTransition();
                 GUI.matrix = previousMatrix;
                 return;
@@ -15809,8 +15882,10 @@ namespace JellyGate
             }
             var returnSavePromptVisible = showReturnToMainMenuSavePrompt;
             var tacticalItemPromptVisible = TacticalItemUsePromptVisible;
+            var shortagePromptVisibleInBattle = CurrencyShortagePromptVisible;
             var gameplayGuiEnabled = GUI.enabled;
-            if (returnSavePromptVisible || tacticalItemPromptVisible) GUI.enabled = false;
+            if (returnSavePromptVisible || tacticalItemPromptVisible || shortagePromptVisibleInBattle)
+                GUI.enabled = false;
             DrawTopHud();
             DrawTacticalMiniMap();
             DrawBottomHud();
@@ -15852,6 +15927,7 @@ namespace JellyGate
             GUI.enabled = gameplayGuiEnabled;
             if (returnSavePromptVisible) DrawReturnToMainMenuSavePrompt();
             if (tacticalItemPromptVisible) DrawTacticalItemUsePrompt();
+            if (shortagePromptVisibleInBattle) DrawCurrencyShortageDialog();
             GUI.matrix = previousMatrix;
         }
 
@@ -16024,59 +16100,123 @@ namespace JellyGate
                 DrawPanel(screen, new Color(.02f, .04f, .10f));
             var safe = SafeGuiRect;
             DrawCrownfrontKeyArtLogo(safe);
-
-            var actionWidth = Mathf.Min(326f, safe.width - 34f);
-            var actionX = safe.center.x - actionWidth * .5f;
-            var actionY = safe.y + safe.height * .615f;
-            const float buttonHeight = 42f;
-            const float buttonStep = 47f;
             var previousEnabled = GUI.enabled;
             GUI.enabled = MainMenuBaseInputEnabled;
 
-            if (DrawPremiumButton(new Rect(actionX, actionY, actionWidth, buttonHeight),
+            // Current mobile hub hierarchy: the primary action floats above a compact persistent
+            // dock.  Secondary destinations no longer compete with Play as six identical rows,
+            // leaving the authored battle scene visible through the middle of the screen.
+            var playRect = MainMenuPlayRect(safe);
+            DrawPanel(new Rect(playRect.x + 12f, playRect.y + 7f, playRect.width - 24f,
+                playRect.height + 3f), new Color(0f, 0f, 0f, .34f));
+            if (DrawPremiumButton(playRect,
                     L("\uC804\uC120 \uCD9C\uC804", "PLAY FRONT"),
                     new Color(.21f, .13f, .035f, .98f), new Color(1f, .79f, .27f), true))
             {
                 RequestFrontStart();
             }
-            if (DrawPremiumButton(new Rect(actionX, actionY + buttonStep, actionWidth, buttonHeight),
-                    L("\uC655\uC2E4 \uC0C1\uC810", "ROYAL SHOP"),
-                    new Color(.11f, .065f, .025f, .98f), new Color(1f, .67f, .2f), true))
+
+            var dock = MainMenuDockRect(safe);
+            DrawPanel(new Rect(dock.x - 3f, dock.y + 5f, dock.width + 6f, dock.height + 5f),
+                new Color(0f, 0f, 0f, .42f));
+            DrawOrnatePanel(dock, new Color(.015f, .032f, .062f, .965f),
+                new Color(.42f, .53f, .67f, .92f), 2f);
+            var gap = 3f;
+            var itemWidth = (dock.width - 14f - gap * 4f) / 5f;
+            var itemY = dock.y + 5f;
+            var itemHeight = dock.height - 10f;
+            Rect DockItem(int index) => new(dock.x + 7f + index * (itemWidth + gap), itemY,
+                itemWidth, itemHeight);
+
+            if (DrawMainMenuDockButton(DockItem(0), L("\uC0C1\uC810", "SHOP"), 0))
             {
                 shopCategory = ShopCategory.Supplies;
                 shopScroll = Vector2.zero;
                 showShopPanel = true;
             }
-            if (DrawPremiumButton(new Rect(actionX, actionY + buttonStep * 2f, actionWidth, buttonHeight),
-                    L("\uC2A4\uD0A8 \uBCF4\uAD00\uD568", "SKIN VAULT"),
-                    new Color(.075f, .035f, .095f, .98f), new Color(.82f, .48f, 1f), true))
+            if (DrawMainMenuDockButton(DockItem(1), L("\uC2A4\uD0A8", "SKINS"), 1))
             {
                 skinCategory = ShopCategory.Castle;
                 skinUnit = UnitArchetype.Tank;
                 showSkinPanel = true;
             }
-            if (DrawPremiumButton(new Rect(actionX, actionY + buttonStep * 3f, actionWidth, buttonHeight),
-                    L("\uAC8C\uC784 \uC815\uBCF4", "GAME GUIDE"),
-                    new Color(.025f, .075f, .095f, .98f), new Color(.36f, .88f, .78f), true))
+            if (DrawMainMenuDockButton(DockItem(2), L("\uC815\uBCF4", "GUIDE"), 2))
             {
                 guideTab = 0;
                 guideScroll = Vector2.zero;
                 showGuidePanel = true;
             }
-            if (DrawPremiumButton(new Rect(actionX, actionY + buttonStep * 4f, actionWidth, buttonHeight),
-                    L("\uB3C4\uC804 \uAE30\uB85D", "MISSIONS"),
-                    new Color(.025f, .055f, .11f, .97f), new Color(.44f, .71f, .98f), true))
+            if (DrawMainMenuDockButton(DockItem(3), L("\uB3C4\uC804", "MISSIONS"), 3))
             {
                 challengeScroll = Vector2.zero;
                 showMissionPanel = true;
             }
-            if (DrawPremiumButton(new Rect(actionX, actionY + buttonStep * 5f, actionWidth, buttonHeight),
-                    L("\uAC8C\uC784 \uC124\uC815", "SETTINGS"),
-                    new Color(.045f, .045f, .09f, .97f), new Color(.64f, .72f, .88f), true))
+            if (DrawMainMenuDockButton(DockItem(4), L("\uC124\uC815", "SETTINGS"), 4))
                 showSettings = true;
             GUI.enabled = previousEnabled;
-            GUI.Label(new Rect(safe.x, safe.yMax - 20f, safe.width, 15f), $"v{Application.version}",
+            GUI.Label(new Rect(safe.x, dock.y - 18f, safe.width, 13f), $"v{Application.version}",
                 new GUIStyle(menuSubtitleStyle) { fontSize = 10, alignment = TextAnchor.MiddleCenter });
+        }
+
+        private static Rect MainMenuPlayRect(Rect safe)
+        {
+            var width = Mathf.Min(286f, safe.width - 52f);
+            return new Rect(safe.center.x - width * .5f, safe.yMax - 150f, width, 52f);
+        }
+
+        private static Rect MainMenuDockRect(Rect safe)
+        {
+            return new Rect(safe.x + 8f, safe.yMax - 83f, safe.width - 16f, 72f);
+        }
+
+        private bool DrawMainMenuDockButton(Rect rect, string label, int iconKind)
+        {
+            var hover = rect.Contains(Event.current.mousePosition);
+            DrawPanel(rect, hover ? new Color(.075f, .11f, .17f, .98f) :
+                new Color(.025f, .052f, .09f, .94f));
+            DrawPanel(new Rect(rect.x + 5f, rect.yMax - 2f, rect.width - 10f, 1f),
+                hover ? new Color(1f, .77f, .3f, .94f) : new Color(.36f, .5f, .66f, .72f));
+            var icon = new Rect(rect.center.x - 10f, rect.y + 7f, 20f, 20f);
+            DrawMainMenuDockGlyph(icon, iconKind, hover ? new Color(1f, .82f, .4f) :
+                new Color(.73f, .83f, .93f));
+            DrawFittedLabel(new Rect(rect.x + 2f, rect.y + 31f, rect.width - 4f, rect.height - 35f),
+                label, new GUIStyle(centeredStyle)
+                {
+                    fontStyle = FontStyle.Bold,
+                    alignment = TextAnchor.UpperCenter,
+                    normal = { textColor = new Color(.88f, .92f, .97f) }
+                }, 8);
+            return GUI.Button(rect, GUIContent.none, GUIStyle.none);
+        }
+
+        private static void DrawMainMenuDockGlyph(Rect rect, int kind, Color color)
+        {
+            void Bar(float x, float y, float width, float height) =>
+                DrawPanel(new Rect(rect.x + x, rect.y + y, width, height), color);
+            switch (kind)
+            {
+                case 0: // shop awning
+                    Bar(2f, 3f, 16f, 3f); Bar(4f, 7f, 12f, 10f); Bar(7f, 11f, 3f, 6f);
+                    Bar(2f, 18f, 16f, 2f);
+                    break;
+                case 1: // tunic / skin
+                    Bar(7f, 3f, 6f, 3f); Bar(4f, 6f, 12f, 4f); Bar(6f, 9f, 8f, 10f);
+                    Bar(2f, 7f, 3f, 7f); Bar(15f, 7f, 3f, 7f);
+                    break;
+                case 2: // open guide book
+                    Bar(1f, 4f, 8f, 14f); Bar(11f, 4f, 8f, 14f); Bar(9f, 3f, 2f, 16f);
+                    Bar(3f, 7f, 4f, 1f); Bar(13f, 7f, 4f, 1f);
+                    break;
+                case 3: // challenge checklist
+                    Bar(2f, 4f, 3f, 3f); Bar(7f, 5f, 11f, 2f);
+                    Bar(2f, 9f, 3f, 3f); Bar(7f, 10f, 11f, 2f);
+                    Bar(2f, 14f, 3f, 3f); Bar(7f, 15f, 11f, 2f);
+                    break;
+                default: // settings sliders
+                    Bar(1f, 4f, 18f, 2f); Bar(1f, 10f, 18f, 2f); Bar(1f, 16f, 18f, 2f);
+                    Bar(5f, 2f, 3f, 6f); Bar(12f, 8f, 3f, 6f); Bar(8f, 14f, 3f, 6f);
+                    break;
+            }
         }
 
         private Texture2D ResolveEquippedMenuTexture()
@@ -16731,9 +16871,7 @@ namespace JellyGate
                     var castleTexture = product.Id == "crownfront.castle.azure"
                         ? castleAzureTexture
                         : product.Id == "crownfront.castle.ember" ? castleEmberTexture : mapTexture;
-                    if (castleTexture != null)
-                        GUI.DrawTextureWithTexCoords(inner, castleTexture,
-                            new Rect(0f, .54f, 1f, .46f), true);
+                    if (castleTexture != null) DrawCastleSkinPreview(inner, castleTexture);
                     else DrawPanel(inner, new Color(.08f, .12f, .18f));
                     break;
                 }
@@ -17181,8 +17319,7 @@ namespace JellyGate
             switch (category)
             {
                 case ShopCategory.Castle:
-                    if (mapTexture != null)
-                        GUI.DrawTextureWithTexCoords(inner, mapTexture, new Rect(0f, .69f, 1f, .31f), true);
+                    if (mapTexture != null) DrawCastleSkinPreview(inner, mapTexture);
                     break;
                 case ShopCategory.MainMenu:
                     if (mainMenuTexture != null)
@@ -17202,6 +17339,12 @@ namespace JellyGate
             ApplyCastleSkinAccent();
             foreach (var unit in units)
                 if (unit != null) unit.RefreshCosmeticPresentation();
+        }
+
+        private static void DrawCastleSkinPreview(Rect rect, Texture2D texture)
+        {
+            if (texture == null) return;
+            GUI.DrawTextureWithTexCoords(rect, texture, CastlePreviewUv, true);
         }
 
         private void DrawSettingsOverlay()
@@ -18018,6 +18161,16 @@ namespace JellyGate
             DrawSpriteContained(new Rect(preview.x + 12f, preview.y + 8f, preview.width - 24f,
                 preview.height - 16f), sprite);
             GUI.color = previous;
+            if (definitions.TryGetValue(rosterDragKind, out var dragDefinition))
+            {
+                var tag = new Rect(pointer.x - 27f, preview.yMax - 5f, 54f, 19f);
+                DrawFramedPanel(tag, new Color(.018f, .035f, .06f, .94f), accent, 1.5f);
+                DrawFittedLabel(tag, $"● {dragDefinition.Cost}", new GUIStyle(centeredStyle)
+                {
+                    fontStyle = FontStyle.Bold,
+                    normal = { textColor = new Color(1f, .88f, .48f) }
+                }, 9);
+            }
         }
 
         private static void DrawSpriteContained(Rect bounds, Sprite sprite)
@@ -18874,22 +19027,27 @@ namespace JellyGate
 
         private static void DrawOrnatePanel(Rect rect, Color fill, Color accent, float thickness = 3f)
         {
-            DrawPanel(new Rect(rect.x + 3f, rect.y + 5f, rect.width, rect.height), new Color(.01f, .015f, .03f, .5f));
-            DrawPanel(rect, new Color(.015f, .025f, .055f, .98f));
-            DrawPanel(new Rect(rect.x + 2f, rect.y + 2f, rect.width - 4f, rect.height - 4f), accent);
-            DrawPanel(new Rect(rect.x + 2f + thickness, rect.y + 2f + thickness,
-                rect.width - 4f - thickness * 2f, rect.height - 4f - thickness * 2f), fill);
+            // Restrained royal framing: quiet navy depth and short edge marks retain the game's
+            // identity without giving every card the same over-rendered, synthetic crest.
+            DrawPanel(new Rect(rect.x + 2f, rect.y + 3f, rect.width, rect.height),
+                new Color(.004f, .008f, .018f, .48f));
+            DrawPanel(rect, new Color(.012f, .022f, .045f, .99f));
+            var edge = new Color(accent.r, accent.g, accent.b, Mathf.Min(.78f, accent.a));
+            DrawPanel(new Rect(rect.x + 1f, rect.y + 1f, rect.width - 2f, rect.height - 2f), edge);
+            var inset = Mathf.Max(2f, thickness);
+            DrawPanel(new Rect(rect.x + inset, rect.y + inset,
+                Mathf.Max(0f, rect.width - inset * 2f), Mathf.Max(0f, rect.height - inset * 2f)), fill);
+            DrawPanel(new Rect(rect.x + inset, rect.y + inset, rect.width - inset * 2f, 1f),
+                new Color(1f, 1f, 1f, .10f));
 
-            const float corner = 13f;
-            const float line = 3f;
-            DrawPanel(new Rect(rect.x + 2f, rect.y + 2f, corner, line), accent);
-            DrawPanel(new Rect(rect.x + 2f, rect.y + 2f, line, corner), accent);
-            DrawPanel(new Rect(rect.xMax - corner - 2f, rect.y + 2f, corner, line), accent);
-            DrawPanel(new Rect(rect.xMax - line - 2f, rect.y + 2f, line, corner), accent);
-            DrawPanel(new Rect(rect.x + 2f, rect.yMax - line - 2f, corner, line), accent);
-            DrawPanel(new Rect(rect.x + 2f, rect.yMax - corner - 2f, line, corner), accent);
-            DrawPanel(new Rect(rect.xMax - corner - 2f, rect.yMax - line - 2f, corner, line), accent);
-            DrawPanel(new Rect(rect.xMax - line - 2f, rect.yMax - corner - 2f, line, corner), accent);
+            const float corner = 8f;
+            const float line = 2f;
+            DrawPanel(new Rect(rect.x + 1f, rect.y + 1f, corner, line), edge);
+            DrawPanel(new Rect(rect.x + 1f, rect.y + 1f, line, corner), edge);
+            DrawPanel(new Rect(rect.xMax - corner - 1f, rect.y + 1f, corner, line), edge);
+            DrawPanel(new Rect(rect.xMax - line - 1f, rect.y + 1f, line, corner), edge);
+            DrawPanel(new Rect(rect.x + 1f, rect.yMax - line - 1f, corner, line), edge);
+            DrawPanel(new Rect(rect.xMax - corner - 1f, rect.yMax - line - 1f, corner, line), edge);
         }
 
         private bool DrawPremiumButton(Rect rect, string label, Color fill, Color accent, bool enabled = true)
@@ -19038,7 +19196,7 @@ namespace JellyGate
             var panelHeight = safe.height * .86f;
             var panel = new Rect(safe.center.x - panelWidth * .5f, safe.center.y - panelHeight * .5f, panelWidth, panelHeight);
             DrawPanel(new Rect(0f, 0f, GuiWidth, GuiHeight), new Color(0f, 0f, .025f, .54f));
-            DrawOrnatePanel(panel, new Color(.018f, .03f, .075f, .985f), new Color(.68f, .52f, .92f), 4f);
+            DrawOrnatePanel(panel, new Color(.016f, .032f, .066f, .985f), new Color(.72f, .62f, .38f), 3f);
             var title = new GUIStyle(overlayTitleStyle) { fontSize = 38, alignment = TextAnchor.MiddleCenter };
             var desc = new GUIStyle(augmentDescriptionStyle) { fontSize = 19, alignment = TextAnchor.MiddleCenter };
             GUI.Label(new Rect(panel.x + 14f, panel.y + 15f, panel.width - 28f, 52f), L("증강 선택", "CHOOSE AN AUGMENT"), title);
@@ -19055,7 +19213,8 @@ namespace JellyGate
                 var offer = currentOffers[i];
                 var rect = new Rect(panel.x + 15f, cardTop + i * (cardHeight + gap), panel.width - 30f, cardHeight);
                 var tierColor = TierColor(offer.Tier);
-                DrawOrnatePanel(rect, new Color(.035f, .052f, .105f, .99f), tierColor, 3f);
+                DrawOrnatePanel(rect, new Color(.026f, .046f, .082f, .99f),
+                    Color.Lerp(tierColor, new Color(.58f, .66f, .76f), .32f), 2f);
                 if (GUI.Button(rect, GUIContent.none, GUIStyle.none)) SelectAugment(offer);
                 var tierChip = new Rect(rect.center.x - 72f, rect.y + 9f, 144f, 30f);
                 DrawFramedPanel(tierChip, new Color(.025f, .04f, .08f, .98f), tierColor, 2f);
@@ -19154,6 +19313,7 @@ namespace JellyGate
             showFormationPanel = true; showAugmentSummary = false; augmentOverlayHidden = false; inspectedAugmentKey = string.Empty;
             currentOffers = Array.Empty<AugmentOffer>();
             ApplyBattlefieldMood(MonsterClassForRound(1), true);
+            ResetCameraToFullBattlefield();
         }
 
         private void ClearTransientBattlePresentation()

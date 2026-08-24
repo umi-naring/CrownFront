@@ -35,8 +35,13 @@ namespace JellyGate
         private int inspectedUnitAbilitySlot = -1;
         private float inspectedUnitAbilityUntil;
         private int pendingTacticalItemUse = -1;
+        private bool showCurrencyShortageDialog;
+        private ShopCurrency shortageCurrency;
+        private CrownfrontShopProduct shortageProduct;
         private float tacticalItemPromptPreviousTimeScale = 1f;
         private const float TacticalItemLongPressSeconds = .52f;
+
+        private bool CurrencyShortagePromptVisible => showCurrencyShortageDialog;
 
         private void InitializeEconomy()
         {
@@ -127,7 +132,7 @@ namespace JellyGate
             var width = Mathf.Min(424f, safe.width * .94f);
             var height = Mathf.Min(590f, safe.height * .84f);
             var panel = new Rect(safe.center.x - width * .5f, safe.center.y - height * .5f, width, height);
-            DrawOrnatePanel(panel, new Color(.075f, .055f, .035f, .995f), new Color(.76f, .62f, .38f), 3f);
+            DrawOrnatePanel(panel, new Color(.018f, .038f, .072f, .995f), new Color(.78f, .65f, .34f), 3f);
             DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 14f, panel.width - 36f, 40f),
                 L("출전 준비", "FRONT PREPARATION"), modalTitleStyle, 16);
             DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 52f, panel.width - 36f, 34f),
@@ -151,9 +156,9 @@ namespace JellyGate
                 var selected = economy.SelectedPregameItems.Contains(item.Id);
                 var owned = economy.Count(item.Id);
                 var inspected = inspectedPregameItem == (int)item.Id;
-                DrawOrnatePanel(rect, selected ? new Color(.17f, .14f, .075f, .99f) :
-                    new Color(.09f, .075f, .055f, .99f), selected ? new Color(1f, .79f, .34f) :
-                    inspected ? new Color(.82f, .7f, .5f) : new Color(.42f, .36f, .27f), selected ? 3f : 2f);
+                DrawOrnatePanel(rect, selected ? new Color(.12f, .105f, .05f, .99f) :
+                    new Color(.026f, .052f, .088f, .99f), selected ? new Color(1f, .79f, .34f) :
+                    inspected ? new Color(.62f, .7f, .78f) : new Color(.3f, .42f, .56f), selected ? 3f : 2f);
                 DrawTacticalItemIcon(new Rect(rect.x + 9f, rect.y + 7f, rect.width - 18f, rect.height - 34f), item.Id,
                     owned > 0 ? Color.white : new Color(.42f, .42f, .42f, .7f));
                 DrawFittedLabel(new Rect(rect.x + 5f, rect.yMax - 27f, rect.width - 10f, 22f), $"× {owned}",
@@ -176,16 +181,16 @@ namespace JellyGate
             var detail = items.FirstOrDefault(item => (int)item.Id == inspectedPregameItem) ?? items.FirstOrDefault();
             var detailRect = new Rect(panel.x + 21f, listTop + cardHeight * 2f + gap * 2f,
                 panel.width - 42f, 98f);
-            DrawOrnatePanel(detailRect, new Color(.13f, .105f, .067f, .995f), new Color(.58f, .47f, .31f), 2f);
+            DrawOrnatePanel(detailRect, new Color(.025f, .05f, .084f, .995f), new Color(.5f, .61f, .73f), 2f);
             if (detail != null)
             {
                 DrawTacticalItemIcon(new Rect(detailRect.x + 10f, detailRect.y + 10f, 72f, 72f), detail.Id, Color.white);
                 DrawFittedLabel(new Rect(detailRect.x + 92f, detailRect.y + 7f, detailRect.width - 104f, 27f), detail.Name,
                     new GUIStyle(smallStyle) { alignment = TextAnchor.MiddleLeft, fontStyle = FontStyle.Bold,
-                        normal = { textColor = new Color(1f, .87f, .57f) } }, 12);
+                        normal = { textColor = new Color(1f, .86f, .52f) } }, 12);
                 DrawFittedLabel(new Rect(detailRect.x + 92f, detailRect.y + 34f, detailRect.width - 104f, 53f),
                     detail.Description, new GUIStyle(statStyle) { alignment = TextAnchor.UpperLeft, wordWrap = true,
-                        normal = { textColor = new Color(.91f, .87f, .78f) } }, 10);
+                        normal = { textColor = new Color(.86f, .91f, .97f) } }, 10);
             }
 
             if (DrawPremiumButton(new Rect(panel.x + 20f, panel.yMax - 105f, panel.width - 40f, 46f),
@@ -578,15 +583,7 @@ namespace JellyGate
             var price = currency == ShopCurrency.Gold ? product.GoldPrice : product.GemPrice;
             if (price <= 0 || !economy.TrySpend(currency, price))
             {
-                if (currency == ShopCurrency.Gems)
-                {
-                    showShopPanel = true;
-                    shopCategory = ShopCategory.Currency;
-                    shopScroll = Vector2.zero;
-                    ShowToast(L("보석이 부족합니다. 보석 구매 상품을 확인하세요.",
-                        "NOT ENOUGH GEMS. GEM PACKS ARE NOW OPEN."));
-                }
-                else ShowToast(L("골드가 부족합니다.", "NOT ENOUGH GOLD."));
+                OpenCurrencyShortageDialog(currency, product);
                 return false;
             }
             if (product.HasTacticalItem)
@@ -598,6 +595,73 @@ namespace JellyGate
             else monetization.GrantInGameProduct(product.Id);
             ShowToast(L($"{product.Name} 구매 완료", $"{product.Name} PURCHASED"));
             return true;
+        }
+
+        private void OpenCurrencyShortageDialog(ShopCurrency currency, CrownfrontShopProduct product = null)
+        {
+            shortageCurrency = currency;
+            shortageProduct = product;
+            showCurrencyShortageDialog = true;
+        }
+
+        private void CloseCurrencyShortageDialog()
+        {
+            showCurrencyShortageDialog = false;
+            shortageProduct = null;
+        }
+
+        private void DrawCurrencyShortageDialog()
+        {
+            if (!showCurrencyShortageDialog) return;
+            var safe = SafeGuiRect;
+            DrawPanel(new Rect(0f, 0f, GuiWidth, GuiHeight), new Color(0f, 0f, .015f, .78f));
+            var width = Mathf.Min(360f, safe.width - 28f);
+            var gems = shortageCurrency == ShopCurrency.Gems;
+            var height = gems ? 246f : 210f;
+            var panel = new Rect(safe.center.x - width * .5f, safe.center.y - height * .5f, width, height);
+            var accent = gems ? new Color(.42f, .86f, 1f) : new Color(1f, .78f, .3f);
+            DrawOrnatePanel(panel, new Color(.018f, .038f, .072f, .998f), accent, 3f);
+            DrawFittedLabel(new Rect(panel.x + 22f, panel.y + 18f, panel.width - 44f, 34f),
+                gems ? L("보석이 부족합니다", "NOT ENOUGH GEMS") :
+                    L("골드가 부족합니다", "NOT ENOUGH GOLD"), modalTitleStyle, 14);
+            var productName = shortageProduct?.Name;
+            var message = gems
+                ? L(string.IsNullOrWhiteSpace(productName)
+                        ? "보석 상품을 확인하시겠습니까?"
+                        : $"{productName} 구매에 필요한 보석이 부족합니다.\n보석 상품을 확인하시겠습니까?",
+                    string.IsNullOrWhiteSpace(productName)
+                        ? "OPEN THE GEM SHOP?"
+                        : $"YOU NEED MORE GEMS FOR {productName}.\nOPEN THE GEM SHOP?")
+                : L(string.IsNullOrWhiteSpace(productName)
+                        ? "플레이로 골드를 모은 뒤 다시 시도하세요."
+                        : $"{productName} 구매에 필요한 골드가 부족합니다.\n플레이로 골드를 모은 뒤 다시 시도하세요.",
+                    string.IsNullOrWhiteSpace(productName)
+                        ? "EARN MORE GOLD IN PLAY, THEN TRY AGAIN."
+                        : $"YOU NEED MORE GOLD FOR {productName}.\nEARN GOLD IN PLAY, THEN TRY AGAIN.");
+            DrawFittedLabel(new Rect(panel.x + 24f, panel.y + 64f, panel.width - 48f, 76f),
+                message, new GUIStyle(centeredStyle) { wordWrap = true }, 10);
+            if (gems)
+            {
+                var buttonWidth = (panel.width - 58f) * .5f;
+                if (DrawPremiumButton(new Rect(panel.x + 20f, panel.yMax - 62f, buttonWidth, 42f),
+                        L("아니요", "NOT NOW"), new Color(.04f, .055f, .085f, .99f),
+                        new Color(.48f, .62f, .76f), true)) CloseCurrencyShortageDialog();
+                if (DrawPremiumButton(new Rect(panel.x + 38f + buttonWidth, panel.yMax - 62f, buttonWidth, 42f),
+                        L("예 · 보석 보기", "YES · VIEW GEMS"), new Color(.025f, .10f, .14f, .99f),
+                        accent, true)) OpenGemStoreFromShortage();
+            }
+            else if (DrawPremiumButton(new Rect(panel.x + 24f, panel.yMax - 57f, panel.width - 48f, 39f),
+                         L("확인", "OK"), new Color(.08f, .065f, .035f, .99f), accent, true))
+                CloseCurrencyShortageDialog();
+        }
+
+        private void OpenGemStoreFromShortage()
+        {
+            CloseCurrencyShortageDialog();
+            pendingPurchaseProduct = null;
+            showShopPanel = true;
+            shopCategory = ShopCategory.Currency;
+            shopScroll = Vector2.zero;
         }
 
         private void DrawInGamePurchaseConfirmation(CrownfrontShopProduct product)
