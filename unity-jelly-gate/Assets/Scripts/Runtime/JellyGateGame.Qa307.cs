@@ -85,7 +85,7 @@ namespace JellyGate
                         continue;
                     }
                     uniqueSprites.Add(sprite);
-                    heights.Add(actor.VisualWorldHeightForQa);
+                    heights.Add(actor.VisualBodyWorldHeightForQa);
                     var margins = PlayerUnit.SpriteOpaqueMarginsForQa(sprite);
                     var audit = SpriteFrameIsolationRegistry.For(sprite);
                     actorSafe &= actor.ActivePrimaryBodyChannelsForQa == 1 &&

@@ -10,6 +10,7 @@ namespace JellyGate
         private static readonly Dictionary<Sprite, Vector2> OpaqueFootAnchorCache = new();
         private static readonly Dictionary<Sprite, Vector2> OpaqueLowestAnchorCache = new();
         private static readonly Dictionary<Sprite, Vector4> OpaqueMarginCache = new();
+        private static readonly Dictionary<Sprite, Vector3> OpaqueSilhouetteCache = new();
         public static int OpaqueMetricCacheMisses { get; private set; }
         private JellyGateGame game;
         private UnitDefinition definition;
@@ -175,6 +176,7 @@ namespace JellyGate
         public float VisualWorldHeightForQa => body == null || body.sprite == null
             ? 0f
             : OpaqueWorldHeight(body.sprite) * Mathf.Abs(body.transform.localScale.y);
+        public Vector3 VisualScaleForQa => body != null ? body.transform.localScale : Vector3.one;
         public float VisualBodyWorldHeightForQa => body == null || body.sprite == null
             ? 0f
             : OpaqueBodyWorldHeight(body.sprite) * Mathf.Abs(body.transform.localScale.y);
@@ -1150,7 +1152,12 @@ namespace JellyGate
                 UpdateActionAccent(combatMotionActive, combatMotionT, skillActive, ultimateActive);
                 var hurtCurve = Mathf.Sin(hurtMotion * Mathf.PI);
                 var frameContactCurve = Mathf.Sin(contactMotion * Mathf.PI);
-                var frameContactOffset = contactDirection * (frameContactCurve * .07f);
+                // Hit feedback must not move the complete painted actor sideways. On a sprite
+                // timeline that translation reads as a bad pivot and compounds with a frame's
+                // own anticipation pose. Keep a very small vertical settle only; impact flash,
+                // shadow and VFX carry the hit response.
+                var frameContactOffset = new Vector2(0f,
+                    contactDirection.y * frameContactCurve * .022f);
                 var frameLevelCurve = levelUpMotion > 0f ? Mathf.Sin((1f - levelUpMotion) * Mathf.PI) : 0f;
                 var strikeCurve = combatMotionActive ? Mathf.Sin(combatMotionT * Mathf.PI) : 0f;
                 var invariantSkinAction = combatMotionActive && SkinVariant > 0 && game != null &&
@@ -1168,20 +1175,12 @@ namespace JellyGate
                      strikeCurve * (invariantSkinAction ? .032f * skinActionPower : .018f)),
                     1f);
                 NormalizeCurrentSpriteHeight();
-                var walkCycle = Mathf.Repeat(animationPhase, walkFrameCount) / walkFrameCount;
-                var footTransfer = Mathf.Sin(walkCycle * Mathf.PI * 2f);
-                // The painted sheets already articulate the legs.  These offsets provide the
-                // larger hip transfer that remains legible on a phone without lifting the
-                // whole character away from its ground shadow.
+                // The painted sheets already contain the complete gait. The previous runtime
+                // hip/stride translation moved the *entire* SpriteRenderer around its shadow,
+                // so a correctly authored sequence still appeared to skate left and right.
+                // Locomotion now advances the world transform only; the renderer changes frames
+                // around one registered body centre.
                 var stepLift = 0f;
-                var lateral = new Vector2(-octantForward.y, octantForward.x);
-                var hipTransfer = Mathf.Sin(walkCycle * Mathf.PI * 2f - .28f);
-                var weightShift = IsMoving
-                    ? lateral * (hipTransfer * definition.Radius * (diagonalFacing ? .023f : .02f))
-                    : Vector2.zero;
-                var strideTravel = IsMoving
-                    ? octantForward * (hipTransfer * definition.Radius * .013f)
-                    : Vector2.zero;
                 var footPlantSettle = Vector2.zero;
                 var actionScale = ultimateActive ? 1.65f : skillActive ? 1.22f : 1f;
                 var stagedAction = combatMotionActive
@@ -1218,8 +1217,10 @@ namespace JellyGate
                     UnitArchetype.Lancer => ultimateActive ? .64f : skillActive ? .34f : .46f,
                     UnitArchetype.Tank => .23f,
                     UnitArchetype.Bombardier => .18f,
-                    UnitArchetype.Archer or UnitArchetype.Musketeer => .13f,
-                    _ => .1f
+                    // Ranged and caster timelines carry their own draw/cast motion. Translating
+                    // their whole body towards a target made the bow and staff origins jump.
+                    UnitArchetype.Archer or UnitArchetype.Musketeer => 0f,
+                    _ => 0f
                 };
                 var actionTravel = stagedAction * definition.Radius * roleTravel * actionScale;
                 var casterAction = Archetype is UnitArchetype.AreaMage or UnitArchetype.SingleMage or
@@ -1232,8 +1233,8 @@ namespace JellyGate
                       (ultimateActive ? .16f : skillActive ? .1f : .055f)
                     : 0f;
                 body.transform.localPosition = new Vector3(
-                    frameContactOffset.x + weightShift.x + strideTravel.x + footPlantSettle.x,
-                    frameContactOffset.y + weightShift.y + strideTravel.y + footPlantSettle.y +
+                    frameContactOffset.x + footPlantSettle.x,
+                    frameContactOffset.y + footPlantSettle.y +
                     frameLevelCurve * .18f + stepLift + actionLift + directionOffset, -.15f);
                 body.transform.localPosition += new Vector3(
                     octantForward.x * actionTravel, octantForward.y * actionTravel, 0f);
@@ -1253,17 +1254,11 @@ namespace JellyGate
                       (ultimateActive ? 14f : 8f)
                     : facingTiltSign * stagedAction *
                       meleeSwingDegrees * actionScale;
-                var sideGait = sideFacing ? 1.45f : diagonalFacing ? 1.25f : 1.32f;
-                var forwardLean = IsMoving && Mathf.Abs(octantForward.x) > .2f
-                    ? -Mathf.Sign(octantForward.x) * 2.15f
-                    : 0f;
-                var shoulderCounterSwing = IsMoving
-                    ? -hipTransfer * (sideFacing ? .62f : diagonalFacing ? .5f : .42f)
-                    : 0f;
+                // Do not rotate the complete renderer during locomotion. Each authored frame is
+                // already an eight-direction pose; procedural roll exposed the rectangular crop
+                // edge and made the registered centre orbit around the feet.
                 body.transform.localEulerAngles = new Vector3(0f, 0f,
-                    combatMotionActive
-                        ? actionTilt
-                        : forwardLean - footTransfer * (IsMoving ? sideGait : 0f) + shoulderCounterSwing);
+                    combatMotionActive ? actionTilt : 0f);
                 body.flipX = ShouldFlipForDirection(visualOctant);
                 AnchorCurrentSpriteToGround(frameLevelCurve * .18f + actionLift +
                                             (IsMoving ? 0f : frameContactOffset.y) +
@@ -2125,10 +2120,16 @@ namespace JellyGate
             var minY = textureHeight;
             var maxX = -1;
             var maxY = -1;
+            var opaqueCount = 0;
+            var opaqueSumX = 0f;
+            var opaqueSumY = 0f;
             for (var y = 0; y < textureHeight; y++)
             for (var x = 0; x < textureWidth; x++)
             {
                 if (pixels[y * textureWidth + x].a <= 12) continue;
+                opaqueCount++;
+                opaqueSumX += x + .5f;
+                opaqueSumY += y + .5f;
                 minX = Mathf.Min(minX, x);
                 minY = Mathf.Min(minY, y);
                 maxX = Mathf.Max(maxX, x);
@@ -2137,8 +2138,20 @@ namespace JellyGate
             OpaqueMarginCache[sprite] = maxX < minX || maxY < minY
                 ? Vector4.zero
                 : new Vector4(minX, minY, textureWidth - 1 - maxX, textureHeight - 1 - maxY);
+            OpaqueSilhouetteCache[sprite] = opaqueCount <= 0
+                ? Vector3.zero
+                : new Vector3(opaqueCount / Mathf.Max(.0001f, sprite.pixelsPerUnit * sprite.pixelsPerUnit),
+                    (opaqueSumX / opaqueCount - sprite.pivot.x) / sprite.pixelsPerUnit,
+                    (opaqueSumY / opaqueCount - sprite.pivot.y) / sprite.pixelsPerUnit);
             try { CacheSpriteMetrics(sprite, pixels, textureWidth); }
             catch (System.Exception) { }
+        }
+
+        public static bool TryGetRegisteredSilhouetteForQa(Sprite sprite, out Vector3 silhouette)
+        {
+            if (sprite != null && OpaqueSilhouetteCache.TryGetValue(sprite, out silhouette)) return true;
+            silhouette = Vector3.zero;
+            return false;
         }
 
         public static int PrimeOpaqueMetrics(IEnumerable<Sprite> sprites)

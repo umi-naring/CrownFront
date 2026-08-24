@@ -85,7 +85,8 @@ namespace JellyGate
             }
             Screen.orientation = ScreenOrientation.Portrait;
             GameLocalization.Current = GameLocalization.LoadInitialLanguage();
-            artwork = Resources.Load<Texture2D>("loading-screen-v3");
+            artwork = Resources.Load<Texture2D>("loading-screen-v4") ??
+                      Resources.Load<Texture2D>("loading-screen-v3");
             pixel = new Texture2D(1, 1, TextureFormat.RGBA32, false)
             {
                 name = "Loading UI Pixel",

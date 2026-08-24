@@ -372,6 +372,7 @@ namespace JellyGate
         public int CurrentSpriteIdForQa => body != null && body.sprite != null
             ? body.sprite.GetInstanceID()
             : 0;
+        public bool VisualSpriteFlippedForQa => body != null && body.flipX;
         public Sprite CurrentSpriteForQa => body != null ? body.sprite : null;
         public string CurrentFrameTextureNameForQa =>
             body != null && body.sprite != null && body.sprite.texture != null

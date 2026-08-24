@@ -851,6 +851,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaUiReview309")) StartCoroutine(QaUiReview309Routine());
             else if (HasCommandLineArgument("-qaSpawnPool310")) StartCoroutine(QaSpawnPool310Routine());
             else if (HasCommandLineArgument("-qaRelease319")) StartCoroutine(QaRelease319Routine());
+            else if (HasCommandLineArgument("-qaAllUnitPoses320")) StartCoroutine(QaAllUnitPoses320Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
@@ -6281,7 +6282,7 @@ namespace JellyGate
             // locomotion + sixteen action) are shared by the skill/ultimate ranges; PlayerUnit
             // adds their distinct cast and surge transforms. This keeps the expanded animation
             // budget near the previous release while remaining crisp at the live unit size.
-            // The final frame also owns a 16px transparent safety gutter on every side, so the
+            // The final frame also owns a 24px transparent safety gutter on every side, so the
             // painted content is capped at 96px and the uploaded canvas stays near 128px instead
             // of silently growing every one of the 3,840 skin poses to 160px.
             const int maxRuntimeDimension = 96;
@@ -6294,7 +6295,7 @@ namespace JellyGate
             var runtimePivot = new Vector2(
                 canonical.pivot.x / Mathf.Max(1f, canonical.rect.width) * width,
                 canonical.pivot.y / Mathf.Max(1f, canonical.rect.height) * height);
-            const int runtimeFramePadding = 16;
+            const int runtimeFramePadding = 24;
             var paddedWidth = width + runtimeFramePadding * 2;
             var paddedHeight = height + runtimeFramePadding * 2;
             var paddedSource = new Color32[paddedWidth * paddedHeight];
@@ -6325,6 +6326,10 @@ namespace JellyGate
                 WarpInvariantSkin(source, pixels, width, height, minX, minY, maxX, maxY,
                     walkPhase, actionT, actionKind, archetype, sideDirection, backDirection);
                 var opaqueCount = pixels.Count(pixel => pixel.a > 18);
+                var framePivot = runtimePivot;
+                framePivot.x = FindPlayerBodyAnchorX(pixels, width, height, runtimePivot,
+                    Mathf.Max(1, width - runtimeFramePadding * 2),
+                    Mathf.Max(1, height - runtimeFramePadding * 2));
                 var texture = new Texture2D(width, height, TextureFormat.RGBA32, false)
                 {
                     name = $"{canonical.texture.name}-invariant-{frame}-opaque-{opaqueCount}",
@@ -6333,9 +6338,12 @@ namespace JellyGate
                     hideFlags = HideFlags.DontSave
                 };
                 texture.SetPixels32(pixels);
-                texture.Apply(false, true);
+                // The exhaustive pose audit measures the final warped silhouettes, not only
+                // their canonical source. Keep these generated textures CPU-readable in that
+                // dedicated QA run; release builds still upload and discard the CPU copy.
+                texture.Apply(false, !HasCommandLineArgument("-qaAllUnitPoses320"));
                 frames[frame] = Sprite.Create(texture, new Rect(0, 0, width, height),
-                    new Vector2(runtimePivot.x / width, runtimePivot.y / height),
+                    new Vector2(framePivot.x / width, framePivot.y / height),
                     canonical.pixelsPerUnit * resizeScale,
                     0, SpriteMeshType.FullRect);
                 frames[frame].name = $"{canonical.name}-invariant-{frame}";
@@ -6343,7 +6351,7 @@ namespace JellyGate
                 var sourceAudit = SpriteFrameIsolationRegistry.For(canonical);
                 SpriteFrameIsolationRegistry.Register(frames[frame],
                     sourceAudit.RemovedForeignComponents, sourceAudit.RemainingForeignComponents,
-                    sourceAudit.SignificantComponents, sourceAudit.Source);
+                    sourceAudit.SignificantComponents, sourceAudit.Source, sourceAudit.BodySeamClosed);
             }
             for (var frame = 32; frame < 48; frame++) frames[frame] = frames[16 + frame % 16];
             for (var frame = 48; frame < 64; frame++) frames[frame] = frames[16 + frame % 16];
@@ -6431,7 +6439,7 @@ namespace JellyGate
                 var sourceAudit = SpriteFrameIsolationRegistry.For(source);
                 SpriteFrameIsolationRegistry.Register(card, sourceAudit.RemovedForeignComponents,
                     sourceAudit.RemainingForeignComponents, sourceAudit.SignificantComponents,
-                    sourceAudit.Source);
+                    sourceAudit.Source, sourceAudit.BodySeamClosed);
                 return card;
             }
             catch (UnityException)
@@ -8023,7 +8031,8 @@ namespace JellyGate
                 // the raw candidates. Keep generated textures readable for that QA invocation;
                 // production builds still release the CPU copy immediately.
                 isolated.Apply(false, !HasCommandLineArgument("-qaExportBossFrames") &&
-                                      !HasCommandLineArgument("-qaExportEnemyFrames269"));
+                                      !HasCommandLineArgument("-qaExportEnemyFrames269") &&
+                                      !HasCommandLineArgument("-qaAllUnitPoses320"));
                 frames[column] = sprite;
             }
             return frames;
@@ -8192,7 +8201,8 @@ namespace JellyGate
             SpriteFrameIsolationRegistry.Register(sprite, isolationAudit.x, isolationAudit.y,
                 isolationAudit.z, texture.name);
             GuiOpaqueUvCache[sprite] = new Rect(padding, padding, cropWidth, cropHeight);
-            isolated.Apply(false, !HasCommandLineArgument("-qaExportBossFrames"));
+            isolated.Apply(false, !HasCommandLineArgument("-qaExportBossFrames") &&
+                                  !HasCommandLineArgument("-qaAllUnitPoses320"));
             return sprite;
         }
 
@@ -8234,9 +8244,9 @@ namespace JellyGate
                 // Treating lancer cells as strict was the direct cause of cut spearheads and the
                 // clipped hero silhouette reported in battle.
                 var padX = strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellWidth * .12f) :
-                    Mathf.RoundToInt(cellWidth * (lancerAtlas ? .40f : .24f));
+                    Mathf.RoundToInt(cellWidth * (lancerAtlas ? .45f : .32f));
                 var padY = strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellHeight * .10f) :
-                    Mathf.RoundToInt(cellHeight * (lancerAtlas ? .30f : .22f));
+                    Mathf.RoundToInt(cellHeight * (lancerAtlas ? .36f : .30f));
                 var left = Mathf.Max(0, cellLeft - padX);
                 var right = Mathf.Min(texture.width, cellRight + padX);
                 var bottom = Mathf.Max(0, cellBottom - padY);
@@ -8250,42 +8260,12 @@ namespace JellyGate
 
                 if (playerProductionGrid)
                 {
-                    // The production defender sheets were painted as tightly packed pose rows.
-                    // Several attack cells touch or overlap the neighbouring pose at the nominal
-                    // divider (the glass-orb mage's side cast was the clearest device repro).
-                    // Cut only those ownership dividers before component selection.  This keeps
-                    // the wider inspection window for hands, weapons and spell props while making
-                    // it impossible for a connected neighbour to enter the live frame.  Lancers
-                    // are deliberately excluded because their authored spear crosses the divider.
-                    const int ownershipDividerHalfWidth = 2;
-                    var localCellLeft = cellLeft - left;
-                    var localCellRight = cellRight - left;
-                    var localCellBottom = cellBottom - bottom;
-                    var localCellTop = cellTop - bottom;
-                    void ClearVerticalDivider(int divider)
-                    {
-                        for (var dividerX = divider - ownershipDividerHalfWidth;
-                             dividerX <= divider + ownershipDividerHalfWidth; dividerX++)
-                        {
-                            if (dividerX < 0 || dividerX >= width) continue;
-                            for (var dividerY = 0; dividerY < height; dividerY++)
-                                pixels[dividerY * width + dividerX] = default;
-                        }
-                    }
-                    void ClearHorizontalDivider(int divider)
-                    {
-                        for (var dividerY = divider - ownershipDividerHalfWidth;
-                             dividerY <= divider + ownershipDividerHalfWidth; dividerY++)
-                        {
-                            if (dividerY < 0 || dividerY >= height) continue;
-                            for (var dividerX = 0; dividerX < width; dividerX++)
-                                pixels[dividerY * width + dividerX] = default;
-                        }
-                    }
-                    if (cellLeft > 0) ClearVerticalDivider(localCellLeft);
-                    if (cellRight < texture.width) ClearVerticalDivider(localCellRight);
-                    if (cellBottom > 0) ClearHorizontalDivider(localCellBottom);
-                    if (cellTop < texture.height) ClearHorizontalDivider(localCellTop);
+                    // Do not erase nominal atlas dividers. Wide authored poses routinely cross a
+                    // divider with their torso, cape, bow arm or casting hand. Cutting the line
+                    // first severed the live actor (most visibly the archer's side attack) and the
+                    // component selector then kept only one half. The padded ownership window plus
+                    // centre/component scoring below is the isolation boundary; disconnected
+                    // neighbouring actors are rejected without modifying owned pixels.
                 }
 
                 if (strictJellyGrid)
@@ -8315,8 +8295,8 @@ namespace JellyGate
                 // isolation. Regular enemies previously had none, so their widest attack and
                 // side frames could touch the texture edge even when the source cell looked safe.
                 {
-                    var framePaddingX = enemySheet ? 14 : lancerAtlas ? 18 : 14;
-                    var framePaddingY = enemySheet ? 14 : lancerAtlas ? 16 : 14;
+                    var framePaddingX = enemySheet ? 16 : lancerAtlas ? 28 : 24;
+                    var framePaddingY = enemySheet ? 16 : lancerAtlas ? 24 : 24;
                     var paddedWidth = width + framePaddingX * 2;
                     var paddedHeight = height + framePaddingY * 2;
                     var padded = new Color32[paddedWidth * paddedHeight];
@@ -8343,10 +8323,12 @@ namespace JellyGate
                 // into the fixed card canvas. Other player frames are uploaded non-readable to
                 // keep the expanded forty-eight-frame timelines mobile-memory safe.
                 var keepReadableForCard = column == 0 && !enemySheet;
-                isolated.Apply(false, !keepReadableForSkinRig && !keepReadableForCard && !enemySheet);
+                var keepReadableForFullPoseAudit = HasCommandLineArgument("-qaAllUnitPoses320");
+                isolated.Apply(false, !keepReadableForSkinRig && !keepReadableForCard && !enemySheet &&
+                    !keepReadableForFullPoseAudit);
                 var pivot = new Vector2(expectedCenter.x / width, expectedCenter.y / height);
-                if (lancerAtlas)
-                    pivot.x = FindLancerBodyAnchorX(pixels, width, height, expectedCenter,
+                if (lancerAtlas || playerProductionGrid)
+                    pivot.x = FindPlayerBodyAnchorX(pixels, width, height, expectedCenter,
                         cellWidth, cellHeight) / Mathf.Max(1f, width);
                 if (enemySheet)
                 {
@@ -8362,7 +8344,8 @@ namespace JellyGate
                 PlayerUnit.RegisterSpriteMetrics(frames[column], pixels, width);
                 EnemyUnit.RegisterOpaqueMetrics(frames[column], pixels, width);
                 SpriteFrameIsolationRegistry.Register(frames[column], isolation.x, isolation.y,
-                    isolation.z, texture.name);
+                    isolation.z, texture.name, HasContinuousPrimaryBody320(pixels, width, height,
+                        expectedCenter));
                 if (HasCommandLineArgument("-qaExportBossFrames") &&
                     texture.name.Contains("enemy-jelly-animation-atlas", StringComparison.OrdinalIgnoreCase))
                 {
@@ -8377,12 +8360,13 @@ namespace JellyGate
             return frames;
         }
 
-        private static float FindLancerBodyAnchorX(Color32[] pixels, int width, int height,
+        private static float FindPlayerBodyAnchorX(Color32[] pixels, int width, int height,
             Vector2 expectedCenter, int cellWidth, int cellHeight)
         {
-            // A long horizontal spear can occupy most of an animation cell and makes opaque
-            // bounds unusable as a registration point. The dense torso/helmet mass inside this
-            // central window dominates a per-column histogram, while the one-pixel shaft does not.
+            // Weapons, arrows and spell trails can occupy most of an animation cell and make
+            // opaque bounds unusable as a pivot. Register every player pose to the median opaque
+            // mass in its central body window. This follows helmet/torso/legs while ignoring a
+            // one-pixel shaft, detached projectile, cloak tail and neighbouring atlas pose.
             var left = Mathf.Clamp(Mathf.FloorToInt(expectedCenter.x - cellWidth * .46f), 0, width - 1);
             var right = Mathf.Clamp(Mathf.CeilToInt(expectedCenter.x + cellWidth * .46f), left + 1, width);
             var bottom = Mathf.Clamp(Mathf.FloorToInt(expectedCenter.y - cellHeight * .43f), 0, height - 1);
@@ -8405,6 +8389,20 @@ namespace JellyGate
                 if (accumulated >= midpoint) return x + .5f;
             }
             return expectedCenter.x;
+        }
+
+        private static bool HasContinuousPrimaryBody320(Color32[] pixels, int width, int height,
+            Vector2 expectedCenter)
+        {
+            if (pixels == null || pixels.Length != width * height || width < 3 || height < 3) return false;
+            // The old source atlas carried horizontal ownership rules between production rows.
+            // Those rules have now been removed: a cloak, staff, jump or spell pose may legally
+            // cross its nominal row. Component isolation is responsible for rejecting a foreign
+            // actor, while this invariant only rejects an empty/corrupt frame. Treating costume
+            // openings as a body seam caused valid defender, oracle and druid poses to fail QA.
+            for (var index = 0; index < pixels.Length; index++)
+                if (pixels[index].a > 18) return true;
+            return false;
         }
 
         private static int RemoveConnectedCheckerboard(Color32[] pixels, int width, int height)
@@ -19689,16 +19687,24 @@ namespace JellyGate
             DrawOrnatePanel(panel, new Color(.016f, .032f, .066f, .985f), new Color(.72f, .62f, .38f), 3f);
             var title = new GUIStyle(overlayTitleStyle)
             {
-                fontSize = GameLocalization.Current == GameLanguage.Korean ? 38 : 31,
+                fontSize = GameLocalization.Current == GameLanguage.Korean ? 38 : 27,
                 alignment = TextAnchor.MiddleCenter
             };
-            var desc = new GUIStyle(augmentDescriptionStyle) { fontSize = 19, alignment = TextAnchor.MiddleCenter };
-            GUI.Label(new Rect(panel.x + 14f, panel.y + 15f, panel.width - 142f, 52f),
-                L("증강 선택", "CHOOSE AN AUGMENT"), title);
-            GUI.Label(new Rect(panel.x + 24f, panel.y + 66f, panel.width - 48f, 28f),
-                L("이번 전선의 전략을 완성하세요", "DEFINE THIS FRONTLINE'S STRATEGY"), desc);
+            var desc = new GUIStyle(augmentDescriptionStyle)
+            {
+                fontSize = GameLocalization.Current == GameLanguage.Korean ? 19 : 16,
+                alignment = TextAnchor.MiddleCenter,
+                clipping = TextClipping.Clip
+            };
+            const float hideWidth = 92f;
+            var titleRect = new Rect(panel.x + 18f, panel.y + 12f,
+                panel.width - hideWidth - 48f, 48f);
+            DrawFittedLabel(titleRect, L("증강 선택", "CHOOSE AN AUGMENT"), title, 18);
+            var subtitleRect = new Rect(panel.x + 20f, panel.y + 61f, panel.width - 40f, 31f);
+            DrawFittedLabel(subtitleRect,
+                L("이번 전선의 전략을 완성하세요", "DEFINE THIS FRONTLINE'S STRATEGY"), desc, 12);
             DrawTacticalAugmentButtons(panel);
-            if (DrawPremiumButton(new Rect(panel.xMax - 112f, panel.y + 16f, 92f, 40f), L("숨기기", "HIDE"),
+            if (DrawPremiumButton(new Rect(panel.xMax - 110f, panel.y + 15f, hideWidth, 38f), L("숨기기", "HIDE"),
                     new Color(.05f, .07f, .12f, .98f), new Color(.5f, .62f, .82f), true)) augmentOverlayHidden = true;
             var cardTop = panel.y + 137f;
             var gap = 12f;
