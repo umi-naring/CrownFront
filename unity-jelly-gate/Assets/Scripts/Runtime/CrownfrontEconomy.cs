@@ -53,7 +53,10 @@ namespace JellyGate
         private const string GoldKey = "Crownfront.Economy.Gold.v1";
         private const string GemsKey = "Crownfront.Economy.Gems.v1";
         private const string ItemKeyPrefix = "Crownfront.Economy.Item.v1.";
+        private const string FirstProfileTrialKey = "Crownfront.Economy.FirstProfileTrial.v1";
+        private const string RunCheckpointKey = "Crownfront.RunCheckpoint.v1";
         private const int NewAccountGold = 400;
+        private const int FirstProfileTrialAmount = 3;
         private const int MaxPregameSelection = 3;
 
         private readonly List<TacticalItemDefinition> catalog = new();
@@ -68,10 +71,39 @@ namespace JellyGate
 
         public void Initialize()
         {
+            // Decide whether this is a genuinely new local profile before creating any wallet
+            // keys. Existing installations must never receive (or lose) inventory during this
+            // migration; only the very first profile receives the chairman-approved trial set.
+            var freshProfile = IsFreshLocalProfile();
             BuildCatalog();
             Gold = Mathf.Max(0, PlayerPrefs.GetInt(GoldKey, NewAccountGold));
             Gems = Mathf.Max(0, PlayerPrefs.GetInt(GemsKey, 0));
+            ApplyFirstProfileTrialIfNeeded(freshProfile);
         }
+
+        private static bool IsFreshLocalProfile()
+        {
+            if (PlayerPrefs.HasKey(GoldKey) || PlayerPrefs.HasKey(GemsKey) ||
+                PlayerPrefs.HasKey(RunCheckpointKey)) return false;
+            foreach (TacticalItemId id in Enum.GetValues(typeof(TacticalItemId)))
+                if (PlayerPrefs.HasKey(ItemKeyPrefix + id)) return false;
+            return true;
+        }
+
+        private void ApplyFirstProfileTrialIfNeeded(bool freshProfile)
+        {
+            if (PlayerPrefs.GetInt(FirstProfileTrialKey, 0) != 0) return;
+            if (freshProfile)
+                foreach (var item in catalog)
+                    PlayerPrefs.SetInt(ItemKeyPrefix + item.Id, FirstProfileTrialAmount);
+            PlayerPrefs.SetInt(FirstProfileTrialKey, 1);
+            PlayerPrefs.Save();
+        }
+
+        internal static int FirstProfileTrialAmountForQa => FirstProfileTrialAmount;
+        internal static bool ShouldGrantFirstProfileTrialForQa(bool markerExists,
+            bool walletExists, bool checkpointExists, bool inventoryExists) =>
+            !markerExists && !walletExists && !checkpointExists && !inventoryExists;
 
         private void BuildCatalog()
         {

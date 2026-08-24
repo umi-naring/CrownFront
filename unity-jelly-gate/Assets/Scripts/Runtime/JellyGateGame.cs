@@ -289,6 +289,14 @@ namespace JellyGate
         private readonly List<PlayerUnit> units = new();
         private readonly List<PlayerUnit> selectedUnits = new();
         private readonly List<EnemyUnit> enemies = new();
+        private readonly Dictionary<string, Stack<EnemyUnit>> enemyPool = new();
+        private readonly Dictionary<string, int> enemyPoolTotalByKey = new();
+        private Coroutine enemyPoolPrewarmRoutine;
+        private int enemyPoolPrewarmRound;
+        private int enemyPoolCreatedCount;
+        private int enemyPoolReuseCount;
+        private int enemyPoolReleasedCount;
+        private int enemyPoolMaxCreatedInFrame;
         private readonly List<List<Vector2>> paths = new();
         private readonly List<Vector2> bossEntrancePath = new();
         private readonly Dictionary<UnitArchetype, UnitDefinition> definitions = new();
@@ -764,6 +772,7 @@ namespace JellyGate
             RefreshEquippedCosmetics();
             Money = StartBudget();
             InitializeRunCheckpointPrompt();
+            BeginEnemyPoolPrewarm(Round);
             if (HasCommandLineArgument("-qaDirection")) StartCoroutine(QaDirectionRoutine());
             else if (HasCommandLineArgument("-qaControl")) StartCoroutine(QaControlRoutine());
             else if (HasCommandLineArgument("-qaAugment")) StartCoroutine(QaAugmentRoutine());
@@ -831,6 +840,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaBattlefieldSprite307")) StartCoroutine(QaBattlefieldSprite307Routine());
             else if (HasCommandLineArgument("-qaRoyalUi308")) StartCoroutine(QaRoyalUi308Routine());
             else if (HasCommandLineArgument("-qaUiReview309")) StartCoroutine(QaUiReview309Routine());
+            else if (HasCommandLineArgument("-qaSpawnPool310")) StartCoroutine(QaSpawnPool310Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
@@ -14233,6 +14243,7 @@ namespace JellyGate
                 runInProgress = true;
             }
             var count = WaveEnemyCount(Round);
+            BeginEnemyPoolPrewarm(Round);
             StartCoroutine(SpawnWaveRoutine(count));
         }
 
@@ -14284,6 +14295,160 @@ namespace JellyGate
         // Four of every ten regular bodies use the side doors. This raises side pressure from
         // one third without starving either of the four southern tactical routes.
         private static readonly int[] DeploymentLaneOrder = { 4, 5, 0, 3, 4, 1, 2, 5, 0, 3 };
+        private static readonly float[] BossEscortOffsets = { -1.72f, -.86f, 0f, .86f, 1.72f };
+        private static readonly float[] BossEscortBackRows = { .62f, 1.18f, 1.72f, 1.18f, .62f };
+        private static readonly float[] BossSummonLateralOffsets = { 0f, -.46f, .46f };
+
+        private sealed class EnemyPoolWarmRequest
+        {
+            public EnemyVariantProfile Profile;
+            public bool Boss;
+            public int Count;
+        }
+
+        public int EnemyPoolCreatedCountForQa => enemyPoolCreatedCount;
+        public int EnemyPoolReuseCountForQa => enemyPoolReuseCount;
+        public int EnemyPoolReleasedCountForQa => enemyPoolReleasedCount;
+        public int EnemyPoolMaxCreatedInFrameForQa => enemyPoolMaxCreatedInFrame;
+
+        private EnemyUnit AcquireEnemy(EnemyVariantProfile profile, bool boss, EnemyClass enemyClass)
+        {
+            var key = EnemyUnit.PoolKeyFor(profile, boss, enemyClass);
+            if (enemyPool.TryGetValue(key, out var available))
+            {
+                while (available.Count > 0)
+                {
+                    var pooled = available.Pop();
+                    if (pooled == null) continue;
+                    pooled.gameObject.SetActive(true);
+                    enemyPoolReuseCount++;
+                    return pooled;
+                }
+            }
+            enemyPoolCreatedCount++;
+            enemyPoolTotalByKey[key] = enemyPoolTotalByKey.TryGetValue(key, out var total) ? total + 1 : 1;
+            return new GameObject($"{profile?.Name ?? enemyClass.ToString()} Enemy").AddComponent<EnemyUnit>();
+        }
+
+        public void RecycleEnemy(EnemyUnit enemy)
+        {
+            if (enemy == null) return;
+            var key = enemy.PoolKey;
+            if (string.IsNullOrEmpty(key))
+            {
+                Destroy(enemy.gameObject);
+                return;
+            }
+            if (!enemyPool.TryGetValue(key, out var available))
+            {
+                available = new Stack<EnemyUnit>();
+                enemyPool[key] = available;
+            }
+            enemy.PrepareForPool();
+            available.Push(enemy);
+            enemyPoolReleasedCount++;
+        }
+
+        private void BeginEnemyPoolPrewarm(int round)
+        {
+            round = Mathf.Clamp(round, 1, MaxRounds);
+            if (enemyPoolPrewarmRoutine != null)
+            {
+                if (enemyPoolPrewarmRound == round) return;
+                StopCoroutine(enemyPoolPrewarmRoutine);
+            }
+            enemyPoolPrewarmRound = round;
+            enemyPoolPrewarmRoutine = StartCoroutine(PrewarmEnemyPoolRoutine(round));
+        }
+
+        private IEnumerator PrewarmEnemyPoolRoutine(int round)
+        {
+            var requests = BuildEnemyPoolWarmPlan(round);
+            var allowedKeys = new HashSet<string>(requests.Keys);
+
+            // Retire the previous chapter gradually during the non-combat preparation window.
+            // Destroying an entire retired chapter in one frame merely moves the hitch from spawn
+            // to cleanup, so at most one old actor is retired per rendered frame.
+            foreach (var oldKey in enemyPool.Keys.Where(key => !allowedKeys.Contains(key)).ToArray())
+            {
+                var stack = enemyPool[oldKey];
+                while (stack.Count > 0)
+                {
+                    var retired = stack.Pop();
+                    if (retired != null) Destroy(retired.gameObject);
+                    if (enemyPoolTotalByKey.TryGetValue(oldKey, out var total))
+                        enemyPoolTotalByKey[oldKey] = Mathf.Max(0, total - 1);
+                    yield return null;
+                }
+                enemyPool.Remove(oldKey);
+                enemyPoolTotalByKey.Remove(oldKey);
+            }
+
+            foreach (var pair in requests)
+            {
+                var request = pair.Value;
+                if (!enemyPool.TryGetValue(pair.Key, out var stack))
+                {
+                    stack = new Stack<EnemyUnit>();
+                    enemyPool[pair.Key] = stack;
+                }
+                while ((!enemyPoolTotalByKey.TryGetValue(pair.Key, out var total) || total < request.Count) &&
+                       enemyPoolPrewarmRound == round)
+                {
+                    var createdThisFrame = 0;
+                    var enemy = new GameObject($"Pooled {request.Profile?.EnglishName ?? "Enemy"}")
+                        .AddComponent<EnemyUnit>();
+                    enemyPoolCreatedCount++;
+                    enemyPoolTotalByKey[pair.Key] = enemyPoolTotalByKey.TryGetValue(pair.Key, out var currentTotal)
+                        ? currentTotal + 1
+                        : 1;
+                    createdThisFrame++;
+                    enemy.gameObject.SetActive(true);
+                    enemy.Initialize(this, 0, 1f, request.Boss, 0,
+                        request.Profile?.CombatClass ?? EnemyClass.Melee, request.Profile, false);
+                    enemy.PrepareForPool();
+                    stack.Push(enemy);
+                    enemyPoolMaxCreatedInFrame = Mathf.Max(enemyPoolMaxCreatedInFrame, createdThisFrame);
+                    yield return null;
+                }
+            }
+            enemyPoolPrewarmRoutine = null;
+        }
+
+        private static Dictionary<string, EnemyPoolWarmRequest> BuildEnemyPoolWarmPlan(int round)
+        {
+            var result = new Dictionary<string, EnemyPoolWarmRequest>();
+            void Add(EnemyVariantProfile profile, bool boss, int amount = 1)
+            {
+                if (profile == null || amount <= 0) return;
+                var key = EnemyUnit.PoolKeyFor(profile, boss, profile.CombatClass);
+                if (!result.TryGetValue(key, out var request))
+                {
+                    request = new EnemyPoolWarmRequest { Profile = profile, Boss = boss };
+                    result[key] = request;
+                }
+                request.Count += amount;
+            }
+
+            var count = WaveEnemyCount(round);
+            if (round % 5 != 0)
+            {
+                for (var i = 0; i < count; i++) Add(EnemyVariantCatalog.ForWaveMember(round, i), false);
+                return result;
+            }
+
+            var chapter = Mathf.Clamp((round - 1) / 5, 0, 9);
+            var regularCount = Mathf.Max(14, count - 10);
+            for (var i = 0; i < regularCount; i++) Add(EnemyVariantCatalog.ForWaveMember(round, i), false);
+            var bossProfile = EnemyVariantCatalog.ForChapterStage(chapter, 4);
+            Add(bossProfile, true);
+            Add(EnemyVariantCatalog.ForChapterStage(chapter, 3), false, BossEscortOffsets.Length);
+            for (var i = 0; i < 10; i++) Add(EnemyVariantCatalog.ForChapterStage(chapter, i % 4), false);
+            // Reserve the largest legal summon pack so a boss skill never constructs sprites at
+            // the exact moment its VFX, sound and path search also begin.
+            for (var i = 0; i < 6; i++) Add(EnemyVariantCatalog.ForFamilyStage(bossProfile.FamilyClass, i % 2), false);
+            return result;
+        }
 
         private static int DeploymentLaneForIndex(int index)
         {
@@ -14315,6 +14480,12 @@ namespace JellyGate
         private IEnumerator SpawnWaveRoutine(int count)
         {
             spawning = true;
+            // If the player starts instantly, finish the remaining one-object-per-frame warmup
+            // before opening the gates. This trades at most a brief entrance pause for a strict
+            // guarantee that combat never constructs an enemy renderer or animation rig.
+            while (enemyPoolPrewarmRoutine != null && enemyPoolPrewarmRound == Round &&
+                   Phase == GamePhase.Battle)
+                yield return null;
             var bossRound = Round % 5 == 0;
             if (!bossRound)
             {
@@ -14441,8 +14612,7 @@ namespace JellyGate
             var ranged = enemyClass is EnemyClass.Mage or EnemyClass.Shaman or EnemyClass.Siege or EnemyClass.Wisp or
                 EnemyClass.Silencer or EnemyClass.Cursebinder;
             var health = BaseEnemyHealth(Round) * (ranged ? .84f : 1f);
-            var enemy = new GameObject($"{profile?.Name ?? enemyClass.ToString()} Enemy")
-                .AddComponent<EnemyUnit>();
+            var enemy = AcquireEnemy(profile, false, enemyClass);
             var lane = Mathf.Clamp(DeploymentLaneForIndex(index), 0, Mathf.Max(0, LaneCount - 1));
             enemy.Initialize(this, index, health, false, lane, enemyClass, profile);
             enemies.Add(enemy);
@@ -14453,22 +14623,19 @@ namespace JellyGate
             float bossHealth, float escortHealth)
         {
             var enemyClass = bossProfile.CombatClass;
-            var boss = new GameObject($"{bossProfile.Name} Chapter Boss").AddComponent<EnemyUnit>();
+            var boss = AcquireEnemy(bossProfile, true, enemyClass);
             boss.Initialize(this, 0, bossHealth, true, 0, enemyClass, bossProfile);
             boss.ConfigureBossEntrance(0f, 0f);
             enemies.Add(boss);
             RegisterBossSilhouetteExclusion(boss);
             bossFormationSpawnCount = 1;
 
-            var escortOffsets = new[] { -1.72f, -.86f, 0f, .86f, 1.72f };
-            var escortBackRows = new[] { .62f, 1.18f, 1.72f, 1.18f, .62f };
-            for (var i = 0; i < escortOffsets.Length; i++)
+            for (var i = 0; i < BossEscortOffsets.Length; i++)
             {
-                var escort = new GameObject($"{escortProfile.Name} Boss Honour Guard {i + 1}")
-                    .AddComponent<EnemyUnit>();
+                var escort = AcquireEnemy(escortProfile, false, escortProfile.CombatClass);
                 escort.Initialize(this, i + 1, escortHealth * (i == 2 ? 1.08f : .92f),
                     false, 0, escortProfile.CombatClass, escortProfile);
-                escort.ConfigureBossEntrance(escortOffsets[i], escortBackRows[i]);
+                escort.ConfigureBossEntrance(BossEscortOffsets[i], BossEscortBackRows[i]);
                 enemies.Add(escort);
                 bossFormationSpawnCount++;
             }
@@ -14484,7 +14651,7 @@ namespace JellyGate
             // the entrance look like a device stall. Preserve the authored formation while giving
             // initialization a strict two-actors-per-frame budget.
             var enemyClass = bossProfile.CombatClass;
-            var boss = new GameObject($"{bossProfile.Name} Chapter Boss").AddComponent<EnemyUnit>();
+            var boss = AcquireEnemy(bossProfile, true, enemyClass);
             boss.Initialize(this, 0, bossHealth, true, 0, enemyClass, bossProfile);
             boss.ConfigureBossEntrance(0f, 0f);
             enemies.Add(boss);
@@ -14492,15 +14659,12 @@ namespace JellyGate
             bossFormationSpawnCount = 1;
             yield return null;
 
-            var escortOffsets = new[] { -1.72f, -.86f, 0f, .86f, 1.72f };
-            var escortBackRows = new[] { .62f, 1.18f, 1.72f, 1.18f, .62f };
-            for (var i = 0; i < escortOffsets.Length; i++)
+            for (var i = 0; i < BossEscortOffsets.Length; i++)
             {
-                var escort = new GameObject($"{escortProfile.Name} Boss Honour Guard {i + 1}")
-                    .AddComponent<EnemyUnit>();
+                var escort = AcquireEnemy(escortProfile, false, escortProfile.CombatClass);
                 escort.Initialize(this, i + 1, escortHealth * (i == 2 ? 1.08f : .92f),
                     false, 0, escortProfile.CombatClass, escortProfile);
-                escort.ConfigureBossEntrance(escortOffsets[i], escortBackRows[i]);
+                escort.ConfigureBossEntrance(BossEscortOffsets[i], BossEscortBackRows[i]);
                 enemies.Add(escort);
                 bossFormationSpawnCount++;
                 if ((i + 1) % 2 == 0) yield return null;
@@ -14588,7 +14752,7 @@ namespace JellyGate
                 // A boss may request a runner-like combat role, but the summoned body must stay
                 // in its own chapter family: jelly creates jelly, lich creates skeletons, etc.
                 var profile = EnemyVariantCatalog.ForFamilyStage(source.VisualClass, i % 2);
-                var minion = new GameObject($"{profile.EnglishName} Summoned Minion").AddComponent<EnemyUnit>();
+                var minion = AcquireEnemy(profile, false, profile.CombatClass);
                 var spawnIndex = enemies.Count + i;
                 minion.Initialize(this, spawnIndex, health, false, source.LaneIndex,
                     profile.CombatClass, profile);
@@ -14623,16 +14787,20 @@ namespace JellyGate
                 var signedOffset = (offset + ordinal) % 2 == 0 ? offset : -offset;
                 var routeIndex = source.PathIndex + signedOffset;
                 if (routeIndex < 0 || routeIndex >= route.Count) continue;
-                foreach (var lateral in new[] { 0f, -.46f, .46f })
+                foreach (var lateral in BossSummonLateralOffsets)
                 {
                     var candidate = GetOffsetPathTarget(route, routeIndex, lateral, 0f, .34f, .42f);
                     if (Vector2.Distance(candidate, source.Position) < minimumRadius ||
                         !IsWithinGroundEnemyRoadCorridor(candidate, minionRadius * .42f) ||
                         !IsWalkableWithClearance(candidate, minionRadius * .48f)) continue;
-                    var clearance = enemies.Where(enemy => enemy != null && enemy.IsAlive)
-                        .Select(enemy => Vector2.Distance(candidate, enemy.Position) -
-                                         enemy.Radius - minionRadius)
-                        .DefaultIfEmpty(10f).Min();
+                    var clearance = 10f;
+                    for (var enemyIndex = 0; enemyIndex < enemies.Count; enemyIndex++)
+                    {
+                        var enemy = enemies[enemyIndex];
+                        if (enemy == null || !enemy.IsAlive) continue;
+                        clearance = Mathf.Min(clearance, Vector2.Distance(candidate, enemy.Position) -
+                                                         enemy.Radius - minionRadius);
+                    }
                     if (clearance > bestClearance)
                     {
                         best = candidate;
@@ -15043,6 +15211,7 @@ namespace JellyGate
             Round++;
             Money = StartBudget();
             Phase = GamePhase.Preparation;
+            BeginEnemyPoolPrewarm(Round);
             showFormationPanel = true;
             showAugmentSummary = false;
             augmentOverlayHidden = false;
@@ -16180,12 +16349,13 @@ namespace JellyGate
             DrawPanel(new Rect(rect.x, rect.y, rect.width, 2f), new Color(.55f, .67f, .78f, .78f));
             DrawPanel(new Rect(rect.x, rect.yMax - 1f, rect.width, 1f), new Color(.23f, .34f, .46f, .82f));
 
-            var iconRect = new Rect(rect.x + 14f, rect.y + 18f, 48f, 48f);
-            DrawMainMenuFrontGlyph(iconRect);
+            var data = ReadRunCheckpoint();
+            var briefingRound = Mathf.Clamp(data?.round ?? 1, 1, MaxRounds);
+            var iconRect = new Rect(rect.x + 12f, rect.y + 14f, 52f, 58f);
+            DrawMainMenuRoundMonsterPortrait(iconRect, briefingRound);
             DrawPanel(new Rect(rect.x + 73f, rect.y + 13f, 1f, rect.height - 26f),
                 new Color(.31f, .43f, .55f, .7f));
 
-            var data = ReadRunCheckpoint();
             var heading = data == null ? L("새 전선 준비", "NEW FRONT READY") :
                 L("저장 전선", "SAVED FRONT");
             var detailA = data == null ? L("50 라운드", "50 ROUNDS") : $"ROUND {data.round}";
@@ -16220,20 +16390,38 @@ namespace JellyGate
                 });
         }
 
-        private static void DrawMainMenuFrontGlyph(Rect rect)
+        private void DrawMainMenuRoundMonsterPortrait(Rect rect, int round)
         {
-            var line = new Color(.68f, .79f, .88f, .9f);
-            var active = new Color(1f, .72f, .27f, .98f);
-            DrawPanel(new Rect(rect.x + 22f, rect.y + 4f, 4f, 32f), line);
-            DrawPanel(new Rect(rect.x + 8f, rect.y + 16f, 14f, 4f), line);
-            DrawPanel(new Rect(rect.x + 26f, rect.y + 16f, 14f, 4f), line);
-            DrawPanel(new Rect(rect.x + 5f, rect.y + 11f, 8f, 14f), new Color(.03f, .09f, .15f));
-            DrawPanel(new Rect(rect.x + 35f, rect.y + 11f, 8f, 14f), new Color(.03f, .09f, .15f));
-            DrawPanel(new Rect(rect.x + 18f, rect.y, 12f, 10f), new Color(.03f, .09f, .15f));
-            DrawPanel(new Rect(rect.x + 8f, rect.y + 14f, 5f, 8f), active);
-            DrawPanel(new Rect(rect.x + 35f, rect.y + 14f, 5f, 8f), active);
-            DrawPanel(new Rect(rect.x + 21f, rect.y + 2f, 6f, 6f), active);
-            DrawPanel(new Rect(rect.x + 17f, rect.y + 37f, 14f, 5f), active);
+            var bossRound = round % 5 == 0;
+            var profile = MainMenuRepresentativeProfileForRound(round);
+            var sprite = GetEnemyVariantSprite(profile, bossRound);
+            if (sprite == null)
+            {
+                var frames = GetEnemyAnimationFrames(profile, bossRound);
+                if (frames.Length > 0) sprite = frames[0];
+            }
+
+            DrawPanel(rect, new Color(.015f, .035f, .055f, .98f));
+            var accent = profile?.Accent ?? new Color(1f, .72f, .27f);
+            DrawPanel(new Rect(rect.x, rect.y, rect.width, 2f), accent);
+            DrawPanel(new Rect(rect.x, rect.yMax - 2f, rect.width, 2f),
+                new Color(accent.r, accent.g, accent.b, .72f));
+            DrawPanel(new Rect(rect.x, rect.y, 2f, rect.height),
+                new Color(accent.r, accent.g, accent.b, .72f));
+            DrawPanel(new Rect(rect.xMax - 2f, rect.y, 2f, rect.height),
+                new Color(accent.r, accent.g, accent.b, .72f));
+            if (sprite != null)
+                DrawSpriteInGui(sprite, new Rect(rect.x + 3f, rect.y + 3f,
+                    rect.width - 6f, rect.height - 6f), Color.white);
+        }
+
+        private static EnemyVariantProfile MainMenuRepresentativeProfileForRound(int round)
+        {
+            round = Mathf.Clamp(round, 1, MaxRounds);
+            var chapter = Mathf.Clamp((round - 1) / 5, 0, 9);
+            return round % 5 == 0
+                ? EnemyVariantCatalog.ForChapterStage(chapter, 4)
+                : EnemyVariantCatalog.ForWaveMember(round, 0);
         }
 
         private static Rect MainMenuDockRect(Rect safe)
@@ -16796,16 +16984,32 @@ namespace JellyGate
             }
             if (product.HasTacticalItem)
             {
-                const float gap = 4f;
-                var goldWidth = Mathf.Max(50f, rect.width * .55f);
-                DrawCurrencyPriceChip(new Rect(rect.x, rect.y, goldWidth, rect.height), false,
+                var chips = ShopPriceChipRects(rect, GameLocalization.English);
+                DrawCurrencyPriceChip(chips.gold, false,
                     $"{product.GoldPrice:N0}G", false);
-                DrawCurrencyPriceChip(new Rect(rect.x + goldWidth + gap, rect.y,
-                        Mathf.Max(38f, rect.width - goldWidth - gap), rect.height), true,
+                DrawFittedLabel(chips.relation,
+                    L("또는", "OR"), new GUIStyle(centeredStyle)
+                    {
+                        fontStyle = FontStyle.Bold,
+                        normal = { textColor = new Color(.76f, .82f, .9f) }
+                    }, 8);
+                DrawCurrencyPriceChip(chips.gems, true,
                     $"{product.GemPrice:N0}", false);
                 return;
             }
             DrawCurrencyPriceChip(rect, true, $"{product.GemPrice:N0}", false);
+        }
+
+        private static (Rect gold, Rect relation, Rect gems) ShopPriceChipRects(Rect rect, bool english)
+        {
+            const float gap = 3f;
+            var relationWidth = english ? 15f : 22f;
+            var available = Mathf.Max(80f, rect.width - relationWidth - gap * 2f);
+            var goldWidth = Mathf.Max(48f, available * .57f);
+            var gemWidth = Mathf.Max(34f, available - goldWidth);
+            var relation = new Rect(rect.x + goldWidth + gap, rect.y, relationWidth, rect.height);
+            var gems = new Rect(relation.xMax + gap, rect.y, gemWidth, rect.height);
+            return (new Rect(rect.x, rect.y, goldWidth, rect.height), relation, gems);
         }
 
         private void DrawCurrencyPriceChip(Rect rect, bool gems, string amount, bool neutral)
@@ -19408,7 +19612,8 @@ namespace JellyGate
             ClearTransientBattlePresentation();
             ClearAttackOrderMarker();
             foreach (var unit in units) if (unit != null) Destroy(unit.gameObject);
-            foreach (var enemy in enemies) if (enemy != null) Destroy(enemy.gameObject);
+            foreach (var enemy in enemies.ToArray())
+                if (enemy != null) RecycleEnemy(enemy);
             units.Clear(); enemies.Clear(); ClearSelection(); augmentPower.Clear(); augmentCount.Clear();
             acquiredAugments.Clear(); activeAugmentReadyAt.Clear(); unlockedUnits.Clear();
             activeRunItems.Clear();
@@ -19447,6 +19652,7 @@ namespace JellyGate
             currentOffers = Array.Empty<AugmentOffer>();
             ApplyBattlefieldMood(MonsterClassForRound(1), true);
             ResetCameraToFullBattlefield();
+            BeginEnemyPoolPrewarm(Round);
         }
 
         private void ClearTransientBattlePresentation()

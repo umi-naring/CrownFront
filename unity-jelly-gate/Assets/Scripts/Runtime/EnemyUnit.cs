@@ -8,6 +8,7 @@ namespace JellyGate
     {
         private static readonly float[] RecoverySteeringAngles = { 0f, 18f, -18f, 34f, -34f, 52f, -52f };
         private static readonly float[] PursuitLateralOffsets = { 0f, -.18f, .18f };
+        private static readonly float[] SpawnLateralOffsets = { -.18f, .18f, 0f, -.09f, .09f };
         private static readonly Dictionary<Sprite, Vector2> OpaqueFootAnchorCache = new();
         private static readonly Dictionary<Sprite, float> OpaqueHeightCache = new();
         private static readonly Dictionary<Sprite, float> OpaqueWidthCache = new();
@@ -279,12 +280,18 @@ namespace JellyGate
         private float armorBreakUntil;
         private float armorBreakAmount;
         private string lastSpecialQaState = string.Empty;
+        private bool presentationInitialized;
+        private string presentationPoolKey = string.Empty;
 
         public bool IsAlive { get; private set; } = true;
         public bool IsBoss { get; private set; }
         public EnemyClass Class { get; private set; }
         public EnemyClass VisualClass { get; private set; }
         public string VariantId => variantProfile?.Id ?? string.Empty;
+        public string PoolKey => presentationPoolKey;
+
+        public static string PoolKeyFor(EnemyVariantProfile profile, bool boss, EnemyClass enemyClass) =>
+            $"{(boss ? 'B' : 'R')}:{profile?.Id ?? enemyClass.ToString()}";
         public int AuthoredVariantDesignCode => VariantId switch
         {
             "stone_shard" => 31,
@@ -618,8 +625,12 @@ namespace JellyGate
         }
 
         public void Initialize(JellyGateGame owner, int spawnIndex, float startingHealth, bool boss,
-            int pathLane, EnemyClass enemyClass, EnemyVariantProfile profile)
+            int pathLane, EnemyClass enemyClass, EnemyVariantProfile profile, bool playSpawnVoice = true)
         {
+            StopAllCoroutines();
+            var requestedPoolKey = PoolKeyFor(profile, boss, enemyClass);
+            var reusePresentation = presentationInitialized && presentationPoolKey == requestedPoolKey;
+            ResetRuntimeStateForReuse();
             game = owner;
             IsBoss = boss;
             variantProfile = profile;
@@ -780,8 +791,7 @@ namespace JellyGate
             magicPower *= roundDamagePressure;
             contactDamage = attackPower;
             GateDamage *= roundDamagePressure;
-            var offsets = new[] { -.18f, .18f, 0f, -.09f, .09f };
-            lateralOffset = offsets[spawnIndex % offsets.Length];
+            lateralOffset = SpawnLateralOffsets[spawnIndex % SpawnLateralOffsets.Length];
             wriggle = Random.value * Mathf.PI * 2f;
             var start = CurrentPathTarget(0, lateralOffset, wriggle);
             transform.position = game.ActorWorldPosition(start, true);
@@ -793,6 +803,13 @@ namespace JellyGate
             lastMovementAt = Time.time;
             nextRecoveryAt = Time.time + .75f;
             name = variantProfile?.Name ?? EnemyDisplayName();
+
+            if (reusePresentation)
+            {
+                RestorePooledPresentation();
+                if (playSpawnVoice) game.PlayEnemyVoice(transform, Class, VoiceCue.Spawn);
+                return;
+            }
 
             shadow = game.CreateSpriteChild(transform, "Ground Shadow", game.CircleSprite,
                 new Color(.035f, .025f, .06f, boss ? .48f : .36f), 1f, 1);
@@ -979,7 +996,84 @@ namespace JellyGate
                 healthFill.localPosition = new Vector3(0f, -Radius - .12f, -0.2f);
                 healthFill.localScale = new Vector3(healthBarWidth, .045f, 1f);
             }
-            game.PlayEnemyVoice(transform, Class, VoiceCue.Spawn);
+            presentationInitialized = true;
+            presentationPoolKey = requestedPoolKey;
+            if (playSpawnVoice) game.PlayEnemyVoice(transform, Class, VoiceCue.Spawn);
+        }
+
+        private void ResetRuntimeStateForReuse()
+        {
+            IsAlive = true;
+            velocity = Vector2.up;
+            facingDirection = Vector2.up;
+            visualFacingDirection = Vector2.up;
+            visualOctant = FacingOctant.North;
+            bossMorphScale = Vector2.one;
+            lastAttackAt = 0f;
+            nextDustAt = 0f;
+            lastFootstepPhase = int.MinValue;
+            stunnedUntil = timeFrozenUntil = 0f;
+            nextPathReanchorAt = nextTerrainAuditAt = nextVisualUpdateAt = lastVisualUpdateAt = 0f;
+            nextTargetScanAt = nextBlockerScanAt = ignoredTargetUntil = nextDetectionAllowedAt = 0f;
+            bossSilhouetteSeparationUntil = nextPursuitApproachScanAt = 0f;
+            moveSpeedFactor = .65f;
+            hitMotion = attackMotion = skillMotion = 0f;
+            skillMotionSpeed = 1f;
+            visibleAnimationFrame = pathIndex = bossFormationLagSamples = 0;
+            usesBossEntrance = castingBossSkill = enraged = false;
+            attackingGate = engagingDefender = avoidsBossSilhouette = false;
+            detectedTarget = cachedBlocker = temporarilyIgnoredTarget = pursuitApproachTarget = null;
+            cachedPursuitApproachIndex = -1;
+            stallRecoveryCount = unreachableTargetRejectCount = corridorPursuitStepCount = 0;
+            bossSkillCastCount = bossPassiveHitCount = bossMomentumStacks = 0;
+            lastBossSkillId = lastSpecialQaState = string.Empty;
+            bossPassiveReadyAt = armorBreakUntil = armorBreakAmount = 0f;
+            lastBossPassiveHitAt = -10f;
+            damageContributors.Clear();
+        }
+
+        private void RestorePooledPresentation()
+        {
+            if (body != null)
+            {
+                body.enabled = !game.Use2p5DPresentation;
+                body.color = bodyBaseColor;
+                body.flipX = false;
+                body.transform.localPosition = Vector3.zero;
+                body.transform.localEulerAngles = Vector3.zero;
+                var correction = directionalAnimation != null
+                    ? bossDirectionalScaleCorrections[(int)visualOctant]
+                    : 1f;
+                body.transform.localScale = new Vector3(bodyBaseScale.x * correction,
+                    bodyBaseScale.y * correction, bodyBaseScale.z);
+                if (animationFrames != null && animationFrames.Length > 0)
+                    body.sprite = animationFrames[0];
+            }
+            if (visualRig != null) visualRig.gameObject.SetActive(game.Use2p5DPresentation);
+            if (shadow != null)
+            {
+                shadow.enabled = true;
+                shadow.color = new Color(.035f, .025f, .06f, IsBoss ? .48f : .36f);
+                shadow.transform.localScale = shadowBaseScale;
+            }
+            if (barrierAura != null) barrierAura.enabled = IsBoss;
+            if (bossAura != null) bossAura.enabled = IsBoss;
+            if (healthFill != null)
+            {
+                var scale = healthFill.localScale;
+                scale.x = Radius * 2.1f;
+                healthFill.localScale = scale;
+            }
+            CaptureVisualGroundLine();
+        }
+
+        public void PrepareForPool()
+        {
+            StopAllCoroutines();
+            IsAlive = false;
+            detectedTarget = cachedBlocker = temporarilyIgnoredTarget = pursuitApproachTarget = null;
+            velocity = Vector2.zero;
+            gameObject.SetActive(false);
         }
 
         private void BuildVariantPresentation(Color accent)
@@ -3433,7 +3527,7 @@ namespace JellyGate
             game.NotifyEnemyDefeated(Class, IsBoss);
             game.RemoveEnemy(this);
             game.SpawnImpact(Position, new Color(.85f, .52f, 1f));
-            Destroy(gameObject);
+            game.RecycleEnemy(this);
         }
     }
 }

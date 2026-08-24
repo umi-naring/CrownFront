@@ -404,6 +404,7 @@ namespace JellyGate
             preparedBattleCheckpointJson = JsonUtility.ToJson(CaptureRunCheckpoint(
                 resumeAugment ? GamePhase.Augment : GamePhase.Preparation));
             ApplyBattlefieldMood(MonsterClassForRound(Round), true);
+            BeginEnemyPoolPrewarm(Round);
             return true;
         }
 
