@@ -51,6 +51,15 @@ namespace JellyGate
 
             ResetUiReviewState();
             showMainMenu = false;
+            showFormationPanel = true;
+            Phase = GamePhase.Preparation;
+            Round = 8;
+            Money = 15;
+            yield return new WaitForSecondsRealtime(.1f);
+            yield return CaptureFullFrameRoutine("Crownfront-ui-review-battle-hud.ppm");
+
+            ResetUiReviewState();
+            showMainMenu = false;
             Phase = GamePhase.Augment;
             currentOffers = GenerateOffers();
             augmentOverlayHidden = false;
@@ -75,7 +84,7 @@ namespace JellyGate
 
             var passed = hierarchyPassed && shortagePassed && currentOffers.Length == 0;
             Debug.Log($"QA_UI_REVIEW_309 passed={passed} hierarchy={hierarchyPassed}:" +
-                      $"{briefing}/{play}/{dock} shortage={shortagePassed} captures=7");
+                      $"{briefing}/{play}/{dock} shortage={shortagePassed} captures=8");
             Application.Quit(passed ? 0 : 129);
         }
 
@@ -91,6 +100,7 @@ namespace JellyGate
             showResumePrompt = false;
             showExitConfirm = false;
             showSystemMenu = false;
+            showFormationPanel = false;
             Phase = GamePhase.Preparation;
             currentOffers = System.Array.Empty<AugmentOffer>();
             augmentOverlayHidden = false;

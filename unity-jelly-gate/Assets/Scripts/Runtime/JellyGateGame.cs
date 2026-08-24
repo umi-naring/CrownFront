@@ -16163,13 +16163,13 @@ namespace JellyGate
         private static Rect MainMenuPlayRect(Rect safe)
         {
             var width = Mathf.Min(286f, safe.width - 52f);
-            return new Rect(safe.center.x - width * .5f, safe.yMax - 150f, width, 52f);
+            return new Rect(safe.center.x - width * .5f, safe.yMax - 178f, width, 52f);
         }
 
         private static Rect MainMenuBriefingRect(Rect safe)
         {
             var width = Mathf.Min(386f, safe.width - 34f);
-            return new Rect(safe.center.x - width * .5f, safe.yMax - 268f, width, 96f);
+            return new Rect(safe.center.x - width * .5f, safe.yMax - 296f, width, 96f);
         }
 
         private void DrawMainMenuFrontBriefing(Rect rect)
@@ -16720,7 +16720,7 @@ namespace JellyGate
                     DrawOrnatePanel(row, new Color(.026f, .055f, .105f, .99f),
                         owned ? Color.Lerp(product.Accent, Color.white, .28f) : product.Accent, 3f);
                     DrawShopProductPreview(product, new Rect(row.x + 11f, row.y + 12f, 88f, 94f));
-                    var nameRect = new Rect(row.x + 108f, row.y + 9f, row.width - 207f, 28f);
+                    var nameRect = new Rect(row.x + 108f, row.y + 9f, row.width - 120f, 28f);
                     DrawFittedLabel(nameRect, product.Name,
                         new GUIStyle(smallStyle) { alignment = TextAnchor.MiddleLeft, fontStyle = FontStyle.Bold }, 10);
                     var descriptionStyle = new GUIStyle(statStyle)
@@ -16730,27 +16730,10 @@ namespace JellyGate
                         fontSize = GameLocalization.English ? 11 : 12,
                         clipping = TextClipping.Clip
                     };
-                    GUI.Label(new Rect(row.x + 108f, row.y + 39f, row.width - 120f, 55f),
+                    GUI.Label(new Rect(row.x + 108f, row.y + 39f, row.width - 120f, 48f),
                         product.Description, descriptionStyle);
-                    var price = owned ? L("보유", "OWNED") : product.DirectPurchase
-                        ? monetization.PriceFor(product)
-                        : product.HasTacticalItem
-                            ? $"● {product.GoldPrice:N0}G / ◆ {product.GemPrice:N0}"
-                            : $"◆ {product.GemPrice:N0}";
-                    var priceStyle = new GUIStyle(centeredStyle)
-                    {
-                        alignment = TextAnchor.MiddleCenter,
-                        fontStyle = FontStyle.Bold,
-                        normal =
-                        {
-                            textColor = product.DirectPurchase || owned
-                                ? new Color(1f, .9f, .58f)
-                                : product.HasTacticalItem
-                                    ? new Color(.9f, .91f, .72f)
-                                    : new Color(.48f, .88f, 1f)
-                        }
-                    };
-                    DrawFittedLabel(new Rect(row.xMax - 100f, row.y + 9f, 90f, 27f), price, priceStyle, 9);
+                    DrawShopPriceChips(new Rect(row.x + 108f, row.y + 90f,
+                        Mathf.Max(94f, row.width - 224f), 24f), product, owned);
                     var waitingForThisProduct = monetization.PurchaseInProgress &&
                                                 monetization.LastRequestedProductId == product.Id;
                     var actionText = waitingForThisProduct ? L("처리 중…", "WAITING…") : product.Category == ShopCategory.Utility
@@ -16768,11 +16751,12 @@ namespace JellyGate
                         : product.Category == ShopCategory.Currency
                             ? L("Google Play 소모성 보석 팩", "GOOGLE PLAY CONSUMABLE GEM PACK")
                         : owned && product.Category != ShopCategory.Utility
-                        ? L("보유 · 스킨 보관함에서 선택", "OWNED · SELECT IN SKIN VAULT") :
-                        product.Category == ShopCategory.Unit ? L("일반 · 영웅 외형 동시 변경", "BASE + HERO DESIGNS") :
+                        ? L("스킨 보관함에서 선택", "SELECT IN SKIN VAULT") :
+                        product.Category == ShopCategory.Unit ? L("일반 · 영웅 동시", "BASE + HERO") :
                         product.Category == ShopCategory.Utility ? L("계정 영구 적용", "PERMANENT") :
-                        L("실제 적용 외형 미리보기", "LIVE COSMETIC PREVIEW");
-                    DrawFittedLabel(new Rect(row.x + 10f, row.yMax - 29f, row.width - 122f, 18f),
+                        L("실제 적용 미리보기", "LIVE PREVIEW");
+                    DrawFittedLabel(new Rect(row.x + 108f, row.yMax - 27f,
+                            Mathf.Max(94f, row.width - 224f), 17f),
                         skinState, new GUIStyle(statStyle)
                         {
                             alignment = TextAnchor.MiddleLeft,
@@ -16796,6 +16780,61 @@ namespace JellyGate
             if (DrawPremiumButton(new Rect(panel.x + 22f, panel.yMax - 62f, panel.width - 44f, 42f),
                     L("닫기", "CLOSE"), new Color(.06f, .075f, .11f, .98f),
                     new Color(.58f, .68f, .82f), true)) showShopPanel = false;
+        }
+
+        private void DrawShopPriceChips(Rect rect, CrownfrontShopProduct product, bool owned)
+        {
+            if (owned)
+            {
+                DrawCurrencyPriceChip(rect, false, L("보유", "OWNED"), true);
+                return;
+            }
+            if (product.DirectPurchase)
+            {
+                DrawCurrencyPriceChip(rect, false, monetization.PriceFor(product), true);
+                return;
+            }
+            if (product.HasTacticalItem)
+            {
+                const float gap = 4f;
+                var goldWidth = Mathf.Max(50f, rect.width * .55f);
+                DrawCurrencyPriceChip(new Rect(rect.x, rect.y, goldWidth, rect.height), false,
+                    $"{product.GoldPrice:N0}G", false);
+                DrawCurrencyPriceChip(new Rect(rect.x + goldWidth + gap, rect.y,
+                        Mathf.Max(38f, rect.width - goldWidth - gap), rect.height), true,
+                    $"{product.GemPrice:N0}", false);
+                return;
+            }
+            DrawCurrencyPriceChip(rect, true, $"{product.GemPrice:N0}", false);
+        }
+
+        private void DrawCurrencyPriceChip(Rect rect, bool gems, string amount, bool neutral)
+        {
+            var accent = neutral ? new Color(.92f, .77f, .42f) :
+                gems ? new Color(.32f, .78f, 1f) : new Color(1f, .76f, .22f);
+            DrawPanel(rect, new Color(.012f, .026f, .052f, .98f));
+            DrawPanel(new Rect(rect.x, rect.y, rect.width, 1f), new Color(accent.r, accent.g, accent.b, .72f));
+            DrawPanel(new Rect(rect.x, rect.yMax - 1f, rect.width, 1f), new Color(accent.r, accent.g, accent.b, .42f));
+            if (!neutral)
+            {
+                DrawFittedLabel(new Rect(rect.x + 3f, rect.y + 1f, 18f, rect.height - 2f), gems ? "◆" : "●",
+                    new GUIStyle(centeredStyle) { normal = { textColor = accent } }, 10);
+                DrawFittedLabel(new Rect(rect.x + 20f, rect.y + 1f, rect.width - 23f, rect.height - 2f), amount,
+                    new GUIStyle(centeredStyle)
+                    {
+                        fontStyle = FontStyle.Bold,
+                        normal = { textColor = new Color(.92f, .95f, .98f) }
+                    }, 9);
+            }
+            else
+            {
+                DrawFittedLabel(new Rect(rect.x + 4f, rect.y + 1f, rect.width - 8f, rect.height - 2f), amount,
+                    new GUIStyle(centeredStyle)
+                    {
+                        fontStyle = FontStyle.Bold,
+                        normal = { textColor = accent }
+                    }, 9);
+            }
         }
 
         private void DrawPurchaseConfirmation()
@@ -17886,10 +17925,20 @@ namespace JellyGate
                 if (showAugmentSummary) showFormationPanel = false;
             }
 
+            var crestRect = new Rect(safe.center.x - 23f, safe.y + 6f, 46f, 46f);
+            DrawOrnatePanel(crestRect, new Color(.035f, .055f, .095f, .98f),
+                new Color(.95f, .72f, .25f), 2f);
+            GUI.Label(crestRect, "♛", new GUIStyle(centeredStyle)
+            {
+                fontSize = 23,
+                fontStyle = FontStyle.Bold,
+                normal = { textColor = new Color(1f, .8f, .32f) }
+            });
+
             var gateRect = new Rect(safe.x + safe.width * .14f, safe.y + 61f, safe.width * .72f, 40f);
             DrawOrnatePanel(gateRect, new Color(.025f, .035f, .07f, .97f), new Color(.88f, .69f, .3f), 2f);
             var fillColor = gateHealth / GateMaxHealth > .5f
-                ? new Color(.25f, .86f, .58f, .95f)
+                ? new Color(.18f, .69f, .49f, .95f)
                 : gateHealth / GateMaxHealth > .2f
                     ? new Color(1f, .72f, .2f, .95f)
                     : new Color(1f, .25f, .22f, .95f);
@@ -19099,8 +19148,8 @@ namespace JellyGate
 
         private static void DrawOrnatePanel(Rect rect, Color fill, Color accent, float thickness = 3f)
         {
-            // Restrained royal framing: quiet navy depth and short edge marks retain the game's
-            // identity without giving every card the same over-rendered, synthetic crest.
+            // Restrained royal framing: real hierarchy comes from depth, double rules and compact
+            // corner joins rather than generated-looking curls or oversized crests on every card.
             DrawPanel(new Rect(rect.x + 2f, rect.y + 3f, rect.width, rect.height),
                 new Color(.004f, .008f, .018f, .48f));
             DrawPanel(rect, new Color(.012f, .022f, .045f, .99f));
@@ -19111,6 +19160,11 @@ namespace JellyGate
                 Mathf.Max(0f, rect.width - inset * 2f), Mathf.Max(0f, rect.height - inset * 2f)), fill);
             DrawPanel(new Rect(rect.x + inset, rect.y + inset, rect.width - inset * 2f, 1f),
                 new Color(1f, 1f, 1f, .10f));
+            var innerEdge = new Color(accent.r, accent.g, accent.b, Mathf.Min(.22f, accent.a));
+            DrawPanel(new Rect(rect.x + inset + 3f, rect.y + inset + 3f,
+                Mathf.Max(0f, rect.width - (inset + 3f) * 2f), 1f), innerEdge);
+            DrawPanel(new Rect(rect.x + inset + 3f, rect.yMax - inset - 4f,
+                Mathf.Max(0f, rect.width - (inset + 3f) * 2f), 1f), innerEdge);
 
             const float corner = 8f;
             const float line = 2f;
@@ -19120,6 +19174,13 @@ namespace JellyGate
             DrawPanel(new Rect(rect.xMax - line - 1f, rect.y + 1f, line, corner), edge);
             DrawPanel(new Rect(rect.x + 1f, rect.yMax - line - 1f, corner, line), edge);
             DrawPanel(new Rect(rect.xMax - corner - 1f, rect.yMax - line - 1f, corner, line), edge);
+            if (rect.width >= 180f && rect.height >= 110f)
+            {
+                DrawPanel(new Rect(rect.center.x - 13f, rect.y + inset + 3f, 26f, 1f),
+                    new Color(accent.r, accent.g, accent.b, .34f));
+                DrawPanel(new Rect(rect.center.x - 2f, rect.y + inset + 1f, 4f, 5f),
+                    new Color(accent.r, accent.g, accent.b, .58f));
+            }
         }
 
         private bool DrawPremiumButton(Rect rect, string label, Color fill, Color accent, bool enabled = true)

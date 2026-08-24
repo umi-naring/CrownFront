@@ -130,7 +130,7 @@ namespace JellyGate
             DrawPanel(screen, new Color(0f, .008f, .025f, .82f));
             var safe = SafeGuiRect;
             var width = Mathf.Min(424f, safe.width * .94f);
-            var height = Mathf.Min(590f, safe.height * .84f);
+            var height = Mathf.Min(548f, safe.height * .79f);
             var panel = new Rect(safe.center.x - width * .5f, safe.center.y - height * .5f, width, height);
             DrawOrnatePanel(panel, new Color(.018f, .038f, .072f, .995f), new Color(.78f, .65f, .34f), 3f);
             DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 14f, panel.width - 36f, 40f),
@@ -193,12 +193,13 @@ namespace JellyGate
                         normal = { textColor = new Color(.86f, .91f, .97f) } }, 10);
             }
 
-            if (DrawPremiumButton(new Rect(panel.x + 20f, panel.yMax - 105f, panel.width - 40f, 46f),
-                    L("선택 완료 · 전선 출전", "CONFIRM · DEPLOY"), new Color(.2f, .13f, .045f, .99f),
-                    new Color(.92f, .72f, .3f), true)) ConfirmPregameLoadout();
-            if (DrawPremiumButton(new Rect(panel.x + 20f, panel.yMax - 51f, panel.width - 40f, 34f),
-                    L("뒤로", "BACK"), new Color(.08f, .07f, .055f, .99f),
-                    new Color(.55f, .48f, .37f), true)) showPregameLoadout = false;
+            var confirmY = detailRect.yMax + 14f;
+            if (DrawPremiumButton(new Rect(panel.x + 20f, confirmY, panel.width - 40f, 46f),
+                     L("선택 완료 · 전선 출전", "CONFIRM · DEPLOY"), new Color(.2f, .13f, .045f, .99f),
+                     new Color(.92f, .72f, .3f), true)) ConfirmPregameLoadout();
+            if (DrawPremiumButton(new Rect(panel.x + 20f, confirmY + 54f, panel.width - 40f, 42f),
+                     L("뒤로", "BACK"), new Color(.08f, .07f, .055f, .99f),
+                     new Color(.55f, .48f, .37f), true)) showPregameLoadout = false;
         }
 
         private void DrawTacticalItemIcon(Rect rect, TacticalItemId id, Color tint)
@@ -627,8 +628,8 @@ namespace JellyGate
             var productName = shortageProduct?.Name;
             var message = gems
                 ? L(string.IsNullOrWhiteSpace(productName)
-                        ? "보석 상품을 확인하시겠습니까?"
-                        : $"{productName} 구매에 필요한 보석이 부족합니다.\n보석 상품을 확인하시겠습니까?",
+                        ? "보석 상품을 구매하겠습니다."
+                        : $"{productName} 구매에 필요한 보석이 부족합니다.\n보석 상품을 구매하겠습니다.",
                     string.IsNullOrWhiteSpace(productName)
                         ? "OPEN THE GEM SHOP?"
                         : $"YOU NEED MORE GEMS FOR {productName}.\nOPEN THE GEM SHOP?")
@@ -644,11 +645,11 @@ namespace JellyGate
             {
                 var buttonWidth = (panel.width - 58f) * .5f;
                 if (DrawPremiumButton(new Rect(panel.x + 20f, panel.yMax - 62f, buttonWidth, 42f),
-                        L("아니요", "NOT NOW"), new Color(.04f, .055f, .085f, .99f),
-                        new Color(.48f, .62f, .76f), true)) CloseCurrencyShortageDialog();
-                if (DrawPremiumButton(new Rect(panel.x + 38f + buttonWidth, panel.yMax - 62f, buttonWidth, 42f),
-                        L("예 · 보석 보기", "YES · VIEW GEMS"), new Color(.025f, .10f, .14f, .99f),
+                        L("예", "YES"), new Color(.025f, .10f, .14f, .99f),
                         accent, true)) OpenGemStoreFromShortage();
+                if (DrawPremiumButton(new Rect(panel.x + 38f + buttonWidth, panel.yMax - 62f, buttonWidth, 42f),
+                        L("아니요", "NO"), new Color(.04f, .055f, .085f, .99f),
+                        new Color(.48f, .62f, .76f), true)) CloseCurrencyShortageDialog();
             }
             else if (DrawPremiumButton(new Rect(panel.x + 24f, panel.yMax - 57f, panel.width - 48f, 39f),
                          L("확인", "OK"), new Color(.08f, .065f, .035f, .99f), accent, true))

@@ -15,7 +15,7 @@ namespace JellyGate
             var castleNames = monetization.Products
                 .Where(product => product.Category == ShopCategory.Castle)
                 .Select(product => product.KoreanName).ToArray();
-            var namesPassed = castleNames.Contains("하늘빛 성") && castleNames.Contains("노을빛 성") &&
+            var namesPassed = castleNames.Contains("하늘빛 성") && castleNames.Contains("지옥불 성") &&
                               !castleNames.Contains("청람 왕성") && !castleNames.Contains("홍염 왕성");
             var uvPassed = Mathf.Approximately(CastlePreviewUv.x, 0f) &&
                            Mathf.Approximately(CastlePreviewUv.y, .54f) &&

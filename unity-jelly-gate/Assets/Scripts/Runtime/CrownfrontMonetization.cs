@@ -211,7 +211,7 @@ namespace JellyGate
             Add("crownfront.castle.azure", ShopCategory.Castle, "하늘빛 성", "SKYBLUE CASTLE",
                 "왕성을 청금석 지붕, 푸른 깃발과 성벽 광채로 단장합니다.", "Blue roofs, banners and a citadel wall glow.",
                 "보석 350", "350 GEMS", new Color(.25f, .66f, 1f), gemPrice: 350);
-            Add("crownfront.castle.ember", ShopCategory.Castle, "노을빛 성", "SUNSET CASTLE",
+            Add("crownfront.castle.ember", ShopCategory.Castle, "지옥불 성", "INFERNO CASTLE",
                 "왕성에 붉은 금속 장식, 불꽃 봉화와 성벽 광채를 적용합니다.", "Crimson metalwork, ember beacons and a wall glow.",
                 "보석 350", "350 GEMS", new Color(1f, .35f, .16f), gemPrice: 350);
             AddUnitSkins(UnitArchetype.Tank, "tank", "왕관 방패병", "CROWN SHIELD GUARD",
