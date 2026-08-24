@@ -626,19 +626,7 @@ namespace JellyGate
                 gems ? L("보석이 부족합니다", "NOT ENOUGH GEMS") :
                     L("골드가 부족합니다", "NOT ENOUGH GOLD"), modalTitleStyle, 14);
             var productName = shortageProduct?.Name;
-            var message = gems
-                ? L(string.IsNullOrWhiteSpace(productName)
-                        ? "보석 상품을 구매하겠습니다."
-                        : $"{productName} 구매에 필요한 보석이 부족합니다.\n보석 상품을 구매하겠습니다.",
-                    string.IsNullOrWhiteSpace(productName)
-                        ? "OPEN THE GEM SHOP?"
-                        : $"YOU NEED MORE GEMS FOR {productName}.\nOPEN THE GEM SHOP?")
-                : L(string.IsNullOrWhiteSpace(productName)
-                        ? "플레이로 골드를 모은 뒤 다시 시도하세요."
-                        : $"{productName} 구매에 필요한 골드가 부족합니다.\n플레이로 골드를 모은 뒤 다시 시도하세요.",
-                    string.IsNullOrWhiteSpace(productName)
-                        ? "EARN MORE GOLD IN PLAY, THEN TRY AGAIN."
-                        : $"YOU NEED MORE GOLD FOR {productName}.\nEARN GOLD IN PLAY, THEN TRY AGAIN.");
+            var message = CurrencyShortageMessage(gems, productName);
             DrawFittedLabel(new Rect(panel.x + 24f, panel.y + 64f, panel.width - 48f, 76f),
                 message, new GUIStyle(centeredStyle) { wordWrap = true }, 10);
             if (gems)
@@ -654,6 +642,23 @@ namespace JellyGate
             else if (DrawPremiumButton(new Rect(panel.x + 24f, panel.yMax - 57f, panel.width - 48f, 39f),
                          L("확인", "OK"), new Color(.08f, .065f, .035f, .99f), accent, true))
                 CloseCurrencyShortageDialog();
+        }
+
+        private string CurrencyShortageMessage(bool gems, string productName)
+        {
+            return gems
+                ? L(string.IsNullOrWhiteSpace(productName)
+                        ? "보석을 충전하시겠습니까?"
+                        : $"{productName} 구매에 필요한 보석이 부족합니다.\n보석을 충전하시겠습니까?",
+                    string.IsNullOrWhiteSpace(productName)
+                        ? "OPEN THE GEM SHOP?"
+                        : $"YOU NEED MORE GEMS FOR {productName}.\nOPEN THE GEM SHOP?")
+                : L(string.IsNullOrWhiteSpace(productName)
+                        ? "플레이로 골드를 모은 뒤 다시 시도하세요."
+                        : $"{productName} 구매에 필요한 골드가 부족합니다.\n플레이로 골드를 모은 뒤 다시 시도하세요.",
+                    string.IsNullOrWhiteSpace(productName)
+                        ? "EARN MORE GOLD IN PLAY, THEN TRY AGAIN."
+                        : $"YOU NEED MORE GOLD FOR {productName}.\nEARN GOLD IN PLAY, THEN TRY AGAIN.");
         }
 
         private void OpenGemStoreFromShortage()

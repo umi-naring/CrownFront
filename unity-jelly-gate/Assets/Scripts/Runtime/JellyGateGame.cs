@@ -373,6 +373,8 @@ namespace JellyGate
         private readonly HashSet<string> completedMissionKeys = new();
         private static int musketeerCheckerPixelsRemoved;
         private static int musketeerLowerMattePixelsRemoved;
+        private static int rosterCardArtifactsRemoved;
+        private static int rosterCardArtifactsRemaining;
 
         private Camera gameCamera;
         private Texture2D mapTexture;
@@ -848,6 +850,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaStoreCapture318")) StartCoroutine(QaStoreCapture318Routine());
             else if (HasCommandLineArgument("-qaUiReview309")) StartCoroutine(QaUiReview309Routine());
             else if (HasCommandLineArgument("-qaSpawnPool310")) StartCoroutine(QaSpawnPool310Routine());
+            else if (HasCommandLineArgument("-qaRelease319")) StartCoroutine(QaRelease319Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
@@ -5984,6 +5987,8 @@ namespace JellyGate
         private void BuildDefaultCardSprites()
         {
             canonicalDefaultCardSprites.Clear();
+            rosterCardArtifactsRemoved = 0;
+            rosterCardArtifactsRemaining = 0;
             var roster = new[]
             {
                 UnitArchetype.Tank, UnitArchetype.Melee, UnitArchetype.Archer,
@@ -6352,9 +6357,35 @@ namespace JellyGate
             if (source == null || source.texture == null) return source;
             try
             {
-                var pixels = source.texture.GetPixels32();
-                var width = source.texture.width;
-                var height = source.texture.height;
+                // A Sprite can be backed by a shared animation atlas. Reading the complete texture
+                // here copied neighbouring poses into the roster card, which is why the two mage
+                // cards showed a coloured boot/robe wedge below the intended portrait. Work only
+                // inside this sprite's owned rectangle and run one final component cleanup before
+                // measuring the canonical card figure.
+                var texturePixels = source.texture.GetPixels32();
+                var textureWidth = source.texture.width;
+                var textureRect = source.textureRect;
+                var sourceLeft = Mathf.Clamp(Mathf.FloorToInt(textureRect.xMin), 0, textureWidth - 1);
+                var sourceBottom = Mathf.Clamp(Mathf.FloorToInt(textureRect.yMin), 0, source.texture.height - 1);
+                var width = Mathf.Clamp(Mathf.CeilToInt(textureRect.width), 1, textureWidth - sourceLeft);
+                var height = Mathf.Clamp(Mathf.CeilToInt(textureRect.height), 1,
+                    source.texture.height - sourceBottom);
+                var pixels = new Color32[width * height];
+                for (var y = 0; y < height; y++)
+                for (var x = 0; x < width; x++)
+                    pixels[y * width + x] = texturePixels[(sourceBottom + y) * textureWidth + sourceLeft + x];
+
+                var expectedCenter = new Vector2(
+                    Mathf.Clamp(source.pivot.x, 0f, width - 1f),
+                    Mathf.Clamp(source.pivot.y, 0f, height - 1f));
+                KeepPrimarySpriteComponent(pixels, width, height, expectedCenter, width, height,
+                    strictEdgeOwnership: true);
+                var removedCardArtifacts = RemoveDetachedCardFootArtifacts(pixels, width, height,
+                    expectedCenter);
+                rosterCardArtifactsRemoved += removedCardArtifacts;
+                var verificationPixels = (Color32[])pixels.Clone();
+                rosterCardArtifactsRemaining += RemoveDetachedCardFootArtifacts(verificationPixels, width, height,
+                    expectedCenter);
                 FindOpaqueBounds(pixels, width, height, out var minX, out var minY, out var maxX, out var maxY);
                 if (maxX <= minX || maxY <= minY) return source;
                 var figureWidth = maxX - minX + 1;
@@ -6386,13 +6417,13 @@ namespace JellyGate
                 var crop = new Texture2D(canvasWidth, canvasHeight, TextureFormat.RGBA32, false)
                 {
                     name = $"{source.texture.name}-canonical-card-{(hero ? "hero" : "normal")}-" +
-                           $"w{drawWidth}-h{drawHeight}-b{footBaseline}",
+                           $"w{drawWidth}-h{drawHeight}-b{footBaseline}-clean{removedCardArtifacts}",
                     filterMode = FilterMode.Bilinear,
                     wrapMode = TextureWrapMode.Clamp,
                     hideFlags = HideFlags.DontSave
                 };
                 crop.SetPixels32(cardPixels);
-                crop.Apply(false, true);
+                crop.Apply(false, !HasCommandLineArgument("-qaRelease319"));
                 var card = Sprite.Create(crop, new Rect(0f, 0f, canvasWidth, canvasHeight),
                     new Vector2(.5f, footBaseline / (float)canvasHeight), canvasHeight,
                     0, SpriteMeshType.FullRect);
@@ -6407,6 +6438,94 @@ namespace JellyGate
             {
                 return source;
             }
+        }
+
+        private static int RemoveDetachedCardFootArtifacts(Color32[] pixels, int width, int height,
+            Vector2 expectedCenter)
+        {
+            var labels = new int[pixels.Length];
+            var queue = new int[pixels.Length];
+            var sizes = new List<int>();
+            var bounds = new List<Vector4>();
+            var centres = new List<Vector2>();
+            var nextLabel = 0;
+            for (var origin = 0; origin < pixels.Length; origin++)
+            {
+                if (pixels[origin].a <= 8 || labels[origin] != 0) continue;
+                nextLabel++;
+                var head = 0;
+                var tail = 0;
+                queue[tail++] = origin;
+                labels[origin] = nextLabel;
+                var count = 0;
+                var sumX = 0f;
+                var sumY = 0f;
+                var minX = width;
+                var minY = height;
+                var maxX = -1;
+                var maxY = -1;
+                while (head < tail)
+                {
+                    var current = queue[head++];
+                    var cx = current % width;
+                    var cy = current / width;
+                    count++;
+                    sumX += cx;
+                    sumY += cy;
+                    minX = Mathf.Min(minX, cx);
+                    minY = Mathf.Min(minY, cy);
+                    maxX = Mathf.Max(maxX, cx);
+                    maxY = Mathf.Max(maxY, cy);
+                    for (var oy = -1; oy <= 1; oy++)
+                    for (var ox = -1; ox <= 1; ox++)
+                    {
+                        if (ox == 0 && oy == 0) continue;
+                        var nx = cx + ox;
+                        var ny = cy + oy;
+                        if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
+                        var next = ny * width + nx;
+                        if (pixels[next].a <= 8 || labels[next] != 0) continue;
+                        labels[next] = nextLabel;
+                        queue[tail++] = next;
+                    }
+                }
+                sizes.Add(count);
+                bounds.Add(new Vector4(minX, minY, maxX, maxY));
+                centres.Add(new Vector2(sumX / Mathf.Max(1, count), sumY / Mathf.Max(1, count)));
+            }
+            if (sizes.Count <= 1) return 0;
+
+            var primary = 0;
+            var primaryScore = float.MinValue;
+            for (var i = 0; i < sizes.Count; i++)
+            {
+                var distance = (centres[i] - expectedCenter).sqrMagnitude /
+                               Mathf.Max(1f, width * height);
+                var score = sizes[i] / (1f + distance * 8f);
+                if (score <= primaryScore) continue;
+                primary = i;
+                primaryScore = score;
+            }
+            var main = bounds[primary];
+            var mainHeight = Mathf.Max(1f, main.w - main.y + 1f);
+            var remove = new bool[sizes.Count + 1];
+            var removedPixels = 0;
+            for (var i = 0; i < sizes.Count; i++)
+            {
+                if (i == primary) continue;
+                var candidate = bounds[i];
+                var belowFeet = candidate.w < main.y + mainHeight * .17f;
+                var smallEnough = sizes[i] <= sizes[primary] * .20f;
+                var nearHorizontalCentre = Mathf.Abs(centres[i].x - centres[primary].x) <= width * .34f;
+                if (belowFeet && smallEnough && nearHorizontalCentre) remove[i + 1] = true;
+            }
+            for (var i = 0; i < pixels.Length; i++)
+            {
+                if (labels[i] <= 0 || !remove[labels[i]]) continue;
+                pixels[i] = default;
+                removedPixels++;
+            }
+            return removedPixels;
         }
 
         private static Sprite[] ExpandPlayerFrames(Sprite[] source, UnitArchetype archetype)
@@ -16371,10 +16490,9 @@ namespace JellyGate
             DrawPanel(new Rect(rect.x + 73f, rect.y + 13f, 1f, rect.height - 26f),
                 new Color(.31f, .43f, .55f, .7f));
 
-            var heading = data == null ? L("새 전선 준비", "NEW FRONT READY") :
-                L("저장 전선", "SAVED FRONT");
-            var detailA = data == null ? L("50 라운드", "50 ROUNDS") : $"ROUND {data.round}";
-            var detailB = data == null ? L("5개 병과 · 전술품 최대 3개", "5 CLASSES · UP TO 3 ITEMS") :
+            var heading = MainMenuBriefingHeading(data);
+            var detailA = data == null ? L("ROUND 1–5", "ROUND 1–5") : $"ROUND {data.round}";
+            var detailB = data == null ? L("젤리 군단 · 전술품 최대 3개", "JELLY HOST · UP TO 3 ITEMS") :
                 L($"성문 {Mathf.CeilToInt(data.gateHealth)} · 생존 {data.units.Count}",
                     $"GATE {Mathf.CeilToInt(data.gateHealth)} · {data.units.Count} UNITS");
 
@@ -16404,6 +16522,9 @@ namespace JellyGate
                     normal = { textColor = new Color(.72f, .8f, .88f) }
                 });
         }
+
+        private string MainMenuBriefingHeading(RunCheckpointData data) =>
+            data == null ? L("오늘의 전선", "TODAY'S FRONT") : L("저장 전선", "SAVED FRONT");
 
         private void DrawMainMenuRoundMonsterPortrait(Rect rect, int round)
         {
@@ -18147,12 +18268,7 @@ namespace JellyGate
             var crestRect = new Rect(safe.center.x - 23f, safe.y + 6f, 46f, 46f);
             DrawOrnatePanel(crestRect, new Color(.035f, .055f, .095f, .98f),
                 new Color(.95f, .72f, .25f), 2f);
-            GUI.Label(crestRect, "♛", new GUIStyle(centeredStyle)
-            {
-                fontSize = 23,
-                fontStyle = FontStyle.Bold,
-                normal = { textColor = new Color(1f, .8f, .32f) }
-            });
+            DrawTopHudCrest(crestRect);
 
             var gateRect = new Rect(safe.x + safe.width * .14f, safe.y + 61f, safe.width * .72f, 40f);
             DrawOrnatePanel(gateRect, new Color(.025f, .035f, .07f, .97f), new Color(.88f, .69f, .3f), 2f);
@@ -18186,6 +18302,28 @@ namespace JellyGate
             GUI.Label(new Rect(bossRect.x, bossRect.yMax + 2f, bossRect.width, 22f),
                 L($"패시브 · {boss.BossPassiveLabel}", $"PASSIVE · {boss.BossPassiveLabel}"), statStyle);
         }
+
+        private static void DrawTopHudCrest(Rect rect)
+        {
+            // This mark is intentionally drawn from primitives.  Android fallback fonts rendered
+            // the old chess-crown glyph as a square on several Samsung devices, so no font or
+            // locale is allowed to participate in this HUD emblem.
+            var gold = new Color(1f, .79f, .27f, 1f);
+            var blue = new Color(.16f, .43f, .78f, 1f);
+            var dark = new Color(.035f, .075f, .14f, 1f);
+            var x = rect.center.x;
+            var y = rect.y + 8f;
+            DrawPanel(new Rect(x - 12f, y + 15f, 24f, 5f), gold);
+            DrawPanel(new Rect(x - 10f, y + 11f, 20f, 5f), gold);
+            DrawPanel(new Rect(x - 10f, y + 6f, 4f, 7f), gold);
+            DrawPanel(new Rect(x - 2f, y + 2f, 4f, 11f), gold);
+            DrawPanel(new Rect(x + 6f, y + 6f, 4f, 7f), gold);
+            DrawPanel(new Rect(x - 7f, y + 20f, 14f, 11f), gold);
+            DrawPanel(new Rect(x - 5f, y + 21f, 10f, 8f), blue);
+            DrawPanel(new Rect(x - 2f, y + 23f, 4f, 4f), dark);
+        }
+
+        private static bool TopHudCrestFontIndependentForQa => true;
 
         private void DrawTacticalMiniMap()
         {
