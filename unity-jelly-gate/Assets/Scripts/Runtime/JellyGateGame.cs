@@ -830,6 +830,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaInteractionVisual306")) StartCoroutine(QaInteractionVisual306Routine());
             else if (HasCommandLineArgument("-qaBattlefieldSprite307")) StartCoroutine(QaBattlefieldSprite307Routine());
             else if (HasCommandLineArgument("-qaRoyalUi308")) StartCoroutine(QaRoyalUi308Routine());
+            else if (HasCommandLineArgument("-qaUiReview309")) StartCoroutine(QaUiReview309Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
@@ -16103,9 +16104,10 @@ namespace JellyGate
             var previousEnabled = GUI.enabled;
             GUI.enabled = MainMenuBaseInputEnabled;
 
-            // Current mobile hub hierarchy: the primary action floats above a compact persistent
-            // dock.  Secondary destinations no longer compete with Play as six identical rows,
-            // leaving the authored battle scene visible through the middle of the screen.
+            // The lower road is useful breathing room for the key art, but an entirely empty band
+            // reads like unfinished layout.  A restrained, data-backed front briefing now bridges
+            // the illustration and primary CTA without adding ornamental fantasy clutter.
+            DrawMainMenuFrontBriefing(MainMenuBriefingRect(safe));
             var playRect = MainMenuPlayRect(safe);
             DrawPanel(new Rect(playRect.x + 12f, playRect.y + 7f, playRect.width - 24f,
                 playRect.height + 3f), new Color(0f, 0f, 0f, .34f));
@@ -16162,6 +16164,76 @@ namespace JellyGate
         {
             var width = Mathf.Min(286f, safe.width - 52f);
             return new Rect(safe.center.x - width * .5f, safe.yMax - 150f, width, 52f);
+        }
+
+        private static Rect MainMenuBriefingRect(Rect safe)
+        {
+            var width = Mathf.Min(386f, safe.width - 34f);
+            return new Rect(safe.center.x - width * .5f, safe.yMax - 268f, width, 96f);
+        }
+
+        private void DrawMainMenuFrontBriefing(Rect rect)
+        {
+            DrawPanel(new Rect(rect.x + 5f, rect.y + 6f, rect.width, rect.height),
+                new Color(0f, 0f, 0f, .3f));
+            DrawPanel(rect, new Color(.018f, .04f, .07f, .91f));
+            DrawPanel(new Rect(rect.x, rect.y, rect.width, 2f), new Color(.55f, .67f, .78f, .78f));
+            DrawPanel(new Rect(rect.x, rect.yMax - 1f, rect.width, 1f), new Color(.23f, .34f, .46f, .82f));
+
+            var iconRect = new Rect(rect.x + 14f, rect.y + 18f, 48f, 48f);
+            DrawMainMenuFrontGlyph(iconRect);
+            DrawPanel(new Rect(rect.x + 73f, rect.y + 13f, 1f, rect.height - 26f),
+                new Color(.31f, .43f, .55f, .7f));
+
+            var data = ReadRunCheckpoint();
+            var heading = data == null ? L("새 전선 준비", "NEW FRONT READY") :
+                L("저장 전선", "SAVED FRONT");
+            var detailA = data == null ? L("50 라운드", "50 ROUNDS") : $"ROUND {data.round}";
+            var detailB = data == null ? L("5개 병과 · 전술품 최대 3개", "5 CLASSES · UP TO 3 ITEMS") :
+                L($"성문 {Mathf.CeilToInt(data.gateHealth)} · 생존 {data.units.Count}",
+                    $"GATE {Mathf.CeilToInt(data.gateHealth)} · {data.units.Count} UNITS");
+
+            GUI.Label(new Rect(rect.x + 86f, rect.y + 12f, rect.width - 102f, 25f), heading,
+                new GUIStyle(statStyle)
+                {
+                    fontSize = 14,
+                    fontStyle = FontStyle.Bold,
+                    alignment = TextAnchor.MiddleLeft,
+                    normal = { textColor = new Color(.93f, .95f, .97f) }
+                });
+            DrawPanel(new Rect(rect.x + 86f, rect.y + 42f, rect.width - 101f, 1f),
+                new Color(.25f, .36f, .47f, .7f));
+            GUI.Label(new Rect(rect.x + 86f, rect.y + 48f, 94f, 27f), detailA,
+                new GUIStyle(statStyle)
+                {
+                    fontSize = 12,
+                    fontStyle = FontStyle.Bold,
+                    alignment = TextAnchor.MiddleLeft,
+                    normal = { textColor = new Color(.96f, .74f, .34f) }
+                });
+            GUI.Label(new Rect(rect.x + 174f, rect.y + 48f, rect.width - 190f, 27f), detailB,
+                new GUIStyle(statStyle)
+                {
+                    fontSize = 11,
+                    alignment = TextAnchor.MiddleRight,
+                    normal = { textColor = new Color(.72f, .8f, .88f) }
+                });
+        }
+
+        private static void DrawMainMenuFrontGlyph(Rect rect)
+        {
+            var line = new Color(.68f, .79f, .88f, .9f);
+            var active = new Color(1f, .72f, .27f, .98f);
+            DrawPanel(new Rect(rect.x + 22f, rect.y + 4f, 4f, 32f), line);
+            DrawPanel(new Rect(rect.x + 8f, rect.y + 16f, 14f, 4f), line);
+            DrawPanel(new Rect(rect.x + 26f, rect.y + 16f, 14f, 4f), line);
+            DrawPanel(new Rect(rect.x + 5f, rect.y + 11f, 8f, 14f), new Color(.03f, .09f, .15f));
+            DrawPanel(new Rect(rect.x + 35f, rect.y + 11f, 8f, 14f), new Color(.03f, .09f, .15f));
+            DrawPanel(new Rect(rect.x + 18f, rect.y, 12f, 10f), new Color(.03f, .09f, .15f));
+            DrawPanel(new Rect(rect.x + 8f, rect.y + 14f, 5f, 8f), active);
+            DrawPanel(new Rect(rect.x + 35f, rect.y + 14f, 5f, 8f), active);
+            DrawPanel(new Rect(rect.x + 21f, rect.y + 2f, 6f, 6f), active);
+            DrawPanel(new Rect(rect.x + 17f, rect.y + 37f, 14f, 5f), active);
         }
 
         private static Rect MainMenuDockRect(Rect safe)
