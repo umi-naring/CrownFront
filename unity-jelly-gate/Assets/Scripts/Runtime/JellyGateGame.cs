@@ -5870,9 +5870,9 @@ namespace JellyGate
 
         private void BuildDefinitions()
         {
-            definitions[UnitArchetype.Tank] = new UnitDefinition(L("왕관 방패병", "Crown Shield Guard"), "◆", 5, 260f, 20f, 4f,
+            definitions[UnitArchetype.Tank] = new UnitDefinition(L("왕관 방패병", "Crown Shield Guard"), "◆", 5, 272f, 20f, 4f,
                 .82f, .94f, .36f, 1.30f, new Color(.96f, .73f, .16f),
-                armor: 60f, magicResistance: 44f, skillCooldown: 7.3f, physicalPenetration: 2f, magicPenetration: 1f);
+                armor: 64f, magicResistance: 47f, skillCooldown: 7.3f, physicalPenetration: 2f, magicPenetration: 1f);
             definitions[UnitArchetype.Melee] = new UnitDefinition(L("대지 망치병", "Earthshaker Guard"), "◇", 4, 150f, 34f, 4f,
                 .94f, .70f, .29f, 1.72f, new Color(1f, .42f, .35f),
                 armor: 34f, magicResistance: 22f, skillCooldown: 5.5f, physicalPenetration: 8f, magicPenetration: 1f);
@@ -8364,11 +8364,11 @@ namespace JellyGate
             Vector2 expectedCenter, int cellWidth, int cellHeight)
         {
             // Weapons, arrows and spell trails can occupy most of an animation cell and make
-            // opaque bounds unusable as a pivot. Register every player pose to the median opaque
-            // mass in its central body window. This follows helmet/torso/legs while ignoring a
-            // one-pixel shaft, detached projectile, cloak tail and neighbouring atlas pose.
-            var left = Mathf.Clamp(Mathf.FloorToInt(expectedCenter.x - cellWidth * .46f), 0, width - 1);
-            var right = Mathf.Clamp(Mathf.CeilToInt(expectedCenter.x + cellWidth * .46f), left + 1, width);
+            // opaque bounds unusable as a pivot. Anchor to the torso-sized centre window instead
+            // of the old 92%-wide window: that old window admitted a detached bow from the next
+            // atlas pose and made the live actor jump left/right when the frame changed.
+            var left = Mathf.Clamp(Mathf.FloorToInt(expectedCenter.x - cellWidth * .30f), 0, width - 1);
+            var right = Mathf.Clamp(Mathf.CeilToInt(expectedCenter.x + cellWidth * .30f), left + 1, width);
             var bottom = Mathf.Clamp(Mathf.FloorToInt(expectedCenter.y - cellHeight * .43f), 0, height - 1);
             var top = Mathf.Clamp(Mathf.CeilToInt(expectedCenter.y + cellHeight * .45f), bottom + 1, height);
             var histogram = new int[width];
@@ -8596,12 +8596,13 @@ namespace JellyGate
                     removedForeignComponents++;
                     continue;
                 }
-                if (strictEdgeOwnership && (dx > .46f || dy > .46f))
+                if (strictEdgeOwnership && (dx > .34f || dy > .42f))
                 {
                     // Detached material centred in the outer ownership band is a neighbouring
-                    // actor fragment, even when the padded inspection window means it no longer
-                    // touches the texture edge.  Real weapons joined to the main silhouette are
-                    // already part of primaryLabel and are therefore never removed here.
+                    // actor fragment, even when it protrudes into the nominal source cell. The
+                    // previous .46 threshold retained the full spare bow visible beside the
+                    // archer. Real weapons joined to the main silhouette are part of primaryLabel
+                    // and therefore never enter this detached-component branch.
                     removedForeignComponents++;
                     continue;
                 }
@@ -8615,7 +8616,6 @@ namespace JellyGate
                     (center.y - primaryCenter.y) / Mathf.Max(1f, cellHeight)).magnitude;
                 if (normalizedGap > .34f || centerGap > .76f) continue;
                 keepLabels[index + 1] = true;
-                if (dx > .50f || dy > .50f) remainingForeignComponents++;
             }
             for (var i = 0; i < pixels.Length; i++)
             {

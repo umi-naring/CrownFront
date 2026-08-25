@@ -29,6 +29,7 @@ namespace JellyGate
             var uniqueSprites = new HashSet<Sprite>();
             var silhouetteCache = new Dictionary<Sprite, Vector3>();
             var exportedFailures = new HashSet<Sprite>();
+            var archerNeighbourFragmentsRemoved = 0;
             var artifactRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..",
                 "qa-artifacts", "Crownfront-QA-320"));
             Directory.CreateDirectory(artifactRoot);
@@ -91,6 +92,11 @@ namespace JellyGate
                         var sprite = actor.PortraitSprite;
                         var margins = PlayerUnit.SpriteOpaqueMarginsForQa(sprite);
                         var audit = SpriteFrameIsolationRegistry.For(sprite);
+                        if (archetype == UnitArchetype.Archer &&
+                            (audit.Source ?? string.Empty).IndexOf("archer",
+                                System.StringComparison.OrdinalIgnoreCase) >= 0)
+                            archerNeighbourFragmentsRemoved = Mathf.Max(archerNeighbourFragmentsRemoved,
+                                audit.RemovedForeignComponents);
                         // Measure the character body, not a raised spear/staff/projectile. The
                         // latter is expected to change reach during an authored attack pose.
                         var height = actor.VisualBodyWorldHeightForQa;
@@ -382,6 +388,11 @@ namespace JellyGate
             if (enemyPresentations != EnemyVariantCatalog.AllProfiles.Length)
                 failures.Add($"enemy-count={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length}");
             if (bossPresentations != 10) failures.Add($"boss-count={bossPresentations}/10");
+            // Regression for the detached full bow reported beside the emerald hero archer.
+            // The source atlas does contain a neighbouring component inside the padded read
+            // window, so a zero here means isolation was bypassed or loosened again.
+            if (archerNeighbourFragmentsRemoved <= 0)
+                failures.Add("archer-neighbour-regression:no-foreign-component-removed");
 
             File.WriteAllText(Path.Combine(artifactRoot, "all-unit-pose-audit.csv"), csv.ToString(),
                 new UTF8Encoding(false));
@@ -390,10 +401,12 @@ namespace JellyGate
                 $"passed={passedAll}\nplayers={playerPresentations}/60\n" +
                 $"enemies={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length}\n" +
                 $"bosses={bossPresentations}/10\nposes={poseCount}\nuniqueSprites={uniqueSprites.Count}\n" +
+                $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved}\n" +
                 $"failures={string.Join(Environment.NewLine, failures)}\n", new UTF8Encoding(false));
             Debug.Log($"QA_ALL_UNIT_POSES_320 passed={passedAll} players={playerPresentations}/60 " +
                       $"enemies={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length} " +
                       $"bosses={bossPresentations}/10 poses={poseCount} sprites={uniqueSprites.Count} " +
+                      $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved} " +
                       $"fail={string.Join("|", failures.Take(40))}");
             Application.Quit(passedAll ? 0 : 132);
         }
