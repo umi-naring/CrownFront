@@ -30,9 +30,12 @@ namespace JellyGate
             var silhouetteCache = new Dictionary<Sprite, Vector3>();
             var exportedFailures = new HashSet<Sprite>();
             var exportedArcherAudit = new HashSet<Sprite>();
+            var exportedHeroMageAudit = new HashSet<Sprite>();
             var archerNeighbourFragmentsRemoved = 0;
             var archerAimChecks = 0;
             var archerAimFailures = 0;
+            var heroMageAimChecks = 0;
+            var heroMageAimFailures = 0;
             var artifactRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..",
                 "qa-artifacts", "Crownfront-QA-320"));
             Directory.CreateDirectory(artifactRoot);
@@ -42,6 +45,9 @@ namespace JellyGate
             var archerFrameRoot = Path.Combine(artifactRoot, "hero-archer-live-frames");
             if (Directory.Exists(archerFrameRoot)) Directory.Delete(archerFrameRoot, true);
             Directory.CreateDirectory(archerFrameRoot);
+            var heroMageFrameRoot = Path.Combine(artifactRoot, "hero-mage-live-frames");
+            if (Directory.Exists(heroMageFrameRoot)) Directory.Delete(heroMageFrameRoot, true);
+            Directory.CreateDirectory(heroMageFrameRoot);
 
             var roster = new[]
             {
@@ -169,6 +175,9 @@ namespace JellyGate
                             if (archetype == UnitArchetype.Archer && hero)
                                 ExportFailureFrame320(sprite, archerFrameRoot, exportedArcherAudit,
                                     $"hero-archer-v{variant}-{octant}-s{state}-f{frame}");
+                            if (hero && archetype is UnitArchetype.AreaMage or UnitArchetype.SingleMage)
+                                ExportFailureFrame320(sprite, heroMageFrameRoot, exportedHeroMageAudit,
+                                    $"hero-mage-{archetype}-v{variant}-{octant}-s{state}-f{frame}");
                         }
                         AppendPose320(csv, "player", archetype.ToString(), variant, hero, octant,
                             state, frame, sprite, audit, margins, actor.ActivePrimaryBodyChannelsForQa,
@@ -176,7 +185,8 @@ namespace JellyGate
                     }
                 }
 
-                if (archetype == UnitArchetype.Archer && hero)
+                if (hero && archetype is UnitArchetype.Archer or UnitArchetype.AreaMage or
+                    UnitArchetype.SingleMage)
                 {
                     var obliqueAimProbes = new[]
                     {
@@ -187,7 +197,8 @@ namespace JellyGate
                     };
                     foreach (var probe in obliqueAimProbes)
                     {
-                        archerAimChecks++;
+                        if (archetype == UnitArchetype.Archer) archerAimChecks++;
+                        else heroMageAimChecks++;
                         var actual = actor.PreviewCombatAimForQa(probe.Item1);
                         var originProjection = Vector2.Dot(
                             actor.AttackOriginFor(actor.Position + probe.Item1.normalized * 4f) - actor.Position,
@@ -196,8 +207,9 @@ namespace JellyGate
                         presentationPassed &= aimPassed;
                         if (!aimPassed)
                         {
-                            archerAimFailures++;
-                            failures.Add($"archer-aim:v{variant}:expected={probe.Item2}:actual={actual}:" +
+                            if (archetype == UnitArchetype.Archer) archerAimFailures++;
+                            else heroMageAimFailures++;
+                            failures.Add($"ranged-aim:{archetype}:v{variant}:expected={probe.Item2}:actual={actual}:" +
                                          $"origin={originProjection:0.000}");
                         }
                     }
@@ -438,6 +450,8 @@ namespace JellyGate
                 failures.Add($"archer-live-export:{exportedArcherAudit.Count}/21");
             if (archerAimChecks != 12 || archerAimFailures != 0)
                 failures.Add($"archer-oblique-aim:{archerAimChecks}/12:fail={archerAimFailures}");
+            if (heroMageAimChecks != 24 || heroMageAimFailures != 0)
+                failures.Add($"hero-mage-oblique-aim:{heroMageAimChecks}/24:fail={heroMageAimFailures}");
 
             File.WriteAllText(Path.Combine(artifactRoot, "all-unit-pose-audit.csv"), csv.ToString(),
                 new UTF8Encoding(false));
@@ -449,6 +463,8 @@ namespace JellyGate
                 $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved}\n" +
                 $"archerLiveFrames={exportedArcherAudit.Count}\n" +
                 $"archerAim={archerAimChecks}/12:fail={archerAimFailures}\n" +
+                $"heroMageLiveFrames={exportedHeroMageAudit.Count}\n" +
+                $"heroMageAim={heroMageAimChecks}/24:fail={heroMageAimFailures}\n" +
                 $"failures={string.Join(Environment.NewLine, failures)}\n", new UTF8Encoding(false));
             Debug.Log($"QA_ALL_UNIT_POSES_320 passed={passedAll} players={playerPresentations}/60 " +
                       $"enemies={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length} " +
@@ -456,6 +472,8 @@ namespace JellyGate
                       $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved} " +
                       $"archerLiveFrames={exportedArcherAudit.Count} " +
                       $"archerAim={archerAimChecks}/12:fail={archerAimFailures} " +
+                      $"heroMageLiveFrames={exportedHeroMageAudit.Count} " +
+                      $"heroMageAim={heroMageAimChecks}/24:fail={heroMageAimFailures} " +
                       $"fail={string.Join("|", failures.Take(40))}");
             Application.Quit(passedAll ? 0 : 132);
         }

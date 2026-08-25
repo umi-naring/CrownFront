@@ -751,9 +751,14 @@ namespace JellyGate
             if (Round % 5 == 0) runGoldScore += 2 + Mathf.CeilToInt(chapter * .5f);
         }
 
+        internal static bool IsRunSettlementEligible(GamePhase phase, int clearedRounds) =>
+            phase is GamePhase.Defeat or GamePhase.Victory || clearedRounds >= MaxRounds;
+
         private int AwardRunGold()
         {
-            if (runGoldAwarded || economy == null) return 0;
+            // A checkpoint keeps the live run score, but leaving an unfinished battle must never
+            // convert it into account gold. Settlement is final only on defeat or full clear.
+            if (!IsRunSettlementEligible(Phase, roundsCleared) || runGoldAwarded || economy == null) return 0;
             var total = CalculateRunGoldReward(runGoldScore, roundsCleared,
                 Mathf.Clamp01(gateHealth / GateMaxHealth), revivalUsedThisRun);
             economy.GrantGold(total);

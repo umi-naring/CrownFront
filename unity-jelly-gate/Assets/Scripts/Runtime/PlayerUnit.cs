@@ -269,7 +269,7 @@ namespace JellyGate
         public bool HasForcedAttackOrderOn(EnemyUnit target) =>
             IsAlive && forcedAttackOrder && commandedTarget != null && commandedTarget == target;
         public float AttackDamagePreview => Archetype is UnitArchetype.AreaMage or UnitArchetype.SingleMage or UnitArchetype.Druid or UnitArchetype.Oracle
-            ? MagicPower * (Archetype == UnitArchetype.AreaMage ? .26f : Archetype == UnitArchetype.SingleMage ? .55f : .34f)
+            ? MagicPower * JellyGateGame.BasicAttackMultiplierFor(Archetype)
             : AttackPower;
         public bool IsOnHighGround => game != null && game.IsHighGround(Position);
         public string SkillName => LocalizedSkillName(Archetype);
@@ -1049,18 +1049,23 @@ namespace JellyGate
             // front sheets have one authored left/right draw bias, so a mostly vertical shot with
             // a real horizontal component must use the corresponding diagonal pose instead of a
             // neutral North/South pose that can appear to aim across the arrow path.
-            var visualAim = Archetype == UnitArchetype.Archer
+            var visualAim = UsesAuthoredCombatAimLock
                 ? EightWayFacing.VectorFor(CombatAimOctant(facing))
                 : facing;
             visualFacing = visualAim;
             visualOctant = EightWayFacing.FromVector(visualAim);
-            // Keep the authored archer pose locked through the projectile spawn and the first
-            // readable attack frames.  Without this short lock, the generic turn smoothing below
-            // immediately blended a SouthEast/NorthWest pose back into pure South/North, so the
-            // body could face right while the arrow travelled left (or vice versa).
-            if (Archetype == UnitArchetype.Archer)
-                combatFacingLockUntil = Mathf.Max(combatFacingLockUntil, Time.time + .34f);
+            // Keep authored ranged poses locked through projectile spawn and the first readable
+            // attack frames. The two mage rigs use the same eight-direction contract as archers;
+            // their slower casting wind-up needs a slightly longer lock.
+            if (UsesAuthoredCombatAimLock)
+            {
+                var lockDuration = Archetype == UnitArchetype.Archer ? .34f : .40f;
+                combatFacingLockUntil = Mathf.Max(combatFacingLockUntil, Time.time + lockDuration);
+            }
         }
+
+        private bool UsesAuthoredCombatAimLock => Archetype is UnitArchetype.Archer or
+            UnitArchetype.AreaMage or UnitArchetype.SingleMage;
 
         private FacingOctant CombatAimOctant(Vector2 targetDirection)
         {
@@ -1068,7 +1073,7 @@ namespace JellyGate
                 ? targetDirection.normalized
                 : Vector2.down;
             var octant = EightWayFacing.FromVector(normalized);
-            if (Archetype != UnitArchetype.Archer || Mathf.Abs(normalized.x) < .035f) return octant;
+            if (!UsesAuthoredCombatAimLock || Mathf.Abs(normalized.x) < .035f) return octant;
             return octant switch
             {
                 FacingOctant.North => normalized.x > 0f
@@ -1146,8 +1151,8 @@ namespace JellyGate
             if (facing.sqrMagnitude > .001f)
             {
                 var requestedFacing = facing.normalized;
-                var archerCombatFacingLocked = Archetype == UnitArchetype.Archer && !IsMoving &&
-                                               Time.time <= combatFacingLockUntil;
+                var combatFacingLocked = UsesAuthoredCombatAimLock && !IsMoving &&
+                                         Time.time <= combatFacingLockUntil;
                 // Directional sheets may blend within one octant, but must never keep the old
                 // horizontal hemisphere after movement reverses. The Petal Spiritcaller exposed
                 // this most clearly: she travelled left while the smoothed pose still faced
@@ -1156,7 +1161,7 @@ namespace JellyGate
                                    (Vector2.Dot(visualFacing, requestedFacing) < .12f ||
                                     Mathf.Abs(requestedFacing.x) > .35f &&
                                     Mathf.Sign(visualFacing.x) != Mathf.Sign(requestedFacing.x));
-                if (archerCombatFacingLocked)
+                if (combatFacingLocked)
                     visualFacing = EightWayFacing.VectorFor(CombatAimOctant(requestedFacing));
                 else if (oppositeTurn) visualFacing = requestedFacing;
                 else

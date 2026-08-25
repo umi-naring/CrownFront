@@ -4355,7 +4355,7 @@ namespace JellyGate
             var singleMage = definitions[UnitArchetype.SingleMage];
             var archerHit = archer.AttackPower;
             var areaHit = areaMage.MagicPower * .26f;
-            var singleHit = singleMage.MagicPower * .55f;
+            var singleHit = singleMage.MagicPower * BasicAttackMultiplierFor(UnitArchetype.SingleMage);
             var roleRanges = archer.Range > singleMage.Range && singleMage.Range > areaMage.Range;
             var roleCadence = archer.AttackDelay < areaMage.AttackDelay &&
                               areaMage.AttackDelay < singleMage.AttackDelay;
@@ -5884,7 +5884,7 @@ namespace JellyGate
             definitions[UnitArchetype.AreaMage] = new UnitDefinition(L("별가루 범위 마법사", "Stardust Area Mage"), "*", 6, 64f, 4f, 44f,
                 2.55f, 1.38f, .25f, 1.42f, new Color(.68f, .4f, .9f),
                 1.45f, 8f, 36f, 5.8f, 1f, 8f);
-            definitions[UnitArchetype.SingleMage] = new UnitDefinition(L("유리구슬 단일 마법사", "Glass Orb Mage"), "●", 5, 58f, 4f, 68f,
+            definitions[UnitArchetype.SingleMage] = new UnitDefinition(L("유리구슬 단일 마법사", "Glass Orb Mage"), "●", 5, 58f, 4f, 72f,
                 3.25f, 1.62f, .24f, 1.49f, new Color(.25f, .65f, .94f),
                 armor: 7f, magicResistance: 38f, skillCooldown: 6.9f, physicalPenetration: 1f, magicPenetration: 11f);
             definitions[UnitArchetype.Bombardier] = new UnitDefinition(L("시계태엽 포병", "Clockwork Bombardier"), "✹", 7, 82f, 35f, 24f,
@@ -8240,21 +8240,26 @@ namespace JellyGate
                     StringComparison.OrdinalIgnoreCase) >= 0;
                 var lancerAtlas = texture.name.IndexOf("lancer-direction", StringComparison.OrdinalIgnoreCase) >= 0;
                 var archerAtlas = texture.name.IndexOf("archer", StringComparison.OrdinalIgnoreCase) >= 0;
+                var dedicatedMageAtlas = texture.name.IndexOf("area-mage", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                         texture.name.IndexOf("single-mage", StringComparison.OrdinalIgnoreCase) >= 0;
+                var sharedDefenderDirectionAtlas =
+                    texture.name.StartsWith("defender-direction-", StringComparison.OrdinalIgnoreCase) ||
+                    texture.name.StartsWith("hero-direction-", StringComparison.OrdinalIgnoreCase);
+                var mageRowInSharedAtlas = sharedDefenderDirectionAtlas && topRow >= 3;
+                var strictRangedCombatGrid = archerAtlas || dedicatedMageAtlas || mageRowInSharedAtlas;
                 var playerProductionGrid = !enemySheet && !lancerAtlas;
                 // Enemy sheets remain strict production grids. Lancer art is different: the
                 // spear and hero mantle intentionally cross the nominal cell, so inspect a wider
                 // ownership window and let component isolation reject the neighbouring actor.
                 // Treating lancer cells as strict was the direct cause of cut spearheads and the
                 // clipped hero silhouette reported in battle.
-                // Every archer source used here is a regular production grid.  Enlarging an
-                // archer cell by 32% admitted the complete bow from its neighbour; once mirrored,
-                // that foreign bow appeared on the hero's opposite side during down-right
-                // attacks.  Archer cells therefore own their nominal rectangle only.  A fresh
-                // transparent gutter is still added below, so filtering remains safe without
-                // sampling a neighbouring pose.
-                var padX = archerAtlas || strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellWidth * .12f) :
+                // Regular-grid archers and both mage rigs own their nominal rectangle only.
+                // Enlarging these cells admitted a neighbouring bow, staff or cast pose; the
+                // defect was most visible during hero attacks. A transparent gutter is still
+                // added below, so filtering remains safe without sampling a neighbour.
+                var padX = strictRangedCombatGrid || strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellWidth * .12f) :
                     Mathf.RoundToInt(cellWidth * (lancerAtlas ? .45f : .32f));
-                var padY = archerAtlas || strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellHeight * .10f) :
+                var padY = strictRangedCombatGrid || strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellHeight * .10f) :
                     Mathf.RoundToInt(cellHeight * (lancerAtlas ? .36f : .30f));
                 var left = Mathf.Max(0, cellLeft - padX);
                 var right = Mathf.Min(texture.width, cellRight + padX);
@@ -8297,8 +8302,8 @@ namespace JellyGate
                 var isolation = KeepPrimarySpriteComponent(pixels, width, height,
                     expectedCenter, cellWidth, cellHeight,
                     strictEdgeOwnership: musketeerAtlas || playerProductionGrid,
-                    detachedComponentLimitX: archerAtlas ? .20f : .34f,
-                    detachedComponentLimitY: archerAtlas ? .36f : .42f);
+                    detachedComponentLimitX: archerAtlas ? .20f : strictRangedCombatGrid ? .28f : .34f,
+                    detachedComponentLimitY: archerAtlas ? .36f : strictRangedCombatGrid ? .38f : .42f);
                 if (musketeerAtlas)
                     musketeerLowerMattePixelsRemoved += NormalizeMusketeerLowerBodyMatte(pixels, width, height,
                         expectedCenter, cellWidth);
@@ -11214,17 +11219,20 @@ namespace JellyGate
             return best;
         }
 
+        internal static float BasicAttackMultiplierFor(UnitArchetype archetype) => archetype switch
+        {
+            UnitArchetype.AreaMage => .26f,
+            UnitArchetype.SingleMage => .60f,
+            UnitArchetype.Druid or UnitArchetype.Oracle => .34f,
+            _ => 1f
+        };
+
         public void PerformAttack(PlayerUnit source, EnemyUnit target, UnitDefinition definition)
         {
             var magicBasic = source.Archetype is UnitArchetype.AreaMage or UnitArchetype.SingleMage or
                 UnitArchetype.Druid or UnitArchetype.Oracle;
             // The purple mage trades per-target damage for a very readable large basic-attack blast.
-            var basicMultiplier = source.Archetype switch
-            {
-                UnitArchetype.AreaMage => .26f,
-                UnitArchetype.SingleMage => .55f,
-                _ => .34f
-            };
+            var basicMultiplier = BasicAttackMultiplierFor(source.Archetype);
             var damage = magicBasic ? source.MagicPower * basicMultiplier : source.AttackPower;
             damage *= 1f + StackPower("AllDamage") * .07f;
             if (source.Archetype is UnitArchetype.Archer or UnitArchetype.Musketeer or UnitArchetype.SingleMage or

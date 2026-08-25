@@ -43,6 +43,9 @@ $probes = @(
     @{ Name='battlefield-sprite-307'; Argument='-qaBattlefieldSprite307'; Pattern='QA_BATTLEFIELD_SPRITE_307 passed=True'; Graphics=$false },
     @{ Name='enemy-presentation-269'; Argument='-qaEnemyPresentation269'; Pattern='QA_ENEMY_PRESENTATION_269 passed=True'; Graphics=$false },
     @{ Name='boss-grounding-278'; Argument='-qaBossGrounding278'; Pattern='QA_BOSS_GROUNDING_278 passed=True'; Graphics=$false },
+    @{ Name='unit-balance-280'; Argument='-qaUnitBalance280'; Pattern='QA_UNIT_BALANCE_280 passed=True'; Graphics=$false },
+    @{ Name='settlement-301'; Argument='-qaRelease301'; Pattern='QA_RELEASE_301 passed=True'; Graphics=$false },
+    @{ Name='unit-economy-303'; Argument='-qaRelease303'; Pattern='QA_RELEASE_303 passed=True'; Graphics=$false },
     @{ Name='release-319'; Argument='-qaRelease319'; Pattern='QA_RELEASE_319 passed=True'; Graphics=$false }
 )
 $results = @()

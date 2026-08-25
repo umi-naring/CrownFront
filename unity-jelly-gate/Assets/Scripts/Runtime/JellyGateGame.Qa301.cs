@@ -18,6 +18,14 @@ namespace JellyGate
                 failures.Add($"round12-gold:{twelveRoundReward}");
             if (CalculateRunGoldReward(29, 12, .5f, true) >= twelveRoundReward)
                 failures.Add("gold-quality-order");
+            if (IsRunSettlementEligible(GamePhase.Preparation, 12) ||
+                IsRunSettlementEligible(GamePhase.Battle, 12) ||
+                IsRunSettlementEligible(GamePhase.Augment, 12))
+                failures.Add("mid-run-settlement-enabled");
+            if (!IsRunSettlementEligible(GamePhase.Defeat, 12) ||
+                !IsRunSettlementEligible(GamePhase.Victory, MaxRounds) ||
+                !IsRunSettlementEligible(GamePhase.Battle, MaxRounds))
+                failures.Add("terminal-settlement-disabled");
 
             var allAugments = Enum.GetValues(typeof(AugmentTier)).Cast<AugmentTier>()
                 .SelectMany(GetAugmentPool).ToArray();
@@ -75,7 +83,7 @@ namespace JellyGate
                              $"{unaudited.Length}/{contaminated.Length}");
 
             var passed = failures.Count == 0;
-            Debug.Log($"QA_RELEASE_301 passed={passed} gold12={twelveRoundReward} " +
+            Debug.Log($"QA_RELEASE_301 passed={passed} gold12={twelveRoundReward} settlement=terminal-only " +
                       $"augments={allAugments.Length} musketeerFrames={musketeerSprites.Count} " +
                       $"failures={string.Join(",", failures)}");
             Application.Quit(passed ? 0 : 121);

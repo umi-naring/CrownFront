@@ -150,14 +150,7 @@ namespace JellyGate
             var magic = definition.MagicPower * levelOnePower;
             var basicType = archetype is UnitArchetype.AreaMage or UnitArchetype.SingleMage or
                 UnitArchetype.Druid or UnitArchetype.Oracle ? DamageType.Magic : DamageType.Physical;
-            var basicCoefficient = archetype switch
-            {
-                UnitArchetype.AreaMage => .26f,
-                UnitArchetype.SingleMage => .55f,
-                UnitArchetype.Druid => .34f,
-                UnitArchetype.Oracle => .34f,
-                _ => 1f
-            };
+            var basicCoefficient = BasicAttackMultiplierFor(archetype);
             var basic = CombatMath.MitigatedDamage(
                 (basicType == DamageType.Magic ? magic : attack) * basicCoefficient, basicType,
                 defense, defense, definition.PhysicalPenetration, definition.MagicPenetration) /
