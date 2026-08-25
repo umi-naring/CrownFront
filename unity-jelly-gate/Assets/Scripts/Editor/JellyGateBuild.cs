@@ -33,8 +33,8 @@ namespace JellyGate.Editor
             PlayerSettings.bundleVersion = "1.00";
             // Google Play requires this internal integer to increase on every uploaded release.
             // Earlier version codes have already been used by prior Google Play uploads.
-            // Keep the user-facing version name at 1.00 and publish this verified update as code 23.
-            PlayerSettings.Android.bundleVersionCode = 23;
+            // Keep the user-facing version name at 1.00 and publish this verified update as code 24.
+            PlayerSettings.Android.bundleVersionCode = 24;
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.toykingdom.jellygate");
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
@@ -207,8 +207,8 @@ namespace JellyGate.Editor
             // PlayerSettings are rewritten immediately before an Android build. Project
             // configuration is persisted separately; this entry point validates it and
             // starts the build without mutating the Android settings cache.
-            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 23)
-                throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 23) before building.");
+            if (PlayerSettings.bundleVersion != "1.00" || PlayerSettings.Android.bundleVersionCode != 24)
+                throw new BuildFailedException("CROWNFRONT release settings must be version 1.00 (code 24) before building.");
             var keystorePath = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE");
             var keystorePass = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_KEYSTORE_PASS");
             var aliasName = Environment.GetEnvironmentVariable("CROWNFRONT_UPLOAD_ALIAS");
@@ -226,7 +226,7 @@ namespace JellyGate.Editor
 
             var outputPath = ReadArgument("-outputPath");
             if (string.IsNullOrWhiteSpace(outputPath))
-                outputPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../outputs/Crownfront-v1.00-code23.aab"));
+                outputPath = Path.GetFullPath(Path.Combine(Application.dataPath, "../../outputs/Crownfront-v1.00-code24.aab"));
             var outputDirectory = Path.GetDirectoryName(outputPath);
             if (!string.IsNullOrEmpty(outputDirectory)) Directory.CreateDirectory(outputDirectory);
 

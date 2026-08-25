@@ -8239,15 +8239,22 @@ namespace JellyGate
                 var strictJellyGrid = texture.name.IndexOf("enemy-jelly-animation-atlas",
                     StringComparison.OrdinalIgnoreCase) >= 0;
                 var lancerAtlas = texture.name.IndexOf("lancer-direction", StringComparison.OrdinalIgnoreCase) >= 0;
+                var archerAtlas = texture.name.IndexOf("archer", StringComparison.OrdinalIgnoreCase) >= 0;
                 var playerProductionGrid = !enemySheet && !lancerAtlas;
                 // Enemy sheets remain strict production grids. Lancer art is different: the
                 // spear and hero mantle intentionally cross the nominal cell, so inspect a wider
                 // ownership window and let component isolation reject the neighbouring actor.
                 // Treating lancer cells as strict was the direct cause of cut spearheads and the
                 // clipped hero silhouette reported in battle.
-                var padX = strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellWidth * .12f) :
+                // Every archer source used here is a regular production grid.  Enlarging an
+                // archer cell by 32% admitted the complete bow from its neighbour; once mirrored,
+                // that foreign bow appeared on the hero's opposite side during down-right
+                // attacks.  Archer cells therefore own their nominal rectangle only.  A fresh
+                // transparent gutter is still added below, so filtering remains safe without
+                // sampling a neighbouring pose.
+                var padX = archerAtlas || strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellWidth * .12f) :
                     Mathf.RoundToInt(cellWidth * (lancerAtlas ? .45f : .32f));
-                var padY = strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellHeight * .10f) :
+                var padY = archerAtlas || strictJellyGrid ? 0 : enemySheet ? Mathf.RoundToInt(cellHeight * .10f) :
                     Mathf.RoundToInt(cellHeight * (lancerAtlas ? .36f : .30f));
                 var left = Mathf.Max(0, cellLeft - padX);
                 var right = Mathf.Min(texture.width, cellRight + padX);
@@ -8285,7 +8292,6 @@ namespace JellyGate
                 var expectedCenter = new Vector2((cellLeft + cellRight) * .5f - left,
                     (cellBottom + cellTop) * .5f - bottom);
                 var musketeerAtlas = texture.name.IndexOf("musketeer-direction", StringComparison.OrdinalIgnoreCase) >= 0;
-                var archerAtlas = texture.name.IndexOf("archer", StringComparison.OrdinalIgnoreCase) >= 0;
                 if (musketeerAtlas)
                     musketeerCheckerPixelsRemoved += RemoveConnectedCheckerboard(pixels, width, height);
                 var isolation = KeepPrimarySpriteComponent(pixels, width, height,

@@ -67,6 +67,7 @@ namespace JellyGate
         private Vector2 facing = Vector2.up;
         private Vector2 visualFacing = Vector2.up;
         private FacingOctant visualOctant = FacingOctant.North;
+        private float combatFacingLockUntil;
         private Vector2 contactDirection;
         private Vector2 knockbackStart;
         private Vector2 knockbackTarget;
@@ -1000,6 +1001,12 @@ namespace JellyGate
                         if (targetDistance <= AttackRange)
                         {
                             if (IsMoving) HaltMovement(false);
+                            // Lock the painted aim before UpdateCharacterMotion samples a frame.
+                            // Previously the projectile was spawned toward the new target at the
+                            // end of this Update while the body still displayed the preceding
+                            // direction for one frame.  It was most visible on the hero archer:
+                            // she looked up/right while an arrow left her bow toward up/left.
+                            FaceCombatTargetImmediately(target.Position - Position);
                         }
                         else PursueTarget(target);
                     }
@@ -1016,7 +1023,7 @@ namespace JellyGate
             if (game.Phase != GamePhase.Battle || IsMoving || knockbackTime > 0f || Time.time < lastAttackAt + attackDelay) return;
             if (target == null || !target.IsAlive || game.DistanceToEnemySurface(Position, target) > AttackRange) return;
             lastAttackAt = Time.time;
-            facing = (target.Position - Position).normalized;
+            FaceCombatTargetImmediately(target.Position - Position);
             attackMotion = 1f;
             if (skillCooldownRemaining <= 0f && !IsMagicSealed)
             {
@@ -1031,6 +1038,47 @@ namespace JellyGate
                 game.PlayUnitVoice(transform, Archetype, VoiceCue.Attack);
                 game.PerformAttack(this, target, definition);
             }
+        }
+
+        private void FaceCombatTargetImmediately(Vector2 targetDirection)
+        {
+            if (targetDirection.sqrMagnitude <= .0001f) return;
+            facing = targetDirection.normalized;
+
+            // Ranged attacks cannot visually lag behind their projectile.  The archer's rear and
+            // front sheets have one authored left/right draw bias, so a mostly vertical shot with
+            // a real horizontal component must use the corresponding diagonal pose instead of a
+            // neutral North/South pose that can appear to aim across the arrow path.
+            var visualAim = Archetype == UnitArchetype.Archer
+                ? EightWayFacing.VectorFor(CombatAimOctant(facing))
+                : facing;
+            visualFacing = visualAim;
+            visualOctant = EightWayFacing.FromVector(visualAim);
+            // Keep the authored archer pose locked through the projectile spawn and the first
+            // readable attack frames.  Without this short lock, the generic turn smoothing below
+            // immediately blended a SouthEast/NorthWest pose back into pure South/North, so the
+            // body could face right while the arrow travelled left (or vice versa).
+            if (Archetype == UnitArchetype.Archer)
+                combatFacingLockUntil = Mathf.Max(combatFacingLockUntil, Time.time + .34f);
+        }
+
+        private FacingOctant CombatAimOctant(Vector2 targetDirection)
+        {
+            var normalized = targetDirection.sqrMagnitude > .0001f
+                ? targetDirection.normalized
+                : Vector2.down;
+            var octant = EightWayFacing.FromVector(normalized);
+            if (Archetype != UnitArchetype.Archer || Mathf.Abs(normalized.x) < .035f) return octant;
+            return octant switch
+            {
+                FacingOctant.North => normalized.x > 0f
+                    ? FacingOctant.NorthEast
+                    : FacingOctant.NorthWest,
+                FacingOctant.South => normalized.x > 0f
+                    ? FacingOctant.SouthEast
+                    : FacingOctant.SouthWest,
+                _ => octant
+            };
         }
 
         private EnemyUnit ResolveCombatTarget()
@@ -1098,6 +1146,8 @@ namespace JellyGate
             if (facing.sqrMagnitude > .001f)
             {
                 var requestedFacing = facing.normalized;
+                var archerCombatFacingLocked = Archetype == UnitArchetype.Archer && !IsMoving &&
+                                               Time.time <= combatFacingLockUntil;
                 // Directional sheets may blend within one octant, but must never keep the old
                 // horizontal hemisphere after movement reverses. The Petal Spiritcaller exposed
                 // this most clearly: she travelled left while the smoothed pose still faced
@@ -1106,7 +1156,9 @@ namespace JellyGate
                                    (Vector2.Dot(visualFacing, requestedFacing) < .12f ||
                                     Mathf.Abs(requestedFacing.x) > .35f &&
                                     Mathf.Sign(visualFacing.x) != Mathf.Sign(requestedFacing.x));
-                if (oppositeTurn) visualFacing = requestedFacing;
+                if (archerCombatFacingLocked)
+                    visualFacing = EightWayFacing.VectorFor(CombatAimOctant(requestedFacing));
+                else if (oppositeTurn) visualFacing = requestedFacing;
                 else
                 {
                     var turnBlend = 1f - Mathf.Exp(-motionDelta * (IsMoving ? 22f : 24f));
@@ -1852,7 +1904,7 @@ namespace JellyGate
         {
             var requested = targetPosition - Position;
             var octant = requested.sqrMagnitude > .0001f
-                ? EightWayFacing.FromVector(requested)
+                ? CombatAimOctant(requested)
                 : visualOctant;
             var direction = EightWayFacing.VectorFor(octant);
             var side = new Vector2(-direction.y, direction.x);
@@ -1907,14 +1959,20 @@ namespace JellyGate
         public void TriggerAttackMotionForQa(Vector2 targetPosition)
         {
             var targetDirection = targetPosition - Position;
-            if (targetDirection.sqrMagnitude > .0001f)
-            {
-                facing = targetDirection.normalized;
-                visualFacing = facing;
-                visualOctant = EightWayFacing.FromVector(facing);
-            }
+            FaceCombatTargetImmediately(targetDirection);
             IsMoving = false;
             attackMotion = 1f;
+        }
+
+        public FacingOctant PreviewCombatAimForQa(Vector2 direction, float normalizedPhase = .45f)
+        {
+            FaceCombatTargetImmediately(direction);
+            IsMoving = false;
+            attackMotion = Mathf.Max(.02f, 1f - Mathf.Clamp01(normalizedPhase));
+            skillMotion = 0f;
+            ultimateMotion = 0f;
+            UpdateCharacterMotion();
+            return visualOctant;
         }
 
         public float PreviewDirectionHeightForQa(Vector2 direction, float normalizedPhase = .153125f)

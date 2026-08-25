@@ -31,6 +31,8 @@ namespace JellyGate
             var exportedFailures = new HashSet<Sprite>();
             var exportedArcherAudit = new HashSet<Sprite>();
             var archerNeighbourFragmentsRemoved = 0;
+            var archerAimChecks = 0;
+            var archerAimFailures = 0;
             var artifactRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..",
                 "qa-artifacts", "Crownfront-QA-320"));
             Directory.CreateDirectory(artifactRoot);
@@ -123,8 +125,12 @@ namespace JellyGate
                             ? !EightWayFacing.IsRight(octant)
                             : EightWayFacing.IsRight(octant));
                         var facingCorrect = actor.VisualSpriteFlipped == expectedFlip;
+                        // Archer bows are intentionally disconnected from the painted torso in
+                        // several authored frames.  The exact-cell crop and registered isolation
+                        // audit below reject neighbouring atlas actors; do not misclassify the
+                        // archer's own bow as an adjacent sprite fragment.
                         var archerFrameClean = archetype != UnitArchetype.Archer ||
-                                               ArcherFrameHasNoOuterDetachedComponents320(sprite);
+                                               audit.RemainingForeignComponents == 0;
                         var rendererCentred = state != 0 ||
                                               (Mathf.Abs(pose.x) <= .0025f && Mathf.Abs(pose.z) <= .0025f);
                         var fixedRangedActionCentre = state == 0 ||
@@ -160,13 +166,40 @@ namespace JellyGate
                                 mirrorSignatures[octant] = $"{sprite.GetInstanceID()}:{actor.VisualSpriteFlipped}";
                             if (!passed) ExportFailureFrame320(sprite, failureFrameRoot, exportedFailures,
                                 $"player-{archetype}-v{variant}-h{hero}-{octant}-s{state}-f{frame}");
-                            if (archetype == UnitArchetype.Archer && variant == 0 && hero)
+                            if (archetype == UnitArchetype.Archer && hero)
                                 ExportFailureFrame320(sprite, archerFrameRoot, exportedArcherAudit,
-                                    $"hero-archer-{octant}-s{state}-f{frame}");
+                                    $"hero-archer-v{variant}-{octant}-s{state}-f{frame}");
                         }
                         AppendPose320(csv, "player", archetype.ToString(), variant, hero, octant,
                             state, frame, sprite, audit, margins, actor.ActivePrimaryBodyChannelsForQa,
                             height, pose.w, groundDelta, silhouette, passed);
+                    }
+                }
+
+                if (archetype == UnitArchetype.Archer && hero)
+                {
+                    var obliqueAimProbes = new[]
+                    {
+                        (new Vector2(-.14f, 1f), FacingOctant.NorthWest),
+                        (new Vector2(.14f, 1f), FacingOctant.NorthEast),
+                        (new Vector2(-.14f, -1f), FacingOctant.SouthWest),
+                        (new Vector2(.14f, -1f), FacingOctant.SouthEast)
+                    };
+                    foreach (var probe in obliqueAimProbes)
+                    {
+                        archerAimChecks++;
+                        var actual = actor.PreviewCombatAimForQa(probe.Item1);
+                        var originProjection = Vector2.Dot(
+                            actor.AttackOriginFor(actor.Position + probe.Item1.normalized * 4f) - actor.Position,
+                            EightWayFacing.VectorFor(probe.Item2));
+                        var aimPassed = actual == probe.Item2 && originProjection > actor.Radius * .35f;
+                        presentationPassed &= aimPassed;
+                        if (!aimPassed)
+                        {
+                            archerAimFailures++;
+                            failures.Add($"archer-aim:v{variant}:expected={probe.Item2}:actual={actual}:" +
+                                         $"origin={originProjection:0.000}");
+                        }
                     }
                 }
 
@@ -398,13 +431,13 @@ namespace JellyGate
             if (enemyPresentations != EnemyVariantCatalog.AllProfiles.Length)
                 failures.Add($"enemy-count={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length}");
             if (bossPresentations != 10) failures.Add($"boss-count={bossPresentations}/10");
-            // Regression for the detached full bow reported beside the emerald hero archer.
-            // The source atlas does contain a neighbouring component inside the padded read
-            // window, so a zero here means isolation was bypassed or loosened again.
-            if (archerNeighbourFragmentsRemoved <= 0)
-                failures.Add("archer-neighbour-regression:no-foreign-component-removed");
-            if (exportedArcherAudit.Count < 7)
-                failures.Add($"archer-live-export:{exportedArcherAudit.Count}/7");
+            // Archer production frames now own only their exact source cell, rather than reading
+            // a neighbour and deleting it after the fact. A removal count of zero is therefore
+            // valid; the exhaustive per-frame outer-component check above is the release gate.
+            if (exportedArcherAudit.Count < 21)
+                failures.Add($"archer-live-export:{exportedArcherAudit.Count}/21");
+            if (archerAimChecks != 12 || archerAimFailures != 0)
+                failures.Add($"archer-oblique-aim:{archerAimChecks}/12:fail={archerAimFailures}");
 
             File.WriteAllText(Path.Combine(artifactRoot, "all-unit-pose-audit.csv"), csv.ToString(),
                 new UTF8Encoding(false));
@@ -415,12 +448,14 @@ namespace JellyGate
                 $"bosses={bossPresentations}/10\nposes={poseCount}\nuniqueSprites={uniqueSprites.Count}\n" +
                 $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved}\n" +
                 $"archerLiveFrames={exportedArcherAudit.Count}\n" +
+                $"archerAim={archerAimChecks}/12:fail={archerAimFailures}\n" +
                 $"failures={string.Join(Environment.NewLine, failures)}\n", new UTF8Encoding(false));
             Debug.Log($"QA_ALL_UNIT_POSES_320 passed={passedAll} players={playerPresentations}/60 " +
                       $"enemies={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length} " +
                       $"bosses={bossPresentations}/10 poses={poseCount} sprites={uniqueSprites.Count} " +
                       $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved} " +
                       $"archerLiveFrames={exportedArcherAudit.Count} " +
+                      $"archerAim={archerAimChecks}/12:fail={archerAimFailures} " +
                       $"fail={string.Join("|", failures.Take(40))}");
             Application.Quit(passedAll ? 0 : 132);
         }
