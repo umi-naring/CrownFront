@@ -7,14 +7,14 @@ $ErrorActionPreference = 'Stop'
 $projectPath = Split-Path -Parent $PSScriptRoot
 $workspacePath = Split-Path -Parent $projectPath
 if ([string]::IsNullOrWhiteSpace($BundlePath)) {
-    $BundlePath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code22.aab'
+    $BundlePath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code23.aab'
 }
 $androidRoot = Join-Path (Split-Path -Parent $UnityPath) 'Data\PlaybackEngines\AndroidPlayer'
 $java = Join-Path $androidRoot 'OpenJDK\bin\java.exe'
 $jarsigner = Join-Path $androidRoot 'OpenJDK\bin\jarsigner.exe'
 $keytool = Join-Path $androidRoot 'OpenJDK\bin\keytool.exe'
 $bundletool = Join-Path $androidRoot 'Tools\bundletool-all-1.17.2.jar'
-$summaryPath = Join-Path $workspacePath 'qa-logs\v1.00-code22\play-bundle-summary.json'
+$summaryPath = Join-Path $workspacePath 'qa-logs\v1.00-code23\play-bundle-summary.json'
 $projectVersionPath = Join-Path $projectPath 'ProjectSettings\ProjectVersion.txt'
 New-Item -ItemType Directory -Path (Split-Path -Parent $summaryPath) -Force | Out-Null
 
@@ -49,7 +49,7 @@ $manifestResult = Invoke-NativeProcess $java @('-jar', $bundletoolQuoted, 'dump'
 $manifest = $manifestResult.Output
 $packageValid = $manifest.Contains('package="com.toykingdom.jellygate"')
 $versionNameValid = $manifest.Contains('android:versionName="1.00"')
-$versionCodeValid = $manifest.Contains('android:versionCode="22"')
+$versionCodeValid = $manifest.Contains('android:versionCode="23"')
 $signatureResult = Invoke-NativeProcess $jarsigner @('-verify', $bundleQuoted)
 $signatureValid = $signatureResult.ExitCode -eq 0
 $certificateResult = Invoke-NativeProcess $keytool @('-J-Duser.language=en', '-J-Duser.country=US', '-printcert', '-jarfile', $bundleQuoted)
@@ -68,7 +68,7 @@ $passed = $bundleValid -and $packageValid -and $versionNameValid -and $versionCo
     versionNameValid=$versionNameValid; versionCodeValid=$versionCodeValid
     signatureValid=$signatureValid; releaseCertificate=$releaseCertificate
     patchedEditorValid=$patchedEditorValid; unityEditorVersion='6000.0.82f1'
-    package='com.toykingdom.jellygate'; versionCode=22; sha256=$sha256
+    package='com.toykingdom.jellygate'; versionCode=23; sha256=$sha256
     bundlePath=(Resolve-Path -LiteralPath $BundlePath).Path
 } | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath $summaryPath -Encoding utf8
 

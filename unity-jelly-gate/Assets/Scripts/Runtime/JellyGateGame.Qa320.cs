@@ -29,6 +29,7 @@ namespace JellyGate
             var uniqueSprites = new HashSet<Sprite>();
             var silhouetteCache = new Dictionary<Sprite, Vector3>();
             var exportedFailures = new HashSet<Sprite>();
+            var exportedArcherAudit = new HashSet<Sprite>();
             var archerNeighbourFragmentsRemoved = 0;
             var artifactRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..",
                 "qa-artifacts", "Crownfront-QA-320"));
@@ -36,6 +37,9 @@ namespace JellyGate
             var failureFrameRoot = Path.Combine(artifactRoot, "failure-frames");
             if (Directory.Exists(failureFrameRoot)) Directory.Delete(failureFrameRoot, true);
             Directory.CreateDirectory(failureFrameRoot);
+            var archerFrameRoot = Path.Combine(artifactRoot, "hero-archer-live-frames");
+            if (Directory.Exists(archerFrameRoot)) Directory.Delete(archerFrameRoot, true);
+            Directory.CreateDirectory(archerFrameRoot);
 
             var roster = new[]
             {
@@ -119,6 +123,8 @@ namespace JellyGate
                             ? !EightWayFacing.IsRight(octant)
                             : EightWayFacing.IsRight(octant));
                         var facingCorrect = actor.VisualSpriteFlipped == expectedFlip;
+                        var archerFrameClean = archetype != UnitArchetype.Archer ||
+                                               ArcherFrameHasNoOuterDetachedComponents320(sprite);
                         var rendererCentred = state != 0 ||
                                               (Mathf.Abs(pose.x) <= .0025f && Mathf.Abs(pose.z) <= .0025f);
                         var fixedRangedActionCentre = state == 0 ||
@@ -137,6 +143,7 @@ namespace JellyGate
                                      audit.BodySeamClosed &&
                                      grounded &&
                                      facingCorrect &&
+                                     archerFrameClean &&
                                      rendererCentred &&
                                      fixedRangedActionCentre &&
                                      Mathf.Abs(pose.w) is > .20f and < 2.50f;
@@ -153,6 +160,9 @@ namespace JellyGate
                                 mirrorSignatures[octant] = $"{sprite.GetInstanceID()}:{actor.VisualSpriteFlipped}";
                             if (!passed) ExportFailureFrame320(sprite, failureFrameRoot, exportedFailures,
                                 $"player-{archetype}-v{variant}-h{hero}-{octant}-s{state}-f{frame}");
+                            if (archetype == UnitArchetype.Archer && variant == 0 && hero)
+                                ExportFailureFrame320(sprite, archerFrameRoot, exportedArcherAudit,
+                                    $"hero-archer-{octant}-s{state}-f{frame}");
                         }
                         AppendPose320(csv, "player", archetype.ToString(), variant, hero, octant,
                             state, frame, sprite, audit, margins, actor.ActivePrimaryBodyChannelsForQa,
@@ -393,6 +403,8 @@ namespace JellyGate
             // window, so a zero here means isolation was bypassed or loosened again.
             if (archerNeighbourFragmentsRemoved <= 0)
                 failures.Add("archer-neighbour-regression:no-foreign-component-removed");
+            if (exportedArcherAudit.Count < 7)
+                failures.Add($"archer-live-export:{exportedArcherAudit.Count}/7");
 
             File.WriteAllText(Path.Combine(artifactRoot, "all-unit-pose-audit.csv"), csv.ToString(),
                 new UTF8Encoding(false));
@@ -402,13 +414,36 @@ namespace JellyGate
                 $"enemies={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length}\n" +
                 $"bosses={bossPresentations}/10\nposes={poseCount}\nuniqueSprites={uniqueSprites.Count}\n" +
                 $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved}\n" +
+                $"archerLiveFrames={exportedArcherAudit.Count}\n" +
                 $"failures={string.Join(Environment.NewLine, failures)}\n", new UTF8Encoding(false));
             Debug.Log($"QA_ALL_UNIT_POSES_320 passed={passedAll} players={playerPresentations}/60 " +
                       $"enemies={enemyPresentations}/{EnemyVariantCatalog.AllProfiles.Length} " +
                       $"bosses={bossPresentations}/10 poses={poseCount} sprites={uniqueSprites.Count} " +
                       $"archerNeighbourRemoved={archerNeighbourFragmentsRemoved} " +
+                      $"archerLiveFrames={exportedArcherAudit.Count} " +
                       $"fail={string.Join("|", failures.Take(40))}");
             Application.Quit(passedAll ? 0 : 132);
+        }
+
+        private static bool ArcherFrameHasNoOuterDetachedComponents320(Sprite sprite)
+        {
+            if (sprite == null || sprite.texture == null) return false;
+            try
+            {
+                var pixels = sprite.texture.GetPixels32();
+                var width = sprite.texture.width;
+                var height = sprite.texture.height;
+                var ownedWidth = Mathf.Max(1, width - 48);
+                var ownedHeight = Mathf.Max(1, height - 48);
+                var audit = KeepPrimarySpriteComponent(pixels, width, height, sprite.pivot,
+                    ownedWidth, ownedHeight, strictEdgeOwnership: true,
+                    detachedComponentLimitX: .20f, detachedComponentLimitY: .36f);
+                return audit.x == 0;
+            }
+            catch (UnityException)
+            {
+                return false;
+            }
         }
 
         private static bool OppositeFacingPairIsDistinct320(

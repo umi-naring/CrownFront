@@ -884,6 +884,8 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaPolish243")) StartCoroutine(QaPolish243Routine());
             else if (HasCommandLineArgument("-qaBackMenu")) StartCoroutine(QaBackMenuRoutine());
             else if (HasCommandLineArgument("-qaGuideView") ||
+                     HasCommandLineArgument("-qaGuideEnglishView") ||
+                     HasCommandLineArgument("-qaGuideUnitEnglishView") ||
                      HasCommandLineArgument("-qaGuideBossView") ||
                      HasCommandLineArgument("-qaGuideOracleView")) StartCoroutine(QaGuideViewRoutine());
             else if (HasCommandLineArgument("-qaGuide")) StartCoroutine(QaGuideRoutine());
@@ -8283,11 +8285,14 @@ namespace JellyGate
                 var expectedCenter = new Vector2((cellLeft + cellRight) * .5f - left,
                     (cellBottom + cellTop) * .5f - bottom);
                 var musketeerAtlas = texture.name.IndexOf("musketeer-direction", StringComparison.OrdinalIgnoreCase) >= 0;
+                var archerAtlas = texture.name.IndexOf("archer", StringComparison.OrdinalIgnoreCase) >= 0;
                 if (musketeerAtlas)
                     musketeerCheckerPixelsRemoved += RemoveConnectedCheckerboard(pixels, width, height);
                 var isolation = KeepPrimarySpriteComponent(pixels, width, height,
                     expectedCenter, cellWidth, cellHeight,
-                    strictEdgeOwnership: musketeerAtlas || playerProductionGrid);
+                    strictEdgeOwnership: musketeerAtlas || playerProductionGrid,
+                    detachedComponentLimitX: archerAtlas ? .20f : .34f,
+                    detachedComponentLimitY: archerAtlas ? .36f : .42f);
                 if (musketeerAtlas)
                     musketeerLowerMattePixelsRemoved += NormalizeMusketeerLowerBodyMatte(pixels, width, height,
                         expectedCenter, cellWidth);
@@ -8489,7 +8494,8 @@ namespace JellyGate
         }
 
         private static Vector3Int KeepPrimarySpriteComponent(Color32[] pixels, int width, int height,
-            Vector2 expectedCenter, int cellWidth, int cellHeight, bool strictEdgeOwnership = false)
+            Vector2 expectedCenter, int cellWidth, int cellHeight, bool strictEdgeOwnership = false,
+            float detachedComponentLimitX = .34f, float detachedComponentLimitY = .42f)
         {
             var labels = new int[pixels.Length];
             var queue = new int[pixels.Length];
@@ -8596,13 +8602,16 @@ namespace JellyGate
                     removedForeignComponents++;
                     continue;
                 }
-                if (strictEdgeOwnership && (dx > .34f || dy > .42f))
+                if (strictEdgeOwnership &&
+                    (dx > detachedComponentLimitX || dy > detachedComponentLimitY))
                 {
                     // Detached material centred in the outer ownership band is a neighbouring
                     // actor fragment, even when it protrudes into the nominal source cell. The
-                    // previous .46 threshold retained the full spare bow visible beside the
-                    // archer. Real weapons joined to the main silhouette are part of primaryLabel
-                    // and therefore never enter this detached-component branch.
+                    // archer family deliberately uses a tighter horizontal limit. Its wide
+                    // padded source window otherwise owns the complete bow from the neighbouring
+                    // pose even though that bow is visually detached from the active actor. Real
+                    // held weapons joined to the main silhouette are part of primaryLabel and
+                    // therefore never enter this detached-component branch.
                     removedForeignComponents++;
                     continue;
                 }

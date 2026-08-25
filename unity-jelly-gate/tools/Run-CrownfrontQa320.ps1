@@ -8,7 +8,7 @@ $projectPath = Split-Path -Parent $PSScriptRoot
 $workspacePath = Split-Path -Parent $projectPath
 $qaDirectory = Join-Path $workspacePath 'qa-artifacts\Crownfront-QA-320'
 $qaExecutable = Join-Path $qaDirectory 'Crownfront-QA.exe'
-$logDirectory = Join-Path $workspacePath 'qa-logs\v1.00-code22'
+$logDirectory = Join-Path $workspacePath 'qa-logs\v1.00-code23'
 $buildLog = Join-Path $logDirectory 'windows-player-build.log'
 $summaryPath = Join-Path $logDirectory 'qa-summary.json'
 New-Item -ItemType Directory -Path $qaDirectory, $logDirectory -Force | Out-Null
@@ -33,11 +33,13 @@ if (-not $ReuseBuild -or -not (Test-Path -LiteralPath $qaExecutable)) {
         $null -ne (Select-String -LiteralPath $buildLog -SimpleMatch 'Build Finished, Result: Success.' |
             Select-Object -Last 1) -and
         @(Select-String -LiteralPath $buildLog -Pattern 'error CS|Scripts have compiler errors|BuildFailedException').Count -eq 0
-    if (-not $buildSucceeded) { throw "CROWNFRONT code 22 QA build failed. See $buildLog" }
+    if (-not $buildSucceeded) { throw "CROWNFRONT code 23 QA build failed. See $buildLog" }
 }
 
 $probes = @(
     @{ Name='all-unit-poses-320'; Argument='-qaAllUnitPoses320'; Pattern='QA_ALL_UNIT_POSES_320 passed=True'; Graphics=$false },
+    @{ Name='guide-english-layout'; Argument='-qaGuide'; Pattern='englishLayout=True'; Graphics=$false },
+    @{ Name='guide-unit-scroll'; Argument='-qaGuideUnitScroll2682'; Pattern='QA_GUIDE_UNIT_SCROLL_2682 passed=True'; Graphics=$false },
     @{ Name='battlefield-sprite-307'; Argument='-qaBattlefieldSprite307'; Pattern='QA_BATTLEFIELD_SPRITE_307 passed=True'; Graphics=$false },
     @{ Name='enemy-presentation-269'; Argument='-qaEnemyPresentation269'; Pattern='QA_ENEMY_PRESENTATION_269 passed=True'; Graphics=$false },
     @{ Name='boss-grounding-278'; Argument='-qaBossGrounding278'; Pattern='QA_BOSS_GROUNDING_278 passed=True'; Graphics=$false },
@@ -58,8 +60,8 @@ foreach ($probe in $probes) {
     Write-Output "$($probe.Name): passed=$passed exit=$probeExitCode"
 }
 $passed = -not ($results.passed -contains $false)
-[ordered]@{ version='1.00'; versionCode=22; generatedAt=(Get-Date).ToString('o');
+[ordered]@{ version='1.00'; versionCode=23; generatedAt=(Get-Date).ToString('o');
     passed=$passed; buildLog=$buildLog; probes=$results } |
     ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $summaryPath -Encoding utf8
-if (-not $passed) { throw "CROWNFRONT code 22 QA failed. See $summaryPath" }
-Write-Output "CROWNFRONT code 22 QA completed: $summaryPath"
+if (-not $passed) { throw "CROWNFRONT code 23 QA failed. See $summaryPath" }
+Write-Output "CROWNFRONT code 23 QA completed: $summaryPath"

@@ -16,8 +16,8 @@ namespace JellyGate
         private Vector2 guideTouchLast;
         private Texture2D privacyBrandLogo;
 
-        private const float GuideUnitCardHeight = 292f;
-        private const float GuideUnitCardStride = 301f;
+        private const float GuideUnitCardHeight = 312f;
+        private const float GuideUnitCardStride = 321f;
         private const float GuideUnitRosterHeaderHeight = 99f;
         private const float GuideScrollBottomPadding = 24f;
 
@@ -45,11 +45,11 @@ namespace JellyGate
             DrawOrnatePanel(panel, new Color(.014f, .034f, .071f, .998f),
                 new Color(.38f, .86f, .79f), 4f);
 
-            GUI.Label(new Rect(panel.x + 18f, panel.y + 10f, panel.width - 36f, 37f),
-                L("게임 정보", "FIELD MANUAL"), modalTitleStyle);
-            GUI.Label(new Rect(panel.x + 18f, panel.y + 43f, panel.width - 36f, 18f),
+            DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 9f, panel.width - 36f, 39f),
+                L("게임 정보", "FIELD MANUAL"), modalTitleStyle, 20);
+            DrawFittedLabel(new Rect(panel.x + 18f, panel.y + 47f, panel.width - 36f, 21f),
                 L("현재 적용된 규칙과 수치를 한곳에서 확인합니다.",
-                    "CURRENT RULES, ROSTERS AND LIVE BALANCE DATA"), centeredStyle);
+                    "CURRENT RULES, ROSTERS AND LIVE BALANCE DATA"), centeredStyle, 9);
 
             var tabs = new[]
             {
@@ -65,7 +65,7 @@ namespace JellyGate
                 var column = i % 3;
                 var row = i / 3;
                 var rect = new Rect(panel.x + 14f + column * (tabWidth + tabGap),
-                    panel.y + 69f + row * 38f, tabWidth, 34f);
+                    panel.y + 72f + row * 38f, tabWidth, 34f);
                 if (!DrawPremiumButton(rect, tabs[i],
                         selected ? new Color(.035f, .15f, .15f, .99f) : new Color(.025f, .055f, .105f, .99f),
                         selected ? new Color(.38f, 1f, .82f) : new Color(.35f, .52f, .72f), true)) continue;
@@ -96,7 +96,7 @@ namespace JellyGate
 
         private static float GuideContentHeight(int tab) => tab switch
         {
-            0 => 1440f,
+            0 => 1760f,
             1 => GuideUnitRosterContentHeight(),
             2 => 2390f,
             3 => 1110f,
@@ -191,7 +191,7 @@ namespace JellyGate
         }
 
         private Rect GuideViewportRect(Rect panel) =>
-            new(panel.x + 13f, panel.y + 151f, panel.width - 26f, panel.height - 210f);
+            new(panel.x + 13f, panel.y + 154f, panel.width - 26f, panel.height - 213f);
 
         private Rect CurrentGuideViewportRect()
         {
@@ -337,27 +337,27 @@ namespace JellyGate
                 DrawPanel(new Rect(portraitFrame.xMax - 11f, portraitFrame.y + 7f, 4f, 4f),
                     new Color(1f, .91f, .62f, .9f));
                 var textX = portraitFrame.xMax + 10f;
-                GUI.Label(new Rect(textX, rect.y + 7f, rect.xMax - textX - 8f, 25f),
+                DrawFittedLabel(new Rect(textX, rect.y + 7f, rect.xMax - textX - 8f, 25f),
                     L($"{GuideUnitName(unit)}  {definition.Cost}코인",
-                        $"{GuideUnitName(unit)}  {definition.Cost} COINS"), GuideTitleStyle(15));
-                GUI.Label(new Rect(textX, rect.y + 33f, rect.xMax - textX - 8f, 38f),
+                        $"{GuideUnitName(unit)}  {definition.Cost} COINS"), GuideTitleStyle(15), 10);
+                DrawFittedWrappedLabel(new Rect(textX, rect.y + 33f, rect.xMax - textX - 8f, 39f),
                     GuideUnitRoleOnly(unit),
-                    GuideBodyStyle(11, TextAnchor.UpperLeft));
-                GUI.Label(new Rect(textX, rect.y + 70f, rect.xMax - textX - 8f, 62f),
+                    GuideBodyStyle(11, TextAnchor.UpperLeft), 9);
+                DrawFittedWrappedLabel(new Rect(textX, rect.y + 73f, rect.xMax - textX - 8f, 58f),
                     L($"HP {definition.MaxHealth:0} · 공격력 {definition.AttackPower:0} · 마력 {definition.MagicPower:0}\n사거리 {definition.Range:0.00} · 방어력 {definition.Armor:0} · 마법 저항 {definition.MagicResistance:0}",
                         $"HP {definition.MaxHealth:0} · ATTACK {definition.AttackPower:0} · MAGIC {definition.MagicPower:0}\nRANGE {definition.Range:0.00} · ARMOR {definition.Armor:0} · RESIST {definition.MagicResistance:0}"),
-                    GuideBodyStyle(10, TextAnchor.UpperLeft));
-                GUI.Label(new Rect(rect.x + 12f, rect.y + 140f, rect.width - 24f, 30f),
+                    GuideBodyStyle(10, TextAnchor.UpperLeft), 8);
+                DrawFittedWrappedLabel(new Rect(rect.x + 12f, rect.y + 141f, rect.width - 24f, 36f),
                     L($"기본 공격: {GuideBasicAttack(unit)}", $"BASIC ATTACK: {GuideBasicAttack(unit)}"),
-                    GuideBodyStyle(10, TextAnchor.UpperLeft));
-                GUI.Label(new Rect(rect.x + 12f, rect.y + 172f, rect.width - 24f, 52f),
-                    L($"스킬: {GuideSkillName(unit)} — {GuideSkillEffect(unit)}",
-                        $"SKILL: {GuideSkillName(unit)} — {GuideSkillEffect(unit)}"),
-                    GuideBodyStyle(11, TextAnchor.UpperLeft));
-                GUI.Label(new Rect(rect.x + 12f, rect.y + 228f, rect.width - 24f, 54f),
-                    L($"영웅 궁극기: {GuideUltimateName(unit)} — {GuideUltimateEffect(unit)}",
-                        $"HERO ULTIMATE: {GuideUltimateName(unit)} — {GuideUltimateEffect(unit)}"),
-                    GuideBodyStyle(11, TextAnchor.UpperLeft));
+                    GuideBodyStyle(10, TextAnchor.UpperLeft), 8);
+                DrawFittedWrappedLabel(new Rect(rect.x + 12f, rect.y + 181f, rect.width - 24f, 54f),
+                    L($"스킬: {GuideSkillName(unit)} — {GuideConciseSkillEffect(unit)}",
+                        $"SKILL: {GuideSkillName(unit)} — {GuideConciseSkillEffect(unit)}"),
+                    GuideBodyStyle(11, TextAnchor.UpperLeft), 9);
+                DrawFittedWrappedLabel(new Rect(rect.x + 12f, rect.y + 241f, rect.width - 24f, 61f),
+                    L($"영웅 궁극기: {GuideUltimateName(unit)} — {GuideConciseUltimateEffect(unit)}",
+                        $"HERO ULTIMATE: {GuideUltimateName(unit)} — {GuideConciseUltimateEffect(unit)}"),
+                    GuideBodyStyle(11, TextAnchor.UpperLeft), 9);
                 y += GuideUnitCardStride;
             }
         }
@@ -389,14 +389,20 @@ namespace JellyGate
             {
                 GameLocalization.Current = language;
                 var skill = L($"스킬: {GuideSkillName(UnitArchetype.Oracle)} — " +
-                              GuideSkillEffect(UnitArchetype.Oracle),
+                              GuideConciseSkillEffect(UnitArchetype.Oracle),
                     $"SKILL: {GuideSkillName(UnitArchetype.Oracle)} — " +
-                    GuideSkillEffect(UnitArchetype.Oracle));
+                    GuideConciseSkillEffect(UnitArchetype.Oracle));
                 var ultimate = L($"영웅 궁극기: {GuideUltimateName(UnitArchetype.Oracle)} — " +
-                                 GuideUltimateEffect(UnitArchetype.Oracle),
+                                 GuideConciseUltimateEffect(UnitArchetype.Oracle),
                     $"HERO ULTIMATE: {GuideUltimateName(UnitArchetype.Oracle)} — " +
-                    GuideUltimateEffect(UnitArchetype.Oracle));
-                var style = GuideBodyStyle(11, TextAnchor.UpperLeft);
+                    GuideConciseUltimateEffect(UnitArchetype.Oracle));
+                var style = statStyle != null
+                    ? GuideBodyStyle(11, TextAnchor.UpperLeft)
+                    : new GUIStyle
+                    {
+                        fontSize = 11, alignment = TextAnchor.UpperLeft,
+                        wordWrap = true, clipping = TextClipping.Clip
+                    };
                 foreach (var textWidth in new[] { 250f, 324f })
                     fits &= style.CalcHeight(new GUIContent(skill), textWidth) <= 52f &&
                             style.CalcHeight(new GUIContent(ultimate), textWidth) <= 54f;
@@ -699,13 +705,19 @@ namespace JellyGate
 
         private void DrawGuideCard(float width, ref float y, string title, string body, float height)
         {
+            var titleStyle = GuideTitleStyle(14, TextAnchor.MiddleLeft);
+            var bodyStyle = GuideBodyStyle(12, TextAnchor.UpperLeft);
+            var textWidth = Mathf.Max(1f, width - 30f);
+            var titleHeight = titleStyle.CalcHeight(new GUIContent(title ?? string.Empty), textWidth);
+            var bodyHeight = bodyStyle.CalcHeight(new GUIContent(body ?? string.Empty), textWidth);
+            height = Mathf.Max(height, Mathf.Ceil(titleHeight + bodyHeight + 28f));
             var rect = new Rect(4f, y, width - 8f, height);
             DrawFramedPanel(rect, new Color(.025f, .055f, .105f, .985f),
                 new Color(.28f, .52f, .68f), 2f);
-            GUI.Label(new Rect(rect.x + 11f, rect.y + 7f, rect.width - 22f, 25f), title,
-                GuideTitleStyle(14, TextAnchor.MiddleLeft));
-            GUI.Label(new Rect(rect.x + 11f, rect.y + 34f, rect.width - 22f, rect.height - 40f), body,
-                GuideBodyStyle(12, TextAnchor.UpperLeft));
+            DrawFittedWrappedLabel(new Rect(rect.x + 11f, rect.y + 7f, rect.width - 22f,
+                    Mathf.Max(25f, titleHeight + 2f)), title, titleStyle, 11);
+            GUI.Label(new Rect(rect.x + 11f, rect.y + titleHeight + 12f, rect.width - 22f,
+                    rect.height - titleHeight - 18f), body, bodyStyle);
             y += height + 9f;
         }
 
@@ -819,6 +831,31 @@ namespace JellyGate
             _ => L("유닛 고유의 전투 기술을 사용합니다.", "Uses the unit's unique combat skill.")
         };
 
+        private static string GuideConciseSkillEffect(UnitArchetype unit) => unit switch
+        {
+            UnitArchetype.Tank => L("방패를 세워 집중 공격을 버팁니다.",
+                "Raises its shield to withstand concentrated attacks."),
+            UnitArchetype.Melee => L("망치를 휘둘러 주변 적의 진형을 무너뜨립니다.",
+                "Swings the hammer to disrupt nearby enemies."),
+            UnitArchetype.Archer => L("한 줄로 늘어선 적을 화살로 관통합니다.",
+                "Pierces enemies lined up in its firing path."),
+            UnitArchetype.AreaMage => L("넓은 지점에 별무리 마법을 터뜨립니다.",
+                "Detonates stardust across a wide target area."),
+            UnitArchetype.SingleMage => L("한 대상을 향해 응축된 수정창을 발사합니다.",
+                "Launches a condensed crystal lance at one target."),
+            UnitArchetype.Bombardier => L("지정 지점을 연속 포격합니다.",
+                "Bombards the chosen area in succession."),
+            UnitArchetype.Lancer => L("적진을 가르며 돌진합니다.",
+                "Charges through the enemy formation."),
+            UnitArchetype.Druid => L("적을 공격하며 가까운 아군을 보호합니다.",
+                "Attacks enemies while sheltering nearby allies."),
+            UnitArchetype.Musketeer => L("위험한 한 대상을 정밀 사격합니다.",
+                "Takes a precision shot at a priority target."),
+            UnitArchetype.Oracle => L("달빛으로 적을 누르고 아군을 돕습니다.",
+                "Pressures enemies with moonlight while aiding allies."),
+            _ => L("고유한 전투 기술을 사용합니다.", "Uses a signature combat technique.")
+        };
+
         private static string GuideUltimateName(UnitArchetype unit) => unit switch
         {
             UnitArchetype.Tank => L("왕성의 천벽", "CITADEL SKY-WALL"),
@@ -855,6 +892,30 @@ namespace JellyGate
                 "Fires three powerful shots to eliminate a priority target."),
             _ => L("넓은 범위의 적을 기절시키고, 주변 아군을 크게 회복합니다.",
                 "Stuns enemies across a wide area and greatly heals nearby allies.")
+        };
+
+        private static string GuideConciseUltimateEffect(UnitArchetype unit) => unit switch
+        {
+            UnitArchetype.Tank => L("성스러운 방벽으로 자신을 감싸 전열을 지킵니다.",
+                "Surrounds itself with a sacred barrier and holds the frontline."),
+            UnitArchetype.Melee => L("전장 가까이에 연속 망치 강타를 퍼붓습니다.",
+                "Unleashes a storm of hammer blows nearby."),
+            UnitArchetype.Archer => L("전장 전역에 왕실 화살비를 내립니다.",
+                "Calls down a royal arrow rain across the battlefield."),
+            UnitArchetype.AreaMage => L("거대한 별을 떨어뜨려 넓은 지역을 휩씁니다.",
+                "Drops a giant star over a broad area."),
+            UnitArchetype.SingleMage => L("가장 위협적인 적에게 결정적인 마법을 집중합니다.",
+                "Focuses decisive magic on the greatest threat."),
+            UnitArchetype.Bombardier => L("여러 지점에 왕실 전탄 포격을 가합니다.",
+                "Launches a royal full salvo across several positions."),
+            UnitArchetype.Lancer => L("적이 가장 밀집한 곳을 꿰뚫고 돌진합니다.",
+                "Drives through the densest enemy formation."),
+            UnitArchetype.Druid => L("만개한 성역으로 주변 아군을 지킵니다.",
+                "Creates a blooming sanctuary for nearby allies."),
+            UnitArchetype.Musketeer => L("핵심 대상을 향해 세 번의 왕실 사격을 가합니다.",
+                "Fires three royal shots at a priority target."),
+            _ => L("보름달의 힘으로 전장을 제압하고 아군을 돕습니다.",
+                "Commands the battlefield with full-moon power and supports allies.")
         };
 
         private static string GuideUnitRole(UnitArchetype unit) => unit switch
@@ -933,6 +994,58 @@ namespace JellyGate
             _ => new Color(1f, .68f, .24f)
         };
 
+        private bool VerifyGuideEnglishLayoutForQa()
+        {
+            var savedLanguage = GameLocalization.Current;
+            GameLocalization.Current = GameLanguage.English;
+            // Headless QA runs before IMGUI skin-backed styles are initialised. Use the same
+            // font metrics without depending on runtime GUIStyle fields so a missing skin can
+            // never turn a layout regression into a hanging NullReferenceException.
+            var qaTitleStyle = modalTitleStyle != null
+                ? new GUIStyle(modalTitleStyle)
+                : new GUIStyle
+                {
+                    fontSize = 28, fontStyle = FontStyle.Bold,
+                    alignment = TextAnchor.MiddleCenter, clipping = TextClipping.Clip
+                };
+            var qaCenteredStyle = centeredStyle != null
+                ? new GUIStyle(centeredStyle)
+                : new GUIStyle
+                {
+                    fontSize = 12, alignment = TextAnchor.MiddleCenter,
+                    clipping = TextClipping.Clip
+                };
+            var qaBodyStyle = statStyle != null
+                ? new GUIStyle(statStyle)
+                : new GUIStyle
+                {
+                    fontSize = 12, alignment = TextAnchor.UpperLeft,
+                    wordWrap = true, clipping = TextClipping.Clip
+                };
+            var titleFits = FittedLabelFitsForQa(new Rect(0f, 0f, 304f, 39f),
+                "FIELD MANUAL", qaTitleStyle, 20);
+            var subtitleFits = FittedLabelFitsForQa(new Rect(0f, 0f, 304f, 21f),
+                "CURRENT RULES, ROSTERS AND LIVE BALANCE DATA", qaCenteredStyle, 9);
+            var cardWidth = 300f;
+            var unitCopyFits = GuideUnits.All(unit =>
+            {
+                var skill = $"SKILL: {GuideSkillName(unit)} — {GuideConciseSkillEffect(unit)}";
+                var ultimate =
+                    $"HERO ULTIMATE: {GuideUltimateName(unit)} — {GuideConciseUltimateEffect(unit)}";
+                var skillStyle = new GUIStyle(qaBodyStyle) { fontSize = 11 };
+                return FittedWrappedLabelFitsForQa(new Rect(0f, 0f, cardWidth, 54f), skill,
+                           skillStyle, 9) &&
+                       FittedWrappedLabelFitsForQa(new Rect(0f, 0f, cardWidth, 61f), ultimate,
+                           skillStyle, 9);
+            });
+            var laneBody =
+                "Before starting, check for an open lane, an unsupported frontline, and the wide route used by boss formations.";
+            var laneBodyHeight = qaBodyStyle
+                .CalcHeight(new GUIContent(laneBody), 300f);
+            GameLocalization.Current = savedLanguage;
+            return titleFits && subtitleFits && unitCopyFits && laneBodyHeight <= 78f;
+        }
+
         private IEnumerator QaGuideRoutine()
         {
             yield return null;
@@ -952,10 +1065,12 @@ namespace JellyGate
                 .Distinct().Count();
             HandleBackButton();
             var back = !showGuidePanel;
-            var passed = modal && tabs && unitData && bossEntries == 10 && augmentEntries >= 35 && back;
+            var englishLayout = VerifyGuideEnglishLayoutForQa();
+            var passed = modal && tabs && unitData && bossEntries == 10 && augmentEntries >= 35 &&
+                         englishLayout && back;
             Debug.Log($"QA_GUIDE modal={modal} tabs={tabs} units={GuideUnits.Length} " +
                       $"enemySection=boss-only:boss={bossEntries} " +
-                      $"augments={augmentEntries} back={back}");
+                      $"augments={augmentEntries} englishLayout={englishLayout} back={back}");
             Application.Quit(passed ? 0 : 34);
         }
 
@@ -964,8 +1079,12 @@ namespace JellyGate
             yield return null;
             showMainMenu = true;
             showGuidePanel = true;
+            var english = HasCommandLineArgument("-qaGuideEnglishView") ||
+                          HasCommandLineArgument("-qaGuideUnitEnglishView");
+            if (english) GameLocalization.Current = GameLanguage.English;
             guideTab = HasCommandLineArgument("-qaGuideBossView") ? 2 :
-                HasCommandLineArgument("-qaGuideOracleView") ? 1 : 0;
+                HasCommandLineArgument("-qaGuideOracleView") ||
+                HasCommandLineArgument("-qaGuideUnitEnglishView") ? 1 : 0;
             guideScroll = Vector2.zero;
             if (HasCommandLineArgument("-qaAutoCapture"))
             {
@@ -978,7 +1097,9 @@ namespace JellyGate
                 }
                 yield return new WaitForEndOfFrame();
                 var capture = System.IO.Path.GetFullPath(System.IO.Path.Combine(
-                    Application.dataPath, "..", guideTab == 2
+                    Application.dataPath, "..", HasCommandLineArgument("-qaGuideUnitEnglishView")
+                        ? "guide-units-en-code23.bmp" : HasCommandLineArgument("-qaGuideEnglishView")
+                            ? "guide-basics-en-code23.bmp" : guideTab == 2
                         ? "guide-boss-v262.bmp" : guideTab == 1
                             ? "guide-oracle-v2705.bmp" : "guide-main-v262.bmp"));
                 CaptureCurrentFrameForQa(capture);
