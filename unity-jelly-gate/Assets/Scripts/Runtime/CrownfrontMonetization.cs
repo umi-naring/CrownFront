@@ -94,6 +94,7 @@ namespace JellyGate
         public bool ConsentStatusKnown { get; private set; }
         public bool PrivacyOptionsRequired { get; private set; }
         public bool PurchaseInProgress { get; private set; }
+        public bool EntitlementsReady { get; private set; }
         public string PurchaseStatusMessage { get; private set; } = string.Empty;
         public string LastRequestedProductId { get; private set; } = string.Empty;
         public string LastNativeEventType { get; private set; } = string.Empty;
@@ -135,6 +136,15 @@ namespace JellyGate
             LoadEntitlements();
 
 #if UNITY_ANDROID && !UNITY_EDITOR
+            // Honor a cached paid entitlement immediately. A free-looking install must wait for
+            // Play's ownership query before it may request an interstitial, otherwise an existing
+            // customer can see an ad while purchase restoration is still racing startup.
+            EntitlementsReady = AdsRemoved;
+#else
+            EntitlementsReady = true;
+#endif
+
+#if UNITY_ANDROID && !UNITY_EDITOR
             try
             {
                 using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
@@ -153,6 +163,7 @@ namespace JellyGate
                 var unityPlacementId = config?.unityAdsInterstitialPlacementId?.Trim() ?? string.Empty;
                 androidBridge = bridgeClass.CallStatic<AndroidJavaObject>("create", activity, name,
                     productIds, interstitialId, unityGameId, unityPlacementId, testAds);
+                androidBridge.Call("setAdsBlocked", AdsRemoved);
             }
             catch (Exception exception)
             {
@@ -577,7 +588,7 @@ namespace JellyGate
 
         public bool NotifyRunEnded()
         {
-            if (interstitialRequestInFlight || AdsRemoved) return false;
+            if (interstitialRequestInFlight || AdsRemoved || !EntitlementsReady) return false;
 #if UNITY_ANDROID && !UNITY_EDITOR
             if (androidBridge != null)
             {
@@ -619,6 +630,23 @@ namespace JellyGate
                     if (!PurchaseInProgress)
                         PurchaseStatusMessage = GameLocalization.Text("Google Play 결제 서비스 준비 완료",
                             "GOOGLE PLAY BILLING READY");
+                    break;
+                case "ownership_sync_complete":
+                    EntitlementsReady = true;
+                    if (PurchaseInProgress)
+                        SetPurchaseStatus(GameLocalization.Text(
+                            "Google Play 구매내역에서 해당 상품을 확인하지 못했습니다.",
+                            "THE PRODUCT WAS NOT FOUND IN YOUR GOOGLE PLAY PURCHASES."), false);
+                    break;
+                case "ownership_sync_failed":
+                    // Fail closed: suppress advertising until Play can establish ownership.
+                    EntitlementsReady = AdsRemoved;
+                    Debug.LogWarning($"Google Play ownership sync failed: {nativeEvent.message}");
+                    break;
+                case "purchase_restoring":
+                    SetPurchaseStatus(GameLocalization.Text(
+                        "이미 구매한 상품입니다. Google Play 구매내역을 복원하고 있습니다.",
+                        "ALREADY PURCHASED. RESTORING YOUR GOOGLE PLAY ENTITLEMENT."), true);
                     break;
                 case "billing_unavailable":
                     BillingReady = false;
@@ -707,6 +735,10 @@ namespace JellyGate
 #endif
                     InterstitialClosed?.Invoke();
                     break;
+                case "ad_suppressed":
+                    interstitialRequestInFlight = false;
+                    InterstitialClosed?.Invoke();
+                    break;
                 case "error":
                     SetPurchaseStatus(string.IsNullOrWhiteSpace(nativeEvent.message)
                         ? GameLocalization.Text("Google Play 요청을 완료하지 못했습니다.",
@@ -749,6 +781,14 @@ namespace JellyGate
             CosmeticsChanged?.Invoke();
         }
 
+        private void OnApplicationFocus(bool hasFocus)
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            if (hasFocus && initialized && !PurchaseInProgress && androidBridge != null)
+                androidBridge.Call("refreshPurchases");
+#endif
+        }
+
         private void GrantNativePurchase(string productId, bool restored)
         {
             var product = FindProduct(productId);
@@ -766,6 +806,14 @@ namespace JellyGate
                 return;
             }
             Grant(productId);
+            if (product.Id == RemoveAdsId)
+            {
+                EntitlementsReady = true;
+                interstitialRequestInFlight = false;
+#if UNITY_ANDROID && !UNITY_EDITOR
+                androidBridge?.Call("setAdsBlocked", true);
+#endif
+            }
             CosmeticsChanged?.Invoke();
         }
 

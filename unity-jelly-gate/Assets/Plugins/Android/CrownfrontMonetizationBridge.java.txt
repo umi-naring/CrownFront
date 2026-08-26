@@ -62,7 +62,9 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
     private boolean unityAdLoading;
     private boolean unityAdLoaded;
     private boolean pendingUnityShow;
+    private boolean adsBlocked;
     private boolean billingConnectionStarting;
+    private boolean ownershipQueryInFlight;
     private String pendingProductId = "";
     private boolean disposed;
     private int interstitialRequestSerial;
@@ -218,6 +220,11 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
 
     private void showUnityFallback(String primaryFailure) {
         if (disposed) return;
+        if (adsBlocked) {
+            pendingUnityShow = false;
+            send("ad_suppressed", "", "", "PAID_ENTITLEMENT");
+            return;
+        }
         if (!hasUnityFallbackConfiguration()) {
             pendingUnityShow = false;
             send("ad_error", "", "", primaryFailure + "|UNITY_FALLBACK_NOT_CONFIGURED");
@@ -260,7 +267,7 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
 
     private void scheduleGoogleInterstitialTimeout(int requestSerial, String reason) {
         activity.getWindow().getDecorView().postDelayed(() -> {
-            if (disposed || !pendingInterstitialShow || requestSerial != interstitialRequestSerial ||
+            if (disposed || adsBlocked || !pendingInterstitialShow || requestSerial != interstitialRequestSerial ||
                 interstitial != null) return;
             pendingInterstitialShow = false;
             showUnityFallback(reason);
@@ -289,6 +296,7 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
         if (disposed || billingClient == null) return;
         if (billingClient.isReady()) {
             queryProducts();
+            restorePurchases();
             return;
         }
         if (billingConnectionStarting) return;
@@ -416,6 +424,13 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
             send("purchase_cancelled", "", "", "");
             return;
         }
+        if (result.getResponseCode() == BillingClient.BillingResponseCode.ITEM_ALREADY_OWNED) {
+            // Play has an active non-consumable. Re-query and deliver it instead of surfacing
+            // ITEM_ALREADY_OWNED as a checkout failure.
+            send("purchase_restoring", "", "", result.getDebugMessage());
+            restorePurchases();
+            return;
+        }
         if (result.getResponseCode() != BillingClient.BillingResponseCode.OK || purchases == null) {
             sendError("결제를 완료하지 못했습니다: " + result.getDebugMessage());
             return;
@@ -424,12 +439,42 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
     }
 
     public void restorePurchases() {
-        if (disposed || billingClient == null || !billingClient.isReady()) return;
+        if (disposed || ownershipQueryInFlight || billingClient == null || !billingClient.isReady()) return;
+        ownershipQueryInFlight = true;
         QueryPurchasesParams params = QueryPurchasesParams.newBuilder()
             .setProductType(BillingClient.ProductType.INAPP).build();
         billingClient.queryPurchasesAsync(params, (result, purchases) -> {
-            if (result.getResponseCode() != BillingClient.BillingResponseCode.OK) return;
-            for (Purchase purchase : purchases) processPurchase(purchase, "owned");
+            ownershipQueryInFlight = false;
+            if (result.getResponseCode() != BillingClient.BillingResponseCode.OK) {
+                send("ownership_sync_failed", "", "",
+                    "QUERY_PURCHASES_FAILED|code=" + result.getResponseCode() +
+                    "; detail=" + result.getDebugMessage());
+                return;
+            }
+            if (purchases != null) {
+                for (Purchase purchase : purchases) processPurchase(purchase, "owned");
+            }
+            send("ownership_sync_complete", "", "", "");
+        });
+    }
+
+    public void refreshPurchases() {
+        activity.runOnUiThread(() -> {
+            if (disposed) return;
+            if (billingClient != null && billingClient.isReady()) restorePurchases();
+            else startBillingConnection();
+        });
+    }
+
+    public void setAdsBlocked(boolean blocked) {
+        activity.runOnUiThread(() -> {
+            adsBlocked = blocked;
+            if (!blocked) return;
+            interstitialRequestSerial++;
+            pendingInterstitialShow = false;
+            pendingUnityShow = false;
+            interstitial = null;
+            unityAdLoaded = false;
         });
     }
 
@@ -476,9 +521,9 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
     }
 
     public void loadInterstitial() {
-        if (disposed || !mobileAdsInitialized || interstitialId == null || interstitialId.isEmpty()) return;
+        if (disposed || adsBlocked || !mobileAdsInitialized || interstitialId == null || interstitialId.isEmpty()) return;
         activity.runOnUiThread(() -> {
-            if (disposed || interstitial != null || interstitialLoading) return;
+            if (disposed || adsBlocked || interstitial != null || interstitialLoading) return;
             interstitialLoading = true;
             InterstitialAd.load(activity, interstitialId,
                 new AdRequest.Builder().build(), new InterstitialAdLoadCallback() {
@@ -535,6 +580,12 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
 
     public void showInterstitial() {
         activity.runOnUiThread(() -> {
+            if (adsBlocked) {
+                pendingInterstitialShow = false;
+                pendingUnityShow = false;
+                send("ad_suppressed", "", "", "PAID_ENTITLEMENT");
+                return;
+            }
             int requestSerial = ++interstitialRequestSerial;
             if (!mobileAdsInitialized) {
                 pendingInterstitialShow = true;
@@ -567,6 +618,7 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
         disposed = true;
         pendingProductId = "";
         billingConnectionStarting = false;
+        ownershipQueryInFlight = false;
         pendingInterstitialShow = false;
         pendingUnityShow = false;
         interstitialLoading = false;

@@ -40,9 +40,9 @@ if ([string]::IsNullOrWhiteSpace($KeystorePath)) {
     $KeystorePath = Join-Path $workspacePath 'release-keys\Crownfront-upload.keystore'
 }
 if ([string]::IsNullOrWhiteSpace($OutputPath)) {
-    $OutputPath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code25.aab'
+    $OutputPath = Join-Path $workspacePath 'outputs\Crownfront-v1.00-code26.aab'
 }
-$logPath = Join-Path $workspacePath 'android-aab-build-100-code25.log'
+$logPath = Join-Path $workspacePath 'android-aab-build-100-code26.log'
 
 if (-not (Test-Path -LiteralPath $UnityPath)) { throw "Unity executable not found: $UnityPath" }
 if (-not (Test-Path -LiteralPath $KeystorePath)) { throw "Upload keystore not found: $KeystorePath" }
