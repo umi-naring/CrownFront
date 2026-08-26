@@ -506,6 +506,77 @@ namespace JellyGate
         public string EquippedUnitSkin(UnitArchetype unit) =>
             equippedUnitSkins.TryGetValue(unit, out var id) ? id : string.Empty;
 
+        public CrownfrontCosmeticsCloudData ExportCloudCosmetics()
+        {
+            var data = new CrownfrontCosmeticsCloudData
+            {
+                equippedCastle = EquippedCastle,
+                equippedMenu = EquippedMenu
+            };
+            data.ownedProductIds.AddRange(owned.Where(IsCloudCosmetic)
+                .OrderBy(id => id, StringComparer.Ordinal));
+            foreach (var pair in equippedUnitSkins.OrderBy(pair => pair.Key))
+                data.equippedUnits.Add(new CloudEquippedUnit
+                {
+                    unit = pair.Key.ToString(),
+                    productId = pair.Value
+                });
+            return data;
+        }
+
+        public void ApplyCloudCosmetics(CrownfrontCosmeticsCloudData data)
+        {
+            if (data == null) return;
+            foreach (var productId in data.ownedProductIds ?? new List<string>())
+            {
+                if (!IsCloudCosmetic(productId)) continue;
+                owned.Add(productId);
+                PlayerPrefs.SetInt(OwnedPrefix + productId, 1);
+            }
+
+            EquippedCastle = IsOwnedCloudCosmetic(data.equippedCastle, ShopCategory.Castle)
+                ? data.equippedCastle
+                : string.Empty;
+            EquippedMenu = IsOwnedCloudCosmetic(data.equippedMenu, ShopCategory.MainMenu)
+                ? data.equippedMenu
+                : string.Empty;
+            PlayerPrefs.SetString(EquippedCastleKey, EquippedCastle);
+            PlayerPrefs.SetString(EquippedMenuKey, EquippedMenu);
+
+            equippedUnitSkins.Clear();
+            foreach (UnitArchetype unit in Enum.GetValues(typeof(UnitArchetype)))
+                if (unit != UnitArchetype.None) PlayerPrefs.DeleteKey(EquippedUnitKeyPrefix + unit);
+            foreach (var entry in data.equippedUnits ?? new List<CloudEquippedUnit>())
+            {
+                if (entry == null || !Enum.TryParse(entry.unit, out UnitArchetype unit) ||
+                    unit == UnitArchetype.None) continue;
+                var product = FindProduct(entry.productId);
+                if (product == null || product.Category != ShopCategory.Unit ||
+                    product.TargetUnit != unit || !IsOwned(entry.productId)) continue;
+                equippedUnitSkins[unit] = entry.productId;
+                PlayerPrefs.SetString(EquippedUnitKeyPrefix + unit, entry.productId);
+            }
+            PlayerPrefs.Save();
+            CosmeticsChanged?.Invoke();
+        }
+
+        private bool IsCloudCosmetic(string productId)
+        {
+            var product = FindProduct(productId);
+            return product != null && !product.DirectPurchase && !product.Consumable &&
+                   !product.HasTacticalItem &&
+                   (product.Category == ShopCategory.Castle ||
+                    product.Category == ShopCategory.Unit ||
+                    product.Category == ShopCategory.MainMenu);
+        }
+
+        private bool IsOwnedCloudCosmetic(string productId, ShopCategory category)
+        {
+            if (string.IsNullOrEmpty(productId) || !IsOwned(productId)) return false;
+            var product = FindProduct(productId);
+            return product != null && product.Category == category && IsCloudCosmetic(productId);
+        }
+
         public int UnitSkinVariant(UnitArchetype unit)
         {
             var id = EquippedUnitSkin(unit);

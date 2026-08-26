@@ -139,6 +139,7 @@ namespace JellyGate
             preparedBattleCheckpointJson = string.Empty;
             showResumePrompt = false;
             PlayerPrefs.DeleteKey(RunCheckpointKey);
+            PlayerPrefs.SetString(CloudCheckpointChangedTicksKey, DateTime.UtcNow.Ticks.ToString());
             ClearRevivalSnapshots();
             PlayerPrefs.Save();
             SavePortableProgressBackup();
@@ -219,6 +220,7 @@ namespace JellyGate
             var json = JsonUtility.ToJson(data);
             if (string.IsNullOrWhiteSpace(json)) return;
             PlayerPrefs.SetString(RunCheckpointKey, json);
+            PlayerPrefs.SetString(CloudCheckpointChangedTicksKey, data.savedAtUtcTicks.ToString());
             PlayerPrefs.Save();
             SavePortableProgressBackup();
             if (cacheAsPreparedBattle) preparedBattleCheckpointJson = json;

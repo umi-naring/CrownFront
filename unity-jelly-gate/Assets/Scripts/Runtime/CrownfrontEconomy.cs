@@ -166,6 +166,49 @@ namespace JellyGate
         public int Count(TacticalItemId id) => Mathf.Max(0,
             PlayerPrefs.GetInt(ItemKeyPrefix + id, 0));
 
+        public CrownfrontEconomyCloudData ExportCloudData()
+        {
+            var data = new CrownfrontEconomyCloudData
+            {
+                gold = Mathf.Max(0, Gold),
+                gems = Mathf.Max(0, Gems)
+            };
+            foreach (TacticalItemId id in Enum.GetValues(typeof(TacticalItemId)))
+                data.items.Add(new CloudItemCount { id = id.ToString(), count = Count(id) });
+            return data;
+        }
+
+        internal bool HasMeaningfulCloudProgress()
+        {
+            if (Gold != NewAccountGold || Gems != 0) return true;
+            foreach (var item in catalog)
+                if (Count(item.Id) != FirstProfileTrialAmount) return true;
+            return false;
+        }
+
+        public void ApplyCloudData(CrownfrontEconomyCloudData data)
+        {
+            if (data == null) return;
+            Gold = Mathf.Clamp(data.gold, 0, 9_999_999);
+            Gems = Mathf.Clamp(data.gems, 0, 999_999);
+            PlayerPrefs.SetInt(GoldKey, Gold);
+            PlayerPrefs.SetInt(GemsKey, Gems);
+
+            var cloudCounts = new Dictionary<TacticalItemId, int>();
+            foreach (var item in data.items ?? new List<CloudItemCount>())
+            {
+                if (item == null || !Enum.TryParse(item.id, out TacticalItemId id)) continue;
+                cloudCounts[id] = Mathf.Clamp(item.count, 0, 99_999);
+            }
+            foreach (TacticalItemId id in Enum.GetValues(typeof(TacticalItemId)))
+                PlayerPrefs.SetInt(ItemKeyPrefix + id,
+                    cloudCounts.TryGetValue(id, out var count) ? count : 0);
+            PlayerPrefs.SetInt(FirstProfileTrialKey, 1);
+            PlayerPrefs.Save();
+            selectedPregameItems.RemoveWhere(id => Count(id) <= 0);
+            Changed?.Invoke();
+        }
+
         public void GrantGold(int amount)
         {
             if (amount <= 0) return;

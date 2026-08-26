@@ -562,6 +562,7 @@ namespace JellyGate
         private Font koreanFont;
         private ToyVoiceBarks voiceBarks;
         private CrownfrontMonetization monetization;
+        private CrownfrontPlayGamesCloud playGamesCloud;
         private SpriteRenderer battlefieldRenderer;
         private SpriteRenderer battlefieldMoodWash;
         private SpriteRenderer battlefieldMoodGlow;
@@ -780,6 +781,8 @@ namespace JellyGate
             RefreshEquippedCosmetics();
             Money = StartBudget();
             InitializeRunCheckpointPrompt();
+            playGamesCloud = gameObject.AddComponent<CrownfrontPlayGamesCloud>();
+            playGamesCloud.Initialize(this, economy, monetization);
             BeginEnemyPoolPrewarm(Round);
             if (HasCommandLineArgument("-qaDirection")) StartCoroutine(QaDirectionRoutine());
             else if (HasCommandLineArgument("-qaControl")) StartCoroutine(QaControlRoutine());
@@ -852,6 +855,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaSpawnPool310")) StartCoroutine(QaSpawnPool310Routine());
             else if (HasCommandLineArgument("-qaRelease319")) StartCoroutine(QaRelease319Routine());
             else if (HasCommandLineArgument("-qaAllUnitPoses320")) StartCoroutine(QaAllUnitPoses320Routine());
+            else if (HasCommandLineArgument("-qaPlayGamesCloud321")) StartCoroutine(QaPlayGamesCloud321Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
