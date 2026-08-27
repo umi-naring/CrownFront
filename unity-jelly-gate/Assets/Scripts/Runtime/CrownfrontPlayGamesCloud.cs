@@ -30,6 +30,7 @@ namespace JellyGate
     {
         public int gold;
         public int gems;
+        public int gemDebt;
         public List<CloudItemCount> items = new();
     }
 
@@ -56,6 +57,7 @@ namespace JellyGate
         public int lifetimeBossesDefeated;
         public int itemlessBest;
         public List<string> completedChallenges = new();
+        public List<string> rewardedChallenges = new();
     }
 
     [Serializable]
@@ -341,6 +343,8 @@ namespace JellyGate
                 remote.cosmetics?.ownedProductIds);
             result.progress.completedChallenges = Union(local.progress?.completedChallenges,
                 remote.progress?.completedChallenges);
+            result.progress.rewardedChallenges = Union(local.progress?.rewardedChallenges,
+                remote.progress?.rewardedChallenges);
             result.progress.lifetimeRoundsCleared = Math.Max(local.progress?.lifetimeRoundsCleared ?? 0,
                 remote.progress?.lifetimeRoundsCleared ?? 0);
             result.progress.lifetimeMonstersDefeated = Math.Max(local.progress?.lifetimeMonstersDefeated ?? 0,

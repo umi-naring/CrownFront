@@ -52,6 +52,7 @@ namespace JellyGate
     {
         private const string GoldKey = "Crownfront.Economy.Gold.v1";
         private const string GemsKey = "Crownfront.Economy.Gems.v1";
+        private const string GemDebtKey = "Crownfront.Economy.GemDebt.v1";
         private const string ItemKeyPrefix = "Crownfront.Economy.Item.v1.";
         private const string FirstProfileTrialKey = "Crownfront.Economy.FirstProfileTrial.v1";
         private const string RunCheckpointKey = "Crownfront.RunCheckpoint.v1";
@@ -66,6 +67,7 @@ namespace JellyGate
         public IReadOnlyCollection<TacticalItemId> SelectedPregameItems => selectedPregameItems;
         public int Gold { get; private set; }
         public int Gems { get; private set; }
+        public int GemDebt { get; private set; }
         public int PregameSelectionLimit => MaxPregameSelection;
         public event Action Changed;
 
@@ -78,12 +80,14 @@ namespace JellyGate
             BuildCatalog();
             Gold = Mathf.Max(0, PlayerPrefs.GetInt(GoldKey, NewAccountGold));
             Gems = Mathf.Max(0, PlayerPrefs.GetInt(GemsKey, 0));
+            GemDebt = Mathf.Max(0, PlayerPrefs.GetInt(GemDebtKey, 0));
             ApplyFirstProfileTrialIfNeeded(freshProfile);
         }
 
         private static bool IsFreshLocalProfile()
         {
             if (PlayerPrefs.HasKey(GoldKey) || PlayerPrefs.HasKey(GemsKey) ||
+                PlayerPrefs.HasKey(GemDebtKey) ||
                 PlayerPrefs.HasKey(RunCheckpointKey)) return false;
             foreach (TacticalItemId id in Enum.GetValues(typeof(TacticalItemId)))
                 if (PlayerPrefs.HasKey(ItemKeyPrefix + id)) return false;
@@ -171,7 +175,8 @@ namespace JellyGate
             var data = new CrownfrontEconomyCloudData
             {
                 gold = Mathf.Max(0, Gold),
-                gems = Mathf.Max(0, Gems)
+                gems = Mathf.Max(0, Gems),
+                gemDebt = Mathf.Max(0, GemDebt)
             };
             foreach (TacticalItemId id in Enum.GetValues(typeof(TacticalItemId)))
                 data.items.Add(new CloudItemCount { id = id.ToString(), count = Count(id) });
@@ -180,7 +185,7 @@ namespace JellyGate
 
         internal bool HasMeaningfulCloudProgress()
         {
-            if (Gold != NewAccountGold || Gems != 0) return true;
+            if (Gold != NewAccountGold || Gems != 0 || GemDebt != 0) return true;
             foreach (var item in catalog)
                 if (Count(item.Id) != FirstProfileTrialAmount) return true;
             return false;
@@ -191,8 +196,10 @@ namespace JellyGate
             if (data == null) return;
             Gold = Mathf.Clamp(data.gold, 0, 9_999_999);
             Gems = Mathf.Clamp(data.gems, 0, 999_999);
+            GemDebt = Mathf.Clamp(data.gemDebt, 0, 999_999);
             PlayerPrefs.SetInt(GoldKey, Gold);
             PlayerPrefs.SetInt(GemsKey, Gems);
+            PlayerPrefs.SetInt(GemDebtKey, GemDebt);
 
             var cloudCounts = new Dictionary<TacticalItemId, int>();
             foreach (var item in data.items ?? new List<CloudItemCount>())
@@ -219,9 +226,28 @@ namespace JellyGate
         public void GrantGems(int amount)
         {
             if (amount <= 0) return;
+            var debtPayment = Mathf.Min(GemDebt, amount);
+            GemDebt -= debtPayment;
+            amount -= debtPayment;
             Gems = Mathf.Min(999_999, Gems + amount);
             PersistWallet();
         }
+
+        public void RevokeGems(int amount)
+        {
+            if (amount <= 0) return;
+            var uncovered = Mathf.Max(0, amount - Gems);
+            Gems = GemsAfterRefundForQa(Gems, amount);
+            GemDebt = Mathf.Min(999_999, GemDebt + uncovered);
+            PersistWallet();
+        }
+
+        internal static int GemsAfterRefundForQa(int current, int refundedAmount) =>
+            Mathf.Max(0, Mathf.Max(0, current) - Mathf.Max(0, refundedAmount));
+
+        internal static int GemDebtAfterRefundForQa(int current, int existingDebt,
+            int refundedAmount) => Mathf.Min(999_999, Mathf.Max(0, existingDebt) +
+                Mathf.Max(0, Mathf.Max(0, refundedAmount) - Mathf.Max(0, current)));
 
         public bool TryBuyItem(TacticalItemId id, ShopCurrency currency)
         {
@@ -302,6 +328,7 @@ namespace JellyGate
         {
             PlayerPrefs.SetInt(GoldKey, Gold);
             PlayerPrefs.SetInt(GemsKey, Gems);
+            PlayerPrefs.SetInt(GemDebtKey, GemDebt);
             PlayerPrefs.Save();
             Changed?.Invoke();
         }

@@ -25,6 +25,7 @@ namespace JellyGate
             public int lifetimeHeroesEvolved;
             public int lifetimeBossesDefeated;
             public List<string> completedChallenges = new();
+            public List<string> rewardedChallenges = new();
         }
 
         private static string PortableProgressPath =>
@@ -61,7 +62,8 @@ namespace JellyGate
                 lifetimeHeroesEvolved = lifetimeHeroesEvolved,
                 lifetimeBossesDefeated = lifetimeBossesDefeated,
                 itemlessBest = PlayerPrefs.GetInt("Crownfront.Challenge.ItemlessBest", 0),
-                completedChallenges = new List<string>(completedMissionKeys)
+                completedChallenges = new List<string>(completedMissionKeys),
+                rewardedChallenges = new List<string>(rewardedChallengeKeys)
             };
         }
 
@@ -91,6 +93,15 @@ namespace JellyGate
                 completedMissionKeys.Add(key);
                 PlayerPrefs.SetInt("Crownfront.Challenge." + key, 1);
             }
+            rewardedChallengeKeys.Clear();
+            foreach (var challengeKey in ChallengeKeys)
+                PlayerPrefs.DeleteKey(ChallengeRewardedPrefix + challengeKey);
+            foreach (var key in data.rewardedChallenges ?? new List<string>())
+            {
+                if (Array.IndexOf(ChallengeKeys, key) < 0) continue;
+                rewardedChallengeKeys.Add(key);
+                PlayerPrefs.SetInt(ChallengeRewardedPrefix + key, 1);
+            }
 
             if (TryReadCheckpointTimestamp(data.runCheckpointJson, out _))
                 PlayerPrefs.SetString(RunCheckpointKey, data.runCheckpointJson);
@@ -99,6 +110,7 @@ namespace JellyGate
             PlayerPrefs.SetString(CloudCheckpointChangedTicksKey,
                 Math.Max(0L, data.runCheckpointSavedAtUtcTicks).ToString());
             PlayerPrefs.Save();
+            EvaluateCompletedChallenges();
             SavePortableProgressBackup();
             InitializeRunCheckpointPrompt();
         }
@@ -140,6 +152,11 @@ namespace JellyGate
                 {
                     if (Array.IndexOf(ChallengeKeys, key) >= 0)
                         PlayerPrefs.SetInt("Crownfront.Challenge." + key, 1);
+                }
+                foreach (var key in data.rewardedChallenges ?? new List<string>())
+                {
+                    if (Array.IndexOf(ChallengeKeys, key) >= 0)
+                        PlayerPrefs.SetInt(ChallengeRewardedPrefix + key, 1);
                 }
 
                 if (TryReadCheckpointTimestamp(data.runCheckpointJson, out var backupTicks))
@@ -190,7 +207,8 @@ namespace JellyGate
                     lifetimeSkillsCast = lifetimeSkillsCast,
                     lifetimeHeroesEvolved = lifetimeHeroesEvolved,
                     lifetimeBossesDefeated = lifetimeBossesDefeated,
-                    completedChallenges = new List<string>(completedMissionKeys)
+                    completedChallenges = new List<string>(completedMissionKeys),
+                    rewardedChallenges = new List<string>(rewardedChallengeKeys)
                 };
                 var path = PortableProgressPath;
                 var directory = Path.GetDirectoryName(path);

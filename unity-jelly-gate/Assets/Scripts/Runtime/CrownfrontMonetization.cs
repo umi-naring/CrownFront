@@ -63,6 +63,8 @@ namespace JellyGate
         private const string EquippedCastleKey = "Crownfront.Shop.EquippedCastle";
         private const string EquippedUnitKeyPrefix = "Crownfront.Shop.EquippedUnit.";
         private const string EquippedMenuKey = "Crownfront.Shop.EquippedMenu";
+        private const string ConsumableTokenPrefix = "Crownfront.Billing.DeliveredToken.";
+        private const string RefundedConsumableTokenPrefix = "Crownfront.Billing.RefundedToken.";
 
         private readonly List<CrownfrontShopProduct> products = new();
         private readonly HashSet<string> owned = new();
@@ -88,6 +90,7 @@ namespace JellyGate
         public event Action CosmeticsChanged;
         public event Action InterstitialClosed;
         public event Action<int> GemsPurchased;
+        public event Action<int> GemsRefunded;
         public event Action EmergencyRevivePurchased;
         public bool BillingReady { get; private set; }
         public bool AdsReady { get; private set; }
@@ -709,6 +712,9 @@ namespace JellyGate
                             "Google Play 구매내역에서 해당 상품을 확인하지 못했습니다.",
                             "THE PRODUCT WAS NOT FOUND IN YOUR GOOGLE PLAY PURCHASES."), false);
                     break;
+                case "ownership_snapshot":
+                    ReconcileDirectOwnershipSnapshot(nativeEvent.message);
+                    break;
                 case "ownership_sync_failed":
                     // Fail closed: suppress advertising until Play can establish ownership.
                     EntitlementsReady = AdsRemoved;
@@ -754,10 +760,13 @@ namespace JellyGate
                         "PURCHASE OWNERSHIP CONFIRMED."), false);
                     break;
                 case "purchased":
-                    GrantNativePurchase(nativeEvent.productId, false);
+                    GrantNativePurchase(nativeEvent.productId, false, nativeEvent.message);
                     SetPurchaseStatus(GameLocalization.Text(
                         "구매가 확인되어 상품을 지급했습니다.",
                         "PURCHASE CONFIRMED AND DELIVERED."), false);
+                    break;
+                case "voided_purchase":
+                    RevokeNativeConsumable(nativeEvent.productId, nativeEvent.message);
                     break;
                 case "ad_loaded":
                     AdsReady = true;
@@ -860,7 +869,7 @@ namespace JellyGate
 #endif
         }
 
-        private void GrantNativePurchase(string productId, bool restored)
+        private void GrantNativePurchase(string productId, bool restored, string purchaseToken = "")
         {
             var product = FindProduct(productId);
             if (product == null) return;
@@ -868,12 +877,14 @@ namespace JellyGate
             {
                 // Consumables are never granted during ownership restoration; the Android bridge
                 // consumes them and reports only a completed fresh purchase.
-                if (!restored) GemsPurchased?.Invoke(product.GrantedGems);
+                if (!restored && MarkConsumableTokenDelivered(productId, purchaseToken))
+                    GemsPurchased?.Invoke(product.GrantedGems);
                 return;
             }
             if (product.Id == EmergencyReviveId)
             {
-                if (!restored) EmergencyRevivePurchased?.Invoke();
+                if (!restored && MarkConsumableTokenDelivered(productId, purchaseToken))
+                    EmergencyRevivePurchased?.Invoke();
                 return;
             }
             Grant(productId);
@@ -886,6 +897,95 @@ namespace JellyGate
 #endif
             }
             CosmeticsChanged?.Invoke();
+        }
+
+        private bool MarkConsumableTokenDelivered(string productId, string purchaseToken)
+        {
+            // Old bridges did not return a token. Preserve delivery for that migration path;
+            // current Android builds always provide one and therefore reject replayed callbacks.
+            if (string.IsNullOrWhiteSpace(purchaseToken)) return true;
+            // string.GetHashCode() is intentionally process-dependent on some runtimes, so it
+            // cannot be used as a durable purchase-token ledger key across app restarts.
+            var tokenKey = ConsumableTokenPrefix + StableTokenFingerprint(purchaseToken);
+            if (PlayerPrefs.GetString(tokenKey, string.Empty) == productId) return false;
+            PlayerPrefs.SetString(tokenKey, productId);
+            PlayerPrefs.Save();
+            return true;
+        }
+
+        private static string StableTokenFingerprint(string value)
+        {
+            // FNV-1a over UTF-16 code units is deterministic on every supported Unity runtime.
+            // This is only a compact PlayerPrefs key, not a security boundary; the full token is
+            // still verified and consumed by Google Play Billing before this callback arrives.
+            unchecked
+            {
+                const ulong offset = 14695981039346656037UL;
+                const ulong prime = 1099511628211UL;
+                var hash = offset;
+                foreach (var character in value)
+                {
+                    hash ^= (byte)character;
+                    hash *= prime;
+                    hash ^= (byte)(character >> 8);
+                    hash *= prime;
+                }
+                return hash.ToString("X16");
+            }
+        }
+
+        private void RevokeNativeConsumable(string productId, string purchaseToken)
+        {
+            var product = FindProduct(productId);
+            if (product == null || !product.Consumable || string.IsNullOrWhiteSpace(purchaseToken))
+                return;
+            var fingerprint = StableTokenFingerprint(purchaseToken);
+            var deliveryKey = ConsumableTokenPrefix + fingerprint;
+            var refundedKey = RefundedConsumableTokenPrefix + fingerprint;
+            // Reject forged, unknown, or repeated refund callbacks. The callback itself must be
+            // produced by a trusted backend after verifying Google Play Voided Purchases/RTDN.
+            if (PlayerPrefs.GetString(deliveryKey, string.Empty) != productId ||
+                PlayerPrefs.GetInt(refundedKey, 0) == 1) return;
+            PlayerPrefs.SetInt(refundedKey, 1);
+            PlayerPrefs.Save();
+            if (product.GrantedGems > 0)
+                GemsRefunded?.Invoke(product.GrantedGems);
+            statusSink?.Invoke(GameLocalization.Text(
+                "Google Play 환불 내역을 반영해 지급 재화를 회수했습니다.",
+                "REFUNDED GOOGLE PLAY CURRENCY WAS REVOKED."));
+        }
+
+        internal static string StableTokenFingerprintForQa(string value) =>
+            StableTokenFingerprint(value ?? string.Empty);
+
+        private void ReconcileDirectOwnershipSnapshot(string snapshot)
+        {
+            var active = new HashSet<string>(
+                (snapshot ?? string.Empty).Split(new[] { '|' }, StringSplitOptions.RemoveEmptyEntries),
+                StringComparer.Ordinal);
+            var revokedAny = false;
+            foreach (var product in products)
+            {
+                if (!product.DirectPurchase || product.Consumable || active.Contains(product.Id)) continue;
+                if (!owned.Remove(product.Id)) continue;
+                PlayerPrefs.DeleteKey(OwnedPrefix + product.Id);
+                revokedAny = true;
+                if (product.Id == RemoveAdsId)
+                {
+                    interstitialRequestInFlight = false;
+#if UNITY_ANDROID && !UNITY_EDITOR
+                    androidBridge?.Call("setAdsBlocked", false);
+                    androidBridge?.Call("loadInterstitial");
+#endif
+                }
+            }
+            EntitlementsReady = true;
+            if (!revokedAny) return;
+            PlayerPrefs.Save();
+            CosmeticsChanged?.Invoke();
+            statusSink?.Invoke(GameLocalization.Text(
+                "Google Play 환불 내역을 반영해 상품 권리를 회수했습니다.",
+                "REFUNDED GOOGLE PLAY ENTITLEMENTS WERE REMOVED."));
         }
 
         internal void GrantForQa(string productId)

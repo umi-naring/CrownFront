@@ -64,6 +64,7 @@ namespace JellyGate
         {
             if (monetization == null || economy == null) return;
             monetization.GemsPurchased += economy.GrantGems;
+            monetization.GemsRefunded += economy.RevokeGems;
             monetization.EmergencyRevivePurchased += CompleteEmergencyRevivePurchase;
         }
 
@@ -728,8 +729,7 @@ namespace JellyGate
             if (usedAnyTacticalItemThisRun) return;
             var best = Mathf.Max(PlayerPrefs.GetInt("Crownfront.Challenge.ItemlessBest", 0), roundsCleared);
             PlayerPrefs.SetInt("Crownfront.Challenge.ItemlessBest", best);
-            foreach (var goal in new[] { 10, 25, 50 })
-                if (best >= goal) CompleteChallenge("itemless_" + goal);
+            EvaluateCompletedChallenges();
             PlayerPrefs.Save();
         }
 

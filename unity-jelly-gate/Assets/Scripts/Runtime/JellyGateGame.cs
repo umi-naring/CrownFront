@@ -371,6 +371,8 @@ namespace JellyGate
         private readonly Dictionary<string, float> activeAugmentReadyAt = new();
         private readonly HashSet<UnitArchetype> unlockedUnits = new();
         private readonly HashSet<string> completedMissionKeys = new();
+        private readonly HashSet<string> rewardedChallengeKeys = new();
+        private const string ChallengeRewardedPrefix = "Crownfront.Challenge.Rewarded.";
         private static int musketeerCheckerPixelsRemoved;
         private static int musketeerLowerMattePixelsRemoved;
         private static int rosterCardArtifactsRemoved;
@@ -708,6 +710,7 @@ namespace JellyGate
             RestorePortableProgressBackup();
             LoadChallengeCollection();
             InitializeEconomy();
+            EvaluateCompletedChallenges();
             simulateSafeArea = HasCommandLineArgument("-qaSafeArea");
             CircleSprite = MakeCircleSprite(64);
             SelectionRearSprite = MakeHalfRingSprite(96, false);
@@ -856,6 +859,7 @@ namespace JellyGate
             else if (HasCommandLineArgument("-qaRelease319")) StartCoroutine(QaRelease319Routine());
             else if (HasCommandLineArgument("-qaAllUnitPoses320")) StartCoroutine(QaAllUnitPoses320Routine());
             else if (HasCommandLineArgument("-qaPlayGamesCloud321")) StartCoroutine(QaPlayGamesCloud321Routine());
+            else if (HasCommandLineArgument("-qaChallengeRewards322")) StartCoroutine(QaChallengeRewards322Routine());
             else if (HasCommandLineArgument("-qaRelease303Capture")) StartCoroutine(QaRelease303CaptureRoutine());
             else if (HasCommandLineArgument("-qaEconomyShopView")) ConfigureEconomyShopPreview();
             else if (HasCommandLineArgument("-qaPregameLoadoutView")) ConfigurePregameLoadoutPreview();
@@ -2819,7 +2823,10 @@ namespace JellyGate
             lifetimeHeroesEvolved = PlayerPrefs.GetInt("Crownfront.Lifetime.Heroes", 0);
             lifetimeBossesDefeated = PlayerPrefs.GetInt("Crownfront.Lifetime.Bosses", 0);
             foreach (var key in ChallengeKeys)
+            {
                 if (PlayerPrefs.GetInt("Crownfront.Challenge." + key, 0) == 1) completedMissionKeys.Add(key);
+                if (PlayerPrefs.GetInt(ChallengeRewardedPrefix + key, 0) == 1) rewardedChallengeKeys.Add(key);
+            }
         }
 
         private void SaveLifetimeProgress()
@@ -2836,6 +2843,7 @@ namespace JellyGate
             PlayerPrefs.SetInt("Crownfront.Lifetime.Heroes", lifetimeHeroesEvolved);
             PlayerPrefs.SetInt("Crownfront.Lifetime.Bosses", lifetimeBossesDefeated);
             PlayerPrefs.Save();
+            EvaluateCompletedChallenges();
             SavePortableProgressBackup();
         }
 
@@ -17966,7 +17974,7 @@ namespace JellyGate
             GUI.Label(new Rect(panel.x + 14f, panel.y + 13f, panel.width - 28f, 36f), L("도전 수집", "CHALLENGE COLLECTION"), modalTitleStyle);
             var items = BuildChallengeItems();
             foreach (var item in items)
-                if (item.Progress >= item.Goal) CompleteChallenge(item.Key);
+                if (item.Progress >= item.Goal) CompleteChallenge(item);
             var completedChallengeCount = items.Count(item => completedMissionKeys.Contains(item.Key));
             GUI.Label(new Rect(panel.x + 16f, panel.y + 49f, panel.width - 32f, 22f),
                 L($"완료 {completedChallengeCount}/{items.Count}",
@@ -18099,14 +18107,19 @@ namespace JellyGate
             public readonly string Description;
             public readonly int Progress;
             public readonly int Goal;
+            public readonly int RewardGold;
+            public readonly int RewardGems;
 
-            public ChallengeItem(string key, string title, string description, int progress, int goal)
+            public ChallengeItem(string key, string title, string description, int progress, int goal,
+                int rewardGold = 0, int rewardGems = 0)
             {
                 Key = key;
                 Title = title;
                 Description = description;
                 Progress = progress;
                 Goal = goal;
+                RewardGold = rewardGold;
+                RewardGems = rewardGems;
             }
         }
 
@@ -18151,64 +18164,119 @@ namespace JellyGate
         private List<ChallengeItem> BuildChallengeItems()
         {
             var result = new List<ChallengeItem>(51);
-            foreach (var goal in new[] { 10, 25, 50, 100, 250, 500, 1000, 2500 })
+            var goldRewards = new[] { 6, 8, 10, 12, 15, 18, 22, 28 };
+            var goals = new[] { 10, 25, 50, 100, 250, 500, 1000, 2500 };
+            for (var index = 0; index < goals.Length; index++)
+            {
+                var goal = goals[index];
                 result.Add(new ChallengeItem($"round_{goal}",
                     L($"\uC804\uC120 \uC644\uC218 \u00B7 {goal}", $"FRONT CLEAR \u00B7 {goal}"),
                     L($"\uB204\uC801 {goal}\uAC1C \uB77C\uC6B4\uB4DC \uC644\uB8CC",
-                        $"Clear {goal} rounds in total"), lifetimeRoundsCleared, goal));
-            foreach (var goal in new[] { 100, 500, 1000, 2500, 5000, 10000, 25000, 50000 })
+                        $"Clear {goal} rounds in total"), lifetimeRoundsCleared, goal,
+                    goldRewards[index], index == goals.Length - 1 ? 2 : 0));
+            }
+            goals = new[] { 100, 500, 1000, 2500, 5000, 10000, 25000, 50000 };
+            for (var index = 0; index < goals.Length; index++)
+            {
+                var goal = goals[index];
                 result.Add(new ChallengeItem($"kills_{goal}",
                     L($"\uBAAC\uC2A4\uD130 \uD1A0\uBC8C \u00B7 {goal}", $"MONSTER HUNT \u00B7 {goal}"),
                     L($"\uB204\uC801 \uBAAC\uC2A4\uD130 {goal}\uB9C8\uB9AC \uCC98\uCE58",
-                        $"Defeat {goal} monsters in total"), lifetimeMonstersDefeated, goal));
-            foreach (var goal in new[] { 25, 100, 250, 500, 1000, 2500, 5000, 10000 })
+                        $"Defeat {goal} monsters in total"), lifetimeMonstersDefeated, goal,
+                    goldRewards[index], index == goals.Length - 1 ? 2 : 0));
+            }
+            goals = new[] { 25, 100, 250, 500, 1000, 2500, 5000, 10000 };
+            for (var index = 0; index < goals.Length; index++)
+            {
+                var goal = goals[index];
                 result.Add(new ChallengeItem($"place_{goal}",
                     L($"\uC804\uC220 \uD3B8\uC131 \u00B7 {goal}", $"TACTICAL ROSTER \u00B7 {goal}"),
                     L($"\uC544\uAD70 \uC720\uB2DB\uC744 \uB204\uC801 {goal}\uD68C \uBC30\uCE58",
-                        $"Deploy defenders {goal} times"), lifetimeUnitsPlaced, goal));
-            foreach (var goal in new[] { 50, 200, 500, 1000, 2500, 5000, 10000, 25000 })
+                        $"Deploy defenders {goal} times"), lifetimeUnitsPlaced, goal,
+                    goldRewards[index], index == goals.Length - 1 ? 2 : 0));
+            }
+            goals = new[] { 50, 200, 500, 1000, 2500, 5000, 10000, 25000 };
+            for (var index = 0; index < goals.Length; index++)
+            {
+                var goal = goals[index];
                 result.Add(new ChallengeItem($"skills_{goal}",
                     L($"\uC2A4\uD0AC \uC9C0\uD718 \u00B7 {goal}", $"SKILL COMMAND \u00B7 {goal}"),
                     L($"\uC544\uAD70 \uC2A4\uD0AC\uC744 \uB204\uC801 {goal}\uD68C \uC0AC\uC6A9",
-                        $"Use defender skills {goal} times"), lifetimeSkillsCast, goal));
-            foreach (var goal in new[] { 5, 20, 50, 100, 250, 500, 1000, 2500 })
+                        $"Use defender skills {goal} times"), lifetimeSkillsCast, goal,
+                    goldRewards[index], index == goals.Length - 1 ? 2 : 0));
+            }
+            goals = new[] { 5, 20, 50, 100, 250, 500, 1000, 2500 };
+            for (var index = 0; index < goals.Length; index++)
+            {
+                var goal = goals[index];
                 result.Add(new ChallengeItem($"heroes_{goal}",
                     L($"\uC601\uC6C5 \uC9C4\uD654 \u00B7 {goal}", $"HERO ASCENSION \u00B7 {goal}"),
                     L($"\uC601\uC6C5 \uC9C4\uD654\uB97C \uB204\uC801 {goal}\uD68C \uC644\uB8CC",
-                        $"Complete {goal} hero evolutions"), lifetimeHeroesEvolved, goal));
-            foreach (var goal in new[] { 3, 10, 25, 50, 100, 250, 500, 1000 })
+                        $"Complete {goal} hero evolutions"), lifetimeHeroesEvolved, goal,
+                    goldRewards[index], index == goals.Length - 1 ? 2 : 0));
+            }
+            goals = new[] { 3, 10, 25, 50, 100, 250, 500, 1000 };
+            for (var index = 0; index < goals.Length; index++)
+            {
+                var goal = goals[index];
                 result.Add(new ChallengeItem($"bosses_{goal}",
                     L($"\uBCF4\uC2A4 \uACA9\uD30C \u00B7 {goal}", $"BOSS BREAKER \u00B7 {goal}"),
                     L($"\uBCF4\uC2A4\uB97C \uB204\uC801 {goal}\uB9C8\uB9AC \uCC98\uCE58",
-                        $"Defeat {goal} bosses in total"), lifetimeBossesDefeated, goal));
+                        $"Defeat {goal} bosses in total"), lifetimeBossesDefeated, goal,
+                    goldRewards[index], index == goals.Length - 1 ? 2 : 0));
+            }
             var itemlessBest = PlayerPrefs.GetInt("Crownfront.Challenge.ItemlessBest", 0);
-            foreach (var goal in new[] { 10, 25, 50 })
+            goals = new[] { 10, 25, 50 };
+            var itemlessGold = new[] { 12, 18, 25 };
+            for (var index = 0; index < goals.Length; index++)
+            {
+                var goal = goals[index];
                 result.Add(new ChallengeItem($"itemless_{goal}",
                     L($"무보급 완수 · {goal}", $"NO-ITEM FRONT · {goal}"),
                     L($"준비·전술 아이템 없이 한 전선에서 {goal}라운드 완료",
-                        $"Clear {goal} rounds in one run without tactical items"), itemlessBest, goal));
+                        $"Clear {goal} rounds in one run without tactical items"), itemlessBest, goal,
+                    itemlessGold[index], index == goals.Length - 1 ? 2 : 0));
+            }
             return result;
         }
 
-        private void CompleteChallenge(string key)
+        private void EvaluateCompletedChallenges()
         {
-            if (!completedMissionKeys.Add(key)) return;
-            PlayerPrefs.SetInt("Crownfront.Challenge." + key, 1);
+            if (economy == null) return;
+            foreach (var item in BuildChallengeItems())
+                if (item.Progress >= item.Goal) CompleteChallenge(item);
+        }
+
+        private void CompleteChallenge(ChallengeItem item)
+        {
+            var newlyCompleted = completedMissionKeys.Add(item.Key);
+            if (newlyCompleted) PlayerPrefs.SetInt("Crownfront.Challenge." + item.Key, 1);
+            var newlyRewarded = rewardedChallengeKeys.Add(item.Key);
+            if (newlyRewarded)
+            {
+                economy.GrantGold(item.RewardGold);
+                economy.GrantGems(item.RewardGems);
+                PlayerPrefs.SetInt(ChallengeRewardedPrefix + item.Key, 1);
+                ShowToast(item.RewardGems > 0
+                    ? L($"도전 달성 · {item.RewardGold}G + 보석 {item.RewardGems}",
+                        $"CHALLENGE COMPLETE · {item.RewardGold}G + {item.RewardGems} GEMS")
+                    : L($"도전 달성 · {item.RewardGold}G", $"CHALLENGE COMPLETE · {item.RewardGold}G"));
+            }
             PlayerPrefs.Save();
-            SavePortableProgressBackup();
+            if (newlyCompleted || newlyRewarded) SavePortableProgressBackup();
         }
 
         private const float ChallengeRowHeight = 70f;
         private const float ChallengeRowStride = 78f;
 
         internal static Rect ChallengeTitleRectForQa(Rect row) =>
-            new(row.x + 45f, row.y + 6f, Mathf.Max(40f, row.width - 123f), 22f);
+            new(row.x + 45f, row.y + 6f, Mathf.Max(40f, row.width - 145f), 22f);
 
         internal static Rect ChallengeDescriptionRectForQa(Rect row) =>
-            new(row.x + 45f, row.y + 29f, Mathf.Max(40f, row.width - 123f), 34f);
+            new(row.x + 45f, row.y + 29f, Mathf.Max(40f, row.width - 145f), 34f);
 
         internal static Rect ChallengeStatusRectForQa(Rect row) =>
-            new(row.xMax - 72f, row.y + 20f, 62f, 28f);
+            new(row.xMax - 94f, row.y + 9f, 84f, 50f);
 
         private void DrawChallengeRow(Rect row, ChallengeItem item)
         {
@@ -18229,9 +18297,12 @@ namespace JellyGate
             };
             GUI.Label(ChallengeTitleRectForQa(row), item.Title, titleStyle);
             GUI.Label(ChallengeDescriptionRectForQa(row), item.Description, descriptionStyle);
+            var rewardText = item.RewardGems > 0
+                ? $"{item.RewardGold}G\n◆ {item.RewardGems}"
+                : $"{item.RewardGold}G";
             GUI.Label(ChallengeStatusRectForQa(row),
-                complete ? L("완료", "DONE") : $"{Mathf.Min(item.Progress, item.Goal)}/{item.Goal}",
-                new GUIStyle(centeredStyle) { fontSize = 10 });
+                complete ? $"✓ {rewardText}" : $"{Mathf.Min(item.Progress, item.Goal)}/{item.Goal}\n{rewardText}",
+                new GUIStyle(centeredStyle) { fontSize = 10, wordWrap = true });
         }
 
         private void DrawMissionRow(Rect panel, int index, string key, string title, int progress, int goal, int reward, string description)

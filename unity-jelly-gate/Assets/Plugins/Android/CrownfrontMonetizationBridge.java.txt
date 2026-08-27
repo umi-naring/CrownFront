@@ -451,9 +451,21 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                     "; detail=" + result.getDebugMessage());
                 return;
             }
+            StringBuilder activeNonConsumables = new StringBuilder();
             if (purchases != null) {
-                for (Purchase purchase : purchases) processPurchase(purchase, "owned");
+                for (Purchase purchase : purchases) {
+                    if (purchase.getPurchaseState() != Purchase.PurchaseState.PURCHASED) continue;
+                    for (String productId : purchase.getProducts()) {
+                        if (isConsumable(productId)) continue;
+                        if (activeNonConsumables.length() > 0) activeNonConsumables.append('|');
+                        activeNonConsumables.append(productId);
+                    }
+                    processPurchase(purchase, "owned");
+                }
             }
+            // Only a successful Play query is authoritative. C# uses this complete snapshot to
+            // revoke cached non-consumables that were refunded, cancelled, or charged back.
+            send("ownership_snapshot", "", "", activeNonConsumables.toString());
             send("ownership_sync_complete", "", "", "");
         });
     }
@@ -495,7 +507,9 @@ public final class CrownfrontMonetizationBridge implements PurchasesUpdatedListe
                 if (result.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                     // A previously interrupted consumable is also delivered exactly once after
                     // Google confirms consumption. C# intentionally never treats it as owned.
-                    send("purchased", deliveredProduct, "", "");
+                    // Forward the purchase token so the client can retain an idempotent delivery
+                    // ledger. A secure backend can later match it against Voided Purchases/RTDN.
+                    send("purchased", deliveredProduct, "", purchase.getPurchaseToken());
                 } else {
                     sendError("구매 소모 처리 실패: " + result.getDebugMessage());
                 }
